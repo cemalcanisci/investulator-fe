@@ -1,0 +1,476 @@
+{
+  "app": {
+    "name": "Investulator"
+  },
+  "common": {
+    "backToHome": "Back to home",
+    "loadError": "Could not load the data",
+    "loadErrorHint": "Check your connection and try again.",
+    "retryButton": "Try again",
+    "loading": "Loading…",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "nav": {
+    "label": "Main menu",
+    "mobileLabel": "Bottom menu",
+    "openMenu": "Open menu",
+    "more": "More",
+    "addInvestment": "Add investment",
+    "dashboard": "Dashboard",
+    "holdings": "Holdings",
+    "transactions": "Transactions",
+    "analysis": "Analysis",
+    "importExport": "Import/Export"
+  },
+  "currency": {
+    "label": "Currency",
+    "rateUnavailable": "TL cannot be shown because the exchange rate is unavailable.",
+    "note": "Amounts are calculated in dollars; TL values are converted at the current rate (1 $ = {{rate}})."
+  },
+  "appearance": {
+    "title": "Appearance",
+    "foundations": "Design foundations"
+  },
+  "user": {
+    "label": "User"
+  },
+  "comingSoon": {
+    "description": "This page is not ready yet. Pages are designed and added one at a time."
+  },
+  "theme": {
+    "label": "Theme",
+    "default": "Default",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "label": "Language",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "pnl": {
+    "positive": "Profit",
+    "negative": "Loss",
+    "zero": "No change"
+  },
+  "assetTypes": {
+    "CRYPTO": "Crypto",
+    "BIST_STOCK": "BIST",
+    "US_STOCK": "US stock",
+    "GOLD": "Gold",
+    "FX": "Currency"
+  },
+  "transactionTypes": {
+    "BUY": "Buy",
+    "SELL": "Sell",
+    "BONUS": "Bonus shares",
+    "SPLIT": "Split",
+    "DIVIDEND": "Dividend"
+  },
+  "units": {
+    "GRAM": "g",
+    "PIECE": "pcs"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "pricesUpdated": "Prices last updated: {{time}}",
+    "refresh": "Refresh prices",
+    "kpi": {
+      "totalValue": "Total value",
+      "totalCost": "Total cost",
+      "unrealized": "Unrealized P&L",
+      "realized": "Realized P&L",
+      "today": "today",
+      "costHint": "Weighted average cost"
+    },
+    "portfolioChart": {
+      "title": "Portfolio value and cost",
+      "rangeLabel": "Time range",
+      "aria": "Portfolio value and cost over time ({{currency}})",
+      "valueSeries": "Portfolio value",
+      "costSeries": "Cost",
+      "tableCaption": "Portfolio value and cost, {{currency}}",
+      "dateColumn": "Date"
+    },
+    "ranges": {
+      "1W": "1W",
+      "1M": "1M",
+      "3M": "3M",
+      "1Y": "1Y",
+      "ALL": "All"
+    },
+    "allocation": {
+      "title": "Allocation by asset type",
+      "aria": "Portfolio allocation by asset type"
+    },
+    "movers": {
+      "gainers": "Top gainers",
+      "losers": "Top losers"
+    },
+    "recent": {
+      "title": "Recent transactions",
+      "viewAll": "View all",
+      "date": "Date",
+      "type": "Type",
+      "asset": "Asset",
+      "quantity": "Quantity",
+      "amount": "Amount"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or may have moved."
+  },
+  "foundations": {
+    "title": "Design foundations",
+    "description": "Color tokens and typography. Change the theme and language from the top.",
+    "colors": "Colors",
+    "colorGroups": {
+      "surface": "Surface",
+      "text": "Text",
+      "nav": "Navigation",
+      "brand": "Brand",
+      "semantic": "Semantic",
+      "chart": "Chart series"
+    },
+    "typography": "Typography",
+    "typeDisplay": "Portfolio value",
+    "typeBody": "The weighted average cost is calculated from buy and bonus-share transactions.",
+    "typeNumbers": "Numbers are tabular, so columns stay aligned.",
+    "profit": "Profit",
+    "loss": "Loss"
+  },
+  "holdings": {
+    "title": "Holdings",
+    "summary": {
+      "value": "Total value",
+      "cost": "Total cost",
+      "pnlPercentSort": "P&L %",
+      "pnl": "Total P&L"
+    },
+    "unpricedNote": "{{count}} holding has no price and is left out of the totals.",
+    "search": {
+      "label": "Search holdings",
+      "placeholder": "Search by name or symbol"
+    },
+    "filter": {
+      "label": "Asset type",
+      "all": "All"
+    },
+    "sort": {
+      "label": "Sort",
+      "VALUE": "Value (high to low)",
+      "PNL": "P&L amount",
+      "PNL_PERCENT": "P&L percent",
+      "NAME": "Name (A-Z)"
+    },
+    "table": {
+      "caption": "Holdings",
+      "asset": "Asset",
+      "quantity": "Quantity",
+      "avgCost": "Avg. cost",
+      "price": "Current price",
+      "value": "Value",
+      "pnl": "P&L",
+      "weight": "Weight",
+      "total": "Total"
+    },
+    "price": {
+      "STALE": "Price is old",
+      "UNAVAILABLE": "Price unavailable",
+      "staleHint": "Last price: {{time}}",
+      "unavailableHint": "The price of this asset cannot be loaded right now"
+    },
+    "empty": {
+      "title": "No holdings yet",
+      "description": "Add your first investment or import it from an Excel file.",
+      "add": "Add investment",
+      "import": "Import from Excel"
+    },
+    "noResults": {
+      "title": "No matching holdings",
+      "description": "Try changing the search or the filter.",
+      "clear": "Clear filters"
+    }
+  },
+  "transactions": {
+    "title": "Transactions",
+    "add": "New transaction",
+    "status": {
+      "created": "Transaction added.",
+      "updated": "Transaction updated.",
+      "cancelled": "Transaction cancelled.",
+      "restored": "Transaction restored."
+    },
+    "search": {
+      "label": "Search transactions",
+      "placeholder": "Search asset, symbol, platform or note"
+    },
+    "filter": {
+      "typeLabel": "Transaction type",
+      "all": "All",
+      "assetType": "Asset type",
+      "allAssetTypes": "All asset types",
+      "platform": "Platform",
+      "allPlatforms": "All platforms",
+      "period": "Date range",
+      "from": "From date",
+      "to": "To date",
+      "showVoided": "Show cancelled",
+      "hiddenVoided": "{{count}} cancelled transaction(s) hidden."
+    },
+    "periods": {
+      "ALL": "All time",
+      "MONTH": "This month",
+      "QUARTER": "Last 3 months",
+      "YEAR": "This year",
+      "CUSTOM": "Custom range"
+    },
+    "sort": {
+      "label": "Sort",
+      "DATE": "Date (newest first)",
+      "AMOUNT": "Amount (high to low)"
+    },
+    "table": {
+      "caption": "Transactions",
+      "date": "Date",
+      "type": "Type",
+      "asset": "Asset",
+      "quantity": "Quantity",
+      "unitPrice": "Unit price",
+      "amount": "Amount",
+      "usd": "USD value",
+      "rate": "Rate",
+      "actions": "Actions",
+      "total": "{{count}} transaction(s)",
+      "bought": "Bought",
+      "sold": "Sold",
+      "splitRatio": "×{{ratio}}",
+      "fee": "Fee {{fee}}"
+    },
+    "rate": {
+      "AUTO": "Automatic",
+      "MANUAL": "Manual",
+      "title": "1 {{currency}} = {{rate}} USD"
+    },
+    "voided": {
+      "badge": "Cancelled",
+      "reason": "Reason: {{reason}}"
+    },
+    "actions": {
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "restore": "Restore",
+      "editFor": "Edit the {{asset}} transaction",
+      "cancelFor": "Cancel the {{asset}} transaction",
+      "restoreFor": "Restore the {{asset}} transaction"
+    },
+    "more": "Show more ({{count}} left)",
+    "empty": {
+      "title": "No transactions yet",
+      "description": "Add your first purchase; your holdings and profit and loss are calculated from it. You can also import from Excel.",
+      "add": "Add the first transaction",
+      "import": "Import from Excel"
+    },
+    "noResults": {
+      "title": "No transaction matches",
+      "description": "Try changing or clearing the filters.",
+      "clear": "Clear filters"
+    },
+    "form": {
+      "titleNew": "New transaction",
+      "titleEdit": "Edit transaction",
+      "type": "Transaction type",
+      "asset": "Asset",
+      "assetPlaceholder": "Search by name or symbol",
+      "assetEmpty": "No asset found",
+      "date": "Date",
+      "quantity": "Quantity",
+      "unitPrice": "Unit price",
+      "totalAmount": "Total amount",
+      "dividendAmount": "Net dividend received",
+      "time": "Transaction time",
+      "timeHint": "Determines the order within a day. Legacy records without a time use 12:00; ties use entry order.",
+      "bonusQuantity": "Shares received",
+      "amountsHint": "Enter any two of the three, the third is calculated (the unit price may carry a rounding difference).",
+      "calculated": "calculated",
+      "currency": "Currency",
+      "fee": "Fee (optional)",
+      "fx": {
+        "label": "Exchange rate",
+        "rate": "1 {{currency}} = {{rate}} USD",
+        "auto": "Automatic (transaction day)",
+        "manual": "Entered manually",
+        "loading": "Fetching the rate…",
+        "unavailable": "The rate could not be fetched; enter it manually.",
+        "edit": "Edit manually",
+        "back": "Back to automatic",
+        "input": "How many USD is 1 {{currency}}?"
+      },
+      "usd": "USD value",
+      "noCost": "No cost is created.",
+      "platform": "Platform (optional)",
+      "platformPlaceholder": "Midas, Binance, jeweller…",
+      "note": "Note (optional)",
+      "splitRatio": "Split ratio",
+      "splitHint": "How many shares does each share become? 2 splits in two, 0.5 is a reverse split.",
+      "cancel": "Cancel",
+      "save": "Save",
+      "errors": {
+        "assetRequired": "Choose an asset.",
+        "dateRequired": "The date is required.",
+        "dateInvalid": "Enter a valid calendar date.",
+        "timeInvalid": "Enter a valid time (HH:mm).",
+        "dateFuture": "The date cannot be in the future.",
+        "invalidNumber": "Enter a valid number (e.g. 1234.56).",
+        "mustBePositive": "Must be greater than zero.",
+        "amountsRequired": "Enter at least two of quantity, unit price and total amount.",
+        "insufficientQuantity": "You hold {{available}} on this date; you cannot sell more.",
+        "rateRequired": "A valid rate is required."
+      },
+      "ruleError": "Could not save: the {{asset}} position would be {{short}} below zero on {{date}}.",
+      "saveError": "The transaction could not be saved. Try again."
+    },
+    "cancelDialog": {
+      "title": "Cancel this transaction?",
+      "description": "A cancelled transaction is left out of every calculation and hidden from the list. It is not deleted; you can restore it at any time.",
+      "reason": "Reason (optional)",
+      "confirm": "Cancel transaction",
+      "keep": "Keep it",
+      "refused": "Could not cancel: the {{asset}} position would be {{short}} below zero on {{date}}.",
+      "failed": "The transaction could not be cancelled. Try again."
+    },
+    "restoreError": "Could not restore: the {{asset}} position would be {{short}} below zero on {{date}}.",
+    "restoreFailed": "The transaction could not be restored. Try again."
+  },
+  "assetDetail": {
+    "manage": "Manage transactions",
+    "newest": "Newest first",
+    "value": "Current value",
+    "cost": "Remaining cost",
+    "allTransactions": "Show all transactions",
+    "costNote": "Cost uses the weighted average method. Profit / loss applies to your remaining holdings; realized gains and dividends are excluded.",
+    "emptyHistory": "No transactions to display",
+    "notFoundNote": "This asset is not among your current holdings.",
+    "oldest": "Oldest first",
+    "order": "Transaction order",
+    "position": "Position details",
+    "notFound": "Asset not found",
+    "scoped": "Asset: {{asset}}",
+    "history": "Transaction history",
+    "loadingHistory": "Loading transaction history…",
+    "unrealized": "Unrealized profit / loss",
+    "back": "Back to holdings",
+    "unpriced": "Value and profit / loss are unavailable because the current price could not be retrieved.",
+    "emptyHistoryNote": "No transactions for this asset match your selection.",
+    "historyNote": "Amounts use the transaction currency. USD equivalents use the exchange rate saved with each transaction."
+  },
+  "analysis": {
+    "metrics": {
+      "PERCENT": "Profit / loss percentage",
+      "AMOUNT": "Profit / loss amount"
+    },
+    "empty": "No investments to analyze yet",
+    "positionValue": "Value: {{value}}",
+    "typeAmounts": "Value: {{value}} · Cost: {{cost}}",
+    "ranking": "Asset performance",
+    "emptyNote": "Add your first transaction to start building your portfolio.",
+    "filter": "Performance filter",
+    "scopeNote": "The range selector only changes the chart above. Allocation and rankings show current positions; profit / loss excludes dividends and closed positions. An increase in portfolio value alone is not an investment return.",
+    "filters": {
+      "LOSERS": "Losers",
+      "ALL": "All",
+      "GAINERS": "Gainers"
+    },
+    "description": "Explore your portfolio allocation and the performance of your open positions.",
+    "byTypeNote": "Bar length represents the absolute profit or loss amount.",
+    "noResults": "No assets in this group",
+    "noResultsNote": "Try another performance filter.",
+    "metric": "Ranking metric",
+    "byType": "Profit / loss by asset type",
+    "rankingNote": "Ranked by unrealized profit / loss. Select an asset name for details."
+  },
+  "transfer": {
+    "description": "Add transactions from a file or download a copy of your records.",
+    "local": "Files are processed on your device. Your data is not sent to another service during transfer.",
+    "importTitle": "Import",
+    "exportTitle": "Export",
+    "template": "Download Excel template",
+    "importDescription": "Fill in the template, select your file and review records before adding them.",
+    "choose": "Choose file",
+    "fileHint": "Excel (.xlsx) or CSV · Up to 5 MB and 1,000 transactions",
+    "guide": "How to fill in the template",
+    "guideText": "Keep column headers on the first sheet. Date: YYYY-MM-DD; time: HH:mm. Blank time means 12:00; ties use file/entry order. Legacy files without a time column are supported. Types: BUY, SELL, BONUS, SPLIT, DIVIDEND. For trades, fill in at least two of quantity, unit price and total. Do not use thousands separators. For TRY cash transactions, enter USD per 1 TRY in the USD rate column; bonus and split transactions need no exchange rate. Dividends are the total net cash received. Split ratio: new quantity / old quantity. Status must be empty or ACTIVE. The template contains no sample transactions. If you enter all three amounts, the total difference may not exceed 0.01.",
+    "catalog": "Supported asset codes",
+    "review": "File review",
+    "ready": "To add",
+    "skipped": "Skipped",
+    "invalid": "Invalid",
+    "line": "Row",
+    "result": "Validation",
+    "valid": "Ready",
+    "importAction": "Add {{count}} transactions",
+    "reset": "Remove file",
+    "atomic": "If a row is invalid, nothing is added. Duplicate and cancelled (VOIDED) records are skipped. Existing records are unchanged.",
+    "empty": "The file contains no transaction rows.",
+    "done": "Added {{count}} transactions.",
+    "downloadDone": "File download started.",
+    "failed": "Could not complete the operation. Check the file and try again.",
+    "balance": "Insufficient balance for {{asset}} on {{date}}. No records were added.",
+    "exportDescription": "Download transactions within a date range. Excel and CSV contain all fields; PDF contains a readable transaction summary.",
+    "from": "Start date",
+    "to": "End date",
+    "includeVoided": "Include cancelled transactions",
+    "rangeError": "Start date cannot be after end date.",
+    "count": "{{count}} transactions to download",
+    "noExport": "No transactions to download in this range.",
+    "download": "Download {{format}}",
+    "reportTitle": "Transaction report",
+    "reportCount": "{{count}} transactions · Amounts use the original currency and stored USD exchange rate.",
+    "reportFooter": "Investulator · Transaction summary · Full details are available in Excel/CSV.",
+    "ACTIVE": "Active",
+    "VOIDED": "Cancelled",
+    "loading": "Processing file…",
+    "session": "In this version, added transactions last until the page is reloaded. Position summaries use sample data.",
+    "columns": {
+      "time": "Time",
+      "date": "Date",
+      "asset": "Asset code",
+      "type": "Transaction type",
+      "quantity": "Quantity",
+      "unitPrice": "Unit price",
+      "totalAmount": "Total amount",
+      "currency": "Currency",
+      "fee": "Fee",
+      "fxRate": "USD rate",
+      "fxSource": "Rate source",
+      "platform": "Platform",
+      "note": "Note",
+      "splitRatio": "Split ratio",
+      "status": "Status"
+    },
+    "errors": {
+      "size": "File exceeds 5 MB.",
+      "format": "Only .xlsx and .csv files are supported.",
+      "headers": "Column headers do not match. Use the current template.",
+      "limit": "A file can contain up to 1,000 transactions.",
+      "file": "Could not read the file. Check its format.",
+      "formula": "Formula or unsupported cell type. Save cells as plain values.",
+      "empty": "The file is empty.",
+      "cell": "A cell exceeds 1,000 characters.",
+      "date": "Invalid date. Use YYYY-MM-DD.",
+      "asset": "Asset code is not in the catalog.",
+      "type": "Invalid transaction type.",
+      "currency": "Currency must be USD or TRY.",
+      "rate": "Rate source must be AUTO or MANUAL; USD rate must be 1.",
+      "number": "Invalid or overly long number.",
+      "values": "Check required fields, positive amounts, date and USD rate.",
+      "status": "Status must be ACTIVE, VOIDED or empty.",
+      "voided": "Cancelled; will be skipped.",
+      "duplicate": "Already exists or repeated in this file; will be skipped.",
+      "unused": "Leave amount fields that do not apply to this type empty.",
+      "inconsistent": "Quantity × unit price does not match the total."
+    }
+  }
+}

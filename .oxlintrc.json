@@ -1,0 +1,108 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc", "vitest", "import", "unicorn"],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }],
+    "react/no-danger": "error",
+    "react/no-danger-with-children": "error",
+    "react/jsx-no-script-url": "error",
+    "react/jsx-no-target-blank": "error",
+    "no-script-url": "error",
+    "no-restricted-properties": [
+      "error",
+      {
+        "property": "innerHTML",
+        "message": "Use textContent, or a sanitized-HTML wrapper if HTML is truly needed."
+      },
+      {
+        "property": "outerHTML",
+        "message": "Use textContent, or a sanitized-HTML wrapper if HTML is truly needed."
+      },
+      {
+        "property": "insertAdjacentHTML",
+        "message": "Use insertAdjacentText, or a sanitized-HTML wrapper if HTML is truly needed."
+      },
+      {
+        "object": "document",
+        "property": "write",
+        "message": "document.write is an XSS sink; use DOM APIs instead."
+      },
+      {
+        "object": "document",
+        "property": "writeln",
+        "message": "document.writeln is an XSS sink; use DOM APIs instead."
+      }
+    ],
+    "no-console": "error",
+    "no-unused-vars": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "eqeqeq": ["error", "smart"],
+    "no-array-constructor": "error",
+    "no-object-constructor": "error",
+    "no-new-wrappers": "error",
+    "radix": "error",
+    "prefer-rest-params": "error",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "typescript/no-explicit-any": "error",
+    "typescript/no-namespace": "error",
+    "typescript/no-require-imports": "error",
+    "typescript/no-var-requires": "error",
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/array-type": ["error", { "default": "array" }],
+    "typescript/consistent-type-imports": [
+      "error",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "separate-type-imports",
+        "disallowTypeAnnotations": false
+      }
+    ],
+    "typescript/explicit-member-accessibility": [
+      "error",
+      { "accessibility": "no-public" }
+    ],
+    "typescript/consistent-type-definitions": ["error", "interface"],
+    "typescript/no-non-null-assertion": "error",
+    "typescript/prefer-for-of": "warn",
+    "default-case": "error",
+    "prefer-template": "error",
+    "prefer-spread": "error",
+    "typescript/no-this-alias": "error",
+    "typescript/ban-ts-comment": "error",
+    "typescript/no-inferrable-types": "error",
+    "import/no-default-export": "error",
+    "import/no-relative-parent-imports": "error",
+    "guard-for-in": "error",
+    "prefer-arrow-callback": "error",
+    "curly": ["error", "all"],
+    "no-cond-assign": "error",
+    "no-debugger": "error",
+    "no-eval": "error",
+    "no-new-func": "error",
+    "no-empty": "error",
+    "no-const-enum": "error",
+    "unicorn/new-for-builtins": "error",
+    "typescript/no-wrapper-object-types": "error",
+    "typescript/explicit-function-return-type": "error",
+    "typescript/consistent-type-assertions": [
+      "error",
+      { "assertionStyle": "never" }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["src/lib/logger.ts"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
+    {
+      "files": ["vite.config.ts"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "app": {
+    "name": "Investulator"
+  },
+  "common": {
+    "backToHome": "Ana sayfaya dön",
+    "loadError": "Veriler yüklenemedi",
+    "loadErrorHint": "Bağlantını kontrol edip tekrar dene.",
+    "retryButton": "Tekrar dene",
+    "loading": "Yükleniyor…",
+    "previous": "Önceki",
+    "next": "Sonraki"
+  },
+  "nav": {
+    "label": "Ana menü",
+    "mobileLabel": "Alt menü",
+    "openMenu": "Menüyü aç",
+    "more": "Daha fazla",
+    "addInvestment": "Yatırım ekle",
+    "dashboard": "Dashboard",
+    "holdings": "Yatırımlarım",
+    "transactions": "İşlemler",
+    "analysis": "Analiz",
+    "importExport": "İçe/Dışa aktar"
+  },
+  "currency": {
+    "label": "Para birimi",
+    "rateUnavailable": "Kur alınamadığı için TL gösterilemiyor.",
+    "note": "Tutarlar dolar bazında hesaplanır; TL değerleri güncel kurla (1 $ = {{rate}}) çevrilmiştir."
+  },
+  "appearance": {
+    "title": "Görünüm",
+    "foundations": "Tasarım temeli"
+  },
+  "user": {
+    "label": "Kullanıcı"
+  },
+  "comingSoon": {
+    "description": "Bu sayfa henüz hazır değil. Sayfalar sırayla tasarlanıp ekleniyor."
+  },
+  "theme": {
+    "label": "Tema",
+    "default": "Varsayılan",
+    "light": "Açık",
+    "dark": "Koyu"
+  },
+  "language": {
+    "label": "Dil",
+    "tr": "Türkçe",
+    "en": "English"
+  },
+  "pnl": {
+    "positive": "Kâr",
+    "negative": "Zarar",
+    "zero": "Değişim yok"
+  },
+  "assetTypes": {
+    "CRYPTO": "Kripto",
+    "BIST_STOCK": "BIST",
+    "US_STOCK": "ABD hisse",
+    "GOLD": "Altın",
+    "FX": "Döviz"
+  },
+  "transactionTypes": {
+    "BUY": "Alım",
+    "SELL": "Satış",
+    "BONUS": "Bedelsiz",
+    "SPLIT": "Bölünme",
+    "DIVIDEND": "Temettü"
+  },
+  "units": {
+    "GRAM": "gr",
+    "PIECE": "adet"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "pricesUpdated": "Son fiyat güncellemesi: {{time}}",
+    "refresh": "Fiyatları yenile",
+    "kpi": {
+      "totalValue": "Toplam değer",
+      "totalCost": "Toplam maliyet",
+      "unrealized": "Gerçekleşmemiş K/Z",
+      "realized": "Gerçekleşen K/Z",
+      "today": "bugün",
+      "costHint": "Ağırlıklı ortalama maliyet"
+    },
+    "portfolioChart": {
+      "title": "Portföy değeri ve maliyeti",
+      "rangeLabel": "Zaman aralığı",
+      "aria": "Portföy değeri ve maliyetinin zaman içindeki değişimi ({{currency}})",
+      "valueSeries": "Portföy değeri",
+      "costSeries": "Maliyet",
+      "tableCaption": "Portföy değeri ve maliyeti, {{currency}}",
+      "dateColumn": "Tarih"
+    },
+    "ranges": {
+      "1W": "1H",
+      "1M": "1A",
+      "3M": "3A",
+      "1Y": "1Y",
+      "ALL": "Tümü"
+    },
+    "allocation": {
+      "title": "Varlık türüne göre dağılım",
+      "aria": "Portföyün varlık türlerine göre dağılımı"
+    },
+    "movers": {
+      "gainers": "En çok kazandıranlar",
+      "losers": "En çok kaybettirenler"
+    },
+    "recent": {
+      "title": "Son işlemler",
+      "viewAll": "Tümünü gör",
+      "date": "Tarih",
+      "type": "Tür",
+      "asset": "Varlık",
+      "quantity": "Adet",
+      "amount": "Tutar"
+    }
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığın sayfa mevcut değil ya da taşınmış olabilir."
+  },
+  "foundations": {
+    "title": "Tasarım temeli",
+    "description": "Renk token'ları ve tipografi. Temayı ve dili üstten değiştirebilirsin.",
+    "colors": "Renkler",
+    "colorGroups": {
+      "surface": "Yüzey",
+      "text": "Metin",
+      "nav": "Menü",
+      "brand": "Marka",
+      "semantic": "Anlamsal",
+      "chart": "Grafik serileri"
+    },
+    "typography": "Tipografi",
+    "typeDisplay": "Portföy değeri",
+    "typeBody": "Ağırlıklı ortalama maliyet, alım ve bedelsiz işlemlerinden hesaplanır.",
+    "typeNumbers": "Rakamlar sabit genişliklidir, sütunlar hizalı kalır.",
+    "profit": "Kâr",
+    "loss": "Zarar"
+  },
+  "holdings": {
+    "title": "Yatırımlarım",
+    "summary": {
+      "value": "Toplam değer",
+      "cost": "Toplam maliyet",
+      "pnlPercentSort": "K/Z %",
+      "pnl": "Toplam K/Z"
+    },
+    "unpricedNote": "{{count}} yatırımın fiyatı alınamadı; toplamlara dahil değil.",
+    "search": {
+      "label": "Yatırımlarda ara",
+      "placeholder": "Ad veya sembol ara"
+    },
+    "filter": {
+      "label": "Varlık türü",
+      "all": "Tümü"
+    },
+    "sort": {
+      "label": "Sırala",
+      "VALUE": "Değer (yüksekten)",
+      "PNL": "K/Z tutarı",
+      "PNL_PERCENT": "K/Z yüzdesi",
+      "NAME": "Ad (A-Z)"
+    },
+    "table": {
+      "caption": "Yatırımlar",
+      "asset": "Varlık",
+      "quantity": "Adet",
+      "avgCost": "Ort. maliyet",
+      "price": "Güncel fiyat",
+      "value": "Değer",
+      "pnl": "K/Z",
+      "weight": "Ağırlık",
+      "total": "Toplam"
+    },
+    "price": {
+      "STALE": "Fiyat eski",
+      "UNAVAILABLE": "Fiyat alınamadı",
+      "staleHint": "Son fiyat: {{time}}",
+      "unavailableHint": "Bu varlığın fiyatı şu an alınamıyor"
+    },
+    "empty": {
+      "title": "Henüz yatırım yok",
+      "description": "İlk yatırımını ekle ya da bir Excel dosyasından içe aktar.",
+      "add": "Yatırım ekle",
+      "import": "Excel'den aktar"
+    },
+    "noResults": {
+      "title": "Eşleşen yatırım yok",
+      "description": "Arama veya filtreyi değiştirmeyi dene.",
+      "clear": "Filtreleri temizle"
+    }
+  },
+  "transactions": {
+    "title": "İşlemler",
+    "add": "Yeni işlem",
+    "status": {
+      "created": "İşlem eklendi.",
+      "updated": "İşlem güncellendi.",
+      "cancelled": "İşlem iptal edildi.",
+      "restored": "İşlemin iptali kaldırıldı."
+    },
+    "search": {
+      "label": "İşlemlerde ara",
+      "placeholder": "Varlık, sembol, platform veya not ara"
+    },
+    "filter": {
+      "typeLabel": "İşlem türü",
+      "all": "Tümü",
+      "assetType": "Varlık türü",
+      "allAssetTypes": "Tüm varlık türleri",
+      "platform": "Platform",
+      "allPlatforms": "Tüm platformlar",
+      "period": "Tarih aralığı",
+      "from": "Başlangıç tarihi",
+      "to": "Bitiş tarihi",
+      "showVoided": "İptal edilenleri göster",
+      "hiddenVoided": "{{count}} iptal edilmiş işlem gizli."
+    },
+    "periods": {
+      "ALL": "Tüm zamanlar",
+      "MONTH": "Bu ay",
+      "QUARTER": "Son 3 ay",
+      "YEAR": "Bu yıl",
+      "CUSTOM": "Özel aralık"
+    },
+    "sort": {
+      "label": "Sırala",
+      "DATE": "Tarih (yeniden eskiye)",
+      "AMOUNT": "Tutar (yüksekten)"
+    },
+    "table": {
+      "caption": "İşlemler",
+      "date": "Tarih",
+      "type": "Tür",
+      "asset": "Varlık",
+      "quantity": "Adet",
+      "unitPrice": "Birim fiyat",
+      "amount": "Tutar",
+      "usd": "USD karşılığı",
+      "rate": "Kur",
+      "actions": "İşlemler",
+      "total": "{{count}} işlem",
+      "bought": "Alım",
+      "sold": "Satış",
+      "splitRatio": "×{{ratio}}",
+      "fee": "Komisyon {{fee}}"
+    },
+    "rate": {
+      "AUTO": "Otomatik",
+      "MANUAL": "Elle",
+      "title": "1 {{currency}} = {{rate}} USD"
+    },
+    "voided": {
+      "badge": "İptal edildi",
+      "reason": "Neden: {{reason}}"
+    },
+    "actions": {
+      "edit": "Düzenle",
+      "cancel": "İptal et",
+      "restore": "İptali kaldır",
+      "editFor": "{{asset}} işlemini düzenle",
+      "cancelFor": "{{asset}} işlemini iptal et",
+      "restoreFor": "{{asset}} işleminin iptalini kaldır"
+    },
+    "more": "Daha fazla göster ({{count}} kaldı)",
+    "empty": {
+      "title": "Henüz işlem yok",
+      "description": "İlk alımını ekle; yatırımların ve kâr/zarar buradan hesaplanır. Excel’den de aktarabilirsin.",
+      "add": "İlk işlemi ekle",
+      "import": "Excel’den aktar"
+    },
+    "noResults": {
+      "title": "Aramana uyan işlem yok",
+      "description": "Filtreleri değiştirmeyi ya da temizlemeyi dene.",
+      "clear": "Filtreleri temizle"
+    },
+    "form": {
+      "titleNew": "Yeni işlem",
+      "titleEdit": "İşlemi düzenle",
+      "type": "İşlem türü",
+      "asset": "Varlık",
+      "assetPlaceholder": "Ad veya sembolle ara",
+      "assetEmpty": "Varlık bulunamadı",
+      "date": "Tarih",
+      "quantity": "Adet",
+      "unitPrice": "Birim fiyat",
+      "totalAmount": "Toplam tutar",
+      "dividendAmount": "Hesabına geçen net temettü",
+      "time": "İşlem saati",
+      "timeHint": "Aynı günün sırasını belirler. Saati bilinmeyen eski kayıtlar 12:00 kabul edilir; aynı saatte kayıt sırası kullanılır.",
+      "bonusQuantity": "Verilen hisse adedi",
+      "amountsHint": "Üçünden ikisini gir, üçüncü otomatik hesaplanır (birim fiyatta yuvarlama farkı olabilir).",
+      "calculated": "hesaplandı",
+      "currency": "Para birimi",
+      "fee": "Komisyon (opsiyonel)",
+      "fx": {
+        "label": "Kur",
+        "rate": "1 {{currency}} = {{rate}} USD",
+        "auto": "Otomatik (işlem günü)",
+        "manual": "Elle girildi",
+        "loading": "Kur alınıyor…",
+        "unavailable": "Kur alınamadı; elle girmen gerekiyor.",
+        "edit": "Elle düzelt",
+        "back": "Otomatiğe dön",
+        "input": "1 {{currency}} kaç USD?"
+      },
+      "usd": "USD karşılığı",
+      "noCost": "Maliyet oluşmaz.",
+      "platform": "Platform (opsiyonel)",
+      "platformPlaceholder": "Midas, Binance, kuyumcu…",
+      "note": "Not (opsiyonel)",
+      "splitRatio": "Bölünme oranı",
+      "splitHint": "Her hisse kaç hisse olur? 2 → ikiye bölünür, 0,5 → ters bölünme.",
+      "cancel": "Vazgeç",
+      "save": "Kaydet",
+      "errors": {
+        "assetRequired": "Bir varlık seç.",
+        "dateRequired": "Tarih gerekli.",
+        "dateInvalid": "Geçerli bir takvim tarihi gir.",
+        "timeInvalid": "Geçerli bir saat gir (SS:DD).",
+        "dateFuture": "İşlem tarihi bugünden sonra olamaz.",
+        "invalidNumber": "Geçerli bir sayı gir (örn. 1234,56).",
+        "mustBePositive": "Sıfırdan büyük olmalı.",
+        "amountsRequired": "Adet, birim fiyat ve toplam tutardan en az ikisini gir.",
+        "insufficientQuantity": "Bu tarihte elinde {{available}} var; fazlasını satamazsın.",
+        "rateRequired": "Geçerli bir kur gerekli."
+      },
+      "ruleError": "Kaydedilemedi: {{asset}} miktarı {{date}} tarihinde {{short}} eksiye düşer.",
+      "saveError": "İşlem kaydedilemedi. Tekrar dene."
+    },
+    "cancelDialog": {
+      "title": "İşlem iptal edilsin mi?",
+      "description": "İptal edilen işlem hesaplardan çıkar ve listede gizlenir. Silinmez; istediğin zaman iptalini kaldırabilirsin.",
+      "reason": "Neden (opsiyonel)",
+      "confirm": "İptal et",
+      "keep": "Vazgeç",
+      "refused": "İptal edilemedi: {{asset}} miktarı {{date}} tarihinde {{short}} eksiye düşer.",
+      "failed": "İşlem iptal edilemedi. Tekrar dene."
+    },
+    "restoreError": "İptal kaldırılamadı: {{asset}} miktarı {{date}} tarihinde {{short}} eksiye düşer.",
+    "restoreFailed": "İptal kaldırılamadı. Tekrar dene."
+  },
+  "assetDetail": {
+    "manage": "İşlemleri yönet",
+    "newest": "En yeni önce",
+    "value": "Güncel değer",
+    "cost": "Kalan maliyet",
+    "allTransactions": "Tüm işlemleri göster",
+    "costNote": "Maliyet ağırlıklı ortalama yöntemiyle izlenir. Kâr / zarar, elde tuttuğunuz miktara aittir; satış kazancı ve temettü dahil değildir.",
+    "emptyHistory": "Gösterilecek işlem yok",
+    "notFoundNote": "Bu varlık mevcut yatırımlarınız arasında bulunmuyor.",
+    "oldest": "En eski önce",
+    "order": "İşlem sırası",
+    "position": "Pozisyon bilgileri",
+    "notFound": "Varlık bulunamadı",
+    "scoped": "Varlık: {{asset}}",
+    "history": "İşlem geçmişi",
+    "loadingHistory": "İşlem geçmişi yükleniyor…",
+    "unrealized": "Gerçekleşmemiş kâr / zarar",
+    "back": "Yatırımlarıma dön",
+    "unpriced": "Güncel fiyat alınamadığı için değer ve kâr / zarar hesaplanamıyor.",
+    "emptyHistoryNote": "Bu varlık için seçiminize uyan bir işlem bulunmuyor.",
+    "historyNote": "Tutarlar işlemin yapıldığı para biriminde, dolar karşılıkları ise işlemde kayıtlı kurla gösterilir."
+  },
+  "analysis": {
+    "metrics": {
+      "PERCENT": "Kâr / zarar yüzdesi",
+      "AMOUNT": "Kâr / zarar tutarı"
+    },
+    "empty": "Analiz için henüz yatırım yok",
+    "positionValue": "Değer: {{value}}",
+    "typeAmounts": "Değer: {{value}} · Maliyet: {{cost}}",
+    "ranking": "Varlık performansı",
+    "emptyNote": "İlk işleminizi ekleyerek portföyünüzü oluşturmaya başlayın.",
+    "filter": "Performans filtresi",
+    "scopeNote": "Dönem seçimi yalnızca üstteki grafiği değiştirir. Dağılım ve sıralamalar mevcut pozisyonları gösterir; kâr / zarar temettüleri ve kapanan pozisyonları içermez. Grafikteki değer artışı, tek başına yatırım getirisi değildir.",
+    "filters": {
+      "LOSERS": "Kaybettirenler",
+      "ALL": "Tümü",
+      "GAINERS": "Kazandıranlar"
+    },
+    "description": "Portföyünüzün dağılımını ve açık pozisyonlarınızın performansını inceleyin.",
+    "byTypeNote": "Çubuk uzunluğu kâr veya zararın tutarını gösterir.",
+    "noResults": "Bu grupta varlık yok",
+    "noResultsNote": "Başka bir performans filtresi seçebilirsiniz.",
+    "metric": "Sıralama ölçütü",
+    "byType": "Varlık türüne göre kâr / zarar",
+    "rankingNote": "Gerçekleşmemiş kâr / zarara göre sıralanır. Detay için varlık adına tıklayın."
+  },
+  "transfer": {
+    "description": "İşlemlerini dosyadan ekle veya kayıtlarının bir kopyasını indir.",
+    "local": "Dosyaların cihazında işlenir. Aktarım sırasında verilerin başka bir servise gönderilmez.",
+    "importTitle": "İçe aktar",
+    "exportTitle": "Dışa aktar",
+    "template": "Excel şablonunu indir",
+    "importDescription": "Şablonu doldur, dosyanı seç ve kayıtları eklemeden önce kontrol et.",
+    "choose": "Dosya seç",
+    "fileHint": "Excel (.xlsx) veya CSV · En fazla 5 MB ve 1.000 işlem",
+    "guide": "Şablon nasıl doldurulur?",
+    "guideText": "İlk sayfadaki sütun başlıklarını koru. Tarih: YYYY-AA-GG; saat: SS:DD. Saat boşsa 12:00 kabul edilir; aynı saatte dosya/kayıt sırası kullanılır. Saat sütunu olmayan eski dosyalar desteklenir. İşlem: BUY (alış), SELL (satış), BONUS (bedelsiz), SPLIT (bölünme), DIVIDEND (temettü). Alış/satış için adet, birim fiyat ve toplamdan en az ikisini doldur. Sayılarda binlik ayırıcı kullanma. TRY nakit işlemlerinde 1 TL’nin USD karşılığını USD kuru alanına yaz; bedelsiz ve bölünmede kur gerekmez. Temettü, hesabına geçen net toplam tutardır. Bölünme oranı: yeni adet / eski adet. Durum boş veya ACTIVE olmalı. Şablonda örnek işlem bulunmaz. Üç tutarı da yazarsan toplam farkı en fazla 0,01 olabilir.",
+    "catalog": "Desteklenen varlık kodları",
+    "review": "Dosya kontrolü",
+    "ready": "Eklenecek",
+    "skipped": "Atlanan",
+    "invalid": "Hatalı",
+    "line": "Satır",
+    "result": "Kontrol sonucu",
+    "valid": "Hazır",
+    "importAction": "{{count}} işlemi ekle",
+    "reset": "Dosyayı kaldır",
+    "atomic": "Hatalı satır varsa hiçbir kayıt eklenmez. Tekrar eden ve iptal edilmiş (VOIDED) kayıtlar atlanır. Mevcut kayıtlar değiştirilmez.",
+    "empty": "Dosyada işlem satırı yok.",
+    "done": "{{count}} işlem eklendi.",
+    "downloadDone": "Dosya indirmesi başlatıldı.",
+    "failed": "İşlem tamamlanamadı. Dosyayı kontrol edip tekrar dene.",
+    "balance": "{{asset}} için {{date}} tarihinde bakiye yetersiz. Hiçbir kayıt eklenmedi.",
+    "exportDescription": "İşlem kayıtlarını tarih aralığıyla indir. Excel ve CSV tüm alanları, PDF okunabilir işlem özetini içerir.",
+    "from": "Başlangıç tarihi",
+    "to": "Bitiş tarihi",
+    "includeVoided": "İptal edilen işlemler dahil",
+    "rangeError": "Başlangıç tarihi bitiş tarihinden sonra olamaz.",
+    "count": "{{count}} işlem indirilecek",
+    "noExport": "Bu aralıkta indirilecek işlem yok.",
+    "download": "{{format}} indir",
+    "reportTitle": "İşlem raporu",
+    "reportCount": "{{count}} işlem · Tutarlar işlem günündeki para birimi ve saklanan USD kuruyla gösterilir.",
+    "reportFooter": "Investulator · İşlem özeti · Ayrıntılı alanlar Excel/CSV dosyasında bulunur.",
+    "ACTIVE": "Aktif",
+    "VOIDED": "İptal",
+    "loading": "Dosya işleniyor…",
+    "session": "Bu sürümde eklenen işlemler sayfa yenilenene kadar saklanır. Pozisyon özetleri örnek veridir.",
+    "columns": {
+      "time": "Saat",
+      "date": "Tarih",
+      "asset": "Varlık kodu",
+      "type": "İşlem türü",
+      "quantity": "Adet",
+      "unitPrice": "Birim fiyat",
+      "totalAmount": "Toplam tutar",
+      "currency": "Para birimi",
+      "fee": "Komisyon",
+      "fxRate": "USD kuru",
+      "fxSource": "Kur kaynağı",
+      "platform": "Platform",
+      "note": "Not",
+      "splitRatio": "Bölünme oranı",
+      "status": "Durum"
+    },
+    "errors": {
+      "size": "Dosya 5 MB sınırını aşıyor.",
+      "format": "Yalnızca .xlsx ve .csv dosyaları desteklenir.",
+      "headers": "Sütun başlıkları şablonla eşleşmiyor. Güncel şablonu kullan.",
+      "limit": "Dosyada en fazla 1.000 işlem olabilir.",
+      "file": "Dosya okunamadı. Biçimini kontrol et.",
+      "formula": "Formül veya desteklenmeyen hücre türü var. Hücreleri düz değer olarak kaydet.",
+      "empty": "Dosya boş.",
+      "cell": "Bir hücre 1.000 karakter sınırını aşıyor.",
+      "date": "Geçersiz tarih. YYYY-AA-GG kullan.",
+      "asset": "Varlık kodu katalogda yok.",
+      "type": "İşlem türü geçersiz.",
+      "currency": "Para birimi USD veya TRY olmalı.",
+      "rate": "Kur kaynağı AUTO veya MANUAL olmalı; USD kuru 1 olmalı.",
+      "number": "Geçersiz sayı veya fazla uzun sayı.",
+      "values": "Zorunlu alan, pozitif tutar, tarih veya USD kurunu kontrol et.",
+      "status": "Durum ACTIVE, VOIDED veya boş olmalı.",
+      "voided": "İptal edilmiş; atlanacak.",
+      "duplicate": "Aynı kayıt mevcut veya dosyada tekrarlanıyor; atlanacak.",
+      "unused": "Bu işlem türüne ait olmayan tutar alanlarını boş bırak.",
+      "inconsistent": "Adet × birim fiyat ile toplam tutar uyuşmuyor."
+    }
+  }
+}

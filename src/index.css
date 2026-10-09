@@ -1,0 +1,74 @@
+/* Layer order: antd's styles (layer `antd`, see components/ui/ConfigProvider.tsx) sit above Tailwind's
+   base reset but below its components and utilities, so utility classes always win over antd. This
+   statement must come before the Tailwind import. */
+@layer theme, base, antd, components, utilities;
+
+@import 'tailwindcss';
+
+/* Semantic color utilities (bg-surface, text-fg-2, border-line, text-pos, ...).
+   The variables themselves are written on <html> by ThemeProvider for the active theme. */
+@theme inline {
+  --font-sans:
+    'Inter Variable', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+
+  --color-canvas: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+
+  --color-fg: var(--text);
+  --color-fg-2: var(--text-2);
+  --color-fg-3: var(--text-3);
+
+  --color-nav: var(--nav-bg);
+  --color-nav-fg: var(--nav-text);
+  --color-nav-fg-active: var(--nav-text-active);
+  --color-nav-active: var(--nav-active-bg);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+
+  --color-pos: var(--pos);
+  --color-pos-soft: var(--pos-soft);
+  --color-neg: var(--neg);
+  --color-neg-soft: var(--neg-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-chart-6: var(--chart-6);
+
+  --shadow-card: var(--shadow-1);
+  --shadow-overlay: var(--shadow-2);
+}
+
+@layer base {
+  /* Tailwind 4 resets buttons to the default cursor; everything clickable should show a hand. */
+  a[href]:not([aria-disabled='true']),
+  [role='link']:not([aria-disabled='true']),
+  label:has(input[type='radio']:not(:disabled)),
+  label:has(input[type='checkbox']:not(:disabled)),
+  label:has([role='switch']:not(:disabled)),
+  button:not(:disabled),
+  select:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+}

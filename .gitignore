@@ -1,0 +1,27 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.sw?
+
+# Local secrets and generated artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+.claude/
+public/__report.pdf
