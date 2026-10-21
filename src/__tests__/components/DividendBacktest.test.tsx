@@ -7,7 +7,7 @@ import { i18n } from '@/i18n';
 
 describe('DividendBacktest', () => {
   it.each(['tr', 'en'])(
-    'shows historical results and explains both annual measures in %s',
+    'blocks unverified historical results and retains educational explanations in %s',
     async (lng) => {
       await i18n.changeLanguage(lng);
       renderWithProviders(
@@ -20,10 +20,14 @@ describe('DividendBacktest', () => {
           }),
         ).toBeVisible();
       }
-      expect(screen.getAllByText(i18n.t('backtest.xirr'))).toHaveLength(3);
+      expect(
+        screen.getAllByText(i18n.t('analysis.historyIssues.COVERAGE')),
+      ).toHaveLength(3);
       expect(screen.getByText(i18n.t('backtest.explanation'))).toBeVisible();
       expect(screen.queryByRole('textbox')).not.toBeInTheDocument();
-      expect(screen.getAllByText(i18n.t('backtest.trace'))).toHaveLength(3);
+      expect(
+        screen.queryByText(i18n.t('backtest.trace')),
+      ).not.toBeInTheDocument();
     },
   );
 

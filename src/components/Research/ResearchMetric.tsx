@@ -1,7 +1,7 @@
 import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
-import { calculateResearch } from '@/lib/researchCalculations';
+import { metricResult, getAnalysis } from '@/services/analysis';
 import { formatQuantity } from '@/lib/formatNumber';
 import { divideDecimals } from '@/lib/decimal';
 
@@ -26,12 +26,59 @@ export function ResearchMetric({
     : fact
       ? [fact]
       : [];
-  const value = calculation
-    ? calculateResearch(calculation, report.facts)
-    : fact?.value;
+  const result = metricResult(report, id);
+  const value = result.value;
   const unit = calculation?.unit ?? fact?.unit;
   if (!value || !unit) {
-    return <p>{t('research.missing')}</p>;
+    return (
+      <article className="min-w-0 rounded-xl border border-line bg-surface p-4">
+        <h3 className="text-sm text-fg-2">
+          {t(`research.metrics.${id}`, { defaultValue: id })}
+        </h3>
+        <p className="mt-2 font-medium text-warn">{t('analysis.blocked')}</p>
+        <ul className="mt-2 text-sm text-fg-2">
+          {result.issues.map((issue) => (
+            <li key={issue}>{t(`analysis.issues.${issue}`)}</li>
+          ))}
+        </ul>
+        {explain && (
+          <p className="mt-3 text-sm leading-7">
+            {t(`${report.contentKey}.education.${id}`)}
+          </p>
+        )}
+        <details className="mt-3 text-xs">
+          <summary className="text-primary">
+            {t('research.calculationDetails')}
+          </summary>
+          {calculation && (
+            <p className="mt-2">{t(`research.formulas.${id}`)}</p>
+          )}
+          {inputs.map((input) => (
+            <p key={input.id} className="mt-2 break-words">
+              {t(`research.metrics.${input.id}`)}: {input.value} {input.unit} ·{' '}
+              {input.period} · {input.sourceId}
+            </p>
+          ))}
+          <p className="mt-2">{t('analysis.unverifiedInputs')}</p>
+          {i18n.exists(`${report.contentKey}.education.${id}`) && (
+            <p className="mt-2">{t(`${report.contentKey}.education.${id}`)}</p>
+          )}
+          {report.sources
+            .filter((s) => inputs.some((input) => input.sourceId === s.id))
+            .map((s) => (
+              <a
+                key={s.id}
+                href={s.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-2 block break-words text-primary underline"
+              >
+                {s.title}
+              </a>
+            ))}
+        </details>
+      </article>
+    );
   }
   const display =
     unit === 'TRY' ? divideDecimals(value, '1000000000', 2) : value;
@@ -57,6 +104,11 @@ export function ResearchMetric({
         <summary className="cursor-pointer font-medium text-primary">
           {t('research.calculationDetails')}
         </summary>
+        <p className="mt-2">
+          {t(
+            `analysis.earnings.${getAnalysis(report)?.contracts.find((c) => c.id === id)?.earningsBasis ?? 'REPORTED'}`,
+          )}
+        </p>
         {calculation && (
           <p className="mt-3 break-words rounded-lg bg-surface-2 p-3 font-mono leading-relaxed">
             {t(`research.formulas.${id}`)}
@@ -81,9 +133,11 @@ export function ResearchMetric({
             {t(`research.units.${unit}`)}
           </p>
         )}
-        <p className="mt-3 leading-relaxed text-fg-2">
-          {t(`${report.contentKey}.education.${id}`)}
-        </p>
+        {i18n.exists(`${report.contentKey}.education.${id}`) && (
+          <p className="mt-3 leading-relaxed text-fg-2">
+            {t(`${report.contentKey}.education.${id}`)}
+          </p>
+        )}
       </details>
       <div className="mt-3 flex flex-wrap gap-2 text-xs">
         {sourceIds.map((sourceId) => {

@@ -10,7 +10,15 @@ export interface ResearchSource {
 export interface ResearchFact {
   readonly id: string;
   readonly value: string;
-  readonly unit: 'TRY' | 'TRY_SHARE' | 'SHARES' | 'USD_BARREL' | 'PERCENT';
+  readonly unit:
+    | 'TRY'
+    | 'TRY_SHARE'
+    | 'USD'
+    | 'USD_SHARE'
+    | 'SHARES'
+    | 'USD_BARREL'
+    | 'PERCENT'
+    | 'MULTIPLE';
   readonly period: string;
   readonly sourceId: string;
 }
@@ -27,7 +35,8 @@ export interface ResearchCalculation {
     | 'MEAN'
     | 'PRODUCT_OVER_SUM';
   readonly inputs: readonly string[];
-  readonly unit: 'TRY' | 'TRY_SHARE' | 'PERCENT' | 'MULTIPLE';
+  readonly unit:
+    'TRY' | 'TRY_SHARE' | 'USD' | 'USD_SHARE' | 'PERCENT' | 'MULTIPLE';
   readonly precision: number;
 }
 

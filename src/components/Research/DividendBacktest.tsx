@@ -147,9 +147,16 @@ export function DividendBacktest({
                   </details>
                 </>
               ) : (
-                <p className="mt-4 text-sm leading-7">
-                  {t(`backtest.status.${row?.status ?? 'MISSING_DATA'}`)}
-                </p>
+                <div className="mt-4 text-sm leading-7">
+                  <p>{t(`backtest.status.${row?.status ?? 'MISSING_DATA'}`)}</p>
+                  <ul>
+                    {row?.issues?.map((issue) => (
+                      <li key={issue}>
+                        {t(`analysis.historyIssues.${issue}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </article>
           );

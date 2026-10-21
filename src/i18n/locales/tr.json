@@ -373,29 +373,104 @@
     "historyNote": "Tutarlar işlemin yapıldığı para biriminde, dolar karşılıkları ise işlemde kayıtlı kurla gösterilir."
   },
   "analysis": {
-    "metrics": {
-      "PERCENT": "Kâr / zarar yüzdesi",
-      "AMOUNT": "Kâr / zarar tutarı"
+    "title": "Analiz doğrulaması ve veri kalitesi",
+    "blocked": "Hesaplama doğrulanamadı",
+    "verified": "Kaynak kalemi doğrulandı",
+    "profile": "İş modeli profili",
+    "scale": "Birim çarpanı",
+    "counts": "{{total}} hesaplamanın {{passed}} tanesi veri kontrollerini geçti. Bu, raporun tamamının onaylandığı anlamına gelmez.",
+    "reviewNotice": "Bu bir tarihsel araştırma snapshot’ıdır. Aşağıdaki eski anlatım ve fiyat yorumları önceki rapordan korunmuştur; doğrulanamayan rakamlar güncel/denetlenmiş sonuç sayılmaz. Hesap kartlarındaki doğrulama durumları esas alınır. KAP taraması ve uzun dönem kaynak incelemesi kısmi; bağımsız denetim yapılmadı.",
+    "auditTrail": "Kaynak, dönem ve muhasebe bazını incele",
+    "unverifiedInputs": "Bu girdiler önceki kaynak kaydıdır; doğrulanmış sonuç üretmek için kullanılamaz.",
+    "cashBridge": "Şirketin net finansal borç tanımı: 68,200679 milyar TL borç − 167,355286 milyar TL bloke hariç nakit − 3,077642 milyar TL finansal yatırım = −102,232249 milyar TL; negatif değer net nakit demektir. Toplam nakdin tamamı serbest değildir. İşletme sermayesi nakde 28,497347 milyar TL katkı yapmıştır; bunun her yıl tekrarlanması beklenemez. İşletme nakdi eksi yatırım harcaması normalize FCF değildir; finansman altında raporlanan türev/faiz akışları ve büyüme/bakım yatırımı ayrımı ayrıca değerlendirilmelidir.",
+    "missingInput": "Eksik/doğrulanmamış girdi: {{input}}",
+    "profiles": {
+      "REFINING": "Rafineri",
+      "AUTOMOTIVE": "Otomotiv",
+      "INDUSTRIAL": "Sanayi",
+      "BANK": "Banka",
+      "REIT": "GYO",
+      "BROKER": "Aracı kurum",
+      "TECHNOLOGY": "Teknoloji",
+      "CRYPTO": "Kripto",
+      "FUND": "Fon",
+      "UNSUPPORTED": "Profil tanımlanmamış"
     },
-    "empty": "Analiz için henüz yatırım yok",
-    "positionValue": "Değer: {{value}}",
-    "typeAmounts": "Değer: {{value}} · Maliyet: {{cost}}",
-    "ranking": "Varlık performansı",
-    "emptyNote": "İlk işleminizi ekleyerek portföyünüzü oluşturmaya başlayın.",
-    "filter": "Performans filtresi",
-    "scopeNote": "Dönem seçimi yalnızca üstteki grafiği değiştirir. Dağılım ve sıralamalar mevcut pozisyonları gösterir; kâr / zarar temettüleri ve kapanan pozisyonları içermez. Grafikteki değer artışı, tek başına yatırım getirisi değildir.",
-    "filters": {
-      "LOSERS": "Kaybettirenler",
-      "ALL": "Tümü",
-      "GAINERS": "Kazandıranlar"
+    "scope": {
+      "CONSOLIDATED": "Konsolide",
+      "SOLO": "Solo",
+      "MARKET": "Piyasa/pay verisi"
     },
-    "description": "Portföyünüzün dağılımını ve açık pozisyonlarınızın performansını inceleyin.",
-    "byTypeNote": "Çubuk uzunluğu kâr veya zararın tutarını gösterir.",
-    "noResults": "Bu grupta varlık yok",
-    "noResultsNote": "Başka bir performans filtresi seçebilirsiniz.",
-    "metric": "Sıralama ölçütü",
-    "byType": "Varlık türüne göre kâr / zarar",
-    "rankingNote": "Gerçekleşmemiş kâr / zarara göre sıralanır. Detay için varlık adına tıklayın."
+    "attribution": {
+      "GROUP": "Grup toplamı",
+      "PARENT": "Ana ortaklık",
+      "SHARE": "Pay bazında"
+    },
+    "earnings": {
+      "REPORTED": "Raporlanan dönem verisi; gerçek TTM veya normalize kazanç değildir.",
+      "ANNUALIZED_ESTIMATE": "Yıllıklandırılmış tahmin: altı aylık kâr × 2; gerçekleşmiş son 12 ay kârı değildir.",
+      "NORMALIZED": "Varsayımları açıklanmış normalize veri",
+      "TTM": "Uyumlu dört çeyrekten son 12 ay"
+    },
+    "issues": {
+      "UNVERIFIED": "Kaynak veya veri bazı henüz doğrulanmadı.",
+      "CONFLICT": "Kaynaklar arasında çözülmemiş çelişki var.",
+      "SOURCE": "Kaynak/inceleme kanıtı eksik.",
+      "NUMBER": "Geçersiz sayısal veri.",
+      "PERIOD": "Finansal dönemler uyumsuz.",
+      "SCALE": "Birim ölçeği uyumsuz; açık dönüşüm gerekli.",
+      "BASIS": "Konsolidasyon, atıf veya muhasebe bazı uyumsuz.",
+      "CURRENCY": "Para birimleri uyumsuz.",
+      "SHARE_BASIS": "Fiyat, pay ve temettü bazı doğrulanmadı.",
+      "MISSING": "Gerekli veri veya hesap sözleşmesi eksik.",
+      "DUPLICATE": "Tekrarlanan veri kimliği var.",
+      "UNIT": "Finansal birimler yönteme uygun değil.",
+      "ARITHMETIC": "Sıfır payda veya yönteme uygun olmayan sayısal girdi.",
+      "NOT_APPLICABLE": "Bu yöntem seçili iş modeline uygun değil.",
+      "ASSUMPTIONS": "Kaynaklı normalizasyon ve senaryo varsayımları eksik.",
+      "METHOD_PENDING": "Bu yöntemin hesap stratejisi henüz uygulanmadı."
+    },
+    "historyIssues": {
+      "COVERAGE": "Bağımsız doğrulanmış işlem günü, temettü ve kurumsal işlem kapsamı bulunmuyor. Önceki yaklaşık sonucu doğrulanmış hesap olarak göstermiyoruz.",
+      "UNVERIFIED": "Tarihsel veri incelemesi kısmi.",
+      "CONFLICT": "Tarihsel kaynak çelişkisi var.",
+      "LISTING": "Kotasyon başlangıcı modelde doğrulanmadı.",
+      "SHARE_BASIS": "Fiyat ve temettü düzeltme bazı eksik/uyumsuz.",
+      "SOURCE": "İşlem kaynakları eksik.",
+      "FX": "İşlem kuru veya gerçek kur tarihi geçersiz.",
+      "SESSIONS": "Beklenen işlem günleriyle fiyat kayıtları örtüşmüyor.",
+      "ACTIONS": "Kurumsal işlem veya düzeltme faktörü doğrulanamıyor.",
+      "DIVIDENDS": "Temettü takvimi doğrulanmış olay listesiyle uyuşmuyor.",
+      "PERIOD": "Kesim tarihi geçerli bir takvim ayı sonu değil."
+    },
+    "methods": {
+      "EV_EBITDA": "Normalize FD/FAVÖK",
+      "FCF": "Serbest nakit akışı değerlemesi",
+      "BOOK_ROE": "Özkaynak ve sürdürülebilir kârlılık",
+      "NAV": "Net aktif değer"
+    },
+    "inputs": {
+      "normalizedEbitda": "normalize FAVÖK",
+      "peerEvEbitda": "uygun emsal/tarihsel FD/FAVÖK",
+      "valuationNetDebt": "değerleme kapsamındaki net borç köprüsü",
+      "shares": "değerleme tarihindeki pay sayısı",
+      "normalizedFcf": "normalize serbest nakit akışı",
+      "discountRate": "iskonto oranı",
+      "terminalGrowth": "uzun dönem büyüme oranı",
+      "investmentPlan": "yatırım planı",
+      "parentEquity": "ana ortaklık özkaynağı",
+      "sustainableRoe": "sürdürülebilir özkaynak kârlılığı",
+      "costOfEquity": "özkaynak maliyeti",
+      "capitalAdequacy": "sermaye yeterliliği",
+      "netAssetValue": "net aktif değer",
+      "appraisalDate": "ekspertiz tarihi"
+    },
+    "limits": {
+      "EV_EBITDA": "Rafineri marjı, stok etkileri ve döngü normalize edilmeden tek dönem FAVÖK ile hedef fiyat verilmez. Emsallerin kiralama ve borç kapsamları tutarlı olmalı.",
+      "FCF": "Bakım/büyüme yatırımları ve işletme sermayesi ayrılmadan mevcut nakit farkı geleceğe taşınmaz.",
+      "BOOK_ROE": "Sermaye ve aktif kalitesiyle birlikte değerlendirilir; düşük PD/DD tek başına ucuzluk değildir.",
+      "NAV": "Ekspertiz tarihi, borç kapsamı ve varlıkların satılabilirliği sonucu etkiler."
+    }
   },
   "transfer": {
     "description": "İşlemlerini dosyadan ekle veya kayıtlarının bir kopyasını indir.",
@@ -638,7 +713,9 @@
       "SHARES": "pay",
       "USD_BARREL": "USD / varil",
       "PERCENT": "%",
-      "MULTIPLE": "kat"
+      "MULTIPLE": "kat",
+      "USD": "USD",
+      "USD_SHARE": "USD/share"
     },
     "metrics": {
       "price": "Tarihli kapanış fiyatı",
@@ -684,7 +761,11 @@
       "fxAfterNatural": "Doğal korunma sonrası net döviz pozisyonu",
       "priceBook": "PD/DD — dönem farkı içerir",
       "peHalfYear": "Fiyat / 6 aylık kâr — yıllık F/K değildir",
-      "peRunRate": "F/K senaryosu — 6 aylık kâr × 2"
+      "peRunRate": "F/K senaryosu — 6 aylık kâr × 2",
+      "cashAvailable": "Bloke hariç nakit",
+      "financialInvestments": "Net borç kapsamındaki finansal yatırımlar",
+      "netFinancialDebt": "Şirket tanımıyla net finansal borç",
+      "workingCapitalCash": "İşletme sermayesinin nakit katkısı"
     },
     "formulas": {
       "revenueGrowth": "(Hasılat − önceki hasılat) ÷ önceki hasılat × 100",

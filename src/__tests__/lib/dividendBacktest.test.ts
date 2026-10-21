@@ -3,8 +3,52 @@ import type { DividendHistory } from '@/domain/dividendHistory';
 import { backtestDividends } from '@/lib/dividendBacktest';
 import { addDecimals } from '@/lib/decimal';
 
-function fixture(): DividendHistory {
+function seal(h: DividendHistory): DividendHistory {
+  const quotes = h.quotes.map((q) => ({
+    ...q,
+    rawClose: q.close,
+    fxDate: q.date,
+    priceSourceId: 'fake',
+    fxSourceId: 'fake',
+    shareBasisId: 'basis',
+  }));
+  const dividends = h.dividends.map((d) => ({
+    ...d,
+    rawGrossPerShare: d.grossPerShare,
+    shareBasisId: 'basis',
+  }));
   return {
+    ...h,
+    quotes,
+    dividends,
+    sources: [
+      {
+        id: 'fake',
+        title: 'Fictional monthly exchange',
+        url: 'https://example.invalid',
+      },
+    ],
+    integrity: {
+      status: 'VERIFIED',
+      from: '2006-01-01',
+      to: h.asOf,
+      sourceIds: ['fake'],
+      shareBasisId: 'basis',
+      shareBasisDate: h.asOf,
+      calendarSourceId: 'fake',
+      listingSourceId: 'fake',
+      dividendsSourceId: 'fake',
+      actionsSourceId: 'fake',
+      sessions: quotes.map((q) => q.date),
+      expectedDividends: dividends,
+      actions: [],
+      fxCarryDays: 0,
+    },
+  };
+}
+
+function fixture(): DividendHistory {
+  return seal({
     assetId: 'fictional-equity',
     asOf: '2025-12-31',
     retrievedAt: '2026-01-01',
@@ -21,7 +65,7 @@ function fixture(): DividendHistory {
       close: '10',
       fx: '1',
     })),
-  };
+  });
 }
 
 describe('historical dividend backtest', () => {
@@ -42,7 +86,7 @@ describe('historical dividend backtest', () => {
 
   it('fixes entitlement before ex-date purchases, waits for payment and counts unpaid receivables', () => {
     const result = backtestDividends(
-      {
+      seal({
         ...fixture(),
         dividends: [
           {
@@ -60,7 +104,7 @@ describe('historical dividend backtest', () => {
             sourceId: 'fake',
           },
         ],
-      },
+      }),
       10,
     );
     const payments = result.entries.filter((e) => e.kind === 'DIVIDEND');
@@ -137,9 +181,9 @@ describe('historical dividend backtest', () => {
         10,
       ).status,
     ).toBe('MISSING_DATA');
-    expect(() =>
-      backtestDividends({ ...history, asOf: '2025-12-15' }, 10),
-    ).toThrow('Backtest requires a calendar month-end');
+    expect(
+      backtestDividends({ ...history, asOf: '2025-12-15' }, 10).status,
+    ).toBe('MISSING_DATA');
     expect(() => backtestDividends(history, 5)).toThrow('Unsupported horizon');
   });
 
@@ -148,11 +192,103 @@ describe('historical dividend backtest', () => {
     const result = backtestDividends(
       {
         ...history,
+        currency: 'TRY',
         quotes: history.quotes.map((q) => ({ ...q, fx: '2' })),
       },
       10,
     );
     expect(result.balance).toBe('10000.00');
     expect(result.dividends).toBe('0.00');
+  });
+});
+
+describe('history integrity regressions', () => {
+  it('rejects removed dividend records despite unchanged monthly quote count', () => {
+    const h = seal({
+      ...fixture(),
+      dividends: [
+        {
+          id: 'payment',
+          exDate: '2016-02-29',
+          payDate: '2016-03-31',
+          grossPerShare: '1',
+          sourceId: 'fake',
+        },
+      ],
+    });
+    expect(backtestDividends(h, 10).status).toBe('COMPLETE');
+    expect(backtestDividends({ ...h, dividends: [] }, 10).issues).toContain(
+      'DIVIDENDS',
+    );
+  });
+  it('rejects shifted month-end prices even when record counts match', () => {
+    const h = fixture();
+    expect(
+      backtestDividends(
+        {
+          ...h,
+          quotes: h.quotes.map((q) =>
+            q.date === '2025-08-31' ? { ...q, date: '2025-08-28' } : q,
+          ),
+        },
+        10,
+      ).issues,
+    ).toContain('SESSIONS');
+  });
+  it('verifies split/bonus basis and rejects double adjustment or unsupported actions', () => {
+    const h = fixture();
+    if (!h.integrity) {
+      throw new Error('Missing fixture manifest');
+    }
+    const action = {
+      date: '2020-01-01',
+      factor: '2',
+      type: 'BONUS' as const,
+      sourceId: 'fake',
+    };
+    const split = {
+      ...h,
+      quotes: h.quotes.map((q) => ({
+        ...q,
+        rawClose: q.date < action.date ? '20' : '10',
+      })),
+      integrity: { ...h.integrity, actions: [action] },
+    };
+    expect(backtestDividends(split, 10).balance).toBe(
+      backtestDividends(h, 10).balance,
+    );
+    expect(
+      backtestDividends(
+        { ...split, quotes: split.quotes.map((q) => ({ ...q, close: '5' })) },
+        10,
+      ).issues,
+    ).toContain('ACTIONS');
+    expect(
+      backtestDividends(
+        {
+          ...split,
+          integrity: {
+            ...split.integrity,
+            actions: [{ ...action, type: 'UNSUPPORTED' }],
+          },
+        },
+        10,
+      ).issues,
+    ).toContain('ACTIONS');
+  });
+  it('rejects unreviewed coverage, absent listing and future FX observations', () => {
+    const h = fixture();
+    expect(
+      backtestDividends({ ...h, integrity: undefined }, 10).issues,
+    ).toContain('COVERAGE');
+    expect(backtestDividends({ ...h, listedFrom: null }, 10).issues).toContain(
+      'LISTING',
+    );
+    expect(
+      backtestDividends(
+        { ...h, quotes: h.quotes.map((q) => ({ ...q, fxDate: '2030-01-01' })) },
+        10,
+      ).issues,
+    ).toContain('FX');
   });
 });

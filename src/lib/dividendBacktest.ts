@@ -10,8 +10,16 @@ import {
   roundDecimal,
   subtractDecimals,
 } from '@/lib/decimal';
+import { historyIssues } from '@/lib/historyIntegrity';
 
 export interface BacktestEntry {
+  readonly priceSourceId?: string;
+  readonly fxSourceId?: string;
+  readonly fxDate?: string;
+  readonly dividendId?: string;
+  readonly dividendSourceId?: string;
+  readonly exDate?: string;
+  readonly payDate?: string;
   readonly date: string;
   readonly kind: 'CONTRIBUTION' | 'DIVIDEND';
   readonly usd: string;
@@ -21,6 +29,7 @@ export interface BacktestEntry {
 }
 
 export interface BacktestResult {
+  readonly issues?: readonly string[];
   readonly years: number;
   readonly from: string;
   readonly to: string;
@@ -101,7 +110,15 @@ export function backtestDividends(
     end.toISOString().slice(0, 10) !== history.asOf ||
     new Date(end.getTime() + 86400000).getUTCDate() !== 1
   ) {
-    throw new Error('Backtest requires a calendar month-end');
+    return {
+      years,
+      from: '',
+      to: history.asOf,
+      invested: String(years * 1000),
+      entries: [],
+      status: 'MISSING_DATA',
+      issues: ['PERIOD'],
+    };
   }
   const from = new Date(
     Date.UTC(end.getUTCFullYear() - years, end.getUTCMonth() + 1, 1),
@@ -120,6 +137,14 @@ export function backtestDividends(
   }
   if (history.verifiedFrom > from) {
     return { ...base, status: history.unavailableReason };
+  }
+  const issues = historyIssues(history, from);
+  if (issues.length) {
+    return {
+      ...base,
+      status: issues.includes('CONFLICT') ? 'SOURCE_CONFLICT' : 'MISSING_DATA',
+      issues,
+    };
   }
   const quotes = history.quotes.filter(
     (q) => q.date >= from && q.date <= history.asOf,
@@ -189,6 +214,13 @@ export function backtestDividends(
         shares = addDecimals([shares, units]);
         reinvested = addDecimals([reinvested, usd]);
         entries.push({
+          priceSourceId: quote.priceSourceId,
+          fxSourceId: quote.fxSourceId,
+          fxDate: quote.fxDate,
+          dividendId: id,
+          dividendSourceId: events.find((d) => d.id === id)?.sourceId,
+          exDate: events.find((d) => d.id === id)?.exDate,
+          payDate: payment.date,
           date: quote.date,
           kind: 'DIVIDEND',
           usd,
@@ -209,6 +241,9 @@ export function backtestDividends(
       );
       shares = addDecimals([shares, units]);
       entries.push({
+        priceSourceId: quote.priceSourceId,
+        fxSourceId: quote.fxSourceId,
+        fxDate: quote.fxDate,
         date: quote.date,
         kind: 'CONTRIBUTION',
         usd,

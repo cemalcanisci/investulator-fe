@@ -6,37 +6,35 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-20
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-21
 
-### Aktif ekran: Araştırma detayı — tarihsel temettü hesabı değerlendirmede
+### Aktif çalışma: A–C finansal analiz uygulaması — kullanıcı değerlendirmesi
 
-- Kullanıcı ileriye yönelik varsayım hesaplayıcısını düzeltti: son 10/15/20 yılda yılda 1.000 USD aylık yatırım ve temettünün yeniden yatırılması isteniyor. Yaklaşık tarihsel karşılaştırmayı kabul etti; bütün BIST/yabancı temettü hisselerinde bu kapsam zorunlu.
-- `DividendProjection` ve eski varsayım motoru/testleri kaldırıldı. `DividendBacktest`, `lib/dividendBacktest.ts`, `domain/dividendHistory.ts`, `services/dividendHistory.ts` ortak yapı. UI TR/EN, kaynak ve yöntem açıklaması, katkı/değer/kâr/toplam getiri, toplam getiri÷yıl, XIRR ve açılır işlem dökümü içerir.
-- TUPRS ayrı araştırma snapshot'ı `data/research/tuprs-dividend-history.json`: 30 Eylül 2026 kesimi, 20 Ekim derlemesi; 2006/2011/2016 Ekim başlangıçları. 5.115 günlük fiyat/kur, kaynaklı temettü takvimi. Tamamlanan aylarda 120/180/240 katkı; brüt temettü, kesirli pay, sıfır vergi/komisyon. Son ödenmemiş temettü alacakta; yeniden yatırılmış sayılmaz.
-- Yaklaşık son değerler 10y 38.186,17 USD, 15y 65.135,46 USD, 20y 115.332,70 USD. Basit ortalamalar %28,19/%22,28/%23,83; XIRR %25,61/%17,86/%15,42. Gelecek tahmini veya kişisel net getiri değildir.
-- Kaynak incelemesi PARTIAL / NEEDS_REVIEW, aynı ajan. 2023 Eylül sağlayıcı temettü farkı şirket raporuyla düzeltildi; 2008 teklif/nihai kayıt tekilleştirildi. Günlük kurda London gün eşleştirmesi, tatillerde en çok dört gün önceki kur. Ayrıntı `../outputs/research-20261020/INCELEME.md`.
-- Katalog kimliğiyle eşleşme; başka hisseye TUPRS verisi verilmez. Eksik kaynak ile kısa borsa geçmişi ayrı; sıfır sonuç uydurulmaz. Portföy/işlem matematiği ve mock/user/research ayrımı korunur. Kriptoda yeni temettü bileşeni gösterilmez.
-- Kullanıcının her temettü hissesi için açık talebi üç canonical skill'e eklendi; Codex/Claude kopyaları senkron. V3 uzun vade/fırsat sunumunun diğer kapsamı ayrıca onay bekler.
-- Önceki v1/v2/v3 kaynak raporları değişmedi; `/stratejiler` seçim kaldırma ve örnek/kullanıcı ayrımı korunuyor. Backend kalıcılığı/runtime AI yok; Keycloak ertelendi.
+- Kullanıcı A–C paketlerini onayladı; generic altyapı ve zorunlu veri bütünlüğü öncelikli. Backend/Keycloak/runtime AI, başka hisse, commit/push kapsam dışı.
+- Yeni domain/analysis.ts FinancialFact/FactBasis/CalculationResult/AnalysisReport; lib/analysisSchema.ts yerel JSON şema kapısı; analysisValidation.ts kaynak/dönem/para/ölçek/kapsam/muhasebe kontrolü. Mevcut researchCalculations decimal formülleri korunuyor; UI metricResult kapısından geçiyor.
+- analysisProfiles iş modeli kayıtları; valuation genel yöntem arayüzü ve normalize EV/FAVÖK hesap stratejisi. Diğer yöntemler girdi sözleşmesi/METHOD_PENDING; gerçek veri yoksa hedef fiyat yok. financialPeriods dört uyumlu çeyrek TTM yardımcı modülü.
+- analysis-reports.json bağımsız TUPRS v4; eski TS v1/v2/v3 arşiv. services/analysis + AnalysisRepository yerel adapter, kopyalanmış snapshot ve başarısız yenilemede koruma; compareReports değer/kanıt farkını ayırır.
+- historyIntegrity ayrı seans/temettü/aksiyon manifesti ve ham-düzeltilmiş baz kontrolü. dividendBacktest kur kaynak/tarihi ve temettü olay izini deftere ekler; eksik kapsam COMPLETE olmaz. Eski TUPRS JSON'unda manifest olmadığından 10/15/20 yıl MISSING_DATA/COVERAGE. Yaklaşık eski kanıt dosyası korunur.
+- ResearchMetric kontrollü engel, AnalysisQuality kaynak/baz paneli, ProfileValuation yöntem/eksik girdiler; ResearchPage profile göre ana metrikler ve nakit kapsamı. Eski finansal/borç/teknik/KAP/eğitim anlatımı arşiv uyarısıyla korunur; doğrulanmamış borç alt toplamı yeniden hesaplanmaz. TR/EN güncellendi.
 
 ### Doğrulama
 
-- TypeScript/üretim derlemesi başarılı; mevcut büyük paket uyarısı sürüyor. Lint yalnız önceki üç mock tipi uyarısıyla tamamlandı.
-- Aritmetik yeniden üretim: `node outputs/research-20261020/prepare-history.cjs`; çıktılar `backtest-evidence.json`. Bu Vitest çalıştırması değildir.
-- Test kodları eklendi; **Vitest/coverage çalıştırılmadı**, %80 yeni kapsam ölçülmedi. Skill kopya kontrolü başarılı.
-- Ayrı 5199 sunucusu ve geçici headless Chrome profiliyle 375/640/768/1024/1440 ölçülerinde yatay taşma kontrolü; mobil, masaüstü, koyu tema ekran görüntüleri `../outputs/research-20261020/` altında. CUA bağlantısı kapalıydı; Chrome protokolüyle doğrulandı. Kullanıcının 5173 sunucusuna dokunulmadı.
+- TypeScript/üretim build başarılı, mevcut bundle boyutu uyarısı sürüyor. Lint başarılı, önceki transfer testlerinde üç mock tipi uyarısı.
+- Yeni analysis.test.ts, financialPeriods.test.ts; güncellenen dividendBacktest, araştırma servis/sayfa ve DividendBacktest UI testleri. Kullanıcı politikasına göre Vitest/coverage çalıştırılmadı; %80 iddiası yok.
+- Salt okunur son rapor tekrarı ../outputs/analysis-audit-20261021/final-review.cjs → final-evidence.json: 7 PASS, 9 BLOCKED. Borç 68.200.679.000 ve nakit proxy 120.508.319.000 TL korunur. Aynı motorun tekrarı bağımsız denetim değildir.
+- 5199 ayrı sunucu; CUA Chrome FrameTree/navigasyon zaman aşımı, IAB yok. Gerçek tarayıcı/beş boyut/tema kabulü tamamlanamadı. 5173 kullanıcı sunucusuna dokunulmadı.
 
-### Sırada
+### Açık kalanlar / sırada
 
-1. Kullanıcı tarihsel hesap sunumunu değerlendirecek; başka sayfa/Keycloak'a geçme.
-2. Yeni araştırma talimatında yeni tarihli snapshot üret; eski kaynak sürümlerini koru. Bütün temettü hisselerinde aynı kapsamı uygula.
-3. Uzun dönem nakit/dağıtım, değerleme ve KAP eklerini tamamla. Backend kalıcılığı sonraki aşamada. Commit/push yapılmadı.
-
-Ayrıntılı yöntem: `../TEMETTU_BIRIKIM_HESABI.md`.
+- Kullanıcı değerlendirmesini bekle. Tam 15 bulgu durumu ../FINANSAL_ANALIZ_UYGULAMA_SONUCU.md; yöntem sınırları ../FINANSAL_ANALIZ_TEKNIK.md. Kök CLAUDE kalıcı kuralları iki araç için tek kaynak.
+- Tam tarihsel manifest ve kurumsal işlem/fiyat teyidi, 5 yıllık seri/akran, TUPRS gerçek TTM, normalize FCF/değerleme, geniş teknik göstergeler, tam KAP ek taraması açık. Bunları tamamlanmış sayma; yeni onay olmadan başka hisse/feature'a geçme.
+- Önceki şirket/özet anlatımı onayları ve portföy/strateji ayrımı korunuyor. Otomatik commit/push yapılmadı.
 
 ---
 
 ## GEÇMİŞ
+
+- **2026-10-21 — Codex:** 15 bulgu için kod/kaynak denetimi ve ortak analiz mimarisi planlandı; üç doğrulama açığı salt okunur tekrar ile belgelendi. Üretim uygulaması kullanıcı onayı bekliyor; ayrıntı kök denetim belgesinde.
 
 _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 
@@ -66,3 +64,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-20 — Codex:** Aylık USD katkı ve temettü yeniden yatırım hesaplayıcısı eklendi; basit kâr/yıl ile yıllık bileşik model getirisi ayrıldı. Testler yazıldı; otomatik çalıştırılmadı.
 
 - **2026-10-20 — Codex:** Kullanıcı düzeltmesiyle gelecek projeksiyonu kaldırıldı; TUPRS 10/15/20 yıllık kaynaklı yaklaşık tarihsel birikim, ödeme günü yeniden yatırım, XIRR, eksik geçmiş durumları ve TR/EN ortak bileşen eklendi. Tüm temettü hisseleri kapsamı üç skill’e aktarıldı; testler yazıldı, otomatik çalıştırılmadı.
+
+- **2026-10-21 — Codex:** A–C: ortak analiz sözleşmesi/doğrulama/profiller, TUPRS v4 yerel JSON, backtest bütünlük kapısı ve TR/EN detay ekranı uygulandı. Test kodları yazıldı, otomatik çalıştırılmadı; 15 bulgu yeniden denetimi ve açık riskler belgelendi.

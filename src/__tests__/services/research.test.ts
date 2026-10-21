@@ -12,7 +12,12 @@ describe('file research service', () => {
     expect(await fetchResearch('TUPRS')).toEqual([]);
     expect(await fetchResearch('watch-crypto-candidate-ai')).toEqual([]);
     const reports = await fetchResearch('watch-bist-tuprs');
-    expect(reports).toEqual([tuprsReportV3, tuprsReportV2, tuprsReport]);
+    expect(reports[0].id).toBe('tuprs-2026-10-21-v4');
+    expect(reports.slice(1)).toEqual([
+      tuprsReportV3,
+      tuprsReportV2,
+      tuprsReport,
+    ]);
     expect(reports[0]).not.toBe(tuprsReport);
     expect(reports[0]?.facts).not.toBe(tuprsReport.facts);
   });

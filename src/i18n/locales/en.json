@@ -373,29 +373,104 @@
     "historyNote": "Amounts use the transaction currency. USD equivalents use the exchange rate saved with each transaction."
   },
   "analysis": {
-    "metrics": {
-      "PERCENT": "Profit / loss percentage",
-      "AMOUNT": "Profit / loss amount"
+    "title": "Analysis validation and data quality",
+    "blocked": "Calculation not verified",
+    "verified": "Source item verified",
+    "profile": "Business model profile",
+    "scale": "Unit scale",
+    "counts": "{{passed}} of {{total}} calculations passed data checks. This is not approval of the entire report.",
+    "reviewNotice": "Historical research snapshot. Earlier narrative and price commentary are retained for context; unverified figures are not current or audited results. Calculation-card validation takes precedence. Disclosure and long-term source reviews remain partial; this is not an independent audit.",
+    "auditTrail": "Inspect sources, periods and accounting bases",
+    "unverifiedInputs": "These are archived input records, not verified calculation inputs.",
+    "cashBridge": "Company-defined net financial debt: TRY 68.200679bn debt − 167.355286bn cash excluding blocked deposits − 3.077642bn financial investments = −102.232249bn (net cash). Not all reported cash is freely available. Working capital contributed TRY 28.497347bn, which need not recur. Operating cash minus capex is not normalized FCF; financing-classified derivative/interest flows and maintenance versus growth investment still require analysis.",
+    "missingInput": "Missing/unverified input: {{input}}",
+    "profiles": {
+      "REFINING": "Refining",
+      "AUTOMOTIVE": "Automotive",
+      "INDUSTRIAL": "Industrial",
+      "BANK": "Bank",
+      "REIT": "REIT",
+      "BROKER": "Broker",
+      "TECHNOLOGY": "Technology",
+      "CRYPTO": "Crypto",
+      "FUND": "Fund",
+      "UNSUPPORTED": "Unsupported profile"
     },
-    "empty": "No investments to analyze yet",
-    "positionValue": "Value: {{value}}",
-    "typeAmounts": "Value: {{value}} · Cost: {{cost}}",
-    "ranking": "Asset performance",
-    "emptyNote": "Add your first transaction to start building your portfolio.",
-    "filter": "Performance filter",
-    "scopeNote": "The range selector only changes the chart above. Allocation and rankings show current positions; profit / loss excludes dividends and closed positions. An increase in portfolio value alone is not an investment return.",
-    "filters": {
-      "LOSERS": "Losers",
-      "ALL": "All",
-      "GAINERS": "Gainers"
+    "scope": {
+      "CONSOLIDATED": "Consolidated",
+      "SOLO": "Standalone",
+      "MARKET": "Market/share data"
     },
-    "description": "Explore your portfolio allocation and the performance of your open positions.",
-    "byTypeNote": "Bar length represents the absolute profit or loss amount.",
-    "noResults": "No assets in this group",
-    "noResultsNote": "Try another performance filter.",
-    "metric": "Ranking metric",
-    "byType": "Profit / loss by asset type",
-    "rankingNote": "Ranked by unrealized profit / loss. Select an asset name for details."
+    "attribution": {
+      "GROUP": "Group total",
+      "PARENT": "Parent owners",
+      "SHARE": "Per share"
+    },
+    "earnings": {
+      "REPORTED": "Reported-period data; not actual TTM or normalized earnings.",
+      "ANNUALIZED_ESTIMATE": "Annualized estimate: six-month profit × 2; not actual trailing twelve months.",
+      "NORMALIZED": "Normalized data with explicit assumptions",
+      "TTM": "Trailing twelve months from four compatible quarters"
+    },
+    "issues": {
+      "UNVERIFIED": "Source or data basis is not verified.",
+      "CONFLICT": "Unresolved source conflict.",
+      "SOURCE": "Missing source/review evidence.",
+      "NUMBER": "Invalid numeric input.",
+      "PERIOD": "Incompatible financial periods.",
+      "SCALE": "Incompatible unit scale; explicit conversion required.",
+      "BASIS": "Incompatible consolidation, attribution or accounting basis.",
+      "CURRENCY": "Incompatible currencies.",
+      "SHARE_BASIS": "Unverified price, share or dividend basis.",
+      "MISSING": "Missing data or calculation contract.",
+      "DUPLICATE": "Duplicate fact identifier.",
+      "UNIT": "Units do not match the method.",
+      "ARITHMETIC": "Zero denominator or inadmissible numeric input.",
+      "NOT_APPLICABLE": "Method does not apply to this business model.",
+      "ASSUMPTIONS": "Sourced normalization/scenario assumptions are missing.",
+      "METHOD_PENDING": "This calculation strategy has not been implemented."
+    },
+    "historyIssues": {
+      "COVERAGE": "Independently verified trading-session, dividend and corporate-action coverage is missing. The earlier approximation is not displayed as a verified result.",
+      "UNVERIFIED": "Historical source review is partial.",
+      "CONFLICT": "Historical sources conflict.",
+      "LISTING": "Listing start is not verified in the model.",
+      "SHARE_BASIS": "Missing/incompatible price and dividend adjustment basis.",
+      "SOURCE": "Missing transaction sources.",
+      "FX": "Invalid transaction FX or observation date.",
+      "SESSIONS": "Prices do not match expected exchange sessions.",
+      "ACTIONS": "Unverified corporate action or adjustment factor.",
+      "DIVIDENDS": "Dividends do not match the reconciled event register.",
+      "PERIOD": "The cutoff is not a valid calendar month-end."
+    },
+    "methods": {
+      "EV_EBITDA": "Normalized EV/EBITDA",
+      "FCF": "Free cash flow valuation",
+      "BOOK_ROE": "Book value and sustainable ROE",
+      "NAV": "Net asset value"
+    },
+    "inputs": {
+      "normalizedEbitda": "normalized EBITDA",
+      "peerEvEbitda": "comparable peer/historical EV/EBITDA",
+      "valuationNetDebt": "valuation net debt bridge",
+      "shares": "shares at valuation date",
+      "normalizedFcf": "normalized free cash flow",
+      "discountRate": "discount rate",
+      "terminalGrowth": "terminal growth",
+      "investmentPlan": "investment plan",
+      "parentEquity": "parent equity",
+      "sustainableRoe": "sustainable ROE",
+      "costOfEquity": "cost of equity",
+      "capitalAdequacy": "capital adequacy",
+      "netAssetValue": "net asset value",
+      "appraisalDate": "appraisal date"
+    },
+    "limits": {
+      "EV_EBITDA": "Refining margins, inventory effects and cycles must be normalized. Peer lease/debt scopes must be comparable.",
+      "FCF": "Current cash differences cannot be extrapolated without maintenance/growth capex and working-capital analysis.",
+      "BOOK_ROE": "Capital and asset quality matter; low P/B alone does not prove undervaluation.",
+      "NAV": "Appraisal dates, debt scope and asset liquidity affect the result."
+    }
   },
   "transfer": {
     "description": "Add transactions from a file or download a copy of your records.",
@@ -638,7 +713,9 @@
       "SHARES": "shares",
       "USD_BARREL": "USD / barrel",
       "PERCENT": "%",
-      "MULTIPLE": "x"
+      "MULTIPLE": "x",
+      "USD": "USD",
+      "USD_SHARE": "USD/share"
     },
     "metrics": {
       "price": "Dated closing price",
@@ -684,7 +761,11 @@
       "fxAfterNatural": "Net FX position after natural hedge",
       "priceBook": "P/B — mixed reporting dates",
       "peHalfYear": "Price / six-month earnings — not annual P/E",
-      "peRunRate": "P/E scenario — half-year earnings × 2"
+      "peRunRate": "P/E scenario — half-year earnings × 2",
+      "cashAvailable": "Cash excluding blocked deposits",
+      "financialInvestments": "Investments included in net debt",
+      "netFinancialDebt": "Company-defined net financial debt",
+      "workingCapitalCash": "Working capital cash contribution"
     },
     "formulas": {
       "revenueGrowth": "(Revenue − prior revenue) ÷ prior revenue × 100",

@@ -1,7 +1,6 @@
 import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
-import { addDecimals, divideDecimals } from '@/lib/decimal';
 import { formatQuantity } from '@/lib/formatNumber';
 import { Card } from '@/components/Card/Card';
 import { ResearchMetric } from '@/components/Research/ResearchMetric';
@@ -36,7 +35,6 @@ export function ResearchDebt({
           const lines = report.debtLines.filter(
             (line) => line.currency === currency,
           );
-          const total = addDecimals(lines.map((line) => line.tryEquivalent));
           return (
             <details
               key={currency}
@@ -45,12 +43,8 @@ export function ResearchDebt({
               <summary className="cursor-pointer">
                 <span className="font-semibold">{currency}</span>
                 <span className="mt-2 block text-lg font-medium tabular-nums">
-                  {formatQuantity(
-                    divideDecimals(total, '1000000000', 3),
-                    i18n.language,
-                  )}{' '}
                   <span className="text-xs text-fg-2">
-                    {t('research.units.BILLION_TRY')}
+                    {t('analysis.unverifiedInputs')}
                   </span>
                 </span>
               </summary>

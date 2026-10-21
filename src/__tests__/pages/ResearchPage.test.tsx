@@ -133,6 +133,6 @@ describe('ResearchPage', () => {
     renderWithProviders(
       <ResearchMetric report={tuprsReport} id="not-present" />,
     );
-    expect(screen.getByText(i18n.t('research.missing'))).toBeInTheDocument();
+    expect(screen.getByText(i18n.t('analysis.blocked'))).toBeInTheDocument();
   });
 });

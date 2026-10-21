@@ -18,6 +18,12 @@ import {
 } from '@/components/Research/ResearchSummary';
 import { useResearch } from '@/hooks/useResearch';
 import { useStrategies } from '@/hooks/useStrategies';
+import { getAnalysis } from '@/services/analysis';
+import { selectAnalysisProfile } from '@/lib/analysisProfiles';
+import {
+  AnalysisQuality,
+  ProfileValuation,
+} from '@/components/Research/AnalysisQuality';
 
 const SECTIONS = [
   'overview',
@@ -120,6 +126,14 @@ export function ResearchPage(): JSX.Element {
     );
   }
   const currentReport = report;
+  const analysis = getAnalysis(report);
+  const profile = selectAnalysisProfile(
+    analysis?.context ?? {
+      assetType: 'EQUITY',
+      businessModel: report.sector,
+      strategies: [],
+    },
+  );
   function note(key: string): JSX.Element {
     return (
       <p className="text-sm leading-7 text-fg-2">
@@ -180,7 +194,8 @@ export function ResearchPage(): JSX.Element {
           {t('research.originalCurrency')}
         </p>
       </div>
-      {metrics(['price', 'profit', 'nrm'])}
+      <AnalysisQuality report={report} />
+      {metrics(profile.headline)}
       <nav
         aria-label={t('research.contents')}
         className="top-14 z-20 -mx-1 flex flex-wrap gap-1 rounded-xl border border-line bg-surface p-2 shadow-card sm:sticky"
@@ -221,19 +236,25 @@ export function ResearchPage(): JSX.Element {
       </ResearchSection>
       <ResearchSection id="financials">
         {note('accounting')}
-        {metrics([
-          'revenue',
-          'operatingMargin',
-          'currentRatio',
-          'cash',
-          'financialDebt',
-          'cashProxy',
-        ])}
+        {metrics(profile.financials)}
+        {analysis && profile.methods.includes('EV_EBITDA') && (
+          <>
+            {metrics([
+              'cashAvailable',
+              'financialInvestments',
+              'netFinancialDebt',
+              'workingCapitalCash',
+            ])}
+            <Card className="p-5 text-sm leading-7">
+              {t('analysis.cashBridge')}
+            </Card>
+          </>
+        )}
         <Card className="p-5">{note('cashQuality')}</Card>
         <ResearchDebt report={report} />
       </ResearchSection>
       <ResearchSection id="growth">
-        {metrics(['revenueGrowth', 'profitGrowth'])}
+        {metrics(profile.growth)}
         <Card className="space-y-3 p-5">
           {note('growth')}
           {note('peers')}
@@ -243,13 +264,14 @@ export function ResearchPage(): JSX.Element {
         {asset?.assetType !== 'CRYPTO' && (
           <DividendBacktest history={getDividendHistory(report.assetId)} />
         )}
-        {metrics(['dividend1', 'dividend2', 'dividendYield'])}
+        {metrics(profile.dividend)}
         <Card className="space-y-3 p-5">
           {note('dividend')}
           {note('sustainability')}
         </Card>
       </ResearchSection>
       <ResearchSection id="valuation">
+        <ProfileValuation report={report} />
         <ResearchValuationGuide report={report} />
         <div className="rounded-xl border-2 border-primary bg-primary-soft p-5 sm:p-6">
           <p className="text-xs font-medium uppercase tracking-wide text-primary">
@@ -293,7 +315,7 @@ export function ResearchPage(): JSX.Element {
         </Card>
       </ResearchSection>
       <ResearchSection id="technical">
-        {metrics(['dailyChange', 'weeklyChange', 'sma5'])}
+        {metrics(profile.technical)}
         <Card className="p-5">{note('technical')}</Card>
       </ResearchSection>
       <ResearchSection id="news">
