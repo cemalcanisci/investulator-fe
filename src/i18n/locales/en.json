@@ -9,7 +9,12 @@
     "retryButton": "Try again",
     "loading": "Loading…",
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "cancel": "Cancel",
+    "save": "Save",
+    "add": "Add",
+    "remove": "Remove",
+    "confirm": "Confirm"
   },
   "nav": {
     "label": "Main menu",
@@ -21,7 +26,8 @@
     "holdings": "Holdings",
     "transactions": "Transactions",
     "analysis": "Analysis",
-    "importExport": "Import/Export"
+    "importExport": "Import/Export",
+    "strategies": "Strategies"
   },
   "currency": {
     "label": "Currency",
@@ -472,5 +478,704 @@
       "unused": "Leave amount fields that do not apply to this type empty.",
       "inconsistent": "Quantity × unit price does not match the total."
     }
+  },
+  "strategies": {
+    "title": "Strategies and Watchlist",
+    "subtitle": "Follow candidates and plan your investment approach.",
+    "demoTitle": "Example watchlist · Session preview",
+    "demoHint": "The initial list contains 10 BIST stocks and 15 crypto candidates. Your changes are kept as separate session data and reset on reload. Adding to the watchlist creates no purchase and does not affect your portfolio.",
+    "analysisUnavailable": "Live data and AI analysis are not connected yet; refresh actions are unavailable.",
+    "detailUnavailable": "A dated, sourced TUPRS report is available; other assets do not yet have reports.",
+    "refreshAll": "Refresh My Entire Watchlist",
+    "refreshGroup": "Refresh Group",
+    "refreshAsset": "Refresh",
+    "groupsTitle": "My strategy groups",
+    "listTitle": "My watchlist",
+    "newGroup": "Create group",
+    "editGroup": "Edit group",
+    "deleteGroup": "Remove group",
+    "addAsset": "Add to watchlist",
+    "targetWeight": "Target weight",
+    "targetCount": "Target count",
+    "notSet": "Not set",
+    "weightValue": "{{value}}%",
+    "notConnected": "Not connected",
+    "summary": {
+      "assets": "Watched assets",
+      "unique": "Unique assets across all groups",
+      "groups": "Strategy groups",
+      "custom": "Create and edit to fit your approach",
+      "analysis": "Data and AI analysis",
+      "waiting": "A dated TUPRS report is available; no automatic refresh."
+    },
+    "form": {
+      "name": "Group name",
+      "description": "Description (optional)",
+      "weight": "Target weight % (optional)",
+      "count": "Target asset count (optional)",
+      "examples": "For example: BIST Growth, US Dividend, US Growth, Crypto",
+      "targetHint": "Targets are plans, not actual portfolio allocations. A total of 100% is not required at this stage."
+    },
+    "search": "Search watchlist",
+    "searchPlaceholder": "Search symbol or asset name…",
+    "chooseGroup": "Choose strategy group",
+    "chooseType": "Choose asset type",
+    "allGroups": "All groups",
+    "allTypes": "All types",
+    "resultCount_one": "{{count}} asset shown",
+    "resultCount_other": "{{count}} assets shown",
+    "watching": "Watching",
+    "noPurchase": "No transaction created",
+    "noData": "Awaiting data",
+    "detailSoon": "Open research",
+    "identityPending": "Coin identity needs verification",
+    "catalogPending": "Initial catalog information",
+    "namePending": "Project name not verified yet",
+    "columns": {
+      "asset": "Asset",
+      "groups": "Type / Groups",
+      "status": "Watch status",
+      "analysis": "Financial data / Research",
+      "actions": "Actions"
+    },
+    "addHint": "Choose from the example catalog. An asset can belong to multiple groups. Crypto exchange, chain and provider identities are not verified yet; provider search is not connected.",
+    "catalogSearch": "Search example catalog",
+    "alreadyAdded": "Added",
+    "alreadyAddedLabel": "{{symbol}} already in this group",
+    "addAssetLabel": "Watch {{symbol}}",
+    "catalogEmpty": "No match in the example catalog. Live catalog search is not connected yet.",
+    "removeLabel": "Remove {{symbol}} from {{group}}",
+    "removeFrom": "{{group}}: remove",
+    "removeHint": "{{symbol}} will be removed from {{group}}. Memberships in other groups and portfolio transactions will be preserved.",
+    "deleteGroupHint": "“{{name}}” and its watch memberships will be removed. Catalog assets, other groups and portfolio transactions will be preserved.",
+    "emptyGroups": "No strategy groups yet",
+    "emptyGroupsHint": "Create a group and add assets from the example catalog.",
+    "emptyList": "No watched assets in this view",
+    "emptyListHint": "Change filters or add an asset to a group.",
+    "noResults": "No assets match your search",
+    "clearFilters": "Show entire list",
+    "saved": "Change applied for this session; it resets on reload.",
+    "errors": {
+      "generic": "Could not apply the change. Please retry.",
+      "invalidGroup": "Use 1–80 characters for the name and up to 500 for the description.",
+      "duplicateGroup": "A group with this name already exists.",
+      "invalidWeight": "Enter a weight between 0 and 100 with up to two decimal places.",
+      "invalidCount": "Enter a whole number between 1 and 10000.",
+      "missingGroup": "Group not found.",
+      "missingAsset": "Catalog asset not found.",
+      "duplicateMembership": "This asset is already in the group."
+    }
+  },
+  "research": {
+    "back": "Back to strategies",
+    "open": "Open research",
+    "eyebrow": "Asset research",
+    "reportDate": "Research date",
+    "partialReport": "Sourced report · Partial coverage",
+    "snapshotTitle": "Research updated on request",
+    "snapshotHint": "Prepared from public sources. This is a dated report, updated following a new research instruction. Watchlist membership does not imply ownership.",
+    "originalCurrency": "Amounts retain their source currencies. The USD/TRY switch does not convert this dated report; the demo portfolio exchange rate is not used.",
+    "contents": "Research sections",
+    "missing": "Missing data",
+    "calculationDetails": "Calculation, source and meaning",
+    "result": "Result",
+    "strengths": "Supporting factors",
+    "watchPoints": "Watch points",
+    "valuationResult": "Valuation conclusion",
+    "notAssessed": "Fair value cannot be assessed",
+    "scenarios": "Scenarios and sensitivity",
+    "discountFormula": "Discount = (fair value − market price) / fair value. Potential return = (fair value − market price) / market price. Neither is calculated without a supported fair value.",
+    "scanRange": "KAP review window",
+    "kapList": "KAP company disclosure list",
+    "analystInterpretation": "Analyst interpretation",
+    "eventDate": "Event / effective date",
+    "updateNotice": "Updated disclosure",
+    "newNotice": "New disclosure",
+    "correction": "Correction",
+    "noCorrection": "Not a correction",
+    "previousNotice": "Related previous disclosure date",
+    "attachmentsPartial": "Attachment review is partial; not all attachments were verified.",
+    "contextOnly": "Outside window · Relevant context",
+    "riskFollowup": "Risks and follow-up checks",
+    "firstVersion": "First research version",
+    "reviewTitle": "Review outcome",
+    "financialPeriod": "Financial period",
+    "priceAt": "Source quote time",
+    "retrievedAt": "Source check time",
+    "storage": "Report storage",
+    "fileSnapshot": "Frontend research file · Not imported into a database",
+    "publishedAt": "Published",
+    "dateUnverified": "Exact publication day not verified",
+    "unknownAsset": "Asset not found",
+    "noReport": "No research report yet",
+    "noReportHint": "No sourced research has been prepared for this asset. No price, news or valuation was generated. TUPRS is the first researched asset.",
+    "noCryptoReportHint": "Provider identity and research are not yet verified for this crypto. A ticker alone is insufficient. Tokenomics, supply/vesting, liquidity, adoption and security will be researched after identity verification.",
+    "sections": {
+      "overview": "Overview",
+      "financials": "Financial health",
+      "growth": "Growth",
+      "dividend": "Dividends",
+      "valuation": "Price analysis and fair value",
+      "technical": "Technical view",
+      "news": "KAP, news and risks",
+      "history": "History and review",
+      "sources": "Sources and dates"
+    },
+    "status": {
+      "COMPLETE": "Complete",
+      "PARTIAL": "Partial",
+      "MISSING": "Missing",
+      "UNAVAILABLE": "Unavailable"
+    },
+    "impact": {
+      "HIGH": "High relevance",
+      "MEDIUM": "Medium relevance"
+    },
+    "units": {
+      "BILLION_TRY": "billion TRY",
+      "TRY": "TRY",
+      "TRY_SHARE": "TRY / share",
+      "SHARES": "shares",
+      "USD_BARREL": "USD / barrel",
+      "PERCENT": "%",
+      "MULTIPLE": "x"
+    },
+    "metrics": {
+      "price": "Dated closing price",
+      "shares": "Shares with TRY 1 nominal value",
+      "revenue": "Revenue",
+      "revenuePrevious": "Prior-period revenue",
+      "profit": "Profit attributable to parent",
+      "profitPrevious": "Prior-period parent profit",
+      "operatingProfit": "Operating profit",
+      "cash": "Cash and equivalents",
+      "debtShort": "Short-term financial debt",
+      "debtCurrent": "Current portion of long-term debt",
+      "debtLong": "Long-term financial debt",
+      "currentAssets": "Current assets",
+      "currentLiabilities": "Current liabilities",
+      "parentEquity": "Equity attributable to parent",
+      "operatingCash": "Operating cash flow",
+      "capex": "Payments for tangible / intangible assets",
+      "dividend1": "First instalment · Gross per share",
+      "dividend2": "Second instalment · Gross per share",
+      "dividendTotal": "Approved 2026 gross dividend / share",
+      "nrm": "Net refining margin",
+      "close1002": "2 October close",
+      "close1005": "5 October close",
+      "close1006": "6 October close",
+      "close1007": "7 October close",
+      "close1008": "8 October close",
+      "revenueGrowth": "Revenue change · YoY",
+      "profitGrowth": "Parent profit change · YoY",
+      "operatingMargin": "Operating profit margin",
+      "currentRatio": "Current ratio",
+      "financialDebt": "Total financial debt",
+      "cashProxy": "Operating cash less capex",
+      "bookPerShare": "Dated book value / share",
+      "marketCap": "Reference market capitalisation",
+      "dividendYield": "Approved dividend / reference price",
+      "dailyChange": "Last session price change",
+      "weeklyChange": "Weekly price change",
+      "sma5": "5-session simple moving average",
+      "debtAccruals": "Accrued interest on financial debt",
+      "debtWithinYear": "Financial debt classified within one year",
+      "fxBeforeNatural": "Net FX position before natural hedge",
+      "fxAfterNatural": "Net FX position after natural hedge",
+      "priceBook": "P/B — mixed reporting dates",
+      "peHalfYear": "Price / six-month earnings — not annual P/E",
+      "peRunRate": "P/E scenario — half-year earnings × 2"
+    },
+    "formulas": {
+      "revenueGrowth": "(Revenue − prior revenue) ÷ prior revenue × 100",
+      "profitGrowth": "(Parent profit − prior parent profit) ÷ prior parent profit × 100",
+      "operatingMargin": "Operating profit ÷ revenue × 100",
+      "currentRatio": "Current assets ÷ current liabilities",
+      "financialDebt": "Short-term debt + current portion of long-term debt + long-term debt",
+      "cashProxy": "Operating cash flow − payments for fixed assets",
+      "bookPerShare": "Parent equity ÷ TRY 1 nominal shares",
+      "marketCap": "Reference price × TRY 1 nominal shares",
+      "dividendYield": "Approved annual gross dividend / share ÷ reference price × 100",
+      "dailyChange": "(9 October close − 8 October close) ÷ 8 October close × 100",
+      "weeklyChange": "(9 October close − 2 October close) ÷ 2 October close × 100",
+      "sma5": "(Closing prices for 5, 6, 7, 8 and 9 October) ÷ 5",
+      "debtWithinYear": "Short-term financial debt + current portion of long-term financial debt",
+      "priceBook": "(Price × shares) / equity attributable to owners",
+      "peHalfYear": "(Price × shares) / six-month profit attributable to owners",
+      "peRunRate": "(Price × shares) / (six-month profit + assumed repeat of that profit)"
+    },
+    "methods": {
+      "pe": "Normalised P/E",
+      "ev": "EV / EBITDA",
+      "dcf": "Discounted cash flow"
+    },
+    "methodFormulas": {
+      "pe": "Fair price = normalised annual EPS × justified P/E",
+      "ev": "Equity value = normalised EBITDA × multiple − net debt − minority interest + other adjustments",
+      "dcf": "Enterprise value = Σ FCFₜ / (1 + WACC)ᵗ + present value of terminal value"
+    },
+    "scenarioNames": {
+      "bear": "Bear",
+      "base": "Base",
+      "bull": "Bull"
+    },
+    "debtTitle": "Debt maturities, currency and repayment pressure",
+    "debtCurrencyTitle": "Original currency of financial debt",
+    "debtCurrencyHint": "30 June 2026 · Totals are TRY equivalents, not all TRY-denominated debt. Includes loans, bonds and leases; TRY 1.439635 billion of accrued interest is kept separate without allocating it to currencies. Expand a card for original amounts and source interest rates.",
+    "effectiveRate": "Source effective interest rate",
+    "fxTitle": "Read currency exposure together with hedges",
+    "debtSource": "Tüpraş 2026 H1 · Notes 5, 6, 17 and 29",
+    "maturity": {
+      "SHORT": "Short term",
+      "CURRENT_LONG": "Current portion of long term",
+      "LONG": "Long term"
+    },
+    "identityConfirmed": "Research identity verified against KAP",
+    "guide": {
+      "question": "Is this price cheap?",
+      "jump": "See calculations and reasoning ↓",
+      "business": "What supports the business?",
+      "price": "What do we know about the price?",
+      "decision": "My assessment",
+      "results": "Ratios: calculated results and meaning",
+      "missingTitle": "Why is there no fair-value range yet?",
+      "companyTitle": "Understand the company",
+      "activity": "What does it do?",
+      "ownership": "Shareholders and control",
+      "political": "Political connections: verified information",
+      "exposure": "How could political changes affect it?",
+      "missingLabel": "Scope limitation"
+    },
+    "longTerm": {
+      "horizon": "{{from}}–{{to}} year investment perspective · Analyst interpretation",
+      "title": "Suitable for long-term dividend investing?",
+      "durability": "Business durability",
+      "income": "Income consistency",
+      "entry": "Entry price today",
+      "payout": "Payout ratio is not dividend yield",
+      "allocation": "Dividends versus growth investment",
+      "realReturn": "Purchasing power and total return",
+      "fit": "Which expectations fit?",
+      "opportunities": "Can new businesses create additional value?",
+      "evidence": "Disclosed plan / existing step",
+      "upside": "Path to value · Interpretation",
+      "proof": "Evidence to look for",
+      "risk": "Why it might not work",
+      "confirm": "What would strengthen the thesis",
+      "invalidate": "What would change my view",
+      "monitor": "What to monitor over 10–15 years, and when"
+    }
+  },
+  "researchTuprs": {
+    "name": "Tüpraş",
+    "sector": "Energy · Refining",
+    "headline": "Strong operating momentum; durability needs testing",
+    "summary": "Refining analysis depends on product-to-crude spreads, utilisation and working capital more than the direction of oil prices alone. This report takes a dividend perspective without treating short-term profits as sustainable earnings. Financial strength and prospective shareholder returns are separate questions.",
+    "strengths": "Operating margin and current ratio are reproducible. The cash buffer is a useful starting point for assessing resilience to weaker margins, but cash on the balance sheet is not automatically distributable profit.",
+    "risks": "Normalising product margins, inventory valuation, derivative settlements and new investments can change cash generation. Past dividends do not commit the company to future payouts.",
+    "accounting": "Consolidated TAS 34 interim report, in 30 June 2026 purchasing power. Source amounts in thousands of TRY were multiplied by 1,000. H1 2025 comparisons use the restated column in the same report. Six-month earnings were not annualised.",
+    "cashQuality": "Operating cash less capex is insufficient as a measure of cash available for distribution. Derivative settlements and interest classified under financing need separate review. This difference is therefore not used directly for dividend coverage or DCF.",
+    "growth": "Revenue and parent profit are compared across matching half-years. Extrapolating profit growth in a straight line could miss the refining cycle. Production volumes, margins and returns on reinvestment should be assessed together.",
+    "peers": "Peer refinery valuations on comparable periods and accounting bases are incomplete. No sector-average multiple or peer discount is asserted.",
+    "dividend": "The KAP shareholder approval specifies two 2026 instalments totalling TRY 17.1268815 gross per share. Ex-dates: 16 March and 30 September; scheduled account payment dates: 18 March and 2 October. This is the approved timetable, not verification of receipt in a personal account.",
+    "sustainability": "The displayed ratio divides the approved annual gross dividend by the 9 October reference price. It is not the future return available to a new buyer. Sustainability requires through-cycle cash flow, investment needs, debt maturities and legal distribution capacity.",
+    "valuation": "A sourced price is available, but normalised earnings, justified peer multiples and forward cash-flow assumptions are incomplete. No discount/fair/premium label or target price is produced. Market capitalisation and book value below are descriptive calculations only.",
+    "methods": {
+      "pe": "Applicable to refining, but peak-cycle earnings may produce a misleadingly low P/E. Normalised annual EPS and justified peer multiples are missing. Doubling half-year earnings does not resolve this; no valuation result.",
+      "ev": "Helps separate operations from financing. Comparable normalised EBITDA, peer multiples and the net debt/minority/associate bridge are required. Cash less debt alone is not a complete enterprise-value bridge; no valuation result.",
+      "dcf": "Models investment and cash conversion explicitly. Multi-year volumes, margins, tax, capex, working capital, WACC and terminal growth are missing. Nominal TRY cash flows must not be discounted at a real rate; no valuation result."
+    },
+    "scenarios": "These are research conditions, not numerical price targets. Probabilities, discount rates and normalised cash flows do not yet support bear/base/bull values. At a fixed P/E, a percentage change in normalised EPS changes model price by the same percentage; this mathematical sensitivity is not an earnings forecast.",
+    "scenarioNotes": {
+      "bear": "Lower refining margins with sustained investment and working-capital needs could constrain distributions.",
+      "base": "Margins move toward a cycle average and investment stays within budget. The cycle average is not yet verified.",
+      "bull": "Strong product margins persist and investments deliver expected cash contributions. These outcomes are not assumed."
+    },
+    "technical": "The five-session average is a short price summary, not a confirmed trend or buy signal. Adjusted history is insufficient for RSI/MACD, long averages and volume confirmation. Longer series crossing dividend dates require adjustment checks. These calculations are not total returns.",
+    "scanLimit": "The company KAP list and selected direct disclosures were examined for 11 July–11 October. A headline scan is not a completed content review. July rating/bonds, August redemption, September insurance and some attachments remain outstanding. Share sale, Entek contribution, margin revision and debt decision/application were reviewed. No claim is made that other material disclosures are absent.",
+    "riskFollowup": "Next checks should cover approval/issuance after the debt application, Entek’s external spending and earnings contribution, share-sale disclosures, delivery against margin guidance and dividend payment confirmations. Incomplete KAP coverage does not support a low news-risk conclusion.",
+    "history": "First report; no previous-version comparison exists. A new instruction creates a separate version, preserving earlier sources and inputs. Research files do not change watchlist membership or portfolio transactions.",
+    "review": "Research and review were performed in the same Codex session, not independently. Identity and used inputs are sourced; decimal arithmetic makes calculations reproducible. Outstanding KAP content/attachments, peer valuation, normalised earnings, cash-flow adjustments and long technical history leave the outcome NEEDS_REVIEW. This is partial research.",
+    "news": {
+      "debt": {
+        "title": "Application for up to TRY 20 billion of debt issuance",
+        "fact": "The 2 October disclosure reports an application for domestic bonds/bills following the 23 September decision, with maturities up to ten years.",
+        "effect": "An application is not completed borrowing. No TRY 20 billion debt was added to the June balance sheet. Reassess financing costs and dividend capacity when issue size, rate and maturity become definite."
+      },
+      "governance": {
+        "title": "Corporate governance rating updated",
+        "fact": "The company reported that SAHA raised its governance rating to 9.76 effective 2 October.",
+        "effect": "Supportive for governance; not a credit rating, profit guarantee or automatic valuation premium. The full attachment has not been reviewed."
+      },
+      "entek": {
+        "title": "Cash contribution to Entek capital increase",
+        "fact": "The 1 September disclosure reports a TRY 2,480,873,555.15 cash contribution by Tüpraş to Entek.",
+        "effect": "Shows parent-level capital allocation. An intra-group transfer must not be deducted again as external consolidated capex. Track ultimate use and cash returns in subsequent reports."
+      },
+      "guidance": {
+        "title": "Refining margin guidance revised upward",
+        "fact": "The 4 August announcement raises 2026 net refining margin guidance from USD 6–7 to USD 13–15 per barrel. Volume, utilisation and investment targets are unchanged.",
+        "effect": "Material to the earnings outlook. Management guidance is neither realised full-year profit nor a permanent through-cycle margin."
+      },
+      "dividend": {
+        "title": "Shareholder approval for two dividend instalments",
+        "fact": "Shareholders approved TRY 33 billion in gross distributions on 11 March. The second instalment ex-date was set to 30 September.",
+        "effect": "Published outside the review window, with a payment timetable inside it. Retained as context, not used as a forecast of future dividends."
+      },
+      "shareSale": {
+        "title": "Koç Holding share sale settled",
+        "fact": "Koç Holding’s 7 September disclosure confirms settlement of the TUPRS share sale and states that management control continues.",
+        "effect": "This is a sale by existing shareholders, not new Tüpraş shares or proceeds received by Tüpraş. Relevant to ownership and market supply; not by itself evidence of operating deterioration."
+      }
+    },
+    "education": {
+      "price": "Dated HangiKredi close, cross-checked with CNBC-e daily change and previous close. Not a current executable quote.",
+      "profit": "Six-month profit attributable to parent shareholders after minority interests. Not cash; period and cycle comparisons matter.",
+      "nrm": "Per-barrel refining performance indicator. The company definition strips out inflation-accounting effects; it is not an accounting profit margin.",
+      "revenue": "Sales income, not proof of volume growth or profitability. Price, mix and volume need separation.",
+      "operatingMargin": "Operating profit per 100 units of sales, before net financing and tax. Not EBITDA; interpret with the refining cycle.",
+      "currentRatio": "Current assets divided by current liabilities. Inventory and receivable quality matter; exceeding one does not guarantee liquidity.",
+      "cash": "Balance-sheet cash and equivalents, excluding short-term financial investments. Restrictions and operational needs require further review.",
+      "financialDebt": "Sum of three financial-debt lines. Trade payables are excluded; not total liabilities. Maturity and cost still need review.",
+      "cashProxy": "Operating cash less fixed-asset payments. Excludes derivative and interest flows classified as financing; not normalised FCF or distributable cash.",
+      "revenueGrowth": "Matching half-years restated to the same purchasing power. Not merely nominal inflation growth; price/volume attribution remains necessary.",
+      "profitGrowth": "Parent-profit change can be amplified by a low comparison base. One-offs and the cycle need normalisation before extrapolation.",
+      "dividend1": "First gross instalment in the KAP decision. Net receipt depends on tax status; no personal portfolio income is recorded.",
+      "dividend2": "Second gross instalment in the KAP decision. Ex-date differs from account payment date; this entry is not a payment confirmation.",
+      "dividendYield": "17.1268815 ÷ 386.25 × 100. Gross reference ratio based on an approved historical distribution. An October purchase does not earn past distributions; not a forward yield.",
+      "marketCap": "Reference price times verified nominal shares. Share count comes from the March decision; a complete October corporate-action scan is pending. Not enterprise or fair value.",
+      "bookPerShare": "Parent equity divided by nominal shares. Accounting value in June purchasing power; not a direct fair-value threshold for an October price.",
+      "dailyChange": "Percentage change between consecutive closes. Not an intraday or dividend-inclusive return.",
+      "weeklyChange": "Closing-price change from 2 to 9 October. Short-term momentum summary, not a forecast.",
+      "sma5": "Arithmetic mean of five closes, sensitive to noise. Long history and volume confirmation are needed before using it as a trend signal.",
+      "debtWithinYear": "Combines both current debt categories; do not count approaching instalments twice in total debt. Accounting classification, not a daily cash-payment calendar.",
+      "debtLong": "Financial obligations classified beyond one year. A long maturity does not imply low interest or currency risk; denomination and contract terms matter.",
+      "fxBeforeNatural": "Note 29: TRY equivalent after derivatives and cash-flow hedging, before inventory natural hedging. Negative means net liabilities, not immediate cash due in full.",
+      "fxAfterNatural": "Note 29: TRY equivalent including inventory natural hedging. Not a liquid currency surplus; hedge effectiveness and cash timing still require review."
+    },
+    "debtMeaning": "Debt due within one year includes both short-term facilities and approaching instalments of long-term loans. Compare it with operating cash, unrestricted liquidity and refinancing access. Longer maturities reduce immediate pressure but do not remove interest or refinancing risk.",
+    "interestMeaning": "A lower USD interest rate is not automatically cheaper than TRY financing: currency moves and hedging costs matter. The notes describe SOFR-linked borrowing and interest swaps. No full fixed/floating net split is asserted without reconciliation. Effective rates in the table are not offers for new borrowing.",
+    "fxMeaning": "The first value is the deficit after derivatives and cash-flow hedges but before natural hedging. The second includes inventories as a natural hedge. A near-zero final balance does not erase the earlier deficit or eliminate currency risk. Inventory repricing and cash conversion may not match debt-payment timing; basis and collateral risk remain.",
+    "cashRestrictions": "Note 5 identifies blocked deposits and blocked revenue share, so balance-sheet cash is not treated as entirely unrestricted. The net-debt definition in Note 29 also uses a different cash base. Different definitions were not merged into a single net-cash claim."
+  },
+  "researchTuprsV2": {
+    "name": "Tüpraş",
+    "sector": "Energy · Refining",
+    "headline": "Strong operating momentum; durability needs testing",
+    "summary": "Refining analysis depends on product-to-crude spreads, utilisation and working capital more than the direction of oil prices alone. This report takes a dividend perspective without treating short-term profits as sustainable earnings. Financial strength and prospective shareholder returns are separate questions.",
+    "strengths": "Operating margin and current ratio are reproducible. The cash buffer is a useful starting point for assessing resilience to weaker margins, but cash on the balance sheet is not automatically distributable profit.",
+    "risks": "Normalising product margins, inventory valuation, derivative settlements and new investments can change cash generation. Past dividends do not commit the company to future payouts.",
+    "accounting": "Consolidated TAS 34 interim report, in 30 June 2026 purchasing power. Source amounts in thousands of TRY were multiplied by 1,000. H1 2025 comparisons use the restated column in the same report. Six-month earnings were not annualised.",
+    "cashQuality": "Operating cash less capex is insufficient as a measure of cash available for distribution. Derivative settlements and interest classified under financing need separate review. This difference is therefore not used directly for dividend coverage or DCF.",
+    "growth": "Revenue and parent profit are compared across matching half-years. Extrapolating profit growth in a straight line could miss the refining cycle. Production volumes, margins and returns on reinvestment should be assessed together.",
+    "peers": "Peer refinery valuations on comparable periods and accounting bases are incomplete. No sector-average multiple or peer discount is asserted.",
+    "dividend": "The KAP shareholder approval specifies two 2026 instalments totalling TRY 17.1268815 gross per share. Ex-dates: 16 March and 30 September; scheduled account payment dates: 18 March and 2 October. This is the approved timetable, not verification of receipt in a personal account.",
+    "sustainability": "The displayed ratio divides the approved annual gross dividend by the 9 October reference price. It is not the future return available to a new buyer. Sustainability requires through-cycle cash flow, investment needs, debt maturities and legal distribution capacity.",
+    "valuation": "A sourced price is available, but normalised earnings, justified peer multiples and forward cash-flow assumptions are incomplete. No discount/fair/premium label or target price is produced. Market capitalisation and book value below are descriptive calculations only.",
+    "methods": {
+      "pe": "Applicable to refining, but peak-cycle earnings may produce a misleadingly low P/E. Normalised annual EPS and justified peer multiples are missing. Doubling half-year earnings does not resolve this; no valuation result.",
+      "ev": "Helps separate operations from financing. Comparable normalised EBITDA, peer multiples and the net debt/minority/associate bridge are required. Cash less debt alone is not a complete enterprise-value bridge; no valuation result.",
+      "dcf": "Models investment and cash conversion explicitly. Multi-year volumes, margins, tax, capex, working capital, WACC and terminal growth are missing. Nominal TRY cash flows must not be discounted at a real rate; no valuation result."
+    },
+    "scenarios": "These are research conditions, not numerical price targets. Probabilities, discount rates and normalised cash flows do not yet support bear/base/bull values. At a fixed P/E, a percentage change in normalised EPS changes model price by the same percentage; this mathematical sensitivity is not an earnings forecast.",
+    "scenarioNotes": {
+      "bear": "Lower refining margins with sustained investment and working-capital needs could constrain distributions.",
+      "base": "Margins move toward a cycle average and investment stays within budget. The cycle average is not yet verified.",
+      "bull": "Strong product margins persist and investments deliver expected cash contributions. These outcomes are not assumed."
+    },
+    "technical": "The five-session average is a short price summary, not a confirmed trend or buy signal. Adjusted history is insufficient for RSI/MACD, long averages and volume confirmation. Longer series crossing dividend dates require adjustment checks. These calculations are not total returns.",
+    "scanLimit": "The company KAP list and selected direct disclosures were examined for 11 July–11 October. A headline scan is not a completed content review. July rating/bonds, August redemption, September insurance and some attachments remain outstanding. Share sale, Entek contribution, margin revision and debt decision/application were reviewed. No claim is made that other material disclosures are absent.",
+    "riskFollowup": "Next checks should cover approval/issuance after the debt application, Entek’s external spending and earnings contribution, share-sale disclosures, delivery against margin guidance and dividend payment confirmations. Incomplete KAP coverage does not support a low news-risk conclusion.",
+    "history": "Version two: source price and financial facts are unchanged; adds P/B, period-labelled earnings multiples, plain-language assessment and company/ownership/political-risk context. Version one remains stored.",
+    "review": "Research and review were performed in the same Codex session, not independently. Identity and used inputs are sourced; decimal arithmetic makes calculations reproducible. Outstanding KAP content/attachments, peer valuation, normalised earnings, cash-flow adjustments and long technical history leave the outcome NEEDS_REVIEW. This is partial research.",
+    "news": {
+      "debt": {
+        "title": "Application for up to TRY 20 billion of debt issuance",
+        "fact": "The 2 October disclosure reports an application for domestic bonds/bills following the 23 September decision, with maturities up to ten years.",
+        "effect": "An application is not completed borrowing. No TRY 20 billion debt was added to the June balance sheet. Reassess financing costs and dividend capacity when issue size, rate and maturity become definite."
+      },
+      "governance": {
+        "title": "Corporate governance rating updated",
+        "fact": "The company reported that SAHA raised its governance rating to 9.76 effective 2 October.",
+        "effect": "Supportive for governance; not a credit rating, profit guarantee or automatic valuation premium. The full attachment has not been reviewed."
+      },
+      "entek": {
+        "title": "Cash contribution to Entek capital increase",
+        "fact": "The 1 September disclosure reports a TRY 2,480,873,555.15 cash contribution by Tüpraş to Entek.",
+        "effect": "Shows parent-level capital allocation. An intra-group transfer must not be deducted again as external consolidated capex. Track ultimate use and cash returns in subsequent reports."
+      },
+      "guidance": {
+        "title": "Refining margin guidance revised upward",
+        "fact": "The 4 August announcement raises 2026 net refining margin guidance from USD 6–7 to USD 13–15 per barrel. Volume, utilisation and investment targets are unchanged.",
+        "effect": "Material to the earnings outlook. Management guidance is neither realised full-year profit nor a permanent through-cycle margin."
+      },
+      "dividend": {
+        "title": "Shareholder approval for two dividend instalments",
+        "fact": "Shareholders approved TRY 33 billion in gross distributions on 11 March. The second instalment ex-date was set to 30 September.",
+        "effect": "Published outside the review window, with a payment timetable inside it. Retained as context, not used as a forecast of future dividends."
+      },
+      "shareSale": {
+        "title": "Koç Holding share sale settled",
+        "fact": "Koç Holding’s 7 September disclosure confirms settlement of the TUPRS share sale and states that management control continues.",
+        "effect": "This is a sale by existing shareholders, not new Tüpraş shares or proceeds received by Tüpraş. Relevant to ownership and market supply; not by itself evidence of operating deterioration."
+      }
+    },
+    "education": {
+      "price": "Dated HangiKredi close, cross-checked with CNBC-e daily change and previous close. Not a current executable quote.",
+      "profit": "Six-month profit attributable to parent shareholders after minority interests. Not cash; period and cycle comparisons matter.",
+      "nrm": "Per-barrel refining performance indicator. The company definition strips out inflation-accounting effects; it is not an accounting profit margin.",
+      "revenue": "Sales income, not proof of volume growth or profitability. Price, mix and volume need separation.",
+      "operatingMargin": "Operating profit per 100 units of sales, before net financing and tax. Not EBITDA; interpret with the refining cycle.",
+      "currentRatio": "Current assets divided by current liabilities. Inventory and receivable quality matter; exceeding one does not guarantee liquidity.",
+      "cash": "Balance-sheet cash and equivalents, excluding short-term financial investments. Restrictions and operational needs require further review.",
+      "financialDebt": "Sum of three financial-debt lines. Trade payables are excluded; not total liabilities. Maturity and cost still need review.",
+      "cashProxy": "Operating cash less fixed-asset payments. Excludes derivative and interest flows classified as financing; not normalised FCF or distributable cash.",
+      "revenueGrowth": "Matching half-years restated to the same purchasing power. Not merely nominal inflation growth; price/volume attribution remains necessary.",
+      "profitGrowth": "Parent-profit change can be amplified by a low comparison base. One-offs and the cycle need normalisation before extrapolation.",
+      "dividend1": "First gross instalment in the KAP decision. Net receipt depends on tax status; no personal portfolio income is recorded.",
+      "dividend2": "Second gross instalment in the KAP decision. Ex-date differs from account payment date; this entry is not a payment confirmation.",
+      "dividendYield": "17.1268815 ÷ 386.25 × 100. Gross reference ratio based on an approved historical distribution. An October purchase does not earn past distributions; not a forward yield.",
+      "marketCap": "Reference price times verified nominal shares. Share count comes from the March decision; a complete October corporate-action scan is pending. Not enterprise or fair value.",
+      "bookPerShare": "Parent equity divided by nominal shares. Accounting value in June purchasing power; not a direct fair-value threshold for an October price.",
+      "dailyChange": "Percentage change between consecutive closes. Not an intraday or dividend-inclusive return.",
+      "weeklyChange": "Closing-price change from 2 to 9 October. Short-term momentum summary, not a forecast.",
+      "sma5": "Arithmetic mean of five closes, sensitive to noise. Long history and volume confirmation are needed before using it as a trend signal.",
+      "debtWithinYear": "Combines both current debt categories; do not count approaching instalments twice in total debt. Accounting classification, not a daily cash-payment calendar.",
+      "debtLong": "Financial obligations classified beyond one year. A long maturity does not imply low interest or currency risk; denomination and contract terms matter.",
+      "fxBeforeNatural": "Note 29: TRY equivalent after derivatives and cash-flow hedging, before inventory natural hedging. Negative means net liabilities, not immediate cash due in full.",
+      "fxAfterNatural": "Note 29: TRY equivalent including inventory natural hedging. Not a liquid currency surplus; hedge effectiveness and cash timing still require review.",
+      "priceBook": "About 1.63×: the market pays roughly TRY 1.63 for TRY 1 of reported equity. TRY 744.22bn market value / TRY 456.14bn parent equity. It is above book, but not necessarily expensive. October price and June purchasing-power equity are mixed; subsequent dividends and other changes are not adjusted. Asset earning power and refiner peer comparisons matter.",
+      "peHalfYear": "About 14.93× = TRY 744.22bn / TRY 49.85bn. Market value is about fifteen times the first six months’ profit. This is not annual P/E and cannot be directly compared with annual multiples. Trailing earnings require the preceding second half in consistent purchasing-power units.",
+      "peRunRate": "About 7.46× if the second half repeats TRY 49.85bn profit: assumed annual earnings are TRY 99.70bn; 744.22 / 99.70 ≈ 7.46. This is a sensitivity scenario, not a forecast or actual P/E. Zero second-half profit would give about 14.93×. Inflation, seasonality and refining cycles limit the shortcut; 7.46 does not establish cheapness."
+    },
+    "debtMeaning": "Debt due within one year includes both short-term facilities and approaching instalments of long-term loans. Compare it with operating cash, unrestricted liquidity and refinancing access. Longer maturities reduce immediate pressure but do not remove interest or refinancing risk.",
+    "interestMeaning": "A lower USD interest rate is not automatically cheaper than TRY financing: currency moves and hedging costs matter. The notes describe SOFR-linked borrowing and interest swaps. No full fixed/floating net split is asserted without reconciliation. Effective rates in the table are not offers for new borrowing.",
+    "fxMeaning": "The first value is the deficit after derivatives and cash-flow hedges but before natural hedging. The second includes inventories as a natural hedge. A near-zero final balance does not erase the earlier deficit or eliminate currency risk. Inventory repricing and cash conversion may not match debt-payment timing; basis and collateral risk remain.",
+    "cashRestrictions": "Note 5 identifies blocked deposits and blocked revenue share, so balance-sheet cash is not treated as entirely unrestricted. The net-debt definition in Note 29 also uses a different cash base. Different definitions were not merged into a single net-cash claim.",
+    "guide": {
+      "verdict": "Financial signs are encouraging; the evidence does not yet establish that the price is cheap.",
+      "reason": "A good business and an attractive price are different questions. Ratios relate price to earnings and book equity. Without comparable peer/history benchmarks and sustainable annual earnings, a low-looking multiple is not enough. This assessment uses the 9 October 2026 price and 30 June 2026 financials.",
+      "business": "Profit growth and positive operating cash flow are supportive. Cash generation does not mean all profit is recurring or distributable. Refining margins can change earnings quickly.",
+      "price": "P/B relates price to book equity, which is not the sale value of the business. Verified trailing-twelve-month earnings are not available in this report. The half-year ratio and repeated-profit scenario are shown separately, not as actual annual P/E.",
+      "decision": "My assessment: price attractiveness remains uncertain. Extrapolating strong earnings can be optimistic. Normal earnings and comparable refiner multiples could support a discount; weaker earnings would raise a seemingly low multiple. A price fall or P/B near one is insufficient on its own.",
+      "missingIntro": "Fair value estimates future cash generation and its risk. Calculating a multiple is different from establishing what that multiple should be. The missing pieces are:",
+      "missing": {
+        "earnings": "1. Sustainable annual earnings: trailing-twelve-month earnings in consistent purchasing-power units, non-recurring items and normal refining margins. Doubling half-year profit is a scenario, not a solution to seasonality or cycles.",
+        "benchmark": "2. Comparable benchmarks: peer refiner P/E and P/B on consistent dates/accounting bases and Tüpraş’s normal historical periods. There is no universal rule that a P/E of 10 is cheap.",
+        "cashflow": "3. Future cash and risk assumptions: capital expenditure, working capital, tax, growth and discount rate. A price target without verified inputs would disguise assumptions as facts."
+      },
+      "next": "Once these inputs are available, bear/base/bull fair-value ranges can be calculated. “Not assessed” does not mean a bad company; it means a price discount has not yet been demonstrated."
+    },
+    "company": {
+      "activity": "Energy / oil refining. Tüpraş processes crude into diesel, gasoline, jet fuel and other products, with electricity and logistics activities as well. Earnings depend on product prices relative to crude and processing costs, not simply on the oil price. Higher oil prices do not automatically mean higher profit.",
+      "ownership": "The parent is Enerji Yatırımları A.Ş., controlled by Koç Holding, the Koç family and their companies. Koç Holding and Temel Ticaret also appear in disclosed share sales. The 7 September 2026 KAP sale disclosure states that control continues. Exact current ownership percentages have not been reconciled here; old percentages are not presented as current.",
+      "political": "The ownership and business sources reviewed establish control, not affiliation with a political party or privileged treatment. This limited review also cannot establish the absence of political connections. Ownership, past privatisation or public-sector business alone do not prove political alignment.",
+      "exposure": "Analyst interpretation: sanctions and regional conflict can affect crude supply, freight/insurance costs and refining margins. Tax, energy and environmental policy changes can affect demand, investment and cash flow. Higher country risk can raise financing costs and reduce market multiples. Effects are not one-directional and require event-specific official/KAP review.",
+      "limit": "This is not a comprehensive political-connections investigation. No verified party affiliation or targeted political action is established here; transmission channels are scenarios. No percentage price effect or target is attributed to a political event."
+    }
+  },
+  "researchTuprsV3": {
+    "name": "Tüpraş",
+    "sector": "Energy · Refining",
+    "headline": "Strong operating momentum; durability needs testing",
+    "summary": "Refining analysis depends on product-to-crude spreads, utilisation and working capital more than the direction of oil prices alone. This report takes a dividend perspective without treating short-term profits as sustainable earnings. Financial strength and prospective shareholder returns are separate questions.",
+    "strengths": "Operating margin and current ratio are reproducible. The cash buffer is a useful starting point for assessing resilience to weaker margins, but cash on the balance sheet is not automatically distributable profit.",
+    "risks": "Normalising product margins, inventory valuation, derivative settlements and new investments can change cash generation. Past dividends do not commit the company to future payouts.",
+    "accounting": "Consolidated TAS 34 interim report, in 30 June 2026 purchasing power. Source amounts in thousands of TRY were multiplied by 1,000. H1 2025 comparisons use the restated column in the same report. Six-month earnings were not annualised. Annualisation in valuation is a separately labelled hypothetical scenario only.",
+    "cashQuality": "Operating cash less capex is insufficient as a measure of cash available for distribution. Derivative settlements and interest classified under financing need separate review. This difference is therefore not used directly for dividend coverage or DCF.",
+    "growth": "Revenue and parent profit are compared across matching half-years. Extrapolating profit growth in a straight line could miss the refining cycle. Production volumes, margins and returns on reinvestment should be assessed together.",
+    "peers": "Peer refinery valuations on comparable periods and accounting bases are incomplete. No sector-average multiple or peer discount is asserted.",
+    "dividend": "The KAP shareholder approval specifies two 2026 instalments totalling TRY 17.1268815 gross per share. Ex-dates: 16 March and 30 September; scheduled account payment dates: 18 March and 2 October. This is the approved timetable, not verification of receipt in a personal account.",
+    "sustainability": "The displayed ratio divides the approved annual gross dividend by the 9 October reference price. It is not the future return available to a new buyer. Sustainability requires through-cycle cash flow, investment needs, debt maturities and legal distribution capacity.",
+    "valuation": "A sourced price is available, but normalised earnings, justified peer multiples and forward cash-flow assumptions are incomplete. No discount/fair/premium label or target price is produced. Market capitalisation and book value below are descriptive calculations only.",
+    "methods": {
+      "pe": "Applicable to refining, but peak-cycle earnings may produce a misleadingly low P/E. Normalised annual EPS and justified peer multiples are missing. Doubling half-year earnings does not resolve this; no valuation result.",
+      "ev": "Helps separate operations from financing. Comparable normalised EBITDA, peer multiples and the net debt/minority/associate bridge are required. Cash less debt alone is not a complete enterprise-value bridge; no valuation result.",
+      "dcf": "Models investment and cash conversion explicitly. Multi-year volumes, margins, tax, capex, working capital, WACC and terminal growth are missing. Nominal TRY cash flows must not be discounted at a real rate; no valuation result."
+    },
+    "scenarios": "These are research conditions, not numerical price targets. Probabilities, discount rates and normalised cash flows do not yet support bear/base/bull values. At a fixed P/E, a percentage change in normalised EPS changes model price by the same percentage; this mathematical sensitivity is not an earnings forecast.",
+    "scenarioNotes": {
+      "bear": "Lower refining margins with sustained investment and working-capital needs could constrain distributions.",
+      "base": "Margins move toward a cycle average and investment stays within budget. The cycle average is not yet verified.",
+      "bull": "Strong product margins persist and investments deliver expected cash contributions. These outcomes are not assumed."
+    },
+    "technical": "The five-session average is a short price summary, not a confirmed trend or buy signal. Adjusted history is insufficient for RSI/MACD, long averages and volume confirmation. Longer series crossing dividend dates require adjustment checks. These calculations are not total returns.",
+    "scanLimit": "The company KAP list and selected direct disclosures were examined for 11 July–11 October. A headline scan is not a completed content review. July rating/bonds, August redemption, September insurance and some attachments remain outstanding. Share sale, Entek contribution, margin revision and debt decision/application were reviewed. No claim is made that other material disclosures are absent.",
+    "riskFollowup": "Next checks should cover approval/issuance after the debt application, Entek’s external spending and earnings contribution, share-sale disclosures, delivery against margin guidance and dividend payment confirmations. Incomplete KAP coverage does not support a low news-risk conclusion.",
+    "history": "Version three: price and financial inputs are unchanged. Adds a 10–15-year dividend perspective, emerging-business opportunities, thesis conditions and monitoring. Both prior versions are preserved.",
+    "review": "Research and review were performed in the same Codex session, not independently. Identity and used inputs are sourced; decimal arithmetic makes calculations reproducible. Outstanding KAP content/attachments, peer valuation, normalised earnings, cash-flow adjustments and long technical history leave the outcome NEEDS_REVIEW. This is partial research.",
+    "news": {
+      "debt": {
+        "title": "Application for up to TRY 20 billion of debt issuance",
+        "fact": "The 2 October disclosure reports an application for domestic bonds/bills following the 23 September decision, with maturities up to ten years.",
+        "effect": "An application is not completed borrowing. No TRY 20 billion debt was added to the June balance sheet. Reassess financing costs and dividend capacity when issue size, rate and maturity become definite."
+      },
+      "governance": {
+        "title": "Corporate governance rating updated",
+        "fact": "The company reported that SAHA raised its governance rating to 9.76 effective 2 October.",
+        "effect": "Supportive for governance; not a credit rating, profit guarantee or automatic valuation premium. The full attachment has not been reviewed."
+      },
+      "entek": {
+        "title": "Cash contribution to Entek capital increase",
+        "fact": "The 1 September disclosure reports a TRY 2,480,873,555.15 cash contribution by Tüpraş to Entek.",
+        "effect": "Shows parent-level capital allocation. An intra-group transfer must not be deducted again as external consolidated capex. Track ultimate use and cash returns in subsequent reports."
+      },
+      "guidance": {
+        "title": "Refining margin guidance revised upward",
+        "fact": "The 4 August announcement raises 2026 net refining margin guidance from USD 6–7 to USD 13–15 per barrel. Volume, utilisation and investment targets are unchanged.",
+        "effect": "Material to the earnings outlook. Management guidance is neither realised full-year profit nor a permanent through-cycle margin."
+      },
+      "dividend": {
+        "title": "Shareholder approval for two dividend instalments",
+        "fact": "Shareholders approved TRY 33 billion in gross distributions on 11 March. The second instalment ex-date was set to 30 September.",
+        "effect": "Published outside the review window, with a payment timetable inside it. Retained as context, not used as a forecast of future dividends."
+      },
+      "shareSale": {
+        "title": "Koç Holding share sale settled",
+        "fact": "Koç Holding’s 7 September disclosure confirms settlement of the TUPRS share sale and states that management control continues.",
+        "effect": "This is a sale by existing shareholders, not new Tüpraş shares or proceeds received by Tüpraş. Relevant to ownership and market supply; not by itself evidence of operating deterioration."
+      }
+    },
+    "education": {
+      "price": "Dated HangiKredi close, cross-checked with CNBC-e daily change and previous close. Not a current executable quote.",
+      "profit": "Six-month profit attributable to parent shareholders after minority interests. Not cash; period and cycle comparisons matter.",
+      "nrm": "Per-barrel refining performance indicator. The company definition strips out inflation-accounting effects; it is not an accounting profit margin.",
+      "revenue": "Sales income, not proof of volume growth or profitability. Price, mix and volume need separation.",
+      "operatingMargin": "Operating profit per 100 units of sales, before net financing and tax. Not EBITDA; interpret with the refining cycle.",
+      "currentRatio": "Current assets divided by current liabilities. Inventory and receivable quality matter; exceeding one does not guarantee liquidity.",
+      "cash": "Balance-sheet cash and equivalents, excluding short-term financial investments. Restrictions and operational needs require further review.",
+      "financialDebt": "Sum of three financial-debt lines. Trade payables are excluded; not total liabilities. Maturity and cost still need review.",
+      "cashProxy": "Operating cash less fixed-asset payments. Excludes derivative and interest flows classified as financing; not normalised FCF or distributable cash.",
+      "revenueGrowth": "Matching half-years restated to the same purchasing power. Not merely nominal inflation growth; price/volume attribution remains necessary.",
+      "profitGrowth": "Parent-profit change can be amplified by a low comparison base. One-offs and the cycle need normalisation before extrapolation.",
+      "dividend1": "First gross instalment in the KAP decision. Net receipt depends on tax status; no personal portfolio income is recorded.",
+      "dividend2": "Second gross instalment in the KAP decision. Ex-date differs from account payment date; this entry is not a payment confirmation.",
+      "dividendYield": "17.1268815 ÷ 386.25 × 100. Gross reference ratio based on an approved historical distribution. An October purchase does not earn past distributions; not a forward yield.",
+      "marketCap": "Reference price times verified nominal shares. Share count comes from the March decision; a complete October corporate-action scan is pending. Not enterprise or fair value.",
+      "bookPerShare": "Parent equity divided by nominal shares. Accounting value in June purchasing power; not a direct fair-value threshold for an October price.",
+      "dailyChange": "Percentage change between consecutive closes. Not an intraday or dividend-inclusive return.",
+      "weeklyChange": "Closing-price change from 2 to 9 October. Short-term momentum summary, not a forecast.",
+      "sma5": "Arithmetic mean of five closes, sensitive to noise. Long history and volume confirmation are needed before using it as a trend signal.",
+      "debtWithinYear": "Combines both current debt categories; do not count approaching instalments twice in total debt. Accounting classification, not a daily cash-payment calendar.",
+      "debtLong": "Financial obligations classified beyond one year. A long maturity does not imply low interest or currency risk; denomination and contract terms matter.",
+      "fxBeforeNatural": "Note 29: TRY equivalent after derivatives and cash-flow hedging, before inventory natural hedging. Negative means net liabilities, not immediate cash due in full.",
+      "fxAfterNatural": "Note 29: TRY equivalent including inventory natural hedging. Not a liquid currency surplus; hedge effectiveness and cash timing still require review.",
+      "priceBook": "About 1.63×: the market pays roughly TRY 1.63 for TRY 1 of reported equity. TRY 744.22bn market value / TRY 456.14bn parent equity. It is above book, but not necessarily expensive. October price and June purchasing-power equity are mixed; subsequent dividends and other changes are not adjusted. Asset earning power and refiner peer comparisons matter.",
+      "peHalfYear": "About 14.93× = TRY 744.22bn / TRY 49.85bn. Market value is about fifteen times the first six months’ profit. This is not annual P/E and cannot be directly compared with annual multiples. Trailing earnings require the preceding second half in consistent purchasing-power units.",
+      "peRunRate": "About 7.46× if the second half repeats TRY 49.85bn profit: assumed annual earnings are TRY 99.70bn; 744.22 / 99.70 ≈ 7.46. This is a sensitivity scenario, not a forecast or actual P/E. Zero second-half profit would give about 14.93×. Inflation, seasonality and refining cycles limit the shortcut; 7.46 does not establish cheapness."
+    },
+    "debtMeaning": "Debt due within one year includes both short-term facilities and approaching instalments of long-term loans. Compare it with operating cash, unrestricted liquidity and refinancing access. Longer maturities reduce immediate pressure but do not remove interest or refinancing risk.",
+    "interestMeaning": "A lower USD interest rate is not automatically cheaper than TRY financing: currency moves and hedging costs matter. The notes describe SOFR-linked borrowing and interest swaps. No full fixed/floating net split is asserted without reconciliation. Effective rates in the table are not offers for new borrowing.",
+    "fxMeaning": "The first value is the deficit after derivatives and cash-flow hedges but before natural hedging. The second includes inventories as a natural hedge. A near-zero final balance does not erase the earlier deficit or eliminate currency risk. Inventory repricing and cash conversion may not match debt-payment timing; basis and collateral risk remain.",
+    "cashRestrictions": "Note 5 identifies blocked deposits and blocked revenue share, so balance-sheet cash is not treated as entirely unrestricted. The net-debt definition in Note 29 also uses a different cash base. Different definitions were not merged into a single net-cash claim.",
+    "guide": {
+      "verdict": "Financial signs are encouraging; the evidence does not yet establish that the price is cheap.",
+      "reason": "A good business and an attractive price are different questions. Ratios relate price to earnings and book equity. Without comparable peer/history benchmarks and sustainable annual earnings, a low-looking multiple is not enough. This assessment uses the 9 October 2026 price and 30 June 2026 financials.",
+      "business": "Profit growth and positive operating cash flow are supportive. Cash generation does not mean all profit is recurring or distributable. Refining margins can change earnings quickly.",
+      "price": "P/B relates price to book equity, which is not the sale value of the business. Verified trailing-twelve-month earnings are not available in this report. The half-year ratio and repeated-profit scenario are shown separately, not as actual annual P/E.",
+      "decision": "My assessment: price attractiveness remains uncertain. Extrapolating strong earnings can be optimistic. Normal earnings and comparable refiner multiples could support a discount; weaker earnings would raise a seemingly low multiple. A price fall or P/B near one is insufficient on its own.",
+      "missingIntro": "Fair value estimates future cash generation and its risk. Calculating a multiple is different from establishing what that multiple should be. The missing pieces are:",
+      "missing": {
+        "earnings": "1. Sustainable annual earnings: trailing-twelve-month earnings in consistent purchasing-power units, non-recurring items and normal refining margins. Doubling half-year profit is a scenario, not a solution to seasonality or cycles.",
+        "benchmark": "2. Comparable benchmarks: peer refiner P/E and P/B on consistent dates/accounting bases and Tüpraş’s normal historical periods. There is no universal rule that a P/E of 10 is cheap.",
+        "cashflow": "3. Future cash and risk assumptions: capital expenditure, working capital, tax, growth and discount rate. A price target without verified inputs would disguise assumptions as facts."
+      },
+      "next": "Once these inputs are available, bear/base/bull fair-value ranges can be calculated. “Not assessed” does not mean a bad company; it means a price discount has not yet been demonstrated."
+    },
+    "company": {
+      "activity": "Energy / oil refining. Tüpraş processes crude into diesel, gasoline, jet fuel and other products, with electricity and logistics activities as well. Earnings depend on product prices relative to crude and processing costs, not simply on the oil price. Higher oil prices do not automatically mean higher profit.",
+      "ownership": "The parent is Enerji Yatırımları A.Ş., controlled by Koç Holding, the Koç family and their companies. Koç Holding and Temel Ticaret also appear in disclosed share sales. The 7 September 2026 KAP sale disclosure states that control continues. Exact current ownership percentages have not been reconciled here; old percentages are not presented as current.",
+      "political": "The ownership and business sources reviewed establish control, not affiliation with a political party or privileged treatment. This limited review also cannot establish the absence of political connections. Ownership, past privatisation or public-sector business alone do not prove political alignment.",
+      "exposure": "Analyst interpretation: sanctions and regional conflict can affect crude supply, freight/insurance costs and refining margins. Tax, energy and environmental policy changes can affect demand, investment and cash flow. Higher country risk can raise financing costs and reduce market multiples. Effects are not one-directional and require event-specific official/KAP review.",
+      "limit": "This is not a comprehensive political-connections investigation. No verified party affiliation or targeted political action is established here; transmission channels are scenarios. No percentage price effect or target is attributed to a political event."
+    },
+    "longTerm": {
+      "verdict": "A conditional candidate for a long-term dividend research shortlist.",
+      "assessment": "I consider Tüpraş worth researching over 10–15 years: refining can generate cash and new energy investments could diversify earnings. Suitability for steadily rising annual income is not established. My constructive view depends on investment returns and preserving dividend capacity through weak refining cycles. It does not establish that today’s price is attractive.",
+      "confidence": "Limited research confidence: an adjusted 10–15-year dividend, earnings and cash-flow series and interruption history are incomplete. The horizon is approximately 2036–2041; a 2035 corporate plan does not substantiate the entire period. Time does not eliminate uncertainty.",
+      "durability": "Refining and energy needs support the thesis, but demand, competition and environmental costs can change. Existing plants do not guarantee strong earnings for fifteen years. New investment must be assessed against possible erosion in the legacy business.",
+      "income": "Supportive policy, variable cash income. Refining cycles and major investments can reduce or interrupt dividends. I would not treat distributions as fixed payments for recurring expenses.",
+      "entry": "Price still matters over long horizons. An excellent transition story bought at an excessive price can deliver poor returns. Current P/B and earnings scenarios are informative, but do not establish a discounted entry.",
+      "payout": "The official policy uses 80% of net distributable profit when conditions permit. This does not mean an 80% return on invested money. Payout ratio = dividends / distributable profit; dividend yield = dividend per share / share price. Future distributions depend on earnings, cash, investment and shareholder approval. The report’s 4.43% is a historical/approved distribution divided by a reference price, not next year’s yield.",
+      "allocation": "Retained cash can grow future earnings and dividends if invested productively. Overpriced or unsuccessful projects can damage both. A high payout is not sufficient: assess cash remaining after maintenance, growth investment and debt service.",
+      "realReturn": "A rising TRY dividend can still lose purchasing power; inflation and foreign-currency comparisons matter. Total return includes net distributions and share-value changes. Reinvestment can increase share count, but tax, fees, purchase prices and business outcomes matter. No fifteen-year return percentage is generated from assumed inputs.",
+      "fit": "Potentially relevant for investors able to tolerate variable distributions and price declines while reviewing the business. Poor fit for guaranteed or fixed annual income. Single-company income remains concentrated over long horizons; no personal allocation is proposed.",
+      "growthIntro": "Three opportunities merit monitoring. Plans below are company disclosures; earnings and valuation implications are conditional analysis. Sector expansion alone does not create shareholder value without profitable projects, sound financing and timely execution.",
+      "opportunities": {
+        "saf": {
+          "title": "Sustainable aviation fuel · SAF",
+          "evidence": "The company disclosed a new İzmir SAF facility plan and a long-term feedstock agreement. These steps do not establish full commercial operation.",
+          "upside": "Developing low-carbon aviation demand could add sales and diversify products. Integration with refining creates value only if it supports competitive costs and cash earnings.",
+          "proof": "Commissioning, certification, customer contracts, sustainable feedstock costs and positive post-investment cash contribution.",
+          "risk": "Feedstock inflation, certification/construction delays and competition compressing premiums. Sales growth need not translate into equivalent profit growth."
+        },
+        "electricity": {
+          "title": "Renewable / zero-carbon electricity",
+          "evidence": "The company plans to grow its electricity portfolio through Entek and integrate generation with new energy activities.",
+          "upside": "External sales can diversify income; competitively priced power can support internal operations. More balanced cash generation could reduce refining-cycle dependence.",
+          "proof": "Commissioned capacity, actual production, realised prices, grid access and returns exceeding financing costs.",
+          "risk": "Low power prices, weather, grid limits and expensive debt. Internally consumed electricity must not be counted twice as both external revenue and full savings."
+        },
+        "hydrogen": {
+          "title": "Green hydrogen",
+          "evidence": "The company reports completed engineering for a pilot electrolyser, targeting installation in 2028–2030 and integration with SAF.",
+          "upside": "Competitive production costs could support low-carbon operations and future customers. I treat this as long-term optionality rather than certain earnings today.",
+          "proof": "Pilot costs and efficiency, competitive electricity, credible customer demand and a commercial-scale investment decision.",
+          "risk": "Technology costs, subsidy dependence, weak demand and delays. Pilot success does not establish profitable large-scale production."
+        }
+      },
+      "pricing": "Additional value can come from sustainable cash growth per share or a higher market multiple for more stable earnings. Expectations may already be priced in. Announced investments are not automatically added to valuation: capital spending, financing, tax and legacy-business erosion must be considered.",
+      "confirm": "Projects commissioned within budget, demonstrable cash contributions, dividends funded by operations after maintenance/growth investment, and manageable debt/FX pressure. A share-price decline alone does not strengthen the thesis.",
+      "invalidate": "Persistently weak refining economics, repeated delays and overruns, debt growing without cash generation, recurring asset sales or borrowing to fund dividends, and poor minority-shareholder capital allocation. A temporary dividend cut for productive investment differs from permanent business deterioration.",
+      "monitor": {
+        "quarter": "Each financial report: refining margin, operating and available cash, debt maturities and capital expenditure—not just net profit.",
+        "year": "Annually: real growth in net dividend per share, cash coverage, realised project returns and current valuation.",
+        "event": "Reassess after major investments/financing, sanctions, production outages, capital actions or dividend-policy changes. This is a review plan; the application does not monitor automatically.",
+        "missing": "Evidence still needed: split-adjusted 10–15-year dividend and interruption history, through-cycle free cash flow, project costs/returns and peer valuation. These gaps prevent an unconditional fifteen-year holding conclusion."
+      }
+    }
+  },
+  "backtest": {
+    "eyebrow": "Historical dividend investing",
+    "title": "What if I had invested $1,000 every year?",
+    "description": "Approximate USD wealth from monthly purchases over the past 10, 15 and 20 years, reinvesting dividends in the same stock. This is not a forecast.",
+    "notice": "Uses historical prices and exchange rates. Gross dividends, fractional shares and zero taxes/fees are assumed. These are not your actual after-tax account returns.",
+    "dates": "Calculation cutoff: {{date}} (last complete month). Data compiled: {{retrieved}}. This section has its own date, separate from the other financial analysis.",
+    "years": "Past {{count}} years",
+    "balance": "Ending total value",
+    "invested": "Your contributions",
+    "profit": "Total profit / loss",
+    "dividends": "Gross dividends reinvested",
+    "receivable": "Unpaid dividend receivable",
+    "gain": "Total return",
+    "simpleAnnual": "Total return ÷ years",
+    "xirr": "Annualized return (XIRR)",
+    "summary": "{{invested}} dollars contributed would have reached about {{balance}} dollars. Total return: {{gain}}%; divided by {{years}} years, the requested simple average is {{simple}}%.",
+    "trace": "Inspect monthly purchases and dividend reinvestments",
+    "traceNote": "USD amounts represent contributions or dividends converted at the reinvestment-date rate. Prices share a consistent split-adjusted basis, not the historical nominal trading quote.",
+    "columns": {
+      "date": "Date",
+      "kind": "Transaction",
+      "usd": "USD",
+      "price": "Price",
+      "fx": "FX / USD"
+    },
+    "kinds": {
+      "CONTRIBUTION": "Monthly purchase",
+      "DIVIDEND": "Dividend purchase"
+    },
+    "status": {
+      "INSUFFICIENT_HISTORY": "The stock was not listed throughout this period. Shorter horizons with sufficient history are calculated separately.",
+      "MISSING_DATA": "Sufficient price, FX or dividend history has not been prepared for this period. Missing data does not mean zero return.",
+      "SOURCE_CONFLICT": "Material source discrepancies remain for this period. The data must be reconciled before a reliable result can be shown."
+    },
+    "explanationTitle": "How should I read these percentages?",
+    "explanation": "“Total return ÷ years” is the simple comparison you requested. For example, a 100% total gain over 10 years becomes 10% per year by this measure. It does not mean a 10% gain each year or a 10% compound annual return.",
+    "xirrExplanation": "XIRR accounts for how long each contribution was invested. The first and last monthly payments are not treated as having the same holding period. This is a better annual performance measure for recurring investments. Dividends are already included in ending value; do not add them again.",
+    "methodTitle": "Method, simplifications and sources",
+    "method": "$83.33 is invested on each month’s last trading day, and $83.37 every twelfth month, totaling exactly $1,000 per year. Shares are bought using that day’s FX. Dividend entitlement is based on shares held before the ex-date, with reinvestment on the payment date or next trading day. Entitled but unpaid dividends at cutoff are included as receivables, not as reinvested shares.",
+    "formulas": "Shares purchased = USD contribution × FX ÷ price. Dividend shares = gross entitlement ÷ payment-date price. Ending value = (shares × closing price + dividend receivable) ÷ ending FX. Total return = (ending value − contributions) ÷ contributions × 100. Simple annual average = total return ÷ years.",
+    "limits": "Prices and dividends use the same split-adjusted basis; splits are not applied again. Total-return adjusted close is not used, avoiding double-counted dividends. Fractional shares, no fees and gross dividends are comparison assumptions. Stock and FX daily closes may occur at different times; FX holidays use the latest available rate within four calendar days. Inflation, taxes, spreads and actual execution prices are excluded. Past performance may not repeat.",
+    "review": "Approximate research calculation; source review is partial and performed by the same agent. The September 2023 TUPRS dividend discrepancy was corrected using the company report. The 2008 final distribution in Is Yatirim was used instead of the initial proposal; the provider’s second entry was not added. Historical payment dates use a secondary calendar; not every KAP attachment was individually verified."
   }
 }

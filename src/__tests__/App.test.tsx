@@ -21,6 +21,7 @@ describe('App', () => {
     ['/islemler', 'nav.transactions'],
     ['/analiz', 'nav.analysis'],
     ['/aktar', 'nav.importExport'],
+    ['/stratejiler', 'strategies.title'],
   ])('renders a placeholder page at %s', (path, titleKey) => {
     renderWithProviders(<App />, path);
 

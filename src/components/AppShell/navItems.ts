@@ -4,6 +4,7 @@ import {
   RiFileExcel2Line,
   RiLineChartLine,
   RiWalletLine,
+  RiStackLine,
 } from '@remixicon/react';
 import type { ComponentType } from 'react';
 import { ROUTE_PATHS } from '@/app/routePaths';
@@ -20,6 +21,7 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { key: 'holdings', path: ROUTE_PATHS.holdings, icon: RiWalletLine },
   { key: 'transactions', path: ROUTE_PATHS.transactions, icon: RiExchangeLine },
   { key: 'analysis', path: ROUTE_PATHS.analysis, icon: RiLineChartLine },
+  { key: 'strategies', path: ROUTE_PATHS.strategies, icon: RiStackLine },
   {
     key: 'importExport',
     path: ROUTE_PATHS.importExport,

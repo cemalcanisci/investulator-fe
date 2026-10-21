@@ -10,6 +10,8 @@ import { NotFoundPage } from '@/pages/NotFound/NotFoundPage';
 import { AnalysisPage } from '@/pages/Analysis/AnalysisPage';
 import { AssetDetailPage } from '@/pages/AssetDetail/AssetDetailPage';
 import { TransactionsPage } from '@/pages/Transactions/TransactionsPage';
+import { StrategiesPage } from '@/pages/Strategies/StrategiesPage';
+import { ResearchPage } from '@/pages/Research/ResearchPage';
 
 export function App(): JSX.Element {
   return (
@@ -20,6 +22,8 @@ export function App(): JSX.Element {
         <Route path={ROUTE_PATHS.assetDetail} element={<AssetDetailPage />} />
         <Route path={ROUTE_PATHS.transactions} element={<TransactionsPage />} />
         <Route path={ROUTE_PATHS.analysis} element={<AnalysisPage />} />
+        <Route path={ROUTE_PATHS.strategies} element={<StrategiesPage />} />
+        <Route path={ROUTE_PATHS.research} element={<ResearchPage />} />
         <Route path={ROUTE_PATHS.importExport} element={<ImportExportPage />} />
         <Route path={ROUTE_PATHS.foundations} element={<FoundationsPage />} />
         {/* Must stay the last route: it catches every path nothing else matched. */}

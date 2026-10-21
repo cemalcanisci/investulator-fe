@@ -43,6 +43,7 @@ describe('AppShell', () => {
       'holdings',
       'transactions',
       'analysis',
+      'strategies',
       'importExport',
     ]) {
       expect(

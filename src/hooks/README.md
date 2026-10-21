@@ -4,6 +4,7 @@ Bileşene ait olmayan, ortak hook'lar burada durur. Her hook'un yanında aynı a
 
 | Hook                                                  | Ne yapar                                                                                               |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`useStrategies`](./useStrategies.md)                 | Örnek strateji verisini ve yalnızca oturuma ait grup/üyelik değişikliklerini yönetir                   |
 | [`useTheme`](./useTheme.md)                           | Aktif temayı (`default` / `light` / `dark`) okur ve değiştirir                                         |
 | [`useLanguage`](./useLanguage.md)                     | Aktif arayüz dilini (`tr` / `en`) okur ve değiştirir                                                   |
 | [`useDashboardSummary`](./useDashboardSummary.md)     | Dashboard özet verisini yükler (KPI, dağılım, hareketler, son işlemler)                                |
@@ -16,3 +17,5 @@ Bileşene ait olmayan, ortak hook'lar burada durur. Her hook'un yanında aynı a
 | [`useAssetCatalog`](./useAssetCatalog.md)             | İşlem formu için varlık kataloğunu yükler                                                              |
 | [`useFxRateToUsd`](./useFxRateToUsd.md)               | Bir para biriminin belirli günkü USD kurunu getirir                                                    |
 | [`useHoldings`](./useHoldings.md)                     | Tüm pozisyonları ve fiyatların son güncellenme zamanını yükler                                         |
+
+| [`useResearch`](./useResearch.md) | Katalog ID ile kaynaklı araştırma snapshot sürümlerini salt okunur yükler |

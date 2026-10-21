@@ -9,7 +9,12 @@
     "retryButton": "Tekrar dene",
     "loading": "Yükleniyor…",
     "previous": "Önceki",
-    "next": "Sonraki"
+    "next": "Sonraki",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "add": "Ekle",
+    "remove": "Çıkar",
+    "confirm": "Onayla"
   },
   "nav": {
     "label": "Ana menü",
@@ -21,7 +26,8 @@
     "holdings": "Yatırımlarım",
     "transactions": "İşlemler",
     "analysis": "Analiz",
-    "importExport": "İçe/Dışa aktar"
+    "importExport": "İçe/Dışa aktar",
+    "strategies": "Stratejiler"
   },
   "currency": {
     "label": "Para birimi",
@@ -472,5 +478,704 @@
       "unused": "Bu işlem türüne ait olmayan tutar alanlarını boş bırak.",
       "inconsistent": "Adet × birim fiyat ile toplam tutar uyuşmuyor."
     }
+  },
+  "strategies": {
+    "title": "Stratejiler ve Takip Listesi",
+    "subtitle": "Adaylarını takip et, yatırım yaklaşımını planla.",
+    "demoTitle": "Örnek takip listesi · Oturum önizlemesi",
+    "demoHint": "Başlangıçta 10 BIST hissesi ve 15 kripto adayı gösterilir. Değişikliklerin ayrı oturum verisi olarak tutulur ve sayfa yenilendiğinde sıfırlanır. Takibe eklemek alım işlemi oluşturmaz; portföyünü etkilemez.",
+    "analysisUnavailable": "Canlı veri ve AI analizi henüz bağlı değil; güncelleme işlemleri kullanılamıyor.",
+    "detailUnavailable": "TUPRS için kaynaklı, tarihli araştırma raporu açılabilir; diğer varlıklar için henüz rapor yok.",
+    "refreshAll": "Tüm Takip Listemi Güncelle",
+    "refreshGroup": "Grubu Güncelle",
+    "refreshAsset": "Güncelle",
+    "groupsTitle": "Strateji gruplarım",
+    "listTitle": "Takip listem",
+    "newGroup": "Grup oluştur",
+    "editGroup": "Grubu düzenle",
+    "deleteGroup": "Grubu kaldır",
+    "addAsset": "Takibe varlık ekle",
+    "targetWeight": "Hedef ağırlık",
+    "targetCount": "Hedef adet",
+    "notSet": "Belirlenmedi",
+    "weightValue": "%{{value}}",
+    "notConnected": "Bağlı değil",
+    "summary": {
+      "assets": "Takip edilen varlık",
+      "unique": "Gruplar arasında tekil varlık sayısı",
+      "groups": "Strateji grubu",
+      "custom": "İhtiyacına göre oluştur ve düzenle",
+      "analysis": "Veri ve AI analizi",
+      "waiting": "TUPRS tarihli raporu mevcut; otomatik güncelleme yok."
+    },
+    "form": {
+      "name": "Grup adı",
+      "description": "Açıklama (isteğe bağlı)",
+      "weight": "Hedef ağırlık % (isteğe bağlı)",
+      "count": "Hedef varlık sayısı (isteğe bağlı)",
+      "examples": "Örneğin: BIST Büyüme, ABD Temettü, ABD Büyüme, Kripto",
+      "targetHint": "Hedefler planlama içindir; gerçekleşen portföy dağılımı değildir. Toplamın %100 olması bu aşamada zorunlu değil."
+    },
+    "search": "Takip listesinde ara",
+    "searchPlaceholder": "Sembol veya varlık adı ara…",
+    "chooseGroup": "Strateji grubu seç",
+    "chooseType": "Varlık türü seç",
+    "allGroups": "Tüm gruplar",
+    "allTypes": "Tüm türler",
+    "resultCount_one": "{{count}} varlık gösteriliyor",
+    "resultCount_other": "{{count}} varlık gösteriliyor",
+    "watching": "Takipte",
+    "noPurchase": "İşlem kaydı oluşturmaz",
+    "noData": "Veri bekleniyor",
+    "detailSoon": "Analiz detayını aç",
+    "identityPending": "Coin kimliği doğrulanmalı",
+    "catalogPending": "Başlangıç katalog bilgisi",
+    "namePending": "Proje adı henüz doğrulanmadı",
+    "columns": {
+      "asset": "Varlık",
+      "groups": "Tür / Gruplar",
+      "status": "Takip durumu",
+      "analysis": "Finansal veri / Analiz",
+      "actions": "İşlemler"
+    },
+    "addHint": "Örnek katalogdan seç. Aynı varlığı birden fazla gruba ekleyebilirsin. Coinlerin borsa, ağ ve sağlayıcı kimlikleri henüz doğrulanmadı; yeni sağlayıcı araması bağlı değil.",
+    "catalogSearch": "Örnek katalogda ara",
+    "alreadyAdded": "Eklendi",
+    "alreadyAddedLabel": "{{symbol}} zaten bu grupta",
+    "addAssetLabel": "{{symbol}} takibe ekle",
+    "catalogEmpty": "Örnek katalogda eşleşme yok. Gerçek katalog araması henüz bağlı değil.",
+    "removeLabel": "{{symbol}} varlığını {{group}} grubundan çıkar",
+    "removeFrom": "{{group}}: çıkar",
+    "removeHint": "{{symbol}}, {{group}} grubundan çıkarılacak. Diğer gruplardaki üyelikleri ve portföy işlemleri etkilenmez.",
+    "deleteGroupHint": "“{{name}}” grubu ve bu gruptaki takip üyelikleri kaldırılacak. Katalog varlıkları, diğer gruplar ve portföy işlemleri etkilenmez.",
+    "emptyGroups": "Henüz strateji grubun yok",
+    "emptyGroupsHint": "Bir grup oluşturup örnek katalogdan varlık ekleyebilirsin.",
+    "emptyList": "Bu görünümde takip edilen varlık yok",
+    "emptyListHint": "Filtreleri değiştir veya bir gruba varlık ekle.",
+    "noResults": "Aramana uygun varlık bulunamadı",
+    "clearFilters": "Tüm listeyi göster",
+    "saved": "Değişiklik bu oturum için uygulandı; yenilemede sıfırlanır.",
+    "errors": {
+      "generic": "Değişiklik uygulanamadı. Tekrar dene.",
+      "invalidGroup": "Grup adı 1–80, açıklama en fazla 500 karakter olmalı.",
+      "duplicateGroup": "Bu adla bir grup zaten var.",
+      "invalidWeight": "Hedef ağırlığı 0–100 arasında, en fazla iki ondalık basamakla gir.",
+      "invalidCount": "Hedef sayıyı 1–10000 arasında tam sayı olarak gir.",
+      "missingGroup": "Grup bulunamadı.",
+      "missingAsset": "Katalog varlığı bulunamadı.",
+      "duplicateMembership": "Varlık zaten bu grupta."
+    }
+  },
+  "research": {
+    "back": "Stratejilere dön",
+    "open": "Analiz detayını aç",
+    "eyebrow": "Varlık araştırması",
+    "reportDate": "Araştırma tarihi",
+    "partialReport": "Kaynaklı rapor · Kısmi kapsam",
+    "snapshotTitle": "Talimatla güncellenen araştırma",
+    "snapshotHint": "Bu rapor kamuya açık kaynaklardan hazırlandı. Canlı veri değildir; yeni araştırma talimatıyla güncellenir. Takip listesinde bulunmak, bu varlığın satın alındığı anlamına gelmez.",
+    "originalCurrency": "Rapor tutarları kaynaklarının özgün para birimindedir. Üst çubuktaki USD/TRY seçimi bu tarihli raporu dönüştürmez; örnek portföy kuru kullanılmaz.",
+    "contents": "Analiz bölümleri",
+    "missing": "Veri eksik",
+    "calculationDetails": "Hesaplama, kaynak ve anlamı",
+    "result": "Sonuç",
+    "strengths": "Destekleyen unsurlar",
+    "watchPoints": "Yakından izlenecekler",
+    "valuationResult": "Fiyat analizi sonucu",
+    "notAssessed": "Adil değer değerlendirilemiyor",
+    "scenarios": "Senaryolar ve duyarlılık",
+    "discountFormula": "İskonto = (adil değer − piyasa fiyatı) / adil değer. Potansiyel getiri = (adil değer − piyasa fiyatı) / piyasa fiyatı. Doğrulanmış adil değer olmadığından ikisi de hesaplanmadı.",
+    "scanRange": "KAP inceleme aralığı",
+    "kapList": "KAP şirket bildirim listesi",
+    "analystInterpretation": "Analiz yorumu",
+    "eventDate": "Olay / etki tarihi",
+    "updateNotice": "Güncelleme bildirimi",
+    "newNotice": "Yeni bildirim",
+    "correction": "Düzeltme",
+    "noCorrection": "Düzeltme değil",
+    "previousNotice": "İlgili önceki açıklama tarihi",
+    "attachmentsPartial": "Ek incelemesi kısmi; bütün ekler doğrulanmadı.",
+    "contextOnly": "Aralık dışı · Geçerli bağlam",
+    "riskFollowup": "Riskler ve sonraki kontrolde izlenecekler",
+    "firstVersion": "İlk araştırma sürümü",
+    "reviewTitle": "İnceleme sonucu",
+    "financialPeriod": "Finansal dönem",
+    "priceAt": "Fiyatın kaynak zamanı",
+    "retrievedAt": "Kaynak kontrol zamanı",
+    "storage": "Rapor kaydı",
+    "fileSnapshot": "Frontend araştırma dosyası · Veritabanına aktarılmadı",
+    "publishedAt": "Yayın zamanı",
+    "dateUnverified": "Kesin yayın günü doğrulanmadı",
+    "unknownAsset": "Varlık bulunamadı",
+    "noReport": "Henüz araştırma raporu yok",
+    "noReportHint": "Bu varlık için kaynaklı araştırma hazırlanmadı. Fiyat, haber ve değerleme sonucu üretilmedi. İlk rapor TUPRS için hazırlandı.",
+    "noCryptoReportHint": "Bu kripto için sağlayıcı kimliği doğrulanıp araştırma hazırlanmadı. Sembol tek başına yeterli değildir. Tokenomics, arz/vesting, likidite, kullanım ve güvenlik kapsamı kimlik doğrulamasından sonra ele alınacak.",
+    "sections": {
+      "overview": "Genel özet",
+      "financials": "Finansal sağlık",
+      "growth": "Büyüme",
+      "dividend": "Temettü",
+      "valuation": "Fiyat analizi ve adil değer",
+      "technical": "Teknik görünüm",
+      "news": "KAP, haberler ve riskler",
+      "history": "Geçmiş ve inceleme",
+      "sources": "Kaynaklar ve tarihler"
+    },
+    "status": {
+      "COMPLETE": "Tamam",
+      "PARTIAL": "Kısmi",
+      "MISSING": "Eksik",
+      "UNAVAILABLE": "Erişilemedi"
+    },
+    "impact": {
+      "HIGH": "Yüksek önem",
+      "MEDIUM": "Orta önem"
+    },
+    "units": {
+      "BILLION_TRY": "milyar TL",
+      "TRY": "TL",
+      "TRY_SHARE": "TL / pay",
+      "SHARES": "pay",
+      "USD_BARREL": "USD / varil",
+      "PERCENT": "%",
+      "MULTIPLE": "kat"
+    },
+    "metrics": {
+      "price": "Tarihli kapanış fiyatı",
+      "shares": "Nominal 1 TL pay sayısı",
+      "revenue": "Hasılat",
+      "revenuePrevious": "Önceki dönem hasılatı",
+      "profit": "Ana ortaklık net kârı",
+      "profitPrevious": "Önceki dönem ana ortaklık net kârı",
+      "operatingProfit": "Esas faaliyet kârı",
+      "cash": "Nakit ve nakit benzerleri",
+      "debtShort": "Kısa vadeli finansal borç",
+      "debtCurrent": "Uzun vadeli borcun kısa kısmı",
+      "debtLong": "Uzun vadeli finansal borç",
+      "currentAssets": "Dönen varlıklar",
+      "currentLiabilities": "Kısa vadeli yükümlülükler",
+      "parentEquity": "Ana ortaklık özkaynağı",
+      "operatingCash": "İşletme faaliyetlerinden nakit",
+      "capex": "Maddi / maddi olmayan duran varlık alımı",
+      "dividend1": "İlk taksit · Brüt pay başına",
+      "dividend2": "İkinci taksit · Brüt pay başına",
+      "dividendTotal": "2026 onaylı brüt temettü / pay",
+      "nrm": "Net rafineri marjı",
+      "close1002": "2 Ekim kapanışı",
+      "close1005": "5 Ekim kapanışı",
+      "close1006": "6 Ekim kapanışı",
+      "close1007": "7 Ekim kapanışı",
+      "close1008": "8 Ekim kapanışı",
+      "revenueGrowth": "Hasılat değişimi · Yıllık",
+      "profitGrowth": "Net kâr değişimi · Yıllık",
+      "operatingMargin": "Esas faaliyet kâr marjı",
+      "currentRatio": "Cari oran",
+      "financialDebt": "Toplam finansal borç",
+      "cashProxy": "İşletme nakdi − yatırım harcaması",
+      "bookPerShare": "Tarihli defter değeri / pay",
+      "marketCap": "Referans piyasa değeri",
+      "dividendYield": "Onaylı temettü / referans fiyat",
+      "dailyChange": "Son işlem günü değişimi",
+      "weeklyChange": "Haftalık fiyat değişimi",
+      "sma5": "5 seans basit hareketli ortalama",
+      "debtAccruals": "Finansal borç faiz tahakkukları",
+      "debtWithinYear": "Bir yıl içinde sınıflanan finansal borç",
+      "fxBeforeNatural": "Doğal korunma öncesi net döviz pozisyonu",
+      "fxAfterNatural": "Doğal korunma sonrası net döviz pozisyonu",
+      "priceBook": "PD/DD — dönem farkı içerir",
+      "peHalfYear": "Fiyat / 6 aylık kâr — yıllık F/K değildir",
+      "peRunRate": "F/K senaryosu — 6 aylık kâr × 2"
+    },
+    "formulas": {
+      "revenueGrowth": "(Hasılat − önceki hasılat) ÷ önceki hasılat × 100",
+      "profitGrowth": "(Ana ortaklık net kârı − önceki net kâr) ÷ önceki net kâr × 100",
+      "operatingMargin": "Esas faaliyet kârı ÷ hasılat × 100",
+      "currentRatio": "Dönen varlıklar ÷ kısa vadeli yükümlülükler",
+      "financialDebt": "Kısa vadeli borç + uzun vadeli borcun kısa kısmı + uzun vadeli borç",
+      "cashProxy": "İşletme faaliyetlerinden nakit − duran varlık alım ödemeleri",
+      "bookPerShare": "Ana ortaklık özkaynağı ÷ nominal 1 TL pay sayısı",
+      "marketCap": "Referans fiyat × nominal 1 TL pay sayısı",
+      "dividendYield": "Onaylı yıllık brüt temettü / pay ÷ referans fiyat × 100",
+      "dailyChange": "(9 Ekim kapanışı − 8 Ekim kapanışı) ÷ 8 Ekim kapanışı × 100",
+      "weeklyChange": "(9 Ekim kapanışı − 2 Ekim kapanışı) ÷ 2 Ekim kapanışı × 100",
+      "sma5": "(5, 6, 7, 8 ve 9 Ekim kapanışları toplamı) ÷ 5",
+      "debtWithinYear": "Kısa vadeli finansal borç + uzun vadeli finansal borcun kısa kısmı",
+      "priceBook": "(Fiyat × pay adedi) / ana ortaklık özkaynağı",
+      "peHalfYear": "(Fiyat × pay adedi) / 6 aylık ana ortaklık net kârı",
+      "peRunRate": "(Fiyat × pay adedi) / (6 aylık net kâr + aynı kârın tekrarı varsayımı)"
+    },
+    "methods": {
+      "pe": "Normalize F/K",
+      "ev": "FD / FAVÖK",
+      "dcf": "İndirgenmiş nakit akışı"
+    },
+    "methodFormulas": {
+      "pe": "Adil fiyat = normalize yıllık pay başına kâr × gerekçeli F/K",
+      "ev": "Özkaynak değeri = normalize FAVÖK × çarpan − net borç − azınlık payı + diğer düzeltmeler",
+      "dcf": "Firma değeri = Σ FCFₜ / (1 + WACC)ᵗ + terminal değerin bugünkü değeri"
+    },
+    "scenarioNames": {
+      "bear": "Kötümser",
+      "base": "Baz",
+      "bull": "İyimser"
+    },
+    "debtTitle": "Borçların vadesi, para birimi ve ödeme baskısı",
+    "debtCurrencyTitle": "Finansal borcun özgün para birimi",
+    "debtCurrencyHint": "30 Haziran 2026 · Gösterilen toplamlar TL karşılığıdır; borcun tamamı TL cinsinden değildir. Kredi, tahvil ve kiralama satırları dahil; 1,439635 milyar TL faiz tahakkuku para birimlerine dağıtılmadan ayrı tutuldu. Kartı açarak özgün tutarları ve kaynak faiz oranlarını görebilirsiniz.",
+    "effectiveRate": "Kaynak efektif faiz oranı",
+    "fxTitle": "Döviz açığı ve korunma birlikte okunmalı",
+    "debtSource": "Tüpraş 2026 H1 · Dipnot 5, 6, 17 ve 29",
+    "maturity": {
+      "SHORT": "Kısa vadeli",
+      "CURRENT_LONG": "Uzun vadenin kısa kısmı",
+      "LONG": "Uzun vadeli"
+    },
+    "identityConfirmed": "Araştırma kimliği KAP ile doğrulandı",
+    "guide": {
+      "question": "Bu fiyat ucuz mu?",
+      "jump": "Hesapları ve gerekçeleri incele ↓",
+      "business": "Şirket açısından olumlu olan ne?",
+      "price": "Fiyat açısından ne biliyoruz?",
+      "decision": "Benim değerlendirmem",
+      "results": "Oranlar: hesaplanan sonuç ve anlamı",
+      "missingTitle": "Neden henüz adil fiyat aralığı vermiyorum?",
+      "companyTitle": "Şirketi tanıyalım",
+      "activity": "Ne iş yapıyor?",
+      "ownership": "Ortakları ve kontrol yapısı",
+      "political": "Siyasetle bağlantı: doğrulanan bilgi",
+      "exposure": "Siyasi dalgalanmalar nasıl etkileyebilir?",
+      "missingLabel": "İnceleme sınırı"
+    },
+    "longTerm": {
+      "horizon": "{{from}}–{{to}} yıllık yatırım bakışı · Analist yorumu",
+      "title": "Uzun vadeli temettü yatırımına uygun mu?",
+      "durability": "İşin dayanıklılığı",
+      "income": "Gelirin sürekliliği",
+      "entry": "Bugünkü alım fiyatı",
+      "payout": "Dağıtım oranı ile temettü verimi farklıdır",
+      "allocation": "Temettü mü, büyüme yatırımı mı?",
+      "realReturn": "Alım gücü ve toplam getiri",
+      "fit": "Hangi beklentiyle uyumlu?",
+      "opportunities": "Yeni alanlar ek değer yaratabilir mi?",
+      "evidence": "Şirketin açıkladığı plan / mevcut adım",
+      "upside": "Değere dönüşme yolu · Yorum",
+      "proof": "Görmek istediğim kanıt",
+      "risk": "Neden gerçekleşmeyebilir?",
+      "confirm": "Görüşümü güçlendiren gelişmeler",
+      "invalidate": "Görüşümü değiştirecek uyarılar",
+      "monitor": "10–15 yıl boyunca neyi, ne zaman izlemeli?"
+    }
+  },
+  "researchTuprs": {
+    "name": "Tüpraş",
+    "sector": "Enerji · Rafineri",
+    "headline": "Operasyonel ivme güçlü; kalıcılığı sınanmalı",
+    "summary": "Rafineri analizinde petrol fiyatının yönünden çok ürün–ham petrol farkı, kapasite kullanımı ve işletme sermayesi önemlidir. Bu rapor temettü yaklaşımını esas alır; kısa dönem kârı otomatik olarak sürdürülebilir kazanç kabul etmez. Finansal güç ile hisseden beklenen getiri ayrı değerlendirilir.",
+    "strengths": "Faaliyet kâr marjı ve cari oran hesaplanabiliyor. Şirketin nakit tamponu, marj gerilemesine dayanıklılık açısından izlenebilir bir dayanak; ancak nakit bakiyesi tek başına dağıtılabilir kâr değildir.",
+    "risks": "Ürün marjlarının normalleşmesi, stok değerlemesi, türev teminat/uzlaşma hareketleri ve yeni yatırımlar nakit üretimini değiştirebilir. Geçmiş temettü bir sonraki yıl için taahhüt değildir.",
+    "accounting": "Konsolide TMS 34 ara dönem raporu; tutarlar 30 Haziran 2026 satın alma gücünde. Kaynak tablodaki bin TL değerleri ×1.000 ile TL’ye çevrildi. 2025 ilk yarı kıyasları aynı rapordaki düzeltilmiş sütundan; altı aylık kâr yıllıklandırılmadı.",
+    "cashQuality": "İşletme nakdi eksi yatırım harcaması, dağıtılabilir nakit ölçüsü olarak yeterli değil. Türev uzlaşmaları ve faiz gibi finansman bölümündeki nakit hareketleri ayrıca incelenmeli. Bu yüzden bu farkı temettü karşılama oranına veya DCF girdisine doğrudan taşımıyoruz.",
+    "growth": "Hasılat ve ana ortaklık kârı aynı altı aylık dönemlerle karşılaştırıldı. Kâr artışını düz çizgi halinde ileri taşımak rafineri çevrimini gözden kaçırabilir. Büyüme için bir sonraki kontrolde üretim hacmi, marj ve yeniden yatırımın getirisi birlikte izlenmeli.",
+    "peers": "Uyumlu dönem ve muhasebe bazında emsal rafineri değerlemesi tamamlanmadı. Bu nedenle sektör ortalaması veya emsallere göre ucuzluk iddiası yok.",
+    "dividend": "KAP genel kurul onayı: 2026’da iki taksit için toplam brüt 17,1268815 TL/pay. Hak kullanım tarihleri 16 Mart ve 30 Eylül; hesaplara ödeme tarihleri 18 Mart ve 2 Ekim. Bunlar kararın takvimidir; bu rapor kişisel hesaba ödeme yapıldığını doğrulamaz.",
+    "sustainability": "Gösterilen oran, onaylanmış yıllık brüt temettünün 9 Ekim fiyatına bölünmesidir; yeni alıcının gelecekte elde edeceği getiri değildir. Sürdürülebilirlik için çevrim boyunca nakit üretimi, yatırım gereksinimi, borç vadeleri ve yasal dağıtım kapasitesi birlikte incelenmeli.",
+    "valuation": "Kaynaklı fiyat var; fakat çevrim boyunca normalize kâr, gerekçeli emsal çarpanı ve ileriye dönük nakit akışı varsayımları tamamlanmadı. “İskontolu/makul/primli” sonucu veya hedef fiyat üretmiyoruz. Piyasa değeri ve defter değeri aşağıda yalnız tanımlayıcı hesap olarak yer alır.",
+    "methods": {
+      "pe": "Rafineride uygulanabilir, ancak çevrim tepesindeki kâr yanıltıcı düşük F/K yaratabilir. Normalize yıllık kâr ve karşılaştırılabilir emsal çarpanı eksik. Altı aylık kârı ikiyle çarpmak bu eksikleri gidermez; hesap sonucu yok.",
+      "ev": "Faaliyet performansını sermaye yapısından ayırmaya yardımcı olur. Aynı bazda normalize FAVÖK, emsal çarpanları, net borç ve azınlık/iştirak köprüsü gerekli. Nakit ile borç farkı tek başına tam firma değeri köprüsü değildir; hesap sonucu yok.",
+      "dcf": "Yatırım ve nakit dönüşümünü açıkça modeller. Çok yıllı hacim/marj, vergi, yatırım, işletme sermayesi, WACC ve terminal büyüme eksik. Nominal TL nakit akışıyla reel iskonto oranı karıştırılmamalı; hesap sonucu yok."
+    },
+    "scenarios": "Aşağıdakiler sayısal hedef fiyat değil, araştırılacak koşullardır. Kötümser/baz/iyimser değer aralığı için olasılık, iskonto oranı ve normalize nakit akışı henüz desteklenmedi. F/K sabitken normalize kârdaki yüzde değişim model fiyatına aynı yüzdeyle yansır; bu matematiksel duyarlılık, kâr tahmini değildir.",
+    "scenarioNotes": {
+      "bear": "Rafineri marjı gerilerken yatırım ve işletme sermayesi ihtiyacı yüksek kalırsa dağıtım kapasitesi daralabilir.",
+      "base": "Marjlar çevrim ortalamasına yakınsar; yatırımlar bütçe içinde kalır. Çevrim ortalaması henüz doğrulanmadı.",
+      "bull": "Güçlü ürün marjları sürer, yatırımlar beklenen nakit katkısını sağlar. Bu koşulların gerçekleşeceği varsayılmıyor."
+    },
+    "technical": "Beş seans ortalaması kısa bir fiyat özeti sunar; trend teyidi veya alım sinyali değildir. RSI/MACD, uzun ortalamalar ve hacim teyidi için yeterli düzeltilmiş seri yok. Temettü tarihini geçen uzun serilerde fiyat düzeltmesi ayrıca doğrulanmalı; bu hesaplar toplam getiri değildir.",
+    "scanLimit": "11 Temmuz–11 Ekim aralığı için KAP şirket listesi ve seçili doğrudan bildirimler incelendi. Başlık taraması tamamlanmış içerik denetimi değildir. Temmuz derecelendirme/tahvil, Ağustos itfa, Eylül sigorta dahil bazı içerikler ve ekler açık kalıyor. Pay satışı, Entek katkısı, marj revizyonu ve ihraç kararı/başvurusu incelendi. “Başka önemli bildirim yok” sonucu çıkarılamaz.",
+    "riskFollowup": "Sonraki güncellemede borçlanmanın başvurudan onay/ihraç aşamasına geçip geçmediği, Entek yatırımlarının grup dışına nakit çıkışı ve gelir katkısı, pay satışı bildirimleri, marj beklentisinin gerçekleşmesi ve temettü ödeme teyitleri kontrol edilmeli. KAP taraması eksikken haber riskinin düşük olduğu söylenemez.",
+    "history": "İlk rapor; önceki sürümle değişim kıyası yok. Yeni talimatta ayrı sürüm oluşturulacak, eski kaynak ve hesap girdileri korunacak. Bu dosya araştırma içindir; takip üyeliklerini veya portföy işlemlerini değiştirmez.",
+    "review": "Araştırma ve kontrol aynı Codex oturumunda yapıldı; bağımsız denetim değil. Kimlik ve kullanılan girdiler kaynaklara bağlandı, hesaplar ondalık aritmetikle tekrar üretilebilir. KAP içerik/ek kapsamı, emsal değerleme, normalize kâr, nakit akışı düzeltmeleri ve uzun teknik seri eksik olduğu için inceleme sonucu NEEDS_REVIEW; rapor kısmi araştırmadır.",
+    "news": {
+      "debt": {
+        "title": "20 milyar TL’ye kadar borçlanma için SPK başvurusu",
+        "fact": "2 Ekim bildirimi, 23 Eylül kararına dayanarak yurtiçi tahvil/bono ihracı için başvuruyu açıklıyor; vade üst sınırı 10 yıl.",
+        "effect": "Başvuru tamamlanmış borçlanma değildir. Haziran bilançosuna 20 milyar TL borç eklenmedi. İhraç tutarı, faiz ve vade kesinleşirse finansman maliyeti ve temettü kapasitesi yeniden incelenmeli."
+      },
+      "governance": {
+        "title": "Kurumsal yönetim notu güncellendi",
+        "fact": "Şirket, SAHA değerlendirmesinde notun 2 Ekim itibarıyla 9,76’ya yükseltildiğini açıkladı.",
+        "effect": "Yönetişim açısından destekleyici bir açıklama; kredi notu, kâr garantisi veya değerleme çarpanına otomatik prim değildir. Ek raporun tamamı incelenmedi."
+      },
+      "entek": {
+        "title": "Entek sermaye artırımına nakit katılım",
+        "fact": "1 Eylül açıklamasında Tüpraş’ın Entek için 2.480.873.555,15 TL nakit sermaye katkısı yaptığı bildirildi.",
+        "effect": "Ana şirketin kaynak tahsisini gösterir. Konsolide grup içi transfer olduğundan tutar grup dışı yatırım harcaması gibi ikinci kez düşülmemeli. Nihai kullanım ve nakit getirisi sonraki finansallarda izlenmeli."
+      },
+      "guidance": {
+        "title": "Rafineri marjı beklentisi yukarı revize edildi",
+        "fact": "4 Ağustos açıklaması 2026 net rafineri marjı beklentisini 6–7’den 13–15 USD/varile çıkardı. Üretim, satış, kapasite ve yatırım hedefleri değiştirilmedi.",
+        "effect": "Kazanç görünümünü etkileyen önemli değişim. Bu bir yönetim beklentisidir; gerçekleşmiş tam yıl kârı veya kalıcı çevrim marjı olarak kullanılamaz."
+      },
+      "dividend": {
+        "title": "İki taksitli temettü için genel kurul onayı",
+        "fact": "11 Mart genel kurulunda toplam 33 milyar TL brüt dağıtım onaylandı. İkinci taksidin hak kullanım tarihi 30 Eylül olarak belirlendi.",
+        "effect": "Yayın tarihi inceleme aralığı dışında, ödeme takvimi aralık içinde. Bu nedenle bağlam olarak korundu; gelecekteki temettü tahmini olarak kullanılmadı."
+      },
+      "shareSale": {
+        "title": "Koç Holding pay satışının takası tamamlandı",
+        "fact": "Koç Holding’in 7 Eylül bildirimi TUPRS pay satışının takasını teyit ediyor; yönetim kontrolünün sürdüğünü belirtiyor.",
+        "effect": "Bu mevcut ortakların pay satışıdır; Tüpraş’ın yeni pay ihracı veya şirket kasasına giren satış geliri değildir. Ortaklık ve piyasadaki pay arzı açısından izlenir; tek başına operasyonel bozulma kanıtı sayılmaz."
+      }
+    },
+    "education": {
+      "price": "HangiKredi tarihli kapanışı; CNBC-e aynı gün fiyat değişimi ve önceki kapanışla çapraz kontrol edildi. Güncel emir fiyatı değildir.",
+      "profit": "Azınlık payları çıkarıldıktan sonra ana ortaklık pay sahiplerine ait altı aylık kâr. Nakitle aynı şey değildir; dönem ve çevrim karşılaştırması gerekir.",
+      "nrm": "Rafineri faaliyetinin varil başına marj göstergesi. Şirket sunumunda enflasyon muhasebesi etkileri ayıklanan tanımı kullanılır; muhasebe kâr marjı ile eşit değildir.",
+      "revenue": "Satış gelirini ölçer; tek başına hacim büyümesi veya kârlılık kanıtı değildir. Fiyat, ürün karması ve hacim ayrımı gerekir.",
+      "operatingMargin": "Her 100 TL hasılatın ne kadarının esas faaliyet kârı olduğunu gösterir. Faiz/vergi sonrası kârı veya FAVÖK’ü ölçmez. Rafineri marj çevrimiyle birlikte yorumlanmalı.",
+      "currentRatio": "Kısa vadeli varlıkların kısa vadeli yükümlülüklere oranı. Stok ve alacak kalitesi önemlidir; 1’in üzeri tek başına likidite güvencesi değildir.",
+      "cash": "Bilanço nakit ve nakit benzeri bakiyesi; kısa vadeli finansal yatırımlar bu satıra eklenmedi. Kullanım kısıtları ve işletme gereksinimi ayrıca incelenmeli.",
+      "financialDebt": "Üç finansal borç satırının toplamı. Ticari borçlar dahil değil; toplam yükümlülükle karıştırılmamalı. Vade ve maliyet incelemesinin yerini tutmaz.",
+      "cashProxy": "Basit faaliyet nakdi eksi sabit varlık alımı. Finansman altında raporlanan türev ve faiz nakit akışlarını dışarıda bırakır; normalize FCF veya dağıtılabilir nakit değildir.",
+      "revenueGrowth": "Aynı satın alma gücüne getirilmiş iki ilk yarı döneminin hasılat farkı. Sadece nominal enflasyon artışı gibi okunmamalı; fiyat/hacim ayrıştırması yine gerekli.",
+      "profitGrowth": "Ana ortaklık kâr değişimi; düşük karşılaştırma bazı oranı büyütebilir. Tek seferlik etkiler ve çevrim normalize edilmeden geleceğe taşınamaz.",
+      "dividend1": "KAP kararındaki ilk brüt taksit. Net tutar yatırımcının vergi durumuna bağlıdır; kişisel portföy gelirine yazılmaz.",
+      "dividend2": "KAP kararındaki ikinci brüt taksit. Hak kullanım ve hesaba ödeme günleri farklıdır; bu kayıt ödeme teyidi değildir.",
+      "dividendYield": "17,1268815 ÷ 386,25 × 100. Brüt, tarihsel karar bazlı referans oran. Ekimde alınan paya geçmiş dağıtım hakkı kazandırmaz; ileri temettü verimi değildir.",
+      "marketCap": "Fiyat ile doğrulanmış nominal pay adedi çarpımı. Pay adedi Mart kararına dayanır; Ekim sermaye hareketlerinin tam taraması bekleniyor. Firma değeri veya adil değer değildir.",
+      "bookPerShare": "Ana ortaklığa ait özkaynağın nominal pay adedine bölümü. Haziran satın alma gücünde muhasebe değeri; Ekim fiyatıyla doğrudan ucuzluk eşiği kurulamaz.",
+      "dailyChange": "İki ardışık kapanışın yüzde farkı. Gün içi hareketi veya temettü dahil getiriyi temsil etmez.",
+      "weeklyChange": "2–9 Ekim kapanış değişimi. Kısa dönem momentum özetidir; gelecekteki getiriyi göstermez.",
+      "sma5": "Beş kapanışın aritmetik ortalaması; kısa vadeli gürültüye duyarlıdır. Uzun seri ve hacim teyidi olmadan trend sinyali olarak kullanılmaz.",
+      "debtWithinYear": "Vadesi kısa sınıflanan iki borç kalemi birlikte değerlendirilir; uzun vade taksitini ayrıca ikinci kez toplam borca ekleme. Muhasebe sınıflamasıdır, günlük nakit ödeme takvimi değildir.",
+      "debtLong": "Bir yıldan uzun vadeye sınıflanan finansal yükümlülükler. Uzun vade, düşük faiz veya düşük kur riski anlamına gelmez; para birimi ve sözleşme koşulları gerekir.",
+      "fxBeforeNatural": "Dipnot 29: türevler ve nakit akış korunması sonrası, stok doğal korunması öncesi TL karşılığı. Negatif işaret net yükümlülüğü gösterir; tamamı aynı gün ödenecek nakit değildir.",
+      "fxAfterNatural": "Dipnot 29: stok doğal korunması dahil TL karşılığı. Likit döviz fazlası değildir; korunmanın etkinliği ve nakit zamanlaması ayrıca incelenmeli."
+    },
+    "debtMeaning": "Kısa vadeye sınıflanan toplam, yalnız kısa vadeli krediden oluşmaz; uzun vadeli kredilerin yaklaşan taksitleri de eklenir. Bir yıl içindeki ödeme ihtiyacını faaliyet nakdi, serbest kullanılabilir nakit ve yenileme olanaklarıyla karşılaştırmak gerekir. Uzun vade bugün daha az baskı yaratabilir; fakat faiz ve yeniden finansman riski devam eder.",
+    "interestMeaning": "Daha düşük USD faizi, TL faizinden otomatik olarak daha ucuz finansman demek değildir: kur değişimi ve korunma maliyeti de hesaba katılır. Dipnotta SOFR bağlantılı kredi ve faiz swapları bulunuyor. Tüm borcun sabit/değişken net dağılımı tamamlanmadığından oran uydurulmadı. Tablodaki efektif oranlar yeni kredi teklifi değildir.",
+    "fxMeaning": "İlk değer, türevler ve nakit akış korunması sonrası fakat doğal korunma öncesindeki açığı; ikinci değer stokların doğal korunmaya dahil edilmesinden sonraki pozisyonu gösterir. İkinci sayının sıfıra yakın olması, ilk açığın yok olduğu veya kur riskinin sıfırlandığı anlamına gelmez. Stokların fiyatlama ve nakde dönüşme zamanı ile borç ödemeleri uyuşmayabilir; baz ve teminat riski sürer.",
+    "cashRestrictions": "Dipnot 5’te bloke mevduat ve bloke gelir payı bulunuyor. Bu nedenle bilançodaki nakdin tamamını serbest kullanılabilir kabul etmiyoruz. Dipnot 29’daki net finansal borç tanımı da bilanço nakdini aynen kullanmıyor; farklı tanımları tek bir “net nakit” sayısında birleştirmedik."
+  },
+  "researchTuprsV2": {
+    "name": "Tüpraş",
+    "sector": "Enerji · Rafineri",
+    "headline": "Operasyonel ivme güçlü; kalıcılığı sınanmalı",
+    "summary": "Rafineri analizinde petrol fiyatının yönünden çok ürün–ham petrol farkı, kapasite kullanımı ve işletme sermayesi önemlidir. Bu rapor temettü yaklaşımını esas alır; kısa dönem kârı otomatik olarak sürdürülebilir kazanç kabul etmez. Finansal güç ile hisseden beklenen getiri ayrı değerlendirilir.",
+    "strengths": "Faaliyet kâr marjı ve cari oran hesaplanabiliyor. Şirketin nakit tamponu, marj gerilemesine dayanıklılık açısından izlenebilir bir dayanak; ancak nakit bakiyesi tek başına dağıtılabilir kâr değildir.",
+    "risks": "Ürün marjlarının normalleşmesi, stok değerlemesi, türev teminat/uzlaşma hareketleri ve yeni yatırımlar nakit üretimini değiştirebilir. Geçmiş temettü bir sonraki yıl için taahhüt değildir.",
+    "accounting": "Konsolide TMS 34 ara dönem raporu; tutarlar 30 Haziran 2026 satın alma gücünde. Kaynak tablodaki bin TL değerleri ×1.000 ile TL’ye çevrildi. 2025 ilk yarı kıyasları aynı rapordaki düzeltilmiş sütundan; altı aylık kâr yıllıklandırılmadı.",
+    "cashQuality": "İşletme nakdi eksi yatırım harcaması, dağıtılabilir nakit ölçüsü olarak yeterli değil. Türev uzlaşmaları ve faiz gibi finansman bölümündeki nakit hareketleri ayrıca incelenmeli. Bu yüzden bu farkı temettü karşılama oranına veya DCF girdisine doğrudan taşımıyoruz.",
+    "growth": "Hasılat ve ana ortaklık kârı aynı altı aylık dönemlerle karşılaştırıldı. Kâr artışını düz çizgi halinde ileri taşımak rafineri çevrimini gözden kaçırabilir. Büyüme için bir sonraki kontrolde üretim hacmi, marj ve yeniden yatırımın getirisi birlikte izlenmeli.",
+    "peers": "Uyumlu dönem ve muhasebe bazında emsal rafineri değerlemesi tamamlanmadı. Bu nedenle sektör ortalaması veya emsallere göre ucuzluk iddiası yok.",
+    "dividend": "KAP genel kurul onayı: 2026’da iki taksit için toplam brüt 17,1268815 TL/pay. Hak kullanım tarihleri 16 Mart ve 30 Eylül; hesaplara ödeme tarihleri 18 Mart ve 2 Ekim. Bunlar kararın takvimidir; bu rapor kişisel hesaba ödeme yapıldığını doğrulamaz.",
+    "sustainability": "Gösterilen oran, onaylanmış yıllık brüt temettünün 9 Ekim fiyatına bölünmesidir; yeni alıcının gelecekte elde edeceği getiri değildir. Sürdürülebilirlik için çevrim boyunca nakit üretimi, yatırım gereksinimi, borç vadeleri ve yasal dağıtım kapasitesi birlikte incelenmeli.",
+    "valuation": "Kaynaklı fiyat var; fakat çevrim boyunca normalize kâr, gerekçeli emsal çarpanı ve ileriye dönük nakit akışı varsayımları tamamlanmadı. “İskontolu/makul/primli” sonucu veya hedef fiyat üretmiyoruz. Piyasa değeri ve defter değeri aşağıda yalnız tanımlayıcı hesap olarak yer alır.",
+    "methods": {
+      "pe": "Rafineride uygulanabilir, ancak çevrim tepesindeki kâr yanıltıcı düşük F/K yaratabilir. Normalize yıllık kâr ve karşılaştırılabilir emsal çarpanı eksik. Altı aylık kârı ikiyle çarpmak bu eksikleri gidermez; hesap sonucu yok.",
+      "ev": "Faaliyet performansını sermaye yapısından ayırmaya yardımcı olur. Aynı bazda normalize FAVÖK, emsal çarpanları, net borç ve azınlık/iştirak köprüsü gerekli. Nakit ile borç farkı tek başına tam firma değeri köprüsü değildir; hesap sonucu yok.",
+      "dcf": "Yatırım ve nakit dönüşümünü açıkça modeller. Çok yıllı hacim/marj, vergi, yatırım, işletme sermayesi, WACC ve terminal büyüme eksik. Nominal TL nakit akışıyla reel iskonto oranı karıştırılmamalı; hesap sonucu yok."
+    },
+    "scenarios": "Aşağıdakiler sayısal hedef fiyat değil, araştırılacak koşullardır. Kötümser/baz/iyimser değer aralığı için olasılık, iskonto oranı ve normalize nakit akışı henüz desteklenmedi. F/K sabitken normalize kârdaki yüzde değişim model fiyatına aynı yüzdeyle yansır; bu matematiksel duyarlılık, kâr tahmini değildir.",
+    "scenarioNotes": {
+      "bear": "Rafineri marjı gerilerken yatırım ve işletme sermayesi ihtiyacı yüksek kalırsa dağıtım kapasitesi daralabilir.",
+      "base": "Marjlar çevrim ortalamasına yakınsar; yatırımlar bütçe içinde kalır. Çevrim ortalaması henüz doğrulanmadı.",
+      "bull": "Güçlü ürün marjları sürer, yatırımlar beklenen nakit katkısını sağlar. Bu koşulların gerçekleşeceği varsayılmıyor."
+    },
+    "technical": "Beş seans ortalaması kısa bir fiyat özeti sunar; trend teyidi veya alım sinyali değildir. RSI/MACD, uzun ortalamalar ve hacim teyidi için yeterli düzeltilmiş seri yok. Temettü tarihini geçen uzun serilerde fiyat düzeltmesi ayrıca doğrulanmalı; bu hesaplar toplam getiri değildir.",
+    "scanLimit": "11 Temmuz–11 Ekim aralığı için KAP şirket listesi ve seçili doğrudan bildirimler incelendi. Başlık taraması tamamlanmış içerik denetimi değildir. Temmuz derecelendirme/tahvil, Ağustos itfa, Eylül sigorta dahil bazı içerikler ve ekler açık kalıyor. Pay satışı, Entek katkısı, marj revizyonu ve ihraç kararı/başvurusu incelendi. “Başka önemli bildirim yok” sonucu çıkarılamaz.",
+    "riskFollowup": "Sonraki güncellemede borçlanmanın başvurudan onay/ihraç aşamasına geçip geçmediği, Entek yatırımlarının grup dışına nakit çıkışı ve gelir katkısı, pay satışı bildirimleri, marj beklentisinin gerçekleşmesi ve temettü ödeme teyitleri kontrol edilmeli. KAP taraması eksikken haber riskinin düşük olduğu söylenemez.",
+    "history": "İkinci sürüm: kaynak fiyat ve finansallar değişmedi; PD/DD, dönem ayrımlı kâr çarpanları, anlaşılır değerlendirme ve şirket/ortaklık/siyasi risk özeti eklendi. İlk sürüm dosyada korunuyor.",
+    "review": "Araştırma ve kontrol aynı Codex oturumunda yapıldı; bağımsız denetim değil. Kimlik ve kullanılan girdiler kaynaklara bağlandı, hesaplar ondalık aritmetikle tekrar üretilebilir. KAP içerik/ek kapsamı, emsal değerleme, normalize kâr, nakit akışı düzeltmeleri ve uzun teknik seri eksik olduğu için inceleme sonucu NEEDS_REVIEW; rapor kısmi araştırmadır.",
+    "news": {
+      "debt": {
+        "title": "20 milyar TL’ye kadar borçlanma için SPK başvurusu",
+        "fact": "2 Ekim bildirimi, 23 Eylül kararına dayanarak yurtiçi tahvil/bono ihracı için başvuruyu açıklıyor; vade üst sınırı 10 yıl.",
+        "effect": "Başvuru tamamlanmış borçlanma değildir. Haziran bilançosuna 20 milyar TL borç eklenmedi. İhraç tutarı, faiz ve vade kesinleşirse finansman maliyeti ve temettü kapasitesi yeniden incelenmeli."
+      },
+      "governance": {
+        "title": "Kurumsal yönetim notu güncellendi",
+        "fact": "Şirket, SAHA değerlendirmesinde notun 2 Ekim itibarıyla 9,76’ya yükseltildiğini açıkladı.",
+        "effect": "Yönetişim açısından destekleyici bir açıklama; kredi notu, kâr garantisi veya değerleme çarpanına otomatik prim değildir. Ek raporun tamamı incelenmedi."
+      },
+      "entek": {
+        "title": "Entek sermaye artırımına nakit katılım",
+        "fact": "1 Eylül açıklamasında Tüpraş’ın Entek için 2.480.873.555,15 TL nakit sermaye katkısı yaptığı bildirildi.",
+        "effect": "Ana şirketin kaynak tahsisini gösterir. Konsolide grup içi transfer olduğundan tutar grup dışı yatırım harcaması gibi ikinci kez düşülmemeli. Nihai kullanım ve nakit getirisi sonraki finansallarda izlenmeli."
+      },
+      "guidance": {
+        "title": "Rafineri marjı beklentisi yukarı revize edildi",
+        "fact": "4 Ağustos açıklaması 2026 net rafineri marjı beklentisini 6–7’den 13–15 USD/varile çıkardı. Üretim, satış, kapasite ve yatırım hedefleri değiştirilmedi.",
+        "effect": "Kazanç görünümünü etkileyen önemli değişim. Bu bir yönetim beklentisidir; gerçekleşmiş tam yıl kârı veya kalıcı çevrim marjı olarak kullanılamaz."
+      },
+      "dividend": {
+        "title": "İki taksitli temettü için genel kurul onayı",
+        "fact": "11 Mart genel kurulunda toplam 33 milyar TL brüt dağıtım onaylandı. İkinci taksidin hak kullanım tarihi 30 Eylül olarak belirlendi.",
+        "effect": "Yayın tarihi inceleme aralığı dışında, ödeme takvimi aralık içinde. Bu nedenle bağlam olarak korundu; gelecekteki temettü tahmini olarak kullanılmadı."
+      },
+      "shareSale": {
+        "title": "Koç Holding pay satışının takası tamamlandı",
+        "fact": "Koç Holding’in 7 Eylül bildirimi TUPRS pay satışının takasını teyit ediyor; yönetim kontrolünün sürdüğünü belirtiyor.",
+        "effect": "Bu mevcut ortakların pay satışıdır; Tüpraş’ın yeni pay ihracı veya şirket kasasına giren satış geliri değildir. Ortaklık ve piyasadaki pay arzı açısından izlenir; tek başına operasyonel bozulma kanıtı sayılmaz."
+      }
+    },
+    "education": {
+      "price": "HangiKredi tarihli kapanışı; CNBC-e aynı gün fiyat değişimi ve önceki kapanışla çapraz kontrol edildi. Güncel emir fiyatı değildir.",
+      "profit": "Azınlık payları çıkarıldıktan sonra ana ortaklık pay sahiplerine ait altı aylık kâr. Nakitle aynı şey değildir; dönem ve çevrim karşılaştırması gerekir.",
+      "nrm": "Rafineri faaliyetinin varil başına marj göstergesi. Şirket sunumunda enflasyon muhasebesi etkileri ayıklanan tanımı kullanılır; muhasebe kâr marjı ile eşit değildir.",
+      "revenue": "Satış gelirini ölçer; tek başına hacim büyümesi veya kârlılık kanıtı değildir. Fiyat, ürün karması ve hacim ayrımı gerekir.",
+      "operatingMargin": "Her 100 TL hasılatın ne kadarının esas faaliyet kârı olduğunu gösterir. Faiz/vergi sonrası kârı veya FAVÖK’ü ölçmez. Rafineri marj çevrimiyle birlikte yorumlanmalı.",
+      "currentRatio": "Kısa vadeli varlıkların kısa vadeli yükümlülüklere oranı. Stok ve alacak kalitesi önemlidir; 1’in üzeri tek başına likidite güvencesi değildir.",
+      "cash": "Bilanço nakit ve nakit benzeri bakiyesi; kısa vadeli finansal yatırımlar bu satıra eklenmedi. Kullanım kısıtları ve işletme gereksinimi ayrıca incelenmeli.",
+      "financialDebt": "Üç finansal borç satırının toplamı. Ticari borçlar dahil değil; toplam yükümlülükle karıştırılmamalı. Vade ve maliyet incelemesinin yerini tutmaz.",
+      "cashProxy": "Basit faaliyet nakdi eksi sabit varlık alımı. Finansman altında raporlanan türev ve faiz nakit akışlarını dışarıda bırakır; normalize FCF veya dağıtılabilir nakit değildir.",
+      "revenueGrowth": "Aynı satın alma gücüne getirilmiş iki ilk yarı döneminin hasılat farkı. Sadece nominal enflasyon artışı gibi okunmamalı; fiyat/hacim ayrıştırması yine gerekli.",
+      "profitGrowth": "Ana ortaklık kâr değişimi; düşük karşılaştırma bazı oranı büyütebilir. Tek seferlik etkiler ve çevrim normalize edilmeden geleceğe taşınamaz.",
+      "dividend1": "KAP kararındaki ilk brüt taksit. Net tutar yatırımcının vergi durumuna bağlıdır; kişisel portföy gelirine yazılmaz.",
+      "dividend2": "KAP kararındaki ikinci brüt taksit. Hak kullanım ve hesaba ödeme günleri farklıdır; bu kayıt ödeme teyidi değildir.",
+      "dividendYield": "17,1268815 ÷ 386,25 × 100. Brüt, tarihsel karar bazlı referans oran. Ekimde alınan paya geçmiş dağıtım hakkı kazandırmaz; ileri temettü verimi değildir.",
+      "marketCap": "Fiyat ile doğrulanmış nominal pay adedi çarpımı. Pay adedi Mart kararına dayanır; Ekim sermaye hareketlerinin tam taraması bekleniyor. Firma değeri veya adil değer değildir.",
+      "bookPerShare": "Ana ortaklığa ait özkaynağın nominal pay adedine bölümü. Haziran satın alma gücünde muhasebe değeri; Ekim fiyatıyla doğrudan ucuzluk eşiği kurulamaz.",
+      "dailyChange": "İki ardışık kapanışın yüzde farkı. Gün içi hareketi veya temettü dahil getiriyi temsil etmez.",
+      "weeklyChange": "2–9 Ekim kapanış değişimi. Kısa dönem momentum özetidir; gelecekteki getiriyi göstermez.",
+      "sma5": "Beş kapanışın aritmetik ortalaması; kısa vadeli gürültüye duyarlıdır. Uzun seri ve hacim teyidi olmadan trend sinyali olarak kullanılmaz.",
+      "debtWithinYear": "Vadesi kısa sınıflanan iki borç kalemi birlikte değerlendirilir; uzun vade taksitini ayrıca ikinci kez toplam borca ekleme. Muhasebe sınıflamasıdır, günlük nakit ödeme takvimi değildir.",
+      "debtLong": "Bir yıldan uzun vadeye sınıflanan finansal yükümlülükler. Uzun vade, düşük faiz veya düşük kur riski anlamına gelmez; para birimi ve sözleşme koşulları gerekir.",
+      "fxBeforeNatural": "Dipnot 29: türevler ve nakit akış korunması sonrası, stok doğal korunması öncesi TL karşılığı. Negatif işaret net yükümlülüğü gösterir; tamamı aynı gün ödenecek nakit değildir.",
+      "fxAfterNatural": "Dipnot 29: stok doğal korunması dahil TL karşılığı. Likit döviz fazlası değildir; korunmanın etkinliği ve nakit zamanlaması ayrıca incelenmeli.",
+      "priceBook": "Yaklaşık 1,63 kat: piyasada 1 TL raporlanmış özkaynak için yaklaşık 1,63 TL ödeniyor. Hesap: 744,22 milyar TL piyasa değeri / 456,14 milyar TL ana ortaklık özkaynağı. Bu, defter değerinin altında fiyatlama değildir; fakat tek başına pahalı demek de değildir. Fiyat Ekim, bilanço Haziran satın alma gücündedir; dönem farkı ve sonraki temettü gibi değişiklikler düzeltilmemiştir. Rafineride varlıkların kazanç gücü ve emsal karşılaştırması gerekir.",
+      "peHalfYear": "Yaklaşık 14,93 kat = 744,22 milyar TL / 49,85 milyar TL. Şirketin piyasa değeri ilk altı ayda kazandığının yaklaşık 15 katıdır. Bu yıllık F/K değildir; yıllık F/K oranlarıyla doğrudan kıyaslanamaz. Son 12 ay için önceki yılın ikinci yarısı da aynı satın alma gücüyle gerekir.",
+      "peRunRate": "Yaklaşık 7,46 kat: ikinci altı ayda da aynı 49,85 milyar TL kâr oluştuğunu varsayarsak yıllık kâr yaklaşık 99,70 milyar TL olur; 744,22 / 99,70 ≈ 7,46. Bu bir tahmin veya gerçekleşmiş F/K değil, duyarlılık senaryosudur. İkinci yarı kârı sıfır olursa oran yaklaşık 14,93’e çıkar. Enflasyon, mevsimsellik ve rafineri çevrimi bu basit hesabın sınırıdır; 7,46 tek başına ucuzluk kanıtı değildir."
+    },
+    "debtMeaning": "Kısa vadeye sınıflanan toplam, yalnız kısa vadeli krediden oluşmaz; uzun vadeli kredilerin yaklaşan taksitleri de eklenir. Bir yıl içindeki ödeme ihtiyacını faaliyet nakdi, serbest kullanılabilir nakit ve yenileme olanaklarıyla karşılaştırmak gerekir. Uzun vade bugün daha az baskı yaratabilir; fakat faiz ve yeniden finansman riski devam eder.",
+    "interestMeaning": "Daha düşük USD faizi, TL faizinden otomatik olarak daha ucuz finansman demek değildir: kur değişimi ve korunma maliyeti de hesaba katılır. Dipnotta SOFR bağlantılı kredi ve faiz swapları bulunuyor. Tüm borcun sabit/değişken net dağılımı tamamlanmadığından oran uydurulmadı. Tablodaki efektif oranlar yeni kredi teklifi değildir.",
+    "fxMeaning": "İlk değer, türevler ve nakit akış korunması sonrası fakat doğal korunma öncesindeki açığı; ikinci değer stokların doğal korunmaya dahil edilmesinden sonraki pozisyonu gösterir. İkinci sayının sıfıra yakın olması, ilk açığın yok olduğu veya kur riskinin sıfırlandığı anlamına gelmez. Stokların fiyatlama ve nakde dönüşme zamanı ile borç ödemeleri uyuşmayabilir; baz ve teminat riski sürer.",
+    "cashRestrictions": "Dipnot 5’te bloke mevduat ve bloke gelir payı bulunuyor. Bu nedenle bilançodaki nakdin tamamını serbest kullanılabilir kabul etmiyoruz. Dipnot 29’daki net finansal borç tanımı da bilanço nakdini aynen kullanmıyor; farklı tanımları tek bir “net nakit” sayısında birleştirmedik.",
+    "guide": {
+      "verdict": "Olumlu finansal işaretler var; bu fiyata “ucuz” demek için kanıt henüz yeterli değil.",
+      "reason": "İyi şirket ile uygun fiyat aynı şey değildir. Aşağıdaki oranlar fiyatın kâr ve özkaynakla ilişkisini gösterir. Ancak karşılaştırılabilir geçmiş/emsal oranları ve sürdürülebilir yıllık kâr doğrulanmadan düşük görünen bir çarpan alım gerekçesi olmaz. Değerlendirme 9 Ekim 2026 fiyatı ve 30 Haziran 2026 finansallarına dayanır.",
+      "business": "Kâr artışı ve pozitif işletme nakit akışı destekleyici. Bu, faaliyetlerin nakit üretebildiğini gösterir; tamamının tekrarlanabilir veya temettüye dağıtılabilir olduğu anlamına gelmez. Rafineri marjları değişince kâr da hızla değişebilir.",
+      "price": "PD/DD defter değerine göre fiyatı ölçer; defter değeri şirketin satış fiyatı değildir. F/K için burada doğrulanmış son 12 aylık kâr serisi yok. Bu nedenle 6 aylık oranı ve aynı kârın tekrarlandığı ayrı senaryoyu gösteriyorum; bunları gerçekleşmiş yıllık F/K diye sunmuyorum.",
+      "decision": "Şimdiki yorumum: fiyatın uygunluğu belirsiz. Güçlü kârı geleceğe aynen taşımak iyimser sonuç verebilir. Normal dönem kârı ve benzer rafinerilerin çarpanları desteklerse iskontolu diyebilirim; kâr zayıflarsa bugün düşük görünen oran yükselir. Tek başına fiyatın düşmesi veya PD/DD’nin 1’e yakın olması yeterli değildir.",
+      "missingIntro": "Adil değer, şirketin gelecekte üretebileceği nakde ve bu nakdin riskine ilişkin bir tahmindir. Oran hesaplayabilmek başka, o oranın hangi seviyede olması gerektiğini gerekçelendirmek başkadır. Eksik olan yalnızca bir formül değil:",
+      "missing": {
+        "earnings": "1. Sürdürülebilir yıllık kâr: aynı satın alma gücüne getirilmiş son 12 aylık kâr, tek seferlik kalemler ve normal rafineri marjı. Altı aylık kârı ikiyle çarpmak sadece senaryodur; mevsimselliği ve çevrimi çözmez.",
+        "benchmark": "2. Uygun karşılaştırma: benzer rafinerilerin aynı dönem/muhasebe temelindeki F/K ve PD/DD oranları ile Tüpraş’ın geçmiş normal dönemleri. “F/K 10 ise ucuzdur” gibi evrensel bir eşik yoktur.",
+        "cashflow": "3. Gelecek nakit ve risk varsayımları: yatırım harcaması, işletme sermayesi, vergi, büyüme ve iskonto oranı. Bu girdiler doğrulanmadan hesaplanan hedef fiyat, varsayımı gerçek bilgi gibi gösterir."
+      },
+      "next": "Bu girdiler tamamlandığında kötümser/baz/iyimser adil değer aralığı hesaplanabilir. Mevcut “değerlendirilemiyor” sonucu şirket kötüdür demek değil; fiyat iskontosunu henüz kanıtlayamadığımız anlamına gelir."
+    },
+    "company": {
+      "activity": "Enerji / petrol rafinajı. Tüpraş ham petrolü işleyerek motorin, benzin, jet yakıtı ve diğer ürünlere dönüştürür; elektrik ve lojistik faaliyetleri de vardır. Basitçe, kazancı yalnız petrol fiyatına değil ürün satış fiyatıyla ham petrol ve işleme maliyeti arasındaki farka bağlıdır. Petrol yükseldiğinde kârın mutlaka artması beklenmez.",
+      "ownership": "Ana ortak Enerji Yatırımları A.Ş.; bu şirket Koç Holding, Koç Ailesi ve bunların şirketleri tarafından kontrol edilir. Koç Holding ve Temel Ticaret de açıklanan pay satışlarında yer alır. 7 Eylül 2026 KAP açıklamasındaki satış sonrası kontrolün sürdüğü belirtilmiştir. Ortakların bugünkü kesin yüzde dağılımı bu raporda uzlaştırılmadı; eski oranları güncel gibi göstermiyorum.",
+      "political": "İncelenen ortaklık ve faaliyet kaynakları kontrol yapısını doğruluyor; belirli bir siyasi partiye bağlılık veya ayrıcalık iddiasını doğrulamıyor. Bu sınırlı incelemeden “siyasi bağlantısı yoktur” sonucu da çıkarılamaz. Ortaklık, geçmiş özelleştirme veya kamu ile ticaret tek başına siyasi yakınlık kanıtı değildir.",
+      "exposure": "Analist yorumu: yaptırımlar ve bölgesel çatışmalar ham petrol tedarikini, navlun/sigorta maliyetini ve rafineri marjını etkileyebilir. Vergi, enerji ve çevre politikalarındaki değişiklikler talebi, yatırım ihtiyacını ve nakit akışını değiştirebilir. Ülke riskinin artması finansmanı pahalılaştırıp piyasanın ödediği çarpanı düşürebilir. Bu etkiler tek yönlü değildir; olay bazında KAP ve resmi kararlarla yeniden değerlendirilmelidir.",
+      "limit": "Bu bölüm kapsamlı siyasi bağlantı soruşturması değildir. Doğrulanmış parti bağlantısı veya hedefe yönelik siyasi işlem bulgusu sunulmuyor; risk kanalları senaryo olarak açıklanıyor. Belirli bir siyasi olayın fiyat etkisine yüzde veya hedef fiyat atanmadı."
+    }
+  },
+  "researchTuprsV3": {
+    "name": "Tüpraş",
+    "sector": "Enerji · Rafineri",
+    "headline": "Operasyonel ivme güçlü; kalıcılığı sınanmalı",
+    "summary": "Rafineri analizinde petrol fiyatının yönünden çok ürün–ham petrol farkı, kapasite kullanımı ve işletme sermayesi önemlidir. Bu rapor temettü yaklaşımını esas alır; kısa dönem kârı otomatik olarak sürdürülebilir kazanç kabul etmez. Finansal güç ile hisseden beklenen getiri ayrı değerlendirilir.",
+    "strengths": "Faaliyet kâr marjı ve cari oran hesaplanabiliyor. Şirketin nakit tamponu, marj gerilemesine dayanıklılık açısından izlenebilir bir dayanak; ancak nakit bakiyesi tek başına dağıtılabilir kâr değildir.",
+    "risks": "Ürün marjlarının normalleşmesi, stok değerlemesi, türev teminat/uzlaşma hareketleri ve yeni yatırımlar nakit üretimini değiştirebilir. Geçmiş temettü bir sonraki yıl için taahhüt değildir.",
+    "accounting": "Konsolide TMS 34 ara dönem raporu; tutarlar 30 Haziran 2026 satın alma gücünde. Kaynak tablodaki bin TL değerleri ×1.000 ile TL’ye çevrildi. 2025 ilk yarı kıyasları aynı rapordaki düzeltilmiş sütundan; altı aylık kâr yıllıklandırılmadı. Değerleme bölümündeki yıllıklaştırma yalnız açıkça etiketlenmiş varsayımsal senaryodur.",
+    "cashQuality": "İşletme nakdi eksi yatırım harcaması, dağıtılabilir nakit ölçüsü olarak yeterli değil. Türev uzlaşmaları ve faiz gibi finansman bölümündeki nakit hareketleri ayrıca incelenmeli. Bu yüzden bu farkı temettü karşılama oranına veya DCF girdisine doğrudan taşımıyoruz.",
+    "growth": "Hasılat ve ana ortaklık kârı aynı altı aylık dönemlerle karşılaştırıldı. Kâr artışını düz çizgi halinde ileri taşımak rafineri çevrimini gözden kaçırabilir. Büyüme için bir sonraki kontrolde üretim hacmi, marj ve yeniden yatırımın getirisi birlikte izlenmeli.",
+    "peers": "Uyumlu dönem ve muhasebe bazında emsal rafineri değerlemesi tamamlanmadı. Bu nedenle sektör ortalaması veya emsallere göre ucuzluk iddiası yok.",
+    "dividend": "KAP genel kurul onayı: 2026’da iki taksit için toplam brüt 17,1268815 TL/pay. Hak kullanım tarihleri 16 Mart ve 30 Eylül; hesaplara ödeme tarihleri 18 Mart ve 2 Ekim. Bunlar kararın takvimidir; bu rapor kişisel hesaba ödeme yapıldığını doğrulamaz.",
+    "sustainability": "Gösterilen oran, onaylanmış yıllık brüt temettünün 9 Ekim fiyatına bölünmesidir; yeni alıcının gelecekte elde edeceği getiri değildir. Sürdürülebilirlik için çevrim boyunca nakit üretimi, yatırım gereksinimi, borç vadeleri ve yasal dağıtım kapasitesi birlikte incelenmeli.",
+    "valuation": "Kaynaklı fiyat var; fakat çevrim boyunca normalize kâr, gerekçeli emsal çarpanı ve ileriye dönük nakit akışı varsayımları tamamlanmadı. “İskontolu/makul/primli” sonucu veya hedef fiyat üretmiyoruz. Piyasa değeri ve defter değeri aşağıda yalnız tanımlayıcı hesap olarak yer alır.",
+    "methods": {
+      "pe": "Rafineride uygulanabilir, ancak çevrim tepesindeki kâr yanıltıcı düşük F/K yaratabilir. Normalize yıllık kâr ve karşılaştırılabilir emsal çarpanı eksik. Altı aylık kârı ikiyle çarpmak bu eksikleri gidermez; hesap sonucu yok.",
+      "ev": "Faaliyet performansını sermaye yapısından ayırmaya yardımcı olur. Aynı bazda normalize FAVÖK, emsal çarpanları, net borç ve azınlık/iştirak köprüsü gerekli. Nakit ile borç farkı tek başına tam firma değeri köprüsü değildir; hesap sonucu yok.",
+      "dcf": "Yatırım ve nakit dönüşümünü açıkça modeller. Çok yıllı hacim/marj, vergi, yatırım, işletme sermayesi, WACC ve terminal büyüme eksik. Nominal TL nakit akışıyla reel iskonto oranı karıştırılmamalı; hesap sonucu yok."
+    },
+    "scenarios": "Aşağıdakiler sayısal hedef fiyat değil, araştırılacak koşullardır. Kötümser/baz/iyimser değer aralığı için olasılık, iskonto oranı ve normalize nakit akışı henüz desteklenmedi. F/K sabitken normalize kârdaki yüzde değişim model fiyatına aynı yüzdeyle yansır; bu matematiksel duyarlılık, kâr tahmini değildir.",
+    "scenarioNotes": {
+      "bear": "Rafineri marjı gerilerken yatırım ve işletme sermayesi ihtiyacı yüksek kalırsa dağıtım kapasitesi daralabilir.",
+      "base": "Marjlar çevrim ortalamasına yakınsar; yatırımlar bütçe içinde kalır. Çevrim ortalaması henüz doğrulanmadı.",
+      "bull": "Güçlü ürün marjları sürer, yatırımlar beklenen nakit katkısını sağlar. Bu koşulların gerçekleşeceği varsayılmıyor."
+    },
+    "technical": "Beş seans ortalaması kısa bir fiyat özeti sunar; trend teyidi veya alım sinyali değildir. RSI/MACD, uzun ortalamalar ve hacim teyidi için yeterli düzeltilmiş seri yok. Temettü tarihini geçen uzun serilerde fiyat düzeltmesi ayrıca doğrulanmalı; bu hesaplar toplam getiri değildir.",
+    "scanLimit": "11 Temmuz–11 Ekim aralığı için KAP şirket listesi ve seçili doğrudan bildirimler incelendi. Başlık taraması tamamlanmış içerik denetimi değildir. Temmuz derecelendirme/tahvil, Ağustos itfa, Eylül sigorta dahil bazı içerikler ve ekler açık kalıyor. Pay satışı, Entek katkısı, marj revizyonu ve ihraç kararı/başvurusu incelendi. “Başka önemli bildirim yok” sonucu çıkarılamaz.",
+    "riskFollowup": "Sonraki güncellemede borçlanmanın başvurudan onay/ihraç aşamasına geçip geçmediği, Entek yatırımlarının grup dışına nakit çıkışı ve gelir katkısı, pay satışı bildirimleri, marj beklentisinin gerçekleşmesi ve temettü ödeme teyitleri kontrol edilmeli. KAP taraması eksikken haber riskinin düşük olduğu söylenemez.",
+    "history": "Üçüncü sürüm: fiyat ve finansal girdiler değişmedi. 10–15 yıllık temettü bakışı, yeni sektör fırsatları, yatırım görüşünü güçlendiren/bozan koşullar ve izleme planı eklendi. Önceki iki sürüm korunuyor.",
+    "review": "Araştırma ve kontrol aynı Codex oturumunda yapıldı; bağımsız denetim değil. Kimlik ve kullanılan girdiler kaynaklara bağlandı, hesaplar ondalık aritmetikle tekrar üretilebilir. KAP içerik/ek kapsamı, emsal değerleme, normalize kâr, nakit akışı düzeltmeleri ve uzun teknik seri eksik olduğu için inceleme sonucu NEEDS_REVIEW; rapor kısmi araştırmadır.",
+    "news": {
+      "debt": {
+        "title": "20 milyar TL’ye kadar borçlanma için SPK başvurusu",
+        "fact": "2 Ekim bildirimi, 23 Eylül kararına dayanarak yurtiçi tahvil/bono ihracı için başvuruyu açıklıyor; vade üst sınırı 10 yıl.",
+        "effect": "Başvuru tamamlanmış borçlanma değildir. Haziran bilançosuna 20 milyar TL borç eklenmedi. İhraç tutarı, faiz ve vade kesinleşirse finansman maliyeti ve temettü kapasitesi yeniden incelenmeli."
+      },
+      "governance": {
+        "title": "Kurumsal yönetim notu güncellendi",
+        "fact": "Şirket, SAHA değerlendirmesinde notun 2 Ekim itibarıyla 9,76’ya yükseltildiğini açıkladı.",
+        "effect": "Yönetişim açısından destekleyici bir açıklama; kredi notu, kâr garantisi veya değerleme çarpanına otomatik prim değildir. Ek raporun tamamı incelenmedi."
+      },
+      "entek": {
+        "title": "Entek sermaye artırımına nakit katılım",
+        "fact": "1 Eylül açıklamasında Tüpraş’ın Entek için 2.480.873.555,15 TL nakit sermaye katkısı yaptığı bildirildi.",
+        "effect": "Ana şirketin kaynak tahsisini gösterir. Konsolide grup içi transfer olduğundan tutar grup dışı yatırım harcaması gibi ikinci kez düşülmemeli. Nihai kullanım ve nakit getirisi sonraki finansallarda izlenmeli."
+      },
+      "guidance": {
+        "title": "Rafineri marjı beklentisi yukarı revize edildi",
+        "fact": "4 Ağustos açıklaması 2026 net rafineri marjı beklentisini 6–7’den 13–15 USD/varile çıkardı. Üretim, satış, kapasite ve yatırım hedefleri değiştirilmedi.",
+        "effect": "Kazanç görünümünü etkileyen önemli değişim. Bu bir yönetim beklentisidir; gerçekleşmiş tam yıl kârı veya kalıcı çevrim marjı olarak kullanılamaz."
+      },
+      "dividend": {
+        "title": "İki taksitli temettü için genel kurul onayı",
+        "fact": "11 Mart genel kurulunda toplam 33 milyar TL brüt dağıtım onaylandı. İkinci taksidin hak kullanım tarihi 30 Eylül olarak belirlendi.",
+        "effect": "Yayın tarihi inceleme aralığı dışında, ödeme takvimi aralık içinde. Bu nedenle bağlam olarak korundu; gelecekteki temettü tahmini olarak kullanılmadı."
+      },
+      "shareSale": {
+        "title": "Koç Holding pay satışının takası tamamlandı",
+        "fact": "Koç Holding’in 7 Eylül bildirimi TUPRS pay satışının takasını teyit ediyor; yönetim kontrolünün sürdüğünü belirtiyor.",
+        "effect": "Bu mevcut ortakların pay satışıdır; Tüpraş’ın yeni pay ihracı veya şirket kasasına giren satış geliri değildir. Ortaklık ve piyasadaki pay arzı açısından izlenir; tek başına operasyonel bozulma kanıtı sayılmaz."
+      }
+    },
+    "education": {
+      "price": "HangiKredi tarihli kapanışı; CNBC-e aynı gün fiyat değişimi ve önceki kapanışla çapraz kontrol edildi. Güncel emir fiyatı değildir.",
+      "profit": "Azınlık payları çıkarıldıktan sonra ana ortaklık pay sahiplerine ait altı aylık kâr. Nakitle aynı şey değildir; dönem ve çevrim karşılaştırması gerekir.",
+      "nrm": "Rafineri faaliyetinin varil başına marj göstergesi. Şirket sunumunda enflasyon muhasebesi etkileri ayıklanan tanımı kullanılır; muhasebe kâr marjı ile eşit değildir.",
+      "revenue": "Satış gelirini ölçer; tek başına hacim büyümesi veya kârlılık kanıtı değildir. Fiyat, ürün karması ve hacim ayrımı gerekir.",
+      "operatingMargin": "Her 100 TL hasılatın ne kadarının esas faaliyet kârı olduğunu gösterir. Faiz/vergi sonrası kârı veya FAVÖK’ü ölçmez. Rafineri marj çevrimiyle birlikte yorumlanmalı.",
+      "currentRatio": "Kısa vadeli varlıkların kısa vadeli yükümlülüklere oranı. Stok ve alacak kalitesi önemlidir; 1’in üzeri tek başına likidite güvencesi değildir.",
+      "cash": "Bilanço nakit ve nakit benzeri bakiyesi; kısa vadeli finansal yatırımlar bu satıra eklenmedi. Kullanım kısıtları ve işletme gereksinimi ayrıca incelenmeli.",
+      "financialDebt": "Üç finansal borç satırının toplamı. Ticari borçlar dahil değil; toplam yükümlülükle karıştırılmamalı. Vade ve maliyet incelemesinin yerini tutmaz.",
+      "cashProxy": "Basit faaliyet nakdi eksi sabit varlık alımı. Finansman altında raporlanan türev ve faiz nakit akışlarını dışarıda bırakır; normalize FCF veya dağıtılabilir nakit değildir.",
+      "revenueGrowth": "Aynı satın alma gücüne getirilmiş iki ilk yarı döneminin hasılat farkı. Sadece nominal enflasyon artışı gibi okunmamalı; fiyat/hacim ayrıştırması yine gerekli.",
+      "profitGrowth": "Ana ortaklık kâr değişimi; düşük karşılaştırma bazı oranı büyütebilir. Tek seferlik etkiler ve çevrim normalize edilmeden geleceğe taşınamaz.",
+      "dividend1": "KAP kararındaki ilk brüt taksit. Net tutar yatırımcının vergi durumuna bağlıdır; kişisel portföy gelirine yazılmaz.",
+      "dividend2": "KAP kararındaki ikinci brüt taksit. Hak kullanım ve hesaba ödeme günleri farklıdır; bu kayıt ödeme teyidi değildir.",
+      "dividendYield": "17,1268815 ÷ 386,25 × 100. Brüt, tarihsel karar bazlı referans oran. Ekimde alınan paya geçmiş dağıtım hakkı kazandırmaz; ileri temettü verimi değildir.",
+      "marketCap": "Fiyat ile doğrulanmış nominal pay adedi çarpımı. Pay adedi Mart kararına dayanır; Ekim sermaye hareketlerinin tam taraması bekleniyor. Firma değeri veya adil değer değildir.",
+      "bookPerShare": "Ana ortaklığa ait özkaynağın nominal pay adedine bölümü. Haziran satın alma gücünde muhasebe değeri; Ekim fiyatıyla doğrudan ucuzluk eşiği kurulamaz.",
+      "dailyChange": "İki ardışık kapanışın yüzde farkı. Gün içi hareketi veya temettü dahil getiriyi temsil etmez.",
+      "weeklyChange": "2–9 Ekim kapanış değişimi. Kısa dönem momentum özetidir; gelecekteki getiriyi göstermez.",
+      "sma5": "Beş kapanışın aritmetik ortalaması; kısa vadeli gürültüye duyarlıdır. Uzun seri ve hacim teyidi olmadan trend sinyali olarak kullanılmaz.",
+      "debtWithinYear": "Vadesi kısa sınıflanan iki borç kalemi birlikte değerlendirilir; uzun vade taksitini ayrıca ikinci kez toplam borca ekleme. Muhasebe sınıflamasıdır, günlük nakit ödeme takvimi değildir.",
+      "debtLong": "Bir yıldan uzun vadeye sınıflanan finansal yükümlülükler. Uzun vade, düşük faiz veya düşük kur riski anlamına gelmez; para birimi ve sözleşme koşulları gerekir.",
+      "fxBeforeNatural": "Dipnot 29: türevler ve nakit akış korunması sonrası, stok doğal korunması öncesi TL karşılığı. Negatif işaret net yükümlülüğü gösterir; tamamı aynı gün ödenecek nakit değildir.",
+      "fxAfterNatural": "Dipnot 29: stok doğal korunması dahil TL karşılığı. Likit döviz fazlası değildir; korunmanın etkinliği ve nakit zamanlaması ayrıca incelenmeli.",
+      "priceBook": "Yaklaşık 1,63 kat: piyasada 1 TL raporlanmış özkaynak için yaklaşık 1,63 TL ödeniyor. Hesap: 744,22 milyar TL piyasa değeri / 456,14 milyar TL ana ortaklık özkaynağı. Bu, defter değerinin altında fiyatlama değildir; fakat tek başına pahalı demek de değildir. Fiyat Ekim, bilanço Haziran satın alma gücündedir; dönem farkı ve sonraki temettü gibi değişiklikler düzeltilmemiştir. Rafineride varlıkların kazanç gücü ve emsal karşılaştırması gerekir.",
+      "peHalfYear": "Yaklaşık 14,93 kat = 744,22 milyar TL / 49,85 milyar TL. Şirketin piyasa değeri ilk altı ayda kazandığının yaklaşık 15 katıdır. Bu yıllık F/K değildir; yıllık F/K oranlarıyla doğrudan kıyaslanamaz. Son 12 ay için önceki yılın ikinci yarısı da aynı satın alma gücüyle gerekir.",
+      "peRunRate": "Yaklaşık 7,46 kat: ikinci altı ayda da aynı 49,85 milyar TL kâr oluştuğunu varsayarsak yıllık kâr yaklaşık 99,70 milyar TL olur; 744,22 / 99,70 ≈ 7,46. Bu bir tahmin veya gerçekleşmiş F/K değil, duyarlılık senaryosudur. İkinci yarı kârı sıfır olursa oran yaklaşık 14,93’e çıkar. Enflasyon, mevsimsellik ve rafineri çevrimi bu basit hesabın sınırıdır; 7,46 tek başına ucuzluk kanıtı değildir."
+    },
+    "debtMeaning": "Kısa vadeye sınıflanan toplam, yalnız kısa vadeli krediden oluşmaz; uzun vadeli kredilerin yaklaşan taksitleri de eklenir. Bir yıl içindeki ödeme ihtiyacını faaliyet nakdi, serbest kullanılabilir nakit ve yenileme olanaklarıyla karşılaştırmak gerekir. Uzun vade bugün daha az baskı yaratabilir; fakat faiz ve yeniden finansman riski devam eder.",
+    "interestMeaning": "Daha düşük USD faizi, TL faizinden otomatik olarak daha ucuz finansman demek değildir: kur değişimi ve korunma maliyeti de hesaba katılır. Dipnotta SOFR bağlantılı kredi ve faiz swapları bulunuyor. Tüm borcun sabit/değişken net dağılımı tamamlanmadığından oran uydurulmadı. Tablodaki efektif oranlar yeni kredi teklifi değildir.",
+    "fxMeaning": "İlk değer, türevler ve nakit akış korunması sonrası fakat doğal korunma öncesindeki açığı; ikinci değer stokların doğal korunmaya dahil edilmesinden sonraki pozisyonu gösterir. İkinci sayının sıfıra yakın olması, ilk açığın yok olduğu veya kur riskinin sıfırlandığı anlamına gelmez. Stokların fiyatlama ve nakde dönüşme zamanı ile borç ödemeleri uyuşmayabilir; baz ve teminat riski sürer.",
+    "cashRestrictions": "Dipnot 5’te bloke mevduat ve bloke gelir payı bulunuyor. Bu nedenle bilançodaki nakdin tamamını serbest kullanılabilir kabul etmiyoruz. Dipnot 29’daki net finansal borç tanımı da bilanço nakdini aynen kullanmıyor; farklı tanımları tek bir “net nakit” sayısında birleştirmedik.",
+    "guide": {
+      "verdict": "Olumlu finansal işaretler var; bu fiyata “ucuz” demek için kanıt henüz yeterli değil.",
+      "reason": "İyi şirket ile uygun fiyat aynı şey değildir. Aşağıdaki oranlar fiyatın kâr ve özkaynakla ilişkisini gösterir. Ancak karşılaştırılabilir geçmiş/emsal oranları ve sürdürülebilir yıllık kâr doğrulanmadan düşük görünen bir çarpan alım gerekçesi olmaz. Değerlendirme 9 Ekim 2026 fiyatı ve 30 Haziran 2026 finansallarına dayanır.",
+      "business": "Kâr artışı ve pozitif işletme nakit akışı destekleyici. Bu, faaliyetlerin nakit üretebildiğini gösterir; tamamının tekrarlanabilir veya temettüye dağıtılabilir olduğu anlamına gelmez. Rafineri marjları değişince kâr da hızla değişebilir.",
+      "price": "PD/DD defter değerine göre fiyatı ölçer; defter değeri şirketin satış fiyatı değildir. F/K için burada doğrulanmış son 12 aylık kâr serisi yok. Bu nedenle 6 aylık oranı ve aynı kârın tekrarlandığı ayrı senaryoyu gösteriyorum; bunları gerçekleşmiş yıllık F/K diye sunmuyorum.",
+      "decision": "Şimdiki yorumum: fiyatın uygunluğu belirsiz. Güçlü kârı geleceğe aynen taşımak iyimser sonuç verebilir. Normal dönem kârı ve benzer rafinerilerin çarpanları desteklerse iskontolu diyebilirim; kâr zayıflarsa bugün düşük görünen oran yükselir. Tek başına fiyatın düşmesi veya PD/DD’nin 1’e yakın olması yeterli değildir.",
+      "missingIntro": "Adil değer, şirketin gelecekte üretebileceği nakde ve bu nakdin riskine ilişkin bir tahmindir. Oran hesaplayabilmek başka, o oranın hangi seviyede olması gerektiğini gerekçelendirmek başkadır. Eksik olan yalnızca bir formül değil:",
+      "missing": {
+        "earnings": "1. Sürdürülebilir yıllık kâr: aynı satın alma gücüne getirilmiş son 12 aylık kâr, tek seferlik kalemler ve normal rafineri marjı. Altı aylık kârı ikiyle çarpmak sadece senaryodur; mevsimselliği ve çevrimi çözmez.",
+        "benchmark": "2. Uygun karşılaştırma: benzer rafinerilerin aynı dönem/muhasebe temelindeki F/K ve PD/DD oranları ile Tüpraş’ın geçmiş normal dönemleri. “F/K 10 ise ucuzdur” gibi evrensel bir eşik yoktur.",
+        "cashflow": "3. Gelecek nakit ve risk varsayımları: yatırım harcaması, işletme sermayesi, vergi, büyüme ve iskonto oranı. Bu girdiler doğrulanmadan hesaplanan hedef fiyat, varsayımı gerçek bilgi gibi gösterir."
+      },
+      "next": "Bu girdiler tamamlandığında kötümser/baz/iyimser adil değer aralığı hesaplanabilir. Mevcut “değerlendirilemiyor” sonucu şirket kötüdür demek değil; fiyat iskontosunu henüz kanıtlayamadığımız anlamına gelir."
+    },
+    "company": {
+      "activity": "Enerji / petrol rafinajı. Tüpraş ham petrolü işleyerek motorin, benzin, jet yakıtı ve diğer ürünlere dönüştürür; elektrik ve lojistik faaliyetleri de vardır. Basitçe, kazancı yalnız petrol fiyatına değil ürün satış fiyatıyla ham petrol ve işleme maliyeti arasındaki farka bağlıdır. Petrol yükseldiğinde kârın mutlaka artması beklenmez.",
+      "ownership": "Ana ortak Enerji Yatırımları A.Ş.; bu şirket Koç Holding, Koç Ailesi ve bunların şirketleri tarafından kontrol edilir. Koç Holding ve Temel Ticaret de açıklanan pay satışlarında yer alır. 7 Eylül 2026 KAP açıklamasındaki satış sonrası kontrolün sürdüğü belirtilmiştir. Ortakların bugünkü kesin yüzde dağılımı bu raporda uzlaştırılmadı; eski oranları güncel gibi göstermiyorum.",
+      "political": "İncelenen ortaklık ve faaliyet kaynakları kontrol yapısını doğruluyor; belirli bir siyasi partiye bağlılık veya ayrıcalık iddiasını doğrulamıyor. Bu sınırlı incelemeden “siyasi bağlantısı yoktur” sonucu da çıkarılamaz. Ortaklık, geçmiş özelleştirme veya kamu ile ticaret tek başına siyasi yakınlık kanıtı değildir.",
+      "exposure": "Analist yorumu: yaptırımlar ve bölgesel çatışmalar ham petrol tedarikini, navlun/sigorta maliyetini ve rafineri marjını etkileyebilir. Vergi, enerji ve çevre politikalarındaki değişiklikler talebi, yatırım ihtiyacını ve nakit akışını değiştirebilir. Ülke riskinin artması finansmanı pahalılaştırıp piyasanın ödediği çarpanı düşürebilir. Bu etkiler tek yönlü değildir; olay bazında KAP ve resmi kararlarla yeniden değerlendirilmelidir.",
+      "limit": "Bu bölüm kapsamlı siyasi bağlantı soruşturması değildir. Doğrulanmış parti bağlantısı veya hedefe yönelik siyasi işlem bulgusu sunulmuyor; risk kanalları senaryo olarak açıklanıyor. Belirli bir siyasi olayın fiyat etkisine yüzde veya hedef fiyat atanmadı."
+    },
+    "longTerm": {
+      "verdict": "Temettü odaklı uzun vadeli araştırma listesi için koşullu aday olarak görüyorum.",
+      "assessment": "Tüpraş’ı 10–15 yıllık vadede değerlendirmeye değer buluyorum: mevcut rafinaj işi nakit üretebilir, yeni enerji yatırımları da kazanç kaynaklarını çeşitlendirebilir. Ancak düzenli ve her yıl artan gelir bekleyen biri için uygunluğu henüz kanıtlanmış değil. Benim olumlu görüşüm, yatırımların getirisi ve kötü rafineri dönemlerinde temettü kapasitesinin korunması koşuluna bağlı. Bu değerlendirme, bugünkü fiyatın uygun olduğu sonucunu vermiyor.",
+      "confidence": "Araştırma güveni sınırlı: 10–15 yıllık düzeltilmiş temettü/kâr/nakit serisi ve kesinti geçmişi bu raporda tamamlanmadı. Ufuk yaklaşık 2036–2041; şirketin 2035 planı bu sürenin tamamı için kanıt değildir. Uzun vade belirsizliği ortadan kaldırmaz.",
+      "durability": "Rafinaj ve enerji ihtiyacı yatırım fikrinin dayanağı; fakat ürün talebi, rekabet ve çevre maliyetleri yıllar içinde değişebilir. Bugünkü tesislerin varlığı tek başına 15 yıl boyunca yüksek kazanç güvencesi vermez. Yeni yatırımların eski işteki olası zayıflamayı ne ölçüde karşılayacağı izlenmeli.",
+      "income": "Politika destekleyici, nakit gelir değişken. Rafineri çevrimi ve büyük yatırımlar yüzünden temettü azalabilir veya bazı yıllarda ödenmeyebilir. Düzenli giderleri karşılayacak sabit bir ödeme gibi değerlendirmiyorum.",
+      "entry": "Uzun vadede de ödenen fiyat önemlidir. Çok iyi bir dönüşüm hikâyesi yüksek fiyatla alınırsa zayıf getiri sağlayabilir. Mevcut PD/DD ve kâr senaryoları bilgi veriyor; iskontolu alım seviyesini henüz kanıtlamıyor.",
+      "payout": "Şirketin resmi açıklaması, koşullar elverdiğinde net dağıtılabilir dönem kârının %80’inin nakit dağıtılmasını esas alıyor. Bu, yatırılan paraya %80 getiri demek değildir. Dağıtım oranı = temettü / dağıtılabilir kâr; temettü verimi = pay başına temettü / hisse fiyatı. Gelecekteki tutarı kâr, nakit, yatırım ve genel kurul belirler. Rapordaki %4,43 geçmiş/onaylı dağıtımın referans fiyata oranıdır; gelecek yılın getirisi değildir.",
+      "allocation": "Bugün dağıtılmayan nakit, verimli yatırıma giderse gelecekteki kârı ve temettüyü büyütebilir. Projeler pahalıya mal olur veya beklenen getiriyi sağlamazsa hem nakit hem temettü zarar görebilir. Bu yüzden yüksek dağıtım oranını tek başına iyi saymıyorum; bakım yatırımları, büyüme yatırımları ve borç ödemeleri sonrası kalan nakde bakıyorum.",
+      "realReturn": "Temettünün TL tutarı artarken alım gücü azalabilir; enflasyon ve döviz bazındaki değişim ayrıca izlenmeli. Toplam sonuç, alınan net temettülerle hissenin değer değişimini birlikte içerir. Temettüyü yeniden yatırmak pay adedini artırabilir; vergi, komisyon, yeniden alım fiyatı ve şirketin geleceği sonucu değiştirir. Bu rapor bunları varsayarak 15 yıllık getiri yüzdesi üretmez.",
+      "fit": "Değişken temettüye ve fiyat düşüşlerine dayanabilen, şirketi düzenli izleyen uzun vadeli yaklaşım için araştırılabilir. Her yıl sabit veya garantili gelir bekleyen yaklaşım için zayıf uyum gösterir. Tek şirkete bağlı gelir, uzun vadede de yoğunlaşma riski taşır; kişisel portföy bilgisi olmadan ağırlık veya alım tutarı önermiyorum.",
+      "growthIntro": "Üç alanı büyüme fırsatı olarak izliyorum. Aşağıdaki planlar şirket açıklaması; kazanç ve fiyat etkisi ise koşullu analizdir. Sektör büyüse bile kârlı proje, uygun finansman ve zamanında devreye alma olmadan hissedara değer kalmayabilir.",
+      "opportunities": {
+        "saf": {
+          "title": "Sürdürülebilir havacılık yakıtı · SAF",
+          "evidence": "Şirket İzmir’de yeni SAF tesisi ve uzun süreli hammadde tedarik anlaşması açıkladı. Bunlar plan/tedarik adımlarıdır; tüm tesisin ticari olarak devrede olduğu sonucu çıkarılmaz.",
+          "upside": "Düşük karbonlu uçuş yakıtına talep gelişirse yeni satış ve ürün çeşitliliği yaratabilir. Mevcut rafineri altyapısıyla uyum, maliyet avantajı sağlayabilirse ek nakit kâr üretir.",
+          "proof": "Kesin devreye giriş, sertifikasyon, satış anlaşmaları, sürdürülebilir hammadde maliyeti ve yatırım sonrası pozitif nakit katkısı.",
+          "risk": "Hammadde pahalılaşması, sertifika veya tesis gecikmesi, rekabetin fiyat farkını daraltması. Ürün satışı artarken kârın aynı oranda artması şart değildir."
+        },
+        "electricity": {
+          "title": "Yenilenebilir / sıfır karbonlu elektrik",
+          "evidence": "Şirket Entek üzerinden elektrik portföyünü büyütme ve üretimi yeni enerji faaliyetleriyle bütünleştirme planını açıklıyor.",
+          "upside": "Dış satışlar gelir çeşitliliği sağlayabilir; rekabetçi maliyetli elektrik kendi faaliyetlerini de destekleyebilir. Daha dengeli nakit akışı oluşursa rafinaj çevrimine bağımlılık azalabilir.",
+          "proof": "Fiilen devreye alınan kapasite, üretim, satış fiyatı, bağlantı koşulları ve yatırımın finansman maliyetini aşan getirisi.",
+          "risk": "Düşük elektrik fiyatı, hava koşulları, şebeke kısıtları ve pahalı borç. Grup içinde kullanılan elektriği hem satış geliri hem tam maliyet tasarrufu olarak iki kez saymamak gerekir."
+        },
+        "hydrogen": {
+          "title": "Yeşil hidrojen",
+          "evidence": "Şirket pilot elektrolizör için mühendislik çalışmasını tamamladığını, 2028–2030 kurulumunu ve SAF ile kullanımını hedeflediğini belirtiyor.",
+          "upside": "Ekonomik maliyete ulaşırsa düşük karbonlu üretimi destekleyebilir ve ileride yeni müşteri alanları açabilir. Bugün bunu kesin kazançtan çok uzun vadeli fırsat olarak görüyorum.",
+          "proof": "Pilotun gerçek maliyeti/verimi, rekabetçi elektrik, güvenilir müşteri talebi ve ticari ölçekte yatırım kararı.",
+          "risk": "Teknoloji maliyeti, teşvik bağımlılığı, zayıf talep ve zamanlama. Pilot başarı, büyük ölçekte kârlılığı tek başına kanıtlamaz."
+        }
+      },
+      "pricing": "Ek değer için iki yol var: yatırımlar pay başına sürdürülebilir nakdi artırabilir veya daha istikrarlı gelir nedeniyle piyasanın ödediği çarpan yükselebilir. Bu olasılıklar zaten fiyata yansımış da olabilir. Açıklanan yatırımı mevcut değerlemenin üzerine otomatik eklemiyorum; harcama, finansman, vergi ve mevcut iş kaybı düşülmeden “ek hedef fiyat” hesaplanamaz.",
+      "confirm": "Yeni işlerin bütçe içinde devreye girmesi, gerçek nakit katkısının görünmesi, bakım ve büyüme yatırımı sonrası temettünün faaliyetlerden karşılanması, borç/kur baskısının yönetilebilir kalması. Fiyat düşüşü tek başına bu görüşü güçlendirmez.",
+      "invalidate": "Yıllarca düşük kalan rafineri kârlılığı, sürekli proje ertelemesi ve bütçe aşımı, nakit üretmeden büyüyen borç, temettü için tekrarlanan varlık satışı/borçlanma, azınlık ortaklarını olumsuz etkileyen sermaye tahsisi. Tek bir temettü kesintisinin nedeni incelenmeli: verimli yatırım için geçici kesintiyle kalıcı iş bozulması aynı değildir.",
+      "monitor": {
+        "quarter": "Her finansal raporda: rafineri marjı, işletme nakdi, kullanılabilir nakit, borç vadeleri ve yatırım harcamaları; sadece net kâr değil.",
+        "year": "Yıllık: net pay başına temettünün reel gelişimi, dağıtımın nakitle karşılanması, projelerin gerçekleşen getirisi ve güncel fiyat/değerleme.",
+        "event": "Önemli olayda: büyük yatırım/finansman kararı, yaptırım, üretim kesintisi, sermaye işlemi veya temettü politikası değişikliği yatırım görüşünü yeniden açar. Bu bir kontrol planıdır; uygulama otomatik izlemiyor.",
+        "missing": "Tamamlanacak kanıt: bölünmelere göre düzeltilmiş 10–15 yıllık temettü ve kesinti geçmişi, çevrim boyunca serbest nakit, proje bazlı maliyet/getiri ve emsal değerleme. Bu eksikler varken “15 yıl güvenle tutulur” demiyorum."
+      }
+    }
+  },
+  "backtest": {
+    "eyebrow": "Geçmişe dönük temettü yatırımı",
+    "title": "Her yıl 1.000 dolar yatırsaydım ne olurdu?",
+    "description": "Son 10, 15 ve 20 yılda düzenli aylık alım yapsaydınız ve temettülerle tekrar aynı hisseyi alsaydınız oluşacak yaklaşık dolar birikimi. Gelecek tahmini değildir.",
+    "notice": "Tarihsel fiyat ve kur verileri kullanılır. Sonuçlar brüt temettüyle, kesirli hisse alımıyla ve vergi/komisyon olmadan hesaplanmıştır; gerçek hesabınızda elde edeceğiniz net kazanç değildir.",
+    "dates": "Hesap kesimi: {{date}} (son tamamlanan ay). Veri derleme: {{retrieved}}. Bu bölümün tarihi, diğer finansal analiz verilerinden bağımsızdır.",
+    "years": "Son {{count}} yıl",
+    "balance": "Dönem sonu toplam değer",
+    "invested": "Cebinizden yatırılan",
+    "profit": "Toplam kâr / zarar",
+    "dividends": "Yeniden yatırılan brüt temettü",
+    "receivable": "Henüz ödenmemiş temettü alacağı",
+    "gain": "Toplam getiri",
+    "simpleAnnual": "Toplam getiri ÷ yıl",
+    "xirr": "Yıllıklandırılmış getiri (XIRR)",
+    "summary": "{{invested}} dolar katkı, yaklaşık {{balance}} dolar değere ulaşırdı. Toplam getiri %{{gain}}; bunu {{years}} yıla böldüğümüzde sizin istediğiniz basit ortalama %{{simple}} olur.",
+    "trace": "Aylık alımları ve temettü işlemlerini incele",
+    "traceNote": "USD tutarı katkı veya o günkü kurla yeniden yatırılan temettüdür. Fiyatlar aynı bölünme bazına göre düzeltilmiştir; eski tarihte ekranda görülen nominal fiyat değildir.",
+    "columns": {
+      "date": "Tarih",
+      "kind": "İşlem",
+      "usd": "USD",
+      "price": "Fiyat",
+      "fx": "Kur / USD"
+    },
+    "kinds": {
+      "CONTRIBUTION": "Aylık alım",
+      "DIVIDEND": "Temettüyle alım"
+    },
+    "status": {
+      "INSUFFICIENT_HISTORY": "Şirket bu dönemin tamamında borsada işlem görmediği için bu vade hesaplanamıyor. Yeterli geçmişi olan daha kısa vadeler ayrıca hesaplanır.",
+      "MISSING_DATA": "Bu dönem için yeterli fiyat, kur veya temettü geçmişi henüz hazırlanmadı. Eksik veri, sıfır getiri anlamına gelmez.",
+      "SOURCE_CONFLICT": "Bu dönemde kaynaklar arasında çözülememiş önemli farklar var. Güvenilir bir sonuç için veri eşleştirmesi gerekiyor."
+    },
+    "explanationTitle": "Bu yüzdeleri nasıl okumalıyım?",
+    "explanation": "“Toplam getiri ÷ yıl” sizin istediğiniz kolay karşılaştırmadır. Örneğin 10 yılda toplam %100 kâr, bu yöntemle yıllık %10 eder. Bu, her yıl %10 kazanıldığı veya bileşik getirinin %10 olduğu anlamına gelmez.",
+    "xirrExplanation": "XIRR, her taksitin farklı süre yatırımda kaldığını dikkate alır. İlk ay yatırdığınız para ile son ay yatırdığınız parayı aynı süre çalışmış saymaz. Düzenli yatırımın yıllık performansını karşılaştırmak için daha uygun ölçüdür. Temettü zaten toplam değerin içindedir; ayrıca eklenmez.",
+    "methodTitle": "Yöntem, sadeleştirmeler ve kaynaklar",
+    "method": "Her ayın son işlem gününde 83,33 USD, her 12. ayda 83,37 USD yatırılır: yılda tam 1.000 USD. O günkü kurla hisse alınır. Temettü hakkı, hak kullanım gününden önce eldeki paydan hesaplanır; ödeme gününde veya sonraki ilk işlem gününde yeniden alınır. Kesim tarihinde hak edilmiş ama ödenmemiş tutar, temettü alacağı olarak toplam değere eklenir; henüz hisse alımında kullanılmış sayılmaz.",
+    "formulas": "Alınan pay = USD katkı × kur ÷ fiyat. Temettüyle alınan pay = hak edilen brüt temettü ÷ ödeme günündeki fiyat. Son değer = (pay × kapanış fiyatı + temettü alacağı) ÷ son kur. Toplam getiri = (son değer − katkılar) ÷ katkılar × 100. Basit yıllık ortalama = toplam getiri ÷ yıl.",
+    "limits": "Fiyat ve temettüler aynı bölünme bazında kullanılır; bölünme ikinci kez eklenmez. Temettü içeren düzeltilmiş kapanış kullanılmaz; aksi halde temettü iki kez sayılır. Kesirli pay, sıfır komisyon ve brüt temettü karşılaştırma varsayımlarıdır. Günlük kur kapanışı ile hisse kapanışı aynı saatte olmayabilir; kur tatilinde en fazla dört takvim günü önceki mevcut kur kullanılır. Enflasyon, vergi, alış/satış makası ve gerçek emir fiyatı dahil değildir. Geçmiş sonuç gelecekte tekrarlanmayabilir.",
+    "review": "Yaklaşık araştırma hesabı; kaynak incelemesi kısmi ve aynı ajan tarafından yapıldı. TUPRS için 2023 Eylül temettüsündeki sağlayıcı farkı şirket raporuyla düzeltildi. 2008 için ilk teklif yerine İş Yatırım’daki nihai dağıtım kaydı kullanıldı; sağlayıcıdaki ikinci kayıt ayrıca eklenmedi. Eski ödeme tarihlerinde ikincil takvim kaynağı kullanıldı; bütün KAP ekleri tek tek doğrulanmış değildir."
   }
 }
