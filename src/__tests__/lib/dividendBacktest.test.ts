@@ -29,6 +29,36 @@ function seal(h: DividendHistory): DividendHistory {
       },
     ],
     integrity: {
+      evidence: ['first', 'second'].map((id) => ({
+        id,
+        sourceId: 'fake',
+        originId: id,
+        collectionId: id,
+        reviewerId: id,
+        ancestorIds: [],
+        documentUrl: `https://example.invalid/synthetic-${id}`,
+        locator: 'Synthetic coverage declaration',
+        excerpt:
+          'Fictional calendar and events; not real-world independence evidence',
+        checkedAt: '2026-01-01',
+        publishedAt: '2026-01-01',
+        method:
+          id === 'first'
+            ? 'DOCUMENT_RECONCILIATION'
+            : 'INDEPENDENT_RECONCILIATION',
+        claims: ['CALENDAR', 'LISTING', 'DIVIDENDS', 'ACTIONS', 'PRICES', 'FX'],
+        from: '2006-01-01',
+        to: h.asOf,
+        purchasingPowerDate: null,
+      })),
+      evidenceClaims: [
+        'CALENDAR',
+        'LISTING',
+        'DIVIDENDS',
+        'ACTIONS',
+        'PRICES',
+        'FX',
+      ].map((claim) => ({ claim, evidenceIds: ['first', 'second'] })),
       status: 'VERIFIED',
       from: '2006-01-01',
       to: h.asOf,
@@ -69,6 +99,29 @@ function fixture(): DividendHistory {
 }
 
 describe('historical dividend backtest', () => {
+  it('rejects self-confirming manifests even when their date and event lists match', () => {
+    const history = fixture();
+    if (!history.integrity) {
+      throw new Error('Missing synthetic manifest');
+    }
+    const changed = {
+      ...history,
+      integrity: {
+        ...history.integrity,
+        evidence: history.integrity.evidence?.map((e) => ({
+          ...e,
+          originId: 'same-origin',
+        })),
+      },
+    };
+    expect(backtestDividends(changed, 10).status).not.toBe('COMPLETE');
+    expect(
+      backtestDividends(
+        { ...history, integrity: { ...history.integrity, evidence: [] } },
+        10,
+      ).status,
+    ).not.toBe('COMPLETE');
+  });
   it.each([10, 15, 20])(
     'uses exactly %i years of monthly contributions',
     (years) => {

@@ -6,29 +6,18 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-21
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-22
 
-### Aktif çalışma: A–C finansal analiz uygulaması — kullanıcı değerlendirmesi
+Kullanıcının onayladığı sınırlı ortak altyapı düzeltmeleri uygulandı. TUPRS tamamlanmış sayılmıyor; sonraki hisse/feature için onay bekle.
 
-- Kullanıcı A–C paketlerini onayladı; generic altyapı ve zorunlu veri bütünlüğü öncelikli. Backend/Keycloak/runtime AI, başka hisse, commit/push kapsam dışı.
-- Yeni domain/analysis.ts FinancialFact/FactBasis/CalculationResult/AnalysisReport; lib/analysisSchema.ts yerel JSON şema kapısı; analysisValidation.ts kaynak/dönem/para/ölçek/kapsam/muhasebe kontrolü. Mevcut researchCalculations decimal formülleri korunuyor; UI metricResult kapısından geçiyor.
-- analysisProfiles iş modeli kayıtları; valuation genel yöntem arayüzü ve normalize EV/FAVÖK hesap stratejisi. Diğer yöntemler girdi sözleşmesi/METHOD_PENDING; gerçek veri yoksa hedef fiyat yok. financialPeriods dört uyumlu çeyrek TTM yardımcı modülü.
-- analysis-reports.json bağımsız TUPRS v4; eski TS v1/v2/v3 arşiv. services/analysis + AnalysisRepository yerel adapter, kopyalanmış snapshot ve başarısız yenilemede koruma; compareReports değer/kanıt farkını ayırır.
-- historyIntegrity ayrı seans/temettü/aksiyon manifesti ve ham-düzeltilmiş baz kontrolü. dividendBacktest kur kaynak/tarihi ve temettü olay izini deftere ekler; eksik kapsam COMPLETE olmaz. Eski TUPRS JSON'unda manifest olmadığından 10/15/20 yıl MISSING_DATA/COVERAGE. Yaklaşık eski kanıt dosyası korunur.
-- ResearchMetric kontrollü engel, AnalysisQuality kaynak/baz paneli, ProfileValuation yöntem/eksik girdiler; ResearchPage profile göre ana metrikler ve nakit kapsamı. Eski finansal/borç/teknik/KAP/eğitim anlatımı arşiv uyarısıyla korunur; doğrulanmamış borç alt toplamı yeniden hesaplanmaz. TR/EN güncellendi.
-
-### Doğrulama
-
-- TypeScript/üretim build başarılı, mevcut bundle boyutu uyarısı sürüyor. Lint başarılı, önceki transfer testlerinde üç mock tipi uyarısı.
-- Yeni analysis.test.ts, financialPeriods.test.ts; güncellenen dividendBacktest, araştırma servis/sayfa ve DividendBacktest UI testleri. Kullanıcı politikasına göre Vitest/coverage çalıştırılmadı; %80 iddiası yok.
-- Salt okunur son rapor tekrarı ../outputs/analysis-audit-20261021/final-review.cjs → final-evidence.json: 7 PASS, 9 BLOCKED. Borç 68.200.679.000 ve nakit proxy 120.508.319.000 TL korunur. Aynı motorun tekrarı bağımsız denetim değildir.
-- 5199 ayrı sunucu; CUA Chrome FrameTree/navigasyon zaman aşımı, IAB yok. Gerçek tarayıcı/beş boyut/tema kabulü tamamlanamadı. 5173 kullanıcı sunucusuna dokunulmadı.
-
-### Açık kalanlar / sırada
-
-- Kullanıcı değerlendirmesini bekle. Tam 15 bulgu durumu ../FINANSAL_ANALIZ_UYGULAMA_SONUCU.md; yöntem sınırları ../FINANSAL_ANALIZ_TEKNIK.md. Kök CLAUDE kalıcı kuralları iki araç için tek kaynak.
-- Tam tarihsel manifest ve kurumsal işlem/fiyat teyidi, 5 yıllık seri/akran, TUPRS gerçek TTM, normalize FCF/değerleme, geniş teknik göstergeler, tam KAP ek taraması açık. Bunları tamamlanmış sayma; yeni onay olmadan başka hisse/feature'a geçme.
-- Önceki şirket/özet anlatımı onayları ve portföy/strateji ayrımı korunuyor. Otomatik commit/push yapılmadı.
+- domain/evidence + sourceEvidence: köken, toplama, inceleyen, belge konumu, kapsam ve ata kayıtları. Aynı köken/belge/toplama/inceleyen bağımsız teyit değil. analysisValidation çıplak VERIFIED ve belgesiz TMS29 bazını engeller.
+- historyIntegrity takvim/kotasyon/temettü/aksiyon/fiyat/kur için bağımsız kapsam kanıtı ister. TUPRS manifesti yok; 10/15/20 yıl sonuçları kapalı. Gerçek kaynak bağımsızlığını farklı kimlikler otomatik ispatlamaz.
+- valuationBasis akış/stok/çarpan/pay rollerini, bilgi/değerleme tarihini ve senaryo varsayımlarını kontrol eder. FCF, BOOK_ROE, NAV ve DDM henüz METHOD_PENDING. Kaynaklı normalizasyon olmadan TUPRS fiyatı üretilmedi.
+- analysisPriorities yalnız yorum/inceleme sırasını değiştirir. analysisQuality hesap, kaynak, bölüm ve bağımsız incelemeyi ayırır; şemada bağımsız inceleme sertifikası olmadığı için genel tamamlanma açılmaz.
+- analysis-reports.json v5: birincil belge mutabakat kanıtları, bölüm açıkları ve 2021–2025 kaynak envanteri; v4 ve eski TS raporları korunur. AnalysisQuality kaynak izini, strateji sırasını ve bölüm eksiklerini gösterir; eski açıklamalar kaldırılmadı. TR/EN anahtarları birlikte eklendi.
+- Resmî H1 tablo ve KAP planı mutabakatı: net finansal borç −102,232249 milyar TL; işletme nakdi eksi yatırım 120,508319 milyar TL, sürdürülebilir FCF değildir. Beş yıllık seri baz/kapsam farkları nedeniyle tamamlanmadı. Güncel fiyat-hacim, normalleştirilmiş FAVÖK/akran çarpanı, tam KAP ekleri ve bağımsız inceleme açık.
+- Yeni evidence.test ve valuationBasis.test; dividendBacktest/financialPeriods/research servis/sayfa regresyonları güncellendi. Vitest/coverage kullanıcı politikası gereği çalıştırılmadı. Build ve lint başarılı; mevcut bundle ve üç eski mock tipi uyarısı sürüyor. Görsel kabul bu tur yapılmadı.
+- Ayrıntılı kaynaklar, ilk 15 bulgunun durumu ve tamamlanma kapısı: ../FINANSAL_ANALIZ_KAYNAK_MUTABAKATI_20261022.md. Ortak kurallar kök CLAUDE ve teknik eke yazıldı. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yapılmadı.
 
 ---
 
@@ -66,3 +55,7 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-20 — Codex:** Kullanıcı düzeltmesiyle gelecek projeksiyonu kaldırıldı; TUPRS 10/15/20 yıllık kaynaklı yaklaşık tarihsel birikim, ödeme günü yeniden yatırım, XIRR, eksik geçmiş durumları ve TR/EN ortak bileşen eklendi. Tüm temettü hisseleri kapsamı üç skill’e aktarıldı; testler yazıldı, otomatik çalıştırılmadı.
 
 - **2026-10-21 — Codex:** A–C: ortak analiz sözleşmesi/doğrulama/profiller, TUPRS v4 yerel JSON, backtest bütünlük kapısı ve TR/EN detay ekranı uygulandı. Test kodları yazıldı, otomatik çalıştırılmadı; 15 bulgu yeniden denetimi ve açık riskler belgelendi.
+
+- **2026-10-22 — Codex:** Yedi takip maddesi mevcut kodla karşılaştırıldı; manifest bağımsızlık kanıtı, ekonomik dönem/varsayım ilişkileri, strateji öncelikleri ve TMS29 izlenebilirliği için sınırlı düzeltme ve ayrı TUPRS tamamlama planı sunuldu. Üretim kodu değişmedi; onay bekleniyor.
+
+- **2026-10-22 — Codex:** Onaylanan kanıt/bağımsızlık, ekonomik dönem/TMS29 ve strateji önceliği düzeltmeleri; TUPRS v5 birincil belge mutabakatı ve açık bölüm planı eklendi. Analiz kısmi, otomatik testler çalıştırılmadı.

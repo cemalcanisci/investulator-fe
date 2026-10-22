@@ -4,6 +4,24 @@ import { trailingTwelveMonths } from '@/lib/financialPeriods';
 
 function quarters(): FinancialFact[] {
   return ['03-31', '06-30', '09-30', '12-31'].map((end, index) => ({
+    evidence: {
+      id: `e-${index}`,
+      sourceId: 'fiction',
+      originId: 'synthetic',
+      collectionId: 'fixture',
+      reviewerId: 'fixture-author',
+      ancestorIds: [],
+      documentUrl: 'https://example.invalid/statement',
+      locator: 'p1',
+      excerpt: 'Synthetic quarterly statement',
+      checkedAt: '2026-01-01',
+      publishedAt: '2026-01-01',
+      method: 'DOCUMENT_RECONCILIATION',
+      claims: [`quarter-${index}`],
+      from: '2025-01-01',
+      to: '2025-12-31',
+      purchasingPowerDate: null,
+    },
     id: `quarter-${index}`,
     value: '25',
     unit: 'USD',

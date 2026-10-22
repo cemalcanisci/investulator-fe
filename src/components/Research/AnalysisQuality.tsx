@@ -5,6 +5,8 @@ import { getAnalysis } from '@/services/analysis';
 import { evaluateCalculation, factIssues } from '@/lib/analysisValidation';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 import { evaluateValuation, VALUATION_METHODS } from '@/lib/valuation';
+import { analysisQuality } from '@/lib/analysisQuality';
+import { analysisPriorities } from '@/lib/analysisPriorities';
 
 export function AnalysisQuality({
   report,
@@ -20,6 +22,7 @@ export function AnalysisQuality({
     evaluateCalculation(analysis, c),
   );
   const profile = selectAnalysisProfile(analysis.context);
+  const quality = analysisQuality(analysis);
   return (
     <section
       className="space-y-4 rounded-xl border border-line bg-surface p-5"
@@ -39,6 +42,44 @@ export function AnalysisQuality({
         {t('analysis.profile')}: {t(`analysis.profiles.${profile.id}`)} ·{' '}
         {analysis.version}
       </p>
+      <p className="text-sm leading-7">
+        {t('analysis.qualitySeparation', {
+          sources: t(`analysis.sourceState.${quality.sources}`),
+        })}
+      </p>
+      <p className="text-sm leading-7">
+        {t('analysis.priorities')}:{' '}
+        {analysisPriorities(analysis.context)
+          .map((s) => t(`analysis.sections.${s}`))
+          .join(' → ')}
+      </p>
+      <div className="grid gap-3 md:grid-cols-2">
+        {analysis.sections?.map((section) => (
+          <article
+            key={section.id}
+            className="rounded-lg border border-line p-3 text-sm leading-7"
+          >
+            <h3 className="font-semibold">
+              {t(`${section.contentKey}.title`)} ·{' '}
+              {t(`analysis.completion.${section.status}`)}
+            </h3>
+            <p>{t(`${section.contentKey}.text`)}</p>
+            {report.sources
+              .filter((s) => section.sourceIds.includes(s.id))
+              .map((s) => (
+                <a
+                  key={s.id}
+                  className="mr-3 break-words text-primary underline"
+                  href={s.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {s.title}
+                </a>
+              ))}
+          </article>
+        ))}
+      </div>
       <details className="text-sm">
         <summary className="text-primary">{t('analysis.auditTrail')}</summary>
         <div className="mt-3 grid gap-3 md:grid-cols-2">
@@ -73,6 +114,14 @@ export function AnalysisQuality({
               <p className="break-words">
                 {f.locator} · {f.checkedAt}
               </p>
+              {f.evidence && (
+                <p className="break-words">
+                  {t('analysis.provenance')}: {f.evidence.originId} ·{' '}
+                  {f.evidence.collectionId} · {f.evidence.method}
+                  <br />
+                  {f.evidence.excerpt}
+                </p>
+              )}
               {report.sources
                 .filter((s) => s.id === f.sourceId)
                 .map((s) => (

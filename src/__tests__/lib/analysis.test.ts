@@ -16,6 +16,21 @@ function namedCalculation(id: string): (typeof report.calculations)[number] {
 }
 const calculation = namedCalculation('currentRatio');
 describe('analysis contracts', () => {
+  it('keeps unsupported implementations blocked and strategies out of arithmetic', () => {
+    for (const method of VALUATION_METHODS.filter((m) =>
+      ['FCF', 'BOOK_ROE', 'NAV', 'DDM'].includes(m.id),
+    )) {
+      expect(evaluateValuation(report, method).issues).toContain(
+        'METHOD_PENDING',
+      );
+    }
+    expect(
+      evaluateCalculation(
+        { ...report, context: { ...report.context, strategies: ['GROWTH'] } },
+        calculation,
+      ),
+    ).toEqual(evaluateCalculation(report, calculation));
+  });
   it('preserves verified arithmetic and blocks unverified market inputs', () => {
     expect(evaluateCalculation(report, calculation)).toMatchObject({
       status: 'PASS',

@@ -375,7 +375,7 @@
   "analysis": {
     "title": "Analiz doğrulaması ve veri kalitesi",
     "blocked": "Hesaplama doğrulanamadı",
-    "verified": "Kaynak kalemi doğrulandı",
+    "verified": "Birincil belgeyle mutabık; bağımsız teyit değil",
     "profile": "İş modeli profili",
     "scale": "Birim çarpanı",
     "counts": "{{total}} hesaplamanın {{passed}} tanesi veri kontrollerini geçti. Bu, raporun tamamının onaylandığı anlamına gelmez.",
@@ -428,7 +428,10 @@
       "ARITHMETIC": "Sıfır payda veya yönteme uygun olmayan sayısal girdi.",
       "NOT_APPLICABLE": "Bu yöntem seçili iş modeline uygun değil.",
       "ASSUMPTIONS": "Kaynaklı normalizasyon ve senaryo varsayımları eksik.",
-      "METHOD_PENDING": "Bu yöntemin hesap stratejisi henüz uygulanmadı."
+      "METHOD_PENDING": "Bu yöntemin hesap stratejisi henüz uygulanmadı.",
+      "EVIDENCE": "Kaynak kökeni ve belge mutabakat kanıtı eksik.",
+      "RESTATEMENT": "TMS 29 satın alma gücü bazının belge kanıtı uyuşmuyor.",
+      "LOOKAHEAD": "Verinin değerleme tarihinde bilinebilir olduğu doğrulanmadı."
     },
     "historyIssues": {
       "COVERAGE": "Bağımsız doğrulanmış işlem günü, temettü ve kurumsal işlem kapsamı bulunmuyor. Önceki yaklaşık sonucu doğrulanmış hesap olarak göstermiyoruz.",
@@ -441,7 +444,8 @@
       "SESSIONS": "Beklenen işlem günleriyle fiyat kayıtları örtüşmüyor.",
       "ACTIONS": "Kurumsal işlem veya düzeltme faktörü doğrulanamıyor.",
       "DIVIDENDS": "Temettü takvimi doğrulanmış olay listesiyle uyuşmuyor.",
-      "PERIOD": "Kesim tarihi geçerli bir takvim ayı sonu değil."
+      "PERIOD": "Kesim tarihi geçerli bir takvim ayı sonu değil.",
+      "INDEPENDENCE": "Veri kapsamının bağımsız kaynak mutabakatı yok."
     },
     "methods": {
       "EV_EBITDA": "Normalize FD/FAVÖK",
@@ -470,6 +474,52 @@
       "FCF": "Bakım/büyüme yatırımları ve işletme sermayesi ayrılmadan mevcut nakit farkı geleceğe taşınmaz.",
       "BOOK_ROE": "Sermaye ve aktif kalitesiyle birlikte değerlendirilir; düşük PD/DD tek başına ucuzluk değildir.",
       "NAV": "Ekspertiz tarihi, borç kapsamı ve varlıkların satılabilirliği sonucu etkiler."
+    },
+    "qualitySeparation": "Kaynak durumu: {{sources}}. Bölüm tamamlanması: kısmi. Bağımsız rapor incelemesi: yapılmadı. Hesap PASS sonucu yalnız ilgili girdilerle matematiksel kontrolü ifade eder.",
+    "priorities": "Stratejiye göre inceleme sırası (finansal sonuçları değiştirmez)",
+    "provenance": "Belge kökeni / toplama / yöntem",
+    "sourceState": {
+      "PRIMARY_ONLY": "Birincil belge mutabakatı; bağımsız teyit yok",
+      "INCOMPLETE": "Kısmen mutabık; eksik kaynaklar var"
+    },
+    "sections": {
+      "FINANCIALS": "Finansal sağlık",
+      "DIVIDEND": "Temettü sürdürülebilirliği",
+      "VALUATION": "Değerleme",
+      "GROWTH": "Büyüme",
+      "RISK": "Uzun vadeli riskler",
+      "TECHNICAL": "Teknik analiz"
+    },
+    "reconciliation": {
+      "FINANCIALS": {
+        "title": "Resmî finansal kaynak mutabakatı",
+        "text": "30 Haziran 2026 konsolide tablo, aynı tarihin satın alma gücüyle bin TL sunuluyor. Finansal borç 68,201 milyar TL; bloke nakit hariç nakit ve finansal yatırımlar düşüldüğünde net finansal borç −102,232 milyar TL (net nakit). Bu kapsam, sunumdaki daha geniş nakit tanımıyla aynı değildir. Belge mutabakatı yapıldı; ikinci bağımsız veri kaynağı yok."
+      },
+      "HISTORY": {
+        "title": "Beş yıllık karşılaştırma",
+        "text": "2021–2025 resmî raporları bulundu. 2021 satışları ilk raporda 150,972 milyar TL, 2022 raporunun karşılaştırmalı sütununda 152,492 milyar TL: geçmiş rakamları otomatik birleştirmek yanlış olur. 2023–2025 tabloları ayrıca farklı yıl sonu satın alma gücü bazlarındadır. Beş yıllık gelir/kâr/borç/nakit serisinin tam yeniden ifade ve kapsam mutabakatı eksik; ortak bazlı büyüme grafiği üretilmedi."
+      },
+      "DIVIDEND": {
+        "title": "Temettü sürdürülebilirliği",
+        "text": "KAP onayı toplam 17,1268815 TL/pay brüt, %15 stopajla 14,5578492 TL/pay net dağıtım planlıyor; hak tarihi ödeme tarihinden ayrıdır. Plan, ödeme gerçekleşmesinin bağımsız kanıtı değildir. 2026 ilk yarı işletme nakdi 132,366; yatırım alımları 11,858; fark 120,508 milyar TL. İşletme sermayesinin 28,497 milyar TL katkısı ve türev nakit akışlarının sınıflandırılması nedeniyle bu fark sürdürülebilir FCF sayılmadı. Tam ödeme geçmişi ve normalleştirilmiş nakit karşılaması eksik; 10/15/20 yıl backtest kapalı."
+      },
+      "VALUATION": {
+        "title": "Rafineri değerlemesi neden açık?",
+        "text": "Ekim sunumunda ilk yarı net rafineri marjı 15,6 USD/varil ve yatırım 246 milyon USD; 700 milyon USD yıllık yatırım ise hedeftir. Stok etkisi ile güçlü ürün marjı normal kârlılık değildir. Normalleştirilmiş yıllık FAVÖK köprüsü, aynı bazdaki net borç, güncel pay sayısı ve kaynaklı akran çarpanı birlikte doğrulanmadığından kötümser/baz/iyimser fiyat üretilmedi. EV/FAVÖK formülü: (normalleştirilmiş FAVÖK × çarpan − net borç) / pay adedi. FCF, ROE/PD-DD, NAV ve temettü indirgeme uygulamaları ayrıca eksik."
+      },
+      "TECHNICAL": {
+        "title": "Fiyat ve hacim kapsamı",
+        "text": "Bağımsız doğrulanmış kurumsal işlem uyumlu günlük fiyat/hacim ve döviz serisi yok. SMA20/50/200, RSI, MACD ve destek/direnç hesaplanmadı. Önceki fiyat snapshot’ları güncel fiyat olarak kabul edilmez."
+      },
+      "DISCLOSURES": {
+        "title": "KAP tarama sınırı",
+        "text": "Önceki KAP olayları ve kaynakları korunuyor. Son inceleme, 11 Ekim–22 Ekim 2026 aralığının ve önceki incelenmemiş eklerin tam tarandığı anlamına gelmez. Aynı ihraççının KAP bildirimi ve yatırımcı sunumu bağımsız iki ekonomik kaynak sayılmaz."
+      }
+    },
+    "completion": {
+      "PARTIAL": "Kısmi",
+      "MISSING": "Eksik",
+      "COMPLETE": "Tamamlandı"
     }
   },
   "transfer": {

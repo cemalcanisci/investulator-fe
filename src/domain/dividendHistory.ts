@@ -1,3 +1,5 @@
+import type { SourceEvidence, EvidenceClaim } from '@/domain/evidence';
+
 export interface HistoricalQuote {
   readonly date: string;
   readonly close: string;
@@ -42,6 +44,8 @@ export interface DividendHistory {
 }
 
 export interface HistoryIntegrity {
+  readonly evidence?: readonly SourceEvidence[];
+  readonly evidenceClaims?: readonly EvidenceClaim[];
   readonly status: 'VERIFIED' | 'PARTIAL' | 'CONFLICT';
   readonly from: string;
   readonly to: string;

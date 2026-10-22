@@ -375,7 +375,7 @@
   "analysis": {
     "title": "Analysis validation and data quality",
     "blocked": "Calculation not verified",
-    "verified": "Source item verified",
+    "verified": "Reconciled to primary document; not independently confirmed",
     "profile": "Business model profile",
     "scale": "Unit scale",
     "counts": "{{passed}} of {{total}} calculations passed data checks. This is not approval of the entire report.",
@@ -428,7 +428,10 @@
       "ARITHMETIC": "Zero denominator or inadmissible numeric input.",
       "NOT_APPLICABLE": "Method does not apply to this business model.",
       "ASSUMPTIONS": "Sourced normalization/scenario assumptions are missing.",
-      "METHOD_PENDING": "This calculation strategy has not been implemented."
+      "METHOD_PENDING": "This calculation strategy has not been implemented.",
+      "EVIDENCE": "Source provenance and document reconciliation evidence are missing.",
+      "RESTATEMENT": "Document evidence does not match the IAS 29 purchasing-power basis.",
+      "LOOKAHEAD": "Availability at the valuation date is not verified."
     },
     "historyIssues": {
       "COVERAGE": "Independently verified trading-session, dividend and corporate-action coverage is missing. The earlier approximation is not displayed as a verified result.",
@@ -441,7 +444,8 @@
       "SESSIONS": "Prices do not match expected exchange sessions.",
       "ACTIONS": "Unverified corporate action or adjustment factor.",
       "DIVIDENDS": "Dividends do not match the reconciled event register.",
-      "PERIOD": "The cutoff is not a valid calendar month-end."
+      "PERIOD": "The cutoff is not a valid calendar month-end.",
+      "INDEPENDENCE": "Data coverage lacks independent source reconciliation."
     },
     "methods": {
       "EV_EBITDA": "Normalized EV/EBITDA",
@@ -470,6 +474,52 @@
       "FCF": "Current cash differences cannot be extrapolated without maintenance/growth capex and working-capital analysis.",
       "BOOK_ROE": "Capital and asset quality matter; low P/B alone does not prove undervaluation.",
       "NAV": "Appraisal dates, debt scope and asset liquidity affect the result."
+    },
+    "qualitySeparation": "Sources: {{sources}}. Section completion: partial. Independent report review: not performed. Calculation PASS only refers to arithmetic validation with the stated inputs.",
+    "priorities": "Strategy review priorities (financial results unchanged)",
+    "provenance": "Document origin / collection / method",
+    "sourceState": {
+      "PRIMARY_ONLY": "Primary document reconciled; no independent confirmation",
+      "INCOMPLETE": "Partially reconciled; missing sources"
+    },
+    "sections": {
+      "FINANCIALS": "Financial health",
+      "DIVIDEND": "Dividend sustainability",
+      "VALUATION": "Valuation",
+      "GROWTH": "Growth",
+      "RISK": "Long-term risks",
+      "TECHNICAL": "Technical analysis"
+    },
+    "reconciliation": {
+      "FINANCIALS": {
+        "title": "Official financial reconciliation",
+        "text": "The June 2026 consolidated statements use thousand TRY at June purchasing power. Financial debt is TRY 68.201bn; excluding blocked cash and deducting financial investments gives net debt of −TRY 102.232bn. Presentation cash uses a broader definition. Primary documents were reconciled; no second independent data source was established."
+      },
+      "HISTORY": {
+        "title": "Five-year comparison",
+        "text": "Official 2021–2025 reports were located. 2021 sales were TRY 150.972bn originally and TRY 152.492bn in the 2022 comparative. The 2023–2025 reports also use different year-end purchasing-power bases. Full scope and restatement reconciliation remains missing; no common-basis growth series was generated."
+      },
+      "DIVIDEND": {
+        "title": "Dividend sustainability",
+        "text": "KAP approved gross TRY 17.1268815/share and net TRY 14.5578492 with 15% withholding. Ex and payment dates differ; the schedule is not independent settlement evidence. H1 operating cash of TRY 132.366bn minus asset purchases of TRY 11.858bn equals TRY 120.508bn. Working capital contributed TRY 28.497bn and derivative cash classification needs normalization. This is not sustainable FCF. Full history and cash coverage are missing; 10/15/20-year backtests remain blocked."
+      },
+      "VALUATION": {
+        "title": "Why refining valuation remains open",
+        "text": "The October presentation reports H1 refining margin of USD 15.6/bbl and capex of USD 246m; annual capex of USD 700m is guidance. Inventory effects and exceptional margins are not normalized earnings. A sourced annual normalized EBITDA bridge, consistent net debt, current shares and peer multiple are missing. No bear/base/bull price was produced. Formula: (normalized EBITDA × multiple − net debt) / shares. FCF, BOOK_ROE, NAV and DDM implementations remain pending."
+      },
+      "TECHNICAL": {
+        "title": "Price and volume coverage",
+        "text": "Independently reconciled daily price, volume, corporate-action and FX data are missing. SMA20/50/200, RSI, MACD and support/resistance were not calculated. Prior price snapshots are not live prices."
+      },
+      "DISCLOSURES": {
+        "title": "Disclosure coverage limit",
+        "text": "Earlier KAP events and sources are retained. This review does not establish full coverage of 11–22 October 2026 or previously unread attachments. An issuer KAP filing and its investor presentation are not two independent economic sources."
+      }
+    },
+    "completion": {
+      "PARTIAL": "Partial",
+      "MISSING": "Missing",
+      "COMPLETE": "Complete"
     }
   },
   "transfer": {

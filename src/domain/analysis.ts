@@ -3,6 +3,7 @@ import type {
   ResearchFact,
   ResearchReport,
 } from '@/domain/research';
+import type { SourceEvidence } from '@/domain/evidence';
 
 export interface FactBasis {
   readonly currency: string;
@@ -18,6 +19,7 @@ export interface FactBasis {
 }
 
 export interface FinancialFact extends ResearchFact {
+  readonly evidence?: SourceEvidence;
   readonly basis: FactBasis;
   readonly verification: 'VERIFIED' | 'UNVERIFIED' | 'CONFLICT';
   readonly checkedAt: string;
@@ -61,6 +63,12 @@ export interface AnalysisProfile {
 }
 
 export interface AnalysisReport {
+  readonly sections?: readonly {
+    readonly id: string;
+    readonly status: 'PARTIAL' | 'MISSING' | 'COMPLETE';
+    readonly contentKey: string;
+    readonly sourceIds: readonly string[];
+  }[];
   readonly schemaVersion: 2;
   readonly version: string;
   readonly context: AnalysisContext;

@@ -6,6 +6,7 @@ import type {
 } from '@/domain/analysis';
 import type { ResearchCalculation } from '@/domain/research';
 import { calculateResearch } from '@/lib/researchCalculations';
+import { validEvidence } from '@/lib/sourceEvidence';
 
 export function validDate(value: string): boolean {
   const date = new Date(`${value}T00:00:00Z`);
@@ -22,6 +23,23 @@ export function factIssues(
 ): string[] {
   const issues: string[] = [];
   const b = fact.basis;
+  const evidence = fact.evidence;
+  if (
+    !evidence ||
+    !validEvidence(evidence) ||
+    evidence.sourceId !== fact.sourceId ||
+    !evidence.claims.includes(fact.id) ||
+    evidence.from > b.start ||
+    evidence.to < b.end
+  ) {
+    issues.push('EVIDENCE');
+  }
+  if (
+    b.accounting === 'TAS29' &&
+    evidence?.purchasingPowerDate !== b.purchasingPowerDate
+  ) {
+    issues.push('RESTATEMENT');
+  }
   if (fact.verification !== 'VERIFIED') {
     issues.push(fact.verification);
   }

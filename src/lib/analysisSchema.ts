@@ -1,4 +1,5 @@
 import type { AnalysisReport, FinancialFact } from '@/domain/analysis';
+import { isSourceEvidence } from '@/lib/sourceEvidence';
 
 function record(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -22,6 +23,7 @@ function isFact(value: unknown): value is FinancialFact {
   }
   const b = value.basis;
   return (
+    (value.evidence === undefined || isSourceEvidence(value.evidence)) &&
     stringFields(value, [
       'id',
       'value',
@@ -65,6 +67,15 @@ function isReport(value: unknown): value is AnalysisReport {
   }
   const p = value.presentation;
   return (
+    (value.sections === undefined ||
+      (Array.isArray(value.sections) &&
+        value.sections.every(
+          (s) =>
+            record(s) &&
+            stringFields(s, ['id', 'contentKey']) &&
+            oneOf(s.status, ['PARTIAL', 'MISSING', 'COMPLETE']) &&
+            strings(s.sourceIds),
+        ))) &&
     oneOf(value.context.assetType, ['EQUITY', 'CRYPTO', 'FUND']) &&
     typeof value.context.businessModel === 'string' &&
     strings(value.context.strategies) &&

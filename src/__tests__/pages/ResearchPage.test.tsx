@@ -24,6 +24,22 @@ afterEach(() => {
 });
 
 describe('ResearchPage', () => {
+  it('keeps section gaps and independent review separate from calculation checks', async () => {
+    renderPage();
+    expect(
+      await screen.findByText(i18n.t('analysis.reconciliation.VALUATION.text')),
+    ).toBeVisible();
+    expect(
+      screen.getByText(
+        i18n.t('analysis.qualitySeparation', {
+          sources: i18n.t('analysis.sourceState.INCOMPLETE'),
+        }),
+      ),
+    ).toBeVisible();
+    expect(
+      screen.getByText(i18n.t('analysis.reconciliation.HISTORY.text')),
+    ).toBeVisible();
+  });
   it('shows a plain-language price verdict and company context', async () => {
     renderPage();
     expect(

@@ -1,6 +1,11 @@
 import type { AnalysisReport, CalculationResult } from '@/domain/analysis';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 import { factIssues } from '@/lib/analysisValidation';
+import { valuationBasisIssues } from '@/lib/valuationBasis';
+import type {
+  ValuationScenario,
+  ValuationInputRule,
+} from '@/lib/valuationBasis';
 import {
   compareDecimals,
   divideDecimals,
@@ -12,12 +17,19 @@ export interface ValuationMethod {
   readonly id: string;
   readonly required: readonly string[];
   readonly formula: string;
+  readonly inputRules?: readonly ValuationInputRule[];
   readonly calculate?: (values: Readonly<Record<string, string>>) => string;
 }
 /** Missing implementations remain explicit; applicability is not a valuation result. */
 export const VALUATION_METHODS: readonly ValuationMethod[] = [
   {
     id: 'EV_EBITDA',
+    inputRules: [
+      { id: 'normalizedEbitda', role: 'FLOW' },
+      { id: 'peerEvEbitda', role: 'MULTIPLE' },
+      { id: 'valuationNetDebt', role: 'STOCK' },
+      { id: 'shares', role: 'SHARES' },
+    ],
     required: [
       'normalizedEbitda',
       'peerEvEbitda',
@@ -34,6 +46,11 @@ export const VALUATION_METHODS: readonly ValuationMethod[] = [
         v.shares,
         2,
       ),
+  },
+  {
+    id: 'DDM',
+    required: ['sustainableDividend', 'costOfEquity', 'dividendGrowth'],
+    formula: 'Σ DPS(t)/(1+Ke)^t + terminal dividend value',
   },
   {
     id: 'FCF',
@@ -65,6 +82,7 @@ export const VALUATION_METHODS: readonly ValuationMethod[] = [
 export function evaluateValuation(
   report: AnalysisReport,
   method: ValuationMethod,
+  scenario?: ValuationScenario,
 ): CalculationResult {
   const inputs = method.required.flatMap((id) =>
     report.facts.filter((f) => f.id === id),
@@ -86,11 +104,12 @@ export function evaluateValuation(
       ),
     );
   }
-  // A normalized scenario requires an explicit sourced assumption set, not merely matching IDs.
+  issues.push(
+    ...valuationBasisIssues(inputs, method.inputRules ?? [], scenario),
+  );
   if (
-    !report.contracts.some(
-      (c) => c.id === method.id && c.earningsBasis === 'NORMALIZED',
-    )
+    method.calculate &&
+    method.inputRules?.length !== method.required.length
   ) {
     issues.push('ASSUMPTIONS');
   }
@@ -99,19 +118,6 @@ export function evaluateValuation(
   }
   if (new Set(inputs.map((f) => f.id)).size !== inputs.length) {
     issues.push('DUPLICATE');
-  }
-  const money = inputs.filter((f) => f.unit === 'TRY' || f.unit === 'USD');
-  if (
-    money.some(
-      (f) =>
-        f.basis.currency !== money[0]?.basis.currency ||
-        f.basis.end !== money[0]?.basis.end ||
-        f.basis.scope !== money[0]?.basis.scope ||
-        f.basis.accounting !== money[0]?.basis.accounting ||
-        f.basis.purchasingPowerDate !== money[0]?.basis.purchasingPowerDate,
-    )
-  ) {
-    issues.push('BASIS');
   }
   if (method.id === 'EV_EBITDA') {
     const byId = Object.fromEntries(inputs.map((f) => [f.id, f]));

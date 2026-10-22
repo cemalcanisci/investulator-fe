@@ -1,5 +1,6 @@
 import type { DividendHistory } from '@/domain/dividendHistory';
 import { validDate } from '@/lib/analysisValidation';
+import { sourceStatus } from '@/lib/sourceEvidence';
 import {
   compareDecimals,
   divideDecimals,
@@ -24,7 +25,33 @@ export function historyIssues(
     return ['COVERAGE'];
   }
   const issues: string[] = [];
+  for (const claim of [
+    'CALENDAR',
+    'LISTING',
+    'DIVIDENDS',
+    'ACTIONS',
+    'PRICES',
+    'FX',
+  ]) {
+    const matches =
+      integrity.evidenceClaims?.filter((c) => c.claim === claim) ?? [];
+    if (
+      matches.length !== 1 ||
+      sourceStatus(
+        integrity.evidence ?? [],
+        matches[0]?.evidenceIds ?? [],
+        claim,
+        from,
+        history.asOf,
+      ) !== 'INDEPENDENT'
+    ) {
+      issues.push('INDEPENDENCE');
+    }
+  }
   const sourceIds = history.sources.map((s) => s.id);
+  if (integrity.evidence?.some((e) => !sourceIds.includes(e.sourceId))) {
+    issues.push('SOURCE');
+  }
   if (integrity.status !== 'VERIFIED' || history.review !== 'REVIEWED') {
     issues.push('UNVERIFIED');
   }
