@@ -35,6 +35,20 @@ function seal(h: DividendHistory): DividendHistory {
         originId: id,
         collectionId: id,
         reviewerId: id,
+        independenceReview:
+          id === 'second'
+            ? {
+                comparedEvidenceId: 'first',
+                reviewerId: 'second',
+                reviewedAt: '2026-01-01',
+                artifactUrl: 'https://example.invalid/synthetic-review',
+                locator: 'Fictional fixture',
+                originAssessment:
+                  'Synthetic independent origins for gate coverage only',
+                procedure:
+                  'Synthetic reconciliation; never real-world evidence',
+              }
+            : undefined,
         ancestorIds: [],
         documentUrl: `https://example.invalid/synthetic-${id}`,
         locator: 'Synthetic coverage declaration',
@@ -121,6 +135,23 @@ describe('historical dividend backtest', () => {
         10,
       ).status,
     ).not.toBe('COMPLETE');
+  });
+  it('does not complete based on different source IDs without review evidence', () => {
+    const history = fixture();
+    if (!history.integrity?.evidence) {
+      throw new Error('Missing integrity fixture');
+    }
+    const changed = {
+      ...history,
+      integrity: {
+        ...history.integrity,
+        evidence: history.integrity.evidence.map((e) => ({
+          ...e,
+          independenceReview: undefined,
+        })),
+      },
+    };
+    expect(backtestDividends(changed, 10).status).not.toBe('COMPLETE');
   });
   it.each([10, 15, 20])(
     'uses exactly %i years of monthly contributions',

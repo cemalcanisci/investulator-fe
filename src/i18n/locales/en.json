@@ -520,7 +520,49 @@
       "PARTIAL": "Partial",
       "MISSING": "Missing",
       "COMPLETE": "Complete"
-    }
+    },
+    "strategySelector": "Analysis presentation priority",
+    "strategyOptions": {
+      "REPORT": "Report strategies",
+      "DIVIDEND": "Dividend",
+      "GROWTH": "Growth",
+      "VALUE": "Value",
+      "LONG_TERM": "Long term"
+    },
+    "factTechnical": "Technical input validity",
+    "technicalValid": "Valid (not source verification)",
+    "factPrimary": "Primary source reconciliation",
+    "factIndependent": "Independent review",
+    "notReviewed": "Not reviewed",
+    "reconciliationV6": {
+      "FINANCIALS": {
+        "title": "Primary financial reconciliation",
+        "text": "14 key rows match KAP #1643116 and the issuer’s H1 2026 report. Thousand TRY was converted to TRY, preserving consolidated scope and 30 June 2026 purchasing power. Financial debt is TRY 68.20bn; net cash under the issuer’s note definition is TRY 102.23bn. TRY 28.49bn of total cash is blocked. This match is not an independent review."
+      },
+      "HISTORY": {
+        "title": "Five-year documents and basis differences",
+        "text": "Revenue, parent profit/equity, operating cash, debt and unblocked cash are available for 2021–2025. 2021 uses the restated 2022 column following the Entek combination. 2023–2025 annual changes use comparable columns in the same report. A single purchasing-power basis for all five years remains unavailable."
+      },
+      "DIVIDEND": {
+        "title": "Cash coverage and historical-data limits",
+        "text": "2025 operating cash of TRY 49.46bn less TRY 19.12bn capex leaves TRY 30.35bn, versus TRY 34.84bn cash dividends on the same basis. Operating cash covers distributions 1.42 times; the post-capex proxy does not fully cover them. This does not automatically predict a cut. The 2026 payment schedule and 2023 600% bonus record were located; full historical settlement, price and FX coverage remain unverified. None of the 10/15/20-year backtests is complete. MKK #1671443 records the second instalment as settled on 2 October 2026 at a gross rate of 674.69533% (TRY 6.7469533/share). This is custodian evidence for one event, not an independent review of the full history."
+      },
+      "VALUATION": {
+        "title": "Refining cycle; no target price",
+        "text": "The issuer reports H1 2026 net refining margin of USD 15.6/bbl, with Q1 at 9.4 and Q2 at 21.4. Such volatility cautions against treating one strong quarter as permanent earnings. Full-year margin guidance of USD 13–15/bbl and USD 700m capex are plans, not realized results. A verified multi-year normalized EBITDA bridge addressing inventory/working-capital effects and comparable peer multiples is still missing. No bear/base/bull price targets were produced."
+      },
+      "TECHNICAL": {
+        "title": "Price and volume verification missing",
+        "text": "The market series has not been reconciled with an official session calendar and independent raw price/volume history. TCMB indicative USD buying/selling rates on 9 October 2026 are 49.1274/49.2160; these are not market closing rates. One sample does not verify 20 years of FX. No new SMA20/50/200, RSI, MACD or support/resistance outputs were produced without validated inputs."
+      },
+      "DISCLOSURES": {
+        "title": "Disclosure scan partial",
+        "text": "The financial filing, dividend resolution and MKK bonus settlement were inspected as documents. The company report and KAP filing share the same issuer origin. Existing news and transition commentary are retained; exhaustive review of all filings and attachments is not claimed."
+      }
+    },
+    "historyTitle": "Annual financials and comparable changes",
+    "historyBasis": "Amounts are shown in TRY billions. 2021–2022 are nominal; 2023–2025 use each year-end purchasing power. Do not compare raw amounts directly. Annual-change cards use the restated previous year in the same report. 2021 includes the Entek restatement. Sources and exact inputs are available in card details.",
+    "inputStates": "Inputs: technical checks {{technical}}/{{total}}; primary-document reconciliation {{primary}}/{{total}}. Independent report review: not performed."
   },
   "transfer": {
     "description": "Add transactions from a file or download a copy of your records.",
@@ -815,7 +857,59 @@
       "cashAvailable": "Cash excluding blocked deposits",
       "financialInvestments": "Investments included in net debt",
       "netFinancialDebt": "Company-defined net financial debt",
-      "workingCapitalCash": "Working capital cash contribution"
+      "workingCapitalCash": "Working capital cash contribution",
+      "revenue2021": "Revenue",
+      "profit2021": "Profit attributable to parent",
+      "equity2021": "Equity attributable to parent",
+      "cfo2021": "Operating cash flow",
+      "debt2021": "Financial debt",
+      "cash2021": "Unblocked cash",
+      "revenue2022": "Revenue",
+      "profit2022": "Profit attributable to parent",
+      "equity2022": "Equity attributable to parent",
+      "cfo2022": "Operating cash flow",
+      "debt2022": "Financial debt",
+      "cash2022": "Unblocked cash",
+      "revenue2023": "Revenue",
+      "profit2023": "Profit attributable to parent",
+      "equity2023": "Equity attributable to parent",
+      "cfo2023": "Operating cash flow",
+      "debt2023": "Financial debt",
+      "cash2023": "Unblocked cash",
+      "revenue2024": "Revenue",
+      "profit2024": "Profit attributable to parent",
+      "equity2024": "Equity attributable to parent",
+      "cfo2024": "Operating cash flow",
+      "debt2024": "Financial debt",
+      "cash2024": "Unblocked cash",
+      "revenue2025": "Revenue",
+      "profit2025": "Profit attributable to parent",
+      "equity2025": "Equity attributable to parent",
+      "cfo2025": "Operating cash flow",
+      "debt2025": "Financial debt",
+      "cash2025": "Unblocked cash",
+      "revenue2023Comparable": "Revenue — restated previous year",
+      "revenue2023Growth": "Revenue: annual change on same report basis",
+      "profit2023Comparable": "Parent profit — restated previous year",
+      "profit2023Growth": "Parent profit: annual change on same report basis",
+      "cfo2023Comparable": "Operating cash — restated previous year",
+      "cfo2023Growth": "Operating cash: annual change on same report basis",
+      "revenue2024Comparable": "Revenue — restated previous year",
+      "revenue2024Growth": "Revenue: annual change on same report basis",
+      "profit2024Comparable": "Parent profit — restated previous year",
+      "profit2024Growth": "Parent profit: annual change on same report basis",
+      "cfo2024Comparable": "Operating cash — restated previous year",
+      "cfo2024Growth": "Operating cash: annual change on same report basis",
+      "revenue2025Comparable": "Revenue — restated previous year",
+      "revenue2025Growth": "Revenue: annual change on same report basis",
+      "profit2025Comparable": "Parent profit — restated previous year",
+      "profit2025Growth": "Parent profit: annual change on same report basis",
+      "cfo2025Comparable": "Operating cash — restated previous year",
+      "cfo2025Growth": "Operating cash: annual change on same report basis",
+      "capex2025": "Capital expenditure (outflow magnitude)",
+      "dividendsPaid2025": "Dividends paid (cash flow)",
+      "cashProxy2025": "Operating cash less capital expenditure",
+      "dividendCashCoverage2025": "Operating cash / dividends paid"
     },
     "formulas": {
       "revenueGrowth": "(Revenue − prior revenue) ÷ prior revenue × 100",
@@ -833,7 +927,18 @@
       "debtWithinYear": "Short-term financial debt + current portion of long-term financial debt",
       "priceBook": "(Price × shares) / equity attributable to owners",
       "peHalfYear": "(Price × shares) / six-month profit attributable to owners",
-      "peRunRate": "(Price × shares) / (six-month profit + assumed repeat of that profit)"
+      "peRunRate": "(Price × shares) / (six-month profit + assumed repeat of that profit)",
+      "revenue2023Growth": "(current / restated previous - 1) × 100",
+      "profit2023Growth": "(current / restated previous - 1) × 100",
+      "cfo2023Growth": "(current / restated previous - 1) × 100",
+      "revenue2024Growth": "(current / restated previous - 1) × 100",
+      "profit2024Growth": "(current / restated previous - 1) × 100",
+      "cfo2024Growth": "(current / restated previous - 1) × 100",
+      "revenue2025Growth": "(current / restated previous - 1) × 100",
+      "profit2025Growth": "(current / restated previous - 1) × 100",
+      "cfo2025Growth": "(current / restated previous - 1) × 100",
+      "cashProxy2025": "operating cash − capital expenditure",
+      "dividendCashCoverage2025": "operating cash / dividends paid"
     },
     "methods": {
       "pe": "Normalised P/E",

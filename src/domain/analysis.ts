@@ -63,6 +63,12 @@ export interface AnalysisProfile {
 }
 
 export interface AnalysisReport {
+  readonly revision?: number;
+  readonly financialHistory?: readonly {
+    readonly year: string;
+    readonly factIds: readonly string[];
+    readonly calculationIds: readonly string[];
+  }[];
   readonly sections?: readonly {
     readonly id: string;
     readonly status: 'PARTIAL' | 'MISSING' | 'COMPLETE';

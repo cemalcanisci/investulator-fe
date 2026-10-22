@@ -1,4 +1,13 @@
 export interface SourceEvidence {
+  readonly independenceReview?: {
+    readonly comparedEvidenceId: string;
+    readonly reviewerId: string;
+    readonly reviewedAt: string;
+    readonly artifactUrl: string;
+    readonly locator: string;
+    readonly originAssessment: string;
+    readonly procedure: string;
+  };
   readonly id: string;
   readonly sourceId: string;
   readonly originId: string;
@@ -10,6 +19,8 @@ export interface SourceEvidence {
   readonly excerpt: string;
   readonly checkedAt: string;
   readonly publishedAt: string;
+  /** OBSERVED_BY is a conservative availability bound, not an exact publication date. */
+  readonly publishedAtBasis?: 'EXACT' | 'OBSERVED_BY';
   readonly method: 'DOCUMENT_RECONCILIATION' | 'INDEPENDENT_RECONCILIATION';
   readonly claims: readonly string[];
   readonly from: string;

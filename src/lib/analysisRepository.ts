@@ -45,8 +45,12 @@ export class AnalysisRepository {
     return structuredClone(
       this.reports
         .filter((r) => r.presentation.assetId === assetId)
-        .sort((a, b) =>
-          b.presentation.retrievedAt.localeCompare(a.presentation.retrievedAt),
+        .sort(
+          (a, b) =>
+            (b.revision ?? 0) - (a.revision ?? 0) ||
+            b.presentation.retrievedAt.localeCompare(
+              a.presentation.retrievedAt,
+            ),
         ),
     );
   }

@@ -520,7 +520,49 @@
       "PARTIAL": "Kısmi",
       "MISSING": "Eksik",
       "COMPLETE": "Tamamlandı"
-    }
+    },
+    "strategySelector": "Analiz sunum önceliği",
+    "strategyOptions": {
+      "REPORT": "Rapordaki stratejiler",
+      "DIVIDEND": "Temettü",
+      "GROWTH": "Büyüme",
+      "VALUE": "Değer",
+      "LONG_TERM": "Uzun vade"
+    },
+    "factTechnical": "Teknik veri geçerliliği",
+    "technicalValid": "Geçerli (kaynak teyidi değildir)",
+    "factPrimary": "Birincil kaynak mutabakatı",
+    "factIndependent": "Bağımsız inceleme",
+    "notReviewed": "İncelenmedi",
+    "reconciliationV6": {
+      "FINANCIALS": {
+        "title": "Birincil finansal mutabakat",
+        "text": "14 ana satır KAP #1643116 ile şirketin 2026 ilk yarı raporunda eşleşti. Tutarlar bin TL’den TL’ye dönüştürüldü; konsolide kapsam ve 30.06.2026 satın alma gücü korundu. 68,20 milyar TL finansal borca karşı şirketin dipnot tanımıyla 102,23 milyar TL net nakit var. Toplam nakdin 28,49 milyar TL’si bloke; tüm nakit serbestçe kullanılabilir sayılmıyor. Bu eşleşme bağımsız inceleme değildir."
+      },
+      "HISTORY": {
+        "title": "Beş yıllık belgeler ve baz farkları",
+        "text": "2021–2025 hasılat, ana ortaklık kârı/özkaynağı, işletme nakdi, finansal borç ve bloke olmayan nakit eklendi. 2021, Entek birleşmesi nedeniyle 2022 raporundaki yeniden düzenlenmiş sütundan alındı. 2023–2025 yıllık değişimleri aynı raporun karşılaştırmalı sütunlarıyla hesaplanır. Beş yılın tamamını tek satın alma gücünde karşılaştıran seri henüz yok; farklı bazlı tutarlar üzerinden trend yüzdesi üretilmez."
+      },
+      "DIVIDEND": {
+        "title": "Nakit karşılama ve tarihsel veri sınırı",
+        "text": "2025 işletme nakdi 49,46 milyar TL, yatırım harcaması 19,12 milyar TL; fark 30,35 milyar TL. Aynı bazdaki nakit temettü çıkışı 34,84 milyar TL: işletme nakdi 1,42 kat karşılıyor, yatırım sonrası fark ise dağıtımı tek başına karşılamıyor. Bu, otomatik temettü kesintisi anlamına gelmez; nakit tamponu, yatırımlar ve döngü birlikte izlenmeli. 2026 ödeme takvimi ve 2023 %600 bedelsiz kaydı bulundu; bütün tarihsel ödemelerin gerçekleşmesi ve bağımsız fiyat/kur kapsamı doğrulanmadı. 10/15/20 yıllık backtest tamamlanmış değildir. MKK #1671443, 02.10.2026 ikinci taksit ödemesini %674,69533 brüt oranla (6,7469533 TL/pay) gerçekleşmiş kayıt olarak doğruluyor. Bu tek olay için saklama kuruluşu kanıtıdır; tüm geçmişin bağımsız incelemesi değildir."
+      },
+      "VALUATION": {
+        "title": "Rafineri döngüsü; hedef fiyat yok",
+        "text": "Şirket sunumunda 2026 ilk yarı net rafineri marjı 15,6 USD/varil; ilk çeyrek 9,4, ikinci çeyrek 21,4. Bu oynaklık, güçlü bir çeyreği kalıcı kazanç saymamamız gerektiğini gösterir. 13–15 USD/varil yıl sonu marj yönlendirmesi ve 700 milyon USD yatırım planı gerçekleşmiş sonuç değildir. İşletme sermayesi ve stok etkilerini ayrıştıran çok yıllı normalleştirilmiş FAVÖK köprüsü ile karşılaştırılabilir emsal çarpanları henüz doğrulanmadı. EV/FAVÖK kötümser/baz/iyimser hedefleri üretilmedi; diğer uygulanmamış yöntemler eksik kalır."
+      },
+      "TECHNICAL": {
+        "title": "Fiyat ve hacim doğrulaması eksik",
+        "text": "Mevcut piyasa serisi resmî işlem takvimi ve bağımsız ham fiyat/hacim serisiyle mutabık değil. TCMB 09.10.2026 USD alış 49,1274 / satış 49,2160 kaydı erişilebilir; gösterge kur, piyasa kapanış kuru değildir. Tek günlük örnek 20 yıllık kur kapsamını doğrulamaz. SMA20/50/200, RSI, MACD ve destek/direnç için doğrulanmış seri olmadan yeni sonuç üretilmedi."
+      },
+      "DISCLOSURES": {
+        "title": "Bildirim taraması kısmi",
+        "text": "Finansal bildirim, temettü kararı ve MKK bedelsiz gerçekleşme kaydı belge düzeyinde incelendi. Finansal rapor ile KAP yayını aynı ihraççı kökenindedir. Önceki haber ve stratejik dönüşüm açıklamaları korunuyor; bütün bildirimlerin ve eklerin eksiksiz tarandığı iddia edilmiyor."
+      }
+    },
+    "historyTitle": "Yıllık finansallar ve karşılaştırılabilir değişimler",
+    "historyBasis": "Tutarlar milyar TL gösterilir. 2021–2022 nominaldir; 2023–2025 kendi yıl sonu satın alma gücündedir. Satırların nominal büyüklüğünü doğrudan karşılaştırmayın. Yıllık değişim kartları aynı raporun yeniden düzenlenmiş önceki yılını kullanır. 2021 verileri Entek sonrası yeniden düzenlenmiştir. Kaynak ve tam girdiler kartların ayrıntılarındadır.",
+    "inputStates": "Girdiler: teknik kontroller {{technical}}/{{total}}; birincil belge mutabakatı {{primary}}/{{total}}. Bağımsız rapor incelemesi: yapılmadı."
   },
   "transfer": {
     "description": "İşlemlerini dosyadan ekle veya kayıtlarının bir kopyasını indir.",
@@ -815,7 +857,59 @@
       "cashAvailable": "Bloke hariç nakit",
       "financialInvestments": "Net borç kapsamındaki finansal yatırımlar",
       "netFinancialDebt": "Şirket tanımıyla net finansal borç",
-      "workingCapitalCash": "İşletme sermayesinin nakit katkısı"
+      "workingCapitalCash": "İşletme sermayesinin nakit katkısı",
+      "revenue2021": "Hasılat",
+      "profit2021": "Ana ortaklık net kârı",
+      "equity2021": "Ana ortaklık özkaynakları",
+      "cfo2021": "İşletme nakit akışı",
+      "debt2021": "Finansal borç",
+      "cash2021": "Bloke olmayan nakit",
+      "revenue2022": "Hasılat",
+      "profit2022": "Ana ortaklık net kârı",
+      "equity2022": "Ana ortaklık özkaynakları",
+      "cfo2022": "İşletme nakit akışı",
+      "debt2022": "Finansal borç",
+      "cash2022": "Bloke olmayan nakit",
+      "revenue2023": "Hasılat",
+      "profit2023": "Ana ortaklık net kârı",
+      "equity2023": "Ana ortaklık özkaynakları",
+      "cfo2023": "İşletme nakit akışı",
+      "debt2023": "Finansal borç",
+      "cash2023": "Bloke olmayan nakit",
+      "revenue2024": "Hasılat",
+      "profit2024": "Ana ortaklık net kârı",
+      "equity2024": "Ana ortaklık özkaynakları",
+      "cfo2024": "İşletme nakit akışı",
+      "debt2024": "Finansal borç",
+      "cash2024": "Bloke olmayan nakit",
+      "revenue2025": "Hasılat",
+      "profit2025": "Ana ortaklık net kârı",
+      "equity2025": "Ana ortaklık özkaynakları",
+      "cfo2025": "İşletme nakit akışı",
+      "debt2025": "Finansal borç",
+      "cash2025": "Bloke olmayan nakit",
+      "revenue2023Comparable": "Hasılat — karşılaştırmalı önceki yıl",
+      "revenue2023Growth": "Hasılat: aynı rapor bazında yıllık değişim",
+      "profit2023Comparable": "Ana ortaklık kârı — karşılaştırmalı önceki yıl",
+      "profit2023Growth": "Ana ortaklık kârı: aynı rapor bazında yıllık değişim",
+      "cfo2023Comparable": "İşletme nakdi — karşılaştırmalı önceki yıl",
+      "cfo2023Growth": "İşletme nakdi: aynı rapor bazında yıllık değişim",
+      "revenue2024Comparable": "Hasılat — karşılaştırmalı önceki yıl",
+      "revenue2024Growth": "Hasılat: aynı rapor bazında yıllık değişim",
+      "profit2024Comparable": "Ana ortaklık kârı — karşılaştırmalı önceki yıl",
+      "profit2024Growth": "Ana ortaklık kârı: aynı rapor bazında yıllık değişim",
+      "cfo2024Comparable": "İşletme nakdi — karşılaştırmalı önceki yıl",
+      "cfo2024Growth": "İşletme nakdi: aynı rapor bazında yıllık değişim",
+      "revenue2025Comparable": "Hasılat — karşılaştırmalı önceki yıl",
+      "revenue2025Growth": "Hasılat: aynı rapor bazında yıllık değişim",
+      "profit2025Comparable": "Ana ortaklık kârı — karşılaştırmalı önceki yıl",
+      "profit2025Growth": "Ana ortaklık kârı: aynı rapor bazında yıllık değişim",
+      "cfo2025Comparable": "İşletme nakdi — karşılaştırmalı önceki yıl",
+      "cfo2025Growth": "İşletme nakdi: aynı rapor bazında yıllık değişim",
+      "capex2025": "Yatırım harcaması (nakit çıkışı büyüklüğü)",
+      "dividendsPaid2025": "Ödenen temettü (nakit akışı)",
+      "cashProxy2025": "İşletme nakdi − yatırım harcaması",
+      "dividendCashCoverage2025": "Temettünün işletme nakdiyle karşılanması"
     },
     "formulas": {
       "revenueGrowth": "(Hasılat − önceki hasılat) ÷ önceki hasılat × 100",
@@ -833,7 +927,18 @@
       "debtWithinYear": "Kısa vadeli finansal borç + uzun vadeli finansal borcun kısa kısmı",
       "priceBook": "(Fiyat × pay adedi) / ana ortaklık özkaynağı",
       "peHalfYear": "(Fiyat × pay adedi) / 6 aylık ana ortaklık net kârı",
-      "peRunRate": "(Fiyat × pay adedi) / (6 aylık net kâr + aynı kârın tekrarı varsayımı)"
+      "peRunRate": "(Fiyat × pay adedi) / (6 aylık net kâr + aynı kârın tekrarı varsayımı)",
+      "revenue2023Growth": "(current / restated previous - 1) × 100",
+      "profit2023Growth": "(current / restated previous - 1) × 100",
+      "cfo2023Growth": "(current / restated previous - 1) × 100",
+      "revenue2024Growth": "(current / restated previous - 1) × 100",
+      "profit2024Growth": "(current / restated previous - 1) × 100",
+      "cfo2024Growth": "(current / restated previous - 1) × 100",
+      "revenue2025Growth": "(current / restated previous - 1) × 100",
+      "profit2025Growth": "(current / restated previous - 1) × 100",
+      "cfo2025Growth": "(current / restated previous - 1) × 100",
+      "cashProxy2025": "operating cash − capital expenditure",
+      "dividendCashCoverage2025": "operating cash / dividends paid"
     },
     "methods": {
       "pe": "Normalize F/K",

@@ -5,7 +5,11 @@ import {
   sourceStatus,
   isSourceEvidence,
 } from '@/lib/sourceEvidence';
-import { factIssues } from '@/lib/analysisValidation';
+import {
+  factIssues,
+  factSourceIssues,
+  factTechnicalIssues,
+} from '@/lib/analysisValidation';
 import { analysisQuality } from '@/lib/analysisQuality';
 import { analysisPriorities } from '@/lib/analysisPriorities';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -51,7 +55,34 @@ describe('source provenance gates', () => {
       collectionId: 'other-run',
       reviewerId: 'reviewer',
       method: 'INDEPENDENT_RECONCILIATION',
+      independenceReview: {
+        comparedEvidenceId: 'one',
+        reviewerId: 'reviewer',
+        reviewedAt: '2026-01-01',
+        artifactUrl: 'https://example.invalid/review',
+        locator: 'Synthetic review appendix',
+        originAssessment: 'Fictional separate origin, no common upstream',
+        procedure: 'Synthetic document reconciliation; not real evidence',
+      },
     };
+    expect(
+      independentEvidence(proof, {
+        ...independent,
+        independenceReview: undefined,
+      }),
+    ).toBe(false);
+    if (!independent.independenceReview) {
+      throw new Error('Missing review fixture');
+    }
+    expect(
+      independentEvidence(proof, {
+        ...independent,
+        independenceReview: {
+          ...independent.independenceReview,
+          comparedEvidenceId: 'unrelated',
+        },
+      }),
+    ).toBe(false);
     expect(independentEvidence(proof, independent)).toBe(true);
     expect(
       independentEvidence(proof, { ...independent, ancestorIds: ['origin'] }),
@@ -81,6 +112,10 @@ describe('source provenance gates', () => {
     if (!fact) {
       throw new Error('Missing fixture');
     }
+    expect(factTechnicalIssues(fact)).toEqual([]);
+    expect(
+      factSourceIssues({ ...fact, evidence: undefined }, ['financials']),
+    ).toContain('EVIDENCE');
     expect(
       factIssues({ ...fact, evidence: undefined }, ['financials']),
     ).toContain('EVIDENCE');

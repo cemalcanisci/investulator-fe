@@ -24,10 +24,44 @@ afterEach(() => {
 });
 
 describe('ResearchPage', () => {
+  it('reorders actual sections when the presentation strategy changes', async () => {
+    renderPage();
+    const selector = await screen.findByRole('combobox', {
+      name: i18n.t('analysis.strategySelector'),
+    });
+    await userEvent.selectOptions(selector, 'VALUE');
+    const nav = screen.getByRole('navigation', {
+      name: i18n.t('research.contents'),
+    });
+    expect(within(nav).getAllByRole('link')[1]).toHaveAttribute(
+      'href',
+      '#valuation',
+    );
+    const valuation = screen.getByRole('region', {
+      name: i18n.t('research.sections.valuation'),
+    });
+    const dividend = screen.getByRole('region', {
+      name: i18n.t('research.sections.dividend'),
+    });
+    expect(
+      valuation.compareDocumentPosition(dividend) &
+        Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy();
+    await userEvent.selectOptions(selector, 'DIVIDEND');
+    expect(
+      dividend.compareDocumentPosition(valuation) &
+        Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy();
+    expect(
+      screen.getByText(i18n.t('analysis.historyBasis')),
+    ).toBeInTheDocument();
+  });
   it('keeps section gaps and independent review separate from calculation checks', async () => {
     renderPage();
     expect(
-      await screen.findByText(i18n.t('analysis.reconciliation.VALUATION.text')),
+      await screen.findByText(
+        i18n.t('analysis.reconciliationV6.VALUATION.text'),
+      ),
     ).toBeVisible();
     expect(
       screen.getByText(
@@ -37,7 +71,7 @@ describe('ResearchPage', () => {
       ),
     ).toBeVisible();
     expect(
-      screen.getByText(i18n.t('analysis.reconciliation.HISTORY.text')),
+      screen.getByText(i18n.t('analysis.reconciliationV6.HISTORY.text')),
     ).toBeVisible();
   });
   it('shows a plain-language price verdict and company context', async () => {

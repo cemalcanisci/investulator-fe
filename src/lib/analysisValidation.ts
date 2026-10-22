@@ -17,7 +17,7 @@ export function validDate(value: string): boolean {
   );
 }
 
-export function factIssues(
+export function factSourceIssues(
   fact: FinancialFact,
   sourceIds: readonly string[],
 ): string[] {
@@ -50,6 +50,11 @@ export function factIssues(
   ) {
     issues.push('SOURCE');
   }
+  return issues;
+}
+export function factTechnicalIssues(fact: FinancialFact): string[] {
+  const issues: string[] = [];
+  const b = fact.basis;
   if (!/^-?\d+(\.\d+)?$/.test(fact.value)) {
     issues.push('NUMBER');
   }
@@ -99,6 +104,12 @@ export function factIssues(
     issues.push('PERIOD');
   }
   return issues;
+}
+export function factIssues(
+  fact: FinancialFact,
+  sourceIds: readonly string[],
+): string[] {
+  return [...factTechnicalIssues(fact), ...factSourceIssues(fact, sourceIds)];
 }
 
 function compatibility(

@@ -30,3 +30,33 @@ export function analysisPriorities(
     ]),
   ].filter((s) => context.assetType === 'EQUITY' || s !== 'DIVIDEND');
 }
+
+export type ResearchSectionId =
+  | 'overview'
+  | 'financials'
+  | 'growth'
+  | 'dividend'
+  | 'valuation'
+  | 'technical'
+  | 'news'
+  | 'history'
+  | 'sources';
+
+export function researchSectionOrder(
+  context: AnalysisContext,
+): readonly ResearchSectionId[] {
+  const mapping: Readonly<Record<AnalysisSection, ResearchSectionId>> = {
+    FINANCIALS: 'financials',
+    DIVIDEND: 'dividend',
+    VALUATION: 'valuation',
+    GROWTH: 'growth',
+    RISK: 'news',
+    TECHNICAL: 'technical',
+  };
+  return [
+    'overview',
+    ...analysisPriorities(context).map((s) => mapping[s]),
+    'history',
+    'sources',
+  ];
+}

@@ -13,7 +13,29 @@ export function isSourceEvidence(value: unknown): value is SourceEvidence {
     return false;
   }
   const v = Object.fromEntries(Object.entries(value));
+  const review = v.independenceReview;
+  if (
+    review !== undefined &&
+    (typeof review !== 'object' ||
+      review === null ||
+      ![
+        'comparedEvidenceId',
+        'reviewerId',
+        'reviewedAt',
+        'artifactUrl',
+        'locator',
+        'originAssessment',
+        'procedure',
+      ].every(
+        (key) =>
+          typeof Object.fromEntries(Object.entries(review))[key] === 'string',
+      ))
+  ) {
+    return false;
+  }
   return (
+    (v.publishedAtBasis === undefined ||
+      ['EXACT', 'OBSERVED_BY'].includes(String(v.publishedAtBasis))) &&
     [
       'id',
       'sourceId',
@@ -67,7 +89,19 @@ export function independentEvidence(
   b: SourceEvidence,
 ): boolean {
   const roots = [a.id, a.originId, ...a.ancestorIds];
+  const review = b.independenceReview;
   return (
+    !!review &&
+    review.comparedEvidenceId === a.id &&
+    review.reviewerId === b.reviewerId &&
+    date(review.reviewedAt) &&
+    review.reviewedAt >= a.publishedAt &&
+    review.reviewedAt >= b.publishedAt &&
+    review.reviewedAt <= b.checkedAt &&
+    review.artifactUrl.startsWith('https://') &&
+    !!review.locator.trim() &&
+    !!review.originAssessment.trim() &&
+    !!review.procedure.trim() &&
     validEvidence(a) &&
     validEvidence(b) &&
     a.originId !== b.originId &&

@@ -1,8 +1,13 @@
 import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
+import type { AnalysisContext } from '@/domain/analysis';
 import type { ResearchReport } from '@/domain/research';
 import { getAnalysis } from '@/services/analysis';
-import { evaluateCalculation, factIssues } from '@/lib/analysisValidation';
+import {
+  evaluateCalculation,
+  factTechnicalIssues,
+  factSourceIssues,
+} from '@/lib/analysisValidation';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 import { evaluateValuation, VALUATION_METHODS } from '@/lib/valuation';
 import { analysisQuality } from '@/lib/analysisQuality';
@@ -10,8 +15,10 @@ import { analysisPriorities } from '@/lib/analysisPriorities';
 
 export function AnalysisQuality({
   report,
+  context,
 }: {
   readonly report: ResearchReport;
+  readonly context?: AnalysisContext;
 }): JSX.Element | null {
   const { t } = useTranslation();
   const analysis = getAnalysis(report);
@@ -48,37 +55,61 @@ export function AnalysisQuality({
         })}
       </p>
       <p className="text-sm leading-7">
+        {t('analysis.inputStates', {
+          technical: analysis.facts.filter(
+            (f) => factTechnicalIssues(f).length === 0,
+          ).length,
+          primary: analysis.facts.filter(
+            (f) =>
+              factSourceIssues(
+                f,
+                report.sources.map((s) => s.id),
+              ).length === 0,
+          ).length,
+          total: analysis.facts.length,
+        })}
+      </p>
+      <p className="text-sm leading-7">
         {t('analysis.priorities')}:{' '}
-        {analysisPriorities(analysis.context)
+        {analysisPriorities(context ?? analysis.context)
           .map((s) => t(`analysis.sections.${s}`))
           .join(' → ')}
       </p>
       <div className="grid gap-3 md:grid-cols-2">
-        {analysis.sections?.map((section) => (
-          <article
-            key={section.id}
-            className="rounded-lg border border-line p-3 text-sm leading-7"
-          >
-            <h3 className="font-semibold">
-              {t(`${section.contentKey}.title`)} ·{' '}
-              {t(`analysis.completion.${section.status}`)}
-            </h3>
-            <p>{t(`${section.contentKey}.text`)}</p>
-            {report.sources
-              .filter((s) => section.sourceIds.includes(s.id))
-              .map((s) => (
-                <a
-                  key={s.id}
-                  className="mr-3 break-words text-primary underline"
-                  href={s.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {s.title}
-                </a>
-              ))}
-          </article>
-        ))}
+        {[...(analysis.sections ?? [])]
+          .sort((a, b) => {
+            const priorities = analysisPriorities(context ?? analysis.context);
+            const rank = (id: string): number => {
+              const i = priorities.findIndex((p) => p === id);
+              return i < 0 ? priorities.length : i;
+            };
+            return rank(a.id) - rank(b.id);
+          })
+          .map((section) => (
+            <article
+              key={section.id}
+              className="rounded-lg border border-line p-3 text-sm leading-7"
+            >
+              <h3 className="font-semibold">
+                {t(`${section.contentKey}.title`)} ·{' '}
+                {t(`analysis.completion.${section.status}`)}
+              </h3>
+              <p>{t(`${section.contentKey}.text`)}</p>
+              {report.sources
+                .filter((s) => section.sourceIds.includes(s.id))
+                .map((s) => (
+                  <a
+                    key={s.id}
+                    className="mr-3 break-words text-primary underline"
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {s.title}
+                  </a>
+                ))}
+            </article>
+          ))}
       </div>
       <details className="text-sm">
         <summary className="text-primary">{t('analysis.auditTrail')}</summary>
@@ -92,12 +123,24 @@ export function AnalysisQuality({
                 {t(`research.metrics.${f.id}`, { defaultValue: f.id })}
               </h3>
               <p>
-                {factIssues(
+                {t('analysis.factTechnical')}:{' '}
+                {t(
+                  factTechnicalIssues(f).length
+                    ? 'analysis.blocked'
+                    : 'analysis.technicalValid',
+                )}
+              </p>
+              <p>
+                {t('analysis.factPrimary')}:
+                {factSourceIssues(
                   f,
                   report.sources.map((s) => s.id),
                 ).length
                   ? t('analysis.blocked')
                   : t('analysis.verified')}
+              </p>
+              <p>
+                {t('analysis.factIndependent')}: {t('analysis.notReviewed')}
               </p>
               <p className="break-words">
                 {f.value} {f.unit} · {f.basis.currency} · {t('analysis.scale')}:{' '}

@@ -1,5 +1,11 @@
+import { FinancialHistory } from '@/components/Research/FinancialHistory';
 import { RiArrowLeftLine, RiFileSearchLine } from '@remixicon/react';
+import { useState } from 'react';
 import type { JSX, ReactNode } from 'react';
+import type { AnalysisContext } from '@/domain/analysis';
+import type { ResearchSectionId } from '@/lib/analysisPriorities';
+import { researchSectionOrder } from '@/lib/analysisPriorities';
+import { NativeSelect } from '@/components/NativeSelect/NativeSelect';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import { ROUTE_PATHS } from '@/app/routePaths';
@@ -25,17 +31,7 @@ import {
   ProfileValuation,
 } from '@/components/Research/AnalysisQuality';
 
-const SECTIONS = [
-  'overview',
-  'financials',
-  'growth',
-  'dividend',
-  'valuation',
-  'technical',
-  'news',
-  'history',
-  'sources',
-] as const;
+const STRATEGIES = ['DIVIDEND', 'GROWTH', 'VALUE', 'LONG_TERM'] as const;
 
 function ResearchSection({
   id,
@@ -61,6 +57,9 @@ function ResearchSection({
 
 export function ResearchPage(): JSX.Element {
   const { assetId = '' } = useParams();
+  const [strategy, setStrategy] = useState<
+    AnalysisContext['strategies'][number] | 'REPORT'
+  >('REPORT');
   const { t } = useTranslation();
   const query = useResearch(assetId);
   const strategies = useStrategies();
@@ -134,6 +133,16 @@ export function ResearchPage(): JSX.Element {
       strategies: [],
     },
   );
+  const presentationContext: AnalysisContext = {
+    ...(analysis?.context ?? {
+      assetType: 'EQUITY',
+      businessModel: report.sector,
+      strategies: [],
+    }),
+    strategies:
+      strategy === 'REPORT' ? (analysis?.context.strategies ?? []) : [strategy],
+  };
+  const orderedSections = researchSectionOrder(presentationContext);
   function note(key: string): JSX.Element {
     return (
       <p className="text-sm leading-7 text-fg-2">
@@ -150,67 +159,9 @@ export function ResearchPage(): JSX.Element {
       </div>
     );
   }
-  return (
-    <div className="min-w-0 space-y-7">
-      {back}
-      <header className="flex flex-wrap items-start justify-between gap-4">
-        <div className="min-w-0">
-          <p className="text-xs font-medium uppercase tracking-widest text-primary">
-            {t('research.eyebrow')}
-          </p>
-          <h1 className="mt-2 text-3xl font-semibold tracking-tight">
-            {report.symbol}{' '}
-            <span className="text-fg-2">
-              · {t(`${report.contentKey}.name`)}
-            </span>
-          </h1>
-          <p className="mt-2 break-words text-xs text-fg-2">
-            {report.market} · {report.isin} · {t(`${report.contentKey}.sector`)}
-          </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {groups.map((group) => (
-              <span
-                key={group.id}
-                className="max-w-full break-words rounded-full bg-primary-soft px-3 py-1 text-xs text-primary"
-              >
-                {group.name}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="rounded-xl border border-line bg-surface px-4 py-3 text-sm">
-          <p className="font-medium">
-            {t('research.reportDate')}: {report.asOf}
-          </p>
-          <p className="mt-1 text-xs text-warn">
-            {t('research.partialReport')}
-          </p>
-        </div>
-      </header>
-      <div className="rounded-xl border border-line bg-info-soft p-4 text-sm leading-relaxed">
-        <p className="font-medium text-info">{t('research.snapshotTitle')}</p>
-        <p className="mt-1 text-fg-2">{t('research.snapshotHint')}</p>
-        <p className="mt-2 text-xs text-fg-2">
-          {t('research.originalCurrency')}
-        </p>
-      </div>
-      <AnalysisQuality report={report} />
-      {metrics(profile.headline)}
-      <nav
-        aria-label={t('research.contents')}
-        className="top-14 z-20 -mx-1 flex flex-wrap gap-1 rounded-xl border border-line bg-surface p-2 shadow-card sm:sticky"
-      >
-        {SECTIONS.map((section) => (
-          <a
-            key={section}
-            href={`#${section}`}
-            className="rounded-lg px-3 py-2 text-xs font-medium text-fg-2 hover:bg-primary-soft hover:text-primary focus-visible:outline-2 focus-visible:outline-primary"
-          >
-            {t(`research.sections.${section}`)}
-          </a>
-        ))}
-      </nav>
-      <ResearchSection id="overview">
+  const sectionContent: Record<ResearchSectionId, ReactNode> = {
+    overview: (
+      <ResearchSection key="overview" id="overview">
         <ResearchSummary report={report} />
         <ResearchLongTerm report={report} />
         <Card className="p-5 sm:p-6">
@@ -234,7 +185,10 @@ export function ResearchPage(): JSX.Element {
           </div>
         </Card>
       </ResearchSection>
-      <ResearchSection id="financials">
+    ),
+    financials: (
+      <ResearchSection key="financials" id="financials">
+        <FinancialHistory report={report} />
         {note('accounting')}
         {metrics(profile.financials)}
         {analysis && profile.methods.includes('EV_EBITDA') && (
@@ -253,14 +207,18 @@ export function ResearchPage(): JSX.Element {
         <Card className="p-5">{note('cashQuality')}</Card>
         <ResearchDebt report={report} />
       </ResearchSection>
-      <ResearchSection id="growth">
+    ),
+    growth: (
+      <ResearchSection key="growth" id="growth">
         {metrics(profile.growth)}
         <Card className="space-y-3 p-5">
           {note('growth')}
           {note('peers')}
         </Card>
       </ResearchSection>
-      <ResearchSection id="dividend">
+    ),
+    dividend: (
+      <ResearchSection key="dividend" id="dividend">
         {asset?.assetType !== 'CRYPTO' && (
           <DividendBacktest history={getDividendHistory(report.assetId)} />
         )}
@@ -270,7 +228,9 @@ export function ResearchPage(): JSX.Element {
           {note('sustainability')}
         </Card>
       </ResearchSection>
-      <ResearchSection id="valuation">
+    ),
+    valuation: (
+      <ResearchSection key="valuation" id="valuation">
         <ProfileValuation report={report} />
         <ResearchValuationGuide report={report} />
         <div className="rounded-xl border-2 border-primary bg-primary-soft p-5 sm:p-6">
@@ -314,18 +274,24 @@ export function ResearchPage(): JSX.Element {
           </p>
         </Card>
       </ResearchSection>
-      <ResearchSection id="technical">
+    ),
+    technical: (
+      <ResearchSection key="technical" id="technical">
         {metrics(profile.technical)}
         <Card className="p-5">{note('technical')}</Card>
       </ResearchSection>
-      <ResearchSection id="news">
+    ),
+    news: (
+      <ResearchSection key="news" id="news">
         <ResearchDisclosures report={report} />
         <Card className="p-5">
           <h3 className="mb-2 font-semibold">{t('research.riskFollowup')}</h3>
           {note('riskFollowup')}
         </Card>
       </ResearchSection>
-      <ResearchSection id="history">
+    ),
+    history: (
+      <ResearchSection key="history" id="history">
         <Card className="space-y-4 p-5">
           <p className="break-words font-medium">{report.id}</p>
           {note('history')}
@@ -350,7 +316,9 @@ export function ResearchPage(): JSX.Element {
           </div>
         </Card>
       </ResearchSection>
-      <ResearchSection id="sources">
+    ),
+    sources: (
+      <ResearchSection key="sources" id="sources">
         <Card className="p-5">
           <dl className="grid gap-4 text-xs sm:grid-cols-2">
             <div>
@@ -395,6 +363,90 @@ export function ResearchPage(): JSX.Element {
           </ul>
         </Card>
       </ResearchSection>
+    ),
+  };
+  return (
+    <div className="min-w-0 space-y-7">
+      {back}
+      <header className="flex flex-wrap items-start justify-between gap-4">
+        <div className="min-w-0">
+          <p className="text-xs font-medium uppercase tracking-widest text-primary">
+            {t('research.eyebrow')}
+          </p>
+          <h1 className="mt-2 text-3xl font-semibold tracking-tight">
+            {report.symbol}{' '}
+            <span className="text-fg-2">
+              · {t(`${report.contentKey}.name`)}
+            </span>
+          </h1>
+          <p className="mt-2 break-words text-xs text-fg-2">
+            {report.market} · {report.isin} · {t(`${report.contentKey}.sector`)}
+          </p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {groups.map((group) => (
+              <span
+                key={group.id}
+                className="max-w-full break-words rounded-full bg-primary-soft px-3 py-1 text-xs text-primary"
+              >
+                {group.name}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div className="rounded-xl border border-line bg-surface px-4 py-3 text-sm">
+          <p className="font-medium">
+            {t('research.reportDate')}: {report.asOf}
+          </p>
+          <p className="mt-1 text-xs text-warn">
+            {t('research.partialReport')}
+          </p>
+        </div>
+      </header>
+      <div className="rounded-xl border border-line bg-info-soft p-4 text-sm leading-relaxed">
+        <p className="font-medium text-info">{t('research.snapshotTitle')}</p>
+        <p className="mt-1 text-fg-2">{t('research.snapshotHint')}</p>
+        <p className="mt-2 text-xs text-fg-2">
+          {t('research.originalCurrency')}
+        </p>
+      </div>
+      <NativeSelect
+        label={t('analysis.strategySelector')}
+        value={strategy}
+        options={[
+          { value: 'REPORT', label: t('analysis.strategyOptions.REPORT') },
+          ...STRATEGIES.map((value) => ({
+            value,
+            label: t(`analysis.strategyOptions.${value}`),
+          })),
+        ]}
+        onChange={(value) => {
+          if (value === 'REPORT') {
+            setStrategy('REPORT');
+          } else {
+            const chosen = STRATEGIES.find((s) => s === value);
+            if (chosen) {
+              setStrategy(chosen);
+            }
+          }
+        }}
+      />
+      <AnalysisQuality report={report} context={presentationContext} />
+      {metrics(profile.headline)}
+      <nav
+        aria-label={t('research.contents')}
+        className="top-14 z-20 -mx-1 flex flex-wrap gap-1 rounded-xl border border-line bg-surface p-2 shadow-card sm:sticky"
+      >
+        {orderedSections.map((section) => (
+          <a
+            key={section}
+            href={`#${section}`}
+            className="rounded-lg px-3 py-2 text-xs font-medium text-fg-2 hover:bg-primary-soft hover:text-primary focus-visible:outline-2 focus-visible:outline-primary"
+          >
+            {t(`research.sections.${section}`)}
+          </a>
+        ))}
+      </nav>
+      {orderedSections.map((id) => sectionContent[id])}
     </div>
   );
 }

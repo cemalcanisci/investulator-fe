@@ -67,6 +67,19 @@ function isReport(value: unknown): value is AnalysisReport {
   }
   const p = value.presentation;
   return (
+    (value.revision === undefined ||
+      (typeof value.revision === 'number' &&
+        Number.isSafeInteger(value.revision) &&
+        value.revision > 0)) &&
+    (value.financialHistory === undefined ||
+      (Array.isArray(value.financialHistory) &&
+        value.financialHistory.every(
+          (row) =>
+            record(row) &&
+            typeof row.year === 'string' &&
+            strings(row.factIds) &&
+            strings(row.calculationIds),
+        ))) &&
     (value.sections === undefined ||
       (Array.isArray(value.sections) &&
         value.sections.every(
