@@ -8,6 +8,8 @@ export interface ResearchSource {
 }
 
 export interface ResearchFact {
+  readonly metricKey?: string;
+  readonly comparisonKey?: string;
   readonly id: string;
   readonly value: string;
   readonly unit:
@@ -24,6 +26,7 @@ export interface ResearchFact {
 }
 
 export interface ResearchCalculation {
+  readonly metricKey?: string;
   readonly id: string;
   readonly operation:
     | 'RATIO'

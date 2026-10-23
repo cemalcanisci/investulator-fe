@@ -1,3 +1,4 @@
+import { MetricEducation } from '@/components/Research/MetricEducation';
 import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
@@ -35,12 +36,18 @@ export function ResearchMetric({
         <h3 className="text-sm text-fg-2">
           {t(`research.metrics.${id}`, { defaultValue: id })}
         </h3>
-        <p className="mt-2 font-medium text-warn">{t('analysis.blocked')}</p>
-        <ul className="mt-2 text-sm text-fg-2">
-          {result.issues.map((issue) => (
-            <li key={issue}>{t(`analysis.issues.${issue}`)}</li>
-          ))}
-        </ul>
+        <p className="mt-2 font-medium text-warn">
+          {t('researchUx.trust.missing')}
+        </p>
+        <MetricEducation report={report} id={id} />
+        <details className="mt-2 text-sm text-fg-2">
+          <summary>{t('researchUx.missingReason')}</summary>
+          <ul>
+            {result.issues.map((issue) => (
+              <li key={issue}>{t(`analysis.issues.${issue}`)}</li>
+            ))}
+          </ul>
+        </details>
         {explain && (
           <p className="mt-3 text-sm leading-7">
             {t(`${report.contentKey}.education.${id}`)}
@@ -95,6 +102,7 @@ export function ResearchMetric({
       <p className="mt-2 text-xs text-fg-2">
         {[...new Set(inputs.map((entry) => entry.period))].join(' · ')}
       </p>
+      <MetricEducation report={report} id={id} />
       {explain && (
         <p className="mt-3 rounded-lg bg-info-soft p-3 text-sm leading-7">
           {t(`${report.contentKey}.education.${id}`)}

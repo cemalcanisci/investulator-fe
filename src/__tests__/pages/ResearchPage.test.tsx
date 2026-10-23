@@ -24,6 +24,64 @@ afterEach(() => {
 });
 
 describe('ResearchPage', () => {
+  it.each(['tr', 'en'])(
+    'preserves the simulation and financial values across modes in %s',
+    async (language) => {
+      await i18n.changeLanguage(language);
+      renderPage();
+      const view = await screen.findByRole('combobox', {
+        name: i18n.t('researchUx.view'),
+      });
+      expect(view).toHaveValue('EASY');
+      const strategy = screen.getByRole('combobox', {
+        name: i18n.t('analysis.strategySelector'),
+      });
+      await userEvent.selectOptions(strategy, 'VALUE');
+      const simulation = document.getElementById('dividend-backtest');
+      const amount = document.querySelector(
+        '#overview .tabular-nums',
+      )?.textContent;
+      expect(amount).toBeTruthy();
+      for (const mode of ['DETAILED', 'EASY']) {
+        await userEvent.selectOptions(view, mode);
+        expect(strategy).toHaveValue('VALUE');
+        expect(
+          document.querySelector('#overview .tabular-nums')?.textContent,
+        ).toBe(amount);
+        expect(document.getElementById('dividend-backtest')).toBe(simulation);
+        for (const count of [10, 15, 20]) {
+          expect(
+            screen.getByRole('heading', {
+              name: i18n.t('backtest.years', { count }),
+            }),
+          ).toBeVisible();
+        }
+        expect(
+          screen.getAllByText(i18n.t('backtest.status.MISSING_DATA')),
+        ).toHaveLength(3);
+        for (const id of [
+          'overview',
+          'financials',
+          'growth',
+          'dividend',
+          'valuation',
+          'technical',
+          'news',
+          'history',
+          'sources',
+          'cashflow',
+          'debt',
+          'comparison',
+        ]) {
+          expect(document.getElementById(id)).not.toBeNull();
+        }
+      }
+      expect(
+        screen.getAllByText(i18n.t('metricEducation.peAnnualized.definition'))
+          .length,
+      ).toBeGreaterThan(0);
+    },
+  );
   it('reorders actual sections when the presentation strategy changes', async () => {
     renderPage();
     const selector = await screen.findByRole('combobox', {
@@ -33,7 +91,7 @@ describe('ResearchPage', () => {
     const nav = screen.getByRole('navigation', {
       name: i18n.t('research.contents'),
     });
-    expect(within(nav).getAllByRole('link')[1]).toHaveAttribute(
+    expect(within(nav).getAllByRole('link')[2]).toHaveAttribute(
       'href',
       '#valuation',
     );
@@ -53,11 +111,15 @@ describe('ResearchPage', () => {
         Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy();
     expect(
-      screen.getByText(i18n.t('analysis.historyBasis')),
+      screen.getByText(i18n.t('researchUx.comparison.basisNotice')),
     ).toBeInTheDocument();
   });
   it('keeps section gaps and independent review separate from calculation checks', async () => {
     renderPage();
+    await userEvent.selectOptions(
+      await screen.findByRole('combobox', { name: i18n.t('researchUx.view') }),
+      'DETAILED',
+    );
     expect(
       await screen.findByText(
         i18n.t('analysis.reconciliationV6.VALUATION.text'),
@@ -76,6 +138,10 @@ describe('ResearchPage', () => {
   });
   it('shows a plain-language price verdict and company context', async () => {
     renderPage();
+    await userEvent.selectOptions(
+      await screen.findByRole('combobox', { name: i18n.t('researchUx.view') }),
+      'DETAILED',
+    );
     expect(
       await screen.findByText(i18n.t('researchTuprsV2.guide.verdict')),
     ).toBeVisible();
@@ -117,7 +183,7 @@ describe('ResearchPage', () => {
     const nav = screen.getByRole('navigation', {
       name: i18n.t('research.contents'),
     });
-    expect(within(nav).getAllByRole('link')).toHaveLength(9);
+    expect(within(nav).getAllByRole('link')).toHaveLength(10);
     expect(
       screen.getByRole('link', { name: i18n.t('research.back') }),
     ).toHaveAttribute('href', ROUTE_PATHS.strategies);
@@ -183,6 +249,8 @@ describe('ResearchPage', () => {
     renderWithProviders(
       <ResearchMetric report={tuprsReport} id="not-present" />,
     );
-    expect(screen.getByText(i18n.t('analysis.blocked'))).toBeInTheDocument();
+    expect(
+      screen.getByText(i18n.t('researchUx.trust.missing')),
+    ).toBeInTheDocument();
   });
 });

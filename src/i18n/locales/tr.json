@@ -1413,5 +1413,444 @@
     "formulas": "Alınan pay = USD katkı × kur ÷ fiyat. Temettüyle alınan pay = hak edilen brüt temettü ÷ ödeme günündeki fiyat. Son değer = (pay × kapanış fiyatı + temettü alacağı) ÷ son kur. Toplam getiri = (son değer − katkılar) ÷ katkılar × 100. Basit yıllık ortalama = toplam getiri ÷ yıl.",
     "limits": "Fiyat ve temettüler aynı bölünme bazında kullanılır; bölünme ikinci kez eklenmez. Temettü içeren düzeltilmiş kapanış kullanılmaz; aksi halde temettü iki kez sayılır. Kesirli pay, sıfır komisyon ve brüt temettü karşılaştırma varsayımlarıdır. Günlük kur kapanışı ile hisse kapanışı aynı saatte olmayabilir; kur tatilinde en fazla dört takvim günü önceki mevcut kur kullanılır. Enflasyon, vergi, alış/satış makası ve gerçek emir fiyatı dahil değildir. Geçmiş sonuç gelecekte tekrarlanmayabilir.",
     "review": "Yaklaşık araştırma hesabı; kaynak incelemesi kısmi ve aynı ajan tarafından yapıldı. TUPRS için 2023 Eylül temettüsündeki sağlayıcı farkı şirket raporuyla düzeltildi. 2008 için ilk teklif yerine İş Yatırım’daki nihai dağıtım kaydı kullanıldı; sağlayıcıdaki ikinci kayıt ayrıca eklenmedi. Eski ödeme tarihlerinde ikincil takvim kaynağı kullanıldı; bütün KAP ekleri tek tek doğrulanmış değildir."
+  },
+  "metricEducation": {
+    "price": {
+      "name": "Hisse fiyatı",
+      "definition": "Belirtilen tarihte bir pay için gözlenen piyasa fiyatıdır; şirketin toplam değeri değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Kaynakta belirtilen tarihli pay fiyatı; fiyatın düzeltme bazı korunur."
+    },
+    "shares": {
+      "name": "Pay adedi",
+      "definition": "Şirket sermayesinin kaç paya bölündüğünü gösterir; halka açık pay adediyle aynı olmak zorunda değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "İlgili tarihteki ihraç edilmiş paylar; kurumsal işlem bazı korunur."
+    },
+    "revenue": {
+      "name": "Hasılat",
+      "definition": "Şirketin satışlarından elde ettiği gelirdir; masraflar henüz düşülmemiştir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Gelir tablosundaki dönem hasılatı."
+    },
+    "profit": {
+      "name": "Net kâr",
+      "definition": "Gelirlerden giderler ve vergiler çıktıktan sonra kalan sonuçtur. Ana ortaklık payı, grubun bütün kârından farklı olabilir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Gelir − gider − vergi; ana ortaklık/grup kapsamı kaynakta belirtilir."
+    },
+    "equity": {
+      "name": "Özkaynak",
+      "definition": "Varlıklardan yükümlülükler düşüldüğünde muhasebede kalan değerdir; şirketin satış fiyatı değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Varlıklar − yükümlülükler; ana ortaklık payı ayrıca ayrılır."
+    },
+    "cash": {
+      "name": "Nakit ve kullanılabilir kaynaklar",
+      "definition": "Kasadaki, bankadaki veya ilgili tanıma giren likit kaynakları gösterir. Bloke tutarlar harcanabilir nakit değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Kaynak dipnotundaki kapsam; nakit, bloke nakit ve yatırımlar ayrı tutulur."
+    },
+    "debt": {
+      "name": "Finansal borç",
+      "definition": "Kredi, tahvil ve kapsama göre kiralama gibi finansman yükümlülükleridir. Tüm ticari borçların toplamı değildir.",
+      "purpose": "Yaklaşan ödeme ihtiyacını ve finansman riskini anlamak için kullanılır.",
+      "reading": "Borç tutarı; kullanılabilir nakit, vade, faiz, döviz ve nakit üretimiyle birlikte okunur.",
+      "caution": "Borç artışı tek başına kötü değildir; yatırım finansmanı olabilir. Bankalara sanayi şirketlerinin borç eşikleri uygulanmaz.",
+      "comparison": "Aynı vade/kapsam ve sektör; borç ile toplam yükümlülükler karıştırılmaz.",
+      "formula": "Kısa vade + uzun vadenin cari kısmı + uzun vade."
+    },
+    "cfo": {
+      "name": "İşletme nakit akışı",
+      "definition": "Faaliyetlerin dönem içinde yarattığı veya tükettiği nakdi gösterir; muhasebe kârıyla aynı değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Nakit akış tablosundaki işletme faaliyetleri veya açıkça belirtilen alt kalem."
+    },
+    "capex": {
+      "name": "Yatırım harcaması",
+      "definition": "Tesis, ekipman ve maddi olmayan varlıklar için yapılan harcamadır. Bakım ile büyüme yatırımları farklı ihtiyaçları karşılar.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "İlgili varlık alımlarının nakit çıkış büyüklüğü."
+    },
+    "cashProxy": {
+      "name": "Yatırım sonrası nakit farkı",
+      "definition": "İşletme nakdinden yatırım alımları düşüldükten sonra kalan yaklaşık tutardır. Tek başına sürdürülebilir serbest nakit akışı değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "İşletme nakdi − yatırım harcaması."
+    },
+    "growth": {
+      "name": "Dönemsel değişim",
+      "definition": "Aynı kapsam ve muhasebe bazındaki iki dönemin farkını yüzde olarak gösterir.",
+      "purpose": "Faaliyetin veya kârlılığın önceki döneme göre yönünü gösterir.",
+      "reading": "Artışın fiyat, hacim ve tek seferlik kalemlerden hangisine bağlı olduğu ayrıca incelenir.",
+      "caution": "Negatif veya sıfır baz klasik büyüme yorumunu bozar. Nominal artış reel büyüme değildir.",
+      "comparison": "Aynı süre, kapsam, para birimi ve TMS 29 satın alma gücü; mevsimsellik korunur.",
+      "formula": "(Cari dönem / karşılaştırılabilir önceki dönem − 1) × 100."
+    },
+    "margin": {
+      "name": "Faaliyet kâr marjı",
+      "definition": "Her 100 birim satıştan ne kadar faaliyet kârı kaldığını gösterir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Faaliyet kârı / hasılat × 100."
+    },
+    "liquidity": {
+      "name": "Cari oran",
+      "definition": "Kısa vadede nakde dönüşmesi beklenen varlıkların kısa vadeli yükümlülüklere oranıdır.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Dönen varlıklar / kısa vadeli yükümlülükler."
+    },
+    "pe": {
+      "name": "Fiyat / Kazanç (F/K)",
+      "definition": "Piyasanın bir birim şirket kârına kaç birim değer biçtiğini gösterir. Yatırımın kaç yılda geri döneceğine dair garanti değildir.",
+      "purpose": "Kârla ilişkilendirilmiş fiyatı incelemek için kullanılır.",
+      "reading": "Düşük F/K geçici yüksek kârı veya yüksek riski; yüksek F/K büyüme beklentisini veya düşük kârı yansıtabilir.",
+      "caution": "Zarar, tek seferlik gelir ve döngünün zirvesindeki kâr oranı yanıltabilir. Tek başına ucuzluk kanıtı değildir.",
+      "comparison": "Benzer iş modeli, aynı kazanç tanımı ve çevrim koşulları; şirketin kendi tarihsel aralığı.",
+      "formula": "Piyasa değeri / yıllık ana ortaklık kârı. Gerçek TTM ve yıllıklandırılmış tahmin ayrı yöntemlerdir."
+    },
+    "pb": {
+      "name": "Piyasa değeri / Defter değeri",
+      "definition": "Piyasa değerini muhasebe özkaynağıyla karşılaştırır. Defter değeri her varlığın güncel satış değerini göstermez.",
+      "purpose": "Muhasebe varlık tabanının fiyatlanmasını anlamaya yardımcı olur.",
+      "reading": "Düşük oran düşük kârlılık veya varlık kalitesi riskini de yansıtabilir.",
+      "caution": "Yeniden değerleme ve enflasyon muhasebesi sonucu değiştirir; tek başına ucuzluk ölçüsü değildir.",
+      "comparison": "Aynı muhasebe bazında, özkaynak kârlılığı ve varlık kalitesiyle birlikte.",
+      "formula": "Piyasa değeri / aynı kapsamda ana ortaklık özkaynağı."
+    },
+    "dividend": {
+      "name": "Temettü",
+      "definition": "Şirketin pay sahiplerine dağıttığı tutardır. Pay başına miktar ile toplam nakit ödeme farklı ölçülerdir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Pay başına veya nakit akışındaki toplam dağıtım; brüt/net ve tarihler ayrı belirtilir."
+    },
+    "yield": {
+      "name": "Geçmiş temettü verimi",
+      "definition": "Belirli dönemin pay başına temettüsünün kullanılan hisse fiyatına oranıdır.",
+      "purpose": "Geçmiş dağıtımı kullanılan fiyatla ilişkilendirir.",
+      "reading": "Yüksek oran hem yüksek dağıtımdan hem de düşen fiyattan kaynaklanabilir.",
+      "caution": "Geçmiş ödeme gelecekte aynı temettünün ödeneceğini garanti etmez.",
+      "comparison": "Aynı dağıtım dönemi, brüt/net tanımı ve tarihli fiyat; kurumsal işlem bazı uyumlu olmalı.",
+      "formula": "Geçmiş pay başına temettü / tarihli fiyat × 100."
+    },
+    "coverage": {
+      "name": "Temettü nakit karşılama",
+      "definition": "İşletme nakdinin aynı dönemde ödenen temettüyü kaç kez karşıladığını gösterir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "İşletme nakdi / nakit temettü çıkışı."
+    },
+    "nrm": {
+      "name": "Net rafineri marjı",
+      "definition": "Rafinerinin işlediği varil başına ekonomik katkısını şirketin tanımladığı yöntemle izler. FAVÖK ile aynı değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Şirketin açıklanan USD/varil metodolojisi; tanımlar kaynakta karşılaştırılır."
+    },
+    "technical": {
+      "name": "Teknik gösterge",
+      "definition": "Geçmiş fiyat veya hacmin hareketini özetler; şirketin adil değerini hesaplamaz.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Göstergeye göre değişir; kullanılan pencere ve fiyat bazı teknik ayrıntıdadır."
+    },
+    "roe": {
+      "name": "Özkaynak kârlılığı",
+      "definition": "Şirketin özkaynaklarına göre ne kadar kâr ürettiğini gösterir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Uyumlu yıllık kâr / ortalama özkaynak × 100."
+    },
+    "capital": {
+      "name": "Sermaye yeterliliği",
+      "definition": "Bankanın risklerini karşılamak için tuttuğu düzenleyici sermayeyi gösterir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Düzenleyici özkaynak / risk ağırlıklı varlıklar × 100."
+    },
+    "npl": {
+      "name": "Sorunlu kredi oranı",
+      "definition": "Geri ödeme sorunu bulunan kredilerin kredi portföyündeki payıdır.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Sorunlu krediler / ilgili toplam krediler × 100."
+    },
+    "nav": {
+      "name": "Net aktif değer",
+      "definition": "Özellikle GYO varlıklarının değerinden ilgili borçlar düşüldüğünde kalan değerdir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Uygun değerlenmiş varlıklar − ilgili yükümlülükler."
+    },
+    "rental": {
+      "name": "Kira geliri",
+      "definition": "Gayrimenkullerin kiraya verilmesiyle elde edilen gelirdir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Karşılaştırılabilir portföyün dönem kira gelirleri."
+    },
+    "occupancy": {
+      "name": "Doluluk",
+      "definition": "Kiralanabilir alanların ne kadarının kullanıldığını gösterir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Kiralanan alan / kiralanabilir alan × 100; tanım değişebilir."
+    },
+    "commission": {
+      "name": "Komisyon geliri",
+      "definition": "Aracılık ve ilgili hizmetlerden kazanılan ücret geliridir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Dönem komisyonları; brüt/net ve hizmet kapsamı korunur."
+    },
+    "netDebt": {
+      "name": "Net borç / net nakit",
+      "definition": "Finansal borçlardan tanıma uygun kullanılabilir likit kaynaklar düşülür. Eksi sonuç net nakit anlamına gelir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Finansal borç − kullanılabilir nakit − tanıma dahil finansal yatırımlar."
+    },
+    "unknown": {
+      "name": "Metrik açıklaması",
+      "definition": "Bu metrik için henüz özel eğitim tanımı yok. Kaynak ve hesaplama ayrıntılarını inceleyin.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Hesap varsa tam formül aşağıdaki teknik paneldedir."
+    },
+    "bookPerShare": {
+      "name": "Hisse başına defter değeri",
+      "definition": "Ana ortaklık özkaynağının bir paya düşen muhasebe değeridir; nakit veya satış fiyatı değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Ana ortaklık özkaynağı / uyumlu toplam pay adedi."
+    },
+    "marketCap": {
+      "name": "Piyasa değeri",
+      "definition": "Borsadaki fiyatla şirketin bütün paylarına biçilen değerdir; işletme değerinden farklıdır.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Tarihli fiyat × aynı pay bazındaki toplam pay adedi."
+    },
+    "debtWithinYear": {
+      "name": "Bir yıl içinde ödenecek finansal borç",
+      "definition": "Kısa vadeli borçlar ile uzun vadeli borçların bir yıl içinde ödenecek kısmıdır.",
+      "purpose": "Yaklaşan ödeme ihtiyacını ve finansman riskini anlamak için kullanılır.",
+      "reading": "Borç tutarı; kullanılabilir nakit, vade, faiz, döviz ve nakit üretimiyle birlikte okunur.",
+      "caution": "Borç artışı tek başına kötü değildir; yatırım finansmanı olabilir. Bankalara sanayi şirketlerinin borç eşikleri uygulanmaz.",
+      "comparison": "Aynı vade/kapsam ve sektör; borç ile toplam yükümlülükler karıştırılmaz.",
+      "formula": "Kısa vadeli finansal borç + uzun vadeli borcun cari kısmı."
+    },
+    "workingCapital": {
+      "name": "İşletme sermayesi nakit etkisi",
+      "definition": "Stok, alacak ve ticari borç değişimlerinin nakit üzerindeki etkisidir; toplam işletme nakdi değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Nakit akış tablosundaki işletme sermayesi değişimleri; kaynak işaretleri korunur."
+    },
+    "peAnnualized": {
+      "name": "Yıllıklandırılmış tahmini F/K",
+      "definition": "Piyasanın bir birim tahmini yıllık kâra kaç birim değer biçtiğini gösterir. Altı aylık kârın ikiyle çarpılması gerçek TTM değildir.",
+      "purpose": "Kârla ilişkilendirilmiş fiyatı incelemek için kullanılır.",
+      "reading": "Düşük F/K geçici yüksek kârı veya yüksek riski; yüksek F/K büyüme beklentisini veya düşük kârı yansıtabilir.",
+      "caution": "Zarar, tek seferlik gelir ve döngünün zirvesindeki kâr oranı yanıltabilir. Tek başına ucuzluk kanıtı değildir.",
+      "comparison": "Benzer iş modeli, aynı kazanç tanımı ve çevrim koşulları; şirketin kendi tarihsel aralığı.",
+      "formula": "Piyasa değeri / (altı aylık ana ortaklık kârı × 2)."
+    },
+    "peHalfYear": {
+      "name": "Altı aylık kâra göre fiyat oranı",
+      "definition": "Piyasa değerini yalnızca altı aylık kârla karşılaştırır. Standart yıllık F/K ile doğrudan karşılaştırılamaz.",
+      "purpose": "Kârla ilişkilendirilmiş fiyatı incelemek için kullanılır.",
+      "reading": "Düşük F/K geçici yüksek kârı veya yüksek riski; yüksek F/K büyüme beklentisini veya düşük kârı yansıtabilir.",
+      "caution": "Zarar, tek seferlik gelir ve döngünün zirvesindeki kâr oranı yanıltabilir. Tek başına ucuzluk kanıtı değildir.",
+      "comparison": "Benzer iş modeli, aynı kazanç tanımı ve çevrim koşulları; şirketin kendi tarihsel aralığı.",
+      "formula": "Piyasa değeri / altı aylık ana ortaklık kârı."
+    },
+    "priceChange": {
+      "name": "Fiyat değişimi",
+      "definition": "Belirtilen iki işlem tarihi arasındaki fiyat farkını yüzdeyle gösterir; temettü dahil toplam getiri değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "(Son fiyat / önceki fiyat − 1) × 100; aynı düzeltme bazı kullanılır."
+    },
+    "movingAverage": {
+      "name": "Basit hareketli ortalama",
+      "definition": "Son belirtilen sayıdaki işlem gününün ortalama fiyatıdır. Gecikmeli bir göstergedir, adil değer değildir.",
+      "purpose": "Şirketin faaliyetini ve finansal dayanıklılığını anlamaya yardımcı olur.",
+      "reading": "Değeri tek başına iyi/kötü saymayın; dönem, şirketin geçmişi ve sektör bağlamıyla okuyun.",
+      "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
+      "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
+      "formula": "Uyumlu kapanış fiyatları toplamı / pencerenin işlem günü sayısı."
+    }
+  },
+  "researchUx": {
+    "view": "Anlatım düzeyi",
+    "views": {
+      "EASY": "Kolay Anlatım",
+      "DETAILED": "Detaylı Analiz"
+    },
+    "learnMetric": "Bu rakamı nasıl okumalıyım?",
+    "missingReason": "Neden hesaplanamıyor?",
+    "moreMetrics": "Diğer metrikleri incele",
+    "companyDetails": "Şirket, ortaklık ve uzun vadeli değerlendirme",
+    "valuationMethods": "Yöntemler ve değerleme denetimi",
+    "reportHistory": "Rapor geçmişi ve bölüm kapsamı",
+    "audit": "Kaynaklar, ham girdiler ve kalite denetimi",
+    "historyDetails": "Yıllık metrikler ve hesaplama ayrıntıları",
+    "debtDetails": "Vade, döviz ve borç ayrıntıları",
+    "simulationLink": "Geçmiş yatırım simülasyonu",
+    "cashflow": "Nakit akışı",
+    "peers": "Sektör ve benzer şirketler",
+    "sectorMetricMissing": "Bu sektör için uygun doğrulanmış metrik henüz yok; sanayi oranları otomatik uygulanmaz.",
+    "cashflowIntro": "Kâr ile kasaya giren para farklıdır. İşletme nakdini, yatırımları ve geçici işletme sermayesi etkilerini birlikte inceleyin.",
+    "debtIntro": "Borç tutarı tek başına risk ölçmez. Vade, para birimi, kullanılabilir nakit ve ödeme kapasitesi birlikte değerlendirilir.",
+    "educationFields": {
+      "purpose": "Ne işe yarar?",
+      "reading": "Nasıl yorumlanır?",
+      "caution": "Ne zaman yanıltır?",
+      "comparison": "Neyle karşılaştırılır?",
+      "formula": "Genel formül / tanım"
+    },
+    "trust": {
+      "verified": "Birincil kaynakla doğrulandı",
+      "partial": "Kısmen doğrulandı",
+      "missing": "Yeterli veri yok",
+      "independent": "Bağımsız inceleme bekliyor"
+    },
+    "interpretation": {
+      "missing": "Değerlendirmek için yeterli doğrulanmış veri yok. Eksik değer sıfır veya olumsuz sonuç değildir.",
+      "context": "Değer kaynak kontrolünü geçti. Uygun tarihsel veya sektör karşılaştırması olmadan iyi/kötü ya da ucuz/pahalı sonucu çıkarılmaz.",
+      "growthBase": "Önceki dönem sıfır, negatif veya uygun bir büyüme bazı değil; sıradan büyüme yorumu yapılmadı.",
+      "historicalDividend": "Bu geçmiş dağıtım bilgisidir; gelecekte ödeme garantisi veya tek başına sürdürülebilirlik kanıtı değildir.",
+      "growth": {
+        "positive": "{{from}} döneminden {{to}} dönemine, aynı bazda %{{value}} artış hesaplandı. Artışın kalıcı olup olmadığı ayrıca incelenmeli.",
+        "negative": "{{from}} döneminden {{to}} dönemine, aynı bazda %{{value}} değişim hesaplandı. Gerilemenin nedeni bu oran tek başına açıklamaz.",
+        "zero": "{{from}} ile {{to}} arasında hesaplanan değişim %{{value}}. Durağanlık tek başına olumlu veya olumsuz değildir."
+      },
+      "netDebt": {
+        "negative": "Kaynak tanımıyla kullanılabilir nakit ve yatırımlar finansal borcu aşıyor: net nakit var. Bu tampon bir güçlü yön olabilir; bloke nakit, yatırım ihtiyacı ve vade riski ayrıca incelenmeli.",
+        "positive": "Kaynak tanımıyla finansal borç, kapsanan likit kaynakları aşıyor. Risk düzeyi için ödeme kapasitesi ve vade bilgisi gerekir.",
+        "zero": "Kaynak tanımıyla net borç sıfır. Brüt borç, vade ve nakdin erişilebilirliği yine önemlidir."
+      }
+    },
+    "sector": {
+      "GENERAL": "Sektöre uygun karşılaştırma olmadan evrensel bir iyi/kötü eşik kullanılmaz.",
+      "REFINING": "Rafineride ürün marjları, stok etkileri ve sektör döngüsü kârı hızla değiştirebilir; güçlü bir dönemi kalıcı saymayın.",
+      "AUTOMOTIVE": "Otomotivde satış hacmi, kapasite, kur, model döngüsü ve yatırım ihtiyacı birlikte izlenir.",
+      "BANK": "Bankalarda sermaye yeterliliği, kredi kalitesi ve özkaynak kârlılığı önemlidir; sanayi net borç/FAVÖK eşikleri uygulanmaz.",
+      "REIT": "GYO için portföy değerleme tarihi, kira, doluluk ve net aktif değer birlikte incelenir.",
+      "BROKER": "Aracı kurumlarda işlem hacmi, komisyon yapısı ve sürdürülebilir kârlılık önemlidir.",
+      "TECHNOLOGY": "Büyümenin nakde dönüşümü, marj ve yatırım ihtiyacı incelenir; büyüme tek başına değer yaratma kanıtı değildir."
+    },
+    "overview": {
+      "business": "Şirket ne iş yapıyor?",
+      "health": "Finansal durumu nasıl değişiyor?",
+      "strengths": "Doğrulanmış bir güçlü yön var mı?",
+      "risks": "Başlıca risk nedir?",
+      "dividend": "Temettü açısından ne biliyoruz?",
+      "valuation": "Hisse ucuz mu; değerleme yapılabiliyor mu?",
+      "missing": "Neler hâlâ eksik?",
+      "evidence": "{{count}} girdi birincil kaynak kontrolünden geçti; bu tek başına finansal güç notu değildir.",
+      "riskAnswer": "Eksik veriler ve sektör döngüsü nedeniyle kesin yatırım sonucu çıkarılmıyor.",
+      "dividendAnswer": "Dağıtım geçmişi tek başına sürdürülebilirlik göstermez. Uyumlu kâr, nakit, yatırım ve borç verileri gerekir.",
+      "dividendCoverage": "{{period}} döneminde işletme nakdi, nakit temettü çıkışını {{value}} kat karşılıyor. Yatırımlar bu orandan düşülmüş değildir; gelecekte ödeme garantisi vermez.",
+      "valuationAnswer": "Doğrulanmış bir adil değer sonucu yok. Düşük F/K veya PD/DD tek başına ucuzluk kanıtı değildir; kaynaklı yöntem ve varsayımlar gerekir.",
+      "missingAnswer": "Değerleme girdileri, tarihsel veri bütünlüğü ve bağımsız inceleme tamamlanmadan kesin sonuç üretmiyoruz. Bölümlerde eksiklik nedenlerini ve kaynakları açabilirsiniz."
+    },
+    "sectionIntro": {
+      "overview": "Önce şirketi, doğrulanmış sonuçları ve kararın belirsizliklerini tanıyın.",
+      "financials": "Büyüklük kadar kârlılık, borç ödeme kapasitesi ve nakdin kalitesi de önemlidir.",
+      "growth": "Değişimler yalnız uyumlu dönemlerde anlamlıdır. Fiyat artışı ile faaliyet hacmi artışı aynı şey değildir.",
+      "dividend": "Dağıtım, nakit karşılama ve geçmiş yatırım deneyimi farklı sorulara yanıt verir.",
+      "valuation": "Oranlar bağlam sağlar; adil değer için uygun yöntem, doğrulanmış girdiler ve açık varsayımlar gerekir.",
+      "technical": "Geçmiş fiyat hareketi şirketin finansal sağlığı veya adil değeri değildir.",
+      "news": "Doğrulanmış olay ile olası etkisine ilişkin yorum ayrıdır; tarama kapsamını kontrol edin.",
+      "history": "Aynı muhasebe bazındaki dönemleri karşılaştırın. Uyumsuz seriler ayrı tutulur.",
+      "sources": "Teknik hesap kontrolü, birincil belge mutabakatı ve bağımsız inceleme aynı güvence değildir."
+    },
+    "comparison": {
+      "HISTORY": "Seçilen metriğin yıllık değerleri yalnız uyumlu baz grupları içinde karşılaştırılır.",
+      "PEERS": "Benzer şirket verisi henüz sağlanmadı. Bu bileşen, aynı sektör ve dönemde doğrulanmış veriler geldiğinde karşılaştırmayı gösterebilir.",
+      "empty": "Geçerli bir karşılaştırma için en az iki uyumlu ve doğrulanmış gözlem gerekiyor. Eksik veri yerine örnek rakam kullanılmadı.",
+      "separated": "Farklı para birimi, dönem, kapsam veya satın alma gücü bazları birleştirilmedi; doğrulanamayan girdiler dışarıda bırakıldı.",
+      "single": "Bu bazda yalnız bir gözlem var; eğilim grafiği üretilmedi.",
+      "nominal": "Nominal baz",
+      "chartHint": "Çubuk yüksekliği tutarı gösterir; renk bir yatırım notu değildir. Kesin değerler aşağıda listelenir.",
+      "chartLabel": "Uyumlu dönemlerin tutar grafiği; değerler izleyen tabloda da sunulur.",
+      "table": "Karşılaştırılabilir değerler",
+      "period": "Dönem / şirket",
+      "value": "Değer",
+      "source": "Kaynak",
+      "metric": "Karşılaştırma metriği",
+      "basisNotice": "Farklı satın alma gücü tarihlerindeki TMS 29 tutarları veya farklı kapsamlar tek bir karşılaştırılabilir seri sayılmaz. Her grup kendi para birimi ve muhasebe bazıyla gösterilir.",
+      "peerConditions": "Yalnız aynı sektör, metrik tanımı, dönem, para birimi ve muhasebe bazıyla doğrulanmış benzerler karşılaştırılır."
+    },
+    "snapshotBrief": "Tarihli araştırma · canlı veri değildir"
   }
 }

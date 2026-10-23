@@ -23,6 +23,9 @@ function isFact(value: unknown): value is FinancialFact {
   }
   const b = value.basis;
   return (
+    (value.metricKey === undefined || typeof value.metricKey === 'string') &&
+    (value.comparisonKey === undefined ||
+      typeof value.comparisonKey === 'string') &&
     (value.evidence === undefined || isSourceEvidence(value.evidence)) &&
     stringFields(value, [
       'id',
@@ -102,6 +105,7 @@ function isReport(value: unknown): value is AnalysisReport {
       (c) =>
         record(c) &&
         typeof c.id === 'string' &&
+        (c.metricKey === undefined || typeof c.metricKey === 'string') &&
         strings(c.units) &&
         oneOf(c.periodPolicy, ['SAME', 'COMPARABLE', 'DATED_MARKET']) &&
         oneOf(c.earningsBasis, [
@@ -117,6 +121,7 @@ function isReport(value: unknown): value is AnalysisReport {
         record(c) &&
         typeof c.id === 'string' &&
         strings(c.inputs) &&
+        (c.metricKey === undefined || typeof c.metricKey === 'string') &&
         oneOf(c.operation, [
           'RATIO',
           'PERCENT',

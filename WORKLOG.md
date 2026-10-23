@@ -6,18 +6,19 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-22
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-23
 
-Kullanıcının onayladığı sınırlı ortak altyapı düzeltmeleri uygulandı. TUPRS tamamlanmış sayılmıyor; sonraki hisse/feature için onay bekle.
+Analiz detay UX geliştirmesi tamamlandı; kullanıcı değerlendirmesi bekleniyor. Sonraki hisseye veya feature’a geçme. TUPRS v6 mevcut kaynak mutabakatı ve finansal girdileri korundu; analiz tamamlanmış sayılmıyor.
 
-- domain/evidence + sourceEvidence: köken, toplama, inceleyen, belge konumu, kapsam ve ata kayıtları. Aynı köken/belge/toplama/inceleyen bağımsız teyit değil. analysisValidation çıplak VERIFIED ve belgesiz TMS29 bazını engeller.
-- historyIntegrity takvim/kotasyon/temettü/aksiyon/fiyat/kur için bağımsız kapsam kanıtı ister. TUPRS manifesti yok; 10/15/20 yıl sonuçları kapalı. Gerçek kaynak bağımsızlığını farklı kimlikler otomatik ispatlamaz.
-- valuationBasis akış/stok/çarpan/pay rollerini, bilgi/değerleme tarihini ve senaryo varsayımlarını kontrol eder. FCF, BOOK_ROE, NAV ve DDM henüz METHOD_PENDING. Kaynaklı normalizasyon olmadan TUPRS fiyatı üretilmedi.
-- analysisPriorities yalnız yorum/inceleme sırasını değiştirir. analysisQuality hesap, kaynak, bölüm ve bağımsız incelemeyi ayırır; şemada bağımsız inceleme sertifikası olmadığı için genel tamamlanma açılmaz.
-- analysis-reports.json v5: birincil belge mutabakat kanıtları, bölüm açıkları ve 2021–2025 kaynak envanteri; v4 ve eski TS raporları korunur. AnalysisQuality kaynak izini, strateji sırasını ve bölüm eksiklerini gösterir; eski açıklamalar kaldırılmadı. TR/EN anahtarları birlikte eklendi.
-- Resmî H1 tablo ve KAP planı mutabakatı: net finansal borç −102,232249 milyar TL; işletme nakdi eksi yatırım 120,508319 milyar TL, sürdürülebilir FCF değildir. Beş yıllık seri baz/kapsam farkları nedeniyle tamamlanmadı. Güncel fiyat-hacim, normalleştirilmiş FAVÖK/akran çarpanı, tam KAP ekleri ve bağımsız inceleme açık.
-- Yeni evidence.test ve valuationBasis.test; dividendBacktest/financialPeriods/research servis/sayfa regresyonları güncellendi. Vitest/coverage kullanıcı politikası gereği çalıştırılmadı. Build ve lint başarılı; mevcut bundle ve üç eski mock tipi uyarısı sürüyor. Görsel kabul bu tur yapılmadı.
-- Ayrıntılı kaynaklar, ilk 15 bulgunun durumu ve tamamlanma kapısı: ../FINANSAL_ANALIZ_KAYNAK_MUTABAKATI_20261022.md. Ortak kurallar kök CLAUDE ve teknik eke yazıldı. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yapılmadı.
+- ResearchPage: varsayılan EASY ve DETAILED görünümü; stratejiden bağımsız state; üç katmanlı sunum, mobil açılır gezinme, borç/nakit/karşılaştırma alt bölümleri. Mevcut araştırma bölümleri korunur.
+- domain/metricEducation ve lib/metricInterpretation: ortak TR/EN eğitim tanımları; doğrulanmış büyüme, net borç ve temettü yorumları; eksikte sonuç yok. Altı aylık ve yıllıklandırılmış F/K, piyasa değeri ve pay başına defter değeri ayrı açıklanır.
+- ResearchOverview, MetricEducation, ResearchDisclosurePanel, researchView: sade genel bakış ve açılır teknik katman. Hesap kontrolü, birincil kaynak ve bağımsız inceleme ayrımı korunur.
+- researchComparison / ResearchComparison / FinancialHistory: sektör uygunluğu, ekonomik metrik kimliği, dönem, para birimi, kapsam ve TMS29 bazına göre gruplama. Uyumsuz yıllar birleştirilmez. Gerçek akran verisi yok; boş durum gösterilir.
+- domain/research, analysisSchema ve analysis-reports.json: isteğe bağlı metricKey/comparisonKey sunum metaverisi. Finansal değerler, sözleşmeler ve hesap sonuçları değiştirilmedi.
+- DividendBacktest, dividendBacktest motoru, historyIntegrity, dividendHistory ve tarihsel JSON değişmedi. Aynı 10/15/20 yıl kartları iki görünümde var; MISSING_DATA korunur. Başlangıç kodunda bulunmayan serbest başlangıç/nakit temettü/TL-USD kontrolleri bu UX işinde eklenmedi; ayrıntı teslim raporunda.
+- researchPresentation.test ve ResearchComparison.test eklendi; ResearchPage.test güncellendi. Vitest/coverage ÇALIŞTIRILMADI; %80 kapsam yeniden ölçülmedi. Build başarılı; lint hatasız, üç eski mock tipi uyarısı var. Build büyük paket uyarısı sürüyor.
+- Tarayıcı: ayrı 5199 portu, beş genişlik × iki görünüm taşma yok; TR/EN, açık/koyu örnekler, aynı rakam/simülasyon ve değişmeyen strateji doğrulandı. Kanıtlar ../outputs/research-ux-20261022/. Finansal değer ve simülasyon korunma kontrolü ile dil anahtar eşitliği geçti.
+- Teknik kararlar, dosya listesi, veri ihtiyaçları ve sınırlamalar: ../ANALIZ_DETAY_UX_20261023.md. Kaynak geçmişi: ../TUPRS_GERCEK_VERI_DOGRULAMASI_20261022.md. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok. Sırada kullanıcı incelemesi ve onay verdiğinde ayrı finansal veri tamamlama planı var.
 
 ---
 
@@ -59,3 +60,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-22 — Codex:** Yedi takip maddesi mevcut kodla karşılaştırıldı; manifest bağımsızlık kanıtı, ekonomik dönem/varsayım ilişkileri, strateji öncelikleri ve TMS29 izlenebilirliği için sınırlı düzeltme ve ayrı TUPRS tamamlama planı sunuldu. Üretim kodu değişmedi; onay bekleniyor.
 
 - **2026-10-22 — Codex:** Onaylanan kanıt/bağımsızlık, ekonomik dönem/TMS29 ve strateji önceliği düzeltmeleri; TUPRS v5 birincil belge mutabakatı ve açık bölüm planı eklendi. Analiz kısmi, otomatik testler çalıştırılmadı.
+
+- **2026-10-23 — Codex:** Analiz UX: ortak metrik eğitimi, EASY/DETAILED, genel bakış, uyumlu tarihsel/akran karşılaştırması ve simülasyon korunma regresyonları eklendi. Build/lint/tarayıcı kontrolleri yapıldı; Vitest/coverage çalıştırılmadı.

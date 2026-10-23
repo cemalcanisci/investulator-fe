@@ -2,14 +2,19 @@ import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
 import { ResearchMetric } from './ResearchMetric';
+import { getAnalysis } from '@/services/analysis';
+import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 
 export function ResearchSummary({
   report,
 }: {
   readonly report: ResearchReport;
 }): JSX.Element {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const prefix = `${report.contentKey}.guide`;
+  if (!i18n.exists(`${prefix}.verdict`)) {
+    return <p>{t('researchUx.interpretation.missing')}</p>;
+  }
   return (
     <div className="space-y-4">
       <div className="rounded-xl border-l-4 border-primary bg-primary-soft p-5 sm:p-6">
@@ -94,11 +99,22 @@ export function ResearchValuationGuide({
   readonly report: ResearchReport;
 }): JSX.Element {
   const { t } = useTranslation();
+  const analysis = getAnalysis(report);
+  const methods = analysis
+    ? selectAnalysisProfile(analysis.context).methods
+    : [];
+  const metrics = methods.includes('BOOK_ROE')
+    ? ['priceBook', 'roe']
+    : methods.includes('NAV')
+      ? ['netAssetValue']
+      : methods.includes('EV_EBITDA')
+        ? ['priceBook', 'peHalfYear', 'peRunRate']
+        : [];
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-semibold">{t('research.guide.results')}</h3>
       <div className="grid gap-3 lg:grid-cols-3">
-        {['priceBook', 'peHalfYear', 'peRunRate'].map((id) => (
+        {metrics.map((id) => (
           <ResearchMetric key={id} report={report} id={id} explain />
         ))}
       </div>

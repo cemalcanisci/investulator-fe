@@ -1413,5 +1413,444 @@
     "formulas": "Shares purchased = USD contribution × FX ÷ price. Dividend shares = gross entitlement ÷ payment-date price. Ending value = (shares × closing price + dividend receivable) ÷ ending FX. Total return = (ending value − contributions) ÷ contributions × 100. Simple annual average = total return ÷ years.",
     "limits": "Prices and dividends use the same split-adjusted basis; splits are not applied again. Total-return adjusted close is not used, avoiding double-counted dividends. Fractional shares, no fees and gross dividends are comparison assumptions. Stock and FX daily closes may occur at different times; FX holidays use the latest available rate within four calendar days. Inflation, taxes, spreads and actual execution prices are excluded. Past performance may not repeat.",
     "review": "Approximate research calculation; source review is partial and performed by the same agent. The September 2023 TUPRS dividend discrepancy was corrected using the company report. The 2008 final distribution in Is Yatirim was used instead of the initial proposal; the provider’s second entry was not added. Historical payment dates use a secondary calendar; not every KAP attachment was individually verified."
+  },
+  "metricEducation": {
+    "price": {
+      "name": "Share price",
+      "definition": "The observed market price of one share on the stated date, not the value of the whole company.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "The dated price in the source, preserving its adjustment basis."
+    },
+    "shares": {
+      "name": "Shares outstanding",
+      "definition": "Shows how many shares divide the company’s capital; it need not equal free-float shares.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Issued shares at the relevant date, preserving the corporate-action basis."
+    },
+    "revenue": {
+      "name": "Revenue",
+      "definition": "Income from sales before expenses are deducted.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Revenue reported for the period."
+    },
+    "profit": {
+      "name": "Net profit",
+      "definition": "The result after expenses and taxes. Profit attributable to the parent can differ from total group profit.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Income − expenses − tax; parent/group scope follows the source."
+    },
+    "equity": {
+      "name": "Equity",
+      "definition": "The accounting value remaining after liabilities are deducted from assets, not the company’s sale price.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Assets − liabilities; parent equity is identified separately."
+    },
+    "cash": {
+      "name": "Cash and available resources",
+      "definition": "Cash and liquid resources within the stated definition. Restricted amounts are not freely available.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "The scope in the source note; cash, restricted cash and investments remain separate."
+    },
+    "debt": {
+      "name": "Financial debt",
+      "definition": "Financing obligations such as loans, bonds and, depending on scope, leases; not all liabilities.",
+      "purpose": "Used to understand upcoming payments and financing risk.",
+      "reading": "Read debt alongside available cash, maturity, interest, currency and cash generation.",
+      "caution": "Higher debt alone is not necessarily bad; it may fund investment. Industrial thresholds do not apply to banks.",
+      "comparison": "Same maturity/scope and sector; distinguish debt from total liabilities.",
+      "formula": "Short term + current portion of long term + long term."
+    },
+    "cfo": {
+      "name": "Operating cash flow",
+      "definition": "Cash generated or used by operations during the period; it is not accounting profit.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Operating activities in the cash-flow statement, or an explicitly identified sub-line."
+    },
+    "capex": {
+      "name": "Capital expenditure",
+      "definition": "Spending on facilities, equipment and intangible assets. Maintenance and growth capex serve different needs.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Cash outflow magnitude for relevant asset purchases."
+    },
+    "cashProxy": {
+      "name": "Post-investment cash proxy",
+      "definition": "Operating cash less capital purchases. This proxy alone is not sustainable free cash flow.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Operating cash − capital expenditure."
+    },
+    "growth": {
+      "name": "Period change",
+      "definition": "Percentage change between two periods on the same scope and accounting basis.",
+      "purpose": "Shows direction relative to a previous period.",
+      "reading": "Separately examine price, volume and one-off contributions.",
+      "caution": "A negative or zero base invalidates ordinary growth interpretation. Nominal growth is not real growth.",
+      "comparison": "Same duration, scope, currency and TAS29 purchasing power, respecting seasonality.",
+      "formula": "(Current / comparable previous period − 1) × 100."
+    },
+    "margin": {
+      "name": "Operating margin",
+      "definition": "Operating profit retained from each 100 units of sales.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Operating profit / revenue × 100."
+    },
+    "liquidity": {
+      "name": "Current ratio",
+      "definition": "Current assets relative to current liabilities.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Current assets / current liabilities."
+    },
+    "pe": {
+      "name": "Price / Earnings (P/E)",
+      "definition": "How much the market pays for one unit of earnings; not a guaranteed payback period.",
+      "purpose": "Used to examine price relative to earnings.",
+      "reading": "Low P/E may reflect temporarily high profit or high risk; high P/E may reflect growth expectations or low profit.",
+      "caution": "Losses, one-off gains and peak-cycle earnings can mislead. It is not proof of cheapness.",
+      "comparison": "Similar business models, earnings definitions and cycle conditions; the company’s historical range.",
+      "formula": "Market capitalisation / annual parent profit. Actual TTM and annualised estimates are distinct."
+    },
+    "pb": {
+      "name": "Price / Book",
+      "definition": "Compares market value with book equity. Book value need not represent current sale values.",
+      "purpose": "Helps assess pricing of the accounting asset base.",
+      "reading": "A low ratio may also reflect poor profitability or asset quality.",
+      "caution": "Revaluations and inflation accounting affect it; it is not a standalone bargain measure.",
+      "comparison": "Use the same accounting basis alongside ROE and asset quality.",
+      "formula": "Market capitalisation / parent equity on the same scope."
+    },
+    "dividend": {
+      "name": "Dividend",
+      "definition": "An amount distributed to shareholders. Per-share dividends and total cash paid are different measures.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Per-share payment or total cash distribution; gross/net and dates are identified separately."
+    },
+    "yield": {
+      "name": "Historical dividend yield",
+      "definition": "Per-share dividends for a specified period divided by the stated share price.",
+      "purpose": "Relates historical distributions to the stated price.",
+      "reading": "A high yield can come from large distributions or a falling price.",
+      "caution": "Past payments do not guarantee future dividends.",
+      "comparison": "Same distribution period, gross/net definition and dated price, with compatible corporate-action basis.",
+      "formula": "Historical dividend per share / dated price × 100."
+    },
+    "coverage": {
+      "name": "Dividend cash coverage",
+      "definition": "How many times operating cash covers dividends paid in the same period.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Operating cash / cash dividends paid."
+    },
+    "nrm": {
+      "name": "Net refining margin",
+      "definition": "Tracks contribution per barrel under the issuer’s definition; it is not EBITDA.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "The issuer’s disclosed USD/barrel methodology; definitions must be reconciled."
+    },
+    "technical": {
+      "name": "Technical indicator",
+      "definition": "Summarises historical price or volume behaviour; it does not calculate fair value.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Depends on the indicator; lookback and price basis are disclosed in technical details."
+    },
+    "roe": {
+      "name": "Return on equity",
+      "definition": "Profit generated relative to equity.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Compatible annual profit / average equity × 100."
+    },
+    "capital": {
+      "name": "Capital adequacy",
+      "definition": "Regulatory capital held by a bank against risk.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Regulatory capital / risk-weighted assets × 100."
+    },
+    "npl": {
+      "name": "Non-performing loan ratio",
+      "definition": "The share of loans with repayment problems in the loan portfolio.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Non-performing loans / relevant total loans × 100."
+    },
+    "nav": {
+      "name": "Net asset value",
+      "definition": "Especially for property companies, asset values less relevant liabilities.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Appropriately valued assets − relevant liabilities."
+    },
+    "rental": {
+      "name": "Rental income",
+      "definition": "Income earned from leasing properties.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Rental income for the period from a comparable portfolio."
+    },
+    "occupancy": {
+      "name": "Occupancy",
+      "definition": "The proportion of leasable space occupied.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Occupied / leasable space × 100; definitions may vary."
+    },
+    "commission": {
+      "name": "Commission income",
+      "definition": "Fee income earned from brokerage and related services.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Period commissions, preserving gross/net and service scope."
+    },
+    "netDebt": {
+      "name": "Net debt / net cash",
+      "definition": "Financial debt less eligible liquid resources. A negative result means net cash.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Financial debt − available cash − eligible financial investments."
+    },
+    "unknown": {
+      "name": "Metric explanation",
+      "definition": "No dedicated educational definition is available yet. Review sources and calculation details.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "If a calculation exists, the exact formula is in the technical panel below."
+    },
+    "bookPerShare": {
+      "name": "Book value per share",
+      "definition": "Parent equity per share; an accounting value, not cash or a sale price.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Parent equity / compatible total shares."
+    },
+    "marketCap": {
+      "name": "Market capitalisation",
+      "definition": "The market value of all shares; different from enterprise value.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Dated share price × total shares on the same share basis."
+    },
+    "debtWithinYear": {
+      "name": "Financial debt due within a year",
+      "definition": "Short-term debt plus the portion of long-term debt due within a year.",
+      "purpose": "Used to understand upcoming payments and financing risk.",
+      "reading": "Read debt alongside available cash, maturity, interest, currency and cash generation.",
+      "caution": "Higher debt alone is not necessarily bad; it may fund investment. Industrial thresholds do not apply to banks.",
+      "comparison": "Same maturity/scope and sector; distinguish debt from total liabilities.",
+      "formula": "Short-term financial debt + current portion of long-term debt."
+    },
+    "workingCapital": {
+      "name": "Working-capital cash effect",
+      "definition": "The cash effect of changes in inventory, receivables and trade payables; not total operating cash.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Working-capital changes in the cash-flow statement, preserving source signs."
+    },
+    "peAnnualized": {
+      "name": "Annualised estimated P/E",
+      "definition": "How much the market pays for one unit of estimated annual profit. Doubling half-year profit is not actual TTM.",
+      "purpose": "Used to examine price relative to earnings.",
+      "reading": "Low P/E may reflect temporarily high profit or high risk; high P/E may reflect growth expectations or low profit.",
+      "caution": "Losses, one-off gains and peak-cycle earnings can mislead. It is not proof of cheapness.",
+      "comparison": "Similar business models, earnings definitions and cycle conditions; the company’s historical range.",
+      "formula": "Market capitalisation / (half-year parent profit × 2)."
+    },
+    "peHalfYear": {
+      "name": "Price relative to half-year earnings",
+      "definition": "Compares market capitalisation with only six months of profit; not directly comparable with standard annual P/E.",
+      "purpose": "Used to examine price relative to earnings.",
+      "reading": "Low P/E may reflect temporarily high profit or high risk; high P/E may reflect growth expectations or low profit.",
+      "caution": "Losses, one-off gains and peak-cycle earnings can mislead. It is not proof of cheapness.",
+      "comparison": "Similar business models, earnings definitions and cycle conditions; the company’s historical range.",
+      "formula": "Market capitalisation / half-year parent profit."
+    },
+    "priceChange": {
+      "name": "Price change",
+      "definition": "Percentage price change between two stated trading dates; not total return including dividends.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "(Latest price / previous price − 1) × 100, using the same adjustment basis."
+    },
+    "movingAverage": {
+      "name": "Simple moving average",
+      "definition": "The average price over the stated number of trading days; a lagging indicator, not fair value.",
+      "purpose": "Helps understand operations and financial resilience.",
+      "reading": "Do not label a value good or bad in isolation; use its period, history and sector context.",
+      "caution": "One-off effects, scope changes and accounting bases can mislead.",
+      "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
+      "formula": "Sum of compatible closing prices / trading days in the lookback window."
+    }
+  },
+  "researchUx": {
+    "view": "Reading level",
+    "views": {
+      "EASY": "Plain Explanation",
+      "DETAILED": "Detailed Analysis"
+    },
+    "learnMetric": "How should I read this metric?",
+    "missingReason": "Why is it unavailable?",
+    "moreMetrics": "Explore other metrics",
+    "companyDetails": "Company, ownership and long-term assessment",
+    "valuationMethods": "Methods and valuation audit",
+    "reportHistory": "Report history and section coverage",
+    "audit": "Sources, raw inputs and quality audit",
+    "historyDetails": "Annual metrics and calculation details",
+    "debtDetails": "Maturity, currency and debt details",
+    "simulationLink": "Historical investment simulation",
+    "cashflow": "Cash flow",
+    "peers": "Sector and peer comparison",
+    "sectorMetricMissing": "No appropriate verified metric is available for this sector; industrial ratios are not automatically applied.",
+    "cashflowIntro": "Profit differs from cash received. Examine operating cash, investment and temporary working-capital effects together.",
+    "debtIntro": "Debt alone does not measure risk. Consider maturity, currency, available cash and repayment capacity together.",
+    "educationFields": {
+      "purpose": "What is it for?",
+      "reading": "How is it interpreted?",
+      "caution": "When can it mislead?",
+      "comparison": "What is a valid comparison?",
+      "formula": "General formula / definition"
+    },
+    "trust": {
+      "verified": "Reconciled to primary source",
+      "partial": "Partially verified",
+      "missing": "Insufficient data",
+      "independent": "Awaiting independent review"
+    },
+    "interpretation": {
+      "missing": "There is not enough verified data to assess this. Missing data is neither zero nor a negative result.",
+      "context": "The value passed source checks. Without an appropriate historical or sector benchmark, no good/bad or cheap/expensive conclusion follows.",
+      "growthBase": "The previous period is zero, negative or not a suitable growth base; no ordinary growth interpretation was made.",
+      "historicalDividend": "This describes past distributions, not guaranteed future payments or proof of sustainability.",
+      "growth": {
+        "positive": "A {{value}}% increase was calculated from {{from}} to {{to}} on the same basis. Persistence requires separate assessment.",
+        "negative": "A {{value}}% change was calculated from {{from}} to {{to}} on the same basis. This ratio alone does not explain the decline.",
+        "zero": "Calculated change from {{from}} to {{to}} is {{value}}%. Stability alone is neither positive nor negative."
+      },
+      "netDebt": {
+        "negative": "Under the source definition, available cash and investments exceed financial debt: net cash. This buffer may be a strength; restricted cash, investment needs and maturities still matter.",
+        "positive": "Financial debt exceeds eligible liquid resources under the source definition. Repayment capacity and maturity data are needed to assess risk.",
+        "zero": "Net debt is zero under the source definition. Gross debt, maturities and cash availability still matter."
+      }
+    },
+    "sector": {
+      "GENERAL": "No universal good/bad threshold is used without an appropriate sector comparison.",
+      "REFINING": "Refining margins, inventory effects and the industry cycle can change earnings quickly; do not assume a strong period is permanent.",
+      "AUTOMOTIVE": "Monitor sales volume, capacity, exchange rates, model cycles and investment needs together.",
+      "BANK": "Capital adequacy, credit quality and ROE matter for banks; industrial net debt/EBITDA thresholds do not apply.",
+      "REIT": "Review property valuation dates, rent, occupancy and NAV together.",
+      "BROKER": "Trading volume, commission structure and sustainable profitability matter for brokers.",
+      "TECHNOLOGY": "Review cash conversion, margins and investment needs; growth alone does not prove value creation."
+    },
+    "overview": {
+      "business": "What does the company do?",
+      "health": "How are its finances changing?",
+      "strengths": "Is there a verified strength?",
+      "risks": "What is the main risk?",
+      "dividend": "What do we know about dividends?",
+      "valuation": "Is it cheap; can it be valued?",
+      "missing": "What remains missing?",
+      "evidence": "{{count}} inputs passed primary-source checks; this alone is not a financial-strength rating.",
+      "riskAnswer": "Missing data and sector cycles prevent a definite investment conclusion.",
+      "dividendAnswer": "Payment history alone does not prove sustainability. Compatible profit, cash, investment and debt data are needed.",
+      "dividendCoverage": "For {{period}}, operating cash covers cash dividends {{value}} times. Investment spending is not deducted from this ratio; it does not guarantee future payments.",
+      "valuationAnswer": "No verified fair-value result is available. Low P/E or P/B alone does not prove cheapness; sourced methods and assumptions are needed.",
+      "missingAnswer": "We do not produce definitive conclusions without valuation inputs, historical-data integrity and independent review. Open each section for missing-data reasons and sources."
+    },
+    "sectionIntro": {
+      "overview": "Start with the company, verified results and uncertainties.",
+      "financials": "Profitability, repayment capacity and cash quality matter alongside scale.",
+      "growth": "Changes are meaningful only across compatible periods. Price growth differs from operating-volume growth.",
+      "dividend": "Distributions, cash coverage and historical investment experience answer different questions.",
+      "valuation": "Ratios provide context; fair value needs suitable methods, verified inputs and explicit assumptions.",
+      "technical": "Historical price behaviour is not financial health or fair value.",
+      "news": "Verified events differ from interpretations of their impact; check review coverage.",
+      "history": "Compare periods on the same accounting basis. Incompatible series stay separate.",
+      "sources": "Technical calculation checks, primary-document reconciliation and independent review are different assurances."
+    },
+    "comparison": {
+      "HISTORY": "Annual values are compared only within compatible basis groups.",
+      "PEERS": "Peer data has not been supplied. This component can display verified data from the same sector and period when available.",
+      "empty": "A valid comparison needs at least two compatible verified observations. Missing data was not replaced by sample figures.",
+      "separated": "Different currencies, periods, scopes or purchasing-power bases were not merged; unverified inputs were excluded.",
+      "single": "Only one observation is available on this basis; no trend chart was produced.",
+      "nominal": "Nominal basis",
+      "chartHint": "Bar height represents the amount, not an investment rating. Exact values are listed below.",
+      "chartLabel": "Amounts for compatible periods; values also appear in the following table.",
+      "table": "Comparable values",
+      "period": "Period / company",
+      "value": "Value",
+      "source": "Source",
+      "metric": "Comparison metric",
+      "basisNotice": "TAS29 amounts with different purchasing-power dates or scopes are not a single comparable series. Each group retains its own currency and accounting basis.",
+      "peerConditions": "Only verified peers with the same sector, metric definition, period, currency and accounting basis are compared."
+    },
+    "snapshotBrief": "Dated research · not live data"
   }
 }

@@ -1149,7 +1149,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2021",
@@ -1190,7 +1192,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "equity2021",
@@ -1231,7 +1235,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "equity",
+        "comparisonKey": "parentEquity"
       },
       {
         "id": "cfo2021",
@@ -1272,7 +1278,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "debt2021",
@@ -1313,7 +1321,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "debt",
+        "comparisonKey": "financialDebt"
       },
       {
         "id": "cash2021",
@@ -1354,7 +1364,9 @@
           "to": "2021-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cash",
+        "comparisonKey": "cashAvailable"
       },
       {
         "id": "revenue2022",
@@ -1395,7 +1407,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2022",
@@ -1436,7 +1450,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "equity2022",
@@ -1477,7 +1493,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "equity",
+        "comparisonKey": "parentEquity"
       },
       {
         "id": "cfo2022",
@@ -1518,7 +1536,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "debt2022",
@@ -1559,7 +1579,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "debt",
+        "comparisonKey": "financialDebt"
       },
       {
         "id": "cash2022",
@@ -1600,7 +1622,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": null,
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cash",
+        "comparisonKey": "cashAvailable"
       },
       {
         "id": "revenue2023",
@@ -1641,7 +1665,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2023",
@@ -1682,7 +1708,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "equity2023",
@@ -1723,7 +1751,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "equity",
+        "comparisonKey": "parentEquity"
       },
       {
         "id": "cfo2023",
@@ -1764,7 +1794,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "debt2023",
@@ -1805,7 +1837,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "debt",
+        "comparisonKey": "financialDebt"
       },
       {
         "id": "cash2023",
@@ -1846,7 +1880,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cash",
+        "comparisonKey": "cashAvailable"
       },
       {
         "id": "revenue2024",
@@ -1887,7 +1923,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2024",
@@ -1928,7 +1966,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "equity2024",
@@ -1969,7 +2009,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "equity",
+        "comparisonKey": "parentEquity"
       },
       {
         "id": "cfo2024",
@@ -2010,7 +2052,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "debt2024",
@@ -2051,7 +2095,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "debt",
+        "comparisonKey": "financialDebt"
       },
       {
         "id": "cash2024",
@@ -2092,7 +2138,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cash",
+        "comparisonKey": "cashAvailable"
       },
       {
         "id": "revenue2025",
@@ -2133,7 +2181,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2025",
@@ -2174,7 +2224,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "equity2025",
@@ -2215,7 +2267,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "equity",
+        "comparisonKey": "parentEquity"
       },
       {
         "id": "cfo2025",
@@ -2256,7 +2310,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "debt2025",
@@ -2297,7 +2353,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "debt",
+        "comparisonKey": "financialDebt"
       },
       {
         "id": "cash2025",
@@ -2338,7 +2396,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cash",
+        "comparisonKey": "cashAvailable"
       },
       {
         "id": "revenue2023Comparable",
@@ -2379,7 +2439,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2023Comparable",
@@ -2420,7 +2482,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "cfo2023Comparable",
@@ -2461,7 +2525,9 @@
           "to": "2022-12-31",
           "purchasingPowerDate": "2023-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "revenue2024Comparable",
@@ -2502,7 +2568,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2024Comparable",
@@ -2543,7 +2611,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "cfo2024Comparable",
@@ -2584,7 +2654,9 @@
           "to": "2023-12-31",
           "purchasingPowerDate": "2024-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "revenue2025Comparable",
@@ -2625,7 +2697,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "revenue",
+        "comparisonKey": "revenue"
       },
       {
         "id": "profit2025Comparable",
@@ -2666,7 +2740,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "profit",
+        "comparisonKey": "profit"
       },
       {
         "id": "cfo2025Comparable",
@@ -2707,7 +2783,9 @@
           "to": "2024-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "cfo",
+        "comparisonKey": "operatingCash"
       },
       {
         "id": "capex2025",
@@ -2748,7 +2826,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "capex",
+        "comparisonKey": "capex"
       },
       {
         "id": "dividendsPaid2025",
@@ -2789,7 +2869,9 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31",
           "publishedAtBasis": "OBSERVED_BY"
-        }
+        },
+        "metricKey": "dividend",
+        "comparisonKey": "cashDividendsPaid"
       }
     ],
     "contracts": [
@@ -3080,77 +3162,88 @@
         "operation": "GROWTH",
         "inputs": ["revenue2023", "revenue2023Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "profit2023Growth",
         "operation": "GROWTH",
         "inputs": ["profit2023", "profit2023Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "cfo2023Growth",
         "operation": "GROWTH",
         "inputs": ["cfo2023", "cfo2023Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "revenue2024Growth",
         "operation": "GROWTH",
         "inputs": ["revenue2024", "revenue2024Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "profit2024Growth",
         "operation": "GROWTH",
         "inputs": ["profit2024", "profit2024Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "cfo2024Growth",
         "operation": "GROWTH",
         "inputs": ["cfo2024", "cfo2024Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "revenue2025Growth",
         "operation": "GROWTH",
         "inputs": ["revenue2025", "revenue2025Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "profit2025Growth",
         "operation": "GROWTH",
         "inputs": ["profit2025", "profit2025Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "cfo2025Growth",
         "operation": "GROWTH",
         "inputs": ["cfo2025", "cfo2025Comparable"],
         "unit": "PERCENT",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "growth"
       },
       {
         "id": "cashProxy2025",
         "operation": "SUBTRACT",
         "inputs": ["cfo2025", "capex2025"],
         "unit": "TRY",
-        "precision": 0
+        "precision": 0,
+        "metricKey": "cashProxy"
       },
       {
         "id": "dividendCashCoverage2025",
         "operation": "RATIO",
         "inputs": ["cfo2025", "dividendsPaid2025"],
         "unit": "MULTIPLE",
-        "precision": 2
+        "precision": 2,
+        "metricKey": "coverage"
       }
     ],
     "presentation": {
@@ -4631,7 +4724,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2021",
@@ -4672,7 +4767,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "equity2021",
@@ -4713,7 +4810,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "equity",
+          "comparisonKey": "parentEquity"
         },
         {
           "id": "cfo2021",
@@ -4754,7 +4853,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "debt2021",
@@ -4795,7 +4896,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "debt",
+          "comparisonKey": "financialDebt"
         },
         {
           "id": "cash2021",
@@ -4836,7 +4939,9 @@
             "to": "2021-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cash",
+          "comparisonKey": "cashAvailable"
         },
         {
           "id": "revenue2022",
@@ -4877,7 +4982,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2022",
@@ -4918,7 +5025,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "equity2022",
@@ -4959,7 +5068,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "equity",
+          "comparisonKey": "parentEquity"
         },
         {
           "id": "cfo2022",
@@ -5000,7 +5111,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "debt2022",
@@ -5041,7 +5154,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "debt",
+          "comparisonKey": "financialDebt"
         },
         {
           "id": "cash2022",
@@ -5082,7 +5197,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": null,
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cash",
+          "comparisonKey": "cashAvailable"
         },
         {
           "id": "revenue2023",
@@ -5123,7 +5240,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2023",
@@ -5164,7 +5283,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "equity2023",
@@ -5205,7 +5326,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "equity",
+          "comparisonKey": "parentEquity"
         },
         {
           "id": "cfo2023",
@@ -5246,7 +5369,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "debt2023",
@@ -5287,7 +5412,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "debt",
+          "comparisonKey": "financialDebt"
         },
         {
           "id": "cash2023",
@@ -5328,7 +5455,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cash",
+          "comparisonKey": "cashAvailable"
         },
         {
           "id": "revenue2024",
@@ -5369,7 +5498,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2024",
@@ -5410,7 +5541,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "equity2024",
@@ -5451,7 +5584,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "equity",
+          "comparisonKey": "parentEquity"
         },
         {
           "id": "cfo2024",
@@ -5492,7 +5627,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "debt2024",
@@ -5533,7 +5670,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "debt",
+          "comparisonKey": "financialDebt"
         },
         {
           "id": "cash2024",
@@ -5574,7 +5713,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cash",
+          "comparisonKey": "cashAvailable"
         },
         {
           "id": "revenue2025",
@@ -5615,7 +5756,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2025",
@@ -5656,7 +5799,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "equity2025",
@@ -5697,7 +5842,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "equity",
+          "comparisonKey": "parentEquity"
         },
         {
           "id": "cfo2025",
@@ -5738,7 +5885,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "debt2025",
@@ -5779,7 +5928,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "debt",
+          "comparisonKey": "financialDebt"
         },
         {
           "id": "cash2025",
@@ -5820,7 +5971,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cash",
+          "comparisonKey": "cashAvailable"
         },
         {
           "id": "revenue2023Comparable",
@@ -5861,7 +6014,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2023Comparable",
@@ -5902,7 +6057,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "cfo2023Comparable",
@@ -5943,7 +6100,9 @@
             "to": "2022-12-31",
             "purchasingPowerDate": "2023-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "revenue2024Comparable",
@@ -5984,7 +6143,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2024Comparable",
@@ -6025,7 +6186,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "cfo2024Comparable",
@@ -6066,7 +6229,9 @@
             "to": "2023-12-31",
             "purchasingPowerDate": "2024-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "revenue2025Comparable",
@@ -6107,7 +6272,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "revenue",
+          "comparisonKey": "revenue"
         },
         {
           "id": "profit2025Comparable",
@@ -6148,7 +6315,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "profit",
+          "comparisonKey": "profit"
         },
         {
           "id": "cfo2025Comparable",
@@ -6189,7 +6358,9 @@
             "to": "2024-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "cfo",
+          "comparisonKey": "operatingCash"
         },
         {
           "id": "capex2025",
@@ -6230,7 +6401,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "capex",
+          "comparisonKey": "capex"
         },
         {
           "id": "dividendsPaid2025",
@@ -6271,7 +6444,9 @@
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31",
             "publishedAtBasis": "OBSERVED_BY"
-          }
+          },
+          "metricKey": "dividend",
+          "comparisonKey": "cashDividendsPaid"
         }
       ],
       "calculations": [
@@ -6398,77 +6573,88 @@
           "operation": "GROWTH",
           "inputs": ["revenue2023", "revenue2023Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "profit2023Growth",
           "operation": "GROWTH",
           "inputs": ["profit2023", "profit2023Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "cfo2023Growth",
           "operation": "GROWTH",
           "inputs": ["cfo2023", "cfo2023Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "revenue2024Growth",
           "operation": "GROWTH",
           "inputs": ["revenue2024", "revenue2024Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "profit2024Growth",
           "operation": "GROWTH",
           "inputs": ["profit2024", "profit2024Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "cfo2024Growth",
           "operation": "GROWTH",
           "inputs": ["cfo2024", "cfo2024Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "revenue2025Growth",
           "operation": "GROWTH",
           "inputs": ["revenue2025", "revenue2025Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "profit2025Growth",
           "operation": "GROWTH",
           "inputs": ["profit2025", "profit2025Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "cfo2025Growth",
           "operation": "GROWTH",
           "inputs": ["cfo2025", "cfo2025Comparable"],
           "unit": "PERCENT",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "growth"
         },
         {
           "id": "cashProxy2025",
           "operation": "SUBTRACT",
           "inputs": ["cfo2025", "capex2025"],
           "unit": "TRY",
-          "precision": 0
+          "precision": 0,
+          "metricKey": "cashProxy"
         },
         {
           "id": "dividendCashCoverage2025",
           "operation": "RATIO",
           "inputs": ["cfo2025", "dividendsPaid2025"],
           "unit": "MULTIPLE",
-          "precision": 2
+          "precision": 2,
+          "metricKey": "coverage"
         }
       ],
       "disclosureScan": {
@@ -8358,224 +8544,1082 @@
           "value": "1439635000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "fxBeforeNatural",
           "value": "-95405870000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "fxAfterNatural",
           "value": "203915000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "price",
           "value": "386.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-09",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-09",
+            "end": "2026-10-09",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "shares",
           "value": "1926795598",
           "unit": "SHARES",
           "period": "2026-03-11",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-03-11",
+            "end": "2026-03-11",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 2, paid-in capital; subsequent capital actions pending review"
         },
         {
           "id": "revenue",
           "value": "662788010000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 6, Revenue",
+          "evidence": {
+            "id": "official-20261022-revenue",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 6, Revenue",
+            "excerpt": "Belge satırı ile mutabakat: 662788010000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["revenue"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "revenuePrevious",
           "value": "464119398000",
           "unit": "TRY",
           "period": "2025 H1 @ 2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 6, Revenue comparative",
+          "evidence": {
+            "id": "official-20261022-revenuePrevious",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 6, Revenue comparative",
+            "excerpt": "Belge satırı ile mutabakat: 464119398000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["revenuePrevious"],
+            "from": "2025-01-01",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "profit",
           "value": "49847684000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 6, Owners of parent",
+          "evidence": {
+            "id": "official-20261022-profit",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 6, Owners of parent",
+            "excerpt": "Belge satırı ile mutabakat: 49847684000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["profit"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "profitPrevious",
           "value": "11872237000",
           "unit": "TRY",
           "period": "2025 H1 @ 2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 6, Owners of parent comparative",
+          "evidence": {
+            "id": "official-20261022-profitPrevious",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 6, Owners of parent comparative",
+            "excerpt": "Belge satırı ile mutabakat: 11872237000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["profitPrevious"],
+            "from": "2025-01-01",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "operatingProfit",
           "value": "59025244000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 6, Operating profit",
+          "evidence": {
+            "id": "official-20261022-operatingProfit",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 6, Operating profit",
+            "excerpt": "Belge satırı ile mutabakat: 59025244000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["operatingProfit"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "cash",
           "value": "195840940000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 20–21, Note 5",
+          "evidence": {
+            "id": "official-20261022-cash",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 20–21, Note 5",
+            "excerpt": "Belge satırı ile mutabakat: 195840940000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["cash"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "debtShort",
           "value": "17579248000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 21, Note 6",
+          "evidence": {
+            "id": "official-20261022-debtShort",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 21, Note 6",
+            "excerpt": "Belge satırı ile mutabakat: 17579248000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["debtShort"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "debtCurrent",
           "value": "14178331000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 21, Note 6",
+          "evidence": {
+            "id": "official-20261022-debtCurrent",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 21, Note 6",
+            "excerpt": "Belge satırı ile mutabakat: 14178331000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["debtCurrent"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "debtLong",
           "value": "36443100000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 21, Note 6",
+          "evidence": {
+            "id": "official-20261022-debtLong",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 21, Note 6",
+            "excerpt": "Belge satırı ile mutabakat: 36443100000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["debtLong"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "currentAssets",
           "value": "439480874000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 3, Total current assets",
+          "evidence": {
+            "id": "official-20261022-currentAssets",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 3, Total current assets",
+            "excerpt": "Belge satırı ile mutabakat: 439480874000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["currentAssets"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "currentLiabilities",
           "value": "325369321000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 4, Total current liabilities",
+          "evidence": {
+            "id": "official-20261022-currentLiabilities",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 4, Total current liabilities",
+            "excerpt": "Belge satırı ile mutabakat: 325369321000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["currentLiabilities"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "parentEquity",
           "value": "456139125000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 5, Equity attributable to owners",
+          "evidence": {
+            "id": "official-20261022-parentEquity",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 5, Equity attributable to owners",
+            "excerpt": "Belge satırı ile mutabakat: 456139125000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["parentEquity"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "operatingCash",
           "value": "132366363000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 9, Operating cash flows",
+          "evidence": {
+            "id": "official-20261022-operatingCash",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 9, Operating cash flows",
+            "excerpt": "Belge satırı ile mutabakat: 132366363000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["operatingCash"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "capex",
           "value": "11858044000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 9, Purchases of property plant equipment and intangibles",
+          "evidence": {
+            "id": "official-20261022-capex",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 9, Purchases of property plant equipment and intangibles",
+            "excerpt": "Belge satırı ile mutabakat: 11858044000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["capex"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "dividend1",
           "value": "10.3799282",
           "unit": "TRY_SHARE",
           "period": "2026-03-16",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-03-16",
+            "end": "2026-03-16",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 1–2, approved first installment",
+          "evidence": {
+            "id": "official-20261022-dividend1",
+            "sourceId": "dividend",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-dividend-1570793"],
+            "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "locator": "PDF 1–2, approved first installment",
+            "excerpt": "KAP genel kurul onayı: 10.3799282 TRY/pay. Ödeme planıdır; hesaba geçtiğinin bağımsız teyidi değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-03-11",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["dividend1"],
+            "from": "2026-03-16",
+            "to": "2026-03-16",
+            "purchasingPowerDate": null
+          }
         },
         {
           "id": "dividend2",
           "value": "6.7469533",
           "unit": "TRY_SHARE",
           "period": "2026-09-30",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-09-30",
+            "end": "2026-09-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 1–2, approved second installment",
+          "evidence": {
+            "id": "official-20261022-dividend2",
+            "sourceId": "dividend",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-dividend-1570793"],
+            "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "locator": "PDF 1–2, approved second installment",
+            "excerpt": "KAP genel kurul onayı: 6.7469533 TRY/pay. Ödeme planıdır; hesaba geçtiğinin bağımsız teyidi değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-03-11",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["dividend2"],
+            "from": "2026-09-30",
+            "to": "2026-09-30",
+            "purchasingPowerDate": null
+          }
         },
         {
           "id": "dividendTotal",
           "value": "17.1268815",
           "unit": "TRY_SHARE",
           "period": "2026",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-12-31",
+            "end": "2026-12-31",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 1, total gross distribution",
+          "evidence": {
+            "id": "official-20261022-dividendTotal",
+            "sourceId": "dividend",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-dividend-1570793"],
+            "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "locator": "PDF 1, total gross distribution",
+            "excerpt": "KAP genel kurul onayı: 17.1268815 TRY/pay. Ödeme planıdır; hesaba geçtiğinin bağımsız teyidi değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-03-11",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["dividendTotal"],
+            "from": "2026-12-31",
+            "to": "2026-12-31",
+            "purchasingPowerDate": null
+          }
         },
         {
           "id": "nrm",
           "value": "15.6",
           "unit": "USD_BARREL",
           "period": "2026 H1",
-          "sourceId": "presentation"
+          "sourceId": "presentation",
+          "basis": {
+            "currency": "USD",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1002",
           "value": "377.00",
           "unit": "TRY_SHARE",
           "period": "2026-10-02",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-02",
+            "end": "2026-10-02",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1005",
           "value": "391.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-05",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-05",
+            "end": "2026-10-05",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1006",
           "value": "379.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-06",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-06",
+            "end": "2026-10-06",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1007",
           "value": "379.75",
           "unit": "TRY_SHARE",
           "period": "2026-10-07",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-07",
+            "end": "2026-10-07",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1008",
           "value": "392.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-08",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-08",
+            "end": "2026-10-08",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "cashAvailable",
           "value": "167355286000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 49, Note 29, cash excluding blocked deposits",
+          "evidence": {
+            "id": "official-20261022-cashAvailable",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 49, Note 29, cash excluding blocked deposits",
+            "excerpt": "Belge satırı ile mutabakat: 167355286000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["cashAvailable"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "financialInvestments",
           "value": "3077642000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 49, Note 29, financial investments",
+          "evidence": {
+            "id": "official-20261022-financialInvestments",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 49, Note 29, financial investments",
+            "excerpt": "Belge satırı ile mutabakat: 3077642000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["financialInvestments"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "netFinancialDebt",
           "value": "-102232249000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 49, Note 29, net financial liabilities",
+          "evidence": {
+            "id": "official-20261022-netFinancialDebt",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 49, Note 29, net financial liabilities",
+            "excerpt": "Belge satırı ile mutabakat: -102232249000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["netFinancialDebt"],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         },
         {
           "id": "workingCapitalCash",
           "value": "28497347000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-22",
+          "locator": "PDF 9, changes in working capital",
+          "evidence": {
+            "id": "official-20261022-workingCapitalCash",
+            "sourceId": "financials",
+            "originId": "issuer-tupras",
+            "collectionId": "codex-official-20261022",
+            "reviewerId": "codex-research",
+            "ancestorIds": ["issuer-h1-2026-statement"],
+            "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+            "locator": "PDF 9, changes in working capital",
+            "excerpt": "Belge satırı ile mutabakat: 28497347000 TRY; kaynak bin TRY × 1000. Karşılaştırmalı sütunlar 30.06.2026 satın alma gücü bazında. Sınırlı inceleme; bağımsız ikinci veri kaynağı değildir.",
+            "checkedAt": "2026-10-22",
+            "publishedAt": "2026-08-04",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": ["workingCapitalCash"],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
         }
       ],
       "calculations": [
@@ -10082,224 +11126,704 @@
           "value": "1439635000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "fxBeforeNatural",
           "value": "-95405870000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "fxAfterNatural",
           "value": "203915000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "price",
           "value": "386.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-09",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-09",
+            "end": "2026-10-09",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "shares",
           "value": "1926795598",
           "unit": "SHARES",
           "period": "2026-03-11",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-03-11",
+            "end": "2026-03-11",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 2, paid-in capital; subsequent capital actions pending review"
         },
         {
           "id": "revenue",
           "value": "662788010000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 6, Revenue"
         },
         {
           "id": "revenuePrevious",
           "value": "464119398000",
           "unit": "TRY",
           "period": "2025 H1 @ 2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 6, Revenue comparative"
         },
         {
           "id": "profit",
           "value": "49847684000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 6, Owners of parent"
         },
         {
           "id": "profitPrevious",
           "value": "11872237000",
           "unit": "TRY",
           "period": "2025 H1 @ 2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 6, Owners of parent comparative"
         },
         {
           "id": "operatingProfit",
           "value": "59025244000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 6, Operating profit"
         },
         {
           "id": "cash",
           "value": "195840940000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 20–21, Note 5"
         },
         {
           "id": "debtShort",
           "value": "17579248000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 21, Note 6"
         },
         {
           "id": "debtCurrent",
           "value": "14178331000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 21, Note 6"
         },
         {
           "id": "debtLong",
           "value": "36443100000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 21, Note 6"
         },
         {
           "id": "currentAssets",
           "value": "439480874000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 3, Total current assets"
         },
         {
           "id": "currentLiabilities",
           "value": "325369321000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 4, Total current liabilities"
         },
         {
           "id": "parentEquity",
           "value": "456139125000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 5, Equity attributable to owners"
         },
         {
           "id": "operatingCash",
           "value": "132366363000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 9, Operating cash flows"
         },
         {
           "id": "capex",
           "value": "11858044000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 9, Purchases of property plant equipment and intangibles"
         },
         {
           "id": "dividend1",
           "value": "10.3799282",
           "unit": "TRY_SHARE",
           "period": "2026-03-16",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-03-16",
+            "end": "2026-03-16",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 1–2, approved first installment"
         },
         {
           "id": "dividend2",
           "value": "6.7469533",
           "unit": "TRY_SHARE",
           "period": "2026-09-30",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-09-30",
+            "end": "2026-09-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 1–2, approved second installment"
         },
         {
           "id": "dividendTotal",
           "value": "17.1268815",
           "unit": "TRY_SHARE",
           "period": "2026",
-          "sourceId": "dividend"
+          "sourceId": "dividend",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-12-31",
+            "end": "2026-12-31",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 1, total gross distribution"
         },
         {
           "id": "nrm",
           "value": "15.6",
           "unit": "USD_BARREL",
           "period": "2026 H1",
-          "sourceId": "presentation"
+          "sourceId": "presentation",
+          "basis": {
+            "currency": "USD",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1002",
           "value": "377.00",
           "unit": "TRY_SHARE",
           "period": "2026-10-02",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-02",
+            "end": "2026-10-02",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1005",
           "value": "391.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-05",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-05",
+            "end": "2026-10-05",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1006",
           "value": "379.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-06",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-06",
+            "end": "2026-10-06",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1007",
           "value": "379.75",
           "unit": "TRY_SHARE",
           "period": "2026-10-07",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-07",
+            "end": "2026-10-07",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "close1008",
           "value": "392.25",
           "unit": "TRY_SHARE",
           "period": "2026-10-08",
-          "sourceId": "price"
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-08",
+            "end": "2026-10-08",
+            "periodKind": "INSTANT",
+            "shareBasis": "post-2023-capital"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "Pending independent source verification"
         },
         {
           "id": "cashAvailable",
           "value": "167355286000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 49, Note 29, cash excluding blocked deposits"
         },
         {
           "id": "financialInvestments",
           "value": "3077642000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 49, Note 29, financial investments"
         },
         {
           "id": "netFinancialDebt",
           "value": "-102232249000",
           "unit": "TRY",
           "period": "2026-06-30",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 49, Note 29, net financial liabilities"
         },
         {
           "id": "workingCapitalCash",
           "value": "28497347000",
           "unit": "TRY",
           "period": "2026 H1",
-          "sourceId": "financials"
+          "sourceId": "financials",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-21",
+          "locator": "PDF 9, changes in working capital"
         }
       ],
       "calculations": [
