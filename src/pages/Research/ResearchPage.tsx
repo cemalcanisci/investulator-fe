@@ -22,6 +22,8 @@ import { ResearchDisclosures } from '@/components/Research/ResearchDisclosures';
 import { ResearchDebt } from '@/components/Research/ResearchDebt';
 import { ResearchLongTerm } from '@/components/Research/ResearchLongTerm';
 import { DividendBacktest } from '@/components/Research/DividendBacktest';
+import { ApproximateBacktest } from '@/components/Research/ApproximateBacktest';
+import { getApproximateHistory } from '@/services/approximateHistory';
 import { getDividendHistory } from '@/services/dividendHistory';
 import {
   ResearchSummary,
@@ -283,7 +285,12 @@ export function ResearchPage(): JSX.Element {
     dividend: (
       <ResearchSection key="dividend" id="dividend">
         {asset?.assetType !== 'CRYPTO' && (
-          <DividendBacktest history={getDividendHistory(report.assetId)} />
+          <>
+            <ApproximateBacktest
+              history={getApproximateHistory(report.assetId)}
+            />
+            <DividendBacktest history={getDividendHistory(report.assetId)} />
+          </>
         )}
         {metrics(profile.dividend)}
         <Card className="space-y-3 p-5">
@@ -532,7 +539,7 @@ export function ResearchPage(): JSX.Element {
           className="top-14 z-20 -mx-1 flex flex-wrap gap-1 rounded-xl border border-line bg-surface p-2 shadow-card sm:sticky"
         >
           <a
-            href="#dividend-backtest"
+            href="#approximate-backtest"
             className="rounded-lg px-3 py-2 text-xs font-medium text-primary"
           >
             {t('researchUx.simulationLink')}

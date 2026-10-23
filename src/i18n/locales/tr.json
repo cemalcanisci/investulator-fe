@@ -1373,7 +1373,7 @@
   },
   "backtest": {
     "eyebrow": "Geçmişe dönük temettü yatırımı",
-    "title": "Her yıl 1.000 dolar yatırsaydım ne olurdu?",
+    "title": "Doğrulanmış yöntem — Geçmiş yatırım simülasyonu",
     "description": "Son 10, 15 ve 20 yılda düzenli aylık alım yapsaydınız ve temettülerle tekrar aynı hisseyi alsaydınız oluşacak yaklaşık dolar birikimi. Gelecek tahmini değildir.",
     "notice": "Tarihsel fiyat ve kur verileri kullanılır. Sonuçlar brüt temettüyle, kesirli hisse alımıyla ve vergi/komisyon olmadan hesaplanmıştır; gerçek hesabınızda elde edeceğiniz net kazanç değildir.",
     "dates": "Hesap kesimi: {{date}} (son tamamlanan ay). Veri derleme: {{retrieved}}. Bu bölümün tarihi, diğer finansal analiz verilerinden bağımsızdır.",
@@ -1852,5 +1852,59 @@
       "peerConditions": "Yalnız aynı sektör, metrik tanımı, dönem, para birimi ve muhasebe bazıyla doğrulanmış benzerler karşılaştırılır."
     },
     "snapshotBrief": "Tarihli araştırma · canlı veri değildir"
+  },
+  "approximate": {
+    "title": "Geçmişte yatırım yapsaydım? — Yaklaşık simülasyon",
+    "question": "Geçmiş 10, 15 veya 20 yılda {{mode}} {{amount}} USD yatırsaydım ne olurdu?",
+    "notice": "Yaklaşık tarihsel sonuç · Bağımsız doğrulanmış yatırım muhasebesi değildir. Gerçek aylık fiyat ve kur gözlemleri kullanılır; geçmiş getiri gelecek getiri garantisi değildir.",
+    "mode": "Yatırım şekli",
+    "modes": {
+      "MONTHLY": "Her ay",
+      "LUMP_SUM": "Tek seferde"
+    },
+    "amount": "Yatırım tutarı (USD)",
+    "unit": "Sonuç para birimi",
+    "local": "Yerel para",
+    "period": "{{years}} yıllık yaklaşık sonuç",
+    "cutoff": "Veri kesimi: {{date}}. Son tamamlanan ay; canlı değer değildir.",
+    "status": {
+      "APPROXIMATE": "Yaklaşık · temettü dahil karşılaştırma",
+      "PRICE_ONLY": "Yalnız fiyat getirisi hesaplanabildi",
+      "MISSING_DATA": "Hesaplama için gerekli veri yok",
+      "INSUFFICIENT_HISTORY": "Bu dönem için borsa geçmişi yetersiz"
+    },
+    "issues": {
+      "INPUT": "Pozitif USD tutarı girin; ondalık ayırıcı olarak nokta kullanın.",
+      "PERIOD": "Kesim tarihi tamamlanmış bir takvim ayı değil.",
+      "LISTING": "Şirket bu dönemin tamamında işlem görmemiş.",
+      "SOURCES": "Kaynak kimliği veya köken kaydı eksik/çelişkili.",
+      "COVERAGE": "Gerekli fiyat, kur veya kurumsal işlem kapsamı incelenemedi.",
+      "BASIS": "Fiyatın bölünme bazının ve kapsam tarihinin uyumu gösterilemiyor.",
+      "ACTIONS": "Kurumsal işlem kaydı eksik, çelişkili veya henüz desteklenmiyor.",
+      "MONTHLY_DATA": "En az bir ayda geçerli kapanış veya yakın tarihli kur eksik; sonuç tahmin edilmedi.",
+      "DIVIDENDS": "Temettü takvimi yeterli değil. Nakit temettü ve yeniden yatırım sonuçları üretilmedi; fiyat getirisi temettü dahil toplam getiri değildir."
+    },
+    "policies": {
+      "priceOnly": "Sadece hisse değeri · temettü hariç",
+      "cash": "Temettüler nakit tutulursa",
+      "reinvest": "Temettüler yeniden yatırılırsa"
+    },
+    "fields": {
+      "invested": "Yatırılan toplam",
+      "equity": "Hisselerin son değeri",
+      "cash": "Biriken nakit temettü",
+      "receivable": "Henüz ödenmemiş temettü",
+      "profit": "Kâr / zarar",
+      "gain": "Toplam getiri",
+      "xirr": "Yıllıklandırılmış getiri (XIRR)"
+    },
+    "difference": "Yeniden yatırım ile nakitte tutma arasındaki son toplam değer farkı: {{value}} {{currency}}. Farkın pozitif olması garanti değildir.",
+    "cashNote": "Büyük tutar hisse + nakit temettü + hak edilmiş alacağın toplamıdır. Nakit temettüler hisse para biriminde faizsiz tutulur; USD’ye kesim kuruyla çevrilir. Bu senaryo temettüyü ödeme gününde dolara çevirmekle aynı değildir.",
+    "details": "Yöntem, kaynaklar ve veri kalitesi",
+    "method": "Ayın son gözlenen işlem kapanışında yatırım yapılır; tek seferlik yatırım ilk ayın kapanışındadır. Temettü hakkı hak tarihinden önce tutulan paydan hesaplanır. Yeniden alım ödeme sonrasındaki ilk aylık kapanışta yapılır; ay içi fiyatlar tahmin edilmez. Fiyatlar yalnız bölünmeye göre düzeltilmiştir; temettüler aynı pay bazına dönüştürülür, bedelsiz ikinci kez eklenmez. Kesirli pay, brüt temettü, sıfır komisyon/stopaj ve nakde sıfır faiz varsayılır. Kur en fazla dört gün geriden taşınır. USD ve hisse kapanış saatleri eşzamanlı olmayabilir.",
+    "formulas": "Aylık pay alımı = USD katkı × tarihsel kur / aylık fiyat. Son toplam = hisse değeri + tutulan nakit + ödenmemiş alacak. Kâr = son toplam − tarihsel katkılar. Getiri = kâr / katkı × 100. XIRR, tarihli dış katkılar ve son toplam üzerinden hesaplanır; temettü iç nakit hareketidir. TL katkı her alımın tarihsel kuruyla toplanır, güncel kurla çevrilmez. Tek yatırımda aynı XIRR, gerçek gün sayısına göre bileşik yıllık getiriye karşılık gelir. Sonuçlar nominaldir, enflasyondan arındırılmamıştır.",
+    "quality": "{{months}} aylık gözlem ve kur, kurumsal işlem listesi ve {{dividends}} temettü kaydı incelendi. Kaynaklar aynı üst veri sağlayıcısından gelebilir; bağımsızlık ispatlanmış değildir. Bu katman APPROXIMATE olarak kalır; ayrıntılı doğrulanmış yöntemin bütünlük kapılarını değiştirmez.",
+    "trace": "Hesap izi ve kapsam kayıtları",
+    "verifiedLink": "Ayrı doğrulanmış yöntem ve bütünlük kontrolleri"
   }
 }

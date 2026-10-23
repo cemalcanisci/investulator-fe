@@ -1373,7 +1373,7 @@
   },
   "backtest": {
     "eyebrow": "Historical dividend investing",
-    "title": "What if I had invested $1,000 every year?",
+    "title": "Verified method — Historical investment simulation",
     "description": "Approximate USD wealth from monthly purchases over the past 10, 15 and 20 years, reinvesting dividends in the same stock. This is not a forecast.",
     "notice": "Uses historical prices and exchange rates. Gross dividends, fractional shares and zero taxes/fees are assumed. These are not your actual after-tax account returns.",
     "dates": "Calculation cutoff: {{date}} (last complete month). Data compiled: {{retrieved}}. This section has its own date, separate from the other financial analysis.",
@@ -1852,5 +1852,59 @@
       "peerConditions": "Only verified peers with the same sector, metric definition, period, currency and accounting basis are compared."
     },
     "snapshotBrief": "Dated research · not live data"
+  },
+  "approximate": {
+    "title": "What if I had invested? — Approximate simulation",
+    "question": "What if I had invested {{amount}} USD {{mode}} over the past 10, 15 or 20 years?",
+    "notice": "Approximate historical result · Not independently verified investment accounting. Uses actual monthly price and FX observations; past returns do not guarantee future returns.",
+    "mode": "Investment schedule",
+    "modes": {
+      "MONTHLY": "Every month",
+      "LUMP_SUM": "Once"
+    },
+    "amount": "Investment amount (USD)",
+    "unit": "Result currency",
+    "local": "Local currency",
+    "period": "{{years}}-year approximate result",
+    "cutoff": "Data cutoff: {{date}}. Last complete month; not a live valuation.",
+    "status": {
+      "APPROXIMATE": "Approximate · dividend-inclusive comparison",
+      "PRICE_ONLY": "Only price return is available",
+      "MISSING_DATA": "Required data is unavailable",
+      "INSUFFICIENT_HISTORY": "Insufficient listing history"
+    },
+    "issues": {
+      "INPUT": "Enter a positive USD amount using a dot as decimal separator.",
+      "PERIOD": "The cutoff is not a completed calendar month.",
+      "LISTING": "The company was not listed throughout this period.",
+      "SOURCES": "Source identity or provenance is missing or conflicting.",
+      "COVERAGE": "Required price, FX or corporate-action coverage has not been reviewed.",
+      "BASIS": "The split-adjusted price basis and coverage dates cannot be reconciled.",
+      "ACTIONS": "A corporate action is missing, conflicting or unsupported.",
+      "MONTHLY_DATA": "At least one month lacks a valid close or recent FX observation; no result was estimated.",
+      "DIVIDENDS": "Dividend coverage is insufficient. Cash and reinvestment outcomes are unavailable; price return is not dividend-inclusive total return."
+    },
+    "policies": {
+      "priceOnly": "Share value only · excludes dividends",
+      "cash": "Dividends held as cash",
+      "reinvest": "Dividends reinvested"
+    },
+    "fields": {
+      "invested": "Total contributed",
+      "equity": "Final share value",
+      "cash": "Accumulated cash dividends",
+      "receivable": "Unpaid dividend entitlement",
+      "profit": "Profit / loss",
+      "gain": "Total return",
+      "xirr": "Annualised return (XIRR)"
+    },
+    "difference": "Final wealth difference between reinvestment and holding dividends in cash: {{value}} {{currency}}. A positive difference is not guaranteed.",
+    "cashNote": "The headline amount includes shares, cash dividends and unpaid entitlements. Cash dividends remain in the stock currency without interest and are converted to USD at the cutoff FX rate. This is not conversion to USD on each payment date.",
+    "details": "Method, sources and data quality",
+    "method": "Purchases use the last observed trading close each month; a lump sum is invested at the first monthly close. Entitlement uses shares held before the ex date. Reinvestment occurs at the first monthly close after payment; no intramonth prices are invented. Prices are split-only adjusted; dividends are converted to the same share basis, without applying bonus shares twice. Fractional shares, gross dividends, zero fees/withholding and no cash interest are assumed. FX may be carried forward by at most four calendar days. Stock and FX closing times may differ.",
+    "formulas": "Shares purchased = USD contribution × historical FX / monthly price. Final wealth = shares + retained cash + unpaid entitlements. Profit = final wealth − historical contributions. Return = profit / contributions × 100. XIRR uses dated external contributions and terminal wealth; dividends are internal flows. Local contributions use each purchase date’s FX, not the current rate. For a single contribution XIRR is the compound annual return on actual elapsed days. Results are nominal, not inflation-adjusted.",
+    "quality": "{{months}} monthly observations and FX, the action list and {{dividends}} dividend records were reviewed. Sources may share an upstream provider; independence is not established. This layer remains APPROXIMATE and does not change the integrity gates of the separate verified method.",
+    "trace": "Calculation trace and coverage records",
+    "verifiedLink": "Separate verified method and integrity checks"
   }
 }

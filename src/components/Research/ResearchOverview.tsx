@@ -73,7 +73,7 @@ export function ResearchOverview({
       </div>
       <a
         className="inline-block text-sm font-medium text-primary underline"
-        href="#dividend-backtest"
+        href="#approximate-backtest"
       >
         {t('researchUx.simulationLink')}
       </a>

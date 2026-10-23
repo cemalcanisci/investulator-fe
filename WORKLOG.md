@@ -8,17 +8,16 @@
 
 **Son güncelleyen:** Codex — **Tarih:** 2026-10-23
 
-Analiz detay UX geliştirmesi tamamlandı; kullanıcı değerlendirmesi bekleniyor. Sonraki hisseye veya feature’a geçme. TUPRS v6 mevcut kaynak mutabakatı ve finansal girdileri korundu; analiz tamamlanmış sayılmıyor.
+Yaklaşık geçmiş yatırım simülasyonu tamamlandı; kullanıcı incelemesi bekleniyor. Sonraki hisseye geçme. Önceki analiz UX ve TUPRS v6 korunur; genel finansal analiz tamamlanmış sayılmaz.
 
-- ResearchPage: varsayılan EASY ve DETAILED görünümü; stratejiden bağımsız state; üç katmanlı sunum, mobil açılır gezinme, borç/nakit/karşılaştırma alt bölümleri. Mevcut araştırma bölümleri korunur.
-- domain/metricEducation ve lib/metricInterpretation: ortak TR/EN eğitim tanımları; doğrulanmış büyüme, net borç ve temettü yorumları; eksikte sonuç yok. Altı aylık ve yıllıklandırılmış F/K, piyasa değeri ve pay başına defter değeri ayrı açıklanır.
-- ResearchOverview, MetricEducation, ResearchDisclosurePanel, researchView: sade genel bakış ve açılır teknik katman. Hesap kontrolü, birincil kaynak ve bağımsız inceleme ayrımı korunur.
-- researchComparison / ResearchComparison / FinancialHistory: sektör uygunluğu, ekonomik metrik kimliği, dönem, para birimi, kapsam ve TMS29 bazına göre gruplama. Uyumsuz yıllar birleştirilmez. Gerçek akran verisi yok; boş durum gösterilir.
-- domain/research, analysisSchema ve analysis-reports.json: isteğe bağlı metricKey/comparisonKey sunum metaverisi. Finansal değerler, sözleşmeler ve hesap sonuçları değiştirilmedi.
-- DividendBacktest, dividendBacktest motoru, historyIntegrity, dividendHistory ve tarihsel JSON değişmedi. Aynı 10/15/20 yıl kartları iki görünümde var; MISSING_DATA korunur. Başlangıç kodunda bulunmayan serbest başlangıç/nakit temettü/TL-USD kontrolleri bu UX işinde eklenmedi; ayrıntı teslim raporunda.
-- researchPresentation.test ve ResearchComparison.test eklendi; ResearchPage.test güncellendi. Vitest/coverage ÇALIŞTIRILMADI; %80 kapsam yeniden ölçülmedi. Build başarılı; lint hatasız, üç eski mock tipi uyarısı var. Build büyük paket uyarısı sürüyor.
-- Tarayıcı: ayrı 5199 portu, beş genişlik × iki görünüm taşma yok; TR/EN, açık/koyu örnekler, aynı rakam/simülasyon ve değişmeyen strateji doğrulandı. Kanıtlar ../outputs/research-ux-20261022/. Finansal değer ve simülasyon korunma kontrolü ile dil anahtar eşitliği geçti.
-- Teknik kararlar, dosya listesi, veri ihtiyaçları ve sınırlamalar: ../ANALIZ_DETAY_UX_20261023.md. Kaynak geçmişi: ../TUPRS_GERCEK_VERI_DOGRULAMASI_20261022.md. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok. Sırada kullanıcı incelemesi ve onay verdiğinde ayrı finansal veri tamamlama planı var.
+- Yeni domain/approximateHistory, lib/approximateBacktest ve services/approximateHistory: sembolden bağımsız aylık hesap, decimal tutarlar, XIRR, dönem/kur/pay bazı/kaynak kapsam kapıları. APPROXIMATE ve PRICE_ONLY, strict COMPLETE/VERIFIED ile karışmaz.
+- tuprs-approximate-history.json: 23 Ekim yeniden indirilen Yahoo fiyat/kurdan 240 aylık gözlem; 20 temettü tutarı/tarihi aracı kurum ve takvimle mutabakat; tek 2023 7:1 bedelsiz. Kaynaklar bağımsız sayılmaz. Aynı ajan incelemesi, kısmi kaynak güveni açık.
+- ApproximateBacktest: aylık/tek seferlik USD tutar, varsayılan aylık 1.000 USD, fiyat-only/nakit/yeniden yatırım, TL/USD katkı-son değer-kâr-getiri-XIRR, alacak ve kaynak/iz panelleri. ResearchPage/ResearchOverview bağlantıları yeni öncelikli panele yönelir; eski panel erişilebilir.
+- DividendBacktest.tsx, dividendBacktest.ts, historyIntegrity.ts ve eski tarihsel JSON değişmedi. Strict 10/15/20 MISSING_DATA devam eder. Eski yıllık 1.000 USD varsayımı ayrı korunur.
+- Yaklaşık aylık 1.000 USD, 2026-09-30: 10/15/20 yıl yeniden yatırım toplamları 463.813,89 / 792.721,50 / 1.397.157,13 USD; alacak dahil, brüt ve masrafsız. XIRR %25,84 / %18,02 / %15,50. Kaynak/varsayım olmadan bu değerleri güncel veya garanti sayma.
+- approximateBacktest.test ve ApproximateBacktest.test yazıldı; otomatik Vitest/coverage ÇALIŞTIRILMADI. tsc -b ve Vite build başarılı; büyük paket uyarısı var. Lint hatasız, üç eski mock tipi uyarısı sürüyor.
+- Ayrı 5199 sunucusunda 5 genişlik × 2 görünüm, mod/para birimi, TR/EN/koyu tema, sonuç değişmezliği ve strict içeriği kontrol edildi. Kanıt ve ham kaynaklar ../outputs/approximate-20261023/; teknik rapor ../YAKLASIK_GECMIS_YATIRIM_20261023.md.
+- Açık sınırlar: bağımsız doğrulama yok; aylık ödeme sonrası alım gecikmesi; nakit temettü yerel para biriminde faizsiz; sıfır vergi/komisyon; fiyat/FX kapanış saati farkı. USD kotasyonlu varlık için ek TL raporlama serisi yeni veri adaptöründe gerekir. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok.
 
 ---
 
@@ -62,3 +61,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-22 — Codex:** Onaylanan kanıt/bağımsızlık, ekonomik dönem/TMS29 ve strateji önceliği düzeltmeleri; TUPRS v5 birincil belge mutabakatı ve açık bölüm planı eklendi. Analiz kısmi, otomatik testler çalıştırılmadı.
 
 - **2026-10-23 — Codex:** Analiz UX: ortak metrik eğitimi, EASY/DETAILED, genel bakış, uyumlu tarihsel/akran karşılaştırması ve simülasyon korunma regresyonları eklendi. Build/lint/tarayıcı kontrolleri yapıldı; Vitest/coverage çalıştırılmadı.
+
+- **2026-10-23 — Codex:** Ortak yaklaşık simülasyon, gerçek TUPRS aylık snapshot, iki seviyeli sunum ve regresyonlar eklendi. Üç vade yaklaşık hesaplanıyor; strict kapılar korunuyor.
