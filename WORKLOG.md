@@ -6,18 +6,18 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-23
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-24
 
-Yaklaşık geçmiş yatırım simülasyonu tamamlandı; kullanıcı incelemesi bekleniyor. Sonraki hisseye geçme. Önceki analiz UX ve TUPRS v6 korunur; genel finansal analiz tamamlanmış sayılmaz.
+Yaklaşık simülasyonun son hesaplama denetimi tamamlandı; veri doğrulaması kısmi. Uygulama kodu, UX, strict motor ve mevcut veri seti değiştirilmedi. Sonraki hisse/özellik için kullanıcı onayı bekleniyor.
 
-- Yeni domain/approximateHistory, lib/approximateBacktest ve services/approximateHistory: sembolden bağımsız aylık hesap, decimal tutarlar, XIRR, dönem/kur/pay bazı/kaynak kapsam kapıları. APPROXIMATE ve PRICE_ONLY, strict COMPLETE/VERIFIED ile karışmaz.
-- tuprs-approximate-history.json: 23 Ekim yeniden indirilen Yahoo fiyat/kurdan 240 aylık gözlem; 20 temettü tutarı/tarihi aracı kurum ve takvimle mutabakat; tek 2023 7:1 bedelsiz. Kaynaklar bağımsız sayılmaz. Aynı ajan incelemesi, kısmi kaynak güveni açık.
-- ApproximateBacktest: aylık/tek seferlik USD tutar, varsayılan aylık 1.000 USD, fiyat-only/nakit/yeniden yatırım, TL/USD katkı-son değer-kâr-getiri-XIRR, alacak ve kaynak/iz panelleri. ResearchPage/ResearchOverview bağlantıları yeni öncelikli panele yönelir; eski panel erişilebilir.
-- DividendBacktest.tsx, dividendBacktest.ts, historyIntegrity.ts ve eski tarihsel JSON değişmedi. Strict 10/15/20 MISSING_DATA devam eder. Eski yıllık 1.000 USD varsayımı ayrı korunur.
-- Yaklaşık aylık 1.000 USD, 2026-09-30: 10/15/20 yıl yeniden yatırım toplamları 463.813,89 / 792.721,50 / 1.397.157,13 USD; alacak dahil, brüt ve masrafsız. XIRR %25,84 / %18,02 / %15,50. Kaynak/varsayım olmadan bu değerleri güncel veya garanti sayma.
-- approximateBacktest.test ve ApproximateBacktest.test yazıldı; otomatik Vitest/coverage ÇALIŞTIRILMADI. tsc -b ve Vite build başarılı; büyük paket uyarısı var. Lint hatasız, üç eski mock tipi uyarısı sürüyor.
-- Ayrı 5199 sunucusunda 5 genişlik × 2 görünüm, mod/para birimi, TR/EN/koyu tema, sonuç değişmezliği ve strict içeriği kontrol edildi. Kanıt ve ham kaynaklar ../outputs/approximate-20261023/; teknik rapor ../YAKLASIK_GECMIS_YATIRIM_20261023.md.
-- Açık sınırlar: bağımsız doğrulama yok; aylık ödeme sonrası alım gecikmesi; nakit temettü yerel para biriminde faizsiz; sıfır vergi/komisyon; fiyat/FX kapanış saati farkı. USD kotasyonlu varlık için ek TL raporlama serisi yeni veri adaptöründe gerekir. Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok.
+- Üretim motorundan ayrı Python Fraction olay defteri ve Newton XIRR hesabı: 18 senaryoda USD tutarları sent düzeyinde, XIRR iki ondalıkta aynı. Betik ve sonuçlar: ../outputs/approximate-audit-20261023/independent.py, independent-results.json.
+- 2023 %600 bedelsiz (7:1) KAP/MKK belgesiyle kontrol edildi; ham pay/fiyat yöntemi ile düzeltilmiş pay/fiyat yöntemi eşleşiyor. Mart/Eylül 2023 temettüleri resmî finansal rapordaki yuvarlatılmış tutarlarla uyumlu.
+- Aylık 1.000 USD yeniden yatırım, 30 Eylül 2026 kesiti: 10/15/20 yıl 463.813,89 / 792.721,50 / 1.397.157,13 USD; XIRR %25,84 / %18,02 / %15,50. Ödenmemiş alacak dahil; brüt, masrafsız yaklaşık sonuçlar değişmedi.
+- Kaynak açığı: Digrin ile 67/240 aylık fiyat farklı; aynı fiyat/tarih tanımı ve bağımsız köken kanıtlanmadı. İş Yatırım 19/20 temettü tutarını yuvarlama içinde destekliyor, 2007 yok. TCMB 229 aynı gün gözlem; fiksing/kapanış farkı en çok %2,8138. Alternatif TCMB girdisi üretime alınmadı (bir önceki yayımlanmış kur 5 gün eski).
+- 30 Eylül hak / 2 Ekim ödeme ayrımı: kesitte ayrı alacak, henüz nakit veya yeniden alınmış pay değil. Eski ödeme tarihlerinin tamamı resmî kaynakla teyit edilmiş sayılmaz. Strict 10/15/20 MISSING_DATA devam eder; yaklaşık veri VERIFIED değildir.
+- Kullanıcı açık izniyle approximateBacktest, ApproximateBacktest, dividendBacktest, DividendBacktest test dosyaları çalıştırıldı: 4 dosya / 31 test geçti. Tam paket/coverage yok; bu tur build/lint yeniden çalıştırılmadı. Yeni uygulama kodu veya regresyon testi eklenmedi.
+- Rapor: [son kontrol](../YAKLASIK_SIMULASYON_SON_KONTROL_20261024.md); kaynaklar ve satır karşılaştırmaları ../outputs/approximate-audit-20261023/. Sonraki iş: fiyat farkları, eski ödeme belgeleri ve tam kurumsal işlem arşivi mutabakatı. Yeni hisseye kendiliğinden geçme.
+- Backend, Keycloak, runtime AI ve portföy hesapları değişmedi; commit/push yok.
 
 ---
 
@@ -63,3 +63,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-23 — Codex:** Analiz UX: ortak metrik eğitimi, EASY/DETAILED, genel bakış, uyumlu tarihsel/akran karşılaştırması ve simülasyon korunma regresyonları eklendi. Build/lint/tarayıcı kontrolleri yapıldı; Vitest/coverage çalıştırılmadı.
 
 - **2026-10-23 — Codex:** Ortak yaklaşık simülasyon, gerçek TUPRS aylık snapshot, iki seviyeli sunum ve regresyonlar eklendi. Üç vade yaklaşık hesaplanıyor; strict kapılar korunuyor.
+
+- **2026-10-24 — Codex:** Yaklaşık simülasyonda 18 senaryo bağımsız algoritmayla eşleşti; 31 ilgili Vitest testi izinle geçti. 67 aylık fiyat farkı ve kaynak eksikleri belgelendi; uygulama değiştirilmedi.
