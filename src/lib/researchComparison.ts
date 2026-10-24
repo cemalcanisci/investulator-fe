@@ -63,6 +63,11 @@ export function researchComparison(
     if (report.context.assetType === 'EQUITY') {
       allowed.add('profit');
       allowed.add('equity');
+      allowed.add('pb');
+      allowed.add('pe');
+      if (profile.methods.includes('EV_EBITDA')) {
+        allowed.add('evEbitda');
+      }
     }
     if (allowed.has('cashProxy')) {
       allowed.add('cfo');

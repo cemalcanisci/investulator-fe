@@ -909,7 +909,14 @@
       "capex2025": "Capital expenditure (outflow magnitude)",
       "dividendsPaid2025": "Dividends paid (cash flow)",
       "cashProxy2025": "Operating cash less capital expenditure",
-      "dividendCashCoverage2025": "Operating cash / dividends paid"
+      "dividendCashCoverage2025": "Operating cash / dividends paid",
+      "peTtm": "P/E — actual trailing 12 months",
+      "evEbitda": "EV/EBITDA",
+      "netDebtEbitda": "Net debt/EBITDA",
+      "roe": "Return on equity (ROE)",
+      "priceNav": "Price/net asset value",
+      "normalizedEbitda": "Normalized EBITDA",
+      "inventoryEffect": "Inventory effect"
     },
     "formulas": {
       "revenueGrowth": "(Revenue − prior revenue) ÷ prior revenue × 100",
@@ -938,7 +945,8 @@
       "profit2025Growth": "(current / restated previous - 1) × 100",
       "cfo2025Growth": "(current / restated previous - 1) × 100",
       "cashProxy2025": "operating cash − capital expenditure",
-      "dividendCashCoverage2025": "operating cash / dividends paid"
+      "dividendCashCoverage2025": "operating cash / dividends paid",
+      "peTtm": "(Price × shares) / four comparable quarters of parent earnings"
     },
     "methods": {
       "pe": "Normalised P/E",
@@ -1747,6 +1755,22 @@
       "caution": "One-off effects, scope changes and accounting bases can mislead.",
       "comparison": "Periods or peers with the same definition, currency, scope and accounting basis.",
       "formula": "Sum of compatible closing prices / trading days in the lookback window."
+    },
+    "evEbitda": {
+      "definition": "Enterprise value relative to operating earnings. Debt or temporarily high EBITDA can make a low ratio misleading.",
+      "purpose": "Assess debt and earnings together.",
+      "reading": "Enterprise value relative to operating earnings. Debt or temporarily high EBITDA can make a low ratio misleading.",
+      "caution": "Enterprise value relative to operating earnings. Debt or temporarily high EBITDA can make a low ratio misleading.",
+      "comparison": "A verified historical range and peer distribution on equivalent methods and accounting bases are not connected for this metric. No historical or sector ranking can be inferred.",
+      "formula": "(Market capitalization + net debt) / EBITDA"
+    },
+    "netDebtEbitda": {
+      "definition": "Debt relative to operating earnings. A lower ratio may support liquidity, but EBITDA is not cash and can decline cyclically.",
+      "purpose": "Assess debt and earnings together.",
+      "reading": "Debt relative to operating earnings. A lower ratio may support liquidity, but EBITDA is not cash and can decline cyclically.",
+      "caution": "Debt relative to operating earnings. A lower ratio may support liquidity, but EBITDA is not cash and can decline cyclically.",
+      "comparison": "A verified historical range and peer distribution on equivalent methods and accounting bases are not connected for this metric. No historical or sector ranking can be inferred.",
+      "formula": "Net debt / EBITDA"
     }
   },
   "researchUx": {
@@ -1906,5 +1930,88 @@
     "quality": "{{months}} monthly observations and FX, the action list and {{dividends}} dividend records were reviewed. Sources may share an upstream provider; independence is not established. This layer remains APPROXIMATE and does not change the integrity gates of the separate verified method.",
     "trace": "Calculation trace and coverage records",
     "verifiedLink": "Separate verified method and integrity checks"
+  },
+  "ratios": {
+    "title": "Company fundamentals and price together",
+    "more": "More ratios, scenarios and financial relationships",
+    "classification": {
+      "CHEAP": "Relatively cheap",
+      "FAIR": "Fairly priced",
+      "EXPENSIVE": "Relatively expensive",
+      "UNCERTAIN": "Uncertain — insufficient comparable evidence"
+    },
+    "status": {
+      "VERIFIED": "Verified inputs and calculation",
+      "INDICATIVE": "Indicative — limitations apply",
+      "SCENARIO": "Scenario — assumption dependent",
+      "MISSING_DATA": "Insufficient compatible data"
+    },
+    "qualitySeparate": "Company quality and share-price attractiveness are different. Earnings or cash growth alone does not prove that a stock is cheap.",
+    "reviewSeparate": "This label is not independent report approval. Figures are dated snapshots.",
+    "basedOn": "Supporting metrics",
+    "gaps": "Missing evidence and method limitations",
+    "noDoubleCount": "Ratios sharing inputs are not separate votes or independent evidence. Sector rules apply; strategy selection does not change figures.",
+    "relationships": "How do other metrics affect this interpretation?",
+    "comparisonMissing": "A verified historical range and peer distribution on equivalent methods and accounting bases are not connected for this metric. No historical or sector ranking can be inferred.",
+    "observation": "Calculated for this report snapshot: {{value}} {{unit}}. Read alongside its dates and quality limitations.",
+    "issues": {
+      "capitalDate": "Share count and price dates differ; intervening capital actions have not been fully verified.",
+      "marketDate": "Market and financial statement dates differ. This is not a current balance-sheet ratio.",
+      "purchasingPower": "TAS29 figures remain in statement-date purchasing power; they have not been restated to the price date.",
+      "halfYear": "The denominator is six-month earnings, not standard trailing-twelve-month P/E.",
+      "annualized": "Assumes second-half earnings equal the first half. This is a scenario, not TTM.",
+      "ttm": "Four consecutive verified quarters of parent earnings on one accounting and purchasing-power basis are missing.",
+      "dividendDate": "The dividend total is recorded as a year-end distribution plan, not reconciled to payments made by the price date. A historical paid yield is not calculated."
+    },
+    "missing": {
+      "report": "Common analysis report missing.",
+      "history": "Comparable historical valuation range missing.",
+      "peers": "Peer multiples on equivalent sector, period and method missing.",
+      "sustainability": "Normalization, one-off effects and sustainability review are incomplete.",
+      "sector": "Assessment policy for this business model is not configured.",
+      "normalizedEbitda": "Cycle- and inventory-normalized EBITDA missing.",
+      "inventoryEffect": "Comparable isolation of inventory gains/losses missing."
+    },
+    "findings": {
+      "growth": {
+        "positive": "Comparable-period earnings increased. This does not establish durability or repetition next year.",
+        "negative": "Comparable-period earnings declined. A low multiple must be considered alongside falling earnings.",
+        "zero": "Comparable earnings are unchanged; cash and operating details are needed to judge sustainability."
+      },
+      "debt": {
+        "negative": "Reported net financial debt is negative: cash and investments within its definition exceed financial debt. This does not make every liability risk-free or all cash distributable.",
+        "positive": "Net financial debt is positive. Maturity, interest and sustainable cash generation must be assessed together.",
+        "zero": "Defined net financial debt is zero. Maturities and available cash still matter."
+      },
+      "cash": {
+        "positive": "Operating cash less investment spending is positive. Working-capital movements and investment cycles prevent treating it automatically as sustainable free cash flow.",
+        "negative": "Operating cash less investment spending is negative. Growth investment or temporary working-capital needs may explain it.",
+        "zero": "Operating cash covers investment spending. Multi-period review is needed for sustainability."
+      },
+      "dividendCoverage": "Historical operating-cash coverage of dividends is available. It does not deduct capex or guarantee future distributions.",
+      "cyclical": "Refining margins and inventory effects move earnings. A low annualized P/E may reflect peak-cycle profit; normalized EBITDA and cash analysis are required.",
+      "uncertain": "Indicators can be explained, but missing historical/peer comparisons and sustainability evidence prevent a cheap/fair/expensive verdict.",
+      "profitWithCash": "Parent earnings and group operating cash less capex are both positive in the same period. Cash generation alongside earnings is supportive, but their scopes differ and temporary working-capital inflows prevent inferring guaranteed future dividends.",
+      "profitWithoutCash": "Earnings are positive while operating cash less capex is negative in the same period. Accounting earnings are not distributable cash; investigate working capital and investment needs."
+    },
+    "context": {
+      "general": "A single figure cannot describe the company. Period, sector, cash generation and comparable history must be read together.",
+      "peTtm": "Price relative to actual trailing earnings. A low value can reflect durable earnings or an expected decline.",
+      "peHalfYear": "The market value relative to six-month earnings. It cannot be compared directly with annual P/E multiples.",
+      "peRunRate": "Assumes earnings equal twice the first half. Growth and the sector cycle do not establish that this pace will continue.",
+      "priceBook": "The multiple assigned to book equity. Sustainable ROE may partly justify a premium; a discount can signal weak profitability or asset quality.",
+      "evEbitda": "Enterprise value relative to operating earnings. Debt or temporarily high EBITDA can make a low ratio misleading.",
+      "netDebtEbitda": "Debt relative to operating earnings. A lower ratio may support liquidity, but EBITDA is not cash and can decline cyclically.",
+      "roe": "Equity profitability. High ROE may reflect durable operations, leverage or a small equity base. Compatible earnings and average equity are required.",
+      "operatingMargin": "The share of sales converted to operating profit. Improvement may reflect pricing power or temporary sector conditions; check cash conversion.",
+      "cashProxy": "Operating cash less capex. A positive amount may support dividends, but temporary working-capital release or delayed investment can create the same appearance.",
+      "dividendYield": "Past gross distributions relative to the dated price. A high yield can reflect payout strength or a falling price; cash coverage and investment needs matter.",
+      "marketCap": "Price multiplied by share count is the market equity value, not book equity or enterprise value including debt."
+    },
+    "technicalInputs": "Technical input validity",
+    "primarySources": "Primary source evidence",
+    "checked": "Checks passed",
+    "pending": "Incomplete / pending review",
+    "bases": "Periods, accounting bases and source locations"
   }
 }

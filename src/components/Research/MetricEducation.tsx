@@ -4,6 +4,7 @@ import type { ResearchReport } from '@/domain/research';
 import { metricDefinition } from '@/domain/metricEducation';
 import { getAnalysis } from '@/services/analysis';
 import { interpretMetric } from '@/lib/metricInterpretation';
+import { ratioPresentation } from '@/lib/ratioPresentation';
 import { formatQuantity } from '@/lib/formatNumber';
 
 export function MetricEducation({
@@ -22,18 +23,22 @@ export function MetricEducation({
     calculation?.metricKey ?? fact?.metricKey,
   );
   const interpretation = interpretMetric(analysis, id);
+  const presentation = ratioPresentation(analysis, id);
   const key = definition?.key ?? 'unknown';
   return (
     <div className="mt-3 space-y-3 text-sm leading-6">
       <p>{t(`metricEducation.${key}.definition`)}</p>
       <p className="rounded-lg bg-info-soft p-3">
-        {t(`researchUx.interpretation.${interpretation.key}`, {
-          value: interpretation.value
-            ? formatQuantity(interpretation.value, i18n.language)
-            : '',
-          from: interpretation.periods[1] ?? '',
-          to: interpretation.periods[0] ?? '',
-        })}
+        {t(
+          `researchUx.interpretation.${presentation.value !== undefined && interpretation.key === 'missing' ? 'context' : interpretation.key}`,
+          {
+            value: interpretation.value
+              ? formatQuantity(interpretation.value, i18n.language)
+              : '',
+            from: interpretation.periods[1] ?? '',
+            to: interpretation.periods[0] ?? '',
+          },
+        )}
       </p>
       <details>
         <summary className="text-primary">

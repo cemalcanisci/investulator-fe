@@ -909,7 +909,14 @@
       "capex2025": "Yatırım harcaması (nakit çıkışı büyüklüğü)",
       "dividendsPaid2025": "Ödenen temettü (nakit akışı)",
       "cashProxy2025": "İşletme nakdi − yatırım harcaması",
-      "dividendCashCoverage2025": "Temettünün işletme nakdiyle karşılanması"
+      "dividendCashCoverage2025": "Temettünün işletme nakdiyle karşılanması",
+      "peTtm": "F/K — gerçek son 12 ay",
+      "evEbitda": "FD/FAVÖK",
+      "netDebtEbitda": "Net borç/FAVÖK",
+      "roe": "Özkaynak kârlılığı (ROE)",
+      "priceNav": "Fiyat/net aktif değer",
+      "normalizedEbitda": "Normalleştirilmiş FAVÖK",
+      "inventoryEffect": "Stok etkisi"
     },
     "formulas": {
       "revenueGrowth": "(Hasılat − önceki hasılat) ÷ önceki hasılat × 100",
@@ -938,7 +945,8 @@
       "profit2025Growth": "(current / restated previous - 1) × 100",
       "cfo2025Growth": "(current / restated previous - 1) × 100",
       "cashProxy2025": "operating cash − capital expenditure",
-      "dividendCashCoverage2025": "operating cash / dividends paid"
+      "dividendCashCoverage2025": "operating cash / dividends paid",
+      "peTtm": "(Fiyat × pay adedi) / aynı bazda dört çeyrek ana ortaklık kârı toplamı"
     },
     "methods": {
       "pe": "Normalize F/K",
@@ -1747,6 +1755,22 @@
       "caution": "Tek seferlik etkiler, kapsam değişiklikleri ve muhasebe bazları sonucu yanıltabilir.",
       "comparison": "Aynı tanım, para birimi, kapsam ve muhasebe bazındaki dönem veya sektör benzerleri.",
       "formula": "Uyumlu kapanış fiyatları toplamı / pencerenin işlem günü sayısı."
+    },
+    "evEbitda": {
+      "definition": "Şirket değeri ile faaliyet kazancını birlikte okur. Düşük oran yüksek borç veya geçici güçlü FAVÖK nedeniyle tek başına fırsat değildir.",
+      "purpose": "Borç ve kazancı birlikte değerlendirmek.",
+      "reading": "Şirket değeri ile faaliyet kazancını birlikte okur. Düşük oran yüksek borç veya geçici güçlü FAVÖK nedeniyle tek başına fırsat değildir.",
+      "caution": "Şirket değeri ile faaliyet kazancını birlikte okur. Düşük oran yüksek borç veya geçici güçlü FAVÖK nedeniyle tek başına fırsat değildir.",
+      "comparison": "Bu oran için aynı yöntem ve muhasebe bazında doğrulanmış tarihsel aralık ve emsal dağılımı henüz bağlı değil. Geçmişine göre düşük/yüksek veya sektöründen ucuz/pahalı diyemiyoruz.",
+      "formula": "(Market capitalization + net debt) / EBITDA"
+    },
+    "netDebtEbitda": {
+      "definition": "Borç yükünü faaliyet kazancıyla ilişkilendirir. Düşüklük likidite açısından destekleyici olabilir; FAVÖK nakit değildir ve döngüde düşebilir.",
+      "purpose": "Borç ve kazancı birlikte değerlendirmek.",
+      "reading": "Borç yükünü faaliyet kazancıyla ilişkilendirir. Düşüklük likidite açısından destekleyici olabilir; FAVÖK nakit değildir ve döngüde düşebilir.",
+      "caution": "Borç yükünü faaliyet kazancıyla ilişkilendirir. Düşüklük likidite açısından destekleyici olabilir; FAVÖK nakit değildir ve döngüde düşebilir.",
+      "comparison": "Bu oran için aynı yöntem ve muhasebe bazında doğrulanmış tarihsel aralık ve emsal dağılımı henüz bağlı değil. Geçmişine göre düşük/yüksek veya sektöründen ucuz/pahalı diyemiyoruz.",
+      "formula": "Net debt / EBITDA"
     }
   },
   "researchUx": {
@@ -1906,5 +1930,88 @@
     "quality": "{{months}} aylık gözlem ve kur, kurumsal işlem listesi ve {{dividends}} temettü kaydı incelendi. Kaynaklar aynı üst veri sağlayıcısından gelebilir; bağımsızlık ispatlanmış değildir. Bu katman APPROXIMATE olarak kalır; ayrıntılı doğrulanmış yöntemin bütünlük kapılarını değiştirmez.",
     "trace": "Hesap izi ve kapsam kayıtları",
     "verifiedLink": "Ayrı doğrulanmış yöntem ve bütünlük kontrolleri"
+  },
+  "ratios": {
+    "title": "Şirket ve fiyatı birlikte değerlendirelim",
+    "more": "Diğer oranlar, senaryolar ve finansal ilişkiler",
+    "classification": {
+      "CHEAP": "Görece ucuz",
+      "FAIR": "Makul fiyatlı",
+      "EXPENSIVE": "Görece pahalı",
+      "UNCERTAIN": "Belirsiz — yeterli karşılaştırılabilir veri yok"
+    },
+    "status": {
+      "VERIFIED": "Doğrulanmış girdi ve hesap",
+      "INDICATIVE": "Gösterge — sınırlamaları var",
+      "SCENARIO": "Senaryo — varsayıma bağlı",
+      "MISSING_DATA": "Yeterli uyumlu veri yok"
+    },
+    "qualitySeparate": "Şirketin finansal kalitesi ile hissenin fiyat uygunluğu farklıdır. Kâr veya nakit artışı tek başına hissenin ucuz olduğunu kanıtlamaz.",
+    "reviewSeparate": "Bu etiket bağımsız rapor denetimi onayı değildir. Rakamlar belirtilen tarihlerin anlık görüntüsüdür.",
+    "basedOn": "Dayanak göstergeler",
+    "gaps": "Sonucu sınırlayan eksikler ve yöntem",
+    "noDoubleCount": "Aynı girdiye dayanan oranlar ayrı oy veya bağımsız kanıt sayılmaz. Ortak sektör kuralları uygulanır; strateji seçimi rakamları değiştirmez.",
+    "relationships": "Diğer göstergeler bu yorumu nasıl değiştirir?",
+    "comparisonMissing": "Bu oran için aynı yöntem ve muhasebe bazında doğrulanmış tarihsel aralık ve emsal dağılımı henüz bağlı değil. Geçmişine göre düşük/yüksek veya sektöründen ucuz/pahalı diyemiyoruz.",
+    "observation": "Bu rapor kesitinde hesaplanan değer: {{value}} {{unit}}. Yanındaki tarih ve kalite sınırlarıyla birlikte okunmalıdır.",
+    "issues": {
+      "capitalDate": "Pay adedi ve fiyat farklı tarihlerden; aradaki sermaye hareketleri tam doğrulanmadı.",
+      "marketDate": "Piyasa fiyatı ile finansal tablonun tarihi farklı. Güncel bilanço oranı değildir.",
+      "purchasingPower": "TMS 29 tutarı bilanço tarihinin satın alma gücündedir; fiyat tarihine taşınmış bir tutar değildir.",
+      "halfYear": "Payda yalnız altı aylık kârdır; standart son 12 aylık F/K değildir.",
+      "annualized": "İkinci yarının ilk yarıyla aynı kârı ürettiği varsayılmıştır. Bu bir tahmin senaryosudur; TTM değildir.",
+      "ttm": "Aynı muhasebe ve satın alma gücü bazında doğrulanmış, kesintisiz dört çeyrek ana ortaklık kârı eksik.",
+      "dividendDate": "Temettü toplamı yıl sonu tarihli dağıtım planı olarak kayıtlı; fiyat tarihinde ödenmiş toplamla aynı kapsamda doğrulanmadı. Geçmiş ödeme verimi hesaplanmadı."
+    },
+    "missing": {
+      "report": "Ortak analiz raporu eksik.",
+      "history": "Şirketin karşılaştırılabilir tarihsel değerleme aralığı eksik.",
+      "peers": "Aynı sektör, dönem ve hesaplama yöntemiyle emsal çarpanları eksik.",
+      "sustainability": "Kârın normalleştirilmesi, tek seferlik etkiler ve sürdürülebilirlik incelemesi tamamlanmadı.",
+      "sector": "Bu iş modeli için değerlendirme profili henüz tanımlı değil.",
+      "normalizedEbitda": "Döngü ve stok etkilerinden arındırılmış FAVÖK yok.",
+      "inventoryEffect": "Stok kazancı/kaybı etkisinin karşılaştırılabilir ayrıştırması eksik."
+    },
+    "findings": {
+      "growth": {
+        "positive": "Karşılaştırılabilir dönem kârı artmış. Bu olumlu bir gözlemdir; artışın kalıcı olması veya gelecek yıl tekrarlanması doğrulanmış değil.",
+        "negative": "Karşılaştırılabilir dönem kârı gerilemiş. Düşük görünen çarpan kâr düşüşüyle birlikte değerlendirilmelidir.",
+        "zero": "Karşılaştırılabilir dönem kârında değişim görülmüyor; sürdürülebilirlik için nakit ve faaliyet ayrıntıları gerekir."
+      },
+      "debt": {
+        "negative": "Raporlanan net finansal borç negatif: tanım kapsamındaki nakit ve yatırımlar finansal borcu aşıyor. Bu, tüm yükümlülüklerin risksiz olduğu veya bütün nakdin dağıtılabileceği anlamına gelmez.",
+        "positive": "Net finansal borç pozitif. Borç ödeme kapasitesi için vade, faiz ve sürdürülebilir nakit üretimi birlikte incelenmeli.",
+        "zero": "Tanımlanan net finansal borç sıfır. Vade ve nakdin kullanılabilirliği yine önemlidir."
+      },
+      "cash": {
+        "positive": "Faaliyet nakdi eksi yatırım harcaması pozitif. İşletme sermayesi hareketleri ve yatırım döngüsü incelenmeden kalıcı serbest nakit akışı sayılmaz.",
+        "negative": "Faaliyet nakdi eksi yatırım harcaması negatif. Büyüme yatırımı veya geçici işletme sermayesi ihtiyacı neden olabilir; tek başına kötü şirket sonucu değildir.",
+        "zero": "Faaliyet nakdi yatırım harcamasını karşılamış; sürdürülebilirlik için dönemler arası inceleme gerekir."
+      },
+      "dividendCoverage": "Geçmiş faaliyet nakdinin temettü ödemelerini karşılama oranı mevcut. Bu oran yatırım harcamasını düşmez ve gelecek temettüyü garanti etmez.",
+      "cyclical": "Rafineri marjları ve stok etkileri kârı oynatır. Düşük yıllıklandırılmış F/K, döngünün zirvesindeki kârın sonucu olabilir; normalleştirilmiş FAVÖK ve nakit analizi gerekir.",
+      "uncertain": "Mevcut göstergeler açıklanabilir; fakat tarihsel/emsal karşılaştırma ve sürdürülebilirlik eksikleri nedeniyle fiyatı ucuz, makul veya pahalı diye sınıflandıramıyoruz.",
+      "profitWithCash": "Aynı dönemde hem ana ortaklık kârı hem grup faaliyet nakdi eksi yatırım harcaması pozitif. Kârın yanında nakit de üretilmiş olması destekleyici; ancak kapsamları farklıdır ve işletme sermayesinden gelen geçici nakit bunu gelecek temettü garantisine dönüştürmez.",
+      "profitWithoutCash": "Aynı dönemde kâr pozitifken faaliyet nakdi eksi yatırım harcaması negatif. Muhasebe kârı dağıtılabilir nakit değildir; işletme sermayesi ve yatırım ihtiyacının nedeni incelenmelidir."
+    },
+    "context": {
+      "general": "Tek rakam şirketin tamamını anlatmaz. Dönem, sektör, nakit üretimi ve karşılaştırılabilir geçmiş birlikte okunmalıdır.",
+      "peTtm": "Fiyatın gerçek son 12 aylık kâra oranıdır. Düşüklük kalıcı kazanca göre avantaj veya beklenen kâr düşüşüne karşı piyasa indirimi olabilir.",
+      "peHalfYear": "Bu altı aylık kârın kaç katının fiyatlandığını gösterir. Yıllık F/K ile veya yıllık emsal çarpanıyla doğrudan karşılaştırılamaz.",
+      "peRunRate": "İlk yarı kârının iki katı varsayımıyla fiyat/kâr senaryosudur. Kâr büyümesi ve rafineri döngüsü aynı hızın devamını kanıtlamaz.",
+      "priceBook": "Piyasanın defter özkaynağına biçtiği katsayıdır. Sürdürülebilir yüksek ROE yüksek katsayıyı kısmen açıklayabilir; düşük katsayı varlık kalitesi veya düşük kârlılık riski taşıyabilir.",
+      "evEbitda": "Şirket değeri ile faaliyet kazancını birlikte okur. Düşük oran yüksek borç veya geçici güçlü FAVÖK nedeniyle tek başına fırsat değildir.",
+      "netDebtEbitda": "Borç yükünü faaliyet kazancıyla ilişkilendirir. Düşüklük likidite açısından destekleyici olabilir; FAVÖK nakit değildir ve döngüde düşebilir.",
+      "roe": "Özkaynağın kâr üretme gücüdür. Yüksek oran sürdürülebilir faaliyetlerden veya kaldıraç/küçük özkaynak tabanından kaynaklanabilir. Ortalama özkaynak ve uyumlu dönem gerekir.",
+      "operatingMargin": "Satışların faaliyet kârına dönüşen bölümüdür. Artış fiyatlama gücünü veya geçici sektör koşullarını yansıtabilir; nakit dönüşümüyle birlikte okunmalıdır.",
+      "cashProxy": "Faaliyet nakdi eksi yatırım harcamasıdır. Pozitif fark temettüye alan sağlayabilir; geçici işletme sermayesi çözülmesi veya ertelenmiş yatırım aynı görünümü oluşturabilir.",
+      "dividendYield": "Geçmiş brüt dağıtımın belirtilen fiyata oranıdır. Yükseklik güçlü dağıtım kadar fiyat düşüşünü de yansıtabilir; nakit karşılama ve yatırım ihtiyacı önemlidir.",
+      "marketCap": "Fiyat × pay adedi şirketin borsadaki toplam özkaynak değerini gösterir. Defter özkaynağı veya işletmenin borç dahil toplam değeri değildir."
+    },
+    "technicalInputs": "Girdilerin teknik geçerliliği",
+    "primarySources": "Birincil kaynak kanıtı",
+    "checked": "Kontroller geçti",
+    "pending": "Eksik / inceleme bekliyor",
+    "bases": "Dönem, muhasebe bazı ve kaynak satırları"
   }
 }

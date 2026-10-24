@@ -37,7 +37,7 @@ describe('ResearchPage', () => {
         name: i18n.t('analysis.strategySelector'),
       });
       await userEvent.selectOptions(strategy, 'VALUE');
-      const simulation = document.getElementById('dividend-backtest');
+      const simulation = document.getElementById('approximate-backtest');
       const amount = document.querySelector(
         '#overview .tabular-nums',
       )?.textContent;
@@ -48,17 +48,18 @@ describe('ResearchPage', () => {
         expect(
           document.querySelector('#overview .tabular-nums')?.textContent,
         ).toBe(amount);
-        expect(document.getElementById('dividend-backtest')).toBe(simulation);
+        expect(document.getElementById('approximate-backtest')).toBe(
+          simulation,
+        );
         for (const count of [10, 15, 20]) {
           expect(
             screen.getByRole('heading', {
-              name: i18n.t('backtest.years', { count }),
+              name: i18n.t('approximate.period', { years: count }),
             }),
           ).toBeVisible();
         }
-        expect(
-          screen.getAllByText(i18n.t('backtest.status.MISSING_DATA')),
-        ).toHaveLength(3);
+        expect(document.getElementById('dividend-backtest')).toBeNull();
+        expect(simulation).not.toBeNull();
         for (const id of [
           'overview',
           'financials',
@@ -187,9 +188,17 @@ describe('ResearchPage', () => {
     expect(
       screen.getByRole('link', { name: i18n.t('research.back') }),
     ).toHaveAttribute('href', ROUTE_PATHS.strategies);
-    const details = screen.getAllByText(
+    const priceCard = screen
+      .getByRole('heading', {
+        name: i18n.t('research.metrics.price'),
+      })
+      .closest('article');
+    if (!priceCard) {
+      throw new Error('Missing price card');
+    }
+    const details = within(priceCard).getByText(
       i18n.t('research.calculationDetails'),
-    )[0];
+    );
     if (!details) {
       throw new Error('Missing calculation toggle');
     }

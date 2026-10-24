@@ -264,9 +264,6 @@ export function ApproximateBacktest({
           </ResearchDisclosurePanel>
         </>
       )}
-      <a className="text-sm text-primary underline" href="#dividend-backtest">
-        {t('approximate.verifiedLink')}
-      </a>
     </section>
   );
 }

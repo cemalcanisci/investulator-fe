@@ -40,6 +40,8 @@ const KEYS = [
   'peHalfYear',
   'priceChange',
   'movingAverage',
+  'evEbitda',
+  'netDebtEbitda',
 ] as const;
 export const METRIC_DICTIONARY: Readonly<Record<string, MetricDefinition>> =
   Object.fromEntries(
@@ -60,6 +62,10 @@ export const METRIC_DICTIONARY: Readonly<Record<string, MetricDefinition>> =
   );
 
 const ALIASES: Readonly<Record<string, string>> = {
+  peTtm: 'pe',
+  evEbitda: 'evEbitda',
+  netDebtEbitda: 'netDebtEbitda',
+  priceNav: 'nav',
   price: 'price',
   shares: 'shares',
   revenue: 'revenue',

@@ -45,8 +45,10 @@ describe('ApproximateBacktest', () => {
         screen.getAllByText(i18n.t('approximate.issues.INPUT')),
       ).toHaveLength(3);
       expect(
-        screen.getByRole('link', { name: i18n.t('approximate.verifiedLink') }),
-      ).toHaveAttribute('href', '#dividend-backtest');
+        screen.queryByRole('link', {
+          name: i18n.t('approximate.verifiedLink'),
+        }),
+      ).not.toBeInTheDocument();
     },
   );
   it('shows an honest empty state without a snapshot', () => {

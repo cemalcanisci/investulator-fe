@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
 import { getAnalysis } from '@/services/analysis';
 import { interpretMetric } from '@/lib/metricInterpretation';
-import { formatQuantity } from '@/lib/formatNumber';
 import { factSourceIssues } from '@/lib/analysisValidation';
 
 export function ResearchOverview({
@@ -22,11 +21,6 @@ export function ResearchOverview({
           report.sources.map((s) => s.id),
         ).length === 0,
     ).length ?? 0;
-  const netDebt = interpretMetric(analysis, 'netFinancialDebt');
-  const coverageId = analysis?.calculations.find(
-    (c) => c.metricKey === 'coverage',
-  )?.id;
-  const coverage = interpretMetric(analysis, coverageId ?? '');
   const answers = [
     [
       'business',
@@ -34,23 +28,7 @@ export function ResearchOverview({
         ? t(`${report.contentKey}.company.activity`)
         : t('researchUx.interpretation.missing'),
     ],
-    [
-      'health',
-      `${t('research.metrics.profitGrowth')}: ${t(`researchUx.interpretation.${growth.key}`, { value: growth.value ? formatQuantity(growth.value, i18n.language) : '', from: growth.periods[1] ?? '', to: growth.periods[0] ?? '' })}`,
-    ],
-    ['strengths', t(`researchUx.interpretation.${netDebt.key}`)],
     ['risks', t(`researchUx.sector.${growth.sectorKey}`)],
-    [
-      'dividend',
-      coverage.value
-        ? t('researchUx.overview.dividendCoverage', {
-            value: formatQuantity(coverage.value, i18n.language),
-            period: coverage.periods[0],
-          })
-        : t('researchUx.overview.dividendAnswer'),
-    ],
-    ['valuation', t('researchUx.overview.valuationAnswer')],
-    ['missing', t('researchUx.overview.missingAnswer')],
   ];
   return (
     <div className="space-y-4">

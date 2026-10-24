@@ -8,16 +8,16 @@
 
 **Son güncelleyen:** Codex — **Tarih:** 2026-10-24
 
-Yaklaşık simülasyonun son hesaplama denetimi tamamlandı; veri doğrulaması kısmi. Uygulama kodu, UX, strict motor ve mevcut veri seti değiştirilmedi. Sonraki hisse/özellik için kullanıcı onayı bekleniyor.
+Analiz detayının oranlar ve bütüncül değerlendirme geliştirmesi tamamlandı; kullanıcı incelemesi bekleniyor. TUPRS analizi veri açısından kısmi; sonraki hisseye geçme.
 
-- Üretim motorundan ayrı Python Fraction olay defteri ve Newton XIRR hesabı: 18 senaryoda USD tutarları sent düzeyinde, XIRR iki ondalıkta aynı. Betik ve sonuçlar: ../outputs/approximate-audit-20261023/independent.py, independent-results.json.
-- 2023 %600 bedelsiz (7:1) KAP/MKK belgesiyle kontrol edildi; ham pay/fiyat yöntemi ile düzeltilmiş pay/fiyat yöntemi eşleşiyor. Mart/Eylül 2023 temettüleri resmî finansal rapordaki yuvarlatılmış tutarlarla uyumlu.
-- Aylık 1.000 USD yeniden yatırım, 30 Eylül 2026 kesiti: 10/15/20 yıl 463.813,89 / 792.721,50 / 1.397.157,13 USD; XIRR %25,84 / %18,02 / %15,50. Ödenmemiş alacak dahil; brüt, masrafsız yaklaşık sonuçlar değişmedi.
-- Kaynak açığı: Digrin ile 67/240 aylık fiyat farklı; aynı fiyat/tarih tanımı ve bağımsız köken kanıtlanmadı. İş Yatırım 19/20 temettü tutarını yuvarlama içinde destekliyor, 2007 yok. TCMB 229 aynı gün gözlem; fiksing/kapanış farkı en çok %2,8138. Alternatif TCMB girdisi üretime alınmadı (bir önceki yayımlanmış kur 5 gün eski).
-- 30 Eylül hak / 2 Ekim ödeme ayrımı: kesitte ayrı alacak, henüz nakit veya yeniden alınmış pay değil. Eski ödeme tarihlerinin tamamı resmî kaynakla teyit edilmiş sayılmaz. Strict 10/15/20 MISSING_DATA devam eder; yaklaşık veri VERIFIED değildir.
-- Kullanıcı açık izniyle approximateBacktest, ApproximateBacktest, dividendBacktest, DividendBacktest test dosyaları çalıştırıldı: 4 dosya / 31 test geçti. Tam paket/coverage yok; bu tur build/lint yeniden çalıştırılmadı. Yeni uygulama kodu veya regresyon testi eklenmedi.
-- Rapor: [son kontrol](../YAKLASIK_SIMULASYON_SON_KONTROL_20261024.md); kaynaklar ve satır karşılaştırmaları ../outputs/approximate-audit-20261023/. Sonraki iş: fiyat farkları, eski ödeme belgeleri ve tam kurumsal işlem arşivi mutabakatı. Yeni hisseye kendiliğinden geçme.
-- Backend, Keycloak, runtime AI ve portföy hesapları değişmedi; commit/push yok.
+- Yeni lib/ratioPresentation: VERIFIED/INDICATIVE/SCENARIO/MISSING_DATA sunumu; mevcut strict hesap/source kapıları değişmedi. PD/DD 1,63 ve altı aylık katsayı 14,93 gösterge; H1 × 2 F/K 7,46 senaryo; piyasa değeri 744,22 milyar TL gösterge. Standart TTM ayrı ve eksik.
+- Yeni lib/companyAssessment, CompanyAssessment ve RatioContext: sektöre uygun oranlar, kâr/nakit/borç/temettü ilişkileri, tekilleştirilmiş girdi izi ve kaynak belgeli kıyas/kalite kapıları. TUPRS fiyat sınıfı Belirsiz; emsal/tarihsel aralık ve normalleştirme eksik. Strateji sonucu değiştirmez.
+- ResearchMetric/MetricEducation/metricEducation/TR/EN ortak açıklamalar: kaynak, tarih, formül, baz, teknik kontrol ve birincil kaynak ayrımı. ResearchOverview finansal tekrarları yeni özete birleştirildi; faaliyet/risk açıklamaları korundu.
+- ResearchPage'de yalnız ApproximateBacktest görünür; altındaki strict anchor kaldırıldı. DividendBacktest bileşeni/motoru/servisi/verisi/testleri ve historyIntegrity korundu. Yaklaşık motor/JSON değişmedi; bütün seçenekler korunur.
+- Resmî 2026 H1 ve 2025 yıllık raporlar yeniden incelendi. Farklı TMS29 bazları doğrudan toplanmadı; dört çeyrek TTM bu tur modele eklenmedi. dividendTotal yıl sonu tarihli plan olduğundan geçmiş ödenmiş verim diye kullanılmadı; kart nedeni açıklıyor.
+- Yeni ratioPresentation ve RatioContext testleri; ResearchPage ve ApproximateBacktest testleri güncellendi. Bu görevde Vitest/coverage ÇALIŞTIRILMADI; önceki 31 test sonucu yeni kod için geçiş değildir. Build başarılı; lint sıfır hata, üç eski transfer mock uyarısı. Paket boyutu uyarısı sürüyor.
+- Ayrı 5199/başsız Chrome ile beş genişlik × iki görünüm, TR/EN ve koyu tema: taşma/runtime hata yok; tek yaklaşık bölüm, strict bölüm/bozuk anchor yok. Kanıtlar ../outputs/ratios-20261024/. Sonraki iş: kullanıcı UI onayı, izin verilirse dar regresyonlar, eksik kıyas ve TTM kaynak mutabakatı.
+- Rapor/teknik tasarım: [oranlar ve değerlendirme](../ORANLAR_VE_BUTUNCUL_DEGERLENDIRME_20261024.md). Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok.
 
 ---
 
@@ -65,3 +65,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-23 — Codex:** Ortak yaklaşık simülasyon, gerçek TUPRS aylık snapshot, iki seviyeli sunum ve regresyonlar eklendi. Üç vade yaklaşık hesaplanıyor; strict kapılar korunuyor.
 
 - **2026-10-24 — Codex:** Yaklaşık simülasyonda 18 senaryo bağımsız algoritmayla eşleşti; 31 ilgili Vitest testi izinle geçti. 67 aylık fiyat farkı ve kaynak eksikleri belgelendi; uygulama değiştirilmedi.
+
+- **2026-10-24 — Codex:** Oran durumları, ortak bütüncül değerlendirme ve tek simülasyon arayüzü tamamlandı; kaynak eksikleri açık, yeni regresyonlar yazıldı fakat çalıştırılmadı.

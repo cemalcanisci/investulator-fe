@@ -21,10 +21,9 @@ import { ResearchMetric } from '@/components/Research/ResearchMetric';
 import { ResearchDisclosures } from '@/components/Research/ResearchDisclosures';
 import { ResearchDebt } from '@/components/Research/ResearchDebt';
 import { ResearchLongTerm } from '@/components/Research/ResearchLongTerm';
-import { DividendBacktest } from '@/components/Research/DividendBacktest';
+import { CompanyAssessment } from '@/components/Research/CompanyAssessment';
 import { ApproximateBacktest } from '@/components/Research/ApproximateBacktest';
 import { getApproximateHistory } from '@/services/approximateHistory';
-import { getDividendHistory } from '@/services/dividendHistory';
 import {
   ResearchSummary,
   ResearchValuationGuide,
@@ -183,6 +182,7 @@ export function ResearchPage(): JSX.Element {
     overview: (
       <ResearchSection key="overview" id="overview">
         <ResearchOverview report={report} />
+        <CompanyAssessment report={report} />
         {metrics(profile.headline)}
         <ResearchDisclosurePanel title={t('researchUx.companyDetails')}>
           <ResearchSummary report={report} />
@@ -289,7 +289,6 @@ export function ResearchPage(): JSX.Element {
             <ApproximateBacktest
               history={getApproximateHistory(report.assetId)}
             />
-            <DividendBacktest history={getDividendHistory(report.assetId)} />
           </>
         )}
         {metrics(profile.dividend)}
