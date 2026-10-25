@@ -45,7 +45,6 @@ export function trailingTwelveMonths(
     if (
       !Number.isFinite(expectedEnd.getTime()) ||
       date.getUTCDate() !== 1 ||
-      date.getUTCMonth() % 3 !== 0 ||
       expectedEnd.toISOString().slice(0, 10) !== fact.basis.end
     ) {
       issues.push('PERIOD');

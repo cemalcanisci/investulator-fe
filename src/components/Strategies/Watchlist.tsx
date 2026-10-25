@@ -5,6 +5,7 @@ import { researchPath } from '@/app/routePaths';
 import { hasResearch } from '@/services/research';
 import { AssetTypeBadge } from '@/components/AssetTypeBadge/AssetTypeBadge';
 import { Button } from '@/components/ui/Button';
+import { ResearchTransfer } from '@/components/Strategies/ResearchTransfer';
 import type {
   StrategyGroup,
   StrategySnapshot,
@@ -42,28 +43,22 @@ export function Watchlist({
         >
           {t('strategies.refreshAsset')}
         </Button>
-        {groupsFor(asset)
-          .filter(
-            (group) =>
-              selectedGroupId === 'ALL' || group.id === selectedGroupId,
-          )
-          .map((group) => (
-            <Button
-              key={group.id}
-              size="small"
-              type="text"
-              className="h-auto max-w-full whitespace-normal text-start [&>span]:break-words [&>span]:whitespace-normal"
-              onClick={() => onRemove(group, asset)}
-              aria-label={t('strategies.removeLabel', {
-                symbol: asset.symbol,
-                group: group.name,
-              })}
-            >
-              {selectedGroupId === 'ALL'
-                ? t('strategies.removeFrom', { group: group.name })
-                : t('common.remove')}
-            </Button>
-          ))}
+        <ResearchTransfer
+          assetId={asset.id}
+          removeItems={groupsFor(asset)
+            .filter(
+              (group) =>
+                selectedGroupId === 'ALL' || group.id === selectedGroupId,
+            )
+            .map((group) => ({
+              key: group.id,
+              onClick: (): void => onRemove(group, asset),
+              label:
+                selectedGroupId === 'ALL'
+                  ? t('strategies.removeFrom', { group: group.name })
+                  : t('common.remove'),
+            }))}
+        />
       </div>
     );
   }

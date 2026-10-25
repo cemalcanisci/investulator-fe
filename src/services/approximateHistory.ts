@@ -3,6 +3,8 @@ import type {
   ApproximateCoverage,
 } from '@/domain/approximateHistory';
 import snapshot from '@/data/research/tuprs-approximate-history.json';
+import { researchBundle } from '@/services/researchBundle';
+import { isApproximateHistory } from '@/lib/approximateHistorySchema';
 
 function coverage(value: typeof snapshot.coverage.prices): ApproximateCoverage {
   const state = value.state;
@@ -46,6 +48,11 @@ const histories: readonly ApproximateHistory[] = [readSnapshot()];
 export function getApproximateHistory(
   assetId: string,
 ): ApproximateHistory | undefined {
-  const history = histories.find((item) => item.assetId === assetId);
+  const imported = researchBundle.approximate.find(
+    (item) => isApproximateHistory(item) && item.assetId === assetId,
+  );
+  const history = isApproximateHistory(imported)
+    ? imported
+    : histories.find((item) => item.assetId === assetId);
   return history ? structuredClone(history) : undefined;
 }

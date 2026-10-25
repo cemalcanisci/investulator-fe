@@ -28,9 +28,14 @@ export function RatioContext({
   return (
     <div className="mt-3 space-y-2 text-sm leading-6">
       <p>
-        {t(`ratios.context.${id}`, {
-          defaultValue: t('ratios.context.general'),
-        })}
+        {t(
+          id === 'peTtm' && result.periodBasis
+            ? `ratios.periodContext.${result.periodBasis}`
+            : `ratios.context.${id}`,
+          {
+            defaultValue: t('ratios.context.general'),
+          },
+        )}
       </p>
       {result.value !== undefined && (
         <p>

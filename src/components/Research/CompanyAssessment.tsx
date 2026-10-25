@@ -22,9 +22,20 @@ export function CompanyAssessment({
     <section aria-label={t('ratios.title')} className="space-y-4">
       <div className="rounded-xl border border-line bg-primary-soft p-5">
         <h3 className="text-lg font-semibold">{t('ratios.title')}</h3>
-        <p className="mt-2 text-2xl font-semibold">
-          {t(`ratios.classification.${assessment.classification}`)}
-        </p>
+        <div className="mt-3 grid gap-4 sm:grid-cols-2">
+          <div>
+            <h4 className="text-sm">{t('ratios.financialOutlookTitle')}</h4>
+            <p className="mt-1 text-xl font-semibold">
+              {t(`ratios.financialOutlook.${assessment.financialOutlook}`)}
+            </p>
+          </div>
+          <div>
+            <h4 className="text-sm">{t('ratios.priceOutlookTitle')}</h4>
+            <p className="mt-1 text-xl font-semibold">
+              {t(`ratios.priceOutlook.${assessment.priceOutlook}`)}
+            </p>
+          </div>
+        </div>
         <p className="mt-2 text-sm leading-7">{t('ratios.qualitySeparate')}</p>
         {assessment.classification === 'UNCERTAIN' && (
           <p className="mt-2 text-sm leading-7">

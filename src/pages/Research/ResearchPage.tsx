@@ -3,6 +3,8 @@ import type { ResearchView } from '@/components/Research/researchView';
 import { ResearchDisclosurePanel } from '@/components/Research/ResearchDisclosurePanel';
 import { ResearchOverview } from '@/components/Research/ResearchOverview';
 import { ResearchComparison } from '@/components/Research/ResearchComparison';
+import { peerCandidates } from '@/lib/researchComparison';
+import { researchBundle } from '@/services/researchBundle';
 import { FinancialHistory } from '@/components/Research/FinancialHistory';
 import { RiArrowLeftLine, RiFileSearchLine } from '@remixicon/react';
 import { useState } from 'react';
@@ -274,7 +276,13 @@ export function ResearchPage(): JSX.Element {
           className="space-y-3 scroll-mt-36"
         >
           <h3 className="font-semibold">{t('researchUx.peers')}</h3>
-          <ResearchComparison candidates={[]} mode="PEERS" />
+          <ResearchComparison
+            candidates={peerCandidates(
+              report ? getAnalysis(report) : undefined,
+              researchBundle.reports,
+            )}
+            mode="PEERS"
+          />
         </section>
         <Card className="space-y-3 p-5">
           {note('growth')}

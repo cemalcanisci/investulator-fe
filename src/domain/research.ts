@@ -58,6 +58,7 @@ export interface ResearchDisclosure {
 }
 
 export interface ResearchReport {
+  readonly narrativeStale?: boolean;
   readonly longTerm?: {
     readonly horizonYears: readonly [number, number];
     readonly status: 'CONDITIONAL';

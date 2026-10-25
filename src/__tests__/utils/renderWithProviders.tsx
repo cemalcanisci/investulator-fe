@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { MemoryRouter } from 'react-router-dom';
 import { CurrencyProvider } from '@/currency/CurrencyProvider';
 import { ThemeProvider } from '@/theme/ThemeProvider';
+import { ConfigProvider } from '@/components/ui/ConfigProvider';
 
 export function createTestQueryClient(): QueryClient {
   return new QueryClient({ defaultOptions: { queries: { retry: false } } });
@@ -17,7 +18,11 @@ export function renderWithProviders(
     <QueryClientProvider client={createTestQueryClient()}>
       <MemoryRouter initialEntries={[route]}>
         <ThemeProvider>
-          <CurrencyProvider>{ui}</CurrencyProvider>
+          <CurrencyProvider>
+            <ConfigProvider theme={{ token: { motion: false } }}>
+              {ui}
+            </ConfigProvider>
+          </CurrencyProvider>
         </ThemeProvider>
       </MemoryRouter>
     </QueryClientProvider>,

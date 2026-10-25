@@ -6,18 +6,20 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-24
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-25
 
-Analiz detayının oranlar ve bütüncül değerlendirme geliştirmesi tamamlandı; kullanıcı incelemesi bekleniyor. TUPRS analizi veri açısından kısmi; sonraki hisseye geçme.
+XLSX/dönem seçimi/bütüncül değerlendirme kullanıcı incelemesine hazır. TUPRS araştırması kısmi; başka hisseye geçme.
 
-- Yeni lib/ratioPresentation: VERIFIED/INDICATIVE/SCENARIO/MISSING_DATA sunumu; mevcut strict hesap/source kapıları değişmedi. PD/DD 1,63 ve altı aylık katsayı 14,93 gösterge; H1 × 2 F/K 7,46 senaryo; piyasa değeri 744,22 milyar TL gösterge. Standart TTM ayrı ve eksik.
-- Yeni lib/companyAssessment, CompanyAssessment ve RatioContext: sektöre uygun oranlar, kâr/nakit/borç/temettü ilişkileri, tekilleştirilmiş girdi izi ve kaynak belgeli kıyas/kalite kapıları. TUPRS fiyat sınıfı Belirsiz; emsal/tarihsel aralık ve normalleştirme eksik. Strateji sonucu değiştirmez.
-- ResearchMetric/MetricEducation/metricEducation/TR/EN ortak açıklamalar: kaynak, tarih, formül, baz, teknik kontrol ve birincil kaynak ayrımı. ResearchOverview finansal tekrarları yeni özete birleştirildi; faaliyet/risk açıklamaları korundu.
-- ResearchPage'de yalnız ApproximateBacktest görünür; altındaki strict anchor kaldırıldı. DividendBacktest bileşeni/motoru/servisi/verisi/testleri ve historyIntegrity korundu. Yaklaşık motor/JSON değişmedi; bütün seçenekler korunur.
-- Resmî 2026 H1 ve 2025 yıllık raporlar yeniden incelendi. Farklı TMS29 bazları doğrudan toplanmadı; dört çeyrek TTM bu tur modele eklenmedi. dividendTotal yıl sonu tarihli plan olduğundan geçmiş ödenmiş verim diye kullanılmadı; kart nedeni açıklıyor.
-- Yeni ratioPresentation ve RatioContext testleri; ResearchPage ve ApproximateBacktest testleri güncellendi. Bu görevde Vitest/coverage ÇALIŞTIRILMADI; önceki 31 test sonucu yeni kod için geçiş değildir. Build başarılı; lint sıfır hata, üç eski transfer mock uyarısı. Paket boyutu uyarısı sürüyor.
-- Ayrı 5199/başsız Chrome ile beş genişlik × iki görünüm, TR/EN ve koyu tema: taşma/runtime hata yok; tek yaklaşık bölüm, strict bölüm/bozuk anchor yok. Kanıtlar ../outputs/ratios-20261024/. Sonraki iş: kullanıcı UI onayı, izin verilirse dar regresyonlar, eksik kıyas ve TTM kaynak mutabakatı.
-- Rapor/teknik tasarım: [oranlar ve değerlendirme](../ORANLAR_VE_BUTUNCUL_DEGERLENDIRME_20261024.md). Backend/Keycloak/runtime AI/portföy değişmedi; commit/push yok.
+- financialPeriodSelection ve financialInputSelection: yayımlanma kesimi, mali yıl/YTD, ortak bazlı TTM, son yıllık fallback, semantik güncel girdiler ve eksik önceki dönem kapısı. ratioPresentation ortak piyasa değeri/PD-DD/F-K/ROE/EV oranları; eski doğru senaryolar korunur.
+- TUPRS v7: 2025 yıllık raporun 2026-02-06 KAP yayımlanma kanıtı. Yıllık F/K 25,21 gösterge, PD/DD 1,63, H1 katsayısı 14,93, H1×2 senaryosu 7,46. TTM farklı TMS29 bazları nedeniyle eksik.
+- companyAssessment finansal görünümü fiyat görünümünden ayırır: mevcut TUPRS olumlu sinyaller ağırlıkta / karşılaştırma eksik. Yeni hedef fiyat yok.
+- researchWorkbook/researchWorkbookFile: sürüm1 kayıpsız alan şeması, 13 sayfa, tekli/toplu export/import, şema/kimlik/formül/period/source kontrolleri, idempotent merge ve atomik ret. Peers açık rapor sürümü referanslarıyla mevcut kıyas bileşenine bağlandı.
+- dev/researchStore: yalnız INVESTULATOR_RESEARCH_WRITE=1 ve loopback Vite'da token/Origin/hash kontrollü ön izleme→onay→atomik dosya yazımı. Kalıcı dosya src/data/research/imported-research.json, yedek data/research-backups. Undo sunucu yeniden başlatılsa da kalır. Üretim API'si değil; backend değişmedi.
+- researchBundle tek okuma katmanı: raporlar, katalog, yaklaşık geçmiş. Portföy bağımsız. Watchlist Update korunur, Import/Export/Remove menüye alındı. Import yeni finansal dönemi silmeden ekler; değişen fact UNVERIFIED, belge unreviewedEvidence, rapor/section yeniden inceleme, narrativeStale uyarısı.
+- 90/90 ilgili test geçti; 0 başarısız. Tam suite/coverage çalıştırılmadı. Son sonuç ../outputs/xlsx-20261025/test-summary.json. Test izni yalnız ilgili kapsam içindi. Build başarılı; lint sıfır hata ve üç mevcut transfer mock uyarısı. Paket boyutu uyarısı sürüyor.
+- Gerçek tarayıcı: iki sayfa × beş genişlik taşma/runtime hata yok; tek yaklaşık simülasyon, strict motor korunur. XLSX 33.020 alan / yaklaşık1,08MB, istemci+sunucu kayıpsız round-trip. Kalıcı yazma/undo byte eşitliği ve yanlış token/origin/onay reddi kontrol edildi.
+- Açık sınırlar: üretim API'si, kayıt odaklı kolay Excel düzenleme, alan sayımından ayrı iş kaydı sayımı, büyük dosya worker'ı, importtan sonra anlatı incelemesi, strict geçmiş değişikliği için ayrı doğrulama. Emsal/TTM/normalleştirilmiş FAVÖK ve sürdürülebilirlik kaynak eksikleri sürer.
+- Ayrıntı: [teslim/kullanım/tasarım](../XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md). Backend/Keycloak/runtime AI/portföy işlemleri değişmedi; commit/push yok.
 
 ---
 
@@ -67,3 +69,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-24 — Codex:** Yaklaşık simülasyonda 18 senaryo bağımsız algoritmayla eşleşti; 31 ilgili Vitest testi izinle geçti. 67 aylık fiyat farkı ve kaynak eksikleri belgelendi; uygulama değiştirilmedi.
 
 - **2026-10-24 — Codex:** Oran durumları, ortak bütüncül değerlendirme ve tek simülasyon arayüzü tamamlandı; kaynak eksikleri açık, yeni regresyonlar yazıldı fakat çalıştırılmadı.
+
+- **2026-10-25 — Codex:** Son geçerli dönem, ayrı finansal/fiyat görünümü ve kontrollü kalıcı XLSX aktarımı eklendi. 90/90 ilgili test geçti; 0 başarısız. Tam suite/coverage çalıştırılmadı. Üretim API ve finansal kaynak eksikleri teslim belgesinde açıklandı.

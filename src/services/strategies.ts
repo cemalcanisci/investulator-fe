@@ -6,6 +6,7 @@ import type {
   WatchMembership,
 } from '@/domain/strategy';
 import { createStrategySeed } from '@/services/mockStrategies';
+import { researchBundle } from '@/services/researchBundle';
 
 function validateGroup(
   input: StrategyInput,
@@ -165,4 +166,7 @@ export function createStrategyService(
   };
 }
 
-export const strategyService = createStrategyService();
+export const strategyService = createStrategyService({
+  ...createStrategySeed(),
+  assets: researchBundle.companies,
+});

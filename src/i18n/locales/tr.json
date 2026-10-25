@@ -650,7 +650,7 @@
     "title": "Stratejiler ve Takip Listesi",
     "subtitle": "Adaylarını takip et, yatırım yaklaşımını planla.",
     "demoTitle": "Örnek takip listesi · Oturum önizlemesi",
-    "demoHint": "Başlangıçta 10 BIST hissesi ve 15 kripto adayı gösterilir. Değişikliklerin ayrı oturum verisi olarak tutulur ve sayfa yenilendiğinde sıfırlanır. Takibe eklemek alım işlemi oluşturmaz; portföyünü etkilemez.",
+    "demoHint": "Başlangıçta 10 BIST hissesi ve 15 kripto adayı gösterilir. Grup ve üyelik değişiklikleri oturumda tutulur ve yenilemede sıfırlanır. Onaylanan Excel araştırma importları ayrı kalıcı dosyada saklanır. Takibe eklemek alım işlemi oluşturmaz; portföyü etkilemez.",
     "analysisUnavailable": "Canlı veri ve AI analizi henüz bağlı değil; güncelleme işlemleri kullanılamıyor.",
     "detailUnavailable": "TUPRS için kaynaklı, tarihli araştırma raporu açılabilir; diğer varlıklar için henüz rapor yok.",
     "refreshAll": "Tüm Takip Listemi Güncelle",
@@ -910,7 +910,7 @@
       "dividendsPaid2025": "Ödenen temettü (nakit akışı)",
       "cashProxy2025": "İşletme nakdi − yatırım harcaması",
       "dividendCashCoverage2025": "Temettünün işletme nakdiyle karşılanması",
-      "peTtm": "F/K — gerçek son 12 ay",
+      "peTtm": "F/K / kâr bazlı fiyat göstergesi",
       "evEbitda": "FD/FAVÖK",
       "netDebtEbitda": "Net borç/FAVÖK",
       "roe": "Özkaynak kârlılığı (ROE)",
@@ -1961,7 +1961,11 @@
       "halfYear": "Payda yalnız altı aylık kârdır; standart son 12 aylık F/K değildir.",
       "annualized": "İkinci yarının ilk yarıyla aynı kârı ürettiği varsayılmıştır. Bu bir tahmin senaryosudur; TTM değildir.",
       "ttm": "Aynı muhasebe ve satın alma gücü bazında doğrulanmış, kesintisiz dört çeyrek ana ortaklık kârı eksik.",
-      "dividendDate": "Temettü toplamı yıl sonu tarihli dağıtım planı olarak kayıtlı; fiyat tarihinde ödenmiş toplamla aynı kapsamda doğrulanmadı. Geçmiş ödeme verimi hesaplanmadı."
+      "dividendDate": "Temettü toplamı yıl sonu tarihli dağıtım planı olarak kayıtlı; fiyat tarihinde ödenmiş toplamla aynı kapsamda doğrulanmadı. Geçmiş ödeme verimi hesaplanmadı.",
+      "annualFallback": "Uyumlu TTM yok; son yayımlanmış yıllık kâr kullanıldı. Bu değer güncel TTM değildir.",
+      "publicationOrBasis": "Analiz tarihinde yayımlandığı gösterilen, muhasebe bazı uyumlu veri yok.",
+      "nonPositiveEarnings": "Sıfır veya negatif kâr nedeniyle anlamlı pozitif F/K üretilemez.",
+      "averageEquity": "Uyumlu dönem başı ve sonu özkaynağı bulunamadı."
     },
     "missing": {
       "report": "Ortak analiz raporu eksik.",
@@ -2012,6 +2016,73 @@
     "primarySources": "Birincil kaynak kanıtı",
     "checked": "Kontroller geçti",
     "pending": "Eksik / inceleme bekliyor",
-    "bases": "Dönem, muhasebe bazı ve kaynak satırları"
+    "bases": "Dönem, muhasebe bazı ve kaynak satırları",
+    "financialOutlookTitle": "Finansal görünüm",
+    "priceOutlookTitle": "Hissenin fiyat görünümü",
+    "financialOutlook": {
+      "POSITIVE_SIGNALS": "Olumlu sinyaller ağırlıkta",
+      "MIXED": "Dengeli / karma",
+      "NEGATIVE_SIGNALS": "Olumsuz sinyaller ağırlıkta",
+      "INSUFFICIENT": "Değerlendirme için veri yetersiz"
+    },
+    "priceOutlook": {
+      "CHEAP": "Görece ucuz",
+      "FAIR": "Makul fiyatlı",
+      "EXPENSIVE": "Görece pahalı",
+      "COMPARISON_MISSING": "Karşılaştırma eksik",
+      "INSUFFICIENT": "Değerlendirme için veri yetersiz"
+    },
+    "periodBasis": {
+      "TTM": "Gerçekleşmiş son 12 ay",
+      "ANNUAL": "Son yayımlanmış tam mali yıl bazlı",
+      "INTERIM": "Ara dönem göstergesi; yıllıklandırılmamıştır",
+      "MISSING_DATA": "Uyumlu yayımlanmış dönem bulunamadı"
+    },
+    "periodFormula": {
+      "TTM": "Piyasa değeri / gerçekleşmiş son 12 ay ana ortaklık kârı",
+      "ANNUAL": "Piyasa değeri / son yayımlanmış tam yıl ana ortaklık kârı",
+      "INTERIM": "Piyasa değeri / ara dönem ana ortaklık kârı"
+    },
+    "periodContext": {
+      "TTM": "Karşılaştırılabilir gerçekleşmiş son 12 aylık kâr kullanılır. Kârın sürdürülebilirliği ayrıca incelenmelidir.",
+      "ANNUAL": "Uyumlu TTM bulunamadığı için son yayımlanmış yıllık kâr kullanılır. Fiyat daha yeni olabilir; bu oran güncel TTM değildir.",
+      "INTERIM": "Paydada yalnız ara dönem kârı vardır. Bu gösterge standart yıllık F/K ile doğrudan karşılaştırılamaz.",
+      "MISSING_DATA": "Karşılaştırılabilir yayımlanmış kâr verisi eksiktir."
+    }
+  },
+  "researchTransfer": {
+    "import": "Import",
+    "export": "Export",
+    "actions": "İşlemler",
+    "cardImport": "Excel Import",
+    "cardExport": "Excel Export",
+    "persistence": "Kalıcı import yalnız kontrollü yerel geliştirme sunucusunda kullanılabilir. Kaynak dosyalar korunur; onaylanan değişiklikler ayrı araştırma dosyasına ve yedeğe yazılır. Üretim API’si henüz hazır değildir.",
+    "schema": "Sürümlü şemada her satır tek bir veri alanıdır. value sütununu düzenleyin; field alanı dönem, kaynak ve muhasebe bilgileriyle birlikte kaydın yerini belirtir. Boş değerler silme yapmaz.",
+    "template": "Boş şablon",
+    "all": "Tüm şirketleri dışa aktar",
+    "selection": "Şirket seçimi",
+    "selected": "Seçilenleri dışa aktar",
+    "choose": "Excel dosyası seç (.xlsx, en fazla 8 MiB)",
+    "scope": "Yalnız bu varlık güncellenebilir: {{assetId}}",
+    "counts": "Eklenecek alan: {{added}} · Değişecek alan: {{updated}} · Aynı alan: {{unchanged}}",
+    "companies": "Dosyadaki şirketler",
+    "newCompanies": "Yeni şirketler",
+    "sections": "Etkilenen bölümler",
+    "quality": "Import bağımsız doğrulama değildir. Yeni veya değişen finansal girdiler inceleme bekler. Önceki dönemler ve portföy işlemleri silinmez.",
+    "apply": "Ön izlemeyi onayla ve kaydet",
+    "undoTitle": "Son importu geri al",
+    "undoHint": "Son kayıt sunucu yeniden başlatıldığında da geri alınabilir. Mevcut dosyanın kayıt özeti eşleşmelidir; geri alma öncesinde ayrıca yedek oluşturulur.",
+    "undo": "Son kaydı geri al",
+    "errors": {
+      "disabled": "Kalıcı import kapalı. Geliştirici, INVESTULATOR_RESEARCH_WRITE=1 ile ayrı bir yerel Vite sunucusu başlatmalıdır.",
+      "size": "Dosya .xlsx olmalı ve 8 MiB sınırını aşmamalı.",
+      "version": "Excel şema sürümü desteklenmiyor.",
+      "schema": "Dosya şeması geçersiz.",
+      "empty": "Dosyada veri satırı yok.",
+      "stale": "Veri veya ön izleme değişti. Dosyayı yeniden seçerek ön izlemeyi yenileyin.",
+      "formula": "Formül hücreleri kabul edilmez.",
+      "limit": "Dosya boyutu veya satır sınırı aşıldı."
+    },
+    "narrativeStale": "Finansal girdiler güncellendi. Hesaplanabilir göstergeler yeniden üretilir; önceki raporun anlatım ve araştırma metinleri yeni veriler için henüz incelenmedi."
   }
 }

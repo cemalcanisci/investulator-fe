@@ -24,9 +24,11 @@ describe('ratio display contract', () => {
     expect(evaluateCalculation(report, calculation).status).toBe('BLOCKED');
   });
   it('distinguishes actual TTM from half-year scenarios', () => {
-    expect(ratioPresentation(report, 'peTtm').status).toBe('MISSING_DATA');
-    expect(ratioPresentation(report, 'peTtm').value).toBeUndefined();
-    expect(ratioPresentation(report, 'peTtm').issues).toContain('ttm');
+    expect(ratioPresentation(report, 'peTtm').status).toBe('INDICATIVE');
+    expect(ratioPresentation(report, 'peTtm').value).toBe('25.21');
+    expect(ratioPresentation(report, 'peTtm').issues).toContain(
+      'annualFallback',
+    );
     expect(ratioPresentation(report, 'peRunRate').issues).toContain(
       'annualized',
     );
@@ -224,8 +226,8 @@ describe('sector-relative classification gates', () => {
       ratioPresentation(
         { ...report, facts: [...report.facts, ...changed] },
         'peTtm',
-      ).value,
-    ).toBeUndefined();
+      ).periodBasis,
+    ).toBe('ANNUAL');
   });
   it.each([
     ['1', 'CHEAP'],

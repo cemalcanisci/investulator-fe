@@ -26,9 +26,12 @@ describe('educational ratio presentation', () => {
       cleanup();
       renderWithProviders(<CompanyAssessment report={report} />);
       expect(
-        screen.getByText(i18n.t('ratios.classification.UNCERTAIN')),
+        screen.getByText(i18n.t('ratios.priceOutlook.COMPARISON_MISSING')),
       ).toBeVisible();
       expect(screen.getByText(i18n.t('ratios.qualitySeparate'))).toBeVisible();
+      expect(
+        screen.getByText(i18n.t('ratios.financialOutlook.POSITIVE_SIGNALS')),
+      ).toBeVisible();
     },
   );
 });

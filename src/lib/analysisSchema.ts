@@ -27,6 +27,8 @@ function isFact(value: unknown): value is FinancialFact {
     (value.comparisonKey === undefined ||
       typeof value.comparisonKey === 'string') &&
     (value.evidence === undefined || isSourceEvidence(value.evidence)) &&
+    (value.unreviewedEvidence === undefined ||
+      isSourceEvidence(value.unreviewedEvidence)) &&
     stringFields(value, [
       'id',
       'value',
@@ -50,7 +52,9 @@ function isFact(value: unknown): value is FinancialFact {
     oneOf(b.scope, ['CONSOLIDATED', 'SOLO', 'MARKET']) &&
     oneOf(b.attribution, ['GROUP', 'PARENT', 'SHARE']) &&
     oneOf(b.accounting, ['TAS29', 'NOMINAL', 'IFRS']) &&
-    oneOf(b.periodKind, ['INSTANT', 'H1', 'QUARTER', 'YEAR', 'TTM']) &&
+    oneOf(b.periodKind, ['INSTANT', 'H1', 'YTD', 'QUARTER', 'YEAR', 'TTM']) &&
+    (b.fiscalYearStart === undefined ||
+      typeof b.fiscalYearStart === 'string') &&
     (b.purchasingPowerDate === null ||
       typeof b.purchasingPowerDate === 'string') &&
     (b.shareBasis === null || typeof b.shareBasis === 'string')
@@ -70,6 +74,18 @@ function isReport(value: unknown): value is AnalysisReport {
   }
   const p = value.presentation;
   return (
+    (value.peers === undefined ||
+      (Array.isArray(value.peers) &&
+        value.peers.every(
+          (peer) =>
+            record(peer) &&
+            stringFields(peer, [
+              'assetId',
+              'reportVersion',
+              'factId',
+              'subjectFactId',
+            ]),
+        ))) &&
     (value.revision === undefined ||
       (typeof value.revision === 'number' &&
         Number.isSafeInteger(value.revision) &&
@@ -146,6 +162,7 @@ function isReport(value: unknown): value is AnalysisReport {
         c.precision <= 18,
     ) &&
     p.schemaVersion === 1 &&
+    (p.narrativeStale === undefined || typeof p.narrativeStale === 'boolean') &&
     stringFields(p, [
       'id',
       'assetId',

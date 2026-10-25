@@ -14,6 +14,7 @@ import { AddWatchAsset } from '@/components/Strategies/AddWatchAsset';
 import { GroupCards } from '@/components/Strategies/GroupCards';
 import { GroupForm } from '@/components/Strategies/GroupForm';
 import { Watchlist } from '@/components/Strategies/Watchlist';
+import { ResearchTransfer } from '@/components/Strategies/ResearchTransfer';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
@@ -308,6 +309,7 @@ export function StrategiesPage(): JSX.Element {
           {t('strategies.refreshAll')}
         </Button>
       </div>
+      <ResearchTransfer />
       <div className="rounded-xl border border-line bg-info-soft p-4 text-sm">
         <p className="font-medium text-info">{t('strategies.demoTitle')}</p>
         <p className="mt-1 text-fg-2">{t('strategies.demoHint')}</p>

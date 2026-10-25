@@ -25,3 +25,5 @@ coverage
 *.log
 .claude/
 public/__report.pdf
+data/research-backups/
+src/data/research/imported-research.json.*.tmp

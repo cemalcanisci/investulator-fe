@@ -650,7 +650,7 @@
     "title": "Strategies and Watchlist",
     "subtitle": "Follow candidates and plan your investment approach.",
     "demoTitle": "Example watchlist · Session preview",
-    "demoHint": "The initial list contains 10 BIST stocks and 15 crypto candidates. Your changes are kept as separate session data and reset on reload. Adding to the watchlist creates no purchase and does not affect your portfolio.",
+    "demoHint": "The initial list contains 10 BIST shares and 15 crypto candidates. Group and membership edits reset on reload. Approved Excel research imports are stored in a separate persistent file. Adding to the watchlist does not create a purchase or affect the portfolio.",
     "analysisUnavailable": "Live data and AI analysis are not connected yet; refresh actions are unavailable.",
     "detailUnavailable": "A dated, sourced TUPRS report is available; other assets do not yet have reports.",
     "refreshAll": "Refresh My Entire Watchlist",
@@ -910,7 +910,7 @@
       "dividendsPaid2025": "Dividends paid (cash flow)",
       "cashProxy2025": "Operating cash less capital expenditure",
       "dividendCashCoverage2025": "Operating cash / dividends paid",
-      "peTtm": "P/E — actual trailing 12 months",
+      "peTtm": "P/E / earnings-based price indicator",
       "evEbitda": "EV/EBITDA",
       "netDebtEbitda": "Net debt/EBITDA",
       "roe": "Return on equity (ROE)",
@@ -1961,7 +1961,11 @@
       "halfYear": "The denominator is six-month earnings, not standard trailing-twelve-month P/E.",
       "annualized": "Assumes second-half earnings equal the first half. This is a scenario, not TTM.",
       "ttm": "Four consecutive verified quarters of parent earnings on one accounting and purchasing-power basis are missing.",
-      "dividendDate": "The dividend total is recorded as a year-end distribution plan, not reconciled to payments made by the price date. A historical paid yield is not calculated."
+      "dividendDate": "The dividend total is recorded as a year-end distribution plan, not reconciled to payments made by the price date. A historical paid yield is not calculated.",
+      "annualFallback": "No compatible TTM; the latest published annual earnings are used, not current TTM.",
+      "publicationOrBasis": "No compatible inputs with documented availability at the analysis date.",
+      "nonPositiveEarnings": "Zero or negative earnings do not produce a meaningful positive P/E.",
+      "averageEquity": "Compatible opening and closing equity is unavailable."
     },
     "missing": {
       "report": "Common analysis report missing.",
@@ -2012,6 +2016,73 @@
     "primarySources": "Primary source evidence",
     "checked": "Checks passed",
     "pending": "Incomplete / pending review",
-    "bases": "Periods, accounting bases and source locations"
+    "bases": "Periods, accounting bases and source locations",
+    "financialOutlookTitle": "Financial outlook",
+    "priceOutlookTitle": "Share price outlook",
+    "financialOutlook": {
+      "POSITIVE_SIGNALS": "Supportive signals predominate",
+      "MIXED": "Balanced / mixed",
+      "NEGATIVE_SIGNALS": "Adverse signals predominate",
+      "INSUFFICIENT": "Insufficient evidence"
+    },
+    "priceOutlook": {
+      "CHEAP": "Relatively cheap",
+      "FAIR": "Fairly priced",
+      "EXPENSIVE": "Relatively expensive",
+      "COMPARISON_MISSING": "Comparisons missing",
+      "INSUFFICIENT": "Insufficient evidence"
+    },
+    "periodBasis": {
+      "TTM": "Realized trailing twelve months",
+      "ANNUAL": "Latest published full fiscal year",
+      "INTERIM": "Interim indicator; not annualized",
+      "MISSING_DATA": "No compatible published period"
+    },
+    "periodFormula": {
+      "TTM": "Market capitalization / realized trailing twelve-month parent earnings",
+      "ANNUAL": "Market capitalization / latest published full-year parent earnings",
+      "INTERIM": "Market capitalization / interim parent earnings"
+    },
+    "periodContext": {
+      "TTM": "Uses comparable realized trailing earnings. Earnings sustainability requires separate review.",
+      "ANNUAL": "Uses the latest published annual earnings because compatible TTM is unavailable. The price may be newer; this is not current TTM.",
+      "INTERIM": "The denominator contains interim earnings only. This is not directly comparable to annual P/E.",
+      "MISSING_DATA": "Comparable published earnings are missing."
+    }
+  },
+  "researchTransfer": {
+    "import": "Import",
+    "export": "Export",
+    "actions": "Actions",
+    "cardImport": "Excel Import",
+    "cardExport": "Excel Export",
+    "persistence": "Persistent import is available only on the controlled local development server. Original sources are retained; approved changes are stored in a separate research file and backup. A production API is not yet available.",
+    "schema": "Each row in the versioned schema represents one data field. Edit value; field locates the record and its period, source and accounting metadata. Empty values do not delete data.",
+    "template": "Blank template",
+    "all": "Export all companies",
+    "selection": "Select companies",
+    "selected": "Export selected",
+    "choose": "Choose Excel file (.xlsx, maximum 8 MiB)",
+    "scope": "Only this asset may be updated: {{assetId}}",
+    "counts": "Fields added: {{added}} · Updated: {{updated}} · Unchanged: {{unchanged}}",
+    "companies": "Companies in file",
+    "newCompanies": "New companies",
+    "sections": "Affected sections",
+    "quality": "Import is not independent verification. New or changed financial inputs await review. Previous periods and portfolio transactions are not deleted.",
+    "apply": "Approve preview and save",
+    "undoTitle": "Undo last import",
+    "undoHint": "The last save can be undone after a server restart. The current file hash must match; undo also creates a backup.",
+    "undo": "Undo last save",
+    "errors": {
+      "disabled": "Persistent import is disabled. A developer must start a separate local Vite server with INVESTULATOR_RESEARCH_WRITE=1.",
+      "size": "Choose an .xlsx file within the 8 MiB limit.",
+      "version": "Unsupported workbook schema version.",
+      "schema": "Invalid workbook schema.",
+      "empty": "No data rows in the workbook.",
+      "stale": "Data or preview changed. Select the file again to refresh the preview.",
+      "formula": "Formula cells are not accepted.",
+      "limit": "File or row limit exceeded."
+    },
+    "narrativeStale": "Financial inputs changed. Calculable indicators are recomputed; the previous narrative and research commentary have not yet been reviewed against the new data."
   }
 }

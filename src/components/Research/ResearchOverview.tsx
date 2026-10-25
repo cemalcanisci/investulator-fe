@@ -32,6 +32,11 @@ export function ResearchOverview({
   ];
   return (
     <div className="space-y-4">
+      {report.narrativeStale && (
+        <p role="status" className="rounded-lg bg-warn-soft p-4 text-sm">
+          {t('researchTransfer.narrativeStale')}
+        </p>
+      )}
       <p className="rounded-lg bg-info-soft p-4 text-sm leading-7">
         {t(
           sourceCount ? 'researchUx.trust.partial' : 'researchUx.trust.missing',

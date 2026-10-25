@@ -91,15 +91,41 @@ export function factTechnicalIssues(fact: FinancialFact): string[] {
   ) {
     issues.push('SHARE_BASIS');
   }
+  const fiscalStart = b.fiscalYearStart ?? `${b.start.slice(0, 4)}-01-01`;
+  const fiscal = new Date(`${fiscalStart}T00:00:00Z`);
+  const monthEnd = (months: number): string => {
+    const date = new Date(
+      Date.UTC(fiscal.getUTCFullYear(), fiscal.getUTCMonth() + months, 0),
+    );
+    return Number.isFinite(date.getTime())
+      ? date.toISOString().slice(0, 10)
+      : '';
+  };
+  if (
+    b.fiscalYearStart !== undefined &&
+    (!validDate(fiscalStart) ||
+      fiscal.getUTCDate() !== 1 ||
+      fiscalStart > b.start ||
+      b.end > monthEnd(12))
+  ) {
+    issues.push('PERIOD');
+  }
+  if (
+    b.periodKind === 'YTD' &&
+    (b.start !== fiscalStart ||
+      ![3, 6, 9].some((months) => b.end === monthEnd(months)))
+  ) {
+    issues.push('PERIOD');
+  }
   if (
     b.periodKind === 'H1' &&
-    (b.start.slice(5) !== '01-01' || b.end !== `${b.start.slice(0, 4)}-06-30`)
+    (b.start !== fiscalStart || b.end !== monthEnd(6))
   ) {
     issues.push('PERIOD');
   }
   if (
     b.periodKind === 'YEAR' &&
-    (b.start.slice(5) !== '01-01' || b.end !== `${b.start.slice(0, 4)}-12-31`)
+    (b.start !== fiscalStart || b.end !== monthEnd(12))
   ) {
     issues.push('PERIOD');
   }
@@ -184,6 +210,7 @@ function compatibility(
 export function evaluateCalculation(
   report: AnalysisReport,
   calculation: ResearchCalculation,
+  validation: 'FULL' | 'TECHNICAL' = 'FULL',
 ): CalculationResult {
   const contract = report.contracts.find((c) => c.id === calculation.id);
   const inputs = calculation.inputs.flatMap((id) =>
@@ -209,10 +236,12 @@ export function evaluateCalculation(
   }
   for (const [index, fact] of inputs.entries()) {
     issues.push(
-      ...factIssues(
-        fact,
-        report.presentation.sources.map((s) => s.id),
-      ),
+      ...(validation === 'TECHNICAL'
+        ? factTechnicalIssues(fact)
+        : factIssues(
+            fact,
+            report.presentation.sources.map((s) => s.id),
+          )),
     );
     if (contract?.units[index] !== fact.unit) {
       issues.push('UNIT');

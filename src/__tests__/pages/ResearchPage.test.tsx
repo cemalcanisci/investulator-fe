@@ -151,9 +151,15 @@ describe('ResearchPage', () => {
         name: i18n.t('research.guide.companyTitle'),
       }),
     ).toBeVisible();
-    expect(
-      screen.getAllByText(i18n.t('researchTuprsV2.education.priceBook'))[0],
-    ).toBeVisible();
+    const education = screen.getAllByText(
+      i18n.t('researchTuprsV2.education.priceBook'),
+    )[0];
+    const panel = education.closest('details');
+    const toggle = panel?.querySelector('summary');
+    if (panel && !panel.open && toggle) {
+      await userEvent.click(toggle);
+    }
+    expect(education).toBeVisible();
     expect(
       screen.getByText(i18n.t('researchTuprsV2.guide.missing.earnings')),
     ).toBeVisible();
@@ -167,7 +173,7 @@ describe('ResearchPage', () => {
       await screen.findByRole('heading', { name: /TUPRS/ }),
     ).toBeInTheDocument();
     expect(
-      screen.getByText('TRATUPRS91E8', { exact: false }),
+      screen.getAllByText('TRATUPRS91E8', { exact: false })[0],
     ).toBeInTheDocument();
     expect(
       screen.getByRole('heading', { name: i18n.t('research.notAssessed') }),
@@ -184,15 +190,22 @@ describe('ResearchPage', () => {
     const nav = screen.getByRole('navigation', {
       name: i18n.t('research.contents'),
     });
-    expect(within(nav).getAllByRole('link')).toHaveLength(10);
+    const sectionLinks = within(nav).getAllByRole('link');
+    expect(sectionLinks.length).toBeGreaterThanOrEqual(10);
+    for (const link of sectionLinks) {
+      const target = link.getAttribute('href');
+      expect(target?.startsWith('#')).toBe(true);
+      expect(document.getElementById(target?.slice(1) ?? '')).not.toBeNull();
+    }
     expect(
       screen.getByRole('link', { name: i18n.t('research.back') }),
     ).toHaveAttribute('href', ROUTE_PATHS.strategies);
     const priceCard = screen
-      .getByRole('heading', {
+      .getAllByRole('heading', {
         name: i18n.t('research.metrics.price'),
       })
-      .closest('article');
+      .map((heading) => heading.closest('article'))
+      .find(Boolean);
     if (!priceCard) {
       throw new Error('Missing price card');
     }
@@ -204,7 +217,7 @@ describe('ResearchPage', () => {
     }
     await userEvent.click(details);
     expect(
-      screen.getByText(i18n.t('researchTuprs.education.price')),
+      within(priceCard).getByText(i18n.t('researchTuprs.education.price')),
     ).toBeVisible();
   });
 

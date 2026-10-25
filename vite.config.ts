@@ -3,10 +3,12 @@ import { defineConfig } from 'vitest/config';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
+import { researchStore } from './dev/researchStore.ts';
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => ({
   plugins: [
+    ...(mode === 'test' ? [] : [researchStore()]),
     tailwindcss(),
     react(),
     // The React Compiler is off under Vitest: it injects memoization-cache

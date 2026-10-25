@@ -14,7 +14,10 @@ describe('StrategiesPage', () => {
   it('clears a selected group on its second click and keeps other filters', async () => {
     renderWithProviders(<StrategiesPage />);
     await table();
-    const group = screen.getByRole('button', { name: /BIST Temettü 10/ });
+    const group = screen.getByRole('button', { name: /BIST Temettü/ });
+    if (!group) {
+      throw new Error('Missing group control');
+    }
     await userEvent.click(group);
     expect(group).toHaveAttribute('aria-pressed', 'true');
     expect(within(await table()).getAllByRole('row')).toHaveLength(11);
@@ -113,9 +116,7 @@ describe('StrategiesPage', () => {
     await waitFor(() =>
       expect(screen.queryByRole('dialog')).not.toBeInTheDocument(),
     );
-    await userEvent.click(
-      screen.getByRole('button', { name: /BIST Büyüme 0/ }),
-    );
+    await userEvent.click(screen.getByRole('button', { name: /BIST Büyüme/ }));
     expect(
       screen.getByText(i18n.t('strategies.emptyList')),
     ).toBeInTheDocument();
@@ -178,10 +179,12 @@ describe('StrategiesPage', () => {
     expect(within(list).getAllByRole('row')).toHaveLength(26);
     await userEvent.click(
       within(list).getByRole('button', {
-        name: i18n.t('strategies.removeLabel', {
-          symbol: 'TUPRS',
-          group: 'Kripto Takip',
-        }),
+        name: `${i18n.t('researchTransfer.actions')} watch-bist-tuprs`,
+      }),
+    );
+    await userEvent.click(
+      await screen.findByRole('menuitem', {
+        name: i18n.t('strategies.removeFrom', { group: 'Kripto Takip' }),
       }),
     );
     const confirm = await screen.findByRole('dialog');

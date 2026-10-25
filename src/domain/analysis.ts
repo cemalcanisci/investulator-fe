@@ -6,6 +6,7 @@ import type {
 import type { SourceEvidence } from '@/domain/evidence';
 
 export interface FactBasis {
+  readonly fiscalYearStart?: string;
   readonly currency: string;
   readonly scale: string;
   readonly scope: 'CONSOLIDATED' | 'SOLO' | 'MARKET';
@@ -14,11 +15,12 @@ export interface FactBasis {
   readonly purchasingPowerDate: string | null;
   readonly start: string;
   readonly end: string;
-  readonly periodKind: 'INSTANT' | 'H1' | 'QUARTER' | 'YEAR' | 'TTM';
+  readonly periodKind: 'INSTANT' | 'H1' | 'YTD' | 'QUARTER' | 'YEAR' | 'TTM';
   readonly shareBasis: string | null;
 }
 
 export interface FinancialFact extends ResearchFact {
+  readonly unreviewedEvidence?: SourceEvidence;
   readonly evidence?: SourceEvidence;
   readonly basis: FactBasis;
   readonly verification: 'VERIFIED' | 'UNVERIFIED' | 'CONFLICT';
@@ -63,6 +65,12 @@ export interface AnalysisProfile {
 }
 
 export interface AnalysisReport {
+  readonly peers?: readonly {
+    readonly assetId: string;
+    readonly reportVersion: string;
+    readonly factId: string;
+    readonly subjectFactId: string;
+  }[];
   readonly revision?: number;
   readonly financialHistory?: readonly {
     readonly year: string;

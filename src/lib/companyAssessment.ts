@@ -29,6 +29,10 @@ export interface CompanyFinding {
   readonly tone: 'OBSERVATION' | 'LIMITATION';
 }
 export interface CompanyAssessment {
+  readonly financialOutlook:
+    'POSITIVE_SIGNALS' | 'MIXED' | 'NEGATIVE_SIGNALS' | 'INSUFFICIENT';
+  readonly priceOutlook:
+    'CHEAP' | 'FAIR' | 'EXPENSIVE' | 'COMPARISON_MISSING' | 'INSUFFICIENT';
   readonly classification: 'CHEAP' | 'FAIR' | 'EXPENSIVE' | 'UNCERTAIN';
   readonly findings: readonly CompanyFinding[];
   readonly missing: readonly string[];
@@ -125,6 +129,8 @@ export function companyAssessment(
   if (!report) {
     return {
       classification: 'UNCERTAIN',
+      financialOutlook: 'INSUFFICIENT',
+      priceOutlook: 'INSUFFICIENT',
       findings: [],
       missing: ['report'],
       evidenceIds: [],
@@ -338,10 +344,47 @@ export function companyAssessment(
       : 'UNCERTAIN';
   return {
     classification,
+    financialOutlook: financialOutlook(findings),
+    priceOutlook:
+      classification !== 'UNCERTAIN'
+        ? classification
+        : overviewRatioIds(report).some(
+              (id) =>
+                id !== 'marketCap' &&
+                ratioPresentation(report, id).value !== undefined,
+            )
+          ? 'COMPARISON_MISSING'
+          : 'INSUFFICIENT',
     findings,
     missing,
     evidenceIds: [...new Set(findings.flatMap((f) => f.inputIds))],
   };
+}
+
+/** Qualitative conjunctions, not votes: shared earnings and cash observations are one domain. */
+export function financialOutlook(
+  findings: readonly CompanyFinding[],
+): CompanyAssessment['financialOutlook'] {
+  const keys = new Set(findings.map((finding) => finding.key));
+  const supportive = keys.has('profitWithCash') || keys.has('growth.positive');
+  const adverse =
+    keys.has('profitWithoutCash') ||
+    keys.has('cash.negative') ||
+    keys.has('growth.negative');
+  if (supportive && adverse) {
+    return 'MIXED';
+  }
+  if (adverse) {
+    return 'NEGATIVE_SIGNALS';
+  }
+  // Net cash alone cannot establish operating quality. No strong outlook without sustainability review.
+  if (supportive && keys.has('debt.negative')) {
+    return 'POSITIVE_SIGNALS';
+  }
+  if (supportive || keys.has('cash.positive') || keys.has('growth.zero')) {
+    return 'MIXED';
+  }
+  return 'INSUFFICIENT';
 }
 
 export function relatedMetricIds(

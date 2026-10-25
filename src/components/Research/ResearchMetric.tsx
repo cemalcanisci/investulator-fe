@@ -66,7 +66,7 @@ export function ResearchMetric({
             ))}
           </ul>
         </details>
-        {explain && (
+        {explain && !report.narrativeStale && (
           <p className="mt-3 text-sm leading-7">
             {t(`${report.contentKey}.education.${id}`)}
           </p>
@@ -90,9 +90,12 @@ export function ResearchMetric({
               </p>
             ))}
           <p className="mt-2">{t('analysis.unverifiedInputs')}</p>
-          {i18n.exists(`${report.contentKey}.education.${id}`) && (
-            <p className="mt-2">{t(`${report.contentKey}.education.${id}`)}</p>
-          )}
+          {!report.narrativeStale &&
+            i18n.exists(`${report.contentKey}.education.${id}`) && (
+              <p className="mt-2">
+                {t(`${report.contentKey}.education.${id}`)}
+              </p>
+            )}
           {report.sources
             .filter((s) => inputs.some((input) => input.sourceId === s.id))
             .map((s) => (
@@ -125,6 +128,11 @@ export function ResearchMetric({
       <p className="mt-2 text-xs font-medium">
         {t(`ratios.status.${result.status}`)}
       </p>
+      {result.periodBasis && (
+        <p className="mt-2 text-sm font-medium">
+          {t(`ratios.periodBasis.${result.periodBasis}`)}
+        </p>
+      )}
       <p className="mt-2 text-xs text-fg-2">{t('ratios.reviewSeparate')}</p>
       {result.issues.length > 0 && (
         <ul className="mt-2 space-y-1 text-xs text-fg-2">
@@ -144,7 +152,7 @@ export function ResearchMetric({
       </p>
       <MetricEducation report={report} id={id} />
       <RatioContext report={report} id={id} />
-      {explain && (
+      {explain && !report.narrativeStale && (
         <p className="mt-3 rounded-lg bg-info-soft p-3 text-sm leading-7">
           {t(`${report.contentKey}.education.${id}`)}
         </p>
@@ -160,7 +168,11 @@ export function ResearchMetric({
         </p>
         {(calculation || id === 'peTtm') && (
           <p className="mt-3 break-words rounded-lg bg-surface-2 p-3 font-mono leading-relaxed">
-            {t(`research.formulas.${id}`)}
+            {t(
+              id === 'peTtm' && result.periodBasis
+                ? `ratios.periodFormula.${result.periodBasis}`
+                : `research.formulas.${id}`,
+            )}
           </p>
         )}
         <p className="mt-2">{presentationFormulaValue(result)}</p>
@@ -230,11 +242,12 @@ export function ResearchMetric({
             {t(`research.units.${unit}`)}
           </p>
         )}
-        {i18n.exists(`${report.contentKey}.education.${id}`) && (
-          <p className="mt-3 leading-relaxed text-fg-2">
-            {t(`${report.contentKey}.education.${id}`)}
-          </p>
-        )}
+        {!report.narrativeStale &&
+          i18n.exists(`${report.contentKey}.education.${id}`) && (
+            <p className="mt-3 leading-relaxed text-fg-2">
+              {t(`${report.contentKey}.education.${id}`)}
+            </p>
+          )}
       </details>
       <div className="mt-3 flex flex-wrap gap-2 text-xs">
         {sourceIds.map((sourceId) => {

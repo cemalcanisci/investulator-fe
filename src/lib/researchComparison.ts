@@ -22,6 +22,47 @@ export interface ComparisonResult {
   readonly rejected: number;
 }
 
+/** Explicit versioned peer links never infer comparability from ticker or sector alone. */
+export function peerCandidates(
+  subject: AnalysisReport | undefined,
+  reports: readonly AnalysisReport[],
+): readonly ComparisonCandidate[] {
+  if (!subject) {
+    return [];
+  }
+  const result: ComparisonCandidate[] = [];
+  for (const link of subject.peers ?? []) {
+    const peer = reports.find(
+      (report) =>
+        report.version === link.reportVersion &&
+        report.presentation.assetId === link.assetId &&
+        report.presentation.asOf <= subject.presentation.asOf,
+    );
+    if (!peer || peer.presentation.assetId === subject.presentation.assetId) {
+      continue;
+    }
+    if (
+      !result.some(
+        (candidate) =>
+          candidate.report === subject &&
+          candidate.factId === link.subjectFactId,
+      )
+    ) {
+      result.push({
+        label: subject.presentation.symbol,
+        report: subject,
+        factId: link.subjectFactId,
+      });
+    }
+    result.push({
+      label: peer.presentation.symbol,
+      report: peer,
+      factId: link.factId,
+    });
+  }
+  return result;
+}
+
 /** Groups only verified, economically equivalent facts; no conversions or interpolations. */
 export function researchComparison(
   candidates: readonly ComparisonCandidate[],

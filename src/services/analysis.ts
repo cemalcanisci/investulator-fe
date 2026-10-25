@@ -1,12 +1,11 @@
-import snapshots from '@/data/research/analysis-reports.json';
+import { researchBundle } from '@/services/researchBundle';
 import type { AnalysisReport, CalculationResult } from '@/domain/analysis';
 import type { ResearchReport } from '@/domain/research';
-import { parseAnalysisReports } from '@/lib/analysisSchema';
 import { AnalysisRepository } from '@/lib/analysisRepository';
 import { evaluateCalculation, factIssues } from '@/lib/analysisValidation';
 
 export const analysisRepository = new AnalysisRepository(
-  parseAnalysisReports(snapshots),
+  researchBundle.reports,
 );
 
 export function getAnalysis(
