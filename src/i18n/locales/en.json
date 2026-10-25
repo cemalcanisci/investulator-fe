@@ -2063,6 +2063,11 @@
     "selection": "Select companies",
     "selected": "Export selected",
     "choose": "Choose Excel file (.xlsx, maximum 8 MiB)",
+    "sourceFile": "Upload file",
+    "sourceUrl": "Load from URL",
+    "urlLabel": "File path (e.g. /research/file-name.xlsx)",
+    "urlHint": "Only .xlsx files under this site's /research/ folder are allowed; external links starting with https://, paths containing \"..\", and query parameters are rejected.",
+    "urlLoad": "Load",
     "scope": "Only this asset may be updated: {{assetId}}",
     "counts": "Fields added: {{added}} · Updated: {{updated}} · Unchanged: {{unchanged}}",
     "companies": "Companies in file",
@@ -2081,7 +2086,9 @@
       "empty": "No data rows in the workbook.",
       "stale": "Data or preview changed. Select the file again to refresh the preview.",
       "formula": "Formula cells are not accepted.",
-      "limit": "File or row limit exceeded."
+      "limit": "File or row limit exceeded.",
+      "url": "Only .xlsx files under the same-origin /research/ folder are allowed.",
+      "fetch": "Could not download the file. Check the URL and that the file exists on the server."
     },
     "narrativeStale": "Financial inputs changed. Calculable indicators are recomputed; the previous narrative and research commentary have not yet been reviewed against the new data."
   }

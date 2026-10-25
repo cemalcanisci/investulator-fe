@@ -2063,6 +2063,11 @@
     "selection": "Şirket seçimi",
     "selected": "Seçilenleri dışa aktar",
     "choose": "Excel dosyası seç (.xlsx, en fazla 8 MiB)",
+    "sourceFile": "Dosya Yükle",
+    "sourceUrl": "URL'den Yükle",
+    "urlLabel": "Dosya yolu (örn. /research/dosya-adi.xlsx)",
+    "urlHint": "Yalnızca bu sitenin /research/ klasöründeki .xlsx dosyalarına izin verilir; https:// ile başlayan dış bağlantılar, \"..\" içeren yollar ve sorgu parametreleri kabul edilmez.",
+    "urlLoad": "Yükle",
     "scope": "Yalnız bu varlık güncellenebilir: {{assetId}}",
     "counts": "Eklenecek alan: {{added}} · Değişecek alan: {{updated}} · Aynı alan: {{unchanged}}",
     "companies": "Dosyadaki şirketler",
@@ -2081,7 +2086,9 @@
       "empty": "Dosyada veri satırı yok.",
       "stale": "Veri veya ön izleme değişti. Dosyayı yeniden seçerek ön izlemeyi yenileyin.",
       "formula": "Formül hücreleri kabul edilmez.",
-      "limit": "Dosya boyutu veya satır sınırı aşıldı."
+      "limit": "Dosya boyutu veya satır sınırı aşıldı.",
+      "url": "Yalnızca aynı site üzerindeki /research/ klasöründeki .xlsx dosyalarına izin verilir.",
+      "fetch": "Dosya indirilemedi. URL'yi ve dosyanın sunucuda bulunduğunu kontrol edin."
     },
     "narrativeStale": "Finansal girdiler güncellendi. Hesaplanabilir göstergeler yeniden üretilir; önceki raporun anlatım ve araştırma metinleri yeni veriler için henüz incelenmedi."
   }

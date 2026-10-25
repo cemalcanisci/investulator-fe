@@ -6,20 +6,18 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Codex — **Tarih:** 2026-10-25
+**Son güncelleyen:** Claude — **Tarih:** 2026-10-25
 
-XLSX/dönem seçimi/bütüncül değerlendirme kullanıcı incelemesine hazır. TUPRS araştırması kısmi; başka hisseye geçme.
+XLSX import artık iki kaynaklı: Dosya Yükle ve URL'den Yükle, aynı önizleme/onay/kalıcı yazma akışıyla. TUPRS araştırması kısmi; başka hisseye geçme.
 
-- financialPeriodSelection ve financialInputSelection: yayımlanma kesimi, mali yıl/YTD, ortak bazlı TTM, son yıllık fallback, semantik güncel girdiler ve eksik önceki dönem kapısı. ratioPresentation ortak piyasa değeri/PD-DD/F-K/ROE/EV oranları; eski doğru senaryolar korunur.
-- TUPRS v7: 2025 yıllık raporun 2026-02-06 KAP yayımlanma kanıtı. Yıllık F/K 25,21 gösterge, PD/DD 1,63, H1 katsayısı 14,93, H1×2 senaryosu 7,46. TTM farklı TMS29 bazları nedeniyle eksik.
-- companyAssessment finansal görünümü fiyat görünümünden ayırır: mevcut TUPRS olumlu sinyaller ağırlıkta / karşılaştırma eksik. Yeni hedef fiyat yok.
-- researchWorkbook/researchWorkbookFile: sürüm1 kayıpsız alan şeması, 13 sayfa, tekli/toplu export/import, şema/kimlik/formül/period/source kontrolleri, idempotent merge ve atomik ret. Peers açık rapor sürümü referanslarıyla mevcut kıyas bileşenine bağlandı.
-- dev/researchStore: yalnız INVESTULATOR_RESEARCH_WRITE=1 ve loopback Vite'da token/Origin/hash kontrollü ön izleme→onay→atomik dosya yazımı. Kalıcı dosya src/data/research/imported-research.json, yedek data/research-backups. Undo sunucu yeniden başlatılsa da kalır. Üretim API'si değil; backend değişmedi.
-- researchBundle tek okuma katmanı: raporlar, katalog, yaklaşık geçmiş. Portföy bağımsız. Watchlist Update korunur, Import/Export/Remove menüye alındı. Import yeni finansal dönemi silmeden ekler; değişen fact UNVERIFIED, belge unreviewedEvidence, rapor/section yeniden inceleme, narrativeStale uyarısı.
-- 90/90 ilgili test geçti; 0 başarısız. Tam suite/coverage çalıştırılmadı. Son sonuç ../outputs/xlsx-20261025/test-summary.json. Test izni yalnız ilgili kapsam içindi. Build başarılı; lint sıfır hata ve üç mevcut transfer mock uyarısı. Paket boyutu uyarısı sürüyor.
-- Gerçek tarayıcı: iki sayfa × beş genişlik taşma/runtime hata yok; tek yaklaşık simülasyon, strict motor korunur. XLSX 33.020 alan / yaklaşık1,08MB, istemci+sunucu kayıpsız round-trip. Kalıcı yazma/undo byte eşitliği ve yanlış token/origin/onay reddi kontrol edildi.
-- Açık sınırlar: üretim API'si, kayıt odaklı kolay Excel düzenleme, alan sayımından ayrı iş kaydı sayımı, büyük dosya worker'ı, importtan sonra anlatı incelemesi, strict geçmiş değişikliği için ayrı doğrulama. Emsal/TTM/normalleştirilmiş FAVÖK ve sürdürülebilirlik kaynak eksikleri sürer.
-- Ayrıntı: [teslim/kullanım/tasarım](../XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md). Backend/Keycloak/runtime AI/portföy işlemleri değişmedi; commit/push yok.
+- `ResearchTransfer.tsx`: Import modalında `Segmented<'FILE'|'URL'>` kaynak seçici eklendi. Ortak `importBuffer()` (session→readResearchWorkbook→preview isteği→setPreview) her iki kaynaktan da çağrılır; ikinci bir parser/import sistemi yazılmadı.
+- `src/lib/researchUrlImport.ts` (yeni): `sanitizeResearchUrl` yalnızca aynı origin `/research/...xlsx` yollarına izin verir (regex: alfasayısal/`_`/`.`/`-` segmentler, zorunlu `.xlsx` sonu); `https://`, `//`, `..`, sorgu parametresi, yanlış uzantı reddedilir — ağ isteği **önce** doğrulanır, sonra atılır. `fetchResearchWorkbookFromUrl` indirir; `response.ok`, `text/html` (SPA fallback) ve `content-length`/gerçek `byteLength` ile `MAX_WORKBOOK_BYTES` (8 MiB) kontrolü yapar.
+- `public/research/` eklendi (Vite public, statik servis); kullanım notu `public/research/README.md`'de. Yeni kök `investulator-fe/README.md`: ayrı `INVESTULATOR_RESEARCH_WRITE=1` PowerShell komutu ve URL kısıtları.
+- i18n: `researchTransfer.sourceFile/sourceUrl/urlLabel/urlHint/urlLoad` ve `errors.url/errors.fetch` (tr+en) eklendi.
+- Testler (yeni): `src/__tests__/lib/researchUrlImport.test.ts` (16 test, URL doğrulama + fetch sınırları) ve `src/__tests__/components/ResearchTransferUrlImport.test.tsx` (6 test: dosya/URL aynı önizleme sonucu — gerçek `previewWorkbook` motoruyla mock fetch üzerinden —, yeni şirket ekleme, yasak URL/404/boyut/format hataları). Ağır (33k alanlı gerçek TUPRS bundle) testlerde tam suite altında CPU yüküyle `findByText` varsayılan 1000ms'yi aşabildiği görüldü; `{timeout:30000}` ile düzeltildi.
+- Tüm Vitest suite (coverage'sız) çalıştırıldı: **525 testten 520 geçti**, kalan 5 başarısız (`AnalysisPage.test.tsx` 4 test, `services/research.test.ts` 1 test) **bu işten önce de var olan, ilgisiz** bir regresyon — `src/data/research/analysis-reports.json` içeriği zaten `tuprs-2026-10-25-v7` iken ilgili test dosyaları hâlâ eski `v6` sabit değerini bekliyor (önceki oturumdaki veri güncellemesi test fikstürlerine yansımamış). Bu PR kapsamında dokunulmadı; ayrı düzeltme gerekir.
+- `npx tsc -b`: hatasız. `npm run lint`: hatasız (3 önceden var olan `vitest(require-mock-type-parameters)` uyarısı korunur, yeni hata/uyarı yok). `npm run build`: başarılı (mevcut ana paket boyutu uyarısı sürüyor). `npm run format`/`format:check`: temiz.
+- Önceki ŞU AN (dönem/F-K/bütüncül değerlendirme teslimi) değişmedi; ayrıntı hâlâ [XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md](../XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md). Backend/Keycloak/runtime AI/portföy işlemleri değişmedi; commit/push yok.
 
 ---
 
@@ -71,3 +69,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-24 — Codex:** Oran durumları, ortak bütüncül değerlendirme ve tek simülasyon arayüzü tamamlandı; kaynak eksikleri açık, yeni regresyonlar yazıldı fakat çalıştırılmadı.
 
 - **2026-10-25 — Codex:** Son geçerli dönem, ayrı finansal/fiyat görünümü ve kontrollü kalıcı XLSX aktarımı eklendi. 90/90 ilgili test geçti; 0 başarısız. Tam suite/coverage çalıştırılmadı. Üretim API ve finansal kaynak eksikleri teslim belgesinde açıklandı.
+
+- **2026-10-25 — Claude:** XLSX Import'a **URL'den Yükle** seçeneği eklendi (`/research/...xlsx`, aynı origin, mevcut önizleme/onay/kalıcı yazma akışı korunur); `sanitizeResearchUrl`/`fetchResearchWorkbookFromUrl` (`src/lib/researchUrlImport.ts`), i18n, `public/research/` ve kök `README.md` (PowerShell başlatma komutu) eklendi. Tüm suite çalıştırıldı: 520/525 geçti; kalan 5 başarısız test bu işten bağımsız, önceki oturumun v6→v7 veri güncellemesinden kalan stale fikstür (`AnalysisPage.test.tsx`, `services/research.test.ts`) — düzeltilmedi, ayrıca not edildi. tsc/lint/build/format temiz. Commit/push yapılmadı.

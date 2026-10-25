@@ -2,15 +2,20 @@ import { useState, type JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/Button';
 import { Dropdown } from '@/components/ui/Dropdown';
+import { Input } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
+import { Segmented } from '@/components/ui/Segmented';
 import { researchBundle } from '@/services/researchBundle';
 import { downloadBlob } from '@/lib/transfer/files';
 import {
   exportResearchWorkbook,
   readResearchWorkbook,
 } from '@/lib/researchWorkbookFile';
+import { fetchResearchWorkbookFromUrl } from '@/lib/researchUrlImport';
 import { MAX_WORKBOOK_BYTES, object } from '@/lib/researchWorkbook';
 import type { WorkbookIssue } from '@/lib/researchWorkbook';
+
+type ImportSource = 'FILE' | 'URL';
 
 interface Preview {
   readonly approval?: string;
@@ -93,6 +98,8 @@ export function ResearchTransfer({
   );
   const [preview, setPreview] = useState<Preview | null>(null);
   const [token, setToken] = useState('');
+  const [source, setSource] = useState<ImportSource>('FILE');
+  const [url, setUrl] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   async function run(action: () => Promise<void>): Promise<void> {
@@ -110,12 +117,24 @@ export function ResearchTransfer({
     setMode(next);
     setPreview(null);
     setError('');
+    setSource('FILE');
+    setUrl('');
   }
   async function exportFile(ids: readonly string[]): Promise<void> {
     downloadBlob(
       await exportResearchWorkbook(researchBundle, ids),
       ids.length ? 'investulator-research.xlsx' : 'investulator-template.xlsx',
     );
+  }
+  async function importBuffer(buffer: ArrayBuffer): Promise<void> {
+    const access = await session();
+    setToken(access);
+    const rows = await readResearchWorkbook(buffer);
+    const result = await request('preview', { rows, scope: assetId }, access);
+    if (!isPreview(result)) {
+      throw new Error('schema');
+    }
+    setPreview(result);
   }
   return (
     <>
@@ -247,46 +266,82 @@ export function ResearchTransfer({
             </>
           ) : (
             <>
-              <label className="block">
-                {t('researchTransfer.choose')}
-                <input
-                  className="mt-2 block max-w-full"
-                  aria-label={t('researchTransfer.choose')}
-                  type="file"
-                  accept=".xlsx"
-                  disabled={busy}
-                  onChange={(event) => {
-                    const file = event.target.files?.[0];
-                    setPreview(null);
-                    if (!file) {
-                      return;
-                    }
-                    void run(async () => {
-                      if (
-                        !file.name.toLowerCase().endsWith('.xlsx') ||
-                        file.size > MAX_WORKBOOK_BYTES
-                      ) {
-                        throw new Error('size');
-                      }
-                      const access = await session();
-                      setToken(access);
-                      const rows = await readResearchWorkbook(
-                        await file.arrayBuffer(),
-                      );
-                      const result = await request(
-                        'preview',
-                        { rows, scope: assetId },
-                        access,
-                      );
-                      if (!isPreview(result)) {
-                        throw new Error('schema');
-                      }
-                      setPreview(result);
-                    });
-                  }}
-                />
-              </label>
+              <Segmented<ImportSource>
+                value={source}
+                disabled={busy}
+                onChange={(next) => {
+                  setSource(next);
+                  setPreview(null);
+                  setError('');
+                }}
+                options={[
+                  { label: t('researchTransfer.sourceFile'), value: 'FILE' },
+                  { label: t('researchTransfer.sourceUrl'), value: 'URL' },
+                ]}
+              />
               {assetId && <p>{t('researchTransfer.scope', { assetId })}</p>}
+              {source === 'FILE' ? (
+                <label className="block">
+                  {t('researchTransfer.choose')}
+                  <input
+                    className="mt-2 block max-w-full"
+                    aria-label={t('researchTransfer.choose')}
+                    type="file"
+                    accept=".xlsx"
+                    disabled={busy}
+                    onChange={(event) => {
+                      const file = event.target.files?.[0];
+                      setPreview(null);
+                      if (!file) {
+                        return;
+                      }
+                      void run(async () => {
+                        if (
+                          !file.name.toLowerCase().endsWith('.xlsx') ||
+                          file.size > MAX_WORKBOOK_BYTES
+                        ) {
+                          throw new Error('size');
+                        }
+                        await importBuffer(await file.arrayBuffer());
+                      });
+                    }}
+                  />
+                </label>
+              ) : (
+                <div className="space-y-2">
+                  <label className="block">
+                    {t('researchTransfer.urlLabel')}
+                    <Input
+                      className="mt-2"
+                      placeholder="/research/dosya-adi.xlsx"
+                      aria-label={t('researchTransfer.urlLabel')}
+                      value={url}
+                      disabled={busy}
+                      onChange={(event) => {
+                        setUrl(event.target.value);
+                        setPreview(null);
+                      }}
+                    />
+                  </label>
+                  <p className="text-sm text-fg-2">
+                    {t('researchTransfer.urlHint')}
+                  </p>
+                  <Button
+                    disabled={busy || !url.trim()}
+                    loading={busy}
+                    onClick={() =>
+                      void run(async () => {
+                        setPreview(null);
+                        await importBuffer(
+                          await fetchResearchWorkbookFromUrl(url),
+                        );
+                      })
+                    }
+                  >
+                    {t('researchTransfer.urlLoad')}
+                  </Button>
+                </div>
+              )}
               {preview && (
                 <div className="space-y-3" role="status">
                   <p>
