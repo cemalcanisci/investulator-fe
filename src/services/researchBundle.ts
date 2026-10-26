@@ -38,14 +38,27 @@ function historyKey(value: ResearchBundle['approximate'][number]): string {
   return value.assetId;
 }
 /** One source overlay feeds the existing repositories. No portfolio data are included. */
-export const researchBundle: ResearchBundle = {
-  schemaVersion: 1,
-  companies: merge(
-    baseline.companies,
-    overlay.companies,
-    (company) => company.id,
-  ),
-  reports: merge(baseline.reports, overlay.reports, (report) => report.version),
-  approximate: merge(baseline.approximate, overlay.approximate, historyKey),
-  verified: merge(baseline.verified, overlay.verified, historyKey),
-};
+export function mergeResearchBundles(
+  baseline: ResearchBundle,
+  overlay: ResearchBundle,
+): ResearchBundle {
+  return {
+    schemaVersion: 1,
+    companies: merge(
+      baseline.companies,
+      overlay.companies,
+      (company) => company.id,
+    ),
+    reports: merge(
+      baseline.reports,
+      overlay.reports,
+      (report) => report.version,
+    ),
+    approximate: merge(baseline.approximate, overlay.approximate, historyKey),
+    verified: merge(baseline.verified, overlay.verified, historyKey),
+  };
+}
+export const researchBundle: ResearchBundle = mergeResearchBundles(
+  baseline,
+  overlay,
+);

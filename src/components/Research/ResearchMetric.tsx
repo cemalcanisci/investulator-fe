@@ -5,6 +5,7 @@ import type { ResearchReport } from '@/domain/research';
 import { getAnalysis } from '@/services/analysis';
 import { formatQuantity } from '@/lib/formatNumber';
 import { divideDecimals } from '@/lib/decimal';
+import { metricDefinition } from '@/domain/metricEducation';
 
 import {
   ratioPresentation,
@@ -28,6 +29,15 @@ export function ResearchMetric({
   explain = false,
 }: ResearchMetricProps): JSX.Element {
   const { t, i18n } = useTranslation();
+  function metricLabel(key: string): string {
+    const fact = getAnalysis(report)?.facts.find((entry) => entry.id === key);
+    const definition = metricDefinition(key, fact?.metricKey);
+    return t(`research.metrics.${key}`, {
+      defaultValue: definition
+        ? t(`metricEducation.${definition.key}.name`)
+        : key,
+    });
+  }
   const fact = report.facts.find((entry) => entry.id === id);
   const calculation = report.calculations.find((entry) => entry.id === id);
   const legacyInputs = calculation
@@ -44,9 +54,7 @@ export function ResearchMetric({
   if (value === undefined || !unit) {
     return (
       <article className="min-w-0 rounded-xl border border-line bg-surface p-4">
-        <h3 className="text-sm text-fg-2">
-          {t(`research.metrics.${id}`, { defaultValue: id })}
-        </h3>
+        <h3 className="text-sm text-fg-2">{metricLabel(id)}</h3>
         <p className="mt-2 font-medium text-warn">
           {t('researchUx.trust.missing')}
         </p>
@@ -85,8 +93,8 @@ export function ResearchMetric({
             )
             .map((input) => (
               <p key={input.id} className="mt-2 break-words">
-                {t(`research.metrics.${input.id}`)}: {input.value} {input.unit}{' '}
-                · {input.period} · {input.sourceId}
+                {metricLabel(input.id)}: {input.value} {input.unit} ·{' '}
+                {input.period} · {input.sourceId}
               </p>
             ))}
           <p className="mt-2">{t('analysis.unverifiedInputs')}</p>
@@ -118,7 +126,7 @@ export function ResearchMetric({
   const sourceIds = [...new Set(inputs.map((entry) => entry.sourceId))];
   return (
     <article className="min-w-0 rounded-xl border border-line bg-surface p-4">
-      <h3 className="text-sm text-fg-2">{t(`research.metrics.${id}`)}</h3>
+      <h3 className="text-sm text-fg-2">{metricLabel(id)}</h3>
       <p className="mt-2 break-words text-2xl font-semibold tabular-nums">
         {formatQuantity(display, i18n.language)}{' '}
         <span className="text-sm font-normal text-fg-2">
@@ -227,7 +235,7 @@ export function ResearchMetric({
             .map((entry) => (
               <div key={entry.id} className="break-words">
                 <dt className="text-fg-2">
-                  {t(`research.metrics.${entry.id}`)} · {entry.period}
+                  {metricLabel(entry.id)} · {entry.period}
                 </dt>
                 <dd className="mt-1 tabular-nums">
                   {formatQuantity(entry.value, i18n.language)}{' '}

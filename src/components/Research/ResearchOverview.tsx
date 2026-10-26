@@ -26,7 +26,8 @@ export function ResearchOverview({
       'business',
       i18n.exists(`${report.contentKey}.company.activity`)
         ? t(`${report.contentKey}.company.activity`)
-        : t('researchUx.interpretation.missing'),
+        : (report.businessDescription ??
+          t('researchUx.interpretation.missing')),
     ],
     ['risks', t(`researchUx.sector.${growth.sectorKey}`)],
   ];

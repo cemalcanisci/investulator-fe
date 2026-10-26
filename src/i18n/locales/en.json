@@ -813,6 +813,7 @@
       "price": "Dated closing price",
       "shares": "Shares with TRY 1 nominal value",
       "revenue": "Revenue",
+      "ebitda": "EBITDA",
       "revenuePrevious": "Prior-period revenue",
       "profit": "Profit attributable to parent",
       "profitPrevious": "Prior-period parent profit",
@@ -2088,8 +2089,18 @@
       "formula": "Formula cells are not accepted.",
       "limit": "File or row limit exceeded.",
       "url": "Only .xlsx files under the same-origin /research/ folder are allowed.",
-      "fetch": "Could not download the file. Check the URL and that the file exists on the server."
+      "fetch": "Could not download the file. Check the URL and that the file exists on the server.",
+      "corrupt": "The Excel archive is corrupt or its XML content cannot be read.",
+      "format": "Unsupported XLSX research format. Check the Instructions sheet and data columns.",
+      "companyRequired": "Required company information is missing or invalid. Check identity, symbol, asset type and required nullable fields.",
+      "reportSchema": "Invalid financial report schema. Check required report, period, source and presentation fields.",
+      "identity": "Company identity, ISIN, symbol or exchange does not match.",
+      "scope": "The workbook contains records outside the selected company import scope.",
+      "save": "Persistent storage failed. Reload the data and preview the import again.",
+      "invalid": "Research transfer failed. Check the file and local persistence service."
     },
-    "narrativeStale": "Financial inputs changed. Calculable indicators are recomputed; the previous narrative and research commentary have not yet been reviewed against the new data."
+    "narrativeStale": "Financial inputs changed. Calculable indicators are recomputed; the previous narrative and research commentary have not yet been reviewed against the new data.",
+    "noChanges": "File read successfully; no changes were found against existing data.",
+    "observedAt": "Document observed on (not an exact publication date)"
   }
 }

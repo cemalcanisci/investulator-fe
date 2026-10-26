@@ -1,4 +1,5 @@
 import type { CellValue } from 'exceljs';
+import { normalizeWorkbookXml } from '@/lib/researchWorkbookXml';
 import {
   WORKBOOK_VERSION,
   WORKBOOK_SHEETS,
@@ -66,7 +67,7 @@ function checkArchive(buffer: ArrayBuffer): void {
       view.getUint16(offset + 32, true);
   }
 }
-function cell(value: CellValue): string {
+function cell(value: CellValue, location = ''): string {
   if (value === null || value === undefined) {
     return '';
   }
@@ -77,7 +78,7 @@ function cell(value: CellValue): string {
   ) {
     return String(value);
   }
-  throw new Error('formula');
+  throw new Error(`${location}formula`);
 }
 export async function readResearchWorkbook(
   buffer: ArrayBuffer,
@@ -85,12 +86,22 @@ export async function readResearchWorkbook(
   checkArchive(buffer);
   const { default: ExcelJS } = await import('exceljs');
   const workbook = new ExcelJS.Workbook();
-  await workbook.xlsx.load(buffer);
+  try {
+    await workbook.xlsx.load(await normalizeWorkbookXml(buffer));
+  } catch (error) {
+    if (error instanceof Error && error.message === 'format') {
+      throw error;
+    }
+    throw new Error('corrupt', { cause: error });
+  }
+  if (!workbook.getWorksheet('Instructions')) {
+    throw new Error('format');
+  }
   if (
     cell(workbook.getWorksheet('Instructions')?.getCell('B1').value ?? null) !==
     WORKBOOK_VERSION
   ) {
-    throw new Error('version');
+    throw new Error('Instructions:1:B: version');
   }
   const result: WorkbookRow[] = [];
   for (const sheet of workbook.worksheets) {
@@ -102,14 +113,14 @@ export async function readResearchWorkbook(
       sheet.columnCount > HEADERS.length ||
       sheet.rowCount > MAX_WORKBOOK_ROWS
     ) {
-      throw new Error('schema');
+      throw new Error(`${sheet.name}:1: schema`);
     }
     if (
       HEADERS.some(
         (header, index) => cell(sheet.getCell(1, index + 1).value) !== header,
       )
     ) {
-      throw new Error('headers');
+      throw new Error(`${sheet.name}:1:A:H: headers`);
     }
     sheet.eachRow((row, index) => {
       if (index === 1) {
@@ -117,7 +128,7 @@ export async function readResearchWorkbook(
       }
       try {
         const values = HEADERS.map((_, column) =>
-          cell(row.getCell(column + 1).value),
+          cell(row.getCell(column + 1).value, `${HEADERS[column]}: `),
         );
         if (values.every((value) => !value)) {
           return;

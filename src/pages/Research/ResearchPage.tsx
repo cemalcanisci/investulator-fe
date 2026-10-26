@@ -191,7 +191,9 @@ export function ResearchPage(): JSX.Element {
           <ResearchLongTerm report={report} />
           <Card className="p-5 sm:p-6">
             <h3 className="mb-3 text-xl font-semibold">
-              {t(`${report.contentKey}.headline`)}
+              {t(`${report.contentKey}.headline`, {
+                defaultValue: t('researchUx.interpretation.missing'),
+              })}
             </h3>
             {note('summary')}
             <div className="mt-4 grid gap-4 md:grid-cols-2">
@@ -446,6 +448,11 @@ export function ResearchPage(): JSX.Element {
                     {t('research.publishedAt')}:{' '}
                     {source.publishedAt ?? t('research.dateUnverified')}
                   </p>
+                  {source.observedAt && (
+                    <p className="mt-1 text-xs text-fg-2">
+                      {t('researchTransfer.observedAt')}: {source.observedAt}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
@@ -466,13 +473,23 @@ export function ResearchPage(): JSX.Element {
             <h1 className="mt-2 text-3xl font-semibold tracking-tight">
               {report.symbol}{' '}
               <span className="text-fg-2">
-                · {t(`${report.contentKey}.name`)}
+                ·{' '}
+                {t(`${report.contentKey}.name`, {
+                  defaultValue: asset?.name ?? report.symbol,
+                })}
               </span>
             </h1>
             <p className="mt-2 break-words text-xs text-fg-2">
               {report.market} · {report.isin} ·{' '}
-              {t(`${report.contentKey}.sector`)}
+              {t(`${report.contentKey}.sector`, {
+                defaultValue: report.sector,
+              })}
             </p>
+            {report.businessDescription && (
+              <p className="mt-2 text-sm text-fg-2">
+                {report.businessDescription}
+              </p>
+            )}
             <div className="mt-3 flex flex-wrap gap-2">
               {groups.map((group) => (
                 <span

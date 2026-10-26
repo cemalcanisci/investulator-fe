@@ -18,7 +18,9 @@ export function ResearchDebt({
     <Card className="space-y-4 p-5">
       <h3 className="font-semibold">{t('research.debtTitle')}</h3>
       <p className="text-sm leading-7 text-fg-2">
-        {t(`${report.contentKey}.debtMeaning`)}
+        {t(`${report.contentKey}.debtMeaning`, {
+          defaultValue: t('researchUx.interpretation.missing'),
+        })}
       </p>
       <div className="grid gap-3 sm:grid-cols-2">
         <ResearchMetric report={report} id="debtWithinYear" />
@@ -77,7 +79,9 @@ export function ResearchDebt({
         })}
       </div>
       <p className="text-sm leading-7 text-fg-2">
-        {t(`${report.contentKey}.interestMeaning`)}
+        {t(`${report.contentKey}.interestMeaning`, {
+          defaultValue: t('researchUx.interpretation.missing'),
+        })}
       </p>
       <h4 className="pt-2 text-sm font-semibold">{t('research.fxTitle')}</h4>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -85,10 +89,14 @@ export function ResearchDebt({
         <ResearchMetric report={report} id="fxAfterNatural" />
       </div>
       <p className="text-sm leading-7 text-fg-2">
-        {t(`${report.contentKey}.fxMeaning`)}
+        {t(`${report.contentKey}.fxMeaning`, {
+          defaultValue: t('researchUx.interpretation.missing'),
+        })}
       </p>
       <p className="text-sm leading-7 text-fg-2">
-        {t(`${report.contentKey}.cashRestrictions`)}
+        {t(`${report.contentKey}.cashRestrictions`, {
+          defaultValue: t('researchUx.interpretation.missing'),
+        })}
       </p>
       <a
         href={report.sources.find((source) => source.id === 'financials')?.url}

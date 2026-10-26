@@ -6,18 +6,19 @@
 
 ## ŞU AN
 
-**Son güncelleyen:** Claude — **Tarih:** 2026-10-25
+**Son güncelleyen:** Codex — **Tarih:** 2026-10-26
 
-XLSX import artık iki kaynaklı: Dosya Yükle ve URL'den Yükle, aynı önizleme/onay/kalıcı yazma akışıyla. TUPRS araştırması kısmi; başka hisseye geçme.
+Harici araçla sıfırdan üretilen SISE Excel'i gerçek okuyucu, ön izleme, izole kalıcı depo, analiz sayfası, yenileme ve kayıpsız export/import zincirinden geçti. Ayrıntılı teslim: [EXTERNAL_IMPORT_TEST_20261026.md](EXTERNAL_IMPORT_TEST_20261026.md).
 
-- `ResearchTransfer.tsx`: Import modalında `Segmented<'FILE'|'URL'>` kaynak seçici eklendi. Ortak `importBuffer()` (session→readResearchWorkbook→preview isteği→setPreview) her iki kaynaktan da çağrılır; ikinci bir parser/import sistemi yazılmadı.
-- `src/lib/researchUrlImport.ts` (yeni): `sanitizeResearchUrl` yalnızca aynı origin `/research/...xlsx` yollarına izin verir (regex: alfasayısal/`_`/`.`/`-` segmentler, zorunlu `.xlsx` sonu); `https://`, `//`, `..`, sorgu parametresi, yanlış uzantı reddedilir — ağ isteği **önce** doğrulanır, sonra atılır. `fetchResearchWorkbookFromUrl` indirir; `response.ok`, `text/html` (SPA fallback) ve `content-length`/gerçek `byteLength` ile `MAX_WORKBOOK_BYTES` (8 MiB) kontrolü yapar.
-- `public/research/` eklendi (Vite public, statik servis); kullanım notu `public/research/README.md`'de. Yeni kök `investulator-fe/README.md`: ayrı `INVESTULATOR_RESEARCH_WRITE=1` PowerShell komutu ve URL kısıtları.
-- i18n: `researchTransfer.sourceFile/sourceUrl/urlLabel/urlHint/urlLoad` ve `errors.url/errors.fetch` (tr+en) eklendi.
-- Testler (yeni): `src/__tests__/lib/researchUrlImport.test.ts` (16 test, URL doğrulama + fetch sınırları) ve `src/__tests__/components/ResearchTransferUrlImport.test.tsx` (6 test: dosya/URL aynı önizleme sonucu — gerçek `previewWorkbook` motoruyla mock fetch üzerinden —, yeni şirket ekleme, yasak URL/404/boyut/format hataları). Ağır (33k alanlı gerçek TUPRS bundle) testlerde tam suite altında CPU yüküyle `findByText` varsayılan 1000ms'yi aşabildiği görüldü; `{timeout:30000}` ile düzeltildi.
-- Tüm Vitest suite (coverage'sız) çalıştırıldı: **525 testten 520 geçti**, kalan 5 başarısız (`AnalysisPage.test.tsx` 4 test, `services/research.test.ts` 1 test) **bu işten önce de var olan, ilgisiz** bir regresyon — `src/data/research/analysis-reports.json` içeriği zaten `tuprs-2026-10-25-v7` iken ilgili test dosyaları hâlâ eski `v6` sabit değerini bekliyor (önceki oturumdaki veri güncellemesi test fikstürlerine yansımamış). Bu PR kapsamında dokunulmadı; ayrı düzeltme gerekir.
-- `npx tsc -b`: hatasız. `npm run lint`: hatasız (3 önceden var olan `vitest(require-mock-type-parameters)` uyarısı korunur, yeni hata/uyarı yok). `npm run build`: başarılı (mevcut ana paket boyutu uyarısı sürüyor). `npm run format`/`format:check`: temiz.
-- Önceki ŞU AN (dönem/F-K/bütüncül değerlendirme teslimi) değişmedi; ayrıntı hâlâ [XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md](../XLSX_DONEM_VE_SIRKET_ANALIZI_20261025.md). Backend/Keycloak/runtime AI/portföy işlemleri değişmedi; commit/push yok.
+- Kök neden doğrudan ExcelJS stack trace ile tekrarlandı: geçerli SpreadsheetML XML öneklerinde workbook modelinin oluşmaması. researchWorkbookXml.ts ad alanı öneklerini standartlaştırır; hücre okuyucusu yalnızca ExcelJS, güvenlik sınırları korunur.
+- Yeni rapor için yalnızca boş hesap dizisi başlangıçlarına izin verildi; finansal olgular sunuma yansıtılır. Kimlik/rapor ön doğrulaması, alan konumlu hatalar ve değişiklik yok/kayıt kapalı/kayıt hatası mesajları ayrıldı.
+- observedAt kaynak yayımlanma tarihinden ayrı, muhafazakâr erişilebilirlik sınırı; businessDescription ve çeviri anahtarı olmayan şirketler için görünüm desteği. TMS 29/dönem kapıları ve UNVERIFIED/NEEDS_REVIEW korunur.
+- public/research/sise-import-test.xlsx bağımsız üreticiyle sıfırdan hazırlandı. JSON örneği ve EXTERNAL_FORMAT.md zorunlu sayfa/sütun/alan sözleşmesini içerir. Örnek resmi kaynaklı 2025 tutarları içerir, tam bağımsız araştırma değildir.
+- Ön izleme: added 142, updated 0, unchanged 0, newCompanyIds [watch-bist-sise], issues []. Gerçek HTTP/disk/Chrome 19 kontrol geçti. Beş ekran genişliği, koyu tema, sayfa yenileme ve finansal değerler doğrulandı. Üst çubuk TRY dönüşümü kur servisi yokluğunda doğrulanmadı.
+- Tam Vitest: 532 test, 527 başarılı, 5 başarısız. Temiz HEAD arşivinde aynı AnalysisPage (4) ve research service (1) hatası tekrarlandı; yeni hata yok. Genel coverage satır %91,71, dal %86,02; genel %80 eşiği geçildi.
+- TypeScript/build ve mevcut Oxlint başarılı. Genel format kontrolü dokunulmayan README ve üç araştırma JSON dosyasını işaretliyor; kullanıcı değişiklikleri ve gerçek veri biçimi korunuyor.
+- TUPRS ve gerçek araştırma dosyaları hash karşılaştırmasıyla değişmedi. Kullanıcının 5173 sunucusu korunur. Kalıcı servis hâlâ yerel geliştirme ortamına özgüdür. Commit/push yapılmadı.
+- Sıradaki işler: kullanıcı incelemesi; ayrı kapsamda mevcut 5 eski test beklentisi ve mevcut format sorunları. TUPRS araştırması kısmi kalır; backend/Keycloak/runtime AI ilerletilmedi.
 
 ---
 
@@ -71,3 +72,5 @@ _Yeni satırlar en alta eklenir; var olan satırlar değiştirilmez._
 - **2026-10-25 — Codex:** Son geçerli dönem, ayrı finansal/fiyat görünümü ve kontrollü kalıcı XLSX aktarımı eklendi. 90/90 ilgili test geçti; 0 başarısız. Tam suite/coverage çalıştırılmadı. Üretim API ve finansal kaynak eksikleri teslim belgesinde açıklandı.
 
 - **2026-10-25 — Claude:** XLSX Import'a **URL'den Yükle** seçeneği eklendi (`/research/...xlsx`, aynı origin, mevcut önizleme/onay/kalıcı yazma akışı korunur); `sanitizeResearchUrl`/`fetchResearchWorkbookFromUrl` (`src/lib/researchUrlImport.ts`), i18n, `public/research/` ve kök `README.md` (PowerShell başlatma komutu) eklendi. Tüm suite çalıştırıldı: 520/525 geçti; kalan 5 başarısız test bu işten bağımsız, önceki oturumun v6→v7 veri güncellemesinden kalan stale fikstür (`AnalysisPage.test.tsx`, `services/research.test.ts`) — düzeltilmedi, ayrıca not edildi. tsc/lint/build/format temiz. Commit/push yapılmadı.
+
+- **2026-10-26 — Codex:** Harici XLSX/SISE aktarımı, gerçek kalıcılık ve analiz görünümü doğrulandı; 527/532 test, aynı 5 temel hata; 19 gerçek entegrasyon kontrolü başarılı. Format sözleşmesi ve bağımsız Excel örneği eklendi; gerçek TUPRS verisi korunarak commit/push yapılmadı.

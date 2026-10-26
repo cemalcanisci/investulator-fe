@@ -162,6 +162,8 @@ function isReport(value: unknown): value is AnalysisReport {
         c.precision <= 18,
     ) &&
     p.schemaVersion === 1 &&
+    (p.businessDescription === undefined ||
+      typeof p.businessDescription === 'string') &&
     (p.narrativeStale === undefined || typeof p.narrativeStale === 'boolean') &&
     stringFields(p, [
       'id',
@@ -188,6 +190,7 @@ function isReport(value: unknown): value is AnalysisReport {
       (s) =>
         record(s) &&
         stringFields(s, ['id', 'title', 'url', 'period', 'locator']) &&
+        (s.observedAt === undefined || typeof s.observedAt === 'string') &&
         (s.publishedAt === null || typeof s.publishedAt === 'string'),
     ) &&
     Array.isArray(p.facts) &&

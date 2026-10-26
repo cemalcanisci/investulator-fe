@@ -4,13 +4,17 @@ import { createHash, randomUUID } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 /** Opt-in, loopback-only development adapter; never installed in build/preview. */
-export function researchStore(): Plugin {
-  const path = fileURLToPath(
-    new URL('../src/data/research/imported-research.json', import.meta.url),
-  );
-  const backup = fileURLToPath(
-    new URL('../data/research-backups/', import.meta.url),
-  );
+export function researchStore(
+  options: { readonly dataPath?: string; readonly backupPath?: string } = {},
+): Plugin {
+  const path =
+    options.dataPath ??
+    fileURLToPath(
+      new URL('../src/data/research/imported-research.json', import.meta.url),
+    );
+  const backup =
+    options.backupPath ??
+    fileURLToPath(new URL('../data/research-backups/', import.meta.url));
   let busy = false;
   const token = randomUUID();
   let pending: { token: string; revision: string; content: string } | undefined;
@@ -138,17 +142,21 @@ export function researchStore(): Plugin {
             }
             const result = module.previewWorkbook(
               input.rows,
-              data.researchBundle,
+              data.mergeResearchBundles(
+                data.researchBundle,
+                module.parseResearchBundle(JSON.parse(current)),
+              ),
               input.scope,
             );
             const approval = randomUUID();
-            pending = result.issues.length
-              ? undefined
-              : {
-                  token: approval,
-                  revision: hash(current),
-                  content: JSON.stringify(result.bundle, null, 2),
-                };
+            pending =
+              result.issues.length || result.added + result.updated === 0
+                ? undefined
+                : {
+                    token: approval,
+                    revision: hash(current),
+                    content: JSON.stringify(result.bundle, null, 2),
+                  };
             const { bundle: _bundle, ...summary } = result;
             send(200, { ...summary, approval: pending?.token });
           } else if (req.url === '/apply' || req.url === '/undo') {
@@ -188,7 +196,15 @@ export function researchStore(): Plugin {
           }
         } catch (error) {
           send(400, {
-            error: error instanceof Error ? error.message : 'invalid',
+            error:
+              error instanceof Error &&
+              ['size', 'schema', 'stale', 'history', 'identity'].includes(
+                error.message,
+              )
+                ? error.message
+                : req.url === '/apply' || req.url === '/undo'
+                  ? 'save'
+                  : 'invalid',
           });
         } finally {
           busy = false;

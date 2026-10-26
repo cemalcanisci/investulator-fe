@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "companies": [
+    {
+      "id": "watch-bist-sise",
+      "symbol": "SISE",
+      "name": "Türkiye Şişe ve Cam Fabrikaları A.Ş.",
+      "assetType": "BIST_STOCK",
+      "market": "BIST",
+      "pair": null,
+      "providerId": "TRASISEW91Q3",
+      "identityStatus": "UNVERIFIED"
+    }
+  ],
+  "reports": [
+    {
+      "schemaVersion": 2,
+      "version": "sise-2025-external-import-v1",
+      "profileVersion": "1",
+      "revision": 1,
+      "context": {
+        "assetType": "EQUITY",
+        "businessModel": "INDUSTRIAL",
+        "strategies": ["LONG_TERM"]
+      },
+      "facts": [
+        {
+          "id": "revenue",
+          "metricKey": "revenue",
+          "value": "224527000000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "sise-2025-presentation",
+          "checkedAt": "2026-10-26",
+          "locator": "p.33 Summary Income Statement, 2025 column; Revenue; 224,527 TRY Mn. Source rounded to million TRY, multiplied by 1000000.",
+          "verification": "UNVERIFIED",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2025-12-31",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "fiscalYearStart": "2025-01-01",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          }
+        },
+        {
+          "id": "profit",
+          "metricKey": "profit",
+          "value": "9878000000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "sise-2025-presentation",
+          "checkedAt": "2026-10-26",
+          "locator": "p.33 Summary Income Statement, 2025 column; Net income after Minority Interest; 9,878 TRY Mn. Source rounded to million TRY, multiplied by 1000000.",
+          "verification": "UNVERIFIED",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2025-12-31",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "fiscalYearStart": "2025-01-01",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          }
+        },
+        {
+          "id": "ebitda",
+          "metricKey": "ebitda",
+          "value": "23982000000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "sise-2025-presentation",
+          "checkedAt": "2026-10-26",
+          "locator": "p.33 Summary Income Statement, 2025 column; EBITDA; 23,982 TRY Mn (not adjusted EBITDA). Source rounded to million TRY, multiplied by 1000000.",
+          "verification": "UNVERIFIED",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2025-12-31",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "fiscalYearStart": "2025-01-01",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          }
+        }
+      ],
+      "contracts": [],
+      "calculations": [],
+      "presentation": {
+        "schemaVersion": 1,
+        "id": "sise-2025-external-import-v1",
+        "assetId": "watch-bist-sise",
+        "symbol": "SISE",
+        "isin": "TRASISEW91Q3",
+        "market": "BIST",
+        "sector": "Cam ve kimyasallar",
+        "businessDescription": "Cam, soda külü ve endüstriyel hammadde üretimi. Kaynaklı aktarım örneği; tam yatırım araştırması veya bağımsız doğrulama değildir.",
+        "contentKey": "externalResearch",
+        "asOf": "2026-10-26",
+        "retrievedAt": "2026-10-26",
+        "timezone": "Europe/Istanbul",
+        "financialPeriod": "2025-01-01 / 2025-12-31",
+        "priceAt": "",
+        "status": "PARTIAL",
+        "valuationStatus": "NOT_ASSESSED",
+        "review": {
+          "status": "NEEDS_REVIEW",
+          "independent": false,
+          "key": "review"
+        },
+        "sources": [
+          {
+            "id": "sise-2025-presentation",
+            "title": "Şişecam 2025 yatırımcı sunumu — s.33",
+            "url": "https://www.sisecam.com/en/s-investor-relations/InvestorPresentations/1.%20SISECAM%2012M%202025%20-%20INVESTOR%20PRESENTATION.pdf",
+            "publishedAt": null,
+            "period": "2025-01-01 / 2025-12-31",
+            "locator": "p.33 Summary Income Statement; 2025 column; TRY Mn; IAS 29 note. Exact publication date unverified; observed 2026-10-26.",
+            "observedAt": "2026-10-26"
+          },
+          {
+            "id": "sise-isin",
+            "title": "KAP — SISE ISIN bilgisi",
+            "url": "https://www.kap.org.tr/tr/api/BildirimPdf/1411658",
+            "publishedAt": null,
+            "period": "2025",
+            "locator": "Pay Grup Bilgileri: SISE, TRASISEW91Q3"
+          }
+        ],
+        "facts": [],
+        "calculations": [],
+        "debtLines": [],
+        "coverage": [],
+        "disclosures": [],
+        "disclosureScan": {
+          "from": "2025-01-01",
+          "to": "2026-10-26",
+          "status": "UNAVAILABLE",
+          "sourceId": "",
+          "pendingDates": []
+        }
+      }
+    }
+  ],
+  "approximate": [],
+  "verified": []
+}

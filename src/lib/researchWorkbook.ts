@@ -47,6 +47,7 @@ export interface WorkbookIssue {
   readonly row: number;
   readonly column: string;
   readonly code: string;
+  readonly field?: string;
 }
 export interface WorkbookPreview {
   readonly bundle: ResearchBundle;
@@ -226,6 +227,8 @@ function assign(
     .slice(1)
     .map((part) => part.replace(/~1/g, '/').replace(/~0/g, '~'));
   if (
+    !path.startsWith('/') ||
+    /~(?![01])/.test(path) ||
     !parts.length ||
     parts.length > 20 ||
     parts.some(
@@ -359,7 +362,13 @@ export function previewWorkbook(
     unchanged = 0;
   const companyIds = [...new Set(rows.map((row) => row.assetId))];
   function issue(row: WorkbookRow, column: string, code: string): void {
-    issues.push({ sheet: row.sheet, row: row.row, column, code });
+    issues.push({
+      sheet: row.sheet,
+      row: row.row,
+      column,
+      code,
+      field: row.field,
+    });
   }
   if (rows.length > MAX_WORKBOOK_ROWS) {
     issues.push({
@@ -396,6 +405,21 @@ export function previewWorkbook(
     }
     seen.add(key(row));
     const old = merged.get(key(row));
+    // An empty presentation projection requests derivation, not deletion of financial facts.
+    if (
+      row.entity === 'reports' &&
+      row.field === '/presentation/facts' &&
+      row.type === 'array' &&
+      row.value === '[]' &&
+      initial.some(
+        (entry) =>
+          entry.entity === row.entity &&
+          entry.recordId === row.recordId &&
+          entry.field.startsWith('/presentation/facts/'),
+      )
+    ) {
+      continue;
+    }
     if (
       (row.type === 'array' || row.type === 'object') &&
       initial.some(
@@ -417,7 +441,15 @@ export function previewWorkbook(
       /^\/(contracts|calculations|presentation\/calculations)(\/|$)/.test(
         row.field,
       ) &&
-      (!old || old.value !== row.value || old.type !== row.type)
+      (!old || old.value !== row.value || old.type !== row.type) &&
+      !(
+        !old &&
+        row.type === 'array' &&
+        row.value === '[]' &&
+        ['/contracts', '/calculations', '/presentation/calculations'].includes(
+          row.field,
+        )
+      )
     ) {
       issue(row, 'field', 'calculationReadOnly');
       continue;
@@ -448,11 +480,11 @@ export function previewWorkbook(
   }
   const entities = new Map<
     string,
-    { entity: string; data: Record<string, unknown> }
+    { entity: string; data: Record<string, unknown>; row: WorkbookRow }
   >();
   for (const row of merged.values()) {
     const id = JSON.stringify([row.entity, row.recordId]);
-    const entry = entities.get(id) ?? { entity: row.entity, data: {} };
+    const entry = entities.get(id) ?? { entity: row.entity, data: {}, row };
     try {
       assign(entry.data, row.field, parseCell(row));
       entities.set(id, entry);
@@ -461,11 +493,52 @@ export function previewWorkbook(
     }
   }
   let bundle = baseline;
+  for (const entry of entities.values()) {
+    const incoming = rows.filter(
+      (row) =>
+        row.entity === entry.entity && row.recordId === entry.row.recordId,
+    );
+    if (!incoming.length) {
+      continue;
+    }
+    try {
+      if (entry.entity === 'reports') {
+        parseAnalysisReports([entry.data]);
+      }
+      if (entry.entity === 'companies') {
+        parseResearchBundle({
+          schemaVersion: 1,
+          companies: [entry.data],
+          reports: [],
+          approximate: [],
+          verified: [],
+        });
+      }
+    } catch {
+      issue(
+        incoming[0],
+        'field',
+        entry.entity === 'companies' ? 'companyRequired' : 'reportSchema',
+      );
+    }
+  }
   try {
     const take = (entity: string): unknown[] =>
       [...entities.values()]
         .filter((entry) => entry.entity === entity)
         .map((entry) => entry.data);
+    if (issues.length) {
+      return {
+        bundle: baseline,
+        issues,
+        added,
+        updated,
+        unchanged,
+        companyIds,
+        newCompanyIds: [],
+        sections: [],
+      };
+    }
     const parsed = parseResearchBundle({
       schemaVersion: 1,
       companies: take('companies'),
@@ -515,7 +588,8 @@ export function previewWorkbook(
         }
         if (
           !source.url.startsWith('https://') ||
-          (source.publishedAt !== null && !validDate(source.publishedAt))
+          (source.publishedAt !== null && !validDate(source.publishedAt)) ||
+          (source.observedAt !== undefined && !validDate(source.observedAt))
         ) {
           throw new Error('source');
         }
@@ -643,18 +717,25 @@ export function previewWorkbook(
         presentation: {
           ...report.presentation,
           narrativeStale: true,
-          facts: report.presentation.facts.map((fact) => {
-            const current = facts.find((item) => item.id === fact.id);
-            return current
-              ? {
-                  ...fact,
-                  value: current.value,
-                  unit: current.unit,
-                  period: current.period,
-                  sourceId: current.sourceId,
-                }
-              : fact;
-          }),
+          facts: facts.map(
+            ({
+              id,
+              value,
+              unit,
+              period,
+              sourceId,
+              metricKey,
+              comparisonKey,
+            }) => ({
+              id,
+              value,
+              unit,
+              period,
+              sourceId,
+              ...(metricKey ? { metricKey } : {}),
+              ...(comparisonKey ? { comparisonKey } : {}),
+            }),
+          ),
           status: 'PARTIAL',
           review: {
             ...report.presentation.review,

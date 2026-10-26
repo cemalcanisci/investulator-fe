@@ -17,7 +17,9 @@ export function ResearchDisclosures({
           {t(`research.status.${report.disclosureScan.status}`)}
         </p>
         <p className="mt-2 leading-relaxed text-fg-2">
-          {t(`${report.contentKey}.scanLimit`)}
+          {t(`${report.contentKey}.scanLimit`, {
+            defaultValue: t('researchUx.interpretation.missing'),
+          })}
         </p>
         <a
           className="mt-2 inline-block text-primary underline"

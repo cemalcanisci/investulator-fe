@@ -28,11 +28,15 @@ interface Preview {
   readonly issues: readonly WorkbookIssue[];
 }
 async function session(): Promise<string> {
-  const response = await fetch('/__research/session');
+  const response = await fetch('/__research/session').catch(() => {
+    throw new Error('disabled');
+  });
   if (!response.ok) {
     throw new Error('disabled');
   }
-  const data: unknown = await response.json();
+  const data: unknown = await response.json().catch(() => {
+    throw new Error('disabled');
+  });
   if (!object(data) || typeof data.token !== 'string') {
     throw new Error('disabled');
   }
@@ -47,8 +51,12 @@ async function request(
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'X-Research-Token': token },
     body: JSON.stringify(body),
+  }).catch(() => {
+    throw new Error(route === 'apply' || route === 'undo' ? 'save' : 'invalid');
   });
-  const data: unknown = await response.json();
+  const data: unknown = await response.json().catch(() => {
+    throw new Error(route === 'apply' || route === 'undo' ? 'save' : 'invalid');
+  });
   if (!response.ok) {
     throw new Error(
       object(data) && typeof data.error === 'string' ? data.error : 'invalid',
@@ -102,6 +110,22 @@ export function ResearchTransfer({
   const [url, setUrl] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
+  function errorMessage(code: string): string {
+    const separator = code.lastIndexOf(': ');
+    const location = separator < 0 ? '' : code.slice(0, separator);
+    const key = separator < 0 ? code : code.slice(separator + 2);
+    const message = key
+      .split(',')
+      .map((item) =>
+        t(`researchTransfer.errors.${item}`, {
+          defaultValue: t(`analysis.issues.${item}`, {
+            defaultValue: t('researchTransfer.errors.invalid'),
+          }),
+        }),
+      )
+      .join(' · ');
+    return location ? `${location}: ${message}` : message;
+  }
   async function run(action: () => Promise<void>): Promise<void> {
     setBusy(true);
     setError('');
@@ -198,7 +222,7 @@ export function ResearchTransfer({
       )}
       {!mode && error && (
         <p role="alert" className="text-sm text-neg">
-          {t(`researchTransfer.errors.${error}`, { defaultValue: error })}
+          {errorMessage(error)}
         </p>
       )}
       <Modal
@@ -296,10 +320,10 @@ export function ResearchTransfer({
                         return;
                       }
                       void run(async () => {
-                        if (
-                          !file.name.toLowerCase().endsWith('.xlsx') ||
-                          file.size > MAX_WORKBOOK_BYTES
-                        ) {
+                        if (!file.name.toLowerCase().endsWith('.xlsx')) {
+                          throw new Error('format');
+                        }
+                        if (file.size > MAX_WORKBOOK_BYTES) {
                           throw new Error('size');
                         }
                         await importBuffer(await file.arrayBuffer());
@@ -355,6 +379,10 @@ export function ResearchTransfer({
                     {t('researchTransfer.companies')}:{' '}
                     {preview.companyIds.join(', ')}
                   </p>
+                  {preview.added + preview.updated === 0 &&
+                    preview.issues.length === 0 && (
+                      <p>{t('researchTransfer.noChanges')}</p>
+                    )}
                   <p>
                     {t('researchTransfer.newCompanies')}:{' '}
                     {preview.newCompanyIds.join(', ') || '—'}
@@ -367,7 +395,7 @@ export function ResearchTransfer({
                     {preview.issues.slice(0, 100).map((issue, index) => (
                       <li key={`${issue.sheet}-${issue.row}-${index}`}>
                         {issue.sheet} · {issue.row} · {issue.column}:{' '}
-                        {issue.code}
+                        {errorMessage(issue.code)} {issue.field}
                       </li>
                     ))}
                   </ul>
@@ -417,7 +445,7 @@ export function ResearchTransfer({
           {busy && <p role="status">{t('common.loading')}</p>}
           {error && (
             <p role="alert" className="break-words text-neg">
-              {t(`researchTransfer.errors.${error}`, { defaultValue: error })}
+              {errorMessage(error)}
             </p>
           )}
         </div>

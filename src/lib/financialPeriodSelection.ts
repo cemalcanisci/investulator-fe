@@ -21,10 +21,11 @@ export function availableAt(
   fact: FinancialFact,
   asOf: string,
 ): boolean {
+  const source = report.presentation.sources.find(
+    (source) => source.id === fact.sourceId,
+  );
   const published =
-    fact.evidence?.publishedAt ??
-    report.presentation.sources.find((source) => source.id === fact.sourceId)
-      ?.publishedAt;
+    fact.evidence?.publishedAt ?? source?.publishedAt ?? source?.observedAt;
   return Boolean(
     published &&
     validDate(published) &&

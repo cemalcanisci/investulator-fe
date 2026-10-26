@@ -121,7 +121,9 @@ export function ResearchValuationGuide({
       <div className="rounded-xl border border-line bg-warn-soft p-5">
         <h3 className="font-semibold">{t('research.guide.missingTitle')}</h3>
         <p className="mt-3 text-sm leading-7">
-          {t(`${report.contentKey}.guide.missingIntro`)}
+          {t(`${report.contentKey}.guide.missingIntro`, {
+            defaultValue: t('researchUx.interpretation.missing'),
+          })}
         </p>
         <ul className="mt-4 space-y-3">
           {['earnings', 'benchmark', 'cashflow'].map((key) => (
@@ -129,12 +131,16 @@ export function ResearchValuationGuide({
               key={key}
               className="rounded-lg bg-surface p-4 text-sm leading-7"
             >
-              {t(`${report.contentKey}.guide.missing.${key}`)}
+              {t(`${report.contentKey}.guide.missing.${key}`, {
+                defaultValue: t('researchUx.interpretation.missing'),
+              })}
             </li>
           ))}
         </ul>
         <p className="mt-4 text-sm font-medium leading-7">
-          {t(`${report.contentKey}.guide.next`)}
+          {t(`${report.contentKey}.guide.next`, {
+            defaultValue: t('researchUx.interpretation.missing'),
+          })}
         </p>
       </div>
     </div>

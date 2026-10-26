@@ -813,6 +813,7 @@
       "price": "Tarihli kapanış fiyatı",
       "shares": "Nominal 1 TL pay sayısı",
       "revenue": "Hasılat",
+      "ebitda": "FAVÖK",
       "revenuePrevious": "Önceki dönem hasılatı",
       "profit": "Ana ortaklık net kârı",
       "profitPrevious": "Önceki dönem ana ortaklık net kârı",
@@ -2088,8 +2089,18 @@
       "formula": "Formül hücreleri kabul edilmez.",
       "limit": "Dosya boyutu veya satır sınırı aşıldı.",
       "url": "Yalnızca aynı site üzerindeki /research/ klasöründeki .xlsx dosyalarına izin verilir.",
-      "fetch": "Dosya indirilemedi. URL'yi ve dosyanın sunucuda bulunduğunu kontrol edin."
+      "fetch": "Dosya indirilemedi. URL'yi ve dosyanın sunucuda bulunduğunu kontrol edin.",
+      "corrupt": "Excel dosyası teknik olarak bozuk veya XML içeriği okunamıyor.",
+      "format": "Dosya desteklenen XLSX araştırma formatında değil. Instructions sayfası ve veri sütunlarını kontrol edin.",
+      "companyRequired": "Zorunlu şirket bilgisi eksik veya geçersiz. Şirket kimliği, sembol, varlık türü ve zorunlu boş alanları kontrol edin.",
+      "reportSchema": "Finansal rapor şeması geçersiz. Zorunlu rapor, dönem, kaynak ve sunum alanlarını kontrol edin.",
+      "identity": "Şirket kimliği, ISIN, sembol veya borsa bilgileri uyuşmuyor.",
+      "scope": "Dosya, seçili şirkete özel içe aktarma kapsamı dışında kayıt içeriyor.",
+      "save": "Kalıcı kayıt sırasında hata oluştu. Verileri yeniden okuyup ön izlemeyi tekrarlayın.",
+      "invalid": "Araştırma aktarımı tamamlanamadı. Dosyayı ve yerel kayıt servisini kontrol edin."
     },
-    "narrativeStale": "Finansal girdiler güncellendi. Hesaplanabilir göstergeler yeniden üretilir; önceki raporun anlatım ve araştırma metinleri yeni veriler için henüz incelenmedi."
+    "narrativeStale": "Finansal girdiler güncellendi. Hesaplanabilir göstergeler yeniden üretilir; önceki raporun anlatım ve araştırma metinleri yeni veriler için henüz incelenmedi.",
+    "noChanges": "Dosya okundu; mevcut verilerle aynı olduğu için değişiklik bulunmadı.",
+    "observedAt": "Belgenin gözlendiği tarih (kesin yayımlanma tarihi değildir)"
   }
 }

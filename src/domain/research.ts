@@ -3,6 +3,7 @@ export interface ResearchSource {
   readonly title: string;
   readonly url: string;
   readonly publishedAt: string | null;
+  readonly observedAt?: string;
   readonly period: string;
   readonly locator: string;
 }
@@ -58,6 +59,7 @@ export interface ResearchDisclosure {
 }
 
 export interface ResearchReport {
+  readonly businessDescription?: string;
   readonly narrativeStale?: boolean;
   readonly longTerm?: {
     readonly horizonYears: readonly [number, number];
