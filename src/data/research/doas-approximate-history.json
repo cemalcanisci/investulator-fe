@@ -1,0 +1,2173 @@
+{
+  "assetId": "watch-bist-doas",
+  "asOf": "2026-09-30",
+  "currency": "TRY",
+  "listedFrom": "2004-06-17",
+  "priceBasis": "SPLIT_ONLY",
+  "shareBasisDate": "2026-10-27",
+  "sources": [
+    {
+      "id": "investingPrices",
+      "url": "https://tr.investing.com/equities/dogus-otomotiv-historical-data",
+      "title": "Investing.com - DOAS aylik gecmis veri",
+      "origin": "Investing.com (Fusion Media) hisse gecmis veri tablosu, aylik gorunum",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "id": "investingDividends",
+      "url": "https://tr.investing.com/equities/dogus-otomotiv-dividends",
+      "title": "Investing.com - DOAS temettu takvimi",
+      "origin": "Investing.com temettu gecmisi tablosu (hak kullanim ve odeme tarihli)",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "id": "yahooDividends",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1136073600&period2=1792454400&interval=1d&events=div%2Csplits",
+      "title": "Yahoo Finance - DOAS.IS temettu/bolunme olaylari",
+      "origin": "Yahoo Finance chart API events nesnesi",
+      "retrievedAt": "2026-10-27"
+    },
+    {
+      "id": "usdtryFx",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TRY=X?period1=1136073600&period2=1792454400&interval=1d",
+      "title": "Yahoo Finance - TRY=X gunluk USD/TRY",
+      "origin": "Yahoo Finance chart API (bu dosya 2026-10-20 tarihli TUPRS arastirmasinda indirilmis, ayni ham veri yeniden kullanildi)",
+      "retrievedAt": "2026-10-20"
+    }
+  ],
+  "coverage": {
+    "prices": {
+      "from": "2006-09-01",
+      "to": "2026-10-27",
+      "state": "REVIEWED",
+      "sourceIds": [
+        "investingPrices"
+      ],
+      "method": "Investing.com DOAS aylik tablosu tek sorguda 01.09.2006-27.10.2026 araligiyla okundu; ay sonu kapanisi investing.com Simdi alanindan, islem gunu tarihi ayni araliktaki USD/TRY gunluk serisinin o ay icindeki son kayitli gununden alindi (yaklasik eslestirme, BIST ve doviz piyasasi takvimleri birebir ortusmeyebilir)."
+    },
+    "fx": {
+      "from": "2006-09-01",
+      "to": "2026-10-27",
+      "state": "REVIEWED",
+      "sourceIds": [
+        "usdtryFx"
+      ],
+      "method": "Yahoo Finance TRY=X gunluk kapanis serisi; TUPRS arastirmasinda (2026-10-20) indirilmis ayni ham dosya yeniden kullanildi."
+    },
+    "actions": {
+      "from": "2006-09-01",
+      "to": "2026-10-27",
+      "state": "REVIEWED",
+      "sourceIds": [
+        "investingPrices"
+      ],
+      "method": "Investing.com \"Hissesi Kac Kez Bolundu?\" SSS yaniti (0) ve aylik fiyat serisinde 2010-11 civarinda sureksizlik gozlenmemesiyle dogrulandi. Yahoo Finance ayri sorgusunda gorulen tek bir 2:1 bolunme kaydi (2010-11-25) bu ikinci kaynakla celisiyor; fiyat serisinde karsiligi bulunamadigi icin kullanilmadi, bolunme yok kabul edildi."
+    },
+    "dividends": {
+      "from": "2006-09-01",
+      "to": "2026-10-27",
+      "state": "REVIEWED",
+      "sourceIds": [
+        "investingDividends",
+        "yahooDividends"
+      ],
+      "method": "Investing.com temettu takvimi (2008-2026) ile Yahoo Finance DOAS.IS dividends olay listesi karsilastirildi; ortusen 18 kayit tarih ve tutar olarak birebir eslesti. 2007-05-15 kaydi yalnizca Yahoo kaynaginda bulundugundan tek kaynakli olarak isaretlendi."
+    }
+  },
+  "monthly": [
+    {
+      "date": "2006-10-31",
+      "close": "1.48",
+      "fx": "1.44949996",
+      "fxDate": "2006-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2006-11-30",
+      "close": "1.32",
+      "fx": "1.44649994",
+      "fxDate": "2006-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2006-12-29",
+      "close": "1.18",
+      "fx": "1.41009998",
+      "fxDate": "2006-12-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-01-31",
+      "close": "1.48",
+      "fx": "1.40300000",
+      "fxDate": "2007-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-02-28",
+      "close": "1.38",
+      "fx": "1.40699995",
+      "fxDate": "2007-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-03-30",
+      "close": "1.32",
+      "fx": "1.38469994",
+      "fxDate": "2007-03-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-04-30",
+      "close": "1.34",
+      "fx": "1.36199999",
+      "fxDate": "2007-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-05-31",
+      "close": "1.29",
+      "fx": "1.31099999",
+      "fxDate": "2007-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-06-29",
+      "close": "1.28",
+      "fx": "1.30110002",
+      "fxDate": "2007-06-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-07-31",
+      "close": "1.51",
+      "fx": "1.28199995",
+      "fxDate": "2007-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-08-31",
+      "close": "1.49",
+      "fx": "1.29499996",
+      "fxDate": "2007-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-09-28",
+      "close": "1.71",
+      "fx": "1.20190001",
+      "fxDate": "2007-09-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-10-31",
+      "close": "1.78",
+      "fx": "1.16550004",
+      "fxDate": "2007-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-11-30",
+      "close": "1.65",
+      "fx": "1.17279994",
+      "fxDate": "2007-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2007-12-31",
+      "close": "1.83",
+      "fx": "1.16279995",
+      "fxDate": "2007-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-01-31",
+      "close": "1.28",
+      "fx": "1.16869998",
+      "fxDate": "2008-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-02-29",
+      "close": "1.44",
+      "fx": "1.21730006",
+      "fxDate": "2008-02-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-03-31",
+      "close": "1.08",
+      "fx": "1.33179998",
+      "fxDate": "2008-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-04-30",
+      "close": "1.12",
+      "fx": "1.26760006",
+      "fxDate": "2008-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-05-30",
+      "close": "0.9",
+      "fx": "1.21389997",
+      "fxDate": "2008-05-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-06-30",
+      "close": "0.65",
+      "fx": "1.22319996",
+      "fxDate": "2008-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-07-31",
+      "close": "0.9",
+      "fx": "1.15160000",
+      "fxDate": "2008-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-08-29",
+      "close": "0.86",
+      "fx": "1.17719996",
+      "fxDate": "2008-08-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-09-30",
+      "close": "0.63",
+      "fx": "1.26400006",
+      "fxDate": "2008-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-10-31",
+      "close": "0.47",
+      "fx": "1.52380002",
+      "fxDate": "2008-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-11-28",
+      "close": "0.37",
+      "fx": "1.56649995",
+      "fxDate": "2008-11-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2008-12-31",
+      "close": "0.39",
+      "fx": "1.49319994",
+      "fxDate": "2008-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-01-30",
+      "close": "0.43",
+      "fx": "1.63199997",
+      "fxDate": "2009-01-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-02-27",
+      "close": "0.37",
+      "fx": "1.69959998",
+      "fxDate": "2009-02-27",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-03-31",
+      "close": "0.43",
+      "fx": "1.66760004",
+      "fxDate": "2009-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-04-30",
+      "close": "0.6",
+      "fx": "1.59580004",
+      "fxDate": "2009-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-05-29",
+      "close": "0.73",
+      "fx": "1.53299999",
+      "fxDate": "2009-05-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-06-30",
+      "close": "0.81",
+      "fx": "1.53900003",
+      "fxDate": "2009-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-07-31",
+      "close": "0.94",
+      "fx": "1.46969998",
+      "fxDate": "2009-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-08-31",
+      "close": "0.99",
+      "fx": "1.49950004",
+      "fxDate": "2009-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-09-30",
+      "close": "1.12",
+      "fx": "1.48310006",
+      "fxDate": "2009-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-10-30",
+      "close": "1.03",
+      "fx": "1.49870002",
+      "fxDate": "2009-10-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-11-30",
+      "close": "0.9",
+      "fx": "1.52740002",
+      "fxDate": "2009-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2009-12-31",
+      "close": "1.06",
+      "fx": "1.49829996",
+      "fxDate": "2009-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-01-29",
+      "close": "1.18",
+      "fx": "1.49619997",
+      "fxDate": "2010-01-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-02-26",
+      "close": "1.06",
+      "fx": "1.54620004",
+      "fxDate": "2010-02-26",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-03-31",
+      "close": "1.29",
+      "fx": "1.51559997",
+      "fxDate": "2010-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-04-30",
+      "close": "1.41",
+      "fx": "1.48800004",
+      "fxDate": "2010-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-05-31",
+      "close": "1.52",
+      "fx": "1.57179999",
+      "fxDate": "2010-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-06-30",
+      "close": "1.49",
+      "fx": "1.58120000",
+      "fxDate": "2010-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-07-30",
+      "close": "1.61",
+      "fx": "1.50479996",
+      "fxDate": "2010-07-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-08-31",
+      "close": "1.82",
+      "fx": "1.52320004",
+      "fxDate": "2010-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-09-30",
+      "close": "2.06",
+      "fx": "1.45050001",
+      "fxDate": "2010-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-10-29",
+      "close": "2.37",
+      "fx": "1.42929995",
+      "fxDate": "2010-10-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-11-30",
+      "close": "2.66",
+      "fx": "1.50269997",
+      "fxDate": "2010-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2010-12-31",
+      "close": "2.9",
+      "fx": "1.55229998",
+      "fxDate": "2010-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-01-31",
+      "close": "2.24",
+      "fx": "1.61000001",
+      "fxDate": "2011-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-02-28",
+      "close": "2.36",
+      "fx": "1.59060001",
+      "fxDate": "2011-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-03-31",
+      "close": "2.57",
+      "fx": "1.55110002",
+      "fxDate": "2011-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-04-29",
+      "close": "2.63",
+      "fx": "1.52339995",
+      "fxDate": "2011-04-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-05-31",
+      "close": "2.19",
+      "fx": "1.60029995",
+      "fxDate": "2011-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-06-30",
+      "close": "2",
+      "fx": "1.62030005",
+      "fxDate": "2011-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-07-29",
+      "close": "1.99",
+      "fx": "1.67250001",
+      "fxDate": "2011-07-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-08-31",
+      "close": "1.73",
+      "fx": "1.73109996",
+      "fxDate": "2011-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-09-30",
+      "close": "1.86",
+      "fx": "1.84990001",
+      "fxDate": "2011-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-10-31",
+      "close": "1.68",
+      "fx": "1.74170005",
+      "fxDate": "2011-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-11-30",
+      "close": "1.44",
+      "fx": "1.85000002",
+      "fxDate": "2011-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2011-12-30",
+      "close": "1.29",
+      "fx": "1.91540003",
+      "fxDate": "2011-12-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-01-31",
+      "close": "1.6",
+      "fx": "1.78610003",
+      "fxDate": "2012-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-02-29",
+      "close": "1.84",
+      "fx": "1.75049996",
+      "fxDate": "2012-02-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-03-30",
+      "close": "2.25",
+      "fx": "1.78380001",
+      "fxDate": "2012-03-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-04-30",
+      "close": "2.18",
+      "fx": "1.75909996",
+      "fxDate": "2012-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-05-31",
+      "close": "2.09",
+      "fx": "1.85500002",
+      "fxDate": "2012-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-06-29",
+      "close": "2.7",
+      "fx": "1.82669997",
+      "fxDate": "2012-06-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-07-31",
+      "close": "2.92",
+      "fx": "1.80079997",
+      "fxDate": "2012-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-08-31",
+      "close": "3.13",
+      "fx": "1.82650006",
+      "fxDate": "2012-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-09-28",
+      "close": "2.94",
+      "fx": "1.78755999",
+      "fxDate": "2012-09-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-10-31",
+      "close": "3.23",
+      "fx": "1.79653001",
+      "fxDate": "2012-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-11-30",
+      "close": "3.54",
+      "fx": "1.78507996",
+      "fxDate": "2012-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2012-12-31",
+      "close": "4.16",
+      "fx": "1.78867996",
+      "fxDate": "2012-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-01-31",
+      "close": "4.35",
+      "fx": "1.76831996",
+      "fxDate": "2013-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-02-28",
+      "close": "4.43",
+      "fx": "1.79596996",
+      "fxDate": "2013-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-03-29",
+      "close": "5.6",
+      "fx": "1.80871999",
+      "fxDate": "2013-03-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-04-30",
+      "close": "6.06",
+      "fx": "1.79360998",
+      "fxDate": "2013-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-05-31",
+      "close": "6.14",
+      "fx": "1.87141001",
+      "fxDate": "2013-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-06-28",
+      "close": "5.18",
+      "fx": "1.91767001",
+      "fxDate": "2013-06-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-07-31",
+      "close": "5.82",
+      "fx": "1.92244995",
+      "fxDate": "2013-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-08-30",
+      "close": "4.06",
+      "fx": "2.02898002",
+      "fxDate": "2013-08-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-09-30",
+      "close": "4.63",
+      "fx": "2.03812003",
+      "fxDate": "2013-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-10-31",
+      "close": "5.08",
+      "fx": "1.99289000",
+      "fxDate": "2013-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-11-29",
+      "close": "4.38",
+      "fx": "2.01300001",
+      "fxDate": "2013-11-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2013-12-31",
+      "close": "3.55",
+      "fx": "2.12055993",
+      "fxDate": "2013-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-01-31",
+      "close": "3.43",
+      "fx": "2.26375008",
+      "fxDate": "2014-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-02-28",
+      "close": "3.5",
+      "fx": "2.21087003",
+      "fxDate": "2014-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-03-31",
+      "close": "4.18",
+      "fx": "2.17578006",
+      "fxDate": "2014-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-04-30",
+      "close": "4.78",
+      "fx": "2.12100005",
+      "fxDate": "2014-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-05-30",
+      "close": "5.16",
+      "fx": "2.08718991",
+      "fxDate": "2014-05-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-06-30",
+      "close": "5.01",
+      "fx": "2.12349010",
+      "fxDate": "2014-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-07-31",
+      "close": "5.02",
+      "fx": "2.13137007",
+      "fxDate": "2014-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-08-29",
+      "close": "5.24",
+      "fx": "2.15718007",
+      "fxDate": "2014-08-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-09-30",
+      "close": "5.29",
+      "fx": "2.27942991",
+      "fxDate": "2014-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-10-31",
+      "close": "5.71",
+      "fx": "2.19853997",
+      "fxDate": "2014-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-11-28",
+      "close": "7.03",
+      "fx": "2.20578003",
+      "fxDate": "2014-11-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2014-12-31",
+      "close": "7.15",
+      "fx": "2.32273006",
+      "fxDate": "2014-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-01-30",
+      "close": "8.34",
+      "fx": "2.41548991",
+      "fxDate": "2015-01-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-02-27",
+      "close": "7.66",
+      "fx": "2.50447011",
+      "fxDate": "2015-02-27",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-03-31",
+      "close": "8.22",
+      "fx": "2.60260010",
+      "fxDate": "2015-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-04-30",
+      "close": "8.14",
+      "fx": "2.65674996",
+      "fxDate": "2015-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-05-29",
+      "close": "10.58",
+      "fx": "2.65530992",
+      "fxDate": "2015-05-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-06-30",
+      "close": "9.83",
+      "fx": "2.70330000",
+      "fxDate": "2015-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-07-31",
+      "close": "10.05",
+      "fx": "2.78765988",
+      "fxDate": "2015-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-08-31",
+      "close": "7.83",
+      "fx": "2.91805005",
+      "fxDate": "2015-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-09-30",
+      "close": "6.07",
+      "fx": "3.03814006",
+      "fxDate": "2015-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-10-30",
+      "close": "6.64",
+      "fx": "2.93470001",
+      "fxDate": "2015-10-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-11-30",
+      "close": "7.14",
+      "fx": "2.92564988",
+      "fxDate": "2015-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2015-12-31",
+      "close": "6.9",
+      "fx": "2.92008996",
+      "fxDate": "2015-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-01-29",
+      "close": "6.8",
+      "fx": "2.96951008",
+      "fxDate": "2016-01-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-02-29",
+      "close": "7.06",
+      "fx": "2.98795009",
+      "fxDate": "2016-02-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-03-31",
+      "close": "7.88",
+      "fx": "2.83300996",
+      "fxDate": "2016-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-04-29",
+      "close": "8.46",
+      "fx": "2.81111002",
+      "fxDate": "2016-04-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-05-31",
+      "close": "7.65",
+      "fx": "2.95326996",
+      "fxDate": "2016-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-06-30",
+      "close": "7.42",
+      "fx": "2.88786006",
+      "fxDate": "2016-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-07-29",
+      "close": "7.29",
+      "fx": "3.01036000",
+      "fxDate": "2016-07-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-08-31",
+      "close": "7.12",
+      "fx": "2.96329999",
+      "fxDate": "2016-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-09-30",
+      "close": "7.04",
+      "fx": "2.99708009",
+      "fxDate": "2016-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-10-31",
+      "close": "6.98",
+      "fx": "3.10630989",
+      "fxDate": "2016-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-11-30",
+      "close": "5.94",
+      "fx": "3.40939999",
+      "fxDate": "2016-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2016-12-30",
+      "close": "6.15",
+      "fx": "3.51760006",
+      "fxDate": "2016-12-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-01-31",
+      "close": "6.25",
+      "fx": "3.77619004",
+      "fxDate": "2017-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-02-28",
+      "close": "6.44",
+      "fx": "3.60689998",
+      "fxDate": "2017-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-03-31",
+      "close": "5.92",
+      "fx": "3.65429997",
+      "fxDate": "2017-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-04-28",
+      "close": "6.37",
+      "fx": "3.56329989",
+      "fxDate": "2017-04-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-05-31",
+      "close": "6.44",
+      "fx": "3.55250001",
+      "fxDate": "2017-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-06-30",
+      "close": "6.6",
+      "fx": "3.52423000",
+      "fxDate": "2017-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-07-31",
+      "close": "6.72",
+      "fx": "3.53230000",
+      "fxDate": "2017-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-08-31",
+      "close": "6.34",
+      "fx": "3.45510006",
+      "fxDate": "2017-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-09-29",
+      "close": "5.88",
+      "fx": "3.55831003",
+      "fxDate": "2017-09-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-10-31",
+      "close": "5.87",
+      "fx": "3.77725005",
+      "fxDate": "2017-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-11-30",
+      "close": "5.29",
+      "fx": "3.95604992",
+      "fxDate": "2017-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2017-12-29",
+      "close": "5.77",
+      "fx": "3.77686000",
+      "fxDate": "2017-12-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-01-31",
+      "close": "6.22",
+      "fx": "3.77571988",
+      "fxDate": "2018-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-02-28",
+      "close": "5.96",
+      "fx": "3.81520009",
+      "fxDate": "2018-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-03-30",
+      "close": "5.71",
+      "fx": "3.94490004",
+      "fxDate": "2018-03-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-04-30",
+      "close": "5.29",
+      "fx": "4.05166006",
+      "fxDate": "2018-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-05-31",
+      "close": "5.52",
+      "fx": "4.46859980",
+      "fxDate": "2018-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-06-29",
+      "close": "5.33",
+      "fx": "4.59049988",
+      "fxDate": "2018-06-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-07-31",
+      "close": "4.87",
+      "fx": "4.88278008",
+      "fxDate": "2018-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-08-31",
+      "close": "4.42",
+      "fx": "6.73409986",
+      "fxDate": "2018-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-09-28",
+      "close": "4.13",
+      "fx": "6.00570011",
+      "fxDate": "2018-09-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-10-31",
+      "close": "3.83",
+      "fx": "5.48089981",
+      "fxDate": "2018-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-11-30",
+      "close": "3.59",
+      "fx": "5.17019987",
+      "fxDate": "2018-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2018-12-31",
+      "close": "3.32",
+      "fx": "5.27428007",
+      "fxDate": "2018-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-01-31",
+      "close": "3.71",
+      "fx": "5.22740984",
+      "fxDate": "2019-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-02-28",
+      "close": "4.09",
+      "fx": "5.30937004",
+      "fxDate": "2019-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-03-29",
+      "close": "3.42",
+      "fx": "5.57170010",
+      "fxDate": "2019-03-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-04-30",
+      "close": "3.53",
+      "fx": "5.94890022",
+      "fxDate": "2019-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-05-31",
+      "close": "3.04",
+      "fx": "5.91249990",
+      "fxDate": "2019-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-06-28",
+      "close": "4.18",
+      "fx": "5.77180004",
+      "fxDate": "2019-06-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-07-31",
+      "close": "3.83",
+      "fx": "5.55770016",
+      "fxDate": "2019-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-08-30",
+      "close": "4.01",
+      "fx": "5.83269978",
+      "fxDate": "2019-08-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-09-30",
+      "close": "5.97",
+      "fx": "5.66769981",
+      "fxDate": "2019-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-10-31",
+      "close": "6.38",
+      "fx": "5.70100021",
+      "fxDate": "2019-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-11-29",
+      "close": "7.46",
+      "fx": "5.75799990",
+      "fxDate": "2019-11-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2019-12-31",
+      "close": "7.78",
+      "fx": "5.94721985",
+      "fxDate": "2019-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-01-31",
+      "close": "9.83",
+      "fx": "5.97415018",
+      "fxDate": "2020-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-02-28",
+      "close": "7.9",
+      "fx": "6.20676994",
+      "fxDate": "2020-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-03-31",
+      "close": "5.63",
+      "fx": "6.56504011",
+      "fxDate": "2020-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-04-30",
+      "close": "8.63",
+      "fx": "6.95100021",
+      "fxDate": "2020-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-05-29",
+      "close": "8.76",
+      "fx": "6.81104994",
+      "fxDate": "2020-05-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-06-30",
+      "close": "12.78",
+      "fx": "6.84950018",
+      "fxDate": "2020-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-07-31",
+      "close": "13.89",
+      "fx": "6.96939993",
+      "fxDate": "2020-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-08-31",
+      "close": "12.01",
+      "fx": "7.32490015",
+      "fxDate": "2020-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-09-30",
+      "close": "12.64",
+      "fx": "7.81132984",
+      "fxDate": "2020-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-10-30",
+      "close": "13.8",
+      "fx": "8.29794025",
+      "fxDate": "2020-10-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-11-30",
+      "close": "21.81",
+      "fx": "7.81731987",
+      "fxDate": "2020-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2020-12-31",
+      "close": "23.48",
+      "fx": "7.37373018",
+      "fxDate": "2020-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-01-29",
+      "close": "27.3",
+      "fx": "7.34577990",
+      "fxDate": "2021-01-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-02-26",
+      "close": "25.4",
+      "fx": "7.32310009",
+      "fxDate": "2021-02-26",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-03-31",
+      "close": "23.21",
+      "fx": "8.32470036",
+      "fxDate": "2021-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-04-30",
+      "close": "22.86",
+      "fx": "8.18488026",
+      "fxDate": "2021-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-05-31",
+      "close": "22.44",
+      "fx": "8.57339954",
+      "fxDate": "2021-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-06-30",
+      "close": "21.79",
+      "fx": "8.72599983",
+      "fxDate": "2021-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-07-30",
+      "close": "23.15",
+      "fx": "8.45226002",
+      "fxDate": "2021-07-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-08-31",
+      "close": "25.36",
+      "fx": "8.36730003",
+      "fxDate": "2021-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-09-30",
+      "close": "30.54",
+      "fx": "8.91613960",
+      "fxDate": "2021-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-10-29",
+      "close": "32.89",
+      "fx": "9.52511978",
+      "fxDate": "2021-10-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-11-30",
+      "close": "43.25",
+      "fx": "12.69900036",
+      "fxDate": "2021-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2021-12-31",
+      "close": "39.66",
+      "fx": "13.29049969",
+      "fxDate": "2021-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-01-31",
+      "close": "43.16",
+      "fx": "13.48204994",
+      "fxDate": "2022-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-02-28",
+      "close": "42.58",
+      "fx": "14.02884007",
+      "fxDate": "2022-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-03-31",
+      "close": "55.78",
+      "fx": "14.65100956",
+      "fxDate": "2022-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-04-29",
+      "close": "60.49",
+      "fx": "14.78888988",
+      "fxDate": "2022-04-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-05-31",
+      "close": "62.75",
+      "fx": "16.38349915",
+      "fxDate": "2022-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-06-30",
+      "close": "68.23",
+      "fx": "16.62820053",
+      "fxDate": "2022-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-07-29",
+      "close": "76.66",
+      "fx": "17.94519997",
+      "fxDate": "2022-07-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-08-31",
+      "close": "90.46",
+      "fx": "18.15026093",
+      "fxDate": "2022-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-09-30",
+      "close": "88.02",
+      "fx": "18.49749947",
+      "fxDate": "2022-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-10-31",
+      "close": "111.02",
+      "fx": "18.57296944",
+      "fxDate": "2022-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-11-30",
+      "close": "145.73",
+      "fx": "18.63990021",
+      "fxDate": "2022-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2022-12-30",
+      "close": "182.62",
+      "fx": "18.70298958",
+      "fxDate": "2022-12-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-01-31",
+      "close": "148.15",
+      "fx": "18.80800056",
+      "fxDate": "2023-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-02-28",
+      "close": "157.28",
+      "fx": "18.88419914",
+      "fxDate": "2023-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-03-31",
+      "close": "113.95",
+      "fx": "19.17569923",
+      "fxDate": "2023-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-04-28",
+      "close": "122.4",
+      "fx": "19.43549919",
+      "fxDate": "2023-04-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-05-31",
+      "close": "137.95",
+      "fx": "20.61160088",
+      "fxDate": "2023-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-06-30",
+      "close": "164.59",
+      "fx": "26.03860092",
+      "fxDate": "2023-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-07-31",
+      "close": "238.93",
+      "fx": "26.84040070",
+      "fxDate": "2023-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-08-31",
+      "close": "279.29",
+      "fx": "26.68129921",
+      "fxDate": "2023-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-09-29",
+      "close": "261.78",
+      "fx": "27.45890045",
+      "fxDate": "2023-09-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-10-31",
+      "close": "243.18",
+      "fx": "28.25737000",
+      "fxDate": "2023-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-11-30",
+      "close": "245.2",
+      "fx": "28.94091988",
+      "fxDate": "2023-11-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2023-12-29",
+      "close": "257",
+      "fx": "29.51980019",
+      "fxDate": "2023-12-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-01-31",
+      "close": "244.05",
+      "fx": "30.35840034",
+      "fxDate": "2024-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-02-29",
+      "close": "239.13",
+      "fx": "31.20883942",
+      "fxDate": "2024-02-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-03-29",
+      "close": "281.85",
+      "fx": "32.44910049",
+      "fxDate": "2024-03-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-04-30",
+      "close": "283.75",
+      "fx": "32.36991882",
+      "fxDate": "2024-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-05-31",
+      "close": "303",
+      "fx": "32.24380112",
+      "fxDate": "2024-05-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-06-28",
+      "close": "252.97",
+      "fx": "32.88779831",
+      "fxDate": "2024-06-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-07-31",
+      "close": "230.45",
+      "fx": "33.09849930",
+      "fxDate": "2024-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-08-30",
+      "close": "229.3",
+      "fx": "34.07733917",
+      "fxDate": "2024-08-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-09-30",
+      "close": "218.9",
+      "fx": "34.14905930",
+      "fxDate": "2024-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-10-31",
+      "close": "210.3",
+      "fx": "34.28319931",
+      "fxDate": "2024-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-11-29",
+      "close": "214",
+      "fx": "34.64836884",
+      "fxDate": "2024-11-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2024-12-31",
+      "close": "193.8",
+      "fx": "35.30524826",
+      "fxDate": "2024-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-01-31",
+      "close": "188.1",
+      "fx": "35.85303116",
+      "fxDate": "2025-01-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-02-28",
+      "close": "152.44",
+      "fx": "36.51779938",
+      "fxDate": "2025-02-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-03-31",
+      "close": "201.87",
+      "fx": "37.97510147",
+      "fxDate": "2025-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-04-30",
+      "close": "172.27",
+      "fx": "38.49940109",
+      "fxDate": "2025-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-05-30",
+      "close": "173.6",
+      "fx": "39.20848846",
+      "fxDate": "2025-05-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-06-30",
+      "close": "174.2",
+      "fx": "39.89059830",
+      "fxDate": "2025-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-07-31",
+      "close": "184.3",
+      "fx": "40.58700180",
+      "fxDate": "2025-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-08-29",
+      "close": "189.1",
+      "fx": "41.14049911",
+      "fxDate": "2025-08-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-09-30",
+      "close": "175.9",
+      "fx": "41.57659912",
+      "fxDate": "2025-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-10-31",
+      "close": "180.3",
+      "fx": "42.02679825",
+      "fxDate": "2025-10-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-11-28",
+      "close": "180.5",
+      "fx": "42.48509979",
+      "fxDate": "2025-11-28",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2025-12-31",
+      "close": "174.28",
+      "fx": "42.95198059",
+      "fxDate": "2025-12-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-01-30",
+      "close": "212.45",
+      "fx": "43.45510101",
+      "fxDate": "2026-01-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-02-27",
+      "close": "202.91",
+      "fx": "43.95539856",
+      "fxDate": "2026-02-27",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-03-31",
+      "close": "178.72",
+      "fx": "44.47389984",
+      "fxDate": "2026-03-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-04-30",
+      "close": "166.57",
+      "fx": "45.16600037",
+      "fxDate": "2026-04-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-05-29",
+      "close": "170.54",
+      "fx": "45.89179993",
+      "fxDate": "2026-05-29",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-06-30",
+      "close": "165.47",
+      "fx": "46.64070129",
+      "fxDate": "2026-06-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-07-31",
+      "close": "175.71",
+      "fx": "47.50139999",
+      "fxDate": "2026-07-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-08-31",
+      "close": "163.8",
+      "fx": "48.24689865",
+      "fxDate": "2026-08-31",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    },
+    {
+      "date": "2026-09-30",
+      "close": "144.2",
+      "fx": "49.00814056",
+      "fxDate": "2026-09-30",
+      "priceSourceId": "investingPrices",
+      "fxSourceId": "usdtryFx"
+    }
+  ],
+  "actions": [],
+  "dividends": [
+    {
+      "id": "doas-2007-05-15",
+      "exDate": "2007-05-15",
+      "payDate": "2007-05-15",
+      "rawGrossPerShare": "0.03085",
+      "sourceId": "yahooDividends"
+    },
+    {
+      "id": "doas-2008-05-26",
+      "exDate": "2008-05-26",
+      "payDate": "2008-05-28",
+      "rawGrossPerShare": "0.1024",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2012-04-11",
+      "exDate": "2012-04-11",
+      "payDate": "2012-04-13",
+      "rawGrossPerShare": "0.4546",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2013-04-30",
+      "exDate": "2013-04-30",
+      "payDate": "2013-05-03",
+      "rawGrossPerShare": "1.00",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2014-04-08",
+      "exDate": "2014-04-08",
+      "payDate": "2014-04-10",
+      "rawGrossPerShare": "1.00",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2015-04-09",
+      "exDate": "2015-04-09",
+      "payDate": "2015-04-13",
+      "rawGrossPerShare": "0.6818182",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2016-04-07",
+      "exDate": "2016-04-07",
+      "payDate": "2016-04-11",
+      "rawGrossPerShare": "1.3636364",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2018-05-25",
+      "exDate": "2018-05-25",
+      "payDate": "2018-05-29",
+      "rawGrossPerShare": "0.65",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2019-12-02",
+      "exDate": "2019-12-02",
+      "payDate": "2019-12-04",
+      "rawGrossPerShare": "0.6136363",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2021-04-27",
+      "exDate": "2021-04-27",
+      "payDate": "2021-04-29",
+      "rawGrossPerShare": "1.3636363",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2021-07-12",
+      "exDate": "2021-07-12",
+      "payDate": "2021-07-14",
+      "rawGrossPerShare": "1.3636363",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2022-04-08",
+      "exDate": "2022-04-08",
+      "payDate": "2022-04-12",
+      "rawGrossPerShare": "5.6818181",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2022-11-14",
+      "exDate": "2022-11-14",
+      "payDate": "2022-11-16",
+      "rawGrossPerShare": "4.090909",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2023-04-06",
+      "exDate": "2023-04-06",
+      "payDate": "2023-04-10",
+      "rawGrossPerShare": "9.090909",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2023-08-24",
+      "exDate": "2023-08-24",
+      "payDate": "2023-08-28",
+      "rawGrossPerShare": "11.363636",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2023-11-24",
+      "exDate": "2023-11-24",
+      "payDate": "2023-11-28",
+      "rawGrossPerShare": "5.6818181",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2024-04-19",
+      "exDate": "2024-04-19",
+      "payDate": "2024-04-24",
+      "rawGrossPerShare": "40.90909",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2024-09-02",
+      "exDate": "2024-09-02",
+      "payDate": "2024-09-04",
+      "rawGrossPerShare": "10.00",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2025-05-20",
+      "exDate": "2025-05-20",
+      "payDate": "2025-05-22",
+      "rawGrossPerShare": "27.272727",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2026-04-13",
+      "exDate": "2026-04-13",
+      "payDate": "2026-04-15",
+      "rawGrossPerShare": "15.00",
+      "sourceId": "investingDividends"
+    },
+    {
+      "id": "doas-2026-08-13",
+      "exDate": "2026-08-13",
+      "payDate": "2026-08-17",
+      "rawGrossPerShare": "15.00",
+      "sourceId": "investingDividends"
+    }
+  ],
+  "expectedDividendIds": [
+    "doas-2007-05-15",
+    "doas-2008-05-26",
+    "doas-2012-04-11",
+    "doas-2013-04-30",
+    "doas-2014-04-08",
+    "doas-2015-04-09",
+    "doas-2016-04-07",
+    "doas-2018-05-25",
+    "doas-2019-12-02",
+    "doas-2021-04-27",
+    "doas-2021-07-12",
+    "doas-2022-04-08",
+    "doas-2022-11-14",
+    "doas-2023-04-06",
+    "doas-2023-08-24",
+    "doas-2023-11-24",
+    "doas-2024-04-19",
+    "doas-2024-09-02",
+    "doas-2025-05-20",
+    "doas-2026-04-13",
+    "doas-2026-08-13"
+  ],
+  "expectedActionIds": []
+}

@@ -396,6 +396,7 @@ export function relatedMetricIds(
     peHalfYear: ['profitGrowth', 'cashProxy'],
     peRunRate: ['profitGrowth', 'nrm'],
     priceBook: ['roe', 'netFinancialDebt'],
+    financialDebt: ['netDebt', 'currentRatio'],
     evEbitda: ['netDebtEbitda', 'cashProxy'],
     netDebtEbitda: ['cashProxy', 'operatingMargin'],
     roe: ['priceBook', 'profitGrowth'],

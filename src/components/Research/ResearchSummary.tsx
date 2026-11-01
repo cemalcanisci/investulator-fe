@@ -4,6 +4,7 @@ import type { ResearchReport } from '@/domain/research';
 import { ResearchMetric } from './ResearchMetric';
 import { getAnalysis } from '@/services/analysis';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
+import { isMetricModeled } from '@/lib/ratioPresentation';
 
 export function ResearchSummary({
   report,
@@ -103,13 +104,14 @@ export function ResearchValuationGuide({
   const methods = analysis
     ? selectAnalysisProfile(analysis.context).methods
     : [];
-  const metrics = methods.includes('BOOK_ROE')
+  const candidates = methods.includes('BOOK_ROE')
     ? ['priceBook', 'roe']
     : methods.includes('NAV')
       ? ['netAssetValue']
       : methods.includes('EV_EBITDA')
-        ? ['priceBook', 'peHalfYear', 'peRunRate']
+        ? ['priceBook', 'peTtm', 'peHalfYear', 'peRunRate']
         : [];
+  const metrics = candidates.filter((id) => isMetricModeled(report, id));
   return (
     <div className="space-y-4">
       <h3 className="text-lg font-semibold">{t('research.guide.results')}</h3>

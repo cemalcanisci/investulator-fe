@@ -80,7 +80,13 @@ describe('external research XLSX integration', () => {
       canonical(
         result.bundle.reports.filter((r) => r.presentation.symbol === 'TUPRS'),
       ),
-    ).toBe(canonical(researchBundle.reports));
+    ).toBe(
+      canonical(
+        researchBundle.reports.filter(
+          (r) => r.presentation.symbol === 'TUPRS',
+        ),
+      ),
+    );
     const exported = await exportResearchWorkbook(result.bundle);
     const again = previewWorkbook(
       await readResearchWorkbook(await exported.arrayBuffer()),

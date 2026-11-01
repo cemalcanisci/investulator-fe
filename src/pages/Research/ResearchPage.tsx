@@ -34,6 +34,7 @@ import { useResearch } from '@/hooks/useResearch';
 import { useStrategies } from '@/hooks/useStrategies';
 import { getAnalysis } from '@/services/analysis';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
+import { isMetricModeled } from '@/lib/ratioPresentation';
 import {
   AnalysisQuality,
   ProfileValuation,
@@ -164,7 +165,8 @@ export function ResearchPage(): JSX.Element {
       </p>
     );
   }
-  function metrics(ids: readonly string[]): JSX.Element {
+  function metrics(allIds: readonly string[]): JSX.Element {
+    const ids = allIds.filter((id) => isMetricModeled(currentReport, id));
     return (
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {(view === 'EASY' ? ids.slice(0, 3) : ids).map((id) => (
@@ -229,7 +231,7 @@ export function ResearchPage(): JSX.Element {
         >
           <h3 className="font-semibold">{t('researchUx.cashflow')}</h3>
           <p className="text-sm leading-7">{t('researchUx.cashflowIntro')}</p>
-          {profile.financials.includes('cashProxy') ? (
+          {isMetricModeled(currentReport, 'cashProxy') ? (
             metrics(['operatingCash', 'capex', 'cashProxy'])
           ) : (
             <p>{t('researchUx.sectorMetricMissing')}</p>
@@ -243,7 +245,7 @@ export function ResearchPage(): JSX.Element {
                 'workingCapitalCash',
               ])}
               <Card className="p-5 text-sm leading-7">
-                {t('analysis.cashBridge')}
+                {note('cashBridge')}
               </Card>
             </>
           )}
@@ -256,7 +258,7 @@ export function ResearchPage(): JSX.Element {
         >
           <h3 className="font-semibold">{t('research.debtTitle')}</h3>
           <p className="text-sm leading-7">{t('researchUx.debtIntro')}</p>
-          {profile.financials.includes('financialDebt') ? (
+          {isMetricModeled(currentReport, 'financialDebt') ? (
             <>
               {metrics(['financialDebt'])}
               <ResearchDisclosurePanel title={t('researchUx.debtDetails')}>

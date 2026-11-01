@@ -29,7 +29,12 @@ export function ResearchOverview({
         : (report.businessDescription ??
           t('researchUx.interpretation.missing')),
     ],
-    ['risks', t(`researchUx.sector.${growth.sectorKey}`)],
+    [
+      'risks',
+      i18n.exists(`${report.contentKey}.risks`)
+        ? t(`${report.contentKey}.risks`)
+        : t(`researchUx.sector.${growth.sectorKey}`),
+    ],
   ];
   return (
     <div className="space-y-4">

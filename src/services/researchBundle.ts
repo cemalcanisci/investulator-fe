@@ -1,5 +1,23 @@
+import pagyoReports from '@/data/research/pagyo-analysis-reports.json';
+import pagyoApproximate from '@/data/research/pagyo-approximate-history.json';
+import akmgyReports from '@/data/research/akmgy-analysis-reports.json';
+import akmgyApproximate from '@/data/research/akmgy-approximate-history.json';
+import aksaReports from '@/data/research/aksa-analysis-reports.json';
+import aksaApproximate from '@/data/research/aksa-approximate-history.json';
 import reports from '@/data/research/analysis-reports.json';
+import doasReports from '@/data/research/doas-analysis-reports.json';
+import yggyoReports from '@/data/research/yggyo-analysis-reports.json';
+import ttrakReports from '@/data/research/ttrak-analysis-reports.json';
+import frotoReports from '@/data/research/froto-analysis-reports.json';
+import ismenReports from '@/data/research/ismen-analysis-reports.json';
+import toasoReports from '@/data/research/toaso-analysis-reports.json';
 import approximate from '@/data/research/tuprs-approximate-history.json';
+import doasApproximate from '@/data/research/doas-approximate-history.json';
+import yggyoApproximate from '@/data/research/yggyo-approximate-history.json';
+import ttrakApproximate from '@/data/research/ttrak-approximate-history.json';
+import frotoApproximate from '@/data/research/froto-approximate-history.json';
+import ismenApproximate from '@/data/research/ismen-approximate-history.json';
+import toasoApproximate from '@/data/research/toaso-approximate-history.json';
 import verified from '@/data/research/tuprs-dividend-history.json';
 import imported from '@/data/research/imported-research.json';
 import { createStrategySeed } from '@/services/mockStrategies';
@@ -9,8 +27,30 @@ import type { ResearchBundle } from '@/lib/researchWorkbook';
 const baseline = parseResearchBundle({
   schemaVersion: 1,
   companies: createStrategySeed().assets,
-  reports,
-  approximate: [approximate],
+  reports: [
+    ...reports,
+    ...doasReports,
+    ...yggyoReports,
+    ...ttrakReports,
+    ...frotoReports,
+    ...ismenReports,
+    ...toasoReports,
+    ...aksaReports,
+    ...akmgyReports,
+    ...pagyoReports,
+  ],
+  approximate: [
+    approximate,
+    doasApproximate,
+    yggyoApproximate,
+    ttrakApproximate,
+    frotoApproximate,
+    ismenApproximate,
+    toasoApproximate,
+    aksaApproximate,
+    akmgyApproximate,
+    pagyoApproximate,
+  ],
   verified: [verified],
 });
 const overlay = parseResearchBundle(imported);

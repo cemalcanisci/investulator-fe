@@ -1,0 +1,4122 @@
+[
+  {
+    "schemaVersion": 2,
+    "version": "akmgy-2026-10-31-v1",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "REIT",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "id": "price",
+        "value": "176.4",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık",
+        "evidence": {
+          "id": "ev-akmgy-price",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık",
+          "excerpt": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık; 176.4 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "price"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "shares",
+        "value": "37264000",
+        "unit": "SHARES",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.",
+        "evidence": {
+          "id": "ev-akmgy-shares",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.",
+          "excerpt": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.; 37264000 SHARES",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "shares"
+      },
+      {
+        "id": "cash",
+        "value": "654315000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: cash",
+        "evidence": {
+          "id": "ev-akmgy-cash",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: cash",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: cash; 654315000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "cash"
+      },
+      {
+        "id": "debtShort",
+        "value": "1243000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: debtShort",
+        "evidence": {
+          "id": "ev-akmgy-debtShort",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtShort",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtShort; 1243000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtShort"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtShort"
+      },
+      {
+        "id": "debtLong",
+        "value": "1668000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: debtLong",
+        "evidence": {
+          "id": "ev-akmgy-debtLong",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtLong",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtLong; 1668000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtLong"
+      },
+      {
+        "id": "financialDebt",
+        "value": "2911000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.",
+        "evidence": {
+          "id": "ev-akmgy-financialDebt",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.",
+          "excerpt": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.; 2911000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "financialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "financialDebt"
+      },
+      {
+        "id": "netFinancialDebt",
+        "value": "-651404000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.",
+        "evidence": {
+          "id": "ev-akmgy-netFinancialDebt",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.",
+          "excerpt": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.; -651404000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netFinancialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "netFinancialDebt"
+      },
+      {
+        "id": "parentEquity",
+        "value": "11131049000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: parentEquity",
+        "evidence": {
+          "id": "ev-akmgy-parentEquity",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: parentEquity",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: parentEquity; 11131049000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "netAssetValue",
+        "value": "11131049000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.",
+        "evidence": {
+          "id": "ev-akmgy-netAssetValue",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.",
+          "excerpt": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.; 11131049000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netAssetValue"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "netAssetValue"
+      },
+      {
+        "id": "currentAssets",
+        "value": "961444000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: currentAssets",
+        "evidence": {
+          "id": "ev-akmgy-currentAssets",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: currentAssets",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: currentAssets; 961444000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentAssets"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "currentAssets"
+      },
+      {
+        "id": "currentLiabilities",
+        "value": "165684000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities",
+        "evidence": {
+          "id": "ev-akmgy-currentLiabilities",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities; 165684000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "currentLiabilities"
+      },
+      {
+        "id": "totalAssetsEnd",
+        "value": "13739049000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd",
+        "evidence": {
+          "id": "ev-akmgy-totalAssetsEnd",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd; 13739049000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "totalAssetsEnd"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "totalAssetsEnd"
+      },
+      {
+        "id": "financialInvestments",
+        "value": "134752000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+        "evidence": {
+          "id": "ev-akmgy-financialInvestments",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+          "excerpt": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "financialInvestments"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "financialInvestments"
+      },
+      {
+        "id": "debtWithinYear",
+        "value": "1243000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear",
+        "evidence": {
+          "id": "ev-akmgy-debtWithinYear",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear",
+          "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear; 1243000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtWithinYear"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtWithinYear"
+      },
+      {
+        "id": "fxBeforeNatural",
+        "value": "130994000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.",
+        "evidence": {
+          "id": "ev-akmgy-fxBeforeNatural",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.",
+          "excerpt": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.; 130994000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "fxBeforeNatural"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "fxBeforeNatural"
+      },
+      {
+        "id": "revenue",
+        "value": "630236000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Gelir tablosu s.3 hasılat",
+        "evidence": {
+          "id": "ev-akmgy-revenue",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Gelir tablosu s.3 hasılat",
+          "excerpt": "Gelir tablosu s.3 hasılat; 630236000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "operatingProfit",
+        "value": "374168000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil",
+        "evidence": {
+          "id": "ev-akmgy-operatingProfit",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil",
+          "excerpt": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil; 374168000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingProfit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "operatingProfit"
+      },
+      {
+        "id": "profit",
+        "value": "309040000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Gelir tablosu net kâr; solo",
+        "evidence": {
+          "id": "ev-akmgy-profit",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Gelir tablosu net kâr; solo",
+          "excerpt": "Gelir tablosu net kâr; solo; 309040000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "operatingCash",
+        "value": "356808000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı s.5 işletme faaliyetlerinden nakit",
+        "evidence": {
+          "id": "ev-akmgy-operatingCash",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Nakit akışı s.5 işletme faaliyetlerinden nakit",
+          "excerpt": "Nakit akışı s.5 işletme faaliyetlerinden nakit; 356808000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "operatingCash"
+      },
+      {
+        "id": "capex",
+        "value": "4593000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü",
+        "evidence": {
+          "id": "ev-akmgy-capex",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü",
+          "excerpt": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü; 4593000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "capex"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "capex"
+      },
+      {
+        "id": "workingCapitalCash",
+        "value": "32182000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı: işletme sermayesi değişimi",
+        "evidence": {
+          "id": "ev-akmgy-workingCapitalCash",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Nakit akışı: işletme sermayesi değişimi",
+          "excerpt": "Nakit akışı: işletme sermayesi değişimi; 32182000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "workingCapitalCash"
+      },
+      {
+        "id": "rentalIncome",
+        "value": "576537000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç",
+        "evidence": {
+          "id": "ev-akmgy-rentalIncome",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç",
+          "excerpt": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç; 576537000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "rentalIncome"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "rentalIncome"
+      },
+      {
+        "id": "revenuePrevious",
+        "value": "610807000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+        "evidence": {
+          "id": "ev-akmgy-revenuePrevious",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 610807000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenuePrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "profitPrevious",
+        "value": "263623000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+        "evidence": {
+          "id": "ev-akmgy-profitPrevious",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 263623000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "rentalIncomePrevious",
+        "value": "568782000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+        "evidence": {
+          "id": "ev-akmgy-rentalIncomePrevious",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 568782000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "rentalIncomePrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "rentalIncome"
+      },
+      {
+        "id": "fyProfit2025",
+        "value": "781507000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz",
+        "evidence": {
+          "id": "ev-akmgy-fyProfit2025",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz",
+          "excerpt": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz; 781507000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "fyProfit2025"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "parentEquityH12025",
+        "value": "10890277000",
+        "unit": "TRY",
+        "period": "2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-06-30",
+          "end": "2025-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+        "evidence": {
+          "id": "ev-akmgy-parentEquityH12025",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+          "excerpt": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü; 10890277000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityH12025"
+          ],
+          "from": "2025-06-30",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "parentEquityFY2025",
+        "value": "11292800000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı",
+        "evidence": {
+          "id": "ev-akmgy-parentEquityFY2025",
+          "sourceId": "h1",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "locator": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı",
+          "excerpt": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı; 11292800000 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFY2025"
+          ],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "dividend1",
+        "value": "12.36",
+        "unit": "TRY_SHARE",
+        "period": "2026-04-17",
+        "sourceId": "distribution",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-04-17",
+          "end": "2026-04-17",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0",
+        "evidence": {
+          "id": "ev-akmgy-dividend1",
+          "sourceId": "distribution",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2509/630-kar-payi-dagitimina-iliskin-genel-kurul-karari.pdf",
+          "locator": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0",
+          "excerpt": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0; 12.36 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-04-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividend1"
+          ],
+          "from": "2026-04-17",
+          "to": "2026-04-17",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "dividend2",
+        "value": "3.7",
+        "unit": "TRY_SHARE",
+        "period": "2026-08-13",
+        "sourceId": "advance",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-08-13",
+          "end": "2026-08-13",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net",
+        "evidence": {
+          "id": "ev-akmgy-dividend2",
+          "sourceId": "advance",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2551/647-kar-payi-avansi-odemesi-islemlerine-iliskin-bildirim.pdf",
+          "locator": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net",
+          "excerpt": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net; 3.7 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividend2"
+          ],
+          "from": "2026-08-13",
+          "to": "2026-08-13",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "dividendTotal",
+        "value": "16.06",
+        "unit": "TRY_SHARE",
+        "period": "2026-08-13",
+        "sourceId": "advance",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-08-13",
+          "end": "2026-08-13",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.",
+        "evidence": {
+          "id": "ev-akmgy-dividendTotal",
+          "sourceId": "advance",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2551/647-kar-payi-avansi-odemesi-islemlerine-iliskin-bildirim.pdf",
+          "locator": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.",
+          "excerpt": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.; 16.06 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-07",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendTotal"
+          ],
+          "from": "2026-08-13",
+          "to": "2026-08-13",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "profitFY2021",
+        "value": "94818323",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2021",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-akmgy-profitFY2021",
+          "sourceId": "fy2021",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/1590/2021-4-ceyrek.pdf",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 94818323 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2021"
+          ],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "profitFY2022",
+        "value": "1247439605",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-akmgy-profitFY2022",
+          "sourceId": "fy2022",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2161/2022-4-ceyrek.pdf",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 1247439605 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2022"
+          ],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "profitFY2023",
+        "value": "496547351",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-akmgy-profitFY2023",
+          "sourceId": "fy2023",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2246/2023-4-ceyrek.pdf",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 496547351 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2023"
+          ],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "dailyChange",
+        "value": "-2.379634753735473",
+        "unit": "PERCENT",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-akmgy-dailyChange",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; -2.379634753735473 PERCENT",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dailyChange"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "weeklyChange",
+        "value": "-0.056657223796034",
+        "unit": "PERCENT",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-akmgy-weeklyChange",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; -0.056657223796034 PERCENT",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "weeklyChange"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "sma5",
+        "value": "178.76",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "37264000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-akmgy-sma5",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; 178.76 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "sma5"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "profitFY2024",
+        "value": "524404659",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+        "evidence": {
+          "id": "ev-akmgy-profitFY2024",
+          "sourceId": "fy2024",
+          "originId": "akmerkez-issuer",
+          "collectionId": "akmgy-20261031",
+          "reviewerId": "codex-akmgy-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.akmgyo.com/media/2446/2024-4-ceyrek.pdf",
+          "locator": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+          "excerpt": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2024"
+          ],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        },
+        "metricKey": "profit"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3
+      },
+      {
+        "id": "bookPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "operatingMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "currentRatio",
+        "operation": "RATIO",
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "cashProxy",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "netDebt",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "financialDebt",
+          "cash"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "peHalfYear",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "peRunRate",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "rentalGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "rentalIncome",
+          "rentalIncomePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "bookPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "operatingMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "currentRatio",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "netDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peHalfYear",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peRunRate",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "ANNUALIZED_ESTIMATE"
+      },
+      {
+        "id": "rentalGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      }
+    ],
+    "presentation": {
+      "schemaVersion": 1,
+      "id": "akmgy-2026-10-31-v1",
+      "assetId": "watch-bist-akmgy",
+      "symbol": "AKMGY",
+      "isin": "TREAKMG00018",
+      "market": "BIST",
+      "sector": "GYO · alışveriş merkezi, ofis ve rezidans",
+      "contentKey": "researchAkmgy",
+      "asOf": "2026-10-31",
+      "retrievedAt": "2026-10-31T18:59:09.511Z",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-30T18:10:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "debtLines": [],
+      "disclosureScan": {
+        "from": "2026-08-01",
+        "to": "2026-10-31",
+        "status": "PARTIAL",
+        "sourceId": "disclosures",
+        "pendingDates": []
+      },
+      "disclosures": [
+        {
+          "id": "1683350",
+          "sourceId": "lawsuit16",
+          "key": "lawsuit16",
+          "publishedAt": "2026-10-16T19:28:06+03:00",
+          "eventDate": "2026-10-16",
+          "previousDisclosureDate": "2025-12-26",
+          "isUpdate": true,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": false
+        },
+        {
+          "id": "1685087",
+          "sourceId": "lawsuit21",
+          "key": "lawsuit21",
+          "publishedAt": "2026-10-21T15:08:19+03:00",
+          "eventDate": "2026-10-21",
+          "previousDisclosureDate": "2026-01-22",
+          "isUpdate": true,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": false
+        },
+        {
+          "id": "1687648",
+          "sourceId": "appeal26",
+          "key": "appeal26",
+          "publishedAt": "2026-10-26T19:30:15+03:00",
+          "eventDate": "2026-10-26",
+          "previousDisclosureDate": "2026-10-16",
+          "isUpdate": true,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": false
+        },
+        {
+          "id": "1645581",
+          "sourceId": "advance",
+          "key": "advance",
+          "publishedAt": "2026-08-07T18:28:57+03:00",
+          "eventDate": "2026-08-13",
+          "previousDisclosureDate": null,
+          "isUpdate": false,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": false
+        },
+        {
+          "id": "1587221",
+          "sourceId": "distribution",
+          "key": "distribution",
+          "publishedAt": "2026-04-07T20:01:10+03:00",
+          "eventDate": "2026-04-17",
+          "previousDisclosureDate": "2026-03-11",
+          "isUpdate": true,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": true
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "growth",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "technical",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "PARTIAL"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "176.4",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-30",
+            "end": "2026-10-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık",
+          "evidence": {
+            "id": "ev-akmgy-price",
+            "sourceId": "price",
+            "originId": "yahoo-finance",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+            "locator": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık",
+            "excerpt": "30.10.2026 kapanış; tarihli ikinci sağlayıcı tablosuyla mutabık; 176.4 TRY_SHARE",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "price"
+            ],
+            "from": "2026-10-30",
+            "to": "2026-10-30",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "shares",
+          "value": "37264000",
+          "unit": "SHARES",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "GROUP",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.",
+          "evidence": {
+            "id": "ev-akmgy-shares",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.",
+            "excerpt": "Ödenmiş sermaye 37.264.000 TL; 1 TL nominal borsa payı eşdeğeri. 1 kuruş hukuki pay sayısı 100 katıdır.; 37264000 SHARES",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "shares"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": null
+          },
+          "metricKey": "shares"
+        },
+        {
+          "id": "cash",
+          "value": "654315000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: cash",
+          "evidence": {
+            "id": "ev-akmgy-cash",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: cash",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: cash; 654315000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "cash"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "cash"
+        },
+        {
+          "id": "debtShort",
+          "value": "1243000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtShort",
+          "evidence": {
+            "id": "ev-akmgy-debtShort",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: debtShort",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtShort; 1243000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "debtShort"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "debtShort"
+        },
+        {
+          "id": "debtLong",
+          "value": "1668000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtLong",
+          "evidence": {
+            "id": "ev-akmgy-debtLong",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: debtLong",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtLong; 1668000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "debtLong"
+        },
+        {
+          "id": "financialDebt",
+          "value": "2911000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.",
+          "evidence": {
+            "id": "ev-akmgy-financialDebt",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.",
+            "excerpt": "Bilanço kiralama borçları 1.243.000 kısa + 1.668.000 uzun; banka kredisi ayrı gösterilmiyor. Ertelenmiş vergi finansal borç değildir.; 2911000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "financialDebt"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "financialDebt"
+        },
+        {
+          "id": "netFinancialDebt",
+          "value": "-651404000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.",
+          "evidence": {
+            "id": "ev-akmgy-netFinancialDebt",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.",
+            "excerpt": "2.911.000 kiralama borcu − 654.315.000 nakit = −651.404.000 TL; tahvil yatırımları ayrıca düşülmedi.; -651404000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "netFinancialDebt"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "netFinancialDebt"
+        },
+        {
+          "id": "parentEquity",
+          "value": "11131049000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: parentEquity",
+          "evidence": {
+            "id": "ev-akmgy-parentEquity",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: parentEquity",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: parentEquity; 11131049000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "netAssetValue",
+          "value": "11131049000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.",
+          "evidence": {
+            "id": "ev-akmgy-netAssetValue",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.",
+            "excerpt": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır.; 11131049000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "netAssetValue"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "netAssetValue"
+        },
+        {
+          "id": "currentAssets",
+          "value": "961444000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: currentAssets",
+          "evidence": {
+            "id": "ev-akmgy-currentAssets",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: currentAssets",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: currentAssets; 961444000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "currentAssets"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "currentAssets"
+        },
+        {
+          "id": "currentLiabilities",
+          "value": "165684000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities",
+          "evidence": {
+            "id": "ev-akmgy-currentLiabilities",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: currentLiabilities; 165684000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "currentLiabilities"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "currentLiabilities"
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "13739049000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd",
+          "evidence": {
+            "id": "ev-akmgy-totalAssetsEnd",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: totalAssetsEnd; 13739049000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "totalAssetsEnd"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "totalAssetsEnd"
+        },
+        {
+          "id": "financialInvestments",
+          "value": "134752000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+          "evidence": {
+            "id": "ev-akmgy-financialInvestments",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+            "excerpt": "Not 20: kısa vadeli döviz tahvilleri; nakitten ayrı, vade ve kredi riski taşır.",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "financialInvestments"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "financialInvestments"
+        },
+        {
+          "id": "debtWithinYear",
+          "value": "1243000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear",
+          "evidence": {
+            "id": "ev-akmgy-debtWithinYear",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear",
+            "excerpt": "Finansal durum tablosu s.1–2 / Not 4: debtWithinYear; 1243000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "debtWithinYear"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "debtWithinYear"
+        },
+        {
+          "id": "fxBeforeNatural",
+          "value": "130994000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.",
+          "evidence": {
+            "id": "ev-akmgy-fxBeforeNatural",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.",
+            "excerpt": "Not 21: döviz varlığı 133.211.000 − yükümlülük 2.217.000 = 130.994.000 TL net uzun pozisyon; doğal korunma eklenmedi.; 130994000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "fxBeforeNatural"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "fxBeforeNatural"
+        },
+        {
+          "id": "revenue",
+          "value": "630236000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Gelir tablosu s.3 hasılat",
+          "evidence": {
+            "id": "ev-akmgy-revenue",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Gelir tablosu s.3 hasılat",
+            "excerpt": "Gelir tablosu s.3 hasılat; 630236000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenue"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "revenue"
+        },
+        {
+          "id": "operatingProfit",
+          "value": "374168000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil",
+          "evidence": {
+            "id": "ev-akmgy-operatingProfit",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil",
+            "excerpt": "Gelir tablosu esas faaliyet kârı; diğer faaliyet gelir/giderleri dahil; 374168000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "operatingProfit"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "operatingProfit"
+        },
+        {
+          "id": "profit",
+          "value": "309040000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Gelir tablosu net kâr; solo",
+          "evidence": {
+            "id": "ev-akmgy-profit",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Gelir tablosu net kâr; solo",
+            "excerpt": "Gelir tablosu net kâr; solo; 309040000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profit"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "operatingCash",
+          "value": "356808000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Nakit akışı s.5 işletme faaliyetlerinden nakit",
+          "evidence": {
+            "id": "ev-akmgy-operatingCash",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Nakit akışı s.5 işletme faaliyetlerinden nakit",
+            "excerpt": "Nakit akışı s.5 işletme faaliyetlerinden nakit; 356808000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "operatingCash"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "operatingCash"
+        },
+        {
+          "id": "capex",
+          "value": "4593000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü",
+          "evidence": {
+            "id": "ev-akmgy-capex",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü",
+            "excerpt": "Nakit akışı: yatırım amaçlı gayrimenkul alımı, pozitif gider büyüklüğü; 4593000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "capex"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "capex"
+        },
+        {
+          "id": "workingCapitalCash",
+          "value": "32182000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Nakit akışı: işletme sermayesi değişimi",
+          "evidence": {
+            "id": "ev-akmgy-workingCapitalCash",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Nakit akışı: işletme sermayesi değişimi",
+            "excerpt": "Nakit akışı: işletme sermayesi değişimi; 32182000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "workingCapitalCash"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "workingCapitalCash"
+        },
+        {
+          "id": "rentalIncome",
+          "value": "576537000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç",
+          "evidence": {
+            "id": "ev-akmgy-rentalIncome",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç",
+            "excerpt": "Not 12: mağaza/depo 547.181.000 + apart otel 29.356.000; otopark ve diğer gelir hariç; 576537000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "rentalIncome"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "rentalIncome"
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "610807000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "evidence": {
+            "id": "ev-akmgy-revenuePrevious",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+            "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 610807000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenuePrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "revenue"
+        },
+        {
+          "id": "profitPrevious",
+          "value": "263623000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "evidence": {
+            "id": "ev-akmgy-profitPrevious",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+            "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 263623000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profitPrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "rentalIncomePrevious",
+          "value": "568782000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+          "evidence": {
+            "id": "ev-akmgy-rentalIncomePrevious",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL",
+            "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; kira = 531.507.000 + 37.275.000 TL; 568782000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "rentalIncomePrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "rentalIncome"
+        },
+        {
+          "id": "fyProfit2025",
+          "value": "781507000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-12-31",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz",
+          "evidence": {
+            "id": "ev-akmgy-fyProfit2025",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz",
+            "excerpt": "Özkaynak değişimi / bilanço: FY2025 kâr devri Haziran 2026 satın alma gücünde; özgün FY2025 663.652.679 TL ile karıştırılmaz; 781507000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "fyProfit2025"
+            ],
+            "from": "2025-01-01",
+            "to": "2025-12-31",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "parentEquityH12025",
+          "value": "10890277000",
+          "unit": "TRY",
+          "period": "2025-06-30",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-06-30",
+            "end": "2025-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+          "evidence": {
+            "id": "ev-akmgy-parentEquityH12025",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+            "excerpt": "Özkaynak değişim tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü; 10890277000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquityH12025"
+            ],
+            "from": "2025-06-30",
+            "to": "2025-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityFY2025",
+          "value": "11292800000",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "h1",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-12-31",
+            "end": "2025-12-31",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı",
+          "evidence": {
+            "id": "ev-akmgy-parentEquityFY2025",
+            "sourceId": "h1",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+            "locator": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı",
+            "excerpt": "Aynı H1 bilançosunun 31.12.2025 karşılaştırmalı özkaynağı; 11292800000 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquityFY2025"
+            ],
+            "from": "2025-12-31",
+            "to": "2025-12-31",
+            "purchasingPowerDate": "2026-06-30"
+          },
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "dividend1",
+          "value": "12.36",
+          "unit": "TRY_SHARE",
+          "period": "2026-04-17",
+          "sourceId": "distribution",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-04-17",
+            "end": "2026-04-17",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0",
+          "evidence": {
+            "id": "ev-akmgy-dividend1",
+            "sourceId": "distribution",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2509/630-kar-payi-dagitimina-iliskin-genel-kurul-karari.pdf",
+            "locator": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0",
+            "excerpt": "KAP 1587221: 2025 kârından bakiye; hak 15.04, ödeme 17.04.2026; brüt=net; ihraççı stopaj %0; 12.36 TRY_SHARE",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-04-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "dividend1"
+            ],
+            "from": "2026-04-17",
+            "to": "2026-04-17",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "dividend2",
+          "value": "3.7",
+          "unit": "TRY_SHARE",
+          "period": "2026-08-13",
+          "sourceId": "advance",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-08-13",
+            "end": "2026-08-13",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net",
+          "evidence": {
+            "id": "ev-akmgy-dividend2",
+            "sourceId": "advance",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2551/647-kar-payi-avansi-odemesi-islemlerine-iliskin-bildirim.pdf",
+            "locator": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net",
+            "excerpt": "KAP 1645581: 2026 kârından avans; hak 11.08, ödeme 13.08.2026; brüt=net; 3.7 TRY_SHARE",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "dividend2"
+            ],
+            "from": "2026-08-13",
+            "to": "2026-08-13",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "dividendTotal",
+          "value": "16.06",
+          "unit": "TRY_SHARE",
+          "period": "2026-08-13",
+          "sourceId": "advance",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-08-13",
+            "end": "2026-08-13",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.",
+          "evidence": {
+            "id": "ev-akmgy-dividendTotal",
+            "sourceId": "advance",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2551/647-kar-payi-avansi-odemesi-islemlerine-iliskin-bildirim.pdf",
+            "locator": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.",
+            "excerpt": "2026 takvim yılı nakit = 12,36 bakiye + 3,70 avans; iki farklı kâr yılı. Kaynaklar KAP 1587221 ve 1645581 birlikte.; 16.06 TRY_SHARE",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-08-07",
+            "publishedAtBasis": "EXACT",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "dividendTotal"
+            ],
+            "from": "2026-08-13",
+            "to": "2026-08-13",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "profitFY2021",
+          "value": "94818323",
+          "unit": "TRY",
+          "period": "2021-01-01 / 2021-12-31",
+          "sourceId": "fy2021",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2021-01-01",
+            "end": "2021-12-31",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "evidence": {
+            "id": "ev-akmgy-profitFY2021",
+            "sourceId": "fy2021",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/1590/2021-4-ceyrek.pdf",
+            "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+            "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 94818323 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profitFY2021"
+            ],
+            "from": "2021-01-01",
+            "to": "2021-12-31",
+            "purchasingPowerDate": null
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitFY2022",
+          "value": "1247439605",
+          "unit": "TRY",
+          "period": "2022-01-01 / 2022-12-31",
+          "sourceId": "fy2022",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2022-01-01",
+            "end": "2022-12-31",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "evidence": {
+            "id": "ev-akmgy-profitFY2022",
+            "sourceId": "fy2022",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2161/2022-4-ceyrek.pdf",
+            "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+            "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 1247439605 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profitFY2022"
+            ],
+            "from": "2022-01-01",
+            "to": "2022-12-31",
+            "purchasingPowerDate": null
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitFY2023",
+          "value": "496547351",
+          "unit": "TRY",
+          "period": "2023-01-01 / 2023-12-31",
+          "sourceId": "fy2023",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2023-12-31",
+            "start": "2023-01-01",
+            "end": "2023-12-31",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+          "evidence": {
+            "id": "ev-akmgy-profitFY2023",
+            "sourceId": "fy2023",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2246/2023-4-ceyrek.pdf",
+            "locator": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.",
+            "excerpt": "Özgün yıllık rapor kârı. 2022 gerçeğe uygun değer politikasına geçiş; 2023 TMS29. Doğrudan reel büyüme serisi değildir.; 496547351 TRY",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profitFY2023"
+            ],
+            "from": "2023-01-01",
+            "to": "2023-12-31",
+            "purchasingPowerDate": "2023-12-31"
+          },
+          "metricKey": "profit"
+        },
+        {
+          "id": "dailyChange",
+          "value": "-2.379634753735473",
+          "unit": "PERCENT",
+          "period": "2026-10-30",
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-30",
+            "end": "2026-10-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "evidence": {
+            "id": "ev-akmgy-dailyChange",
+            "sourceId": "price",
+            "originId": "yahoo-finance",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+            "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+            "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; -2.379634753735473 PERCENT",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "dailyChange"
+            ],
+            "from": "2026-10-30",
+            "to": "2026-10-30",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "weeklyChange",
+          "value": "-0.056657223796034",
+          "unit": "PERCENT",
+          "period": "2026-10-30",
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-30",
+            "end": "2026-10-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "evidence": {
+            "id": "ev-akmgy-weeklyChange",
+            "sourceId": "price",
+            "originId": "yahoo-finance",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+            "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+            "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; -0.056657223796034 PERCENT",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "weeklyChange"
+            ],
+            "from": "2026-10-30",
+            "to": "2026-10-30",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "sma5",
+          "value": "178.76",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "price",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-30",
+            "end": "2026-10-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "37264000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+          "evidence": {
+            "id": "ev-akmgy-sma5",
+            "sourceId": "price",
+            "originId": "yahoo-finance",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+            "locator": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026",
+            "excerpt": "30.10.2026; son beş kapanış 176,50 /179,60 /180,60 /180,70 /176,40; haftalık baz 23.10.2026; 178.76 TRY_SHARE",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "sma5"
+            ],
+            "from": "2026-10-30",
+            "to": "2026-10-30",
+            "purchasingPowerDate": null
+          }
+        },
+        {
+          "id": "profitFY2024",
+          "value": "524404659",
+          "unit": "TRY",
+          "period": "2024-01-01 / 2024-12-31",
+          "sourceId": "fy2024",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2024-12-31",
+            "start": "2024-01-01",
+            "end": "2024-12-31",
+            "periodKind": "YEAR",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-31",
+          "locator": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+          "evidence": {
+            "id": "ev-akmgy-profitFY2024",
+            "sourceId": "fy2024",
+            "originId": "akmerkez-issuer",
+            "collectionId": "akmgy-20261031",
+            "reviewerId": "codex-akmgy-sequential-review",
+            "ancestorIds": [],
+            "documentUrl": "https://www.akmgyo.com/media/2446/2024-4-ceyrek.pdf",
+            "locator": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+            "excerpt": "2024 yıllık solo gelir tablosu; özgün 31.12.2024 satın alma gücünde 524.404.659 TL net kâr.",
+            "checkedAt": "2026-10-31",
+            "publishedAt": "2026-10-31",
+            "publishedAtBasis": "OBSERVED_BY",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "profitFY2024"
+            ],
+            "from": "2024-01-01",
+            "to": "2024-12-31",
+            "purchasingPowerDate": "2024-12-31"
+          },
+          "metricKey": "profit"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3
+        },
+        {
+          "id": "bookPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "operatingMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "currentRatio",
+          "operation": "RATIO",
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "cashProxy",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "netDebt",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "financialDebt",
+            "cash"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "peHalfYear",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "peRunRate",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "rentalGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "rentalIncome",
+            "rentalIncomePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        }
+      ],
+      "sources": [
+        {
+          "id": "h1",
+          "url": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+          "title": "30.06.2026 solo finansal tablolar",
+          "publishedAt": "2026-08-07",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Solo; bin TL; 30.06.2026 satın alma gücü; s.1–5, Not 4, 7, 8, 12, 17, 21"
+        },
+        {
+          "id": "activity",
+          "url": "https://www.akmgyo.com/media/2554/30-haziran-2026-yonetim-kurulu-faaliyet-raporu.pdf",
+          "title": "30.06.2026 faaliyet raporu",
+          "publishedAt": "2026-08-07",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "valuation",
+          "url": "https://www.akmgyo.com/media/2464/2025-akmerkez-gayrimenkul-degerleme-raporu.pdf",
+          "title": "2025 gayrimenkul değerleme raporu",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2025",
+          "locator": "s.60–61; Eylül 2025 doluluk; indirgeme %27, terminal kapitalizasyon %7"
+        },
+        {
+          "id": "fy",
+          "url": "https://www.akmgyo.com/media/2481/2025-4-ceyrek.pdf",
+          "title": "2025 solo finansal tablolar",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2025",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "distribution",
+          "url": "https://www.akmgyo.com/media/2509/630-kar-payi-dagitimina-iliskin-genel-kurul-karari.pdf",
+          "title": "KAP 1587221: genel kurul kâr payı kararı",
+          "publishedAt": "2026-04-07",
+          "observedAt": "2026-10-31",
+          "period": "2026-04-07",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "advance",
+          "url": "https://www.akmgyo.com/media/2551/647-kar-payi-avansi-odemesi-islemlerine-iliskin-bildirim.pdf",
+          "title": "KAP 1645581: 2026 kâr payı avansı",
+          "publishedAt": "2026-08-07",
+          "observedAt": "2026-10-31",
+          "period": "2026-08-07",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "lawsuit16",
+          "url": "https://www.akmgyo.com/media/2569/655-davaya-iliskin-aciklama.pdf",
+          "title": "KAP 1683350: davaların reddi",
+          "publishedAt": "2026-10-16",
+          "observedAt": "2026-10-31",
+          "period": "2026-10-16",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "lawsuit21",
+          "url": "https://www.akmgyo.com/media/2574/656-davaya-iliskin-aciklama.pdf",
+          "title": "KAP 1685087: imar davalarının reddi",
+          "publishedAt": "2026-10-21",
+          "observedAt": "2026-10-31",
+          "period": "2026-10-21",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "appeal26",
+          "url": "https://www.akmgyo.com/media/2576/657-davaya-iliskin-aciklama.pdf",
+          "title": "KAP 1687648: istinaf başvurusu",
+          "publishedAt": "2026-10-26",
+          "observedAt": "2026-10-31",
+          "period": "2026-10-26",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "price",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "title": "Yahoo AKMGY günlük kapanış ve olaylar",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "priceCheck",
+          "url": "https://www.hisse.net/borsa/hisseler/akmgy-akmerkez-gmyo/tarihselveriler",
+          "title": "Hisse.net tarihli kapanış tablosu",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "kap",
+          "url": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1399-akmerkez-gayrimenkul-yatirim-ortakligi-a-s",
+          "title": "KAP şirket 1399 kimlik bilgileri",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "disclosures",
+          "url": "https://www.akmgyo.com/ozel-durum-aciklamalari/2026",
+          "title": "Şirket 2026 bildirim arşivi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "calendar",
+          "url": "https://www.akmgyo.com/yatimci-takvimi",
+          "title": "Yatırımcı takvimi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "oyak",
+          "url": "https://www.oyakyatirim.com.tr/hisse-detay/AKMGY",
+          "title": "OYAK sermaye ve temettü takvimi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2009",
+          "url": "https://www.akmgyo.com/media/1063/4.pdf",
+          "title": "Yıllık finansal tablolar 2009",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2009",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2011",
+          "url": "https://www.akmgyo.com/media/1071/4.pdf",
+          "title": "Yıllık finansal tablolar 2011",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2011",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2018",
+          "url": "https://www.akmgyo.com/media/1099/4.pdf",
+          "title": "Yıllık finansal tablolar 2018",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2018",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2021",
+          "url": "https://www.akmgyo.com/media/1590/2021-4-ceyrek.pdf",
+          "title": "Yıllık finansal tablolar 2021",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2021",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2022",
+          "url": "https://www.akmgyo.com/media/2161/2022-4-ceyrek.pdf",
+          "title": "Yıllık finansal tablolar 2022",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2022",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2023",
+          "url": "https://www.akmgyo.com/media/2246/2023-4-ceyrek.pdf",
+          "title": "Yıllık finansal tablolar 2023",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2023",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2024",
+          "url": "https://www.akmgyo.com/media/2446/2024-4-ceyrek.pdf",
+          "title": "Yıllık finansal tablolar 2024",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2024",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "vakif",
+          "url": "https://www.vkyanaliz.com/rap/AKMGY_2026-06-15_78628.pdf",
+          "title": "Vakıf 15.06.2026 analiz özeti",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        },
+        {
+          "id": "ata",
+          "url": "https://atayatirim.com.tr/robot-hisse-analizi/AKMGY-robot-hisse-analiz.pdf",
+          "title": "Ata robot analiz özeti",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Belge ve arşiv; erişim 31.10.2026"
+        }
+      ]
+    }
+  }
+]

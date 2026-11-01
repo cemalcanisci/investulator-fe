@@ -2,11 +2,10 @@ import type { JSX } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
 import { getAnalysis } from '@/services/analysis';
-import { ratioPresentation } from '@/lib/ratioPresentation';
+import { isMetricModeled, ratioPresentation } from '@/lib/ratioPresentation';
 import { relatedMetricIds } from '@/lib/companyAssessment';
 import { formatQuantity } from '@/lib/formatNumber';
 import { divideDecimals } from '@/lib/decimal';
-import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 
 export function RatioContext({
   report,
@@ -18,13 +17,11 @@ export function RatioContext({
   const { t, i18n } = useTranslation();
   const analysis = getAnalysis(report),
     result = ratioPresentation(analysis, id);
-  const profile = analysis
-    ? selectAnalysisProfile(analysis.context)
-    : undefined;
-  const related = relatedMetricIds(id, analysis).filter(
-    (key) =>
-      key !== 'netFinancialDebt' || profile?.methods.includes('EV_EBITDA'),
-  );
+  const related = analysis
+    ? relatedMetricIds(id, analysis).filter((key) =>
+        isMetricModeled(analysis, key),
+      )
+    : [];
   return (
     <div className="mt-3 space-y-2 text-sm leading-6">
       <p>

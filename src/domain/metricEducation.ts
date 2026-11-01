@@ -115,5 +115,8 @@ export function metricDefinition(
   id: string,
   explicitKey?: string,
 ): MetricDefinition | undefined {
-  return METRIC_DICTIONARY[explicitKey ?? ALIASES[id] ?? ''];
+  return (
+    METRIC_DICTIONARY[explicitKey ?? ''] ??
+    METRIC_DICTIONARY[ALIASES[explicitKey ?? ''] ?? ALIASES[id] ?? '']
+  );
 }

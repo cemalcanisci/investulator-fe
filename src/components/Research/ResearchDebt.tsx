@@ -4,6 +4,7 @@ import type { ResearchReport } from '@/domain/research';
 import { formatQuantity } from '@/lib/formatNumber';
 import { Card } from '@/components/Card/Card';
 import { ResearchMetric } from '@/components/Research/ResearchMetric';
+import { isMetricModeled } from '@/lib/ratioPresentation';
 
 export function ResearchDebt({
   report,
@@ -11,9 +12,21 @@ export function ResearchDebt({
   readonly report: ResearchReport;
 }): JSX.Element {
   const { t, i18n } = useTranslation();
+  const debtSource =
+    report.sources.find(
+      (source) =>
+        source.id ===
+        report.facts.find((fact) => fact.id === 'financialDebt')?.sourceId,
+    ) ?? report.sources.find((source) => source.id === 'financials');
   const currencies = [
     ...new Set(report.debtLines.map((line) => line.currency)),
   ];
+  const maturityIds = ['debtWithinYear', 'debtLong'].filter((id) =>
+    isMetricModeled(report, id),
+  );
+  const fxIds = ['fxBeforeNatural', 'fxAfterNatural'].filter((id) =>
+    isMetricModeled(report, id),
+  );
   return (
     <Card className="space-y-4 p-5">
       <h3 className="font-semibold">{t('research.debtTitle')}</h3>
@@ -23,14 +36,15 @@ export function ResearchDebt({
         })}
       </p>
       <div className="grid gap-3 sm:grid-cols-2">
-        <ResearchMetric report={report} id="debtWithinYear" />
-        <ResearchMetric report={report} id="debtLong" />
+        {maturityIds.map((id) => (
+          <ResearchMetric key={id} report={report} id={id} />
+        ))}
       </div>
       <h4 className="pt-2 text-sm font-semibold">
         {t('research.debtCurrencyTitle')}
       </h4>
       <p className="text-xs leading-relaxed text-fg-2">
-        {t('research.debtCurrencyHint')}
+        {t('research.debtCurrencyGenericHint')}
       </p>
       <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {currencies.map((currency) => {
@@ -83,11 +97,18 @@ export function ResearchDebt({
           defaultValue: t('researchUx.interpretation.missing'),
         })}
       </p>
-      <h4 className="pt-2 text-sm font-semibold">{t('research.fxTitle')}</h4>
-      <div className="grid gap-3 sm:grid-cols-2">
-        <ResearchMetric report={report} id="fxBeforeNatural" />
-        <ResearchMetric report={report} id="fxAfterNatural" />
-      </div>
+      {fxIds.length > 0 && (
+        <>
+          <h4 className="pt-2 text-sm font-semibold">
+            {t('research.fxTitle')}
+          </h4>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {fxIds.map((id) => (
+              <ResearchMetric key={id} report={report} id={id} />
+            ))}
+          </div>
+        </>
+      )}
       <p className="text-sm leading-7 text-fg-2">
         {t(`${report.contentKey}.fxMeaning`, {
           defaultValue: t('researchUx.interpretation.missing'),
@@ -99,12 +120,20 @@ export function ResearchDebt({
         })}
       </p>
       <a
-        href={report.sources.find((source) => source.id === 'financials')?.url}
+        href={
+          report.sources.find(
+            (source) =>
+              source.id ===
+              report.facts.find((fact) => fact.id === 'financialDebt')
+                ?.sourceId,
+          )?.url ??
+          report.sources.find((source) => source.id === 'financials')?.url
+        }
         target="_blank"
         rel="noreferrer"
         className="inline-block text-xs text-primary underline"
       >
-        {t('research.debtSource')} ↗
+        {debtSource?.title ?? t('research.debtTitle')} ↗
       </a>
     </Card>
   );

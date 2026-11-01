@@ -24,6 +24,41 @@ afterEach(() => {
 });
 
 describe('ResearchPage', () => {
+  it('uses the PAGYO debt source without unrelated company explanations', async () => {
+    await i18n.changeLanguage('tr');
+    renderPage('watch-bist-pagyo');
+    await screen.findByRole('combobox', { name: i18n.t('researchUx.view') });
+    const section = document.getElementById('debt');
+    expect(section).not.toBeNull();
+    expect(section?.textContent).not.toContain('Tüpraş');
+    expect(section?.textContent).not.toContain('1,439635');
+    expect(section?.querySelector('a')?.textContent).toContain('2026 H1');
+    expect(section?.querySelector('a')?.getAttribute('href')).toContain(
+      'panoragyo.com',
+    );
+  });
+  it('shows modeled REIT cash flow and lease debt despite the rental-focused profile', async () => {
+    await i18n.changeLanguage('tr');
+    renderPage('watch-bist-akmgy');
+    await screen.findByRole('combobox', { name: i18n.t('researchUx.view') });
+    for (const id of ['cashflow', 'debt']) {
+      const section = document.getElementById(id);
+      expect(section).not.toBeNull();
+      if (!section) {
+        throw new Error('Missing financial section');
+      }
+      expect(
+        within(section).queryByText(i18n.t('researchUx.sectorMetricMissing')),
+      ).not.toBeInTheDocument();
+      expect(section.querySelector('.tabular-nums')).not.toBeNull();
+    }
+    expect(
+      document.querySelector('#debt .tabular-nums')?.textContent,
+    ).toContain('2.911.000');
+    expect(document.querySelector('#debt a')?.getAttribute('href')).toContain(
+      '2026-2-ceyrek.pdf',
+    );
+  });
   it.each(['tr', 'en'])(
     'preserves the simulation and financial values across modes in %s',
     async (language) => {
@@ -221,7 +256,7 @@ describe('ResearchPage', () => {
     ).toBeVisible();
   });
 
-  it.each(['watch-bist-doas', 'watch-crypto-candidate-ai', 'unknown'])(
+  it.each(['watch-bist-aksa', 'watch-crypto-candidate-ai', 'unknown'])(
     'does not fabricate a report for %s',
     async (id) => {
       renderPage(id);

@@ -1,0 +1,1617 @@
+{
+  "assetId": "watch-bist-pagyo",
+  "asOf": "2026-09-30",
+  "currency": "TRY",
+  "listedFrom": "2013-05-23",
+  "priceBasis": "SPLIT_ONLY",
+  "shareBasisDate": "2026-09-30",
+  "sources": [
+    {
+      "id": "price",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+      "title": "price",
+      "origin": "Yahoo Finance",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "fx",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TRY=X?period1=1104537600&period2=1793491200&interval=1d",
+      "title": "fx",
+      "origin": "Yahoo Finance",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "oyak",
+      "url": "https://www.oyakyatirim.com.tr/hisse-detay/PAGYO",
+      "title": "oyak",
+      "origin": "Piyasa veri sağlayıcısı",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "issuer",
+      "url": "https://www.panoragyo.com/",
+      "title": "issuer",
+      "origin": "Panora / KAP",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "distribution",
+      "url": "https://kap.org.tr/tr/Bildirim/1597263",
+      "title": "distribution",
+      "origin": "Panora / KAP",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "correction2020",
+      "url": "https://www.kap.org.tr/tr/Bildirim/837141",
+      "title": "correction2020",
+      "origin": "Panora / KAP",
+      "retrievedAt": "2026-10-31"
+    },
+    {
+      "id": "is",
+      "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=PAGYO",
+      "title": "is",
+      "origin": "Piyasa veri sağlayıcısı",
+      "retrievedAt": "2026-10-31"
+    }
+  ],
+  "coverage": {
+    "prices": {
+      "from": "2013-05-23",
+      "to": "2026-09-30",
+      "state": "REVIEWED",
+      "sourceIds": ["price", "issuer"],
+      "method": "Gerçek günlük quote.close serisinden ayın son işlem günü. Adjclose kullanılmaz; temettü ayrı eklenir. 23.05.2013 ilk işlem; 15/20 yıl borsa geçmişi yok."
+    },
+    "fx": {
+      "from": "2013-05-23",
+      "to": "2026-09-30",
+      "state": "REVIEWED",
+      "sourceIds": ["fx"],
+      "method": "Gerçek günlük USD/TRY; fiyat gününden en fazla dört gün önce. Gözlem tarihi korunur; interpolasyon yapılmaz."
+    },
+    "actions": {
+      "from": "2013-05-23",
+      "to": "2026-09-30",
+      "state": "REVIEWED",
+      "sourceIds": ["price", "oyak", "is", "distribution", "correction2020"],
+      "method": "Yahoo bölünme olayı yok; OYAK/İş Yatırım sermaye takvimleri ve şirket raporlarında 87 milyon TL sermaye kontrol edildi. OYAK nakit temettü fiyat düzeltme katsayıları pay artırımı sayılmadı."
+    },
+    "dividends": {
+      "from": "2013-05-23",
+      "to": "2026-09-30",
+      "state": "REVIEWED",
+      "sourceIds": ["price", "oyak", "is", "distribution", "correction2020"],
+      "method": "Yahoo takvimi OYAK/İş Yatırım ve KAP ile karşılaştırıldı. 13.04.2020 sağlayıcı 0,226 yerine KAP837141 kesinleşen 0,023 TL kullanıldı; ertelenen0,203 aynı gün eklenmedi, sonraki2021 taksitlerinde var. OYAK04.06.2018 mükerreri tekilleştirildi. 2026 hak11Mayıs/ödeme13Mayıs. Eski ödeme günleri hak tarihinden iki hafta içi gün varsayımı; resmi tatiller modellenmez. Brüt temettü, küsuratlı pay, sıfır masraf/vergi, ay sonu yeniden yatırım; bağımsız doğrulama değildir."
+    }
+  },
+  "monthly": [
+    {
+      "date": "2013-05-31",
+      "close": "4.59000015",
+      "fx": "1.87141001",
+      "fxDate": "2013-05-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-06-28",
+      "close": "4.36999989",
+      "fx": "1.91767001",
+      "fxDate": "2013-06-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-07-31",
+      "close": "4.51000023",
+      "fx": "1.93326998",
+      "fxDate": "2013-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-08-30",
+      "close": "4.23000002",
+      "fx": "2.02898002",
+      "fxDate": "2013-08-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-09-30",
+      "close": "4.00000000",
+      "fx": "2.01921010",
+      "fxDate": "2013-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-10-31",
+      "close": "4.09000015",
+      "fx": "1.99289000",
+      "fxDate": "2013-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-11-29",
+      "close": "4.05000019",
+      "fx": "2.01300001",
+      "fxDate": "2013-11-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2013-12-31",
+      "close": "3.84999990",
+      "fx": "2.12055993",
+      "fxDate": "2013-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-01-31",
+      "close": "3.95000005",
+      "fx": "2.26375008",
+      "fxDate": "2014-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-02-28",
+      "close": "3.93000007",
+      "fx": "2.21087003",
+      "fxDate": "2014-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-03-31",
+      "close": "3.73000002",
+      "fx": "2.13737011",
+      "fxDate": "2014-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-04-30",
+      "close": "3.82999992",
+      "fx": "2.11107993",
+      "fxDate": "2014-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-05-30",
+      "close": "3.85999990",
+      "fx": "2.08718991",
+      "fxDate": "2014-05-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-06-30",
+      "close": "3.88000011",
+      "fx": "2.11730003",
+      "fxDate": "2014-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-07-31",
+      "close": "3.91000009",
+      "fx": "2.14006996",
+      "fxDate": "2014-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-08-29",
+      "close": "3.88000011",
+      "fx": "2.15718007",
+      "fxDate": "2014-08-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-09-30",
+      "close": "3.79999995",
+      "fx": "2.27778006",
+      "fxDate": "2014-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-10-31",
+      "close": "3.90000010",
+      "fx": "2.19853997",
+      "fxDate": "2014-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-11-28",
+      "close": "3.92000008",
+      "fx": "2.20578003",
+      "fxDate": "2014-11-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2014-12-31",
+      "close": "3.90000010",
+      "fx": "2.32273006",
+      "fxDate": "2014-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-01-30",
+      "close": "4.11000013",
+      "fx": "2.41548991",
+      "fxDate": "2015-01-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-02-27",
+      "close": "4.55000019",
+      "fx": "2.50447011",
+      "fxDate": "2015-02-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-03-31",
+      "close": "4.05999994",
+      "fx": "2.59595990",
+      "fxDate": "2015-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-04-30",
+      "close": "4.34999990",
+      "fx": "2.67348003",
+      "fxDate": "2015-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-05-29",
+      "close": "4.40000010",
+      "fx": "2.65530992",
+      "fxDate": "2015-05-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-06-30",
+      "close": "4.57000017",
+      "fx": "2.68103004",
+      "fxDate": "2015-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-07-31",
+      "close": "4.73999977",
+      "fx": "2.78765988",
+      "fxDate": "2015-07-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-08-31",
+      "close": "4.59000015",
+      "fx": "2.91595006",
+      "fxDate": "2015-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-09-30",
+      "close": "4.59000015",
+      "fx": "3.02331996",
+      "fxDate": "2015-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-10-30",
+      "close": "4.55999994",
+      "fx": "2.93470001",
+      "fxDate": "2015-10-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-11-30",
+      "close": "4.46000004",
+      "fx": "2.92564988",
+      "fxDate": "2015-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2015-12-31",
+      "close": "4.42999983",
+      "fx": "2.92008996",
+      "fxDate": "2015-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-01-29",
+      "close": "4.55999994",
+      "fx": "2.96951008",
+      "fxDate": "2016-01-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-02-29",
+      "close": "4.63000011",
+      "fx": "2.98795009",
+      "fxDate": "2016-02-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-03-31",
+      "close": "4.34999990",
+      "fx": "2.81690001",
+      "fxDate": "2016-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-04-29",
+      "close": "4.46999979",
+      "fx": "2.81111002",
+      "fxDate": "2016-04-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-05-31",
+      "close": "4.48999977",
+      "fx": "2.94670010",
+      "fxDate": "2016-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-06-30",
+      "close": "4.46000004",
+      "fx": "2.88177991",
+      "fxDate": "2016-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-07-29",
+      "close": "4.46999979",
+      "fx": "3.01036000",
+      "fxDate": "2016-07-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-08-31",
+      "close": "4.44000006",
+      "fx": "2.95707011",
+      "fxDate": "2016-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-09-30",
+      "close": "4.36999989",
+      "fx": "2.99708009",
+      "fxDate": "2016-09-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-10-31",
+      "close": "4.46999979",
+      "fx": "3.10630989",
+      "fxDate": "2016-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-11-30",
+      "close": "4.34999990",
+      "fx": "3.40939999",
+      "fxDate": "2016-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2016-12-30",
+      "close": "4.42000008",
+      "fx": "3.51760006",
+      "fxDate": "2016-12-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-01-31",
+      "close": "4.44000006",
+      "fx": "3.77619004",
+      "fxDate": "2017-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-02-28",
+      "close": "4.57000017",
+      "fx": "3.60689998",
+      "fxDate": "2017-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-03-31",
+      "close": "4.09000015",
+      "fx": "3.65429997",
+      "fxDate": "2017-03-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-04-28",
+      "close": "4.11000013",
+      "fx": "3.56329989",
+      "fxDate": "2017-04-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-05-31",
+      "close": "4.01999998",
+      "fx": "3.52819991",
+      "fxDate": "2017-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-06-30",
+      "close": "4.01000023",
+      "fx": "3.52423000",
+      "fxDate": "2017-06-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-07-31",
+      "close": "3.94000006",
+      "fx": "3.51769996",
+      "fxDate": "2017-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-08-31",
+      "close": "3.94000006",
+      "fx": "3.45064998",
+      "fxDate": "2017-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-09-29",
+      "close": "3.81999993",
+      "fx": "3.55831003",
+      "fxDate": "2017-09-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-10-31",
+      "close": "4.01000023",
+      "fx": "3.77725005",
+      "fxDate": "2017-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-11-30",
+      "close": "4.00000000",
+      "fx": "3.95604992",
+      "fxDate": "2017-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2017-12-29",
+      "close": "4.88999987",
+      "fx": "3.77686000",
+      "fxDate": "2017-12-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-01-31",
+      "close": "4.46000004",
+      "fx": "3.77571988",
+      "fxDate": "2018-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-02-28",
+      "close": "4.59999990",
+      "fx": "3.81520009",
+      "fxDate": "2018-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-03-30",
+      "close": "4.55000019",
+      "fx": "3.94490004",
+      "fxDate": "2018-03-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-04-30",
+      "close": "4.63000011",
+      "fx": "4.05665016",
+      "fxDate": "2018-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-05-31",
+      "close": "4.57999992",
+      "fx": "4.52791023",
+      "fxDate": "2018-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-06-29",
+      "close": "4.59999990",
+      "fx": "4.59049988",
+      "fxDate": "2018-06-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-07-31",
+      "close": "4.46999979",
+      "fx": "4.91790009",
+      "fxDate": "2018-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-08-31",
+      "close": "4.40000010",
+      "fx": "6.73409986",
+      "fxDate": "2018-08-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-09-28",
+      "close": "4.17000008",
+      "fx": "6.00570011",
+      "fxDate": "2018-09-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-10-31",
+      "close": "3.85999990",
+      "fx": "5.48089981",
+      "fxDate": "2018-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-11-30",
+      "close": "4.13999987",
+      "fx": "5.17019987",
+      "fxDate": "2018-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2018-12-31",
+      "close": "4.19000006",
+      "fx": "5.27428007",
+      "fxDate": "2018-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-01-31",
+      "close": "4.34999990",
+      "fx": "5.22740984",
+      "fxDate": "2019-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-02-28",
+      "close": "4.61999989",
+      "fx": "5.30937004",
+      "fxDate": "2019-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-03-29",
+      "close": "4.19000006",
+      "fx": "5.57170010",
+      "fxDate": "2019-03-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-04-30",
+      "close": "4.11000013",
+      "fx": "5.96500015",
+      "fxDate": "2019-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-05-31",
+      "close": "4.11000013",
+      "fx": "5.91249990",
+      "fxDate": "2019-05-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-06-28",
+      "close": "4.15000010",
+      "fx": "5.77180004",
+      "fxDate": "2019-06-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-07-31",
+      "close": "4.23999977",
+      "fx": "5.57540989",
+      "fxDate": "2019-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-08-30",
+      "close": "4.26000023",
+      "fx": "5.83269978",
+      "fxDate": "2019-08-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-09-30",
+      "close": "4.59999990",
+      "fx": "5.64830017",
+      "fxDate": "2019-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-10-31",
+      "close": "4.69999981",
+      "fx": "5.70100021",
+      "fxDate": "2019-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-11-29",
+      "close": "5.63000011",
+      "fx": "5.75799990",
+      "fxDate": "2019-11-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2019-12-31",
+      "close": "6.19999981",
+      "fx": "5.94721985",
+      "fxDate": "2019-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-01-31",
+      "close": "6.34999990",
+      "fx": "5.97415018",
+      "fxDate": "2020-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-02-28",
+      "close": "5.67000008",
+      "fx": "6.20676994",
+      "fxDate": "2020-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-03-31",
+      "close": "4.15999985",
+      "fx": "6.61298990",
+      "fxDate": "2020-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-04-30",
+      "close": "4.88999987",
+      "fx": "6.98929977",
+      "fxDate": "2020-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-05-29",
+      "close": "5.40000010",
+      "fx": "6.81104994",
+      "fxDate": "2020-05-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-06-30",
+      "close": "5.53000021",
+      "fx": "6.84730005",
+      "fxDate": "2020-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-07-30",
+      "close": "5.53999996",
+      "fx": "6.96939993",
+      "fxDate": "2020-07-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-08-31",
+      "close": "5.11000013",
+      "fx": "7.35260010",
+      "fxDate": "2020-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-09-30",
+      "close": "6.09999990",
+      "fx": "7.70587015",
+      "fxDate": "2020-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-10-30",
+      "close": "5.55999994",
+      "fx": "8.29794025",
+      "fxDate": "2020-10-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-11-30",
+      "close": "6.44000006",
+      "fx": "7.81731987",
+      "fxDate": "2020-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2020-12-31",
+      "close": "6.30000019",
+      "fx": "7.37373018",
+      "fxDate": "2020-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-01-29",
+      "close": "6.82999992",
+      "fx": "7.34577990",
+      "fxDate": "2021-01-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-02-26",
+      "close": "6.15999985",
+      "fx": "7.32310009",
+      "fxDate": "2021-02-26",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-03-31",
+      "close": "7.25000000",
+      "fx": "8.24188995",
+      "fxDate": "2021-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-04-30",
+      "close": "6.21999979",
+      "fx": "8.18488026",
+      "fxDate": "2021-04-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-05-31",
+      "close": "6.11999989",
+      "fx": "8.48779964",
+      "fxDate": "2021-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-06-30",
+      "close": "6.13999987",
+      "fx": "8.70470047",
+      "fxDate": "2021-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-07-30",
+      "close": "6.86000013",
+      "fx": "8.45226002",
+      "fxDate": "2021-07-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-08-31",
+      "close": "7.07000017",
+      "fx": "8.30449963",
+      "fxDate": "2021-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-09-30",
+      "close": "6.75000000",
+      "fx": "8.88500023",
+      "fxDate": "2021-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-10-28",
+      "close": "6.19000006",
+      "fx": "9.52511978",
+      "fxDate": "2021-10-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-11-30",
+      "close": "7.59000015",
+      "fx": "12.69900036",
+      "fxDate": "2021-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2021-12-31",
+      "close": "9.19999981",
+      "fx": "13.29049969",
+      "fxDate": "2021-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-01-31",
+      "close": "9.97999954",
+      "fx": "13.48204994",
+      "fxDate": "2022-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-02-28",
+      "close": "8.89000034",
+      "fx": "14.02884007",
+      "fxDate": "2022-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-03-31",
+      "close": "9.59000015",
+      "fx": "14.66619968",
+      "fxDate": "2022-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-04-29",
+      "close": "12.55000019",
+      "fx": "14.78888988",
+      "fxDate": "2022-04-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-05-31",
+      "close": "13.10999966",
+      "fx": "16.37772942",
+      "fxDate": "2022-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-06-30",
+      "close": "12.75000000",
+      "fx": "16.69190025",
+      "fxDate": "2022-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-07-29",
+      "close": "12.52000046",
+      "fx": "17.94519997",
+      "fxDate": "2022-07-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-08-31",
+      "close": "14.26000023",
+      "fx": "18.18919945",
+      "fxDate": "2022-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-09-30",
+      "close": "17.50000000",
+      "fx": "18.49749947",
+      "fxDate": "2022-09-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-10-31",
+      "close": "19.87000084",
+      "fx": "18.57296944",
+      "fxDate": "2022-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-11-30",
+      "close": "27.62000084",
+      "fx": "18.63990021",
+      "fxDate": "2022-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2022-12-30",
+      "close": "30.18000031",
+      "fx": "18.70298958",
+      "fxDate": "2022-12-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-01-31",
+      "close": "26.44000053",
+      "fx": "18.80800056",
+      "fxDate": "2023-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-02-28",
+      "close": "23.50000000",
+      "fx": "18.88419914",
+      "fxDate": "2023-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-03-31",
+      "close": "24.10000038",
+      "fx": "19.17569923",
+      "fxDate": "2023-03-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-04-28",
+      "close": "26.47999954",
+      "fx": "19.43549919",
+      "fxDate": "2023-04-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-05-31",
+      "close": "26.45999908",
+      "fx": "20.78639984",
+      "fxDate": "2023-05-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-06-27",
+      "close": "26.89999962",
+      "fx": "25.98999023",
+      "fxDate": "2023-06-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-07-31",
+      "close": "34.20000076",
+      "fx": "26.92597961",
+      "fxDate": "2023-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-08-31",
+      "close": "38.45999908",
+      "fx": "26.68790054",
+      "fxDate": "2023-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-09-29",
+      "close": "40.72000122",
+      "fx": "27.45890045",
+      "fxDate": "2023-09-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-10-31",
+      "close": "36.50000000",
+      "fx": "28.25737000",
+      "fxDate": "2023-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-11-30",
+      "close": "35.88000107",
+      "fx": "28.94091988",
+      "fxDate": "2023-11-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2023-12-29",
+      "close": "35.50000000",
+      "fx": "29.51980019",
+      "fxDate": "2023-12-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-01-31",
+      "close": "39.34000015",
+      "fx": "30.35840034",
+      "fxDate": "2024-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-02-29",
+      "close": "40.90000153",
+      "fx": "31.20883942",
+      "fxDate": "2024-02-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-03-29",
+      "close": "38.70000076",
+      "fx": "32.44910049",
+      "fxDate": "2024-03-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-04-30",
+      "close": "40.02000046",
+      "fx": "32.40330124",
+      "fxDate": "2024-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-05-31",
+      "close": "47.40000153",
+      "fx": "32.24380112",
+      "fxDate": "2024-05-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-06-28",
+      "close": "50.09999847",
+      "fx": "32.88779831",
+      "fxDate": "2024-06-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-07-31",
+      "close": "50.20000076",
+      "fx": "33.17599869",
+      "fxDate": "2024-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-08-29",
+      "close": "47.91999817",
+      "fx": "34.07733917",
+      "fxDate": "2024-08-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-09-30",
+      "close": "55.20000076",
+      "fx": "34.20399857",
+      "fxDate": "2024-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-10-31",
+      "close": "53.04999924",
+      "fx": "34.28319931",
+      "fxDate": "2024-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-11-29",
+      "close": "65.05000305",
+      "fx": "34.64836884",
+      "fxDate": "2024-11-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2024-12-31",
+      "close": "63.75000000",
+      "fx": "35.30524826",
+      "fxDate": "2024-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-01-31",
+      "close": "62.79999924",
+      "fx": "35.85303116",
+      "fxDate": "2025-01-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-02-28",
+      "close": "61.90000153",
+      "fx": "36.51779938",
+      "fxDate": "2025-02-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-03-28",
+      "close": "62.59999847",
+      "fx": "38.00329971",
+      "fxDate": "2025-03-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-04-30",
+      "close": "61.00000000",
+      "fx": "38.50172043",
+      "fxDate": "2025-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-05-30",
+      "close": "72.40000153",
+      "fx": "39.20848846",
+      "fxDate": "2025-05-29",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-06-30",
+      "close": "75.90000153",
+      "fx": "39.82659912",
+      "fxDate": "2025-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-07-31",
+      "close": "74.09999847",
+      "fx": "40.66279984",
+      "fxDate": "2025-07-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-08-29",
+      "close": "84.19999695",
+      "fx": "41.14049911",
+      "fxDate": "2025-08-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-09-30",
+      "close": "87.00000000",
+      "fx": "41.58269882",
+      "fxDate": "2025-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-10-31",
+      "close": "92.90000153",
+      "fx": "42.02679825",
+      "fxDate": "2025-10-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-11-28",
+      "close": "82.50000000",
+      "fx": "42.48509979",
+      "fxDate": "2025-11-28",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2025-12-31",
+      "close": "82.34999847",
+      "fx": "42.95198059",
+      "fxDate": "2025-12-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-01-30",
+      "close": "89.15000153",
+      "fx": "43.45510101",
+      "fxDate": "2026-01-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-02-27",
+      "close": "92.84999847",
+      "fx": "43.95539856",
+      "fxDate": "2026-02-27",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-03-31",
+      "close": "119.50000000",
+      "fx": "44.45489883",
+      "fxDate": "2026-03-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-04-30",
+      "close": "130.10000610",
+      "fx": "45.14099884",
+      "fxDate": "2026-04-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-05-26",
+      "close": "128.30000305",
+      "fx": "45.89369965",
+      "fxDate": "2026-05-26",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-06-30",
+      "close": "150.69999695",
+      "fx": "46.65470123",
+      "fxDate": "2026-06-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-07-31",
+      "close": "166.39999390",
+      "fx": "47.50139999",
+      "fxDate": "2026-07-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-08-31",
+      "close": "153.10000610",
+      "fx": "48.26750183",
+      "fxDate": "2026-08-31",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    },
+    {
+      "date": "2026-09-30",
+      "close": "121.90000153",
+      "fx": "49.02799988",
+      "fxDate": "2026-09-30",
+      "priceSourceId": "price",
+      "fxSourceId": "fx"
+    }
+  ],
+  "actions": [],
+  "dividends": [
+    {
+      "id": "div-2014-03-25",
+      "exDate": "2014-03-25",
+      "payDate": "2014-03-27",
+      "rawGrossPerShare": "0.3462",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2015-03-24",
+      "exDate": "2015-03-24",
+      "payDate": "2015-03-26",
+      "rawGrossPerShare": "0.4369",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2016-03-22",
+      "exDate": "2016-03-22",
+      "payDate": "2016-03-24",
+      "rawGrossPerShare": "0.4478",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2017-03-09",
+      "exDate": "2017-03-09",
+      "payDate": "2017-03-13",
+      "rawGrossPerShare": "0.4388",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2018-03-27",
+      "exDate": "2018-03-27",
+      "payDate": "2018-03-29",
+      "rawGrossPerShare": "0.3945",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2018-06-04",
+      "exDate": "2018-06-04",
+      "payDate": "2018-06-06",
+      "rawGrossPerShare": "0.0926",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2019-03-19",
+      "exDate": "2019-03-19",
+      "payDate": "2019-03-21",
+      "rawGrossPerShare": "0.46",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2019-04-18",
+      "exDate": "2019-04-18",
+      "payDate": "2019-04-22",
+      "rawGrossPerShare": "0.046",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2019-05-29",
+      "exDate": "2019-05-29",
+      "payDate": "2019-05-31",
+      "rawGrossPerShare": "0.046",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2019-06-13",
+      "exDate": "2019-06-13",
+      "payDate": "2019-06-17",
+      "rawGrossPerShare": "0.0207",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2020-03-24",
+      "exDate": "2020-03-24",
+      "payDate": "2020-03-26",
+      "rawGrossPerShare": "0.42",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2020-04-13",
+      "exDate": "2020-04-13",
+      "payDate": "2020-04-15",
+      "rawGrossPerShare": "0.023",
+      "sourceId": "correction2020"
+    },
+    {
+      "id": "div-2021-01-06",
+      "exDate": "2021-01-06",
+      "payDate": "2021-01-08",
+      "rawGrossPerShare": "0.11",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2021-03-16",
+      "exDate": "2021-03-16",
+      "payDate": "2021-03-18",
+      "rawGrossPerShare": "0.093",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2021-07-01",
+      "exDate": "2021-07-01",
+      "payDate": "2021-07-05",
+      "rawGrossPerShare": "0.09",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2021-08-12",
+      "exDate": "2021-08-12",
+      "payDate": "2021-08-16",
+      "rawGrossPerShare": "0.06",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2021-09-13",
+      "exDate": "2021-09-13",
+      "payDate": "2021-09-15",
+      "rawGrossPerShare": "0.08",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2021-10-06",
+      "exDate": "2021-10-06",
+      "payDate": "2021-10-08",
+      "rawGrossPerShare": "0.025",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2022-04-08",
+      "exDate": "2022-04-08",
+      "payDate": "2022-04-12",
+      "rawGrossPerShare": "0.41",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2023-04-17",
+      "exDate": "2023-04-17",
+      "payDate": "2023-04-19",
+      "rawGrossPerShare": "0.3516",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2023-09-21",
+      "exDate": "2023-09-21",
+      "payDate": "2023-09-25",
+      "rawGrossPerShare": "0.3516",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2023-12-21",
+      "exDate": "2023-12-21",
+      "payDate": "2023-12-25",
+      "rawGrossPerShare": "0.3516",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2024-07-10",
+      "exDate": "2024-07-10",
+      "payDate": "2024-07-12",
+      "rawGrossPerShare": "2.3",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2024-12-24",
+      "exDate": "2024-12-24",
+      "payDate": "2024-12-26",
+      "rawGrossPerShare": "0.5639",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2025-04-30",
+      "exDate": "2025-04-30",
+      "payDate": "2025-05-02",
+      "rawGrossPerShare": "2.8",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2025-05-28",
+      "exDate": "2025-05-28",
+      "payDate": "2025-05-30",
+      "rawGrossPerShare": "0.8",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2025-06-25",
+      "exDate": "2025-06-25",
+      "payDate": "2025-06-27",
+      "rawGrossPerShare": "0.8",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2025-07-23",
+      "exDate": "2025-07-23",
+      "payDate": "2025-07-25",
+      "rawGrossPerShare": "0.662245",
+      "sourceId": "oyak"
+    },
+    {
+      "id": "div-2026-05-11",
+      "exDate": "2026-05-11",
+      "payDate": "2026-05-13",
+      "rawGrossPerShare": "5.7545",
+      "sourceId": "distribution"
+    }
+  ],
+  "expectedActionIds": [],
+  "expectedDividendIds": [
+    "div-2014-03-25",
+    "div-2015-03-24",
+    "div-2016-03-22",
+    "div-2017-03-09",
+    "div-2018-03-27",
+    "div-2018-06-04",
+    "div-2019-03-19",
+    "div-2019-04-18",
+    "div-2019-05-29",
+    "div-2019-06-13",
+    "div-2020-03-24",
+    "div-2020-04-13",
+    "div-2021-01-06",
+    "div-2021-03-16",
+    "div-2021-07-01",
+    "div-2021-08-12",
+    "div-2021-09-13",
+    "div-2021-10-06",
+    "div-2022-04-08",
+    "div-2023-04-17",
+    "div-2023-09-21",
+    "div-2023-12-21",
+    "div-2024-07-10",
+    "div-2024-12-24",
+    "div-2025-04-30",
+    "div-2025-05-28",
+    "div-2025-06-25",
+    "div-2025-07-23",
+    "div-2026-05-11"
+  ]
+}

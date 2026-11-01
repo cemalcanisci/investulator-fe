@@ -1,0 +1,2520 @@
+[
+  {
+    "schemaVersion": 2,
+    "version": "doas-2026-10-27-v1",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "AUTOMOTIVE",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "id": "price",
+        "value": "134.80",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-27",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-27",
+          "end": "2026-10-27",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Anlık fiyat ekranı"
+      },
+      {
+        "id": "shares",
+        "value": "220000000",
+        "unit": "SHARES",
+        "period": "2026-10-27",
+        "sourceId": "capital",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-27",
+          "end": "2026-10-27",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Ödenmiş sermaye / pay sayısı"
+      },
+      {
+        "id": "week52Low",
+        "value": "125.80",
+        "unit": "TRY_SHARE",
+        "period": "2025-10 / 2026-10",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-10-27",
+          "end": "2026-10-27",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "52 hafta aralığı - düşük"
+      },
+      {
+        "id": "week52High",
+        "value": "211.19",
+        "unit": "TRY_SHARE",
+        "period": "2025-10 / 2026-10",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-10-27",
+          "end": "2026-10-27",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "52 hafta aralığı - yüksek (ikincil kaynakla çelişiyor, bkz. eğitim notu)"
+      },
+      {
+        "id": "q1Revenue2026",
+        "value": "49622082000",
+        "unit": "TRY",
+        "period": "2026 Q1",
+        "sourceId": "q1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-03-31",
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 1Ç26 rapor, s.7 - Hasılat satırı (1 Ocak-31 Mart 2026 sütunu)",
+        "evidence": {
+          "id": "ev-doas-q1-2026-income",
+          "sourceId": "q1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"31 Mart Tarihlerinde Sona Eren Üç Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 49.622.082 (1Ç26) / 55.015.333 (1Ç25); Esas Faaliyet Karı 2.304.904 / 3.617.575; Dönem karının dağılımı - Ana ortaklık payları 573.960 / 754.827 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-05-11",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "q1Revenue2026",
+            "q1RevenuePrevious",
+            "q1Profit2026",
+            "q1ProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-03-31",
+          "purchasingPowerDate": "2026-03-31"
+        }
+      },
+      {
+        "id": "q1RevenuePrevious",
+        "value": "55015333000",
+        "unit": "TRY",
+        "period": "2025 Q1 @ 2026-03-31",
+        "sourceId": "q1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-03-31",
+          "start": "2025-01-01",
+          "end": "2025-03-31",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 1Ç26 rapor, s.7 - Hasılat satırı (1 Ocak-31 Mart 2025 karşılaştırmalı sütun)",
+        "evidence": {
+          "id": "ev-doas-q1-2026-income",
+          "sourceId": "q1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"31 Mart Tarihlerinde Sona Eren Üç Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 49.622.082 (1Ç26) / 55.015.333 (1Ç25); Esas Faaliyet Karı 2.304.904 / 3.617.575; Dönem karının dağılımı - Ana ortaklık payları 573.960 / 754.827 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-05-11",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "q1Revenue2026",
+            "q1RevenuePrevious",
+            "q1Profit2026",
+            "q1ProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-03-31",
+          "purchasingPowerDate": "2026-03-31"
+        }
+      },
+      {
+        "id": "q1Profit2026",
+        "value": "573960000",
+        "unit": "TRY",
+        "period": "2026 Q1",
+        "sourceId": "q1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-03-31",
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 1Ç26 rapor, s.7 - Dönem karının dağılımı, Ana ortaklık payları (2026)",
+        "evidence": {
+          "id": "ev-doas-q1-2026-income",
+          "sourceId": "q1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"31 Mart Tarihlerinde Sona Eren Üç Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 49.622.082 (1Ç26) / 55.015.333 (1Ç25); Esas Faaliyet Karı 2.304.904 / 3.617.575; Dönem karının dağılımı - Ana ortaklık payları 573.960 / 754.827 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-05-11",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "q1Revenue2026",
+            "q1RevenuePrevious",
+            "q1Profit2026",
+            "q1ProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-03-31",
+          "purchasingPowerDate": "2026-03-31"
+        }
+      },
+      {
+        "id": "q1ProfitPrevious",
+        "value": "754827000",
+        "unit": "TRY",
+        "period": "2025 Q1 @ 2026-03-31",
+        "sourceId": "q1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-03-31",
+          "start": "2025-01-01",
+          "end": "2025-03-31",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 1Ç26 rapor, s.7 - Dönem karının dağılımı, Ana ortaklık payları (2025 karşılaştırmalı)",
+        "evidence": {
+          "id": "ev-doas-q1-2026-income",
+          "sourceId": "q1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"31 Mart Tarihlerinde Sona Eren Üç Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 49.622.082 (1Ç26) / 55.015.333 (1Ç25); Esas Faaliyet Karı 2.304.904 / 3.617.575; Dönem karının dağılımı - Ana ortaklık payları 573.960 / 754.827 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-05-11",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "q1Revenue2026",
+            "q1RevenuePrevious",
+            "q1Profit2026",
+            "q1ProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-03-31",
+          "purchasingPowerDate": "2026-03-31"
+        }
+      },
+      {
+        "id": "q1EquityEnd",
+        "value": "67808233000",
+        "unit": "TRY",
+        "period": "2026-03-31",
+        "sourceId": "q1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-03-31",
+          "start": "2026-03-31",
+          "end": "2026-03-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 1Ç26 rapor, s.6 - Ana ortaklığa ait özkaynaklar (31 Mart 2026)",
+        "evidence": {
+          "id": "ev-doas-q1-2026-balance",
+          "sourceId": "q1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "locator": "s.6 - \"31 Mart 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\", Kaynaklar",
+          "excerpt": "Ana ortaklığa ait özkaynaklar 67.808.233 (31 Mart 2026) (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-05-11",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "q1EquityEnd"
+          ],
+          "from": "2026-03-31",
+          "to": "2026-03-31",
+          "purchasingPowerDate": "2026-03-31"
+        }
+      },
+      {
+        "id": "q2Revenue2026",
+        "value": "60042000000",
+        "unit": "TRY",
+        "period": "2026 Q2",
+        "sourceId": "q2Report",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "2Ç26 şirket raporu - çeyrek hasılat"
+      },
+      {
+        "id": "q2Profit2026",
+        "value": "1742000000",
+        "unit": "TRY",
+        "period": "2026 Q2",
+        "sourceId": "q2Report",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "periodKind": "QUARTER",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "2Ç26 şirket raporu - çeyrek net kâr"
+      },
+      {
+        "id": "netDebtQ1",
+        "value": "29516000000",
+        "unit": "TRY",
+        "period": "2026-03-31",
+        "sourceId": "q2Report",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-03-31",
+          "end": "2026-03-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "2Ç26 şirket raporu - karşılaştırmalı net borç (Mart 2026)"
+      },
+      {
+        "id": "netDebtQ2",
+        "value": "32227000000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "q2Report",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "2Ç26 şirket raporu - net borç"
+      },
+      {
+        "id": "revenue",
+        "value": "113143951000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Hasılat (1 Ocak-30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenuePrevious",
+        "value": "138326836000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Hasılat (1 Ocak-30 Haziran 2025 karşılaştırmalı)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profit",
+        "value": "2356360000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Dönem karının dağılımı, Ana ortaklık payları (2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profitPrevious",
+        "value": "3603191000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Dönem karının dağılımı, Ana ortaklık payları (2025 karşılaştırmalı)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingProfit",
+        "value": "4856475000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Esas Faaliyet Karı (2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingProfitPrevious",
+        "value": "8699274000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.7 - Esas Faaliyet Karı (2025 karşılaştırmalı)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.7 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Kar veya Zarar Tablosu\"",
+          "excerpt": "Hasılat 113.143.951 (6A26) / 138.326.836 (6A25); Esas Faaliyet Karı 4.856.475 / 8.699.274; Dönem karının dağılımı - Ana ortaklık payları 2.356.360 / 3.603.191 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "ebitdaH1",
+        "value": "6600000000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1News",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "6A26 haberi - FAVÖK (ikincil kaynak, düşük hassasiyetle raporlanmış)"
+      },
+      {
+        "id": "operatingCash",
+        "value": "-2677424000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.10 - Özet Konsolide Nakit Akışları Tablosu, İşletme faaliyetlerinden nakit akışları (net, 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.10 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Nakit Akışları Tablosu\"",
+          "excerpt": "A. İşletme faaliyetlerinden nakit akışları (2.677.424) (6A26) / (12.728.764) (6A25); İşletme sermayesinde gerçekleşen değişimler (2.473.845) / (16.467.811); B. Yatırım faaliyetlerinden kaynaklanan nakit akışları içinde Maddi duran varlık alımından kaynaklanan nakit çıkışları (1.175.550) / (1.554.677); Dönem sonu nakit ve nakit benzerleri 1.512.478 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "capex",
+        "value": "1175550000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.10 - Maddi duran varlık alımından kaynaklanan nakit çıkışları (2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.10 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Nakit Akışları Tablosu\"",
+          "excerpt": "A. İşletme faaliyetlerinden nakit akışları (2.677.424) (6A26) / (12.728.764) (6A25); İşletme sermayesinde gerçekleşen değişimler (2.473.845) / (16.467.811); B. Yatırım faaliyetlerinden kaynaklanan nakit akışları içinde Maddi duran varlık alımından kaynaklanan nakit çıkışları (1.175.550) / (1.554.677); Dönem sonu nakit ve nakit benzerleri 1.512.478 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquity",
+        "value": "74341347000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.6 - Ana ortaklığa ait özkaynaklar (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "totalAssetsEnd",
+        "value": "153337021000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.5 - Toplam Varlıklar (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "cash",
+        "value": "1512478000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.5 - Nakit ve nakit benzerleri (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "cashAvailable",
+        "value": "1512478000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, Not 5 (s.23) - Nakit ve Nakit Benzerleri: \"30 Haziran 2026 ve 31 Aralık 2025 tarihleri itibarıyla bloke mevduat bulunmamaktadır\" - toplam nakit bloke içermiyor",
+        "evidence": {
+          "id": "ev-doas-h1-2026-notes",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.23 (Not 5 - Nakit ve Nakit Benzerleri), s.23-24 (Not 6 - Finansal Yatırımlar), s.56 (Not 25 - Finansal Araçlardan Kaynaklanan Risklerin Niteliği ve Düzeyi)",
+          "excerpt": "Not 5: \"30 Haziran 2026 ve 31 Aralık 2025 tarihleri itibarıyla bloke mevduat bulunmamaktadır\", nakit toplamı 1.512.478. Not 6: Finansal yatırımlar toplamı 3.777.774. Not 25: Finansal borçlar toplamı 33.739.782, Nakit ve nakit benzerleri (1.512.478), Net finansal borç 32.227.304, Özkaynaklar toplamı 75.452.964, Net finansal borç/özkaynaklar oranı 0,43 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cashAvailable",
+            "financialInvestments",
+            "netFinancialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "financialInvestments",
+        "value": "3777774000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, Not 6 (s.23-24) - Finansal Yatırımlar toplamı (ağırlıklı olarak Doğuş Holding payı)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-notes",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.23 (Not 5 - Nakit ve Nakit Benzerleri), s.23-24 (Not 6 - Finansal Yatırımlar), s.56 (Not 25 - Finansal Araçlardan Kaynaklanan Risklerin Niteliği ve Düzeyi)",
+          "excerpt": "Not 5: \"30 Haziran 2026 ve 31 Aralık 2025 tarihleri itibarıyla bloke mevduat bulunmamaktadır\", nakit toplamı 1.512.478. Not 6: Finansal yatırımlar toplamı 3.777.774. Not 25: Finansal borçlar toplamı 33.739.782, Nakit ve nakit benzerleri (1.512.478), Net finansal borç 32.227.304, Özkaynaklar toplamı 75.452.964, Net finansal borç/özkaynaklar oranı 0,43 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cashAvailable",
+            "financialInvestments",
+            "netFinancialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "netFinancialDebt",
+        "value": "32227304000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, Not 25 (s.56) - Grubun kendi tanımıyla \"Net finansal borç\" (Finansal borçlar toplamı - Nakit ve nakit benzerleri); finansal yatırımlar bu tanıma dahil değildir",
+        "evidence": {
+          "id": "ev-doas-h1-2026-notes",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.23 (Not 5 - Nakit ve Nakit Benzerleri), s.23-24 (Not 6 - Finansal Yatırımlar), s.56 (Not 25 - Finansal Araçlardan Kaynaklanan Risklerin Niteliği ve Düzeyi)",
+          "excerpt": "Not 5: \"30 Haziran 2026 ve 31 Aralık 2025 tarihleri itibarıyla bloke mevduat bulunmamaktadır\", nakit toplamı 1.512.478. Not 6: Finansal yatırımlar toplamı 3.777.774. Not 25: Finansal borçlar toplamı 33.739.782, Nakit ve nakit benzerleri (1.512.478), Net finansal borç 32.227.304, Özkaynaklar toplamı 75.452.964, Net finansal borç/özkaynaklar oranı 0,43 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cashAvailable",
+            "financialInvestments",
+            "netFinancialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "workingCapitalCash",
+        "value": "-2473845000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.10 - Nakit akışları tablosu, İşletme sermayesinde gerçekleşen değişimler (net, 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.10 - \"30 Haziran Tarihlerinde Sona Eren Altı Aylık Ara Hesap Dönemlerine Ait Özet Konsolide Nakit Akışları Tablosu\"",
+          "excerpt": "A. İşletme faaliyetlerinden nakit akışları (2.677.424) (6A26) / (12.728.764) (6A25); İşletme sermayesinde gerçekleşen değişimler (2.473.845) / (16.467.811); B. Yatırım faaliyetlerinden kaynaklanan nakit akışları içinde Maddi duran varlık alımından kaynaklanan nakit çıkışları (1.175.550) / (1.554.677); Dönem sonu nakit ve nakit benzerleri 1.512.478 (bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtShort",
+        "value": "16801651000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.6 - Kısa vadeli borçlanmalar (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtCurrent",
+        "value": "6575890000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.6 - Uzun vadeli borçlanmaların kısa vadeli kısımları (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtLong",
+        "value": "10362241000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.6 - Uzun vadeli borçlanmalar (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "currentAssets",
+        "value": "78147236000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.5 - Toplam dönen varlıklar (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "currentLiabilities",
+        "value": "60283123000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Birincil 6A26 rapor, s.6 - Toplam kısa vadeli yükümlülükler (30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-doas-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-kap-financials-2026",
+          "reviewerId": "claude-doas-research-20261027",
+          "ancestorIds": [],
+          "documentUrl": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "locator": "s.5-6 - \"30 Haziran 2026 ve 31 Aralık 2025 Tarihleri İtibarıyla Özet Konsolide Finansal Durum Tablosu\"",
+          "excerpt": "Toplam Varlıklar 153.337.021; Toplam dönen varlıklar 78.147.236; Nakit ve nakit benzerleri 1.512.478; Kısa vadeli borçlanmalar 16.801.651; Uzun vadeli borçlanmaların kısa vadeli kısımları 6.575.890; Uzun vadeli borçlanmalar 10.362.241; Toplam kısa vadeli yükümlülükler 60.283.123; Ana ortaklığa ait özkaynaklar 74.341.347 (30 Haziran 2026, bin TL)",
+          "checkedAt": "2026-10-27",
+          "publishedAt": "2026-08-19",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtCurrent",
+            "debtLong",
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "fyRevenue2025",
+        "value": "255800000000",
+        "unit": "TRY",
+        "period": "FY2025",
+        "sourceId": "annual2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "4Ç25 finansal değerlendirme - tam yıl hasılat"
+      },
+      {
+        "id": "fyEbitda2025",
+        "value": "14717000000",
+        "unit": "TRY",
+        "period": "FY2025",
+        "sourceId": "annual2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "4Ç25 finansal değerlendirme - tam yıl FAVÖK"
+      },
+      {
+        "id": "fyProfit2025",
+        "value": "3140000000",
+        "unit": "TRY",
+        "period": "FY2025",
+        "sourceId": "annual2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "4Ç25 finansal değerlendirme - tam yıl net kâr"
+      },
+      {
+        "id": "dividend1",
+        "value": "15.00",
+        "unit": "TRY_SHARE",
+        "period": "2026-04-13",
+        "sourceId": "dividendCalendar",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-04-13",
+          "end": "2026-04-13",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Temettü takvimi - 1. taksit brüt tutar"
+      },
+      {
+        "id": "dividend2",
+        "value": "15.00",
+        "unit": "TRY_SHARE",
+        "period": "2026-08-13",
+        "sourceId": "dividendCalendar",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-08-13",
+          "end": "2026-08-13",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Temettü takvimi - 2. taksit brüt tutar"
+      },
+      {
+        "id": "dividendTotal",
+        "value": "30.00",
+        "unit": "TRY_SHARE",
+        "period": "2026",
+        "sourceId": "dividendCalendar",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-27",
+          "end": "2026-10-27",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "İki taksidin toplamı (15,00 + 15,00)"
+      },
+      {
+        "id": "peerFrotoPe",
+        "value": "10.11",
+        "unit": "MULTIPLE",
+        "period": "2026-10-26",
+        "sourceId": "peers",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-26",
+          "end": "2026-10-26",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Foreks - FROTO F/K"
+      },
+      {
+        "id": "peerFrotoEvEbitda",
+        "value": "8.45",
+        "unit": "MULTIPLE",
+        "period": "2026-10-26",
+        "sourceId": "peers",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-26",
+          "end": "2026-10-26",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-27",
+        "locator": "Foreks - FROTO FD/FAVÖK"
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "bookPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peHalfYear",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peRunRate",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "ANNUALIZED_ESTIMATE"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "q1ProfitMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "ebitdaMarginH1",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "fyEbitdaMargin2025",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "operatingMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "currentRatio",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3
+      },
+      {
+        "id": "bookPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4
+      },
+      {
+        "id": "peHalfYear",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "peRunRate",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "q1ProfitMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "q1Profit2026",
+          "q1Revenue2026"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "ebitdaMarginH1",
+        "operation": "PERCENT",
+        "inputs": [
+          "ebitdaH1",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "fyEbitdaMargin2025",
+        "operation": "PERCENT",
+        "inputs": [
+          "fyEbitda2025",
+          "fyRevenue2025"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "operatingMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "currentRatio",
+        "operation": "RATIO",
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtCurrent",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "cashProxy",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      }
+    ],
+    "presentation": {
+      "debtLines": [],
+      "schemaVersion": 1,
+      "id": "doas-2026-10-27-v1",
+      "assetId": "watch-bist-doas",
+      "symbol": "DOAS",
+      "isin": "TREDOTO00013",
+      "market": "BIST",
+      "sector": "AUTOMOTIVE_DISTRIBUTION",
+      "contentKey": "researchDoas",
+      "asOf": "2026-10-27",
+      "retrievedAt": "2026-10-27T15:16:00+03:00",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-27T15:16:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "sources": [
+        {
+          "id": "price",
+          "title": "Doviz.com · DOAS",
+          "url": "https://borsa.doviz.com/hisseler/doas-dogus-otomotiv",
+          "publishedAt": "2026-10-27T15:16:00+03:00",
+          "period": "2026-10-27",
+          "locator": "Anlık fiyat, 52 hafta aralığı, F/K, PD/DD"
+        },
+        {
+          "id": "capital",
+          "title": "KAP · Doğuş Otomotiv şirket bilgileri",
+          "url": "https://kap.org.tr/tr/sirket-bilgileri/genel/1391-dogus-otomotiv-servis-ve-ticaret-a-s",
+          "publishedAt": null,
+          "period": "2026-10-27 erişimi",
+          "locator": "Ödenmiş sermaye, pay sayısı, ortaklık yapısı"
+        },
+        {
+          "id": "q1Report",
+          "title": "Infoyatirim · DOAS 1Ç26 bilanço analizi",
+          "url": "https://infoyatirim.com/blog/bilanco-analizleri/dogus-otomotiv-2026-yili-ilk-ceyrek-bilancosunu-acikladi",
+          "publishedAt": "2026-05-01",
+          "period": "2026 Q1 / 2025 Q1",
+          "locator": "Hasılat, net kâr, özkaynak, satış adedi/pazar payı"
+        },
+        {
+          "id": "q2Report",
+          "title": "İş Yatırım · DOAS 2Ç26 şirket raporu",
+          "url": "https://arastirma.isyatirim.com.tr/2026/08/20/sirket-raporu-dogus-otomotiv-doas-is-2c26-sonuclari/",
+          "publishedAt": "2026-08-20",
+          "period": "2026 Q2 / 2025 Q2",
+          "locator": "FAVÖK marjı, net borç, net borç/FAVÖK, toptan satış adedi"
+        },
+        {
+          "id": "h1News",
+          "title": "Borsa Gündem · DOAS 6A26 net kâr haberi",
+          "url": "https://www.borsagundem.com.tr/dogus-otomotivin-net-kari-ilk-yarida-yuzde-35-geriledi",
+          "publishedAt": "2026-08-19",
+          "period": "2026 H1 / 2025 H1",
+          "locator": "Hasılat, net kâr, FAVÖK (6 aylık, YoY)"
+        },
+        {
+          "id": "annual2025",
+          "title": "Gedik Yatırım · DOAS 4Ç25 finansal değerlendirme",
+          "url": "https://cdn.gedik.com/media/media/4a0bk0ju/4c25_finansal-degerlendirme_doas_20260302.pdf",
+          "publishedAt": "2026-03-02",
+          "period": "FY2025 / FY2024",
+          "locator": "Tam yıl hasılat, FAVÖK, FAVÖK marjı, net kâr"
+        },
+        {
+          "id": "dividendCalendar",
+          "title": "Investing.com · DOAS temettü takvimi",
+          "url": "https://tr.investing.com/equities/dogus-otomotiv-dividends",
+          "publishedAt": null,
+          "period": "2008-2026",
+          "locator": "Hak kullanım / ödeme tarihli brüt temettü geçmişi"
+        },
+        {
+          "id": "tuvturk",
+          "title": "Foreks · DOAS TÜVTÜRK pay satışı haberi",
+          "url": "https://www.foreks.com/haber/detay/6ad63dc5422c786f3f7a59ae/PICNEWS/tr/dogus-otomotiv-tuvturk-kuzey-ve-guney-deki-paylarinin-tamamini-satmak-icin-niyet-mektubu-imzaladi-19-10-26/",
+          "publishedAt": "2026-10-19",
+          "period": "2026-10-13 / 2026-10-19",
+          "locator": "TÜVTÜRK Kuzey/Güney pay satışı niyet mektubu açıklaması"
+        },
+        {
+          "id": "business",
+          "title": "Doğuş Otomotiv · Vikipedi",
+          "url": "https://tr.wikipedia.org/wiki/Do%C4%9Fu%C5%9F_Otomotiv",
+          "publishedAt": null,
+          "period": "2026-10-27 erişimi",
+          "locator": "Marka portföyü, kuruluş/halka arz tarihi, faaliyet alanları"
+        },
+        {
+          "id": "peers",
+          "title": "Foreks · FROTO fiyat ve çarpanlar",
+          "url": "https://www.foreks.com/sembol-detay/H2024/froto/ford-otosan/",
+          "publishedAt": "2026-10-26",
+          "period": "2026-10-26",
+          "locator": "F/K, FD/FAVÖK karşılaştırma"
+        },
+        {
+          "id": "sales",
+          "title": "İş Yatırım / Infoyatirim · DOAS satış adedi ve pazar payı",
+          "url": "https://arastirma.isyatirim.com.tr/2026/08/20/sirket-raporu-dogus-otomotiv-doas-is-2c26-sonuclari/",
+          "publishedAt": "2026-08-20",
+          "period": "2026 H1",
+          "locator": "Toptan satış adedi, pazar payı, segment kırılımı"
+        },
+        {
+          "id": "q1PrimaryReport",
+          "title": "Doğuş Otomotiv · 31.03.2026 Özet Konsolide Finansal Tablolar",
+          "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+          "publishedAt": "2026-05-11",
+          "period": "2026 Q1 / 2025 Q1",
+          "locator": "Birincil KAP finansal rapor PDF (şirket yatırımcı ilişkileri sitesi üzerinden); s.5-7 bilanço ve kâr/zarar tablosu"
+        },
+        {
+          "id": "h1PrimaryReport",
+          "title": "Doğuş Otomotiv · 30.06.2026 Özet Konsolide Finansal Tablolar",
+          "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+          "publishedAt": "2026-08-19",
+          "period": "2026 H1 / 2025 H1",
+          "locator": "Birincil KAP finansal rapor PDF (şirket yatırımcı ilişkileri sitesi üzerinden); s.5-7 bilanço ve kâr/zarar tablosu"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "134.80",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-27",
+          "sourceId": "price"
+        },
+        {
+          "id": "shares",
+          "value": "220000000",
+          "unit": "SHARES",
+          "period": "2026-10-27",
+          "sourceId": "capital"
+        },
+        {
+          "id": "week52Low",
+          "value": "125.80",
+          "unit": "TRY_SHARE",
+          "period": "2025-10 / 2026-10",
+          "sourceId": "price"
+        },
+        {
+          "id": "week52High",
+          "value": "211.19",
+          "unit": "TRY_SHARE",
+          "period": "2025-10 / 2026-10",
+          "sourceId": "price"
+        },
+        {
+          "id": "q1Revenue2026",
+          "value": "49622082000",
+          "unit": "TRY",
+          "period": "2026 Q1",
+          "sourceId": "q1PrimaryReport"
+        },
+        {
+          "id": "q1RevenuePrevious",
+          "value": "55015333000",
+          "unit": "TRY",
+          "period": "2025 Q1 @ 2026-03-31",
+          "sourceId": "q1PrimaryReport"
+        },
+        {
+          "id": "q1Profit2026",
+          "value": "573960000",
+          "unit": "TRY",
+          "period": "2026 Q1",
+          "sourceId": "q1PrimaryReport"
+        },
+        {
+          "id": "q1ProfitPrevious",
+          "value": "754827000",
+          "unit": "TRY",
+          "period": "2025 Q1 @ 2026-03-31",
+          "sourceId": "q1PrimaryReport"
+        },
+        {
+          "id": "q1EquityEnd",
+          "value": "67808233000",
+          "unit": "TRY",
+          "period": "2026-03-31",
+          "sourceId": "q1PrimaryReport"
+        },
+        {
+          "id": "q2Revenue2026",
+          "value": "60042000000",
+          "unit": "TRY",
+          "period": "2026 Q2",
+          "sourceId": "q2Report"
+        },
+        {
+          "id": "q2Profit2026",
+          "value": "1742000000",
+          "unit": "TRY",
+          "period": "2026 Q2",
+          "sourceId": "q2Report"
+        },
+        {
+          "id": "netDebtQ1",
+          "value": "29516000000",
+          "unit": "TRY",
+          "period": "2026-03-31",
+          "sourceId": "q2Report"
+        },
+        {
+          "id": "netDebtQ2",
+          "value": "32227000000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "q2Report"
+        },
+        {
+          "id": "revenue",
+          "value": "113143951000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "138326836000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "profit",
+          "value": "2356360000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "profitPrevious",
+          "value": "3603191000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "operatingProfit",
+          "value": "4856475000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "operatingProfitPrevious",
+          "value": "8699274000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "ebitdaH1",
+          "value": "6600000000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1News"
+        },
+        {
+          "id": "operatingCash",
+          "value": "-2677424000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "capex",
+          "value": "1175550000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "parentEquity",
+          "value": "74341347000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "153337021000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "cash",
+          "value": "1512478000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "cashAvailable",
+          "value": "1512478000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "financialInvestments",
+          "value": "3777774000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "netFinancialDebt",
+          "value": "32227304000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "workingCapitalCash",
+          "value": "-2473845000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "debtShort",
+          "value": "16801651000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "debtCurrent",
+          "value": "6575890000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "debtLong",
+          "value": "10362241000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "currentAssets",
+          "value": "78147236000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "currentLiabilities",
+          "value": "60283123000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "fyRevenue2025",
+          "value": "255800000000",
+          "unit": "TRY",
+          "period": "FY2025",
+          "sourceId": "annual2025"
+        },
+        {
+          "id": "fyEbitda2025",
+          "value": "14717000000",
+          "unit": "TRY",
+          "period": "FY2025",
+          "sourceId": "annual2025"
+        },
+        {
+          "id": "fyProfit2025",
+          "value": "3140000000",
+          "unit": "TRY",
+          "period": "FY2025",
+          "sourceId": "annual2025"
+        },
+        {
+          "id": "dividend1",
+          "value": "15.00",
+          "unit": "TRY_SHARE",
+          "period": "2026-04-13",
+          "sourceId": "dividendCalendar"
+        },
+        {
+          "id": "dividend2",
+          "value": "15.00",
+          "unit": "TRY_SHARE",
+          "period": "2026-08-13",
+          "sourceId": "dividendCalendar"
+        },
+        {
+          "id": "dividendTotal",
+          "value": "30.00",
+          "unit": "TRY_SHARE",
+          "period": "2026",
+          "sourceId": "dividendCalendar"
+        },
+        {
+          "id": "peerFrotoPe",
+          "value": "10.11",
+          "unit": "MULTIPLE",
+          "period": "2026-10-26",
+          "sourceId": "peers"
+        },
+        {
+          "id": "peerFrotoEvEbitda",
+          "value": "8.45",
+          "unit": "MULTIPLE",
+          "period": "2026-10-26",
+          "sourceId": "peers"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3
+        },
+        {
+          "id": "bookPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4
+        },
+        {
+          "id": "peHalfYear",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "peRunRate",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "q1ProfitMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "q1Profit2026",
+            "q1Revenue2026"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "ebitdaMarginH1",
+          "operation": "PERCENT",
+          "inputs": [
+            "ebitdaH1",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "fyEbitdaMargin2025",
+          "operation": "PERCENT",
+          "inputs": [
+            "fyEbitda2025",
+            "fyRevenue2025"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "operatingMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "currentRatio",
+          "operation": "RATIO",
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtCurrent",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "cashProxy",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        }
+      ],
+      "disclosureScan": {
+        "from": "2026-07-27",
+        "to": "2026-10-27",
+        "status": "PARTIAL",
+        "sourceId": "tuvturk",
+        "pendingDates": [
+          "2026-07-27",
+          "2026-08-01",
+          "2026-09-01",
+          "2026-09-23",
+          "2026-10-01"
+        ]
+      },
+      "disclosures": [
+        {
+          "id": "tuvturk-north-south",
+          "sourceId": "tuvturk",
+          "publishedAt": "2026-10-19T18:00:00+03:00",
+          "eventDate": "2026-10-13",
+          "key": "tuvturk",
+          "impact": "HIGH",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "dividend-2026-08",
+          "sourceId": "dividendCalendar",
+          "publishedAt": "2026-08-13T00:00:00+03:00",
+          "eventDate": "2026-08-13",
+          "key": "dividend",
+          "impact": "HIGH",
+          "isUpdate": true,
+          "isCorrection": false,
+          "previousDisclosureDate": "2026-04-13",
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "q2-results",
+          "sourceId": "q2Report",
+          "publishedAt": "2026-08-20T00:00:00+03:00",
+          "eventDate": "2026-08-19",
+          "key": "q2Results",
+          "impact": "HIGH",
+          "isUpdate": true,
+          "isCorrection": false,
+          "previousDisclosureDate": "2026-05-01",
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "growth",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "technical",
+          "status": "MISSING"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "COMPLETE"
+        }
+      ]
+    }
+  }
+]

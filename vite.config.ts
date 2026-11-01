@@ -21,6 +21,26 @@ export default defineConfig(({ mode }) => ({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rolldownOptions: {
+      output: {
+        // Keep growing static research data below the import parser's memory limit.
+        codeSplitting: {
+          groups: [
+            {
+              name: 'research-data',
+              test: /[/\\]src[/\\]data[/\\]research[/\\].*\.json$/,
+              maxSize: 500_000,
+            },
+            {
+              name: 'translations',
+              test: /[/\\]src[/\\]i18n[/\\]locales[/\\].*\.json$/,
+            },
+          ],
+        },
+      },
+    },
+  },
   server: {
     // The frontend always calls the same-origin `/api`; in production a reverse
     // proxy does what this does in dev, so no CORS setup is needed anywhere.

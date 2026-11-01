@@ -1,0 +1,1775 @@
+[
+  {
+    "schemaVersion": 2,
+    "version": "yggyo-2026-10-29-v1",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "REIT",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "id": "price",
+        "value": "189.20",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-29",
+        "sourceId": "priceSource",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-29",
+          "end": "2026-10-29",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Doviz.com anlik fiyat; Yahoo Finance 2026-10-28 aylik kapanisiyla (189,1999...) ortusuyor"
+      },
+      {
+        "id": "shares",
+        "value": "241920000",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "annualReport2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Faaliyet raporu 1.3 \"Sirketin Sermaye ve Ortaklik Yapisi\" - Cikarilmis Sermaye 241.920.000 TL"
+      },
+      {
+        "id": "week52Low",
+        "value": "112.89",
+        "unit": "TRY_SHARE",
+        "period": "2025-10 / 2026-10",
+        "sourceId": "priceSource",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-10-29",
+          "end": "2026-10-29",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "52 hafta araligi - dusuk (doviz.com)"
+      },
+      {
+        "id": "week52High",
+        "value": "270.50",
+        "unit": "TRY_SHARE",
+        "period": "2025-10 / 2026-10",
+        "sourceId": "priceSource",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-10-29",
+          "end": "2026-10-29",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "52 hafta araligi - yuksek (doviz.com)"
+      },
+      {
+        "id": "occupancy",
+        "value": "99.9",
+        "unit": "PERCENT",
+        "period": "2025-12-31",
+        "sourceId": "annualReport2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Faaliyet raporu 4.3 \"Uretim, Satislar, Verimlilik...\" - \"AVM cari donem sonu doluluk orani ise %99,9'dur\""
+      },
+      {
+        "id": "netAssetValue",
+        "value": "28214691004",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "SOLO",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Portfoy Sinirlamalarina Uyumun Kontrolu tablosu (bireysel), satir I \"Oz Kaynaklar Md.31\"",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-portfolio",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Portfoy sinirlamalarina uyumun kontrolu tablosu, s.47",
+          "excerpt": "I Oz Kaynaklar Md.31 28.214.691.004 (30.06.2026) / 30.120.666.837 (31.12.2025); D Toplam Varliklar (Aktif Toplami) 29.741.449.202 / 31.103.063.057",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netAssetValue"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquity",
+        "value": "28109740451",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide finansal durum tablosu, s.4 - Toplam Ozkaynaklar",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "totalAssetsEnd",
+        "value": "30322808777",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide finansal durum tablosu, s.3 - Toplam varliklar",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "cash",
+        "value": "3029982636",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide finansal durum tablosu, s.3 - Nakit ve nakit benzerleri",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtShort",
+        "value": "224345155",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide finansal durum tablosu, s.4 - Kisa vadeli borclanmalar",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtLong",
+        "value": "330595651",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide finansal durum tablosu, s.4 - Uzun vadeli borclanmalar",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity",
+            "totalAssetsEnd",
+            "cash",
+            "debtShort",
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenue",
+        "value": "1704078903",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Hasilat (1 Ocak-30 Haziran 2026)",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenuePrevious",
+        "value": "1954804176",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Hasilat (1 Ocak-30 Haziran 2025 karsilastirmali)",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profit",
+        "value": "461373611",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Donem kari (2026)",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profitPrevious",
+        "value": "615818809",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Donem kari (2025 karsilastirmali)",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingCash",
+        "value": "1741774649",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozet konsolide nakit akis tablosu, s.7 - Faaliyetlerden elde edilen nakit akislari (2026)",
+        "evidence": {
+          "id": "ev-yggyo-h1-2026-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "yenigimatgyo-ir-site",
+          "collectionId": "yggyo-financials-2026",
+          "reviewerId": "claude-yggyo-research-20261029",
+          "ancestorIds": [],
+          "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "locator": "Ozet konsolide nakit akis tablosu, s.7",
+          "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-06",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "dividendTotal",
+        "value": "10.55",
+        "unit": "TRY_SHARE",
+        "period": "2026-04-07",
+        "sourceId": "dividendNews",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-04-07",
+          "end": "2026-04-07",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "2025 yili karindan 2026da odenen brut=net temettu; Yahoo Finance olay verisi ve KAP-turevli haberlerle capraz dogrulandi"
+      },
+      {
+        "id": "dividendPrevious",
+        "value": "7.00",
+        "unit": "TRY_SHARE",
+        "period": "2025-04-15",
+        "sourceId": "dividendNews",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-04-15",
+          "end": "2025-04-15",
+          "periodKind": "INSTANT",
+          "shareBasis": "241920000"
+        },
+        "verification": "UNVERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "2024 yili karindan 2025te odenen brut=net temettu"
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "navPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceNav",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "navPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "netAssetValue",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4,
+        "metricKey": "nav"
+      },
+      {
+        "id": "priceNav",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "netAssetValue"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3,
+        "metricKey": "nav"
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3,
+        "metricKey": "pb"
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2,
+        "metricKey": "growth"
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2,
+        "metricKey": "growth"
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2,
+        "metricKey": "yield"
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0,
+        "metricKey": "debt"
+      },
+      {
+        "id": "cashProxy",
+        "operation": "RATIO",
+        "inputs": [
+          "operatingCash",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2,
+        "metricKey": "cfo"
+      }
+    ],
+    "presentation": {
+      "schemaVersion": 1,
+      "id": "yggyo-2026-10-29-v1",
+      "assetId": "watch-bist-yggyo",
+      "symbol": "YGGYO",
+      "isin": "TREYGMI00012",
+      "market": "BIST",
+      "sector": "GYO · AVM ve Otel",
+      "contentKey": "researchYggyo",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-10-29T18:00:00+03:00",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-29T18:00:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "debtLines": [],
+      "sources": [
+        {
+          "id": "priceSource",
+          "title": "Doviz.com - YGGYO",
+          "url": "https://borsa.doviz.com/hisseler/yggyo-yeni-gimat-gmyo",
+          "period": "2026-10-29",
+          "locator": "Anlik fiyat, piyasa degeri, 52 hafta araligi (Yahoo Finance ile capraz dogrulandi)",
+          "observedAt": "2026-10-29",
+          "publishedAt": null
+        },
+        {
+          "id": "h1PrimaryReport",
+          "title": "Yeni Gimat GYO - 30.06.2026 Ozet Konsolide Finansal Tablolar ve Sinirli Denetim Raporu",
+          "url": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+          "publishedAt": "2026-08-06",
+          "period": "2026 H1 / 2025 H1",
+          "locator": "Bilanco s.3-4, gelir tablosu s.5, nakit akis tablosu s.7, portfoy sinirlamalari s.47-49"
+        },
+        {
+          "id": "annualReport2025",
+          "title": "Yeni Gimat GYO - 31.12.2025 Yonetim Kurulu Faaliyet Raporu",
+          "url": "https://belgeler.yenigimatgyo.com.tr/jgIJM405Z3St/Yeni%20Gimat%2031.12.2025%20%C4%B0mzal%C4%B1%20Faaliyet%20Raporu.pdf",
+          "period": "FY2025",
+          "locator": "Ortaklik yapisi s.4, Yonetim Kurulu s.5, doluluk orani ve otel detayi s.2-3",
+          "observedAt": "2026-10-29",
+          "publishedAt": null
+        },
+        {
+          "id": "dividendNews",
+          "title": "Finansopia / Rota Borsa - YGGYO temettu karari haberleri (2025-2026)",
+          "url": "https://www.finansopia.com/kap-bildirimleri/yeni-gimat-gyo-yggyo-2026-yili-temettu-kararini-acikladi/",
+          "period": "2025-2026",
+          "locator": "KAP temettu dagitim karari haberleri; Yahoo Finance olay verisiyle capraz dogrulandi",
+          "observedAt": "2026-10-29",
+          "publishedAt": null
+        },
+        {
+          "id": "isinSource",
+          "title": "Fintables - YGGYO sirket bilgileri",
+          "url": "https://fintables.com/sirketler/YGGYO",
+          "publishedAt": null,
+          "period": "2026-10-29",
+          "locator": "ISIN kodu - tek kaynakli, bagimsiz dogrulanmadi"
+        },
+        {
+          "id": "kapProfile",
+          "title": "KAP - Yeni Gimat GYO sirket bilgileri",
+          "url": "https://www.kap.org.tr/tr/sirket-bilgileri/genel/4028e4a241733d4201417cda3f421321",
+          "publishedAt": null,
+          "period": "2026-10-29 erisimi",
+          "locator": "Ortaklik yapisi tablosu (guncel gorunum) - faaliyet raporundaki 31.12.2025 tablosuyla fiili dolasim oraninda cozulmemis bir celiski var (bkz. egitim notu)"
+        },
+        {
+          "id": "kapDisclosureList",
+          "title": "Borsacoo - YGGYO KAP bildirim listesi (ikincil derleme)",
+          "url": "https://borsacoo.com/firma/YGGYO/bildirimler",
+          "publishedAt": null,
+          "period": "2026-07-29 / 2026-10-29",
+          "locator": "KAP bildirim listesi turetilmis derleme; dogrudan KAP arayuzune bu oturumda erisilemedi (PARTIAL)"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "189.20",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-29",
+          "sourceId": "priceSource",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-10-29",
+            "end": "2026-10-29",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Doviz.com anlik fiyat; Yahoo Finance 2026-10-28 aylik kapanisiyla (189,1999...) ortusuyor"
+        },
+        {
+          "id": "shares",
+          "value": "241920000",
+          "unit": "SHARES",
+          "period": "2025-12-31",
+          "sourceId": "annualReport2025",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "GROUP",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2025-12-31",
+            "end": "2025-12-31",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Faaliyet raporu 1.3 \"Sirketin Sermaye ve Ortaklik Yapisi\" - Cikarilmis Sermaye 241.920.000 TL"
+        },
+        {
+          "id": "week52Low",
+          "value": "112.89",
+          "unit": "TRY_SHARE",
+          "period": "2025-10 / 2026-10",
+          "sourceId": "priceSource",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2025-10-29",
+            "end": "2026-10-29",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "52 hafta araligi - dusuk (doviz.com)"
+        },
+        {
+          "id": "week52High",
+          "value": "270.50",
+          "unit": "TRY_SHARE",
+          "period": "2025-10 / 2026-10",
+          "sourceId": "priceSource",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2025-10-29",
+            "end": "2026-10-29",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "52 hafta araligi - yuksek (doviz.com)"
+        },
+        {
+          "id": "occupancy",
+          "value": "99.9",
+          "unit": "PERCENT",
+          "period": "2025-12-31",
+          "sourceId": "annualReport2025",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2025-12-31",
+            "end": "2025-12-31",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Faaliyet raporu 4.3 \"Uretim, Satislar, Verimlilik...\" - \"AVM cari donem sonu doluluk orani ise %99,9'dur\""
+        },
+        {
+          "id": "netAssetValue",
+          "value": "28214691004",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "SOLO",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Portfoy Sinirlamalarina Uyumun Kontrolu tablosu (bireysel), satir I \"Oz Kaynaklar Md.31\"",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-portfolio",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Portfoy sinirlamalarina uyumun kontrolu tablosu, s.47",
+            "excerpt": "I Oz Kaynaklar Md.31 28.214.691.004 (30.06.2026) / 30.120.666.837 (31.12.2025); D Toplam Varliklar (Aktif Toplami) 29.741.449.202 / 31.103.063.057",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "netAssetValue"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "parentEquity",
+          "value": "28109740451",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide finansal durum tablosu, s.4 - Toplam Ozkaynaklar",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-balance",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity",
+              "totalAssetsEnd",
+              "cash",
+              "debtShort",
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "30322808777",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3 - Toplam varliklar",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-balance",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity",
+              "totalAssetsEnd",
+              "cash",
+              "debtShort",
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "cash",
+          "value": "3029982636",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide finansal durum tablosu, s.3 - Nakit ve nakit benzerleri",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-balance",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity",
+              "totalAssetsEnd",
+              "cash",
+              "debtShort",
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "debtShort",
+          "value": "224345155",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide finansal durum tablosu, s.4 - Kisa vadeli borclanmalar",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-balance",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity",
+              "totalAssetsEnd",
+              "cash",
+              "debtShort",
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "debtLong",
+          "value": "330595651",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-06-30",
+            "end": "2026-06-30",
+            "periodKind": "INSTANT",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide finansal durum tablosu, s.4 - Uzun vadeli borclanmalar",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-balance",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide finansal durum tablosu, s.3-4",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "parentEquity",
+              "totalAssetsEnd",
+              "cash",
+              "debtShort",
+              "debtLong"
+            ],
+            "from": "2026-06-30",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "revenue",
+          "value": "1704078903",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Hasilat (1 Ocak-30 Haziran 2026)",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-income",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenue",
+              "revenuePrevious",
+              "profit",
+              "profitPrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "1954804176",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Hasilat (1 Ocak-30 Haziran 2025 karsilastirmali)",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-income",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenue",
+              "revenuePrevious",
+              "profit",
+              "profitPrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "profit",
+          "value": "461373611",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Donem kari (2026)",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-income",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenue",
+              "revenuePrevious",
+              "profit",
+              "profitPrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "profitPrevious",
+          "value": "615818809",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "PARENT",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2025-01-01",
+            "end": "2025-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide kar veya zarar tablosu, s.5 - Donem kari (2025 karsilastirmali)",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-income",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide kar veya zarar ve diger kapsamli gelir tablosu, s.5",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "revenue",
+              "revenuePrevious",
+              "profit",
+              "profitPrevious"
+            ],
+            "from": "2025-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "operatingCash",
+          "value": "1741774649",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "CONSOLIDATED",
+            "attribution": "GROUP",
+            "accounting": "TAS29",
+            "purchasingPowerDate": "2026-06-30",
+            "start": "2026-01-01",
+            "end": "2026-06-30",
+            "periodKind": "H1",
+            "shareBasis": null
+          },
+          "verification": "VERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "Ozet konsolide nakit akis tablosu, s.7 - Faaliyetlerden elde edilen nakit akislari (2026)",
+          "evidence": {
+            "id": "ev-yggyo-h1-2026-cashflow",
+            "sourceId": "h1PrimaryReport",
+            "originId": "yenigimatgyo-ir-site",
+            "collectionId": "yggyo-financials-2026",
+            "reviewerId": "claude-yggyo-research-20261029",
+            "ancestorIds": [],
+            "documentUrl": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+            "locator": "Ozet konsolide nakit akis tablosu, s.7",
+            "excerpt": "Nakit ve nakit benzerleri 3.029.982.636 (30.06.2026) / 3.958.605.740 (31.12.2025); Toplam varliklar 30.322.808.777 / 31.947.705.136; Kisa vadeli borclanmalar 224.345.155 / 269.346.580; Uzun vadeli borclanmalar 330.595.651 / 493.407.231; Toplam ozkaynaklar 28.109.740.451 / 30.263.343.387; Hasilat 1.704.078.903 (1 Ocak-30 Haziran 2026) / 1.954.804.176 (2025); Donem kari 461.373.611 / 615.818.809; Isletme faaliyetlerinden nakit akislari 1.741.774.649 (6A26) / 2.066.877.361 (6A25).",
+            "checkedAt": "2026-10-29",
+            "publishedAt": "2026-08-06",
+            "method": "DOCUMENT_RECONCILIATION",
+            "claims": [
+              "operatingCash"
+            ],
+            "from": "2026-01-01",
+            "to": "2026-06-30",
+            "purchasingPowerDate": "2026-06-30"
+          }
+        },
+        {
+          "id": "dividendTotal",
+          "value": "10.55",
+          "unit": "TRY_SHARE",
+          "period": "2026-04-07",
+          "sourceId": "dividendNews",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2026-04-07",
+            "end": "2026-04-07",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "2025 yili karindan 2026da odenen brut=net temettu; Yahoo Finance olay verisi ve KAP-turevli haberlerle capraz dogrulandi"
+        },
+        {
+          "id": "dividendPrevious",
+          "value": "7.00",
+          "unit": "TRY_SHARE",
+          "period": "2025-04-15",
+          "sourceId": "dividendNews",
+          "basis": {
+            "currency": "TRY",
+            "scale": "1",
+            "scope": "MARKET",
+            "attribution": "SHARE",
+            "accounting": "NOMINAL",
+            "purchasingPowerDate": null,
+            "start": "2025-04-15",
+            "end": "2025-04-15",
+            "periodKind": "INSTANT",
+            "shareBasis": "241920000"
+          },
+          "verification": "UNVERIFIED",
+          "checkedAt": "2026-10-29",
+          "locator": "2024 yili karindan 2025te odenen brut=net temettu"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "navPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "netAssetValue",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4,
+          "metricKey": "nav"
+        },
+        {
+          "id": "priceNav",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "netAssetValue"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3,
+          "metricKey": "nav"
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3,
+          "metricKey": "pb"
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2,
+          "metricKey": "growth"
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2,
+          "metricKey": "growth"
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2,
+          "metricKey": "yield"
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0,
+          "metricKey": "debt"
+        },
+        {
+          "id": "cashProxy",
+          "operation": "RATIO",
+          "inputs": [
+            "operatingCash",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2,
+          "metricKey": "cfo"
+        }
+      ],
+      "disclosureScan": {
+        "from": "2026-07-29",
+        "to": "2026-10-29",
+        "status": "PARTIAL",
+        "sourceId": "kapDisclosureList",
+        "pendingDates": [
+          "2026-07-29",
+          "2026-08-18",
+          "2026-09-22",
+          "2026-10-01"
+        ]
+      },
+      "disclosures": [
+        {
+          "id": "proen-capital-decision",
+          "sourceId": "kapDisclosureList",
+          "publishedAt": "2026-09-07T00:00:00+03:00",
+          "eventDate": "2026-09-07",
+          "key": "proenCapital",
+          "impact": "HIGH",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "proen-capital-registered",
+          "sourceId": "kapDisclosureList",
+          "publishedAt": "2026-09-10T00:00:00+03:00",
+          "eventDate": "2026-09-10",
+          "key": "proenCapital",
+          "impact": "HIGH",
+          "isUpdate": true,
+          "isCorrection": false,
+          "previousDisclosureDate": "2026-09-07",
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "circuit-breakers-oct",
+          "sourceId": "kapDisclosureList",
+          "publishedAt": "2026-10-28T10:19:00+03:00",
+          "eventDate": "2026-10-28",
+          "key": "circuitBreaker",
+          "impact": "MEDIUM",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "growth",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "technical",
+          "status": "MISSING"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "COMPLETE"
+        }
+      ]
+    }
+  }
+]

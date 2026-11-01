@@ -56,9 +56,10 @@ describe('external XLSX research page', () => {
       expect(
         screen.getAllByText(language === 'tr' ? /23,98/ : /23.98/).length,
       ).toBeGreaterThan(0);
-      expect(
-        screen.getAllByText(i18n.t('researchUx.trust.missing')).length,
-      ).toBeGreaterThan(0);
+      // Cards for an id the import never modeled at all (e.g. a two-installment
+      // dividend split it has no data for) are now hidden rather than shown
+      // empty (2026-10-30 fix); this import's minimal fact set no longer
+      // surfaces a "Yeterli veri yok" card, so that assertion was removed.
       expect(view.container.textContent).not.toContain('externalResearch.');
       expect(view.container.textContent).not.toContain(
         'research.metrics.ebitda',

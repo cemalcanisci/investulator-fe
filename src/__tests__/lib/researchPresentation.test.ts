@@ -17,6 +17,10 @@ describe('research presentation rules', () => {
     expect(interpretMetric(report, 'absent').key).toBe('missing');
     expect(metricDefinition('unknown')).toBeUndefined();
     expect(metricDefinition('income-new', 'revenue')?.key).toBe('revenue');
+    expect(metricDefinition('netAssetValue', 'netAssetValue')?.key).toBe('nav');
+    expect(metricDefinition('rentalIncome', 'rentalIncome')?.key).toBe(
+      'rental',
+    );
   });
   it('refuses ordinary growth interpretation on a negative base and respects sector rules', () => {
     const changed = {

@@ -38,10 +38,64 @@ export interface RatioPresentation {
   readonly strictStatus: 'PASS' | 'BLOCKED';
 }
 
+/**
+ * A metric card is only shown when the report actually models it: as a literal
+ * fact/calculation id, or (for the generic DATED_RATIOS ids) when every fact
+ * that id's formula needs exists. Prevents hardcoded, sector-wide card lists
+ * (e.g. 'dividend1'/'dividend2', an EV_EBITDA cash-bridge set) from rendering
+ * an empty "insufficient data" card for a report that never had that concept.
+ */
+interface ModelableFact {
+  readonly id: string;
+  readonly basis?: { readonly periodKind?: string };
+}
+
+export function isMetricModeled(
+  report: {
+    readonly facts: readonly ModelableFact[];
+    readonly calculations: readonly { readonly id: string }[];
+  },
+  id: string,
+): boolean {
+  if (
+    report.facts.some((entry) => entry.id === id) ||
+    report.calculations.some((entry) => entry.id === id)
+  ) {
+    return true;
+  }
+  // 'roe' is computed by a dedicated selectedRoe() branch in ratioPresentation(),
+  // never a literal fact/calculation id and never in DATED_RATIOS (its averaging
+  // window depends on which dated equity facts exist, not a fixed input list).
+  // Without this it can never pass isMetricModeled for ANY report, so it was
+  // silently dead in every sector's 'Diğer göstergeler' (priceBook -> roe)
+  // list even when genuinely computable (found while integrating TOASO).
+  if (id === 'roe') {
+    return (
+      report.facts.some((f) => f.id === 'profit') &&
+      report.facts.some((f) => f.id === 'parentEquity')
+    );
+  }
+  const datedInputs = DATED_RATIOS[id];
+  if (!datedInputs?.every((input) => report.facts.some((f) => f.id === input))) {
+    return false;
+  }
+  // peHalfYear/peRunRate are framed as "6 aylık kâr"; only honest for a report
+  // whose current-period profit fact genuinely covers a half year. A 9-month
+  // (YTD) interim reporter has no half-year figure to show without fabricating
+  // one, so the card is unmodeled for it rather than rendered empty.
+  if (id === 'peHalfYear' || id === 'peRunRate') {
+    const profit = report.facts.find((f) => f.id === 'profit');
+    return profit?.basis?.periodKind === 'H1';
+  }
+  return true;
+}
+
 // Explicit display policies, never a fallback for arbitrary blocked calculations.
-const DATED_RATIOS: Readonly<Record<string, readonly string[]>> = {
+export const DATED_RATIOS: Readonly<Record<string, readonly string[]>> = {
   marketCap: ['price', 'shares'],
   priceBook: ['price', 'shares', 'parentEquity'],
+  priceNav: ['price', 'shares', 'netAssetValue'],
+  peTtm: ['price', 'shares', 'profit'],
   peHalfYear: ['price', 'shares', 'profit'],
   peRunRate: ['price', 'shares', 'profit', 'profit'],
   dividendYield: ['dividendTotal', 'price'],
@@ -117,6 +171,32 @@ export function ratioPresentation(
       return { ...empty, issues: ['publicationOrBasis'] };
     }
     return selectedBookRatio(report, selected);
+  }
+  if (id === 'priceNav' && !report.facts.some((fact) => fact.id === id)) {
+    const defined = report.calculations.find(
+      (calculation) => calculation.id === id,
+    );
+    if (
+      defined &&
+      (defined.operation !== 'PRODUCT_OVER_SUM' ||
+        JSON.stringify(defined.inputs) !==
+          JSON.stringify(DATED_RATIOS.priceNav))
+    ) {
+      return { ...empty, issues: ['BASIS'] };
+    }
+    const price = ratioPresentation(report, 'marketCap').inputs.find((fact) =>
+      fact.unit.endsWith('_SHARE'),
+    );
+    const selected = selectFinancialStock(
+      report,
+      'netAssetValue',
+      price?.basis.end ?? report.presentation.priceAt,
+      'PARENT',
+    );
+    if (!selected) {
+      return { ...empty, issues: ['publicationOrBasis'] };
+    }
+    return selectedNavRatio(report, selected);
   }
   const stored = report.calculations.find((c) => c.id === id);
   const calculation = stored ? currentCalculation(report, stored) : undefined;
@@ -535,6 +615,64 @@ function selectedBookRatio(
     ...base,
     issues: [...new Set(issues)],
     value: divideDecimals(market.value, equity.value, 2),
+    status: issues.length ? 'INDICATIVE' : 'VERIFIED',
+  };
+}
+
+function selectedNavRatio(
+  report: AnalysisReport,
+  netAssetValue: FinancialFact,
+): RatioPresentation {
+  const market = ratioPresentation(report, 'marketCap');
+  const price = market.inputs.find((fact) => fact.unit.endsWith('_SHARE'));
+  const contracts = report.contracts.filter(
+    (contract) => contract.id === 'priceNav',
+  );
+  const base: RatioPresentation = {
+    id: 'priceNav',
+    unit: 'MULTIPLE',
+    status: 'MISSING_DATA',
+    inputs: [...market.inputs, netAssetValue],
+    issues: ['BASIS'],
+    strictStatus: 'BLOCKED',
+  };
+  if (
+    !market.value ||
+    !price ||
+    (report.calculations.some(
+      (calculation) => calculation.id === 'priceNav',
+    ) &&
+      (contracts.length !== 1 ||
+        contracts[0].units.length !== base.inputs.length ||
+        base.inputs.some(
+          (fact, index) => fact.unit !== contracts[0].units[index],
+        ))) ||
+    netAssetValue.unit !== price.basis.currency ||
+    netAssetValue.basis.currency !== price.basis.currency ||
+    compareDecimals(netAssetValue.value, '0') <= 0
+  ) {
+    return base;
+  }
+  const issues = [
+    ...market.issues,
+    ...factIssues(
+      netAssetValue,
+      report.presentation.sources.map((source) => source.id),
+    ),
+  ];
+  if (netAssetValue.basis.end !== price.basis.end) {
+    issues.push('marketDate');
+  }
+  if (
+    netAssetValue.basis.accounting === 'TAS29' &&
+    netAssetValue.basis.purchasingPowerDate !== price.basis.end
+  ) {
+    issues.push('purchasingPower');
+  }
+  return {
+    ...base,
+    issues: [...new Set(issues)],
+    value: divideDecimals(market.value, netAssetValue.value, 2),
     status: issues.length ? 'INDICATIVE' : 'VERIFIED',
   };
 }

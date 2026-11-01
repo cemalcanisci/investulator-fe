@@ -2,18 +2,53 @@ import type {
   ApproximateHistory,
   ApproximateCoverage,
 } from '@/domain/approximateHistory';
-import snapshot from '@/data/research/tuprs-approximate-history.json';
+import tuprsSnapshot from '@/data/research/tuprs-approximate-history.json';
+import doasSnapshot from '@/data/research/doas-approximate-history.json';
 import { researchBundle } from '@/services/researchBundle';
 import { isApproximateHistory } from '@/lib/approximateHistorySchema';
 
-function coverage(value: typeof snapshot.coverage.prices): ApproximateCoverage {
+interface RawCoverage {
+  readonly from: string;
+  readonly to: string;
+  readonly state: string;
+  readonly sourceIds: readonly string[];
+  readonly method: string;
+}
+interface RawSnapshot {
+  readonly assetId: string;
+  readonly asOf: string;
+  readonly currency: string;
+  readonly listedFrom: string | null;
+  readonly priceBasis: string;
+  readonly shareBasisDate: string;
+  readonly sources: ApproximateHistory['sources'];
+  readonly coverage: {
+    readonly prices: RawCoverage;
+    readonly fx: RawCoverage;
+    readonly actions: RawCoverage;
+    readonly dividends: RawCoverage;
+  };
+  readonly monthly: ApproximateHistory['monthly'];
+  readonly actions: readonly {
+    readonly id: string;
+    readonly date: string;
+    readonly factor: string;
+    readonly type: string;
+    readonly sourceId: string;
+  }[];
+  readonly dividends: ApproximateHistory['dividends'];
+  readonly expectedDividendIds: readonly string[];
+  readonly expectedActionIds: readonly string[];
+}
+
+function coverage(value: RawCoverage): ApproximateCoverage {
   const state = value.state;
   if (state !== 'REVIEWED' && state !== 'MISSING' && state !== 'CONFLICT') {
     throw new Error('Invalid coverage state');
   }
   return { ...value, state };
 }
-function readSnapshot(): ApproximateHistory {
+function readSnapshot(snapshot: RawSnapshot): ApproximateHistory {
   const { currency, priceBasis } = snapshot;
   if (
     (currency !== 'TRY' && currency !== 'USD') ||
@@ -42,7 +77,10 @@ function readSnapshot(): ApproximateHistory {
     }),
   };
 }
-const histories: readonly ApproximateHistory[] = [readSnapshot()];
+const histories: readonly ApproximateHistory[] = [
+  readSnapshot(tuprsSnapshot),
+  readSnapshot(doasSnapshot),
+];
 
 /** Public snapshots only. User portfolios and external providers are never accessed. */
 export function getApproximateHistory(

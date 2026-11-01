@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import type { ResearchReport } from '@/domain/research';
 import { getAnalysis } from '@/services/analysis';
 import { formatQuantity } from '@/lib/formatNumber';
-import { divideDecimals } from '@/lib/decimal';
+import { compareDecimals, divideDecimals } from '@/lib/decimal';
 import { metricDefinition } from '@/domain/metricEducation';
 
 import {
@@ -121,8 +121,9 @@ export function ResearchMetric({
       </article>
     );
   }
-  const display =
-    unit === 'TRY' ? divideDecimals(value, '1000000000', 2) : value;
+  const useBillions =
+    unit === 'TRY' && compareDecimals(value.replace(/^-/, ''), '10000000') >= 0;
+  const display = useBillions ? divideDecimals(value, '1000000000', 2) : value;
   const sourceIds = [...new Set(inputs.map((entry) => entry.sourceId))];
   return (
     <article className="min-w-0 rounded-xl border border-line bg-surface p-4">
@@ -130,7 +131,7 @@ export function ResearchMetric({
       <p className="mt-2 break-words text-2xl font-semibold tabular-nums">
         {formatQuantity(display, i18n.language)}{' '}
         <span className="text-sm font-normal text-fg-2">
-          {t(`research.units.${unit === 'TRY' ? 'BILLION_TRY' : unit}`)}
+          {t(`research.units.${useBillions ? 'BILLION_TRY' : unit}`)}
         </span>
       </p>
       <p className="mt-2 text-xs font-medium">

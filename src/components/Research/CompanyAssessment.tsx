@@ -5,7 +5,7 @@ import { getAnalysis } from '@/services/analysis';
 import { companyAssessment, overviewRatioIds } from '@/lib/companyAssessment';
 import { ResearchMetric } from '@/components/Research/ResearchMetric';
 import { ResearchDisclosurePanel } from '@/components/Research/ResearchDisclosurePanel';
-import { ratioPresentation } from '@/lib/ratioPresentation';
+import { isMetricModeled, ratioPresentation } from '@/lib/ratioPresentation';
 import { formatQuantity } from '@/lib/formatNumber';
 import { divideDecimals } from '@/lib/decimal';
 
@@ -17,7 +17,9 @@ export function CompanyAssessment({
   const { t, i18n } = useTranslation();
   const analysis = getAnalysis(report);
   const assessment = companyAssessment(analysis);
-  const ratios = overviewRatioIds(analysis);
+  const ratios = analysis
+    ? overviewRatioIds(analysis).filter((id) => isMetricModeled(analysis, id))
+    : [];
   return (
     <section aria-label={t('ratios.title')} className="space-y-4">
       <div className="rounded-xl border border-line bg-primary-soft p-5">
