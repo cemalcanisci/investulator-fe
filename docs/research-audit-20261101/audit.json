@@ -1,0 +1,4045 @@
+{
+  "asOf": "2026-11-01",
+  "reviewer": "Codex",
+  "independent": false,
+  "companies": [
+    {
+      "symbol": "TUPRS",
+      "version": "tuprs-2026-11-01-v8",
+      "previousVersion": "tuprs-2026-10-25-v7",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 73,
+      "unverified": [],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenue2021"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profit2021"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "equity2021"
+              ]
+            },
+            "cfo": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cfo2021"
+              ]
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "PARTIAL",
+              "factIds": [
+                "debt2021"
+              ]
+            },
+            "cash": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cash2021"
+              ]
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenue2022",
+                "revenue2023Comparable"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profit2022",
+                "profit2023Comparable"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "equity2022"
+              ]
+            },
+            "cfo": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cfo2022",
+                "cfo2023Comparable"
+              ]
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "PARTIAL",
+              "factIds": [
+                "debt2022"
+              ]
+            },
+            "cash": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cash2022"
+              ]
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenue2023",
+                "revenue2024Comparable"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profit2023",
+                "profit2024Comparable"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "equity2023"
+              ]
+            },
+            "cfo": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cfo2023",
+                "cfo2024Comparable"
+              ]
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "PARTIAL",
+              "factIds": [
+                "debt2023"
+              ]
+            },
+            "cash": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cash2023"
+              ]
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenue2024",
+                "revenue2025Comparable"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profit2024",
+                "profit2025Comparable"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "equity2024"
+              ]
+            },
+            "cfo": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cfo2024",
+                "cfo2025Comparable"
+              ]
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "PARTIAL",
+              "factIds": [
+                "debt2024"
+              ]
+            },
+            "cash": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cash2024"
+              ]
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenue2025"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "equity2025"
+              ]
+            },
+            "cfo": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cfo2025"
+              ]
+            },
+            "capex": {
+              "status": "PARTIAL",
+              "factIds": [
+                "capex2025"
+              ]
+            },
+            "debt": {
+              "status": "PARTIAL",
+              "factIds": [
+                "debt2025"
+              ]
+            },
+            "cash": {
+              "status": "PARTIAL",
+              "factIds": [
+                "cash2025"
+              ]
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "REVIEWED",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "tuprs-2023-03-10",
+              "tuprs-2023-09-29"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "tuprs-2024-04-03",
+              "tuprs-2024-09-27"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "tuprs-2025-03-28",
+              "tuprs-2025-09-30"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "tuprs-2026-03-16",
+              "tuprs-2026-09-30"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "tuprs-issuer",
+          "yahoo-finance",
+          "issuer-tupras",
+          "TUPRAS_ISSUER"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Borç faiz tahakkukları ve döviz pozisyonu birincil raporla mutabık. Doğal stok korunması hazır nakit değildir. Fiyat 9 Ekim kapanışıdır; güncel fiyat iddiası taşımaz. TTM için aynı satın alma gücünde tam yıl köprüsü eksik."
+    },
+    {
+      "symbol": "DOAS",
+      "version": "doas-2026-11-01-v2",
+      "previousVersion": "doas-2026-10-27-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 38,
+      "unverified": [
+        {
+          "id": "netDebtQ1",
+          "status": "UNVERIFIED",
+          "reason": "2Ç26 şirket raporu - karşılaştırmalı net borç (Mart 2026)"
+        },
+        {
+          "id": "ebitdaH1",
+          "status": "CONFLICT",
+          "reason": "6A26 haberi - FAVÖK (ikincil kaynak, düşük hassasiyetle raporlanmış) | 2026-11-01: Yönetim FAVÖK tanımı ile faaliyet kârı + amortisman köprüsü mutabık değil; normalize FAVÖK olarak kullanılamaz."
+        },
+        {
+          "id": "fyRevenue2025",
+          "status": "UNVERIFIED",
+          "reason": "4Ç25 finansal değerlendirme - tam yıl hasılat"
+        },
+        {
+          "id": "fyEbitda2025",
+          "status": "CONFLICT",
+          "reason": "4Ç25 finansal değerlendirme - tam yıl FAVÖK | 2026-11-01: Yönetim FAVÖK tanımı ile faaliyet kârı + amortisman köprüsü mutabık değil; normalize FAVÖK olarak kullanılamaz."
+        },
+        {
+          "id": "fyProfit2025",
+          "status": "UNVERIFIED",
+          "reason": "4Ç25 finansal değerlendirme - tam yıl net kâr"
+        },
+        {
+          "id": "peerFrotoPe",
+          "status": "UNVERIFIED",
+          "reason": "Foreks - FROTO F/K"
+        },
+        {
+          "id": "peerFrotoEvEbitda",
+          "status": "UNVERIFIED",
+          "reason": "Foreks - FROTO FD/FAVÖK"
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "fyRevenue2025"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025",
+                "fyProfit2025Restated"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "REVIEWED",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "doas-2021-04-27",
+              "doas-2021-07-12"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "doas-2022-04-08",
+              "doas-2022-11-14"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "doas-2023-04-06",
+              "doas-2023-08-24",
+              "doas-2023-11-24"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "doas-2024-04-19",
+              "doas-2024-09-02"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "doas-2025-05-20"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "doas-2026-04-13",
+              "doas-2026-08-13"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "doas-issuer",
+          "dogusotomotiv-ir-site"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Net borç 33.739.782.000 − 1.512.478.000 = 32.227.304.000 TL. Krediler ve kiralamalar dahil; finansal yatırımlar düşülmedi. Yatırım nakit çıkışı maddi ve maddi olmayan varlıkları içerir. Yönetim FAVÖK tanımı ve 2025 nominal finansalları henüz mutabık değil."
+    },
+    {
+      "symbol": "FROTO",
+      "version": "froto-2026-11-01-v2",
+      "previousVersion": "froto-2026-10-30-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 32,
+      "unverified": [],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFy2024End"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFy2025End"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "CONFLICT",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021-02",
+              "div-2021-10"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022-02",
+              "div-2022-10"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023-02",
+              "div-2023-09"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024-03",
+              "div-2024-10"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025-03",
+              "div-2025-11"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026-02"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "fordotosan-ir-site",
+          "froto-issuer"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir."
+    },
+    {
+      "symbol": "TOASO",
+      "version": "toaso-2026-11-01-v2",
+      "previousVersion": "toaso-2026-10-31-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 28,
+      "unverified": [],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFy2024End"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFy2025End"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "CONFLICT",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021-02-28"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022-02-28"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023-02-28"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024-03-31"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025-03-31"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026-02-28"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "toaso-issuer",
+          "tofas-ir-site"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır."
+    },
+    {
+      "symbol": "TTRAK",
+      "version": "ttrak-2026-11-01-v2",
+      "previousVersion": "ttrak-2026-10-29-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 22,
+      "unverified": [
+        {
+          "id": "dividendTotal",
+          "status": "CONFLICT",
+          "reason": "Resmi temettu odeme tarihcesi: 4.850.000.000 TL / 100.066.875 TL sermaye (nominal 1 TL/pay) = pay basina 48,4676 TL (brut, stopaj ayrimi bu oturumda uygulanmadi) | 2026-11-01: 48,4676 TL 2025 dağıtımıdır; 2026 cari temettüsü değildir. KAP 1569214: 2025 kârının 2026 yılında dağıtılmaması kararı. Cari verime taşınamaz."
+        },
+        {
+          "id": "dividendPrevious",
+          "status": "CONFLICT",
+          "reason": "Resmi temettu odeme tarihcesi: 2.700.000.000 TL / 100.066.875 TL sermaye = pay basina 26,9820 TL (brut) | 2026-11-01: 26,9820 TL tek taksit; yıllık toplam olarak doğrulanmadı. Yıl toplamı ve brüt/net mutabakatı eksik."
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-09-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "CONFLICT",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024",
+              "div-2024-2"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "turktraktor-ir-site"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Yeni zarar dönemi nedeniyle F/K hesaplanamaz. Eski kârlı yıl cari kâr yerine kullanılamaz. 2025 dağıtımı 2026 temettü verimine taşınmaz; KAP 1569214 dağıtmama kararını bildirir. Normalleştirilmiş kâr köprüsü eksik; PD/DD tek başına ucuzluk ölçüsü değildir."
+    },
+    {
+      "symbol": "ISMEN",
+      "version": "ismen-2026-11-01-v2",
+      "previousVersion": "ismen-2026-10-30-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 14,
+      "unverified": [
+        {
+          "id": "commissionIncome",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2026/6 sutunu - Gelir Tablosu, 'Faiz, Ucret, Prim, Komisyon ve Diger Gelirler' satiri (brokerlik icin standart sablonda komisyon+faiz+ucret birlesik kalemi; ayristirilmis 'sadece komisyon' alt kirilimi bu oturumda kaynaklanamadi, bkz. Veri eksikleri). | 2026-11-01: Faiz, ücret, prim, komisyon ve diğer gelir toplamı saf komisyon geliri değildir; hizmet geliri ayrı izlenmeli."
+        },
+        {
+          "id": "commissionIncomePrevious",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2025/6 sutunu - Gelir Tablosu, 'Faiz, Ucret, Prim, Komisyon ve Diger Gelirler' (karsilastirmali). | 2026-11-01: Faiz, ücret, prim, komisyon ve diğer gelir toplamı saf komisyon geliri değildir; hizmet geliri ayrı izlenmeli."
+        },
+        {
+          "id": "fyProfit2024",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2024/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+        },
+        {
+          "id": "fyProfit2023",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2023/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+        },
+        {
+          "id": "fyProfit2022",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2022/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+        },
+        {
+          "id": "fyProfit2021",
+          "status": "CONFLICT",
+          "reason": "Mali Tablolar 2021/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+        },
+        {
+          "id": "parentEquity2024",
+          "status": "UNVERIFIED",
+          "reason": "Mali Tablolar 2024/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
+        },
+        {
+          "id": "parentEquity2023",
+          "status": "UNVERIFIED",
+          "reason": "Mali Tablolar 2023/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
+        },
+        {
+          "id": "parentEquity2022",
+          "status": "UNVERIFIED",
+          "reason": "Mali Tablolar 2022/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
+        },
+        {
+          "id": "parentEquity2021",
+          "status": "UNVERIFIED",
+          "reason": "Mali Tablolar 2021/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "fyProfit2021"
+              ]
+            },
+            "equity": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "parentEquity2021"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "fyProfit2022"
+              ]
+            },
+            "equity": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "parentEquity2022"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "fyProfit2023"
+              ]
+            },
+            "equity": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "parentEquity2023"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "fyProfit2024"
+              ]
+            },
+            "equity": {
+              "status": "NEEDS_REVIEW",
+              "factIds": [
+                "parentEquity2024"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquity2025"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "CONFLICT",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "isyatirim-sirket-karti",
+          "ismen-issuer"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik."
+    },
+    {
+      "symbol": "YGGYO",
+      "version": "yggyo-2026-11-01-v2",
+      "previousVersion": "yggyo-2026-10-29-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 21,
+      "unverified": [
+        {
+          "id": "netAssetValue",
+          "status": "CONFLICT",
+          "reason": "Portfoy Sinirlamalarina Uyumun Kontrolu tablosu (bireysel), satir I \"Oz Kaynaklar Md.31\" | 2026-11-01: Bu değer bireysel özkaynak satırıdır; bağımsız, borç/vergi düzeltmeli portföy NAD değildir. PD/DD için konsolide parentEquity kullanılmalı."
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "CONFLICT",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "PRIMARY_ONLY",
+          "years": 14,
+          "from": 2013,
+          "to": 2026,
+          "source": "https://belgeler.yenigimatgyo.com.tr/evg7P7L1Zhfp/Yeni%20Gimat%20Faaliyet%20Raporu%2030.06.2026.pdf"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "yggyo-issuer",
+          "yenigimatgyo-ir-site"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "ANKAmall doluluğu %99,9; kapalı oteli kapsamaz. İşletme nakdi 1.741.774.649 TL içinde 832.423.344 TL faiz vardır. Faiz hariç nakit 909.351.305 TL, yatırım sonrası toplam nakit 1.521.751.711 TL. Ödenen temettünün toplam işletme nakdiyle karşılanması %66,44; bu oran saf kira nakdi değildir. Bireysel özkaynak düzeltilmiş NAD değildir."
+    },
+    {
+      "symbol": "AKSA",
+      "version": "aksa-2026-11-01-v2",
+      "previousVersion": "aksa-2026-10-31-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 41,
+      "unverified": [],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenueFY2021"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2021"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenueFY2022"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2022"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "PARTIAL",
+              "factIds": [
+                "revenueFY2023"
+              ]
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2023"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2024"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFY2025"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "REVIEWED",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021-04-13"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022-04-21"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023-04-11"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024-04-03"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025-05-21"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026-04-03"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "aksa-issuer"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır."
+    },
+    {
+      "symbol": "AKMGY",
+      "version": "akmgy-2026-11-01-v2",
+      "previousVersion": "akmgy-2026-10-31-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 38,
+      "unverified": [
+        {
+          "id": "netAssetValue",
+          "status": "CONFLICT",
+          "reason": "Bilanço NAD vekili = 13.739.049.000 toplam varlık − 2.608.000.000 toplam yükümlülük. Güncel bağımsız ekspertiz NAD değildir; gayrimenkul 12.726.514.000 TL eski ekspertizin enflasyonla taşınmış tutarıdır. | 2026-11-01: Muhasebe özkaynağı, bağımsız düzeltilmiş portföy NAD değildir; kira nakdi ve değerleme kazancı ayrımı tamamlanmadan NAD iskontosu hesaplanamaz."
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2021"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2022"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2023"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2024"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFY2025"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "REVIEWED",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021-01-06",
+              "div-2021-04-26",
+              "div-2021-08-24",
+              "div-2021-11-17"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022-04-04",
+              "div-2022-08-10"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023-04-19"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024-04-17"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025-04-09",
+              "div-2025-08-18"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026-04-15",
+              "div-2026-08-11"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "akmerkez-issuer",
+          "akmgy-issuer"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "İşletme nakdi 356.808.000 TL; aynı satın alma gücünde ödenen temettü 473.103.000 TL. İşletme nakdi karşılama oranı %75,419; alınan faiz yatırım nakdinde ayrıdır. Muhasebe özkaynağı, borç/vergi düzeltmeli bağımsız NAD değildir."
+    },
+    {
+      "symbol": "PAGYO",
+      "version": "pagyo-2026-11-01-v2",
+      "previousVersion": "pagyo-2026-10-31-v1",
+      "previousPreserved": true,
+      "review": "NEEDS_REVIEW",
+      "independent": false,
+      "verified": 34,
+      "unverified": [
+        {
+          "id": "netAssetValue",
+          "status": "CONFLICT",
+          "reason": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir. | 2026-11-01: Muhasebe özkaynağı, bağımsız düzeltilmiş portföy NAD değildir; kira nakdi ve değerleme kazancı ayrımı tamamlanmadan NAD iskontosu hesaplanamaz."
+        }
+      ],
+      "verifiedIssues": [],
+      "annual": [
+        {
+          "year": 2021,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2021"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2022,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2022"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2023,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2023"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2024,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "profitFY2024"
+              ]
+            },
+            "equity": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        },
+        {
+          "year": 2025,
+          "metrics": {
+            "revenue": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "profit": {
+              "status": "PARTIAL",
+              "factIds": [
+                "fyProfit2025"
+              ]
+            },
+            "equity": {
+              "status": "PARTIAL",
+              "factIds": [
+                "parentEquityFY2025"
+              ]
+            },
+            "cfo": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "capex": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "debt": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            },
+            "cash": {
+              "status": "MISSING_DATA",
+              "factIds": []
+            }
+          }
+        }
+      ],
+      "interim2026": {
+        "latest": "2026-01-01 / 2026-06-30",
+        "status": "PARTIAL",
+        "quarterArchive": "MISSING_DATA"
+      },
+      "dividendHistory": {
+        "status": "REVIEWED",
+        "years": [
+          {
+            "year": 2021,
+            "eventIds": [
+              "div-2021-01-06",
+              "div-2021-03-16",
+              "div-2021-07-01",
+              "div-2021-08-12",
+              "div-2021-09-13",
+              "div-2021-10-06"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2022,
+            "eventIds": [
+              "div-2022-04-08"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2023,
+            "eventIds": [
+              "div-2023-04-17",
+              "div-2023-09-21",
+              "div-2023-12-21"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2024,
+            "eventIds": [
+              "div-2024-07-10",
+              "div-2024-12-24"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2025,
+            "eventIds": [
+              "div-2025-04-30",
+              "div-2025-05-28",
+              "div-2025-06-25",
+              "div-2025-07-23"
+            ],
+            "status": "NEEDS_REVIEW"
+          },
+          {
+            "year": 2026,
+            "eventIds": [
+              "div-2026-05-11"
+            ],
+            "status": "NEEDS_REVIEW"
+          }
+        ],
+        "uninterrupted": {
+          "status": "MISSING_DATA"
+        }
+      },
+      "scenarios": {
+        "status": "BLOCKED",
+        "reason": "Üç senaryonun tarihli varsayımları, normalleştirme köprüsü ve uygulanmış sektör değerleme yöntemi birlikte tamamlanmış değil."
+      },
+      "sourceReview": {
+        "level": "DOCUMENT_RECONCILIATION",
+        "independent": false,
+        "origins": [
+          "yahoo-finance",
+          "panora-issuer",
+          "pagyo-issuer"
+        ],
+        "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
+      },
+      "note": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir."
+    }
+  ],
+  "changes": [
+    {
+      "symbol": "TUPRS",
+      "id": "price",
+      "before": "386.25",
+      "after": "386.25",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-09",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "debtAccruals",
+      "before": "1439635000",
+      "after": "1439635000",
+      "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 6: (2.221 + 1.437.414) bin TL faiz tahakkuku = 1.439.635.000 TL; finansal borca zaten dahildir."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "fxBeforeNatural",
+      "before": "-95405870000",
+      "after": "-95405870000",
+      "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 26 döviz pozisyonu: doğal stok korunması öncesi -95.405.870 bin TL; 95.609.785 bin TL stok etkisi sonrası 203.915 bin TL. Stok hazır nakit değildir."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "fxAfterNatural",
+      "before": "203915000",
+      "after": "203915000",
+      "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 26 döviz pozisyonu: doğal stok korunması öncesi -95.405.870 bin TL; 95.609.785 bin TL stok etkisi sonrası 203.915 bin TL. Stok hazır nakit değildir."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "shares",
+      "before": "1926795598",
+      "after": "1926795598",
+      "source": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+      "dataDate": "2026-03-11",
+      "method": "KAP 1570793: ödenmiş sermaye 1.926.795.598 TL; nominal 1 TL/pay."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "close1002",
+      "before": "377.00",
+      "after": "377.00",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-02",
+      "method": "2026-10-02 günlük quote.close; iki ondalık."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "close1005",
+      "before": "391.25",
+      "after": "391.25",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-05",
+      "method": "2026-10-05 günlük quote.close; iki ondalık."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "close1006",
+      "before": "379.25",
+      "after": "379.25",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-06",
+      "method": "2026-10-06 günlük quote.close; iki ondalık."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "close1007",
+      "before": "379.75",
+      "after": "379.75",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-07",
+      "method": "2026-10-07 günlük quote.close; iki ondalık."
+    },
+    {
+      "symbol": "TUPRS",
+      "id": "close1008",
+      "before": "392.25",
+      "after": "392.25",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-08",
+      "method": "2026-10-08 günlük quote.close; iki ondalık."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "price",
+      "before": "134.80",
+      "after": "134.30",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-27",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "week52Low",
+      "before": "125.80",
+      "after": "125.80",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-27",
+      "method": "2025-10-28–2026-10-27: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "week52High",
+      "before": "211.19",
+      "after": "247.00",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-27",
+      "method": "2025-10-28–2026-10-27: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "shares",
+      "before": "220000000",
+      "after": "220000000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 17: sermaye 220.000.000 TL, nominal 1 TL/pay."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "q2Revenue2026",
+      "before": "60042000000",
+      "after": "60041673000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Gelir tablosu s.3: 01.04–30.06.2026 sütunu; bin TL × 1.000. Kâr ana ortaklık payıdır."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "q2Profit2026",
+      "before": "1742000000",
+      "after": "1742146000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Gelir tablosu s.3: 01.04–30.06.2026 sütunu; bin TL × 1.000. Kâr ana ortaklık payıdır."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "netDebtQ2",
+      "before": "32227000000",
+      "after": "32227304000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 25: finansal borç 33.739.782 − nakit 1.512.478 = 32.227.304 bin TL; finansal yatırımlar düşülmez."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "capex",
+      "before": "1175550000",
+      "after": "1771465000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu s.6: maddi 1.175.550 + maddi olmayan 595.915 = 1.771.465 bin TL nakit yatırım çıkışı."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "financialDebt",
+      "before": "1512478000",
+      "after": "33739782000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 25 toplam finansal borç; kısa 16.801.651 + uzun vadesi gelen 6.575.890 + uzun 10.362.241 bin TL. Banka kredileri ve kiralama yükümlülükleri dahildir."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "depreciation",
+      "before": "4856475000",
+      "after": "2005330000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu: amortisman ve itfa giderleri 2.005.330 bin TL."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "fyProfit2025Restated",
+      "before": "2356360000",
+      "after": "3698933000",
+      "source": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "dataDate": "2025-12-31",
+      "method": "Özkaynak değişim tablosu s.5: 01.01.2026 ana ortaklık dönem kârı 3.698.933 bin TL; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "ebitdaH1",
+      "status": "CONFLICT",
+      "reason": "Yönetim FAVÖK tanımı ile faaliyet kârı + amortisman köprüsü mutabık değil; normalize FAVÖK olarak kullanılamaz."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "fyEbitda2025",
+      "status": "CONFLICT",
+      "reason": "Yönetim FAVÖK tanımı ile faaliyet kârı + amortisman köprüsü mutabık değil; normalize FAVÖK olarak kullanılamaz."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "dividend1",
+      "before": "15.00",
+      "after": "15",
+      "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+      "dataDate": "2026-04-13",
+      "method": "Brüt pay başına 15 + 15 = 30 TL. Hak kullanım 13.04 ve 13.08; ödeme 15.04 ve 17.08.2026."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "dividend2",
+      "before": "15.00",
+      "after": "15",
+      "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+      "dataDate": "2026-08-13",
+      "method": "Brüt pay başına 15 + 15 = 30 TL. Hak kullanım 13.04 ve 13.08; ödeme 15.04 ve 17.08.2026."
+    },
+    {
+      "symbol": "DOAS",
+      "id": "dividendTotal",
+      "before": "30.00",
+      "after": "30",
+      "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+      "dataDate": "2026-10-27",
+      "method": "Brüt pay başına 15 + 15 = 30 TL. Hak kullanım 13.04 ve 13.08; ödeme 15.04 ve 17.08.2026."
+    },
+    {
+      "symbol": "FROTO",
+      "id": "price",
+      "before": "69.20",
+      "after": "69.20",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "FROTO",
+      "id": "week52Low",
+      "before": "62.30",
+      "after": "62.30",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "FROTO",
+      "id": "week52High",
+      "before": "130.91",
+      "after": "135.40",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "FROTO",
+      "id": "dividendTotal",
+      "before": "2.6095",
+      "after": "3.64",
+      "source": "https://www.kap.org.tr/tr/Bildirim/1571600",
+      "dataDate": "2026-10-28",
+      "method": "2026 içinde ödenen brüt 3,64 TL/pay; hak kullanım 16.03, ödeme 18.03.2026. Kasım önerisi dahil değildir."
+    },
+    {
+      "symbol": "FROTO",
+      "id": "dividendPrevious",
+      "before": "6.05",
+      "after": "7.76",
+      "source": "https://news-content.foreks.com/attachments/kap/4028328d9c4c12ca019c72686eb971f9.pdf",
+      "dataDate": "2025-12-31",
+      "method": "2025 ödenen brüt: Nisan 17,10 / Mayıs 10 kat bölünme + Aralık 6,05 = güncel pay bazında 7,76 TL. Aynı ihraççı kökeni; bağımsız kaynak sayılmaz."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "price",
+      "before": "211.20",
+      "after": "211.20",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-30",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "week52Low",
+      "before": "209.47",
+      "after": "211.20",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-30",
+      "method": "2025-10-31–2026-10-30: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "week52High",
+      "before": "358.25",
+      "after": "358.25",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-30",
+      "method": "2025-10-31–2026-10-30: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "dividendPrevious",
+      "before": "10.20",
+      "after": "12",
+      "source": "https://kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c6cb04a3b4453",
+      "dataDate": "2025-04-07",
+      "method": "2025 brüt pay başına 12 TL; Yahoo günlük olay serisi 03.04.2025 hak kullanımı ile tutar mutabık. İkinci kaynağın köken bağımsızlığı kanıtlanmadı."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "dividendTotal",
+      "before": "17.00",
+      "after": "20",
+      "source": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddc019fb388b8e65d30",
+      "dataDate": "2026-03-23",
+      "method": "2026 ilk yarı faaliyet raporu kâr dağıtımı: 10.000.000.000 TL / 500.000.000 işlem gören pay = brüt 20 TL/pay. 17 TL net tutardır; hak kullanım 23.03.2026."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "shares",
+      "before": "500000000",
+      "after": "500000000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "cash",
+      "before": "11008676000",
+      "after": "11008676000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "debtShort",
+      "before": "29574156000",
+      "after": "29574156000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "debtLong",
+      "before": "40790577000",
+      "after": "40790577000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "financialDebt",
+      "before": "70364733000",
+      "after": "70364733000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "totalAssetsEnd",
+      "before": "215813377000",
+      "after": "215813377000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "currentAssets",
+      "before": "152293246000",
+      "after": "152293246000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "currentLiabilities",
+      "before": "101307749000",
+      "after": "101307749000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "parentEquity",
+      "before": "65740826000",
+      "after": "65740826000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "parentEquityFy2025End",
+      "before": "70691649000",
+      "after": "70691649000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-12-31",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "parentEquityFy2024End",
+      "before": "72600973000",
+      "after": "72600973000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2024-12-31",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "parentEquityH12025End",
+      "before": "63728041000",
+      "after": "63728041000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "revenue",
+      "before": "201797108000",
+      "after": "201797108000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "revenuePrevious",
+      "before": "125633352000",
+      "after": "125633352000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "operatingProfit",
+      "before": "2884353000",
+      "after": "2884353000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "operatingProfitPrevious",
+      "before": "-879779000",
+      "after": "-879779000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "profit",
+      "before": "6290532000",
+      "after": "6290532000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "profitPrevious",
+      "before": "2116615000",
+      "after": "2116615000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "fyProfit2025",
+      "before": "9837424000",
+      "after": "9837424000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2025-12-31",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "operatingCash",
+      "before": "-7202222000",
+      "after": "-7202222000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TOASO",
+      "id": "capex",
+      "before": "4427515000",
+      "after": "4427515000",
+      "source": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "dataDate": "2026-06-30",
+      "method": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık."
+    },
+    {
+      "symbol": "TTRAK",
+      "id": "price",
+      "before": "341.75",
+      "after": "341.75",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "TTRAK",
+      "id": "week52Low",
+      "before": "339.50",
+      "after": "339.50",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "TTRAK",
+      "id": "week52High",
+      "before": "622.50",
+      "after": "622.50",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "TTRAK",
+      "id": "dividendTotal",
+      "status": "CONFLICT",
+      "reason": "48,4676 TL 2025 dağıtımıdır; 2026 cari temettüsü değildir. KAP 1569214: 2025 kârının 2026 yılında dağıtılmaması kararı. Cari verime taşınamaz."
+    },
+    {
+      "symbol": "TTRAK",
+      "id": "dividendPrevious",
+      "status": "CONFLICT",
+      "reason": "26,9820 TL tek taksit; yıllık toplam olarak doğrulanmadı. Yıl toplamı ve brüt/net mutabakatı eksik."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "price",
+      "before": "25.22",
+      "after": "25.22",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ISMEN.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-30",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "parentEquity",
+      "before": "35252706000",
+      "after": "35252706000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Konsolide bilanço ve gelir tablosu; ana ortaklık, bin TL × 1.000; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "profit",
+      "before": "2616705000",
+      "after": "2616705000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Konsolide bilanço ve gelir tablosu; ana ortaklık, bin TL × 1.000; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "profitPrevious",
+      "before": "4037753000",
+      "after": "4037753000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2025-06-30",
+      "method": "Konsolide bilanço ve gelir tablosu; ana ortaklık, bin TL × 1.000; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "fyProfit2025",
+      "before": "8767628073",
+      "after": "8767593000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2025-12-31",
+      "method": "Özkaynak değişim tablosu açılış ana ortaklık kârı 8.767.593 bin TL; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "parentEquity2025",
+      "before": "38133598540",
+      "after": "38133444000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2025-12-31",
+      "method": "Karşılaştırmalı bilanço ana ortaklık özkaynakları 38.133.444 bin TL."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "commissionIncome",
+      "status": "CONFLICT",
+      "reason": "Faiz, ücret, prim, komisyon ve diğer gelir toplamı saf komisyon geliri değildir; hizmet geliri ayrı izlenmeli."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "commissionIncomePrevious",
+      "status": "CONFLICT",
+      "reason": "Faiz, ücret, prim, komisyon ve diğer gelir toplamı saf komisyon geliri değildir; hizmet geliri ayrı izlenmeli."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "dividendTotal",
+      "before": "3.1667",
+      "after": "3.1666667",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2026-04-01",
+      "method": "Dipnot 20: nominal toplam 4.750.000 bin TL / 1.500.000.000 işlem gören pay. Hak kullanım 01.04, ödeme tamamlanması 03.04.2026; TMS29 endeksli 5.083.169 bin TL nominal verime kullanılmaz."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "dividendPrevious",
+      "before": "5.6667",
+      "after": "5.6666667",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2025/ISMEN%20Finansal%20Tablolar_31%20Mart%202025.pdf",
+      "dataDate": "2025-03-28",
+      "method": "Dipnot özkaynaklar: nominal toplam 8.500.000 bin TL / 1.500.000.000 işlem gören pay; brüt."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "fyProfit2024",
+      "status": "CONFLICT",
+      "reason": "Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "fyProfit2023",
+      "status": "CONFLICT",
+      "reason": "Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "fyProfit2022",
+      "status": "CONFLICT",
+      "reason": "Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "fyProfit2021",
+      "status": "CONFLICT",
+      "reason": "Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "parentEquityH12025",
+      "before": "35252706000",
+      "after": "33467259000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2025-06-30",
+      "method": "Özkaynak değişim tablosu 30.06.2025 ana ortaklık 33.467.259 bin TL; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "financialDebt",
+      "before": "35252706000",
+      "after": "43351636000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 7: toplam finansal borç 43.351.636 bin TL; banka, ihraç edilen menkul kıymetler, tahakkuk ve kiralamalar. Müşteri ticari borçları hariç."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "debtSecurities",
+      "before": "43351636000",
+      "after": "34192199000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 7: ihraç edilen borçlanma araçları 34.192.199 bin TL; vadeler 22.07–29.09.2026, faiz %40–41,75."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "serviceIncome",
+      "before": "2616705000",
+      "after": "5648465000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/yatirimci-sunumlari/2026/ISMEN%20Performans_Finansal%20Sonuclar%202026%2006.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Aracılık ve finansal hizmet gelirleri 5.648.465 bin TL; faiz/fonlama gelirinden ayrıdır."
+    },
+    {
+      "symbol": "ISMEN",
+      "id": "serviceIncomePrevious",
+      "before": "4037753000",
+      "after": "4368106000",
+      "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/yatirimci-sunumlari/2026/ISMEN%20Performans_Finansal%20Sonuclar%202026%2006.pdf",
+      "dataDate": "2025-06-30",
+      "method": "Aracılık ve finansal hizmet gelirleri karşılaştırması 4.368.106 bin TL; aynı satın alma gücü."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "price",
+      "before": "189.20",
+      "after": "189.20",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "week52Low",
+      "before": "112.89",
+      "after": "118.60",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "week52High",
+      "before": "270.50",
+      "after": "270.50",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "dataDate": "2026-10-28",
+      "method": "2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "shares",
+      "before": "241920000",
+      "after": "241920000",
+      "source": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 16 sermaye: 241.920.000 TL, nominal 1 TL/pay."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "occupancy",
+      "before": "99.9",
+      "after": "99.9",
+      "source": "https://belgeler.yenigimatgyo.com.tr/evg7P7L1Zhfp/Yeni%20Gimat%20Faaliyet%20Raporu%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "30.06.2026 ANKAmall doluluk oranı %99,9; otel kapsam dışı. Otel 16.01.2026 yenileme nedeniyle kapalı, kira durmuş."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "dividendTotal",
+      "before": "10.55",
+      "after": "10.55",
+      "source": "https://belgeler.yenigimatgyo.com.tr/evg7P7L1Zhfp/Yeni%20Gimat%20Faaliyet%20Raporu%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Kâr dağıtım tablosu: 2026 yılında ödenen brüt 10.55 TL/pay; 2013–2026 dağıtımları listeleniyor."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "dividendPrevious",
+      "before": "7.00",
+      "after": "7",
+      "source": "https://belgeler.yenigimatgyo.com.tr/evg7P7L1Zhfp/Yeni%20Gimat%20Faaliyet%20Raporu%2030.06.2026.pdf",
+      "dataDate": "2025-12-31",
+      "method": "Kâr dağıtım tablosu: 2025 yılında ödenen brüt 7 TL/pay; 2013–2026 dağıtımları listeleniyor."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "capex",
+      "before": "1741774649",
+      "after": "220022938",
+      "source": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu: maddi ve maddi olmayan duran varlık alımları 220.022.938 TL."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "interestReceived",
+      "before": "1741774649",
+      "after": "832423344",
+      "source": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu: işletme nakdine dahil alınan faiz 832.423.344 TL; kira tahsilatı değildir."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "dividendsPaid",
+      "before": "1741774649",
+      "after": "2621585310",
+      "source": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu: ödenen temettü 2.621.585.310 TL; 30.06.2026 satın alma gücünde."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "investmentProperty",
+      "before": "28109740451",
+      "after": "22377304451",
+      "source": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Dipnot 11: ANKAmall 21.749.283.150 + arsa 628.021.301 = 22.377.304.451 TL. 31.12.2025 değerleme, 30.06.2026 satın alma gücü; otel bu kaleme dahil değil."
+    },
+    {
+      "symbol": "YGGYO",
+      "id": "netAssetValue",
+      "status": "CONFLICT",
+      "reason": "Bu değer bireysel özkaynak satırıdır; bağımsız, borç/vergi düzeltmeli portföy NAD değildir. PD/DD için konsolide parentEquity kullanılmalı."
+    },
+    {
+      "symbol": "AKSA",
+      "id": "dividendTotal",
+      "before": "0.493",
+      "after": "0.58",
+      "source": "https://www.kap.org.tr/tr/Bildirim/1581038",
+      "dataDate": "2026-04-07",
+      "method": "KAP kâr dağıtımı: 2026 brüt 0,58 TL/pay. Önceki 0,493 TL stopaj sonrası net tutardı; brüt verimle tutarlı hale getirildi."
+    },
+    {
+      "symbol": "AKSA",
+      "id": "dividendPrevious",
+      "before": "0.408",
+      "after": "0.48",
+      "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+      "dataDate": "2025-05-23",
+      "method": "2025 sermaye/temettü tablosu brüt 0,48 TL/pay; 0,408 TL net tutar yerine brüt karşılaştırma."
+    },
+    {
+      "symbol": "AKMGY",
+      "id": "dividendsPaid",
+      "before": "356808000",
+      "after": "473103000",
+      "source": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu s.5: ödenen temettü 473.103 bin TL; 30.06.2026 satın alma gücü. Alınan faiz yatırım nakdinde ayrıdır."
+    },
+    {
+      "symbol": "AKMGY",
+      "id": "netAssetValue",
+      "status": "CONFLICT",
+      "reason": "Muhasebe özkaynağı, bağımsız düzeltilmiş portföy NAD değildir; kira nakdi ve değerleme kazancı ayrımı tamamlanmadan NAD iskontosu hesaplanamaz."
+    },
+    {
+      "symbol": "PAGYO",
+      "id": "dividendsPaid",
+      "before": "488323041",
+      "after": "514250404",
+      "source": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+      "dataDate": "2026-06-30",
+      "method": "Nakit akış tablosu: 514.250.404 TL ödenen temettü; 30.06.2026 satın alma gücü."
+    },
+    {
+      "symbol": "PAGYO",
+      "id": "profitFY2024",
+      "before": "424346001",
+      "after": "820699368",
+      "source": "https://www.panoragyo.com/storage/pages/March2025/panora-gyo-konsolide-rapor-31-12-2024-i.pdf",
+      "dataDate": "2024-12-31",
+      "method": "2024 konsolide gelir tablosu ana ortaklık kârı 820.699.368 TL; 31.12.2024 satın alma gücü."
+    },
+    {
+      "symbol": "PAGYO",
+      "id": "netAssetValue",
+      "status": "CONFLICT",
+      "reason": "Muhasebe özkaynağı, bağımsız düzeltilmiş portföy NAD değildir; kira nakdi ve değerleme kazancı ayrımı tamamlanmadan NAD iskontosu hesaplanamaz."
+    }
+  ],
+  "history": [
+    {
+      "symbol": "TUPRS",
+      "changedPrices": 0,
+      "rows": 240,
+      "issues": [],
+      "dividends": "REVIEWED"
+    },
+    {
+      "symbol": "DOAS",
+      "changedPrices": 221,
+      "rows": 240,
+      "issues": [],
+      "dividends": "REVIEWED"
+    },
+    {
+      "symbol": "FROTO",
+      "changedPrices": 258,
+      "rows": 260,
+      "issues": [],
+      "dividends": "CONFLICT"
+    },
+    {
+      "symbol": "TOASO",
+      "changedPrices": 242,
+      "rows": 254,
+      "issues": [],
+      "dividends": "CONFLICT"
+    },
+    {
+      "symbol": "TTRAK",
+      "changedPrices": 259,
+      "rows": 260,
+      "issues": [],
+      "dividends": "CONFLICT"
+    },
+    {
+      "symbol": "ISMEN",
+      "changedPrices": 170,
+      "rows": 180,
+      "issues": [],
+      "dividends": "CONFLICT"
+    },
+    {
+      "symbol": "YGGYO",
+      "changedPrices": 154,
+      "rows": 158,
+      "issues": [],
+      "dividends": "CONFLICT"
+    },
+    {
+      "symbol": "AKSA",
+      "changedPrices": 0,
+      "rows": 240,
+      "issues": [],
+      "dividends": "REVIEWED"
+    },
+    {
+      "symbol": "AKMGY",
+      "changedPrices": 0,
+      "rows": 240,
+      "issues": [],
+      "dividends": "REVIEWED"
+    },
+    {
+      "symbol": "PAGYO",
+      "changedPrices": 0,
+      "rows": 161,
+      "issues": [],
+      "dividends": "REVIEWED"
+    }
+  ],
+  "sourceFetches": [
+    {
+      "name": "tuprs-financials",
+      "url": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-30062026.pdf",
+      "status": "FETCHED",
+      "sha256": "8f877db6665b065214bebe0105becd1586c5b56db7a94f3108bfed12b4176f11"
+    },
+    {
+      "name": "tuprs-dividend",
+      "url": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+      "status": "FETCHED",
+      "sha256": "885e464abc36d5b370606da5b1f9c92f21316b810a34dd32b0c5f46011c5686c"
+    },
+    {
+      "name": "doas-q1PrimaryReport",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+      "status": "BLOCKED",
+      "error": "403"
+    },
+    {
+      "name": "doas-h1PrimaryReport",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "status": "BLOCKED",
+      "error": "403"
+    },
+    {
+      "name": "yggyo-h1PrimaryReport",
+      "url": "https://belgeler.yenigimatgyo.com.tr/1gz_udSVqghB/Yeni%20Gimat%20Konsolide%2030.06.2026.pdf",
+      "status": "FETCHED",
+      "sha256": "900adbab3e1b920693d1678625a98a16a4468aacc1d170d94aaa1e43e608456c"
+    },
+    {
+      "name": "yggyo-annualReport2025",
+      "url": "https://belgeler.yenigimatgyo.com.tr/jgIJM405Z3St/Yeni%20Gimat%2031.12.2025%20%C4%B0mzal%C4%B1%20Faaliyet%20Raporu.pdf",
+      "status": "FETCHED",
+      "sha256": "04d32edc89c76fccbbc17587daeb4a9a53644282eb7b4d1d1dd954e31b81c579"
+    },
+    {
+      "name": "froto-h1PrimaryReport",
+      "url": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+      "status": "BLOCKED",
+      "error": "fetch failed"
+    },
+    {
+      "name": "ttrak-q3PrimaryReport",
+      "url": "https://www.turktraktor.com.tr/getmedia/187b3ce7-769a-4c47-9d1a-b9bba4d4f685/Turk-Traktor-ve-Ziraat-Makineleri-A-S-30-09-2026.pdf",
+      "status": "FETCHED",
+      "sha256": "4ed6481c8b98901e0dd06684aa8aca8335676346d1b0d7428f4e83b2ee5d14bb"
+    },
+    {
+      "name": "toaso-h1PrimaryReport",
+      "url": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddc019fb388b8e65d30",
+      "status": "FETCHED",
+      "sha256": "66efbdfba52043107a34f8cc905d331350aa1f866ccfb65630aa669dd78408b4"
+    },
+    {
+      "name": "aksa-h1",
+      "url": "https://asset.aksa.com/media-data/docs/2026/08/13/aksa-akrilik-0626-spk-whmgbqeq.pdf",
+      "status": "FETCHED",
+      "sha256": "d43671328b40f9d36a9422d8938e6c5f052b0c0d7a010df2cebd28ba7514f9a5"
+    },
+    {
+      "name": "aksa-fy",
+      "url": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+      "status": "FETCHED",
+      "sha256": "e66e897c993c6f0457a0e23c2896dfc983671656d0721452d046b1c89abf1ae7"
+    },
+    {
+      "name": "akmgy-h1",
+      "url": "https://www.akmgyo.com/media/2553/2026-2-ceyrek.pdf",
+      "status": "FETCHED",
+      "sha256": "6bcaeb36873e907385c6e899a930f549650a9ef125c02a79d5e59835d4d9bcf4"
+    },
+    {
+      "name": "akmgy-fy",
+      "url": "https://www.akmgyo.com/media/2481/2025-4-ceyrek.pdf",
+      "status": "FETCHED",
+      "sha256": "e3509e8ac9d02a6ff5a0791e8af984e367439059573af1c996578f81f47a6291"
+    },
+    {
+      "name": "pagyo-h1",
+      "url": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+      "status": "FETCHED",
+      "sha256": "c7f4391eafd1a861e7b5810da302140f57076e32a1932f01fabd48d1b3dbeb6d"
+    },
+    {
+      "name": "pagyo-fy",
+      "url": "https://www.panoragyo.com/storage/pages/March2026/panora-gyo-31-12-2025-konsolide-rapor-final-g.pdf",
+      "status": "FETCHED",
+      "sha256": "fe41811080f68728bb2d541c264b724425109e862d722f3e80cfa0de17065c74"
+    },
+    {
+      "name": "pagyo-fy2024",
+      "url": "https://www.panoragyo.com/storage/pages/March2025/panora-gyo-konsolide-rapor-31-12-2024-i.pdf",
+      "status": "FETCHED",
+      "sha256": "97bacacb1b6a068b748bffb84c9141fe2eeecd4247c5f6bf4c8c358f89602409"
+    },
+    {
+      "name": "doas-fy",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202622720560462_DOAS_31_12_2025_Finansal_Rapor.pdf",
+      "status": "BLOCKED",
+      "error": "403"
+    },
+    {
+      "name": "ismen-h1",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+      "status": "FETCHED",
+      "sha256": "177b0efb3b4ceb688e37d49bdedc9fa0c9fbcee7e06a4cc42db2f78e78c221a5"
+    },
+    {
+      "name": "ismen-presentation",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/yatirimci-sunumlari/2026/ISMEN%20Performans_Finansal%20Sonuclar%202026%2006.pdf",
+      "status": "FETCHED",
+      "sha256": "5a6eddcd5842761e240c8396ba6f1618fffa732732aa06cde6ceffd6e4fc8e99"
+    },
+    {
+      "name": "yggyo-activity",
+      "url": "https://belgeler.yenigimatgyo.com.tr/evg7P7L1Zhfp/Yeni%20Gimat%20Faaliyet%20Raporu%2030.06.2026.pdf",
+      "status": "FETCHED",
+      "sha256": "b2db5a9889cc13b4490430cb2bab57e152bcfda3f9ebe649b7f88698b1b8a8d7"
+    }
+  ],
+  "eventReconciliation": [
+    {
+      "symbol": "DOAS",
+      "total": 21,
+      "mismatches": 0,
+      "examples": []
+    },
+    {
+      "symbol": "FROTO",
+      "total": 41,
+      "mismatches": 41,
+      "examples": [
+        {
+          "id": "div-2005-02",
+          "exDate": "2005-02-28",
+          "payDate": "2005-02-28",
+          "normalized": 0.006,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2005-08",
+          "exDate": "2005-08-31",
+          "payDate": "2005-08-31",
+          "normalized": 0.0054,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2005-11",
+          "exDate": "2005-11-30",
+          "payDate": "2005-11-30",
+          "normalized": 0.0023,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2006-03",
+          "exDate": "2006-03-31",
+          "payDate": "2006-03-31",
+          "normalized": 0.004,
+          "issue": "EX_DATE_NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "symbol": "TOASO",
+      "total": 22,
+      "mismatches": 22,
+      "examples": [
+        {
+          "id": "div-2006-04-30",
+          "exDate": "2006-04-30",
+          "payDate": "2006-04-30",
+          "normalized": 0.1,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2007-04-30",
+          "exDate": "2007-04-30",
+          "payDate": "2007-04-30",
+          "normalized": 0.12,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2008-04-30",
+          "exDate": "2008-04-30",
+          "payDate": "2008-04-30",
+          "normalized": 0.155,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2008-05-31",
+          "exDate": "2008-05-31",
+          "payDate": "2008-05-31",
+          "normalized": 0.18,
+          "issue": "EX_DATE_NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "symbol": "TTRAK",
+      "total": 22,
+      "mismatches": 22,
+      "examples": [
+        {
+          "id": "div-2005",
+          "exDate": "2005-04-30",
+          "payDate": "2005-04-30",
+          "normalized": 0.2844442666666666,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2006",
+          "exDate": "2006-04-30",
+          "payDate": "2006-04-30",
+          "normalized": 0.5688890666666667,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2007",
+          "exDate": "2007-04-30",
+          "payDate": "2007-04-30",
+          "normalized": 0.6475653333333333,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2008",
+          "exDate": "2008-04-30",
+          "payDate": "2008-04-30",
+          "normalized": 0.500992,
+          "issue": "EX_DATE_NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "symbol": "ISMEN",
+      "total": 16,
+      "mismatches": 16,
+      "examples": [
+        {
+          "id": "div-2011",
+          "exDate": "2011-04-30",
+          "payDate": "2011-05-05",
+          "normalized": 0.017333407307412348,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2012",
+          "exDate": "2012-04-30",
+          "payDate": "2012-05-14",
+          "normalized": 0.010053376238299163,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2013",
+          "exDate": "2013-04-30",
+          "payDate": "2013-05-06",
+          "normalized": 0.013346723626707512,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2014",
+          "exDate": "2014-02-28",
+          "payDate": "2014-03-28",
+          "normalized": 0.01633230447765534,
+          "issue": "EX_DATE_NOT_FOUND"
+        }
+      ]
+    },
+    {
+      "symbol": "YGGYO",
+      "total": 13,
+      "mismatches": 13,
+      "examples": [
+        {
+          "id": "div-2014",
+          "exDate": "2014-04-30",
+          "payDate": "2014-04-30",
+          "normalized": 0.05256577777777778,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2015",
+          "exDate": "2015-04-30",
+          "payDate": "2015-04-30",
+          "normalized": 0.06222222222222223,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2016",
+          "exDate": "2016-04-30",
+          "payDate": "2016-04-30",
+          "normalized": 0.16534400000000002,
+          "issue": "EX_DATE_NOT_FOUND"
+        },
+        {
+          "id": "div-2017",
+          "exDate": "2017-03-31",
+          "payDate": "2017-03-31",
+          "normalized": 0.1797528888888889,
+          "issue": "EX_DATE_NOT_FOUND"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "typescript": {
+      "errors": 0
+    },
+    "build": {
+      "status": "PASS",
+      "tool": "Vite build API"
+    },
+    "tests": {
+      "passed": 97,
+      "failed": 0,
+      "total": 97
+    },
+    "browser": {
+      "checks": 40,
+      "overflow": 0,
+      "rawKeyFailures": 0,
+      "runtimeErrors": 0
+    }
+  }
+}

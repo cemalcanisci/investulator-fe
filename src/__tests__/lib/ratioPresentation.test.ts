@@ -7,7 +7,15 @@ import { companyAssessment, overviewRatioIds } from '@/lib/companyAssessment';
 import type { AssessmentReview } from '@/lib/companyAssessment';
 import type { AnalysisReport, FinancialFact } from '@/domain/analysis';
 
-const report = parseAnalysisReports(snapshots)[0];
+const latest = parseAnalysisReports(snapshots)[0];
+const report = {
+  ...latest,
+  facts: latest.facts.map((fact) =>
+    fact.id === 'price'
+      ? { ...fact, verification: 'UNVERIFIED' as const }
+      : fact,
+  ),
+};
 describe('ratio display contract', () => {
   it.each([
     ['priceBook', '1.63', 'INDICATIVE'],

@@ -26,6 +26,20 @@
       "title": "Yahoo Finance - YGGYO.IS temettu ve bedelsiz sermaye artirimi olaylari",
       "origin": "Yahoo Finance (ikincil kurumsal aksiyon/temettu verisi)",
       "retrievedAt": "2026-10-29"
+    },
+    {
+      "id": "audit-daily-price",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "title": "Günlük kapanışlardan gerçek ay sonu işlem günü",
+      "origin": "Yahoo Finance; tek veri sağlayıcısı",
+      "retrievedAt": "2026-11-01"
+    },
+    {
+      "id": "audit-daily-fx",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TRY=X?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "title": "USD/TRY günlük gözlem; TL / USD",
+      "origin": "Yahoo Finance; tek veri sağlayıcısı",
+      "retrievedAt": "2026-11-01"
     }
   ],
   "coverage": {
@@ -34,18 +48,18 @@
       "to": "2026-09-30",
       "state": "REVIEWED",
       "sourceIds": [
-        "yahoo-price"
+        "audit-daily-price"
       ],
-      "method": "Yahoo Finance aylik kapanis serisi (2013-08 - 2026-09), bosluk yok (159 noktadan 157si asof oncesi), ham/duzeltilmemis fiyat bedelsiz sermaye artirimlarinin kumulatif ileri-yon katsayisina bolunerek split-only bazina getirildi."
+      "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2013-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
       "sourceIds": [
-        "yahoo-fx"
+        "audit-daily-fx"
       ],
-      "method": "Yahoo Finance TRY=X aylik kapanis serisi; saglayicida her yilin Ekim ayi sistematik olarak eksik (dogrulandi, 2005-2025 arasi tum yillarda), bu aylar cevresindeki iki ayin dogrusal interpolasyonuyla dolduruldu (APPROXIMATE)."
+      "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2013-08-31",
@@ -59,1277 +73,1277 @@
     "dividends": {
       "from": "2013-08-31",
       "to": "2026-09-30",
-      "state": "REVIEWED",
+      "state": "CONFLICT",
       "sourceIds": [
         "yahoo-events"
       ],
-      "method": "Yahoo Finance dividends olay listesi (2014-2026, ham/o donemki pay adedine gore); 2025 ve 2026 odeme tarihleri ayrica haber kaynaklariyla capraz dogrulandi (bkz. arastirma raporu), diger yillarda saglayicinin ay-sonu hizali tarihi kullanildi (gun hassasiyeti saglanamadi)."
+      "method": "Yahoo Finance dividends olay listesi (2014-2026, ham/o donemki pay adedine gore); 2025 ve 2026 odeme tarihleri ayrica haber kaynaklariyla capraz dogrulandi (bkz. arastirma raporu), diger yillarda saglayicinin ay-sonu hizali tarihi kullanildi (gun hassasiyeti saglanamadi). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
     }
   },
   "monthly": [
     {
-      "date": "2013-08-31",
-      "close": "0.706173",
-      "fx": "2.038120",
-      "fxDate": "2013-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2013-08-30",
+      "close": "3.222222",
+      "fx": "2.028980",
+      "fxDate": "2013-08-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2013-09-30",
-      "close": "0.696296",
-      "fx": "1.992890",
+      "close": "3.177777",
+      "fx": "2.019210",
       "fxDate": "2013-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2013-10-31",
-      "close": "0.681481",
-      "fx": "2.005345",
+      "close": "3.133333",
+      "fx": "1.992890",
       "fxDate": "2013-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2013-11-30",
-      "close": "0.669136",
-      "fx": "2.017800",
-      "fxDate": "2013-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2013-11-29",
+      "close": "3.066666",
+      "fx": "2.013000",
+      "fxDate": "2013-11-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2013-12-31",
-      "close": "0.691358",
+      "close": "3.011111",
       "fx": "2.120560",
       "fxDate": "2013-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-01-31",
-      "close": "0.740741",
+      "close": "3.111111",
       "fx": "2.263750",
       "fxDate": "2014-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-02-28",
-      "close": "0.780247",
+      "close": "3.333333",
       "fx": "2.210870",
       "fxDate": "2014-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-03-31",
-      "close": "0.782716",
-      "fx": "2.121000",
+      "close": "3.511111",
+      "fx": "2.137370",
       "fxDate": "2014-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-04-30",
-      "close": "0.706173",
-      "fx": "2.098988",
+      "close": "3.522222",
+      "fx": "2.111080",
       "fxDate": "2014-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2014-05-31",
-      "close": "0.683950",
-      "fx": "2.123490",
-      "fxDate": "2014-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2014-05-30",
+      "close": "3.177777",
+      "fx": "2.087190",
+      "fxDate": "2014-05-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-06-30",
-      "close": "0.696296",
-      "fx": "2.131370",
+      "close": "3.077777",
+      "fx": "2.117300",
       "fxDate": "2014-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-07-31",
-      "close": "0.730864",
-      "fx": "2.160240",
+      "close": "3.133333",
+      "fx": "2.140070",
       "fxDate": "2014-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2014-08-31",
-      "close": "0.745679",
-      "fx": "2.279430",
-      "fxDate": "2014-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2014-08-29",
+      "close": "3.288888",
+      "fx": "2.157180",
+      "fxDate": "2014-08-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-09-30",
-      "close": "0.760494",
-      "fx": "2.198540",
+      "close": "3.355555",
+      "fx": "2.277780",
       "fxDate": "2014-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-10-31",
-      "close": "0.802469",
-      "fx": "2.208795",
+      "close": "3.422222",
+      "fx": "2.198540",
       "fxDate": "2014-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2014-11-30",
-      "close": "0.851852",
-      "fx": "2.219050",
-      "fxDate": "2014-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2014-11-28",
+      "close": "3.611111",
+      "fx": "2.205780",
+      "fxDate": "2014-11-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2014-12-31",
-      "close": "0.985185",
+      "close": "3.833333",
       "fx": "2.322730",
       "fxDate": "2014-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2015-01-31",
-      "close": "0.960494",
-      "fx": "2.444900",
-      "fxDate": "2015-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2015-01-30",
+      "close": "4.433333",
+      "fx": "2.415490",
+      "fxDate": "2015-01-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2015-02-28",
-      "close": "1.204938",
-      "fx": "2.510607",
-      "fxDate": "2015-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2015-02-27",
+      "close": "4.322222",
+      "fx": "2.504470",
+      "fxDate": "2015-02-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-03-31",
-      "close": "1.155556",
-      "fx": "2.656750",
+      "close": "5.422222",
+      "fx": "2.595960",
       "fxDate": "2015-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-04-30",
-      "close": "1.054321",
-      "fx": "2.655310",
+      "close": "5.200000",
+      "fx": "2.673480",
       "fxDate": "2015-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2015-05-31",
-      "close": "1.298765",
-      "fx": "2.703300",
-      "fxDate": "2015-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2015-05-29",
+      "close": "4.744444",
+      "fx": "2.655310",
+      "fxDate": "2015-05-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-06-30",
-      "close": "2.587654",
-      "fx": "2.787660",
+      "close": "5.844444",
+      "fx": "2.681030",
       "fxDate": "2015-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-07-31",
-      "close": "2.469135",
-      "fx": "2.918050",
-      "fxDate": "2015-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "5.822222",
+      "fx": "2.787660",
+      "fxDate": "2015-07-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-08-31",
-      "close": "2.508642",
-      "fx": "3.038140",
+      "close": "5.555555",
+      "fx": "2.915950",
       "fxDate": "2015-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-09-30",
-      "close": "2.488889",
-      "fx": "2.934700",
+      "close": "5.644444",
+      "fx": "3.023320",
       "fxDate": "2015-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2015-10-31",
-      "close": "2.567901",
-      "fx": "2.930175",
-      "fxDate": "2015-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2015-10-30",
+      "close": "5.600000",
+      "fx": "2.934700",
+      "fxDate": "2015-10-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-11-30",
-      "close": "2.617284",
+      "close": "5.777777",
       "fx": "2.925650",
       "fxDate": "2015-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2015-12-31",
-      "close": "2.876049",
+      "close": "5.888888",
       "fx": "2.920090",
       "fxDate": "2015-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2016-01-31",
-      "close": "3.040000",
-      "fx": "2.954500",
-      "fxDate": "2016-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2016-01-29",
+      "close": "6.471111",
+      "fx": "2.969510",
+      "fxDate": "2016-01-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-02-29",
-      "close": "2.909629",
+      "close": "6.840000",
       "fx": "2.987950",
       "fxDate": "2016-02-29",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-03-31",
-      "close": "2.812839",
-      "fx": "2.793500",
+      "close": "6.546666",
+      "fx": "2.816900",
       "fxDate": "2016-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2016-04-30",
-      "close": "2.591605",
-      "fx": "2.953270",
-      "fxDate": "2016-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2016-04-29",
+      "close": "6.328888",
+      "fx": "2.811110",
+      "fxDate": "2016-04-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-05-31",
-      "close": "2.494815",
-      "fx": "2.887860",
+      "close": "5.831111",
+      "fx": "2.946700",
       "fxDate": "2016-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-06-30",
-      "close": "2.488889",
-      "fx": "2.986390",
+      "close": "5.613333",
+      "fx": "2.881780",
       "fxDate": "2016-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2016-07-31",
-      "close": "2.401975",
-      "fx": "2.963300",
-      "fxDate": "2016-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2016-07-29",
+      "close": "5.600000",
+      "fx": "3.010360",
+      "fxDate": "2016-07-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-08-31",
-      "close": "2.401975",
-      "fx": "2.997080",
+      "close": "5.404444",
+      "fx": "2.957070",
       "fxDate": "2016-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-09-30",
-      "close": "2.388148",
-      "fx": "3.106310",
-      "fxDate": "2016-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "5.404444",
+      "fx": "2.997080",
+      "fxDate": "2016-09-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-10-31",
-      "close": "2.601481",
-      "fx": "3.257855",
+      "close": "5.373333",
+      "fx": "3.106310",
       "fxDate": "2016-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2016-11-30",
-      "close": "2.725926",
+      "close": "5.853333",
       "fx": "3.409400",
       "fxDate": "2016-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2016-12-31",
-      "close": "2.710123",
-      "fx": "3.525000",
-      "fxDate": "2016-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2016-12-30",
+      "close": "6.133333",
+      "fx": "3.517600",
+      "fxDate": "2016-12-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-01-31",
-      "close": "2.793086",
+      "close": "6.097777",
       "fx": "3.776190",
       "fxDate": "2017-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-02-28",
-      "close": "2.802963",
+      "close": "6.284444",
       "fx": "3.606900",
       "fxDate": "2017-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-03-31",
-      "close": "2.465185",
-      "fx": "3.552900",
-      "fxDate": "2017-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "6.306666",
+      "fx": "3.654300",
+      "fxDate": "2017-03-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2017-04-30",
-      "close": "2.469135",
-      "fx": "3.552500",
-      "fxDate": "2017-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2017-04-28",
+      "close": "5.546666",
+      "fx": "3.563300",
+      "fxDate": "2017-04-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-05-31",
-      "close": "2.437531",
-      "fx": "3.524230",
+      "close": "5.555555",
+      "fx": "3.528200",
       "fxDate": "2017-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-06-30",
-      "close": "2.417778",
-      "fx": "3.532300",
-      "fxDate": "2017-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "5.484444",
+      "fx": "3.524230",
+      "fxDate": "2017-06-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-07-31",
-      "close": "2.380247",
-      "fx": "3.455100",
+      "close": "5.440000",
+      "fx": "3.517700",
       "fxDate": "2017-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-08-31",
-      "close": "2.407901",
-      "fx": "3.558310",
+      "close": "5.355555",
+      "fx": "3.450650",
       "fxDate": "2017-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2017-09-30",
-      "close": "2.417778",
-      "fx": "3.777250",
-      "fxDate": "2017-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2017-09-29",
+      "close": "5.417777",
+      "fx": "3.558310",
+      "fxDate": "2017-09-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-10-31",
-      "close": "2.522469",
-      "fx": "3.866650",
+      "close": "5.440000",
+      "fx": "3.777250",
       "fxDate": "2017-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2017-11-30",
-      "close": "2.682469",
+      "close": "5.675555",
       "fx": "3.956050",
       "fxDate": "2017-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2017-12-31",
-      "close": "2.569876",
-      "fx": "3.794800",
-      "fxDate": "2017-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2017-12-29",
+      "close": "6.035555",
+      "fx": "3.776860",
+      "fxDate": "2017-12-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-01-31",
-      "close": "2.666667",
+      "close": "5.782222",
       "fx": "3.775720",
       "fxDate": "2018-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-02-28",
-      "close": "2.650864",
+      "close": "6.000000",
       "fx": "3.815200",
       "fxDate": "2018-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2018-03-31",
-      "close": "2.368395",
-      "fx": "4.051660",
-      "fxDate": "2018-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2018-03-30",
+      "close": "5.964444",
+      "fx": "3.944900",
+      "fxDate": "2018-03-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-04-30",
-      "close": "2.520494",
-      "fx": "4.468600",
+      "close": "5.328888",
+      "fx": "4.056650",
       "fxDate": "2018-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-05-31",
-      "close": "3.697777",
-      "fx": "4.590500",
+      "close": "5.671111",
+      "fx": "4.527910",
       "fxDate": "2018-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2018-06-30",
-      "close": "3.551111",
-      "fx": "4.882780",
-      "fxDate": "2018-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2018-06-29",
+      "close": "5.546666",
+      "fx": "4.590500",
+      "fxDate": "2018-06-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-07-31",
-      "close": "3.582222",
-      "fx": "6.734100",
+      "close": "5.326666",
+      "fx": "4.917900",
       "fxDate": "2018-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-08-31",
-      "close": "3.653333",
-      "fx": "6.056100",
-      "fxDate": "2018-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "5.373333",
+      "fx": "6.734100",
+      "fxDate": "2018-08-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2018-09-30",
-      "close": "3.542222",
-      "fx": "5.480900",
-      "fxDate": "2018-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2018-09-28",
+      "close": "5.480000",
+      "fx": "6.005700",
+      "fxDate": "2018-09-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-10-31",
-      "close": "3.591111",
-      "fx": "5.325550",
+      "close": "5.313333",
+      "fx": "5.480900",
       "fxDate": "2018-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-11-30",
-      "close": "3.546667",
+      "close": "5.386666",
       "fx": "5.170200",
       "fxDate": "2018-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2018-12-31",
-      "close": "3.991111",
+      "close": "5.320000",
       "fx": "5.274280",
       "fxDate": "2018-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-01-31",
-      "close": "3.933333",
+      "close": "5.986666",
       "fx": "5.227410",
       "fxDate": "2019-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-02-28",
-      "close": "3.995555",
+      "close": "5.900000",
       "fx": "5.309370",
       "fxDate": "2019-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2019-03-31",
-      "close": "3.484444",
-      "fx": "5.948900",
-      "fxDate": "2019-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2019-03-29",
+      "close": "5.993333",
+      "fx": "5.571700",
+      "fxDate": "2019-03-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-04-30",
-      "close": "3.622222",
-      "fx": "5.912500",
+      "close": "5.226666",
+      "fx": "5.965000",
       "fxDate": "2019-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-05-31",
-      "close": "3.657777",
-      "fx": "5.771800",
-      "fxDate": "2019-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "5.433333",
+      "fx": "5.912500",
+      "fxDate": "2019-05-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2019-06-30",
-      "close": "3.671111",
-      "fx": "5.557700",
-      "fxDate": "2019-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2019-06-28",
+      "close": "5.486666",
+      "fx": "5.771800",
+      "fxDate": "2019-06-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-07-31",
-      "close": "4.031111",
-      "fx": "5.832700",
+      "close": "5.506666",
+      "fx": "5.575410",
       "fxDate": "2019-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2019-08-31",
-      "close": "4.555555",
-      "fx": "5.667700",
-      "fxDate": "2019-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2019-08-30",
+      "close": "6.046666",
+      "fx": "5.832700",
+      "fxDate": "2019-08-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-09-30",
-      "close": "4.933333",
-      "fx": "5.701000",
+      "close": "6.833333",
+      "fx": "5.648300",
       "fxDate": "2019-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-10-31",
-      "close": "5.506667",
-      "fx": "5.722750",
+      "close": "7.400000",
+      "fx": "5.701000",
       "fxDate": "2019-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2019-11-30",
-      "close": "5.782222",
-      "fx": "5.744500",
-      "fxDate": "2019-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2019-11-29",
+      "close": "8.260000",
+      "fx": "5.758000",
+      "fxDate": "2019-11-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2019-12-31",
-      "close": "5.640000",
+      "close": "8.673333",
       "fx": "5.947220",
       "fxDate": "2019-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-01-31",
-      "close": "5.706667",
+      "close": "8.460000",
       "fx": "5.974150",
       "fxDate": "2020-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2020-02-29",
-      "close": "5.617778",
+      "date": "2020-02-28",
+      "close": "8.560000",
       "fx": "6.206770",
-      "fxDate": "2020-02-29",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "fxDate": "2020-02-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-03-31",
-      "close": "5.471111",
-      "fx": "6.951000",
+      "close": "8.426666",
+      "fx": "6.612990",
       "fxDate": "2020-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-04-30",
-      "close": "5.342222",
-      "fx": "6.811050",
+      "close": "8.206666",
+      "fx": "6.989300",
       "fxDate": "2020-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2020-05-31",
-      "close": "5.280000",
-      "fx": "6.849500",
-      "fxDate": "2020-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2020-05-29",
+      "close": "8.013333",
+      "fx": "6.811050",
+      "fxDate": "2020-05-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-06-30",
-      "close": "5.288889",
-      "fx": "6.969400",
+      "close": "7.920000",
+      "fx": "6.847300",
       "fxDate": "2020-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2020-07-31",
-      "close": "5.346667",
-      "fx": "7.324900",
-      "fxDate": "2020-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2020-07-30",
+      "close": "7.933333",
+      "fx": "6.969400",
+      "fxDate": "2020-07-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-08-31",
-      "close": "5.697777",
-      "fx": "7.811330",
+      "close": "8.020000",
+      "fx": "7.352600",
       "fxDate": "2020-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-09-30",
-      "close": "5.804444",
-      "fx": "8.297940",
+      "close": "8.546666",
+      "fx": "7.705870",
       "fxDate": "2020-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2020-10-31",
-      "close": "5.577777",
-      "fx": "8.057630",
-      "fxDate": "2020-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2020-10-30",
+      "close": "8.706666",
+      "fx": "8.297940",
+      "fxDate": "2020-10-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-11-30",
-      "close": "5.524444",
+      "close": "8.366666",
       "fx": "7.817320",
       "fxDate": "2020-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2020-12-31",
-      "close": "6.328889",
+      "close": "8.286666",
       "fx": "7.373730",
       "fxDate": "2020-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2021-01-31",
-      "close": "6.511111",
-      "fx": "7.307700",
-      "fxDate": "2021-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2021-01-29",
+      "close": "9.493333",
+      "fx": "7.345780",
+      "fxDate": "2021-01-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2021-02-28",
-      "close": "5.844444",
+      "date": "2021-02-26",
+      "close": "9.766666",
       "fx": "7.323100",
-      "fxDate": "2021-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "fxDate": "2021-02-26",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-03-31",
-      "close": "5.626666",
-      "fx": "8.184880",
+      "close": "8.766666",
+      "fx": "8.241890",
       "fxDate": "2021-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-04-30",
-      "close": "6.093334",
-      "fx": "8.573400",
-      "fxDate": "2021-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "8.440000",
+      "fx": "8.184880",
+      "fxDate": "2021-04-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-05-31",
-      "close": "6.191111",
-      "fx": "8.726000",
+      "close": "9.140000",
+      "fx": "8.487800",
       "fxDate": "2021-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-06-30",
-      "close": "6.128888",
-      "fx": "8.452260",
+      "close": "9.286666",
+      "fx": "8.704700",
       "fxDate": "2021-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2021-07-31",
-      "close": "6.066667",
-      "fx": "8.367300",
-      "fxDate": "2021-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2021-07-30",
+      "close": "9.193333",
+      "fx": "8.452260",
+      "fxDate": "2021-07-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-08-31",
-      "close": "7.013334",
-      "fx": "8.916140",
+      "close": "9.100000",
+      "fx": "8.304500",
       "fxDate": "2021-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-09-30",
-      "close": "6.697777",
-      "fx": "9.525120",
+      "close": "10.520000",
+      "fx": "8.885000",
       "fxDate": "2021-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2021-10-31",
-      "close": "8.000000",
-      "fx": "11.112060",
-      "fxDate": "2021-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2021-10-28",
+      "close": "10.046666",
+      "fx": "9.525120",
+      "fxDate": "2021-10-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-11-30",
-      "close": "9.333333",
+      "close": "12.000000",
       "fx": "12.699000",
       "fxDate": "2021-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2021-12-31",
-      "close": "9.404444",
+      "close": "14.000000",
       "fx": "13.290500",
       "fxDate": "2021-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-01-31",
-      "close": "9.386667",
+      "close": "14.106666",
       "fx": "13.482050",
       "fxDate": "2022-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-02-28",
-      "close": "10.106667",
+      "close": "14.080000",
       "fx": "14.028840",
       "fxDate": "2022-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-03-31",
-      "close": "9.964444",
-      "fx": "14.788890",
+      "close": "15.160000",
+      "fx": "14.666200",
       "fxDate": "2022-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2022-04-30",
-      "close": "10.248889",
-      "fx": "16.383499",
-      "fxDate": "2022-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2022-04-29",
+      "close": "14.946666",
+      "fx": "14.788890",
+      "fxDate": "2022-04-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-05-31",
-      "close": "22.900000",
-      "fx": "16.628201",
+      "close": "15.373333",
+      "fx": "16.377729",
       "fxDate": "2022-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-06-30",
-      "close": "21.900000",
-      "fx": "17.945200",
+      "close": "22.900000",
+      "fx": "16.691900",
       "fxDate": "2022-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2022-07-31",
-      "close": "21.139999",
-      "fx": "18.150261",
-      "fxDate": "2022-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2022-07-29",
+      "close": "21.900000",
+      "fx": "17.945200",
+      "fxDate": "2022-07-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-08-31",
-      "close": "21.340000",
-      "fx": "18.497499",
+      "close": "21.139999",
+      "fx": "18.189199",
       "fxDate": "2022-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-09-30",
-      "close": "27.299999",
-      "fx": "18.572969",
-      "fxDate": "2022-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "21.340000",
+      "fx": "18.497499",
+      "fxDate": "2022-09-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-10-31",
-      "close": "31.820000",
-      "fx": "18.606435",
+      "close": "27.299999",
+      "fx": "18.572969",
       "fxDate": "2022-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2022-11-30",
-      "close": "33.599998",
+      "close": "31.820000",
       "fx": "18.639900",
       "fxDate": "2022-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2022-12-31",
-      "close": "37.099998",
-      "fx": "18.680799",
-      "fxDate": "2022-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2022-12-30",
+      "close": "33.599998",
+      "fx": "18.702990",
+      "fxDate": "2022-12-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-01-31",
-      "close": "36.480000",
+      "close": "37.099998",
       "fx": "18.808001",
       "fxDate": "2023-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-02-28",
-      "close": "37.799999",
+      "close": "36.480000",
       "fx": "18.884199",
       "fxDate": "2023-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-03-31",
-      "close": "33.660000",
-      "fx": "19.444401",
-      "fxDate": "2023-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "37.799999",
+      "fx": "19.175699",
+      "fxDate": "2023-03-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2023-04-30",
-      "close": "34.060001",
-      "fx": "20.611601",
-      "fxDate": "2023-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2023-04-28",
+      "close": "33.660000",
+      "fx": "19.435499",
+      "fxDate": "2023-04-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-05-31",
-      "close": "35.299999",
-      "fx": "26.038601",
+      "close": "34.060001",
+      "fx": "20.786400",
       "fxDate": "2023-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2023-06-30",
-      "close": "36.400002",
-      "fx": "26.840401",
-      "fxDate": "2023-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2023-06-27",
+      "close": "35.299999",
+      "fx": "25.989990",
+      "fxDate": "2023-06-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-07-31",
-      "close": "39.139999",
-      "fx": "26.681299",
+      "close": "36.400002",
+      "fx": "26.925980",
       "fxDate": "2023-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-08-31",
-      "close": "40.340000",
-      "fx": "27.458900",
+      "close": "39.139999",
+      "fx": "26.687901",
       "fxDate": "2023-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2023-09-30",
-      "close": "37.180000",
-      "fx": "28.257370",
-      "fxDate": "2023-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2023-09-29",
+      "close": "40.340000",
+      "fx": "27.458900",
+      "fxDate": "2023-09-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-10-31",
-      "close": "39.020000",
-      "fx": "28.599145",
+      "close": "37.180000",
+      "fx": "28.257370",
       "fxDate": "2023-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2023-11-30",
-      "close": "37.040001",
+      "close": "39.020000",
       "fx": "28.940920",
       "fxDate": "2023-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2023-12-31",
-      "close": "38.740002",
+      "date": "2023-12-29",
+      "close": "37.040001",
       "fx": "29.519800",
-      "fxDate": "2023-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "fxDate": "2023-12-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-01-31",
-      "close": "45.779999",
+      "close": "38.740002",
       "fx": "30.358400",
       "fxDate": "2024-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-02-29",
-      "close": "45.439999",
+      "close": "45.779999",
       "fx": "31.208839",
       "fxDate": "2024-02-29",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2024-03-31",
-      "close": "43.799999",
-      "fx": "32.369919",
-      "fxDate": "2024-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2024-03-29",
+      "close": "45.439999",
+      "fx": "32.449100",
+      "fxDate": "2024-03-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-04-30",
-      "close": "46.099998",
-      "fx": "32.243801",
+      "close": "43.799999",
+      "fx": "32.403301",
       "fxDate": "2024-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-05-31",
-      "close": "51.650002",
-      "fx": "32.733299",
-      "fxDate": "2024-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "46.099998",
+      "fx": "32.243801",
+      "fxDate": "2024-05-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2024-06-30",
-      "close": "50.000000",
-      "fx": "33.098499",
-      "fxDate": "2024-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2024-06-28",
+      "close": "51.650002",
+      "fx": "32.887798",
+      "fxDate": "2024-06-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-07-31",
-      "close": "49.939999",
-      "fx": "34.077339",
+      "close": "50.000000",
+      "fx": "33.175999",
       "fxDate": "2024-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2024-08-31",
-      "close": "58.450001",
-      "fx": "34.149059",
-      "fxDate": "2024-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2024-08-29",
+      "close": "49.939999",
+      "fx": "34.077339",
+      "fxDate": "2024-08-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-09-30",
-      "close": "53.000000",
-      "fx": "34.283199",
+      "close": "58.450001",
+      "fx": "34.203999",
       "fxDate": "2024-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-10-31",
-      "close": "60.150002",
-      "fx": "34.480549",
+      "close": "53.000000",
+      "fx": "34.283199",
       "fxDate": "2024-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2024-11-30",
-      "close": "62.299999",
-      "fx": "34.677898",
-      "fxDate": "2024-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2024-11-29",
+      "close": "60.150002",
+      "fx": "34.648369",
+      "fxDate": "2024-11-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2024-12-31",
-      "close": "68.949997",
+      "close": "62.299999",
       "fx": "35.305248",
       "fxDate": "2024-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-01-31",
-      "close": "70.300003",
+      "close": "68.949997",
       "fx": "35.853031",
       "fxDate": "2025-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-02-28",
-      "close": "77.699997",
+      "close": "70.300003",
       "fx": "36.517799",
       "fxDate": "2025-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2025-03-31",
-      "close": "75.000000",
-      "fx": "38.499401",
-      "fxDate": "2025-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2025-03-28",
+      "close": "77.699997",
+      "fx": "38.003300",
+      "fxDate": "2025-03-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-04-30",
-      "close": "82.550003",
-      "fx": "39.208488",
+      "close": "75.000000",
+      "fx": "38.501720",
       "fxDate": "2025-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2025-05-31",
-      "close": "82.699997",
-      "fx": "39.890598",
-      "fxDate": "2025-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2025-05-30",
+      "close": "82.550003",
+      "fx": "39.208488",
+      "fxDate": "2025-05-29",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-06-30",
-      "close": "87.250000",
-      "fx": "40.587002",
+      "close": "82.699997",
+      "fx": "39.826599",
       "fxDate": "2025-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-07-31",
-      "close": "97.949997",
-      "fx": "41.098000",
+      "close": "87.250000",
+      "fx": "40.662800",
       "fxDate": "2025-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2025-08-31",
-      "close": "136.600006",
-      "fx": "41.576599",
-      "fxDate": "2025-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2025-08-29",
+      "close": "97.949997",
+      "fx": "41.140499",
+      "fxDate": "2025-08-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-09-30",
-      "close": "137.500000",
-      "fx": "42.026798",
+      "close": "136.600006",
+      "fx": "41.582699",
       "fxDate": "2025-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-10-31",
-      "close": "128.600006",
-      "fx": "42.259899",
+      "close": "137.500000",
+      "fx": "42.026798",
       "fxDate": "2025-10-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2025-11-30",
-      "close": "128.300003",
-      "fx": "42.493000",
-      "fxDate": "2025-11-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2025-11-28",
+      "close": "128.600006",
+      "fx": "42.485100",
+      "fxDate": "2025-11-28",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2025-12-31",
-      "close": "139.600006",
+      "close": "128.300003",
       "fx": "42.951981",
       "fxDate": "2025-12-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2026-01-31",
-      "close": "145.800003",
+      "date": "2026-01-30",
+      "close": "139.600006",
       "fx": "43.455101",
-      "fxDate": "2026-01-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "fxDate": "2026-01-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2026-02-28",
-      "close": "210.000000",
+      "date": "2026-02-27",
+      "close": "145.800003",
       "fx": "43.955399",
-      "fxDate": "2026-02-28",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "fxDate": "2026-02-27",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-03-31",
-      "close": "240.000000",
-      "fx": "45.166000",
+      "close": "210.000000",
+      "fx": "44.454899",
       "fxDate": "2026-03-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-04-30",
-      "close": "240.199997",
-      "fx": "45.850498",
+      "close": "240.000000",
+      "fx": "45.140999",
       "fxDate": "2026-04-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
-      "date": "2026-05-31",
-      "close": "236.000000",
-      "fx": "46.640701",
-      "fxDate": "2026-05-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "date": "2026-05-26",
+      "close": "240.199997",
+      "fx": "45.893700",
+      "fxDate": "2026-05-26",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-06-30",
-      "close": "211.500000",
-      "fx": "47.501400",
+      "close": "236.000000",
+      "fx": "46.654701",
       "fxDate": "2026-06-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-07-31",
-      "close": "233.899994",
-      "fx": "48.246899",
-      "fxDate": "2026-07-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "close": "211.500000",
+      "fx": "47.501400",
+      "fxDate": "2026-07-30",
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-08-31",
-      "close": "209.600006",
-      "fx": "49.008141",
+      "close": "233.899994",
+      "fx": "48.267502",
       "fxDate": "2026-08-31",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     },
     {
       "date": "2026-09-30",
-      "close": "189.199997",
-      "fx": "49.799198",
+      "close": "209.600006",
+      "fx": "49.028000",
       "fxDate": "2026-09-30",
-      "priceSourceId": "yahoo-price",
-      "fxSourceId": "yahoo-fx"
+      "priceSourceId": "audit-daily-price",
+      "fxSourceId": "audit-daily-fx"
     }
   ],
   "actions": [

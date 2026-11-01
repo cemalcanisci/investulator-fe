@@ -1,6 +1,2123 @@
 [
   {
     "schemaVersion": 2,
+    "version": "toaso-2026-11-01-v2",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "AUTOMOTIVE",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "price",
+        "value": "211.20",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+        "evidence": {
+          "id": "audit-TOASO-price",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+          "excerpt": "price: 211.20 TRY_SHARE. Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-30",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "price"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "shares",
+        "value": "500000000",
+        "unit": "SHARES",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "shares",
+        "evidence": {
+          "id": "audit-TOASO-shares",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "shares: 500000000 SHARES. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "week52Low",
+        "value": "211.20",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "2025-10-31–2026-10-30: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+        "evidence": {
+          "id": "audit-TOASO-week52Low",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "2025-10-31–2026-10-30: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+          "excerpt": "week52Low: 211.20 TRY_SHARE. 2025-10-31–2026-10-30: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-30",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "week52Low"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "week52High",
+        "value": "358.25",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "2025-10-31–2026-10-30: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+        "evidence": {
+          "id": "audit-TOASO-week52High",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "2025-10-31–2026-10-30: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+          "excerpt": "week52High: 358.25 TRY_SHARE. 2025-10-31–2026-10-30: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-30",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "week52High"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "cash",
+        "value": "11008676000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-cash",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "cash: 11008676000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "debtShort",
+        "value": "29574156000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-debtShort",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "debtShort: 29574156000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtShort"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "debtLong",
+        "value": "40790577000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-debtLong",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "debtLong: 40790577000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "financialDebt",
+        "value": "70364733000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-financialDebt",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "financialDebt: 70364733000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "financialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "totalAssetsEnd",
+        "value": "215813377000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-totalAssetsEnd",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "totalAssetsEnd: 215813377000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "totalAssetsEnd"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "currentAssets",
+        "value": "152293246000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-currentAssets",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "currentAssets: 152293246000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentAssets"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "currentLiabilities",
+        "value": "101307749000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-currentLiabilities",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "currentLiabilities: 101307749000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "parentEquity",
+        "value": "65740826000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-parentEquity",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "parentEquity: 65740826000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "parentEquityFy2025End",
+        "value": "70691649000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "audit-TOASO-parentEquityFy2025End",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "parentEquityFy2025End: 70691649000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFy2025End"
+          ],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "parentEquityFy2024End",
+        "value": "72600973000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "audit-TOASO-parentEquityFy2024End",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "parentEquityFy2024End: 72600973000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFy2024End"
+          ],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "parentEquityH12025End",
+        "value": "63728041000",
+        "unit": "TRY",
+        "period": "2025-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-06-30",
+          "end": "2025-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "audit-TOASO-parentEquityH12025End",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "parentEquityH12025End: 63728041000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityH12025End"
+          ],
+          "from": "2025-06-30",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "revenue",
+        "value": "201797108000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "audit-TOASO-revenue",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "revenue: 201797108000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "revenuePrevious",
+        "value": "125633352000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "audit-TOASO-revenuePrevious",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "revenuePrevious: 125633352000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenuePrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "operatingProfit",
+        "value": "2884353000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "operatingProfit",
+        "evidence": {
+          "id": "audit-TOASO-operatingProfit",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "operatingProfit: 2884353000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingProfit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "operatingProfitPrevious",
+        "value": "-879779000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "operatingProfit",
+        "evidence": {
+          "id": "audit-TOASO-operatingProfitPrevious",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "operatingProfitPrevious: -879779000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "profit",
+        "value": "6290532000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "audit-TOASO-profit",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "profit: 6290532000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "profitPrevious",
+        "value": "2116615000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "audit-TOASO-profitPrevious",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "profitPrevious: 2116615000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "fyProfit2025",
+        "value": "9837424000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "audit-TOASO-fyProfit2025",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "fyProfit2025: 9837424000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "fyProfit2025"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "operatingCash",
+        "value": "-7202222000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-operatingCash",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "operatingCash: -7202222000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "capex",
+        "value": "4427515000",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "auditH1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "evidence": {
+          "id": "audit-TOASO-capex",
+          "sourceId": "auditH1",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "excerpt": "capex: 4427515000 TRY. KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "capex"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "id": "ebitdaFy2025",
+        "value": "10000000000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "locator": "2025 Entegre Faaliyet Raporu, Finansal Performans Gostergeleri ozet tablosu, sirketin kendi 'FAVOK' satiri, 2025 takvim yili (yonetim kurulu raporu, 1 ondalik hassasiyetle 10,0 milyar TL olarak acikladi - kesin degil, +-50 milyon TL yuvarlama)",
+        "metricKey": "ebitda",
+        "evidence": {
+          "id": "ev-toaso-fy2025-annual",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-financials-2026",
+          "reviewerId": "claude-toaso-research-20261031",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+          "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-02-17",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "ebitdaFy2025",
+            "netFinancialDebtFy2025End",
+            "debtShortFy2025End",
+            "debtLongFy2025End",
+            "cashFy2025End"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "id": "netFinancialDebtFy2025End",
+        "value": "33701681000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "Konsolide finansal durum tablosu 31.12.2025 (FY2025 kendi raporu, orijinal 2025-12-31 satin alma gucu): (UV borclanmanin KV kismi 16.253.582 + UV borclanmalar 37.415.420) - Nakit 19.967.321 = 33.701.681 (bin TL). Capraz dogrulama: ikincil kaynaklar Net Borc/FAVOK oranini 3,4x olarak bildirdi; 33.701.681/10.000.000 = 3,37x - tutarli.",
+        "metricKey": "netFinancialDebt",
+        "evidence": {
+          "id": "ev-toaso-fy2025-annual",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-financials-2026",
+          "reviewerId": "claude-toaso-research-20261031",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+          "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-02-17",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "ebitdaFy2025",
+            "netFinancialDebtFy2025End",
+            "debtShortFy2025End",
+            "debtLongFy2025End",
+            "cashFy2025End"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "dividendTotal",
+        "value": "20",
+        "unit": "TRY_SHARE",
+        "period": "2026-03-23",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-03-23",
+          "end": "2026-03-23",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "2026 ilk yarı faaliyet raporu kâr dağıtımı: 10.000.000.000 TL / 500.000.000 işlem gören pay = brüt 20 TL/pay. 17 TL net tutardır; hak kullanım 23.03.2026.",
+        "evidence": {
+          "id": "audit-TOASO-dividendTotal",
+          "sourceId": "h1PrimaryReport",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddc019fb388b8e65d30",
+          "locator": "2026 ilk yarı faaliyet raporu kâr dağıtımı: 10.000.000.000 TL / 500.000.000 işlem gören pay = brüt 20 TL/pay. 17 TL net tutardır; hak kullanım 23.03.2026.",
+          "excerpt": "dividendTotal: 20 TRY_SHARE. 2026 ilk yarı faaliyet raporu kâr dağıtımı: 10.000.000.000 TL / 500.000.000 işlem gören pay = brüt 20 TL/pay. 17 TL net tutardır; hak kullanım 23.03.2026.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-07-29",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendTotal"
+          ],
+          "from": "2026-03-23",
+          "to": "2026-03-23",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "id": "dividendPrevious",
+        "value": "12",
+        "unit": "TRY_SHARE",
+        "period": "2025-04-07",
+        "sourceId": "auditDividend2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-04-07",
+          "end": "2025-04-07",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "2025 brüt pay başına 12 TL; Yahoo günlük olay serisi 03.04.2025 hak kullanımı ile tutar mutabık. İkinci kaynağın köken bağımsızlığı kanıtlanmadı.",
+        "evidence": {
+          "id": "audit-TOASO-dividendPrevious",
+          "sourceId": "auditDividend2025",
+          "originId": "toaso-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c6cb04a3b4453",
+          "locator": "2025 brüt pay başına 12 TL; Yahoo günlük olay serisi 03.04.2025 hak kullanımı ile tutar mutabık. İkinci kaynağın köken bağımsızlığı kanıtlanmadı.",
+          "excerpt": "dividendPrevious: 12 TRY_SHARE. 2025 brüt pay başına 12 TL; Yahoo günlük olay serisi 03.04.2025 hak kullanımı ile tutar mutabık. İkinci kaynağın köken bağımsızlığı kanıtlanmadı.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-11-01",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendPrevious"
+          ],
+          "from": "2025-04-07",
+          "to": "2025-04-07",
+          "purchasingPowerDate": null
+        }
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "bookPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "operatingMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "currentRatio",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "netDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peHalfYear",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peRunRate",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "ANNUALIZED_ESTIMATE"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3
+      },
+      {
+        "id": "bookPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "operatingMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "currentRatio",
+        "operation": "RATIO",
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "cashProxy",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "netDebt",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "financialDebt",
+          "cash"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "peHalfYear",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "peRunRate",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      }
+    ],
+    "presentation": {
+      "schemaVersion": 1,
+      "id": "toaso-2026-11-01-v2",
+      "assetId": "watch-bist-toaso",
+      "symbol": "TOASO",
+      "isin": "TRATOASO91H3",
+      "market": "BIST",
+      "sector": "Otomotiv - Fiat/Stellantis lisansli binek ve ticari arac uretimi (Koc Holding + Stellantis ortak girisimi)",
+      "contentKey": "researchToasoAudit20261101",
+      "asOf": "2026-10-30",
+      "retrievedAt": "2026-11-01",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-30T18:10:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "debtLines": [],
+      "disclosureScan": {
+        "from": "2026-07-31",
+        "to": "2026-10-31",
+        "status": "PARTIAL",
+        "sourceId": "disclosureList",
+        "pendingDates": [
+          "2026-08-18",
+          "2026-09-21",
+          "2026-10-01",
+          "2026-10-21"
+        ]
+      },
+      "disclosures": [
+        {
+          "id": "q3-calendar",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-10-21T18:20:00+03:00",
+          "eventDate": "2026-10-21",
+          "key": "q3Calendar",
+          "impact": "LOW",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "capacity-increase",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-06-19T00:00:00+03:00",
+          "eventDate": "2026-06-19",
+          "key": "capacityIncrease",
+          "impact": "MEDIUM",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "board-committee-update",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-06-19T00:00:00+03:00",
+          "eventDate": "2026-06-19",
+          "key": "boardCommitteeUpdate",
+          "impact": "LOW",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "h1-results-published",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-07-29T00:00:00+03:00",
+          "eventDate": "2026-07-29",
+          "key": "h1Results",
+          "impact": "HIGH",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "planned-maintenance-halt",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-07-25T00:00:00+03:00",
+          "eventDate": "2026-07-30",
+          "key": "plannedMaintenanceHalt",
+          "impact": "MEDIUM",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "growth",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "technical",
+          "status": "MISSING"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "COMPLETE"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3
+        },
+        {
+          "id": "bookPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "operatingMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "currentRatio",
+          "operation": "RATIO",
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "cashProxy",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "netDebt",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "financialDebt",
+            "cash"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "peHalfYear",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "peRunRate",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        }
+      ],
+      "sources": [
+        {
+          "id": "priceSource",
+          "title": "Doviz.com - TOASO",
+          "url": "https://borsa.doviz.com/hisseler/toaso-tofas-oto-fab",
+          "period": "2026-10-30",
+          "locator": "Anlik fiyat, piyasa degeri/defter degeri capraz dogrulamasi",
+          "observedAt": "2026-10-30",
+          "publishedAt": null
+        },
+        {
+          "id": "kapCompanyProfile",
+          "title": "KAP - Tofas Turk Otomobil Fabrikasi A.S. sirket profili",
+          "url": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1096-tofas-turk-otomobil-fabrikasi-a-s",
+          "period": "2026-10-31",
+          "locator": "Pay sayisi/odenmis sermaye dogrulamasi",
+          "observedAt": "2026-10-31",
+          "publishedAt": null
+        },
+        {
+          "id": "h1PrimaryReport",
+          "title": "Tofas 1 Ocak - 30 Haziran 2026 Ara Donem Ozet Konsolide Finansal Tablolar",
+          "url": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddc019fb388b8e65d30",
+          "period": "2026-06-30",
+          "locator": "Ozet konsolide finansal tablolar, dipnotlar ve ozkaynak degisim/nakit akis tablolari",
+          "observedAt": "2026-10-31",
+          "publishedAt": "2026-07-29"
+        },
+        {
+          "id": "fy2025AnnualReport",
+          "title": "Tofas 2025 Entegre Faaliyet Raporu",
+          "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "period": "2025-12-31",
+          "locator": "Konsolide finansal tablolar, kar payi dagitim tablosu, finansal performans gostergeleri ozet tablosu",
+          "observedAt": "2026-10-31",
+          "publishedAt": "2026-02-17"
+        },
+        {
+          "id": "dividendPage",
+          "title": "Yahoo Finance TOASO.IS temettu olay verisi + KAP kar payi dagitim tablosu",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+          "period": "2026-02-28",
+          "locator": "Temettu olay verisi (brut/net TL/pay)",
+          "observedAt": "2026-10-31",
+          "publishedAt": null
+        },
+        {
+          "id": "disclosureList",
+          "title": "Borsacoo - TOASO KAP bildirimleri",
+          "url": "https://borsacoo.com/firma/TOASO/bildirimler",
+          "period": "2026-10-31",
+          "locator": "Son 3 aylik KAP bildirim taramasi",
+          "observedAt": "2026-10-31",
+          "publishedAt": null
+        },
+        {
+          "id": "yahooFinance",
+          "title": "Yahoo Finance TOASO.IS aylik fiyat/temettu/bedelsiz gecmisi",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+          "period": "2000-05 / 2026-10",
+          "locator": "Aylik kapanis fiyatlari, temettu ve bedelsiz sermaye artisi olaylari (max range)",
+          "observedAt": "2026-10-31",
+          "publishedAt": null
+        },
+        {
+          "id": "week52Search",
+          "title": "Doviz.com - TOASO tarihsel veri",
+          "url": "https://borsa.doviz.com/hisseler/toaso-tofas-oto-fab/tarihsel-veri",
+          "period": "2025-10 / 2026-10",
+          "locator": "52 hafta araligi",
+          "observedAt": "2026-10-31",
+          "publishedAt": null
+        },
+        {
+          "id": "auditMarket",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "publishedAt": "2026-10-30",
+          "title": "Yahoo Finance günlük kapanış ve fiyat aralığı",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
+          "observedAt": "2026-11-01"
+        },
+        {
+          "id": "auditDividend2025",
+          "url": "https://kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c6cb04a3b4453",
+          "publishedAt": null,
+          "title": "Tofaş 2025 faaliyet raporu",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-01"
+        },
+        {
+          "id": "auditH1",
+          "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+          "publishedAt": "2026-07-29",
+          "title": "Tofaş 30.06.2026 konsolide finansal tablolar (KAP 1639026)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-01"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "211.20",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "shares",
+          "value": "500000000",
+          "unit": "SHARES",
+          "period": "2026-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "shares"
+        },
+        {
+          "id": "week52Low",
+          "value": "211.20",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "week52High",
+          "value": "358.25",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "cash",
+          "value": "11008676000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "debtShort",
+          "value": "29574156000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "debtLong",
+          "value": "40790577000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "financialDebt",
+          "value": "70364733000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "215813377000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "currentAssets",
+          "value": "152293246000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "currentLiabilities",
+          "value": "101307749000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "parentEquity",
+          "value": "65740826000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "parentEquityFy2025End",
+          "value": "70691649000",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "auditH1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityFy2024End",
+          "value": "72600973000",
+          "unit": "TRY",
+          "period": "2024-12-31",
+          "sourceId": "auditH1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityH12025End",
+          "value": "63728041000",
+          "unit": "TRY",
+          "period": "2025-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "revenue",
+          "value": "201797108000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "revenue"
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "125633352000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "revenue"
+        },
+        {
+          "id": "operatingProfit",
+          "value": "2884353000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "operatingProfit"
+        },
+        {
+          "id": "operatingProfitPrevious",
+          "value": "-879779000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "operatingProfit"
+        },
+        {
+          "id": "profit",
+          "value": "6290532000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitPrevious",
+          "value": "2116615000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "auditH1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "fyProfit2025",
+          "value": "9837424000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "auditH1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "operatingCash",
+          "value": "-7202222000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "capex",
+          "value": "4427515000",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "auditH1"
+        },
+        {
+          "id": "ebitdaFy2025",
+          "value": "10000000000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "fy2025AnnualReport",
+          "metricKey": "ebitda"
+        },
+        {
+          "id": "netFinancialDebtFy2025End",
+          "value": "33701681000",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "fy2025AnnualReport",
+          "metricKey": "netFinancialDebt"
+        },
+        {
+          "id": "dividendTotal",
+          "value": "20",
+          "unit": "TRY_SHARE",
+          "period": "2026-03-23",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "dividendPrevious",
+          "value": "12",
+          "unit": "TRY_SHARE",
+          "period": "2025-04-07",
+          "sourceId": "auditDividend2025"
+        }
+      ],
+      "narrativeStale": true
+    },
+    "revision": 2,
+    "financialHistory": [
+      {
+        "year": "2021",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2022",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2023",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2024",
+        "factIds": [
+          "parentEquityFy2024End"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2025",
+        "factIds": [
+          "parentEquityFy2025End",
+          "fyProfit2025",
+          "ebitdaFy2025",
+          "netFinancialDebtFy2025End"
+        ],
+        "calculationIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
     "version": "toaso-2026-10-31-v1",
     "context": {
       "assetType": "EQUITY",

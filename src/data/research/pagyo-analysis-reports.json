@@ -1,11 +1,14 @@
 [
   {
     "schemaVersion": 2,
-    "version": "pagyo-2026-10-31-v1",
+    "version": "pagyo-2026-11-01-v2",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "REIT",
-      "strategies": ["DIVIDEND", "VALUE"]
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
     },
     "profileVersion": "1",
     "facts": [
@@ -44,7 +47,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["price"],
+          "claims": [
+            "price"
+          ],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -85,7 +90,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["shares"],
+          "claims": [
+            "shares"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -127,7 +134,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["cash"],
+          "claims": [
+            "cash"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -169,7 +178,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["debtShort"],
+          "claims": [
+            "debtShort"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -211,7 +222,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["debtLong"],
+          "claims": [
+            "debtLong"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -253,7 +266,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["financialDebt"],
+          "claims": [
+            "financialDebt"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -295,7 +310,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["netFinancialDebt"],
+          "claims": [
+            "netFinancialDebt"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -337,7 +354,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["parentEquity"],
+          "claims": [
+            "parentEquity"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -362,9 +381,9 @@
           "periodKind": "INSTANT",
           "shareBasis": null
         },
-        "verification": "VERIFIED",
-        "checkedAt": "2026-10-31",
-        "locator": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir.",
+        "verification": "CONFLICT",
+        "checkedAt": "2026-11-01",
+        "locator": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir. | 2026-11-01: Muhasebe özkaynağı, bağımsız düzeltilmiş portföy NAD değildir; kira nakdi ve değerleme kazancı ayrımı tamamlanmadan NAD iskontosu hesaplanamaz.",
         "evidence": {
           "id": "ev-pagyo-netAssetValue",
           "sourceId": "h1",
@@ -379,7 +398,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["netAssetValue"],
+          "claims": [
+            "netAssetValue"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -421,7 +442,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["currentAssets"],
+          "claims": [
+            "currentAssets"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -463,7 +486,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["currentLiabilities"],
+          "claims": [
+            "currentLiabilities"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -505,7 +530,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["totalAssetsEnd"],
+          "claims": [
+            "totalAssetsEnd"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -547,7 +574,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["debtWithinYear"],
+          "claims": [
+            "debtWithinYear"
+          ],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -589,7 +618,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["revenue"],
+          "claims": [
+            "revenue"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -631,7 +662,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["operatingProfit"],
+          "claims": [
+            "operatingProfit"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -673,7 +706,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["profit"],
+          "claims": [
+            "profit"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -715,7 +750,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["operatingCash"],
+          "claims": [
+            "operatingCash"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -757,7 +794,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["capex"],
+          "claims": [
+            "capex"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -799,7 +838,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["workingCapitalCash"],
+          "claims": [
+            "workingCapitalCash"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -841,7 +882,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["rentalIncome"],
+          "claims": [
+            "rentalIncome"
+          ],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -883,7 +926,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["revenuePrevious"],
+          "claims": [
+            "revenuePrevious"
+          ],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -925,7 +970,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["profitPrevious"],
+          "claims": [
+            "profitPrevious"
+          ],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -967,7 +1014,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["rentalIncomePrevious"],
+          "claims": [
+            "rentalIncomePrevious"
+          ],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1009,7 +1058,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["fyProfit2025"],
+          "claims": [
+            "fyProfit2025"
+          ],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1051,7 +1102,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["parentEquityH12025"],
+          "claims": [
+            "parentEquityH12025"
+          ],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1093,7 +1146,9 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["parentEquityFY2025"],
+          "claims": [
+            "parentEquityFY2025"
+          ],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1135,7 +1190,9 @@
           "publishedAt": "2026-04-24",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["dividendTotal"],
+          "claims": [
+            "dividendTotal"
+          ],
           "from": "2026-05-13",
           "to": "2026-05-13",
           "purchasingPowerDate": null
@@ -1176,7 +1233,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["profitFY2021"],
+          "claims": [
+            "profitFY2021"
+          ],
           "from": "2021-01-01",
           "to": "2021-12-31",
           "purchasingPowerDate": null
@@ -1218,7 +1277,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["profitFY2022"],
+          "claims": [
+            "profitFY2022"
+          ],
           "from": "2022-01-01",
           "to": "2022-12-31",
           "purchasingPowerDate": null
@@ -1260,7 +1321,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["profitFY2023"],
+          "claims": [
+            "profitFY2023"
+          ],
           "from": "2023-01-01",
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31"
@@ -1302,7 +1365,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["dailyChange"],
+          "claims": [
+            "dailyChange"
+          ],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -1343,7 +1408,9 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["weeklyChange"],
+          "claims": [
+            "weeklyChange"
+          ],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -1384,7 +1451,2630 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": ["sma5"],
+          "claims": [
+            "sma5"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "dividendsPaid",
+        "value": "514250404",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "Nakit akış tablosu: 514.250.404 TL ödenen temettü; 30.06.2026 satın alma gücü.",
+        "evidence": {
+          "id": "audit-PAGYO-dividendsPaid",
+          "sourceId": "h1",
+          "originId": "pagyo-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Nakit akış tablosu: 514.250.404 TL ödenen temettü; 30.06.2026 satın alma gücü.",
+          "excerpt": "dividendsPaid: 514250404 TRY. Nakit akış tablosu: 514.250.404 TL ödenen temettü; 30.06.2026 satın alma gücü.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendsPaid"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "operatingCash"
+      },
+      {
+        "id": "profitFY2024",
+        "value": "820699368",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "auditFY2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "2024 konsolide gelir tablosu ana ortaklık kârı 820.699.368 TL; 31.12.2024 satın alma gücü.",
+        "evidence": {
+          "id": "audit-PAGYO-profitFY2024",
+          "sourceId": "auditFY2024",
+          "originId": "pagyo-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/March2025/panora-gyo-konsolide-rapor-31-12-2024-i.pdf",
+          "locator": "2024 konsolide gelir tablosu ana ortaklık kârı 820.699.368 TL; 31.12.2024 satın alma gücü.",
+          "excerpt": "profitFY2024: 820699368 TRY. 2024 konsolide gelir tablosu ana ortaklık kârı 820.699.368 TL; 31.12.2024 satın alma gücü.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-11-01",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2024"
+          ],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        },
+        "metricKey": "profit"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3
+      },
+      {
+        "id": "bookPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "operatingMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "currentRatio",
+        "operation": "RATIO",
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "cashProxy",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "netDebt",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "financialDebt",
+          "cash"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "peHalfYear",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "peRunRate",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "rentalGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "rentalIncome",
+          "rentalIncomePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendCashCoverage",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingCash",
+          "dividendsPaid"
+        ],
+        "unit": "PERCENT",
+        "precision": 3
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "bookPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "operatingMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "currentRatio",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "netDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peHalfYear",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peRunRate",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "ANNUALIZED_ESTIMATE"
+      },
+      {
+        "id": "rentalGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendCashCoverage",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      }
+    ],
+    "presentation": {
+      "schemaVersion": 1,
+      "id": "pagyo-2026-11-01-v2",
+      "assetId": "watch-bist-pagyo",
+      "symbol": "PAGYO",
+      "isin": "TREPGYO00013",
+      "market": "BIST",
+      "sector": "GYO · AVM ve arsa",
+      "contentKey": "researchPagyoAudit20261101",
+      "asOf": "2026-10-31",
+      "retrievedAt": "2026-11-01",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-30T18:10:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "debtLines": [],
+      "disclosureScan": {
+        "from": "2026-08-01",
+        "to": "2026-10-31",
+        "status": "PARTIAL",
+        "sourceId": "disclosures",
+        "pendingDates": []
+      },
+      "disclosures": [
+        {
+          "id": "1650494",
+          "sourceId": "financial",
+          "key": "financial",
+          "publishedAt": "2026-08-14T18:31:52+03:00",
+          "eventDate": "2026-06-30",
+          "previousDisclosureDate": null,
+          "isUpdate": false,
+          "isCorrection": false,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": false
+        },
+        {
+          "id": "1597263",
+          "sourceId": "distribution",
+          "key": "distribution",
+          "publishedAt": "2026-04-24T19:08:25+03:00",
+          "eventDate": "2026-05-13",
+          "previousDisclosureDate": "2026-04-01",
+          "isUpdate": false,
+          "isCorrection": true,
+          "impact": "HIGH",
+          "attachmentReview": "COMPLETE",
+          "contextOnly": true
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "growth",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "technical",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "PARTIAL"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "113",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "price"
+        },
+        {
+          "id": "shares",
+          "value": "87000000",
+          "unit": "SHARES",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "shares"
+        },
+        {
+          "id": "cash",
+          "value": "278465206",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "cash"
+        },
+        {
+          "id": "debtShort",
+          "value": "190812",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "debtShort"
+        },
+        {
+          "id": "debtLong",
+          "value": "0",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "debtLong"
+        },
+        {
+          "id": "financialDebt",
+          "value": "190812",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "financialDebt"
+        },
+        {
+          "id": "netFinancialDebt",
+          "value": "-278274394",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "netFinancialDebt"
+        },
+        {
+          "id": "parentEquity",
+          "value": "17779034372",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "netAssetValue",
+          "value": "17779034372",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "netAssetValue"
+        },
+        {
+          "id": "currentAssets",
+          "value": "394484830",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "currentAssets"
+        },
+        {
+          "id": "currentLiabilities",
+          "value": "191413943",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "currentLiabilities"
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "19591088463",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "totalAssetsEnd"
+        },
+        {
+          "id": "debtWithinYear",
+          "value": "190812",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "debtWithinYear"
+        },
+        {
+          "id": "revenue",
+          "value": "671005570",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "revenue"
+        },
+        {
+          "id": "operatingProfit",
+          "value": "559007852",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "operatingProfit"
+        },
+        {
+          "id": "profit",
+          "value": "424346001",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "operatingCash",
+          "value": "488323041",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "operatingCash"
+        },
+        {
+          "id": "capex",
+          "value": "10667318",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "capex"
+        },
+        {
+          "id": "workingCapitalCash",
+          "value": "7022010",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "workingCapitalCash"
+        },
+        {
+          "id": "rentalIncome",
+          "value": "589696664",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "rentalIncome"
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "633310245",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "metricKey": "revenue"
+        },
+        {
+          "id": "profitPrevious",
+          "value": "435021755",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "rentalIncomePrevious",
+          "value": "556466028",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-06-30",
+          "sourceId": "h1",
+          "metricKey": "rentalIncome"
+        },
+        {
+          "id": "fyProfit2025",
+          "value": "1849101621",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "h1",
+          "metricKey": "profit"
+        },
+        {
+          "id": "parentEquityH12025",
+          "value": "16454858863",
+          "unit": "TRY",
+          "period": "2025-06-30",
+          "sourceId": "h1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityFY2025",
+          "value": "17868938775",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "h1",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "dividendTotal",
+          "value": "5.7545",
+          "unit": "TRY_SHARE",
+          "period": "2026-05-13",
+          "sourceId": "distribution"
+        },
+        {
+          "id": "profitFY2021",
+          "value": "249689360",
+          "unit": "TRY",
+          "period": "2021-01-01 / 2021-12-31",
+          "sourceId": "fy2021",
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitFY2022",
+          "value": "1837646714",
+          "unit": "TRY",
+          "period": "2022-01-01 / 2022-12-31",
+          "sourceId": "fy2022",
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitFY2023",
+          "value": "2639684265",
+          "unit": "TRY",
+          "period": "2023-01-01 / 2023-12-31",
+          "sourceId": "fy2023",
+          "metricKey": "profit"
+        },
+        {
+          "id": "dailyChange",
+          "value": "0.00000000",
+          "unit": "PERCENT",
+          "period": "2026-10-30",
+          "sourceId": "price"
+        },
+        {
+          "id": "weeklyChange",
+          "value": "3.57470356",
+          "unit": "PERCENT",
+          "period": "2026-10-30",
+          "sourceId": "price"
+        },
+        {
+          "id": "sma5",
+          "value": "111.93999939",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-30",
+          "sourceId": "price"
+        },
+        {
+          "id": "dividendsPaid",
+          "value": "514250404",
+          "unit": "TRY",
+          "period": "2026-01-01 / 2026-06-30",
+          "sourceId": "h1",
+          "metricKey": "operatingCash"
+        },
+        {
+          "id": "profitFY2024",
+          "value": "820699368",
+          "unit": "TRY",
+          "period": "2024-01-01 / 2024-12-31",
+          "sourceId": "auditFY2024",
+          "metricKey": "profit"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3
+        },
+        {
+          "id": "bookPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "operatingMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "currentRatio",
+          "operation": "RATIO",
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "cashProxy",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "netDebt",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "financialDebt",
+            "cash"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "peHalfYear",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "peRunRate",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "rentalGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "rentalIncome",
+            "rentalIncomePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendCashCoverage",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingCash",
+            "dividendsPaid"
+          ],
+          "unit": "PERCENT",
+          "precision": 3
+        }
+      ],
+      "sources": [
+        {
+          "id": "h1",
+          "url": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "title": "2026 H1 konsolide finansallar (TL)",
+          "publishedAt": "2026-08-14",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Konsolide; TL; 30.06.2026 satın alma gücü; tablolar s.1–6 ve Not 4,6,9,12,13"
+        },
+        {
+          "id": "solo",
+          "url": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-solo-rapor-final-imzali.pdf",
+          "title": "2026 H1 bireysel finansallar",
+          "publishedAt": "2026-08-14",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "fy",
+          "url": "https://www.panoragyo.com/storage/pages/March2026/panora-gyo-31-12-2025-konsolide-rapor-final-g.pdf",
+          "title": "2025 konsolide yıllık rapor",
+          "publishedAt": "2026-03-10",
+          "observedAt": "2026-10-31",
+          "period": "2025",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "activity",
+          "url": "https://www.panoragyo.com/storage/pages/August2026/panora-gyo-30-06-2026-faaliyet-raporu-fg.pdf",
+          "title": "2026 H1 faaliyet raporu",
+          "publishedAt": "2026-08-14",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "agm",
+          "url": "https://www.panoragyo.com/storage/pages/April2026/panora-gyo-gk-toplanti-tutanagi-ve-hazirun-listesi.pdf",
+          "title": "24.04.2026 genel kurul tutanağı",
+          "publishedAt": "2026-04-24",
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "valuation",
+          "url": "https://www.panoragyo.com/storage/pages/December2025/pagyo-2510089-panora-avm-2025.pdf",
+          "title": "2025 Panora AVM ekspertizi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2025",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "land",
+          "url": "https://www.panoragyo.com/storage/pages/December2025/16128-ada-22-parsel-degerleme-raporu-2025-e1.pdf",
+          "title": "2025 arsa ekspertizi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2025",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2024",
+          "url": "https://www.panoragyo.com/storage/pages/March2025/panora-gyo-konsolide-rapor-31-12-2024-i.pdf",
+          "title": "fy2024",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2024",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2023",
+          "url": "https://www.panoragyo.com/storage/pages/May2024/panora-konsolide-rapor-31122023-spk-imzali.pdf",
+          "title": "fy2023",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2023",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2022",
+          "url": "https://www.panoragyo.com/storage/pages/March2023/panora-31122022-konsolide-imzali-rapor.pdf",
+          "title": "fy2022",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2022",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "fy2021",
+          "url": "https://www.panoragyo.com/storage/pages/March2022/panora-31122021-kgk-konsolide.pdf",
+          "title": "fy2021",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2021",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "distribution",
+          "url": "https://kap.org.tr/tr/Bildirim/1597263",
+          "title": "KAP 1597263: düzeltilmiş temettü kararı",
+          "publishedAt": "2026-04-24",
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "distributionTable",
+          "url": "https://kap.org.tr/tr/api/file/download/4028328d9d7b24c9019dc03b03aa37ca",
+          "title": "2025 kâr dağıtım tablosu",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "financial",
+          "url": "https://kap.org.tr/tr/Bildirim/1650494",
+          "title": "KAP 1650494: H1 konsolide finansallar",
+          "publishedAt": "2026-08-14",
+          "observedAt": "2026-10-31",
+          "period": "2026 H1",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "price",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "title": "Yahoo günlük PAGYO kapanışları",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "priceCheck",
+          "url": "https://finans.mynet.com/borsa/hisseler/pagyo-panora-gyo/tarihselveriler/",
+          "title": "Mynet tarihli kapanış kontrolü",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "kap",
+          "url": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1753-panora-gayrimenkul-yatirim-ortakligi-a-s",
+          "title": "KAP şirket 1753",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "disclosures",
+          "url": "https://kap.org.tr/tr/bildirim-sorgu-sonuc?member=4028e4a240f2ef4c014134d6641f062a",
+          "title": "KAP şirket bildirim sorgusu (kısmi)",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "oyak",
+          "url": "https://www.oyakyatirim.com.tr/hisse-detay/PAGYO",
+          "title": "OYAK/Foreks temettü ve sermaye takvimi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "correction2020",
+          "url": "https://www.kap.org.tr/tr/Bildirim/837141",
+          "title": "KAP 837141: 2020 ikinci taksit düzeltmesi",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "peer",
+          "url": "https://www.vkyanaliz.com/rap/PAGYO_2026-06-09_62363.pdf",
+          "title": "Vakıf emsal raporu erişim denemesi: 404",
+          "publishedAt": null,
+          "observedAt": "2026-10-31",
+          "period": "2026-10-31",
+          "locator": "Kaynak belge; erişim 31.10.2026"
+        },
+        {
+          "id": "auditMarket",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "publishedAt": "2026-10-30",
+          "title": "Yahoo Finance günlük kapanış ve fiyat aralığı",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
+          "observedAt": "2026-11-01"
+        },
+        {
+          "id": "auditFY2024",
+          "url": "https://www.panoragyo.com/storage/pages/March2025/panora-gyo-konsolide-rapor-31-12-2024-i.pdf",
+          "publishedAt": null,
+          "title": "Panora 2024 konsolide finansal raporu",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-01"
+        }
+      ],
+      "narrativeStale": true
+    },
+    "revision": 2,
+    "financialHistory": [
+      {
+        "year": "2021",
+        "factIds": [
+          "profitFY2021"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2022",
+        "factIds": [
+          "profitFY2022"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2023",
+        "factIds": [
+          "profitFY2023"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2024",
+        "factIds": [
+          "profitFY2024"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2025",
+        "factIds": [
+          "fyProfit2025",
+          "parentEquityFY2025"
+        ],
+        "calculationIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
+    "version": "pagyo-2026-10-31-v1",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "REIT",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "id": "price",
+        "value": "113",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "30.10.2026 kapanış; Yahoo günlük seri ve tarihli ikincil fiyat kontrolü",
+        "evidence": {
+          "id": "ev-pagyo-price",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "30.10.2026 kapanış; Yahoo günlük seri ve tarihli ikincil fiyat kontrolü",
+          "excerpt": "30.10.2026 kapanış; Yahoo günlük seri ve tarihli ikincil fiyat kontrolü; 113 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "price"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "shares",
+        "value": "87000000",
+        "unit": "SHARES",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Ödenmiş sermaye 87.000.000 TL, 1 TL nominal pay; H1 Not 11",
+        "evidence": {
+          "id": "ev-pagyo-shares",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Ödenmiş sermaye 87.000.000 TL, 1 TL nominal pay; H1 Not 11",
+          "excerpt": "Ödenmiş sermaye 87.000.000 TL, 1 TL nominal pay; H1 Not 11; 87000000 SHARES",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "shares"
+      },
+      {
+        "id": "cash",
+        "value": "278465206",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: cash",
+        "evidence": {
+          "id": "ev-pagyo-cash",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: cash",
+          "excerpt": "Finansal durum tablosu s.1–2: cash; 278465206 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "cash"
+      },
+      {
+        "id": "debtShort",
+        "value": "190812",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: debtShort",
+        "evidence": {
+          "id": "ev-pagyo-debtShort",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: debtShort",
+          "excerpt": "Finansal durum tablosu s.1–2: debtShort; 190812 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtShort"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtShort"
+      },
+      {
+        "id": "debtLong",
+        "value": "0",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Uzun yükümlülükler yalnız ticari borç, karşılık, diğer yükümlülük ve ertelenmiş vergi içerir; uzun banka kredisi yok.",
+        "evidence": {
+          "id": "ev-pagyo-debtLong",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Uzun yükümlülükler yalnız ticari borç, karşılık, diğer yükümlülük ve ertelenmiş vergi içerir; uzun banka kredisi yok.",
+          "excerpt": "Uzun yükümlülükler yalnız ticari borç, karşılık, diğer yükümlülük ve ertelenmiş vergi içerir; uzun banka kredisi yok.; 0 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtLong"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtLong"
+      },
+      {
+        "id": "financialDebt",
+        "value": "190812",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Bilanço: kısa banka kredisi 190.812 TL; uzun finansal borç satırı yok. Not 4 faizli arsa ticari borcu 222 milyon TL ayrıca değerlendirilir.",
+        "evidence": {
+          "id": "ev-pagyo-financialDebt",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Bilanço: kısa banka kredisi 190.812 TL; uzun finansal borç satırı yok. Not 4 faizli arsa ticari borcu 222 milyon TL ayrıca değerlendirilir.",
+          "excerpt": "Bilanço: kısa banka kredisi 190.812 TL; uzun finansal borç satırı yok. Not 4 faizli arsa ticari borcu 222 milyon TL ayrıca değerlendirilir.; 190812 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "financialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "financialDebt"
+      },
+      {
+        "id": "netFinancialDebt",
+        "value": "-278274394",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "190.812 banka borcu − 278.465.206 nakit; faizli arsa ticari borcu bu dar tanımda hariçtir.",
+        "evidence": {
+          "id": "ev-pagyo-netFinancialDebt",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "190.812 banka borcu − 278.465.206 nakit; faizli arsa ticari borcu bu dar tanımda hariçtir.",
+          "excerpt": "190.812 banka borcu − 278.465.206 nakit; faizli arsa ticari borcu bu dar tanımda hariçtir.; -278274394 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netFinancialDebt"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "netFinancialDebt"
+      },
+      {
+        "id": "parentEquity",
+        "value": "17779034372",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: parentEquity",
+        "evidence": {
+          "id": "ev-pagyo-parentEquity",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: parentEquity",
+          "excerpt": "Finansal durum tablosu s.1–2: parentEquity; 17779034372 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquity"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "netAssetValue",
+        "value": "17779034372",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir.",
+        "evidence": {
+          "id": "ev-pagyo-netAssetValue",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir.",
+          "excerpt": "Bilanço NAD vekili: 19.591.088.463 varlık − 1.812.054.091 tüm yükümlülük. Güncel bağımsız ekspertiz değildir.; 17779034372 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netAssetValue"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "netAssetValue"
+      },
+      {
+        "id": "currentAssets",
+        "value": "394484830",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: currentAssets",
+        "evidence": {
+          "id": "ev-pagyo-currentAssets",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: currentAssets",
+          "excerpt": "Finansal durum tablosu s.1–2: currentAssets; 394484830 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentAssets"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "currentAssets"
+      },
+      {
+        "id": "currentLiabilities",
+        "value": "191413943",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: currentLiabilities",
+        "evidence": {
+          "id": "ev-pagyo-currentLiabilities",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: currentLiabilities",
+          "excerpt": "Finansal durum tablosu s.1–2: currentLiabilities; 191413943 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "currentLiabilities"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "currentLiabilities"
+      },
+      {
+        "id": "totalAssetsEnd",
+        "value": "19591088463",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: totalAssetsEnd",
+        "evidence": {
+          "id": "ev-pagyo-totalAssetsEnd",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: totalAssetsEnd",
+          "excerpt": "Finansal durum tablosu s.1–2: totalAssetsEnd; 19591088463 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "totalAssetsEnd"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "totalAssetsEnd"
+      },
+      {
+        "id": "debtWithinYear",
+        "value": "190812",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Finansal durum tablosu s.1–2: debtWithinYear",
+        "evidence": {
+          "id": "ev-pagyo-debtWithinYear",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Finansal durum tablosu s.1–2: debtWithinYear",
+          "excerpt": "Finansal durum tablosu s.1–2: debtWithinYear; 190812 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "debtWithinYear"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "debtWithinYear"
+      },
+      {
+        "id": "revenue",
+        "value": "671005570",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Gelir tablosu hasılat",
+        "evidence": {
+          "id": "ev-pagyo-revenue",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Gelir tablosu hasılat",
+          "excerpt": "Gelir tablosu hasılat; 671005570 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "operatingProfit",
+        "value": "559007852",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Esas faaliyet kârı; faiz dahil diğer faaliyet kalemlerini içerir",
+        "evidence": {
+          "id": "ev-pagyo-operatingProfit",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Esas faaliyet kârı; faiz dahil diğer faaliyet kalemlerini içerir",
+          "excerpt": "Esas faaliyet kârı; faiz dahil diğer faaliyet kalemlerini içerir; 559007852 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingProfit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "operatingProfit"
+      },
+      {
+        "id": "profit",
+        "value": "424346001",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Ana ortaklık net kârı",
+        "evidence": {
+          "id": "ev-pagyo-profit",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Ana ortaklık net kârı",
+          "excerpt": "Ana ortaklık net kârı; 424346001 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profit"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "operatingCash",
+        "value": "488323041",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı işletme faaliyetlerinden nakit",
+        "evidence": {
+          "id": "ev-pagyo-operatingCash",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Nakit akışı işletme faaliyetlerinden nakit",
+          "excerpt": "Nakit akışı işletme faaliyetlerinden nakit; 488323041 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "operatingCash"
+      },
+      {
+        "id": "capex",
+        "value": "10667318",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı: maddi duran varlık 8.731.681 + yatırım gayrimenkul 1.935.637",
+        "evidence": {
+          "id": "ev-pagyo-capex",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Nakit akışı: maddi duran varlık 8.731.681 + yatırım gayrimenkul 1.935.637",
+          "excerpt": "Nakit akışı: maddi duran varlık 8.731.681 + yatırım gayrimenkul 1.935.637; 10667318 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "capex"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "capex"
+      },
+      {
+        "id": "workingCapitalCash",
+        "value": "7022010",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Nakit akışı işletme sermayesi değişimi",
+        "evidence": {
+          "id": "ev-pagyo-workingCapitalCash",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Nakit akışı işletme sermayesi değişimi",
+          "excerpt": "Nakit akışı işletme sermayesi değişimi; 7022010 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "workingCapitalCash"
+      },
+      {
+        "id": "rentalIncome",
+        "value": "589696664",
+        "unit": "TRY",
+        "period": "2026-01-01 / 2026-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Not 6/9 yatırım gayrimenkul kira geliri",
+        "evidence": {
+          "id": "ev-pagyo-rentalIncome",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Not 6/9 yatırım gayrimenkul kira geliri",
+          "excerpt": "Not 6/9 yatırım gayrimenkul kira geliri; 589696664 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "rentalIncome"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "rentalIncome"
+      },
+      {
+        "id": "revenuePrevious",
+        "value": "633310245",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+        "evidence": {
+          "id": "ev-pagyo-revenuePrevious",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü; 633310245 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenuePrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "profitPrevious",
+        "value": "435021755",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+        "evidence": {
+          "id": "ev-pagyo-profitPrevious",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü; 435021755 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "rentalIncomePrevious",
+        "value": "556466028",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+        "evidence": {
+          "id": "ev-pagyo-rentalIncomePrevious",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü",
+          "excerpt": "Aynı H1 raporunun karşılaştırmalı sütunu; Haziran 2026 satın alma gücü; 556466028 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "rentalIncomePrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "rentalIncome"
+      },
+      {
+        "id": "fyProfit2025",
+        "value": "1849101621",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "H1 özkaynak tablosu FY2025 kâr devri; Haziran 2026 satın alma gücü. Özgün yıllık raporla nominal toplama yapılmaz.",
+        "evidence": {
+          "id": "ev-pagyo-fyProfit2025",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "H1 özkaynak tablosu FY2025 kâr devri; Haziran 2026 satın alma gücü. Özgün yıllık raporla nominal toplama yapılmaz.",
+          "excerpt": "H1 özkaynak tablosu FY2025 kâr devri; Haziran 2026 satın alma gücü. Özgün yıllık raporla nominal toplama yapılmaz.; 1849101621 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "fyProfit2025"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "parentEquityH12025",
+        "value": "16454858863",
+        "unit": "TRY",
+        "period": "2025-06-30",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-06-30",
+          "end": "2025-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "H1 özkaynak tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+        "evidence": {
+          "id": "ev-pagyo-parentEquityH12025",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "H1 özkaynak tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü",
+          "excerpt": "H1 özkaynak tablosu 30.06.2025 kapanışı; Haziran 2026 satın alma gücü; 16454858863 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityH12025"
+          ],
+          "from": "2025-06-30",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "parentEquityFY2025",
+        "value": "17868938775",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "h1",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "H1 bilanço karşılaştırmalı özkaynak",
+        "evidence": {
+          "id": "ev-pagyo-parentEquityFY2025",
+          "sourceId": "h1",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/August2026/panora-30062026-spk-konsolide-rapor-final-imzali.pdf",
+          "locator": "H1 bilanço karşılaştırmalı özkaynak",
+          "excerpt": "H1 bilanço karşılaştırmalı özkaynak; 17868938775 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-08-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFY2025"
+          ],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "dividendTotal",
+        "value": "5.7545",
+        "unit": "TRY_SHARE",
+        "period": "2026-05-13",
+        "sourceId": "distribution",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-05-13",
+          "end": "2026-05-13",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "KAP 1597263: hak 11.05.2026, hesaba ödeme 13.05.2026; brüt=net, stopaj %0. Tek nakit ödeme, avans değildir.",
+        "evidence": {
+          "id": "ev-pagyo-dividendTotal",
+          "sourceId": "distribution",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://kap.org.tr/tr/Bildirim/1597263",
+          "locator": "KAP 1597263: hak 11.05.2026, hesaba ödeme 13.05.2026; brüt=net, stopaj %0. Tek nakit ödeme, avans değildir.",
+          "excerpt": "KAP 1597263: hak 11.05.2026, hesaba ödeme 13.05.2026; brüt=net, stopaj %0. Tek nakit ödeme, avans değildir.; 5.7545 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-04-24",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendTotal"
+          ],
+          "from": "2026-05-13",
+          "to": "2026-05-13",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "profitFY2021",
+        "value": "249689360",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2021",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-pagyo-profitFY2021",
+          "sourceId": "fy2021",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/March2022/panora-31122021-kgk-konsolide.pdf",
+          "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+          "excerpt": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.; 249689360 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2021"
+          ],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "profitFY2022",
+        "value": "1837646714",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-pagyo-profitFY2022",
+          "sourceId": "fy2022",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/March2023/panora-31122022-konsolide-imzali-rapor.pdf",
+          "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+          "excerpt": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.; 1837646714 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2022"
+          ],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "profitFY2023",
+        "value": "2639684265",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+        "evidence": {
+          "id": "ev-pagyo-profitFY2023",
+          "sourceId": "fy2023",
+          "originId": "panora-issuer",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://www.panoragyo.com/storage/pages/May2024/panora-konsolide-rapor-31122023-spk-imzali.pdf",
+          "locator": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.",
+          "excerpt": "Özgün konsolide yıllık kâr; 2023 TMS29 geçişi nedeniyle tek reel büyüme serisi değildir.; 2639684265 TRY",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitFY2023"
+          ],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        },
+        "metricKey": "profit"
+      },
+      {
+        "id": "dailyChange",
+        "value": "0.00000000",
+        "unit": "PERCENT",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-pagyo-dailyChange",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+          "excerpt": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026; 0.00000000 PERCENT",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dailyChange"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "weeklyChange",
+        "value": "3.57470356",
+        "unit": "PERCENT",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-pagyo-weeklyChange",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+          "excerpt": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026; 3.57470356 PERCENT",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "weeklyChange"
+          ],
+          "from": "2026-10-30",
+          "to": "2026-10-30",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "sma5",
+        "value": "111.93999939",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-30",
+        "sourceId": "price",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-30",
+          "end": "2026-10-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-31",
+        "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+        "evidence": {
+          "id": "ev-pagyo-sma5",
+          "sourceId": "price",
+          "originId": "yahoo-finance",
+          "collectionId": "pagyo-20261031",
+          "reviewerId": "codex-pagyo-sequential-review",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits",
+          "locator": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026",
+          "excerpt": "Günlük kapanış serisi; son beş: 2026-10-23 109.0999984741211, 2026-10-26 112.0999984741211, 2026-10-27 112.5, 2026-10-28 113, 2026-10-30 113; haftalık baz 23.10.2026; 111.93999939 TRY_SHARE",
+          "checkedAt": "2026-10-31",
+          "publishedAt": "2026-10-31",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "sma5"
+          ],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -1395,98 +4085,144 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": ["price", "shares"],
+        "inputs": [
+          "price",
+          "shares"
+        ],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": ["price", "shares", "parentEquity"],
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": ["parentEquity", "shares"],
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": ["revenue", "revenuePrevious"],
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": ["profit", "profitPrevious"],
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": ["dividendTotal", "price"],
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": ["operatingProfit", "revenue"],
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": ["currentAssets", "currentLiabilities"],
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": ["debtShort", "debtLong"],
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": ["operatingCash", "capex"],
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": ["financialDebt", "cash"],
+        "inputs": [
+          "financialDebt",
+          "cash"
+        ],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": ["price", "shares", "profit"],
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": ["price", "shares", "profit", "profit"],
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "rentalGrowth",
         "operation": "GROWTH",
-        "inputs": ["rentalIncome", "rentalIncomePrevious"],
+        "inputs": [
+          "rentalIncome",
+          "rentalIncomePrevious"
+        ],
         "unit": "PERCENT",
         "precision": 2
       }
@@ -1494,85 +4230,131 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": ["TRY_SHARE", "SHARES"],
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": ["TRY_SHARE", "SHARES", "TRY"],
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": ["TRY", "SHARES"],
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": ["TRY_SHARE", "TRY_SHARE"],
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": ["TRY_SHARE", "SHARES", "TRY"],
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       },
       {
         "id": "rentalGrowth",
-        "units": ["TRY", "TRY"],
+        "units": [
+          "TRY",
+          "TRY"
+        ],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       }
@@ -1704,7 +4486,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["price"],
+            "claims": [
+              "price"
+            ],
             "from": "2026-10-30",
             "to": "2026-10-30",
             "purchasingPowerDate": null
@@ -1745,7 +4529,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["shares"],
+            "claims": [
+              "shares"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": null
@@ -1787,7 +4573,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["cash"],
+            "claims": [
+              "cash"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -1829,7 +4617,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["debtShort"],
+            "claims": [
+              "debtShort"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -1871,7 +4661,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["debtLong"],
+            "claims": [
+              "debtLong"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -1913,7 +4705,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["financialDebt"],
+            "claims": [
+              "financialDebt"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -1955,7 +4749,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["netFinancialDebt"],
+            "claims": [
+              "netFinancialDebt"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -1997,7 +4793,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["parentEquity"],
+            "claims": [
+              "parentEquity"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2039,7 +4837,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["netAssetValue"],
+            "claims": [
+              "netAssetValue"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2081,7 +4881,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["currentAssets"],
+            "claims": [
+              "currentAssets"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2123,7 +4925,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["currentLiabilities"],
+            "claims": [
+              "currentLiabilities"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2165,7 +4969,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["totalAssetsEnd"],
+            "claims": [
+              "totalAssetsEnd"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2207,7 +5013,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["debtWithinYear"],
+            "claims": [
+              "debtWithinYear"
+            ],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2249,7 +5057,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["revenue"],
+            "claims": [
+              "revenue"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2291,7 +5101,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["operatingProfit"],
+            "claims": [
+              "operatingProfit"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2333,7 +5145,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["profit"],
+            "claims": [
+              "profit"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2375,7 +5189,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["operatingCash"],
+            "claims": [
+              "operatingCash"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2417,7 +5233,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["capex"],
+            "claims": [
+              "capex"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2459,7 +5277,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["workingCapitalCash"],
+            "claims": [
+              "workingCapitalCash"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2501,7 +5321,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["rentalIncome"],
+            "claims": [
+              "rentalIncome"
+            ],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2543,7 +5365,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["revenuePrevious"],
+            "claims": [
+              "revenuePrevious"
+            ],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2585,7 +5409,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["profitPrevious"],
+            "claims": [
+              "profitPrevious"
+            ],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2627,7 +5453,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["rentalIncomePrevious"],
+            "claims": [
+              "rentalIncomePrevious"
+            ],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2669,7 +5497,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["fyProfit2025"],
+            "claims": [
+              "fyProfit2025"
+            ],
             "from": "2025-01-01",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -2711,7 +5541,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["parentEquityH12025"],
+            "claims": [
+              "parentEquityH12025"
+            ],
             "from": "2025-06-30",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -2753,7 +5585,9 @@
             "publishedAt": "2026-08-14",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["parentEquityFY2025"],
+            "claims": [
+              "parentEquityFY2025"
+            ],
             "from": "2025-12-31",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -2795,7 +5629,9 @@
             "publishedAt": "2026-04-24",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["dividendTotal"],
+            "claims": [
+              "dividendTotal"
+            ],
             "from": "2026-05-13",
             "to": "2026-05-13",
             "purchasingPowerDate": null
@@ -2836,7 +5672,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["profitFY2021"],
+            "claims": [
+              "profitFY2021"
+            ],
             "from": "2021-01-01",
             "to": "2021-12-31",
             "purchasingPowerDate": null
@@ -2878,7 +5716,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["profitFY2022"],
+            "claims": [
+              "profitFY2022"
+            ],
             "from": "2022-01-01",
             "to": "2022-12-31",
             "purchasingPowerDate": null
@@ -2920,7 +5760,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["profitFY2023"],
+            "claims": [
+              "profitFY2023"
+            ],
             "from": "2023-01-01",
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31"
@@ -2962,7 +5804,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["dailyChange"],
+            "claims": [
+              "dailyChange"
+            ],
             "from": "2026-10-30",
             "to": "2026-10-30",
             "purchasingPowerDate": null
@@ -3003,7 +5847,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["weeklyChange"],
+            "claims": [
+              "weeklyChange"
+            ],
             "from": "2026-10-30",
             "to": "2026-10-30",
             "purchasingPowerDate": null
@@ -3044,7 +5890,9 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": ["sma5"],
+            "claims": [
+              "sma5"
+            ],
             "from": "2026-10-30",
             "to": "2026-10-30",
             "purchasingPowerDate": null
@@ -3055,98 +5903,144 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": ["price", "shares"],
+          "inputs": [
+            "price",
+            "shares"
+          ],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": ["price", "shares", "parentEquity"],
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": ["parentEquity", "shares"],
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": ["revenue", "revenuePrevious"],
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": ["profit", "profitPrevious"],
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": ["dividendTotal", "price"],
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": ["operatingProfit", "revenue"],
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": ["currentAssets", "currentLiabilities"],
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": ["debtShort", "debtLong"],
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": ["operatingCash", "capex"],
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": ["financialDebt", "cash"],
+          "inputs": [
+            "financialDebt",
+            "cash"
+          ],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": ["price", "shares", "profit"],
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": ["price", "shares", "profit", "profit"],
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "rentalGrowth",
           "operation": "GROWTH",
-          "inputs": ["rentalIncome", "rentalIncomePrevious"],
+          "inputs": [
+            "rentalIncome",
+            "rentalIncomePrevious"
+          ],
           "unit": "PERCENT",
           "precision": 2
         }

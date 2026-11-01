@@ -1,6 +1,2411 @@
 [
   {
     "schemaVersion": 2,
+    "version": "froto-2026-11-01-v2",
+    "context": {
+      "assetType": "EQUITY",
+      "businessModel": "AUTOMOTIVE",
+      "strategies": [
+        "DIVIDEND",
+        "VALUE"
+      ]
+    },
+    "profileVersion": "1",
+    "facts": [
+      {
+        "id": "price",
+        "value": "69.20",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-28",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-28",
+          "end": "2026-10-28",
+          "periodKind": "INSTANT",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+        "evidence": {
+          "id": "audit-FROTO-price",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+          "excerpt": "price: 69.20 TRY_SHARE. Günlük quote.close; gerçek işlem günü; sağlayıcı kayan nokta gösterimi iki ondalığa yuvarlandı.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-28",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "price"
+          ],
+          "from": "2026-10-28",
+          "to": "2026-10-28",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "shares",
+        "value": "3509100000",
+        "unit": "SHARES",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Odenmis sermaye 3.509.100 bin TL, nominal 1 TL/pay (Not 13); doviz.com piyasa degeri/fiyat ile capraz dogrulandi",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "week52Low",
+        "value": "62.30",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-28",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-28",
+          "end": "2026-10-28",
+          "periodKind": "INSTANT",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+        "evidence": {
+          "id": "audit-FROTO-week52Low",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+          "excerpt": "week52Low: 62.30 TRY_SHARE. 2025-10-29–2026-10-28: günlük quote.low en küçük değeri; bölünme düzeltilmiş pay bazında.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-28",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "week52Low"
+          ],
+          "from": "2026-10-28",
+          "to": "2026-10-28",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "week52High",
+        "value": "135.40",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-28",
+        "sourceId": "auditMarket",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-28",
+          "end": "2026-10-28",
+          "periodKind": "INSTANT",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+        "evidence": {
+          "id": "audit-FROTO-week52High",
+          "sourceId": "auditMarket",
+          "originId": "yahoo-finance",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "locator": "2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+          "excerpt": "week52High: 135.40 TRY_SHARE. 2025-10-29–2026-10-28: günlük quote.high en büyük değeri; bölünme düzeltilmiş pay bazında.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-10-28",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "week52High"
+          ],
+          "from": "2026-10-28",
+          "to": "2026-10-28",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cash",
+        "value": "56042423000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Bilanco, Nakit ve nakit benzerleri, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtShort",
+        "value": "57626834000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 5, Toplam kisa vadeli finansal borclar, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "debtLong",
+        "value": "110397569000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 5, Toplam uzun vadeli finansal borclar, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "totalAssetsEnd",
+        "value": "489237014000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Bilanco, Toplam varliklar, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquity",
+        "value": "179191213000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozkaynak degisim tablosu, 30 Haziran 2026 itibariyla bakiyeler (toplam ozkaynaklar)",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquityFy2025End",
+        "value": "183726843000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozkaynak degisim tablosu, 1 Ocak 2026 (=31 Aralik 2025) itibariyla bakiyeler; ayni raporun 30.06.2026 satin alma gucunde",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ev-froto-equity-2025end",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "1 Ocak 2026 acilis bakiyeleri satirinda toplam ozkaynaklar 183.726.843 (bin TL, 30.06.2026 satin alma gucunde yeniden ifade edilmis)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFy2025End"
+          ],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquityFy2024End",
+        "value": "177601859000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozkaynak degisim tablosu, 1 Ocak 2025 (=31 Aralik 2024) itibariyla bakiyeler; ayni raporun 30.06.2026 satin alma gucunde",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ev-froto-equity-2024end",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "1 Ocak 2025 acilis bakiyeleri satirinda toplam ozkaynaklar 177.601.859 (bin TL, 30.06.2026 satin alma gucunde yeniden ifade edilmis)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityFy2024End"
+          ],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "parentEquityH12025End",
+        "value": "185558984000",
+        "unit": "TRY",
+        "period": "2025-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-06-30",
+          "end": "2025-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozkaynak degisim tablosu, 30 Haziran 2025 itibariyla bakiyeler; ayni raporun 30.06.2026 satin alma gucunde",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ev-froto-equity-h12025",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "30 Haziran 2025 itibariyla bakiyeler satirinda toplam ozkaynaklar 185.558.984 (bin TL, 30.06.2026 satin alma gucunde yeniden ifade edilmis)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "parentEquityH12025End"
+          ],
+          "from": "2025-06-30",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "netFinancialDebt",
+        "value": "111981980000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 2.3, sirketin kendi 'Net finansal borclar' satiri (uzun+kisa vadeli borclanma - nakit), 30.06.2026",
+        "metricKey": "netFinancialDebt",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "netFinancialDebtFy2025End",
+        "value": "116808300000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 2.3, sirketin kendi 'Net finansal borclar' satiri, 31.12.2025, ayni raporun 30.06.2026 satin alma gucunde",
+        "metricKey": "netFinancialDebt",
+        "evidence": {
+          "id": "ev-froto-netdebt-2025end",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Not 2.3, 'Net finansal borclar' satiri, 31.12.2025: 116.808.300 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "netFinancialDebtFy2025End"
+          ],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "ebitdaTtm",
+        "value": "63557627000",
+        "unit": "TRY",
+        "period": "2025-07-01 / 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-07-01",
+          "end": "2026-06-30",
+          "periodKind": "YEAR",
+          "shareBasis": null,
+          "fiscalYearStart": "2025-07-01"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 2.3, sirketin kendi 'Duzeltilmis VAFOK' satiri, son dort ceyreklik donem (TTM), 30.06.2026 itibariyla",
+        "metricKey": "ebitda",
+        "evidence": {
+          "id": "ev-froto-ebitda-ttm",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Not 2.3 VAFOK mutabakati, sirketin kendi 'Duzeltilmis VAFOK' (TTM) satiri: 63.557.627 (bin TL), son dort ceyrek (3Ç2025-2Ç2026)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "ebitdaTtm"
+          ],
+          "from": "2025-07-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "ebitdaFy2025",
+        "value": "78387292000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 2.3, sirketin kendi 'Duzeltilmis VAFOK' satiri, 2025 takvim yili (31.12.2025 itibariyla son dort ceyreklik donem)",
+        "metricKey": "ebitda",
+        "evidence": {
+          "id": "ev-froto-ebitda-fy2025",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Not 2.3 VAFOK mutabakati, sirketin kendi 'Duzeltilmis VAFOK' satiri, 2025 takvim yili (1Ç-4Ç2025): 78.387.292 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "ebitdaFy2025"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenue",
+        "value": "427069180000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu, Hasilat, 1 Ocak - 30 Haziran 2026",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-froto-h1-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Hasilat 427.069.180 (1Oc26-30Hz26) / 482.673.106 (1Oc25-30Hz25); Esas faaliyet kari 11.645.149 / 26.724.288; Donem kari 10.336.713 / 17.157.738 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenuePrevious",
+        "value": "482673106000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu karsilastirmali sutun, 1 Ocak - 30 Haziran 2025 (ayni raporun 30.06.2026 satin alma gucunde)",
+        "evidence": {
+          "id": "ev-froto-h1-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Hasilat 427.069.180 (1Oc26-30Hz26) / 482.673.106 (1Oc25-30Hz25); Esas faaliyet kari 11.645.149 / 26.724.288; Donem kari 10.336.713 / 17.157.738 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingProfit",
+        "value": "11645149000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu, Esas faaliyet kari, 1 Ocak - 30 Haziran 2026",
+        "evidence": {
+          "id": "ev-froto-h1-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Hasilat 427.069.180 (1Oc26-30Hz26) / 482.673.106 (1Oc25-30Hz25); Esas faaliyet kari 11.645.149 / 26.724.288; Donem kari 10.336.713 / 17.157.738 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingProfitPrevious",
+        "value": "26724288000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu karsilastirmali sutun, Esas faaliyet kari, 1 Ocak - 30 Haziran 2025",
+        "evidence": {
+          "id": "ev-froto-h1-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Hasilat 427.069.180 (1Oc26-30Hz26) / 482.673.106 (1Oc25-30Hz25); Esas faaliyet kari 11.645.149 / 26.724.288; Donem kari 10.336.713 / 17.157.738 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profit",
+        "value": "10336713000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu, Donem kari (ana ortaklik payi), 1 Ocak - 30 Haziran 2026",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-froto-h1-income",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Hasilat 427.069.180 (1Oc26-30Hz26) / 482.673.106 (1Oc25-30Hz25); Esas faaliyet kari 11.645.149 / 26.724.288; Donem kari 10.336.713 / 17.157.738 (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "revenue",
+            "revenuePrevious",
+            "profit",
+            "profitPrevious",
+            "operatingProfit",
+            "operatingProfitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "profitPrevious",
+        "value": "17157738000",
+        "unit": "TRY",
+        "period": "2025 H1 @ 2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Gelir tablosu karsilastirmali sutun, Donem kari, 1 Ocak - 30 Haziran 2025 (genuine TTM reconstruction icin etiketlendi)",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-froto-h1-income-prev",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Donem kari 17.157.738 (1Oc25-30Hz25), bin TL",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "profitPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "fyProfit2025",
+        "value": "40021393000",
+        "unit": "TRY",
+        "period": "2025 (kendi bazinda)",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Ozkaynak degisim tablosu, 1 Ocak 2026 acilis bakiyesindeki 'Net donem kari' sutunu = FY2025 tam yil net kari (40.021.393 bin TL), 'Transferler' satiriyla gecmis yillar karlarina devredildigi teyit edildi",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-froto-fy2025-equity",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "1 Ocak 2026 itibariyla bakiyeler satirinda Net donem kari 40.021.393; Transferler satirinda ayni tutarin Gecmis yillar karlarina (168.020.241 -> 193.025.031 fark) devredildigi gorulur",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "fyProfit2025"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "operatingCash",
+        "value": "19219209000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Nakit akis tablosu, Isletme Faaliyetlerinden Nakit Akislari, 1 Ocak - 30 Haziran 2026",
+        "evidence": {
+          "id": "ev-froto-h1-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Nakit akis tablosu 1 Ocak - 30 Haziran 2026: Isletme faaliyetlerinden nakit akislari 19.219.209; Amortisman ve itfa gideri 10.403.700; Maddi (7.148.675) + maddi olmayan (2.983.186) duran varlik alimi 10.131.861; Isletme Sermayesinde Gerceklesen Degisimler (2.385.166) (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "depreciation",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "depreciation",
+        "value": "10403700000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 2.3 VAFOK mutabakati / nakit akis tablosu, Amortisman ve itfa gideri, 1 Ocak - 30 Haziran 2026",
+        "evidence": {
+          "id": "ev-froto-h1-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Nakit akis tablosu 1 Ocak - 30 Haziran 2026: Isletme faaliyetlerinden nakit akislari 19.219.209; Amortisman ve itfa gideri 10.403.700; Maddi (7.148.675) + maddi olmayan (2.983.186) duran varlik alimi 10.131.861; Isletme Sermayesinde Gerceklesen Degisimler (2.385.166) (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "depreciation",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "capex",
+        "value": "10131861000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Nakit akis tablosu, Maddi (7.148.675) + maddi olmayan (2.983.186) duran varlik alimindan kaynaklanan nakit cikislari toplami, 1 Ocak - 30 Haziran 2026",
+        "evidence": {
+          "id": "ev-froto-h1-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Nakit akis tablosu 1 Ocak - 30 Haziran 2026: Isletme faaliyetlerinden nakit akislari 19.219.209; Amortisman ve itfa gideri 10.403.700; Maddi (7.148.675) + maddi olmayan (2.983.186) duran varlik alimi 10.131.861; Isletme Sermayesinde Gerceklesen Degisimler (2.385.166) (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "depreciation",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "workingCapitalCash",
+        "value": "-2385166000",
+        "unit": "TRY",
+        "period": "2026 H1",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "periodKind": "H1",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Nakit akis tablosu, Isletme Sermayesinde Gerceklesen Degisimler, 1 Ocak - 30 Haziran 2026 (negatif: isletme sermayesi nakit tuketti)",
+        "evidence": {
+          "id": "ev-froto-h1-cashflow",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Nakit akis tablosu 1 Ocak - 30 Haziran 2026: Isletme faaliyetlerinden nakit akislari 19.219.209; Amortisman ve itfa gideri 10.403.700; Maddi (7.148.675) + maddi olmayan (2.983.186) duran varlik alimi 10.131.861; Isletme Sermayesinde Gerceklesen Degisimler (2.385.166) (bin TL)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "operatingCash",
+            "depreciation",
+            "capex",
+            "workingCapitalCash"
+          ],
+          "from": "2026-01-01",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "dividendTotal",
+        "value": "3.64",
+        "unit": "TRY_SHARE",
+        "period": "2026-10-28",
+        "sourceId": "auditDividend",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-10-28",
+          "end": "2026-10-28",
+          "periodKind": "INSTANT",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "2026 içinde ödenen brüt 3,64 TL/pay; hak kullanım 16.03, ödeme 18.03.2026. Kasım önerisi dahil değildir.",
+        "evidence": {
+          "id": "audit-FROTO-dividendTotal",
+          "sourceId": "auditDividend",
+          "originId": "froto-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/Bildirim/1571600",
+          "locator": "2026 içinde ödenen brüt 3,64 TL/pay; hak kullanım 16.03, ödeme 18.03.2026. Kasım önerisi dahil değildir.",
+          "excerpt": "dividendTotal: 3.64 TRY_SHARE. 2026 içinde ödenen brüt 3,64 TL/pay; hak kullanım 16.03, ödeme 18.03.2026. Kasım önerisi dahil değildir.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-03-12",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendTotal"
+          ],
+          "from": "2026-10-28",
+          "to": "2026-10-28",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "dividendPrevious",
+        "value": "7.76",
+        "unit": "TRY_SHARE",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "auditDividend2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "3509100000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-01",
+        "locator": "2025 ödenen brüt: Nisan 17,10 / Mayıs 10 kat bölünme + Aralık 6,05 = güncel pay bazında 7,76 TL. Aynı ihraççı kökeni; bağımsız kaynak sayılmaz.",
+        "evidence": {
+          "id": "audit-FROTO-dividendPrevious",
+          "sourceId": "auditDividend2025",
+          "originId": "froto-issuer",
+          "collectionId": "bist-audit-2026-11-01",
+          "reviewerId": "codex-bist-audit-20261101",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c4c12ca019c72686eb971f9.pdf",
+          "locator": "2025 ödenen brüt: Nisan 17,10 / Mayıs 10 kat bölünme + Aralık 6,05 = güncel pay bazında 7,76 TL. Aynı ihraççı kökeni; bağımsız kaynak sayılmaz.",
+          "excerpt": "dividendPrevious: 7.76 TRY_SHARE. 2025 ödenen brüt: Nisan 17,10 / Mayıs 10 kat bölünme + Aralık 6,05 = güncel pay bazında 7,76 TL. Aynı ihraççı kökeni; bağımsız kaynak sayılmaz.",
+          "checkedAt": "2026-11-01",
+          "publishedAt": "2026-11-01",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "dividendPrevious"
+          ],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "financialDebt",
+        "value": "168024403000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Not 5, Kisa + uzun vadeli finansal borclar toplami (57.626.834 + 110.397.569), 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "currentAssets",
+        "value": "238888865000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Bilanco, Donen varliklar, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "currentLiabilities",
+        "value": "186133489000",
+        "unit": "TRY",
+        "period": "2026-06-30",
+        "sourceId": "h1PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2026-06-30",
+          "end": "2026-06-30",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-10-29",
+        "locator": "Bilanco, Kisa vadeli yukumlulukler toplami, 30.06.2026",
+        "evidence": {
+          "id": "ev-froto-h1-balance",
+          "sourceId": "h1PrimaryReport",
+          "originId": "fordotosan-ir-site",
+          "collectionId": "froto-financials-2026",
+          "reviewerId": "claude-froto-research-20261030",
+          "ancestorIds": [],
+          "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "locator": "Ozet konsolide finansal tablolar",
+          "excerpt": "Bilanco 30.06.2026: Nakit 56.042.423; KV finansal borc 57.626.834; UV finansal borc 110.397.569; Toplam varliklar 489.237.014; Toplam ozkaynaklar 179.191.213; Donen varliklar 238.888.865; KV yukumlulukler 186.133.489 (bin TL); Odenmis sermaye 3.509.100 bin TL / 3.509.100.000 pay (Not 13)",
+          "checkedAt": "2026-10-29",
+          "publishedAt": "2026-08-04",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": [
+            "cash",
+            "debtShort",
+            "debtLong",
+            "totalAssetsEnd",
+            "parentEquity",
+            "netFinancialDebt",
+            "currentAssets",
+            "currentLiabilities",
+            "financialDebt",
+            "shares"
+          ],
+          "from": "2026-06-30",
+          "to": "2026-06-30",
+          "purchasingPowerDate": "2026-06-30"
+        }
+      }
+    ],
+    "contracts": [
+      {
+        "id": "marketCap",
+        "units": [
+          "TRY_SHARE",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "priceBook",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "bookPerShare",
+        "units": [
+          "TRY",
+          "SHARES"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "revenueGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "profitGrowth",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "COMPARABLE",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "dividendYield",
+        "units": [
+          "TRY_SHARE",
+          "TRY_SHARE"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "operatingMargin",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "currentRatio",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "financialDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "cashProxy",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "netDebt",
+        "units": [
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "SAME",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peHalfYear",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "REPORTED"
+      },
+      {
+        "id": "peRunRate",
+        "units": [
+          "TRY_SHARE",
+          "SHARES",
+          "TRY",
+          "TRY"
+        ],
+        "periodPolicy": "DATED_MARKET",
+        "earningsBasis": "ANNUALIZED_ESTIMATE"
+      }
+    ],
+    "calculations": [
+      {
+        "id": "marketCap",
+        "operation": "MULTIPLY",
+        "inputs": [
+          "price",
+          "shares"
+        ],
+        "unit": "TRY",
+        "precision": 2
+      },
+      {
+        "id": "priceBook",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "parentEquity"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 3
+      },
+      {
+        "id": "bookPerShare",
+        "operation": "RATIO",
+        "inputs": [
+          "parentEquity",
+          "shares"
+        ],
+        "unit": "TRY_SHARE",
+        "precision": 4
+      },
+      {
+        "id": "revenueGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "revenue",
+          "revenuePrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "profitGrowth",
+        "operation": "GROWTH",
+        "inputs": [
+          "profit",
+          "profitPrevious"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "dividendYield",
+        "operation": "PERCENT",
+        "inputs": [
+          "dividendTotal",
+          "price"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "operatingMargin",
+        "operation": "PERCENT",
+        "inputs": [
+          "operatingProfit",
+          "revenue"
+        ],
+        "unit": "PERCENT",
+        "precision": 2
+      },
+      {
+        "id": "currentRatio",
+        "operation": "RATIO",
+        "inputs": [
+          "currentAssets",
+          "currentLiabilities"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "financialDebt",
+        "operation": "SUM",
+        "inputs": [
+          "debtShort",
+          "debtLong"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "cashProxy",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "operatingCash",
+          "capex"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "netDebt",
+        "operation": "SUBTRACT",
+        "inputs": [
+          "financialDebt",
+          "cash"
+        ],
+        "unit": "TRY",
+        "precision": 0
+      },
+      {
+        "id": "peHalfYear",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      },
+      {
+        "id": "peRunRate",
+        "operation": "PRODUCT_OVER_SUM",
+        "inputs": [
+          "price",
+          "shares",
+          "profit",
+          "profit"
+        ],
+        "unit": "MULTIPLE",
+        "precision": 2
+      }
+    ],
+    "presentation": {
+      "schemaVersion": 1,
+      "id": "froto-2026-11-01-v2",
+      "assetId": "watch-bist-froto",
+      "symbol": "FROTO",
+      "isin": "TRAOTOSN91H6",
+      "market": "BIST",
+      "sector": "Otomotiv - binek ve ticari arac/traktor uretimi",
+      "contentKey": "researchFrotoAudit20261101",
+      "asOf": "2026-10-29",
+      "retrievedAt": "2026-11-01",
+      "timezone": "Europe/Istanbul",
+      "financialPeriod": "2026-01-01 / 2026-06-30",
+      "priceAt": "2026-10-28T18:10:00+03:00",
+      "status": "PARTIAL",
+      "valuationStatus": "NOT_ASSESSED",
+      "review": {
+        "status": "NEEDS_REVIEW",
+        "independent": false,
+        "key": "review"
+      },
+      "debtLines": [],
+      "disclosureScan": {
+        "from": "2026-07-29",
+        "to": "2026-10-29",
+        "status": "PARTIAL",
+        "sourceId": "disclosureList",
+        "pendingDates": [
+          "2026-07-29",
+          "2026-07-22",
+          "2026-08-18",
+          "2026-09-21",
+          "2026-10-01",
+          "2026-10-23"
+        ]
+      },
+      "disclosures": [
+        {
+          "id": "dividend-proposal",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-10-27T18:20:05+03:00",
+          "eventDate": "2026-10-27",
+          "key": "dividendProposal",
+          "impact": "HIGH",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "egm-2026-11-24",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-10-27T18:20:45+03:00",
+          "eventDate": "2026-10-27",
+          "key": "egmNotice",
+          "impact": "MEDIUM",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "q3-calendar",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-10-19T18:29:54+03:00",
+          "eventDate": "2026-10-19",
+          "key": "q3Calendar",
+          "impact": "LOW",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "independent-board-member",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-09-29T20:35:33+03:00",
+          "eventDate": "2026-09-29",
+          "key": "boardMemberApproval",
+          "impact": "LOW",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        },
+        {
+          "id": "h1-results-published",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-08-04T21:38:53+03:00",
+          "eventDate": "2026-08-04",
+          "key": "h1Results",
+          "impact": "HIGH",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": false
+        },
+        {
+          "id": "production-halt-july",
+          "sourceId": "disclosureList",
+          "publishedAt": "2026-07-03T18:30:56+03:00",
+          "eventDate": "2026-07-03",
+          "key": "productionHalt",
+          "impact": "MEDIUM",
+          "isUpdate": false,
+          "isCorrection": false,
+          "previousDisclosureDate": null,
+          "attachmentReview": "NONE",
+          "contextOnly": true
+        }
+      ],
+      "coverage": [
+        {
+          "section": "overview",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "financials",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "growth",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "dividend",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "valuation",
+          "status": "COMPLETE"
+        },
+        {
+          "section": "technical",
+          "status": "MISSING"
+        },
+        {
+          "section": "news",
+          "status": "PARTIAL"
+        },
+        {
+          "section": "history",
+          "status": "COMPLETE"
+        }
+      ],
+      "calculations": [
+        {
+          "id": "marketCap",
+          "operation": "MULTIPLY",
+          "inputs": [
+            "price",
+            "shares"
+          ],
+          "unit": "TRY",
+          "precision": 2
+        },
+        {
+          "id": "priceBook",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "parentEquity"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 3
+        },
+        {
+          "id": "bookPerShare",
+          "operation": "RATIO",
+          "inputs": [
+            "parentEquity",
+            "shares"
+          ],
+          "unit": "TRY_SHARE",
+          "precision": 4
+        },
+        {
+          "id": "revenueGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "revenue",
+            "revenuePrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "profitGrowth",
+          "operation": "GROWTH",
+          "inputs": [
+            "profit",
+            "profitPrevious"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "dividendYield",
+          "operation": "PERCENT",
+          "inputs": [
+            "dividendTotal",
+            "price"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "operatingMargin",
+          "operation": "PERCENT",
+          "inputs": [
+            "operatingProfit",
+            "revenue"
+          ],
+          "unit": "PERCENT",
+          "precision": 2
+        },
+        {
+          "id": "currentRatio",
+          "operation": "RATIO",
+          "inputs": [
+            "currentAssets",
+            "currentLiabilities"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "financialDebt",
+          "operation": "SUM",
+          "inputs": [
+            "debtShort",
+            "debtLong"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "cashProxy",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "operatingCash",
+            "capex"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "netDebt",
+          "operation": "SUBTRACT",
+          "inputs": [
+            "financialDebt",
+            "cash"
+          ],
+          "unit": "TRY",
+          "precision": 0
+        },
+        {
+          "id": "peHalfYear",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        },
+        {
+          "id": "peRunRate",
+          "operation": "PRODUCT_OVER_SUM",
+          "inputs": [
+            "price",
+            "shares",
+            "profit",
+            "profit"
+          ],
+          "unit": "MULTIPLE",
+          "precision": 2
+        }
+      ],
+      "sources": [
+        {
+          "id": "priceSource",
+          "title": "Doviz.com - FROTO",
+          "url": "https://borsa.doviz.com/hisseler/froto-ford-otosan",
+          "period": "2026-10-29",
+          "locator": "Anlik fiyat, piyasa degeri (pay sayisi capraz dogrulamasi icin kullanildi)",
+          "observedAt": "2026-10-29",
+          "publishedAt": null
+        },
+        {
+          "id": "h1PrimaryReport",
+          "title": "Ford Otosan - 30.06.2026 Ozet Konsolide Finansal Tablolar ve Sinirli Denetim Raporu",
+          "url": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+          "publishedAt": "2026-08-04",
+          "period": "2026 H1 / 2025 H1 (ozkaynak degisim tablosunda 1 Ocak 2025 ve 1 Ocak 2026 acilis bakiyeleri dahil)",
+          "locator": "Bilanco s.1-2, gelir tablosu s.3, ozkaynak degisim tablosu s.5-6, nakit akis tablosu s.6, Not 2.3 Net Finansal Borc/VAFOK mutabakati s.15-16, Not 5 Finansal Borclar s.18-20"
+        },
+        {
+          "id": "dividendDecision2026",
+          "title": "KAP (ikincil derleme) - FROTO Kar Payi Dagitim Islemlerine Iliskin Bildirim",
+          "url": "https://borsacoo.com/firma/FROTO/bildirimler",
+          "publishedAt": "2026-10-27",
+          "period": "2026-10-27",
+          "locator": "Hisse basina net 2,6095 TL nakit temettu onerisi; dogrudan KAP bildirim ID'si bu oturumda dogrulanamadi"
+        },
+        {
+          "id": "disclosureList",
+          "title": "Borsacoo - FROTO KAP bildirim listesi (ikincil derleme)",
+          "url": "https://borsacoo.com/firma/FROTO/bildirimler",
+          "publishedAt": null,
+          "period": "2026-07-29 / 2026-10-29",
+          "locator": "KAP bildirim listesi turetilmis derleme; dogrudan KAP arayuzune bu oturumda erisilemedi (PARTIAL)",
+          "observedAt": "2026-10-29"
+        },
+        {
+          "id": "yahooFinance",
+          "title": "Yahoo Finance - FROTO.IS aylik fiyat/temettu/bonus serisi",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS",
+          "publishedAt": null,
+          "period": "2000-05 / 2026-10",
+          "locator": "Ham JSON; ilk islem tarihi 2000-05-10",
+          "observedAt": "2026-10-29"
+        },
+        {
+          "id": "week52Search",
+          "title": "Coklu ikincil kaynak (doviz.com tarihsel veri turevleri)",
+          "url": "https://borsa.doviz.com/hisseler/froto-ford-otosan/tarihsel-veri",
+          "publishedAt": null,
+          "period": "2025-10 / 2026-10",
+          "locator": "52 hafta araligi icin birden fazla ikincil kaynak karsilastirildi; en sik gorulen deger kullanildi, kucuk kaynak farki raporda belirtildi",
+          "observedAt": "2026-10-29"
+        },
+        {
+          "id": "auditMarket",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+          "publishedAt": "2026-10-28",
+          "title": "Yahoo Finance günlük kapanış ve fiyat aralığı",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
+          "observedAt": "2026-11-01"
+        },
+        {
+          "id": "auditDividend",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1571600",
+          "publishedAt": "2026-03-12",
+          "title": "Ford Otosan 2026 kesinleşmiş kâr payı",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-01"
+        },
+        {
+          "id": "auditDividend2025",
+          "url": "https://news-content.foreks.com/attachments/kap/4028328d9c4c12ca019c72686eb971f9.pdf",
+          "publishedAt": null,
+          "title": "Ford Otosan 2025 faaliyet raporu (KAP eki kopyası)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-01"
+        }
+      ],
+      "facts": [
+        {
+          "id": "price",
+          "value": "69.20",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-28",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "shares",
+          "value": "3509100000",
+          "unit": "SHARES",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "week52Low",
+          "value": "62.30",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-28",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "week52High",
+          "value": "135.40",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-28",
+          "sourceId": "auditMarket"
+        },
+        {
+          "id": "cash",
+          "value": "56042423000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "debtShort",
+          "value": "57626834000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "debtLong",
+          "value": "110397569000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "totalAssetsEnd",
+          "value": "489237014000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "parentEquity",
+          "value": "179191213000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityFy2025End",
+          "value": "183726843000",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityFy2024End",
+          "value": "177601859000",
+          "unit": "TRY",
+          "period": "2024-12-31",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "parentEquityH12025End",
+          "value": "185558984000",
+          "unit": "TRY",
+          "period": "2025-06-30",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "parentEquity"
+        },
+        {
+          "id": "netFinancialDebt",
+          "value": "111981980000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "netFinancialDebt"
+        },
+        {
+          "id": "netFinancialDebtFy2025End",
+          "value": "116808300000",
+          "unit": "TRY",
+          "period": "2025-12-31",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "netFinancialDebt"
+        },
+        {
+          "id": "ebitdaTtm",
+          "value": "63557627000",
+          "unit": "TRY",
+          "period": "2025-07-01 / 2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "ebitda"
+        },
+        {
+          "id": "ebitdaFy2025",
+          "value": "78387292000",
+          "unit": "TRY",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "ebitda"
+        },
+        {
+          "id": "revenue",
+          "value": "427069180000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "revenue"
+        },
+        {
+          "id": "revenuePrevious",
+          "value": "482673106000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "operatingProfit",
+          "value": "11645149000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "operatingProfitPrevious",
+          "value": "26724288000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "profit",
+          "value": "10336713000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "profit"
+        },
+        {
+          "id": "profitPrevious",
+          "value": "17157738000",
+          "unit": "TRY",
+          "period": "2025 H1 @ 2026-06-30",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "profit"
+        },
+        {
+          "id": "fyProfit2025",
+          "value": "40021393000",
+          "unit": "TRY",
+          "period": "2025 (kendi bazinda)",
+          "sourceId": "h1PrimaryReport",
+          "metricKey": "profit"
+        },
+        {
+          "id": "operatingCash",
+          "value": "19219209000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "depreciation",
+          "value": "10403700000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "capex",
+          "value": "10131861000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "workingCapitalCash",
+          "value": "-2385166000",
+          "unit": "TRY",
+          "period": "2026 H1",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "dividendTotal",
+          "value": "3.64",
+          "unit": "TRY_SHARE",
+          "period": "2026-10-28",
+          "sourceId": "auditDividend"
+        },
+        {
+          "id": "dividendPrevious",
+          "value": "7.76",
+          "unit": "TRY_SHARE",
+          "period": "2025-01-01 / 2025-12-31",
+          "sourceId": "auditDividend2025"
+        },
+        {
+          "id": "financialDebt",
+          "value": "168024403000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "currentAssets",
+          "value": "238888865000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        },
+        {
+          "id": "currentLiabilities",
+          "value": "186133489000",
+          "unit": "TRY",
+          "period": "2026-06-30",
+          "sourceId": "h1PrimaryReport"
+        }
+      ],
+      "narrativeStale": true
+    },
+    "revision": 2,
+    "financialHistory": [
+      {
+        "year": "2021",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2022",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2023",
+        "factIds": [],
+        "calculationIds": []
+      },
+      {
+        "year": "2024",
+        "factIds": [
+          "parentEquityFy2024End"
+        ],
+        "calculationIds": []
+      },
+      {
+        "year": "2025",
+        "factIds": [
+          "parentEquityFy2025End",
+          "netFinancialDebtFy2025End",
+          "ebitdaFy2025",
+          "fyProfit2025"
+        ],
+        "calculationIds": []
+      }
+    ]
+  },
+  {
+    "schemaVersion": 2,
     "version": "froto-2026-10-30-v1",
     "context": {
       "assetType": "EQUITY",

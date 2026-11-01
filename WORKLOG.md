@@ -8,13 +8,13 @@
 
 **Son güncelleyen:** Codex — **Tarih:** 2026-11-01
 
-PAGYO kaynaklı araştırması `/takip/watch-bist-pagyo` yoluna eklendi. `pagyo-analysis-reports.json`: 33 fact, 14 hesap, REIT; `pagyo-approximate-history.json`: 161 ay, 29 temettü. `researchBundle.ts` ve TR/EN `researchPagyo` tamamlandı. Veri kesimi 31 Ekim, fiyat 30 Ekim 113 TL, finansallar 2026 H1; tamamlanma 1 Kasım. TTM F/K 5,35; PD/DD 0,55; temettü verimi %5,09. Güncel doluluk/ekspertiz çelişkisi ve KAP tarama açığı nedeniyle PARTIAL / NEEDS_REVIEW; adil değer NOT_ASSESSED.
+On BIST şirketinin mevcut araştırmasına sürüm koruyan veri denetimi uygulandı. TUPRS v8; diğer dokuz şirket v2. DOAS net borç/capex ve Q2 kesin tutarları; ISMEN TMS 29, TTM/ROE ve fonlama; GYO nakit karşılama; brüt/net temettü ve günlük fiyat tarihleri düzeltildi. Eski raporlar ve kullanıcı verileri korundu.
 
-190.812 TL banka borcu yanında %24 faizli 222 milyon TL arsa ticari borcu ayrı açıklandı; geniş kapsam net nakit 56,274 milyon TL. KAP 1597263 nihai tek 5,7545 TL dağıtımı, 11 Mayıs hak / 13 Mayıs ödeme ayrımı kullanıldı. 2020 sağlayıcı temettüsü 0,226 yerine resmi 0,023 TL düzeltildi. 10 yıllık aylık 1.000 USD yeniden yatırım yaklaşık 400.365,48 USD; 15/20 yıl LISTING nedeniyle hesaplanamıyor.
+F/K sunumu yeni zarar dönemini eski kârlı yılla örtmez; tek ara dönem TTM sayılmaz. Günlük fiyat/kur serileri gerçek işlem/gözlem tarihlerine taşındı. Beş şirketin temettü tarihçesi çelişkili olduğundan PRICE_ONLY; eski olaylar silinmedi. Aynı kökenli kaynaklar bağımsız sayılmadı.
 
-Derlemedeki bellek hatası için `vite.config.ts` araştırma JSON ve çevirileri ayrı parçalara böler. `ResearchDebt.tsx` başka şirketlere taşınan Tüpraş açıklamasını genel kapsam metniyle değiştirdi; kaynak başlığını raporun kendi kaynağından alır. PAGYO ve sayfa regresyonları yazıldı. TypeScript + üretim build, hedefli lint/format ve decimal replay başarılı. Vitest geçici proje politikası gereği çalıştırılmadı. Üretim Chrome QA: iki mod, 13 bölüm, beş genişlik, TR/EN, açık/koyu tema; taşma/ham anahtar/runtime hatası yok. Kullanıcının 5173 sunucusu korundu.
+Tam kapsam henüz bitmedi: yıllık finansal seriler, tarihsel ödeme mutabakatı, ISMEN düzenleyici sermaye yeterliliği, GYO düzeltilmiş NAD/kira nakdi ve hesaplanabilir değerleme senaryoları açık. Ayrıntı ve kaynak/değişiklik matrisi [docs/research-audit-20261101/DENETIM.md](docs/research-audit-20261101/DENETIM.md) ve audit.json içinde.
 
-Rapor, sıralı aynı-ajan incelemesi, kaynaklar, hesap izleri ve ekran kanıtları `../outputs/research-pagyo-20261031/` altında; `final-check.json` son kontrolleri kaydeder. Bağımsız inceleme değildir. Sırada kullanıcı incelemesi ve yeni finansal/ekspertiz/KAP verisiyle güncelleme. Önceki değişiklikler korundu; backend/DB yazma, commit/push yok.
+TypeScript uygulama denetimi: 0 hata. Üretim Vite build: PASS. İlgili testler: 97/97 geçti (0 başarısız). Başsız Chrome üretim QA: 40 kontrol, 0 taşma, 0 ham çeviri anahtarı, 0 çalışma zamanı hatası. Kolay/Detaylı modlar, 390/1440 px ve on şirket kontrol edildi. Derleme büyük paket boyutu uyarısı verir; hata değildir. Sırada açık kaynak/veri kapsamının tamamlanması. Commit/push/backend yazımı yapılmadı; 5173 sunucusuna dokunulmadı.
 
 ---
 
@@ -197,3 +197,5 @@ Sırada: kullanıcı incelemesi; yeni finansal rapor yayımlandığında güncel
 
 ---
 
+
+- **2026-11-01 — Codex:** On BIST araştırması sürüm korunarak denetlendi; kaynak, dönem, temettü ve simülasyon hataları düzeltildi. Kalan veri açıkları ve son doğrulama sonuçları docs/research-audit-20261101 altında kaydedildi.

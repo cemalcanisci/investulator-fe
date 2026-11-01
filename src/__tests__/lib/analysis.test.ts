@@ -6,7 +6,15 @@ import { selectAnalysisProfile } from '@/lib/analysisProfiles';
 import { AnalysisRepository, compareReports } from '@/lib/analysisRepository';
 import { evaluateValuation, VALUATION_METHODS } from '@/lib/valuation';
 
-const report = parseAnalysisReports(snapshots)[0];
+const latest = parseAnalysisReports(snapshots)[0];
+const report = {
+  ...latest,
+  facts: latest.facts.map((fact) =>
+    fact.id === 'price'
+      ? { ...fact, verification: 'UNVERIFIED' as const }
+      : fact,
+  ),
+};
 function namedCalculation(id: string): (typeof report.calculations)[number] {
   const found = report.calculations.find((c) => c.id === id);
   if (!found) {

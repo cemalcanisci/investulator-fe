@@ -76,7 +76,9 @@ export function isMetricModeled(
     );
   }
   const datedInputs = DATED_RATIOS[id];
-  if (!datedInputs?.every((input) => report.facts.some((f) => f.id === input))) {
+  if (
+    !datedInputs?.every((input) => report.facts.some((f) => f.id === input))
+  ) {
     return false;
   }
   // peHalfYear/peRunRate are framed as "6 aylık kâr"; only honest for a report
@@ -523,6 +525,21 @@ function ttmPresentation(report: AnalysisReport): RatioPresentation {
     strictStatus: 'BLOCKED',
   };
   const first = ttm.inputs[0];
+  const latestProfit = latestMetricFact(report, 'profit');
+  const newerLoss =
+    ttm.kind === 'ANNUAL' &&
+    latestProfit &&
+    first &&
+    latestProfit.basis.end > first.basis.end &&
+    latestProfit.basis.end <= asOf &&
+    compareDecimals(latestProfit.value, '0') <= 0;
+  if (newerLoss || ttm.kind === 'INTERIM') {
+    return {
+      ...base,
+      inputs: newerLoss ? [...base.inputs, latestProfit] : base.inputs,
+      issues: [...base.issues, newerLoss ? 'nonPositiveEarnings' : 'ttm'],
+    };
+  }
   if (
     !ttm.value ||
     !market.value ||
@@ -639,9 +656,7 @@ function selectedNavRatio(
   if (
     !market.value ||
     !price ||
-    (report.calculations.some(
-      (calculation) => calculation.id === 'priceNav',
-    ) &&
+    (report.calculations.some((calculation) => calculation.id === 'priceNav') &&
       (contracts.length !== 1 ||
         contracts[0].units.length !== base.inputs.length ||
         base.inputs.some(

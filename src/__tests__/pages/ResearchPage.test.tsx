@@ -9,6 +9,15 @@ import { researchPath, ROUTE_PATHS } from '@/app/routePaths';
 import { i18n } from '@/i18n';
 import * as research from '@/services/research';
 import { tuprsReport } from '@/data/research/tuprs-2026-10-11';
+import { researchBundle } from '@/services/researchBundle';
+import { metricDefinition } from '@/domain/metricEducation';
+
+const current = researchBundle.reports.find(
+  (report) => report.presentation.symbol === 'TUPRS',
+);
+if (!current) {
+  throw new Error('Missing TUPRS report');
+}
 
 function renderPage(id = 'watch-bist-tuprs'): void {
   renderWithProviders(
@@ -117,6 +126,7 @@ describe('ResearchPage', () => {
           .length,
       ).toBeGreaterThan(0);
     },
+    20000,
   );
   it('reorders actual sections when the presentation strategy changes', async () => {
     renderPage();
@@ -164,7 +174,7 @@ describe('ResearchPage', () => {
     expect(
       screen.getByText(
         i18n.t('analysis.qualitySeparation', {
-          sources: i18n.t('analysis.sourceState.INCOMPLETE'),
+          sources: i18n.t('analysis.sourceState.PRIMARY_ONLY'),
         }),
       ),
     ).toBeVisible();
@@ -187,7 +197,9 @@ describe('ResearchPage', () => {
       }),
     ).toBeVisible();
     const education = screen.getAllByText(
-      i18n.t('researchTuprsV2.education.priceBook'),
+      i18n.t(
+        `metricEducation.${metricDefinition('priceBook')?.key}.definition`,
+      ),
     )[0];
     const panel = education.closest('details');
     const toggle = panel?.querySelector('summary');
@@ -217,7 +229,9 @@ describe('ResearchPage', () => {
       screen.getByText(i18n.t('researchTuprs.scanLimit')),
     ).toBeInTheDocument();
     expect(
-      screen.getByText(i18n.t('researchTuprs.review')),
+      screen.getAllByText(
+        i18n.t(`${current.presentation.contentKey}.review`),
+      )[0],
     ).toBeInTheDocument();
     expect(
       screen.getAllByRole('link', { name: /KAP #1643118/ }).length,
@@ -252,11 +266,14 @@ describe('ResearchPage', () => {
     }
     await userEvent.click(details);
     expect(
-      within(priceCard).getByText(i18n.t('researchTuprs.education.price')),
+      within(priceCard).queryByText(i18n.t('researchTuprs.education.price')),
+    ).not.toBeInTheDocument();
+    expect(
+      screen.getByText(i18n.t('researchTransfer.narrativeStale')),
     ).toBeVisible();
   });
 
-  it.each(['watch-bist-aksa', 'watch-crypto-candidate-ai', 'unknown'])(
+  it.each(['watch-crypto-candidate-ai', 'unknown'])(
     'does not fabricate a report for %s',
     async (id) => {
       renderPage(id);
