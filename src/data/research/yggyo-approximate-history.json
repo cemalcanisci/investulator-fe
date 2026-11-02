@@ -40,6 +40,13 @@
       "title": "USD/TRY günlük gözlem; TL / USD",
       "origin": "Yahoo Finance; tek veri sağlayıcısı",
       "retrievedAt": "2026-11-01"
+    },
+    {
+      "id": "annualReport2025Dividends",
+      "url": "https://belgeler.yenigimatgyo.com.tr/jgIJM405Z3St/Yeni%20Gimat%2031.12.2025%20%C4%B0mzal%C4%B1%20Faaliyet%20Raporu.pdf",
+      "title": "Yeni Gimat GYO - 31.12.2025 Faaliyet Raporu, 2013-2025 Kar Payi Dagitim Tablosu",
+      "origin": "Yeni Gimat GYO - birincil kaynak (faaliyet raporu)",
+      "retrievedAt": "2026-11-02"
     }
   ],
   "coverage": {
@@ -47,37 +54,29 @@
       "from": "2013-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2013-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2013-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "yahoo-events"
-      ],
+      "sourceIds": ["yahoo-events"],
       "method": "Yahoo Finance splits olay listesi; sirketin 2015/2018/2022 bedelsiz sermaye artirimlari (Yahoo tarafindan split olarak etiketlenmis, gercekte CLAUDE.md BONUS/SPLIT ayrimina gore bedelsiz pay dagitimidir)."
     },
     "dividends": {
       "from": "2013-08-31",
       "to": "2026-09-30",
-      "state": "CONFLICT",
-      "sourceIds": [
-        "yahoo-events"
-      ],
-      "method": "Yahoo Finance dividends olay listesi (2014-2026, ham/o donemki pay adedine gore); 2025 ve 2026 odeme tarihleri ayrica haber kaynaklariyla capraz dogrulandi (bkz. arastirma raporu), diger yillarda saglayicinin ay-sonu hizali tarihi kullanildi (gun hassasiyeti saglanamadi). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
+      "state": "REVIEWED",
+      "sourceIds": ["yahoo-events", "annualReport2025Dividends"],
+      "method": "Yahoo Finance dividends olay listesi gercek odeme tarihleri (gun hassasiyeti, YGGYO-full.json chart.result[0].events.dividends) ile sirketin kendi 31.12.2025 Faaliyet Raporu 5.5 Kar Dagitim Politikasi tablosundaki (\"2013-2025 yillari arasinda dagitilan kar paylarina iliskin bilgiler\", -raw pdftotext ile dogru hizalanmis) gercek brut pay basina tutarlar capraz dogrulandi. 2023-2026 odemelerinde Yahoo ve sirket tablosu zaten birebir ortusuyordu (bonus sonrasi donem, bolunme farki yok). 2014-2022 odemelerinde onceki rawGrossPerShare degerleri Yahoo nun GUNCEL (2026) pay bazina onceden bolunmus degerleriydi; motor bu degerleri exDate-shareBasisDate arasindaki bonus carpanlarina TEKRAR boldugu icin cift bolme hatasi olusuyordu (2014 icin 4,5x, 2016-2018 icin 2,25x, 2019-2022 icin 1,5x kucuk gosterim) - sirketin kendi tablosundaki TARIHSEL (o yilin kendi pay sayisi bazinda) brut tutarla duzeltildi: 2014 1,064 / 2015 1,260 / 2016 0,837 / 2017 0,910 / 2018 1,070 / 2019 0,931 / 2020 1,030 / 2021 1,030 / 2022 1,500 TL (tutarlar 241.920.000 TL toplam sermaye / ilgili yilin bonus-oncesi pay sayisina bolunerek capraz dogrulandi, tam ortusme). 2014-2024 odeme tarihleri Yahoo gun-hassasiyetli gercek tarihe guncellendi (onceki surum ay-sonu yer tutucuydu). Ex-tarih (hak kullanim) gun hassasiyetinde ayrica dogrulanamadi; odeme tarihiyle ayni kabul edildi (acikca belirtilir, uydurma gun farki yok). KAP bildirim bazinda tek tek hak kullanim tarihi dogrulamasi henuz yapilmadi."
     }
   },
   "monthly": [
@@ -1372,78 +1371,78 @@
   "dividends": [
     {
       "id": "div-2014",
-      "exDate": "2014-04-30",
-      "payDate": "2014-04-30",
-      "rawGrossPerShare": "0.236546",
+      "exDate": "2014-05-27",
+      "payDate": "2014-05-27",
+      "rawGrossPerShare": "1.064000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2015",
-      "exDate": "2015-04-30",
-      "payDate": "2015-04-30",
-      "rawGrossPerShare": "0.280000",
+      "exDate": "2015-05-28",
+      "payDate": "2015-05-28",
+      "rawGrossPerShare": "1.260000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2016",
-      "exDate": "2016-04-30",
-      "payDate": "2016-04-30",
-      "rawGrossPerShare": "0.372024",
+      "exDate": "2016-05-20",
+      "payDate": "2016-05-20",
+      "rawGrossPerShare": "0.837000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2017",
-      "exDate": "2017-03-31",
-      "payDate": "2017-03-31",
-      "rawGrossPerShare": "0.404444",
+      "exDate": "2017-04-11",
+      "payDate": "2017-04-11",
+      "rawGrossPerShare": "0.910000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2018",
-      "exDate": "2018-03-31",
-      "payDate": "2018-03-31",
-      "rawGrossPerShare": "0.475556",
+      "exDate": "2018-04-12",
+      "payDate": "2018-04-12",
+      "rawGrossPerShare": "1.070000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2019",
-      "exDate": "2019-03-31",
-      "payDate": "2019-03-31",
-      "rawGrossPerShare": "0.620667",
+      "exDate": "2019-04-19",
+      "payDate": "2019-04-19",
+      "rawGrossPerShare": "0.931000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2020",
-      "exDate": "2020-03-31",
-      "payDate": "2020-03-31",
-      "rawGrossPerShare": "0.686667",
+      "exDate": "2020-04-07",
+      "payDate": "2020-04-07",
+      "rawGrossPerShare": "1.030000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2021",
-      "exDate": "2021-02-28",
-      "payDate": "2021-02-28",
-      "rawGrossPerShare": "0.686667",
+      "exDate": "2021-03-30",
+      "payDate": "2021-03-30",
+      "rawGrossPerShare": "1.030000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2022",
-      "exDate": "2022-03-31",
-      "payDate": "2022-03-31",
-      "rawGrossPerShare": "1.000000",
+      "exDate": "2022-04-11",
+      "payDate": "2022-04-11",
+      "rawGrossPerShare": "1.500000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2023",
-      "exDate": "2023-03-31",
-      "payDate": "2023-03-31",
+      "exDate": "2023-04-11",
+      "payDate": "2023-04-11",
       "rawGrossPerShare": "1.750000",
       "sourceId": "yahoo-events"
     },
     {
       "id": "div-2024",
-      "exDate": "2024-06-30",
-      "payDate": "2024-06-30",
+      "exDate": "2024-07-09",
+      "payDate": "2024-07-09",
       "rawGrossPerShare": "3.110000",
       "sourceId": "yahoo-events"
     },
@@ -1462,11 +1461,7 @@
       "sourceId": "yahoo-events"
     }
   ],
-  "expectedActionIds": [
-    "bonus-2015",
-    "bonus-2018",
-    "bonus-2022"
-  ],
+  "expectedActionIds": ["bonus-2015", "bonus-2018", "bonus-2022"],
   "expectedDividendIds": [
     "div-2014",
     "div-2015",

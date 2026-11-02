@@ -82,9 +82,7 @@ describe('external research XLSX integration', () => {
       ),
     ).toBe(
       canonical(
-        researchBundle.reports.filter(
-          (r) => r.presentation.symbol === 'TUPRS',
-        ),
+        researchBundle.reports.filter((r) => r.presentation.symbol === 'TUPRS'),
       ),
     );
     const exported = await exportResearchWorkbook(result.bundle);

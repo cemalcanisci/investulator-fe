@@ -54,37 +54,28 @@
       "from": "2006-09-01",
       "to": "2026-10-27",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2006-09-01",
       "to": "2026-10-27",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2006-09-01",
       "to": "2026-10-27",
       "state": "REVIEWED",
-      "sourceIds": [
-        "investingPrices"
-      ],
+      "sourceIds": ["investingPrices"],
       "method": "Investing.com \"Hissesi Kac Kez Bolundu?\" SSS yaniti (0) ve aylik fiyat serisinde 2010-11 civarinda sureksizlik gozlenmemesiyle dogrulandi. Yahoo Finance ayri sorgusunda gorulen tek bir 2:1 bolunme kaydi (2010-11-25) bu ikinci kaynakla celisiyor; fiyat serisinde karsiligi bulunamadigi icin kullanilmadi, bolunme yok kabul edildi."
     },
     "dividends": {
       "from": "2006-09-01",
       "to": "2026-10-27",
       "state": "REVIEWED",
-      "sourceIds": [
-        "investingDividends",
-        "yahooDividends"
-      ],
+      "sourceIds": ["investingDividends", "yahooDividends"],
       "method": "Investing.com temettu takvimi (2008-2026) ile Yahoo Finance DOAS.IS dividends olay listesi karsilastirildi; ortusen 18 kayit tarih ve tutar olarak birebir eslesti. 2007-05-15 kaydi yalnizca Yahoo kaynaginda bulundugundan tek kaynakli olarak isaretlendi."
     }
   },

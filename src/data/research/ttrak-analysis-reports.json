@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "ttrak-2026-11-01-v2",
+    "version": "ttrak-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -139,9 +134,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52Low"
-          ],
+          "claims": ["week52Low"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -182,9 +175,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52High"
-          ],
+          "claims": ["week52High"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -851,11 +842,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -895,11 +882,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -939,11 +922,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -983,9 +962,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -1085,106 +1062,1220 @@
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
         }
+      },
+      {
+        "id": "fyRevenue2021",
+        "value": "11644197445",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2021 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+        "evidence": {
+          "id": "ev-ttrak-2021-fyRevenue",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2021 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "excerpt": "fyRevenue2021: 11644197445 TRY. Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2021 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "fyProfit2021",
+        "value": "1322187577",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2021 FY sütunu.",
+        "evidence": {
+          "id": "ev-ttrak-2021-fyProfit",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2021 FY sütunu.",
+          "excerpt": "fyProfit2021: 1322187577 TRY. Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2021 FY sütunu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "parentEquityFy2021End",
+        "value": "2050994098",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2021.",
+        "evidence": {
+          "id": "ev-ttrak-2021-parentEquity",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2021.",
+          "excerpt": "parentEquity2021: 2050994098 TRY. Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2021.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFy2021End"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cashFy2021End",
+        "value": "1566586803",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2021.",
+        "evidence": {
+          "id": "ev-ttrak-2021-cash",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2021.",
+          "excerpt": "cash2021: 1566586803 TRY. Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2021.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2021End"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "financialDebtFy2021End",
+        "value": "1134841687",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2021. Ticari borçlar hariçtir.",
+        "evidence": {
+          "id": "ev-ttrak-2021-financialDebt",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2021. Ticari borçlar hariçtir.",
+          "excerpt": "financialDebt2021: 1134841687 TRY. Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2021. Ticari borçlar hariçtir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2021End"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "operatingCashFy2021",
+        "value": "886046934",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2021 FY.",
+        "evidence": {
+          "id": "ev-ttrak-2021-operatingCash",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2021 FY.",
+          "excerpt": "operatingCash2021: 886046934 TRY. Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2021 FY.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["operatingCashFy2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "capexFy2021",
+        "value": "322891883",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "ttrak2021AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2021 FY (nakit çıkışı, mutlak değer).",
+        "evidence": {
+          "id": "ev-ttrak-2021-capex",
+          "sourceId": "ttrak2021AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2021",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2021 FY (nakit çıkışı, mutlak değer).",
+          "excerpt": "capex2021: 322891883 TRY. Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2021 FY (nakit çıkışı, mutlak değer).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2022-02-14",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capexFy2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "fyRevenue2022",
+        "value": "21834630573",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2022 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+        "evidence": {
+          "id": "ev-ttrak-2022-fyRevenue",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2022 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "excerpt": "fyRevenue2022: 21834630573 TRY. Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2022 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "fyProfit2022",
+        "value": "2971018561",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2022 FY sütunu.",
+        "evidence": {
+          "id": "ev-ttrak-2022-fyProfit",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2022 FY sütunu.",
+          "excerpt": "fyProfit2022: 2971018561 TRY. Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2022 FY sütunu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "parentEquityFy2022End",
+        "value": "3638213829",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2022.",
+        "evidence": {
+          "id": "ev-ttrak-2022-parentEquity",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2022.",
+          "excerpt": "parentEquity2022: 3638213829 TRY. Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2022.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFy2022End"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cashFy2022End",
+        "value": "4416872941",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2022.",
+        "evidence": {
+          "id": "ev-ttrak-2022-cash",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2022.",
+          "excerpt": "cash2022: 4416872941 TRY. Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2022.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2022End"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "financialDebtFy2022End",
+        "value": "3890193540",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2022. Ticari borçlar hariçtir.",
+        "evidence": {
+          "id": "ev-ttrak-2022-financialDebt",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2022. Ticari borçlar hariçtir.",
+          "excerpt": "financialDebt2022: 3890193540 TRY. Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2022. Ticari borçlar hariçtir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2022End"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "operatingCashFy2022",
+        "value": "2884210353",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2022 FY.",
+        "evidence": {
+          "id": "ev-ttrak-2022-operatingCash",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2022 FY.",
+          "excerpt": "operatingCash2022: 2884210353 TRY. Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2022 FY.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["operatingCashFy2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "capexFy2022",
+        "value": "680808379",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "ttrak2022AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "53369000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2022 FY (nakit çıkışı, mutlak değer).",
+        "evidence": {
+          "id": "ev-ttrak-2022-capex",
+          "sourceId": "ttrak2022AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2022",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2022 FY (nakit çıkışı, mutlak değer).",
+          "excerpt": "capex2022: 680808379 TRY. Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2022 FY (nakit çıkışı, mutlak değer).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capexFy2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "fyRevenue2023",
+        "value": "58435633948",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2023 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+        "evidence": {
+          "id": "ev-ttrak-2023-fyRevenue",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2023 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "excerpt": "fyRevenue2023: 58435633948 TRY. Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2023 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2023",
+        "value": "9341958870",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2023 FY sütunu.",
+        "evidence": {
+          "id": "ev-ttrak-2023-fyProfit",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2023 FY sütunu.",
+          "excerpt": "fyProfit2023: 9341958870 TRY. Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2023 FY sütunu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "parentEquityFy2023End",
+        "value": "15397990316",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2023.",
+        "evidence": {
+          "id": "ev-ttrak-2023-parentEquity",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2023.",
+          "excerpt": "parentEquity2023: 15397990316 TRY. Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2023.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFy2023End"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "cashFy2023End",
+        "value": "12331179212",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2023.",
+        "evidence": {
+          "id": "ev-ttrak-2023-cash",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2023.",
+          "excerpt": "cash2023: 12331179212 TRY. Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2023.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2023End"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "financialDebtFy2023End",
+        "value": "5788977291",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2023. Ticari borçlar hariçtir.",
+        "evidence": {
+          "id": "ev-ttrak-2023-financialDebt",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2023. Ticari borçlar hariçtir.",
+          "excerpt": "financialDebt2023: 5788977291 TRY. Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2023. Ticari borçlar hariçtir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2023End"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "operatingCashFy2023",
+        "value": "9885564691",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2023 FY.",
+        "evidence": {
+          "id": "ev-ttrak-2023-operatingCash",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2023 FY.",
+          "excerpt": "operatingCash2023: 9885564691 TRY. Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2023 FY.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["operatingCashFy2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "capexFy2023",
+        "value": "1735996993",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "ttrak2023AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2023 FY (nakit çıkışı, mutlak değer).",
+        "evidence": {
+          "id": "ev-ttrak-2023-capex",
+          "sourceId": "ttrak2023AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2023",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2023 FY (nakit çıkışı, mutlak değer).",
+          "excerpt": "capex2023: 1735996993 TRY. Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2023 FY (nakit çıkışı, mutlak değer).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-02-22",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capexFy2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyRevenue2024",
+        "value": "66969628539",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2024 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+        "evidence": {
+          "id": "ev-ttrak-2024-fyRevenue",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2024 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "excerpt": "fyRevenue2024: 66969628539 TRY. Gelir tablosu (Statement of Profit and Loss), \"Revenue\" satırı, 2024 FY sütunu; birincil İngilizce konsolide finansal rapor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2024",
+        "value": "5740536185",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2024 FY sütunu.",
+        "evidence": {
+          "id": "ev-ttrak-2024-fyProfit",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2024 FY sütunu.",
+          "excerpt": "fyProfit2024: 5740536185 TRY. Gelir tablosu, \"NET PROFIT FOR THE PERIOD\" satırı, 2024 FY sütunu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "parentEquityFy2024End",
+        "value": "16967510137",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2024.",
+        "evidence": {
+          "id": "ev-ttrak-2024-parentEquity",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2024.",
+          "excerpt": "parentEquity2024: 16967510137 TRY. Bilanço (Statement of Financial Position), \"EQUITY\" toplam satırı, 31.12.2024.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "cashFy2024End",
+        "value": "6594097719",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2024.",
+        "evidence": {
+          "id": "ev-ttrak-2024-cash",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2024.",
+          "excerpt": "cash2024: 6594097719 TRY. Bilanço, \"Cash and cash equivalents\" satırı, 31.12.2024.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "financialDebtFy2024End",
+        "value": "9792105076",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2024. Ticari borçlar hariçtir.",
+        "evidence": {
+          "id": "ev-ttrak-2024-financialDebt",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2024. Ticari borçlar hariçtir.",
+          "excerpt": "financialDebt2024: 9792105076 TRY. Bilanço: kısa+uzun vadeli banka kredileri ve kiralama yükümlülüklerinin (ilişkili+üçüncü taraf) toplamı, 31.12.2024. Ticari borçlar hariçtir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "operatingCashFy2024",
+        "value": "5370922340",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2024 FY.",
+        "evidence": {
+          "id": "ev-ttrak-2024-operatingCash",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2024 FY.",
+          "excerpt": "operatingCash2024: 5370922340 TRY. Nakit akış tablosu, \"A. CASH FLOWS FROM OPERATING ACTIVITIES\" toplam satırı (çalışan kıdem tazminatı ödemesi ve ödenen vergiler dahil net), 2024 FY.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["operatingCashFy2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "capexFy2024",
+        "value": "3827936917",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "ttrak2024AR",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": "100066875"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2024 FY (nakit çıkışı, mutlak değer).",
+        "evidence": {
+          "id": "ev-ttrak-2024-capex",
+          "sourceId": "ttrak2024AR",
+          "originId": "turktraktor-ir-site",
+          "collectionId": "ttrak-financials-2024",
+          "reviewerId": "claude-ttrak-coreseries-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "locator": "Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2024 FY (nakit çıkışı, mutlak değer).",
+          "excerpt": "capex2024: 3827936917 TRY. Nakit akış tablosu (yatırım faaliyetleri), \"Payments for purchases of property, plant and equipment and intangible assets\" satırı, 2024 FY (nakit çıkışı, mutlak değer).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-02-13",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capexFy2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
       }
     ],
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       }
@@ -1193,21 +2284,14 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3,
         "metricKey": "pb"
@@ -1215,20 +2299,14 @@
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -1236,10 +2314,7 @@
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -1247,10 +2322,7 @@
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "yield"
@@ -1258,10 +2330,7 @@
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "margin"
@@ -1269,20 +2338,14 @@
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "debt"
@@ -1290,10 +2353,7 @@
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "fcf"
@@ -1301,10 +2361,7 @@
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "netDebt"
@@ -1312,7 +2369,7 @@
     ],
     "presentation": {
       "schemaVersion": 1,
-      "id": "ttrak-2026-11-01-v2",
+      "id": "ttrak-2026-11-02-v3",
       "assetId": "watch-bist-ttrak",
       "symbol": "TTRAK",
       "isin": "TRETTRK00010",
@@ -1320,7 +2377,7 @@
       "sector": "Sanayi - Traktor/zirai makine uretimi",
       "contentKey": "researchTtrakAudit20261101",
       "asOf": "2026-10-29",
-      "retrievedAt": "2026-11-01",
+      "retrievedAt": "2026-11-02",
       "timezone": "Europe/Istanbul",
       "financialPeriod": "2026-01-01 / 2026-09-30",
       "priceAt": "2026-10-28T18:10:00+03:00",
@@ -1336,21 +2393,14 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3,
           "metricKey": "pb"
@@ -1358,20 +2408,14 @@
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -1379,10 +2423,7 @@
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -1390,10 +2431,7 @@
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "yield"
@@ -1401,10 +2439,7 @@
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "margin"
@@ -1412,20 +2447,14 @@
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "debt"
@@ -1433,10 +2462,7 @@
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "fcf"
@@ -1444,10 +2470,7 @@
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "netDebt"
@@ -1513,6 +2536,42 @@
           "period": "2026-01-01 / 2026-09-30",
           "locator": "",
           "observedAt": "2026-11-01"
+        },
+        {
+          "id": "ttrak2021AR",
+          "url": "https://www.turktraktor.com.tr/getmedia/bf44b003-6693-4cc2-b286-402621cf1524/Annual-Report-2021.pdf",
+          "title": "Türk Traktör 2021 Annual Report (konsolide, İngilizce)",
+          "publishedAt": "2022-02-14",
+          "period": "2021-01-01 / 2021-12-31",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "ttrak2022AR",
+          "url": "https://www.turktraktor.com.tr/getmedia/206c1bf7-b505-4b6f-978c-6462110bd84f/Annual-Report-2022.pdf",
+          "title": "Türk Traktör 2022 Annual Report (konsolide, İngilizce)",
+          "publishedAt": "2023-02-06",
+          "period": "2022-01-01 / 2022-12-31",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "ttrak2023AR",
+          "url": "https://www.turktraktor.com.tr/getmedia/e27e8a15-3161-4192-afc8-a57c8a100934/TURK-TRAKTOR-FR-23_2-ENG.pdf",
+          "title": "Türk Traktör 2023 Annual Report (konsolide, İngilizce, TAS29/31.12.2023)",
+          "publishedAt": "2024-02-22",
+          "period": "2023-01-01 / 2023-12-31",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "ttrak2024AR",
+          "url": "https://www.turktraktor.com.tr/getmedia/229a78b8-cdf0-4917-b8a8-a3ad5103b151/TT24_Faaliyet_ENG-WEB-Final.pdf",
+          "title": "Türk Traktör 2024 Annual Report (konsolide, İngilizce, TAS29/31.12.2024)",
+          "publishedAt": "2025-02-13",
+          "period": "2024-01-01 / 2024-12-31",
+          "locator": "",
+          "observedAt": "2026-11-02"
         }
       ],
       "facts": [
@@ -1693,12 +2752,7 @@
         "to": "2026-10-29",
         "status": "PARTIAL",
         "sourceId": "disclosureList",
-        "pendingDates": [
-          "2026-07-29",
-          "2026-08-18",
-          "2026-09-22",
-          "2026-10-01"
-        ]
+        "pendingDates": ["2026-07-29", "2026-08-18", "2026-09-22", "2026-10-01"]
       },
       "disclosures": [
         {
@@ -1790,33 +2844,63 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2021",
+          "fyProfit2021",
+          "parentEquityFy2021End",
+          "cashFy2021End",
+          "financialDebtFy2021End",
+          "operatingCashFy2021",
+          "capexFy2021"
+        ],
         "calculationIds": []
       },
       {
         "year": "2022",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2022",
+          "fyProfit2022",
+          "parentEquityFy2022End",
+          "cashFy2022End",
+          "financialDebtFy2022End",
+          "operatingCashFy2022",
+          "capexFy2022"
+        ],
         "calculationIds": []
       },
       {
         "year": "2023",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2023",
+          "fyProfit2023",
+          "parentEquityFy2023End",
+          "cashFy2023End",
+          "financialDebtFy2023End",
+          "operatingCashFy2023",
+          "capexFy2023"
+        ],
         "calculationIds": []
       },
       {
         "year": "2024",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2024",
+          "fyProfit2024",
+          "parentEquityFy2024End",
+          "cashFy2024End",
+          "financialDebtFy2024End",
+          "operatingCashFy2024",
+          "capexFy2024"
+        ],
         "calculationIds": []
       },
       {
         "year": "2025",
-        "factIds": [
-          "fyProfit2025"
-        ],
+        "factIds": ["fyProfit2025"],
         "calculationIds": []
       }
     ]
@@ -1827,10 +2911,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -2608,11 +3689,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -2652,11 +3729,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -2696,11 +3769,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "depreciation",
-            "capex"
-          ],
+          "claims": ["operatingCash", "depreciation", "capex"],
           "from": "2026-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -2740,9 +3809,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-10-26",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2026-09-30",
           "purchasingPowerDate": "2026-09-30"
@@ -2847,101 +3914,67 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       }
@@ -2950,21 +3983,14 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3,
         "metricKey": "pb"
@@ -2972,20 +3998,14 @@
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -2993,10 +4013,7 @@
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -3004,10 +4021,7 @@
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "yield"
@@ -3015,10 +4029,7 @@
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "margin"
@@ -3026,20 +4037,14 @@
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "debt"
@@ -3047,10 +4052,7 @@
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "fcf"
@@ -3058,10 +4060,7 @@
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0,
         "metricKey": "netDebt"
@@ -3093,21 +4092,14 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3,
           "metricKey": "pb"
@@ -3115,20 +4107,14 @@
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -3136,10 +4122,7 @@
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -3147,10 +4130,7 @@
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "yield"
@@ -3158,10 +4138,7 @@
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "margin"
@@ -3169,20 +4146,14 @@
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "debt"
@@ -3190,10 +4161,7 @@
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "fcf"
@@ -3201,10 +4169,7 @@
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0,
           "metricKey": "netDebt"
@@ -4029,11 +4994,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-10-26",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingCash",
-              "depreciation",
-              "capex"
-            ],
+            "claims": ["operatingCash", "depreciation", "capex"],
             "from": "2026-09-30",
             "to": "2026-09-30",
             "purchasingPowerDate": "2026-09-30"
@@ -4073,11 +5034,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-10-26",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingCash",
-              "depreciation",
-              "capex"
-            ],
+            "claims": ["operatingCash", "depreciation", "capex"],
             "from": "2026-09-30",
             "to": "2026-09-30",
             "purchasingPowerDate": "2026-09-30"
@@ -4117,11 +5074,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-10-26",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingCash",
-              "depreciation",
-              "capex"
-            ],
+            "claims": ["operatingCash", "depreciation", "capex"],
             "from": "2026-09-30",
             "to": "2026-09-30",
             "purchasingPowerDate": "2026-09-30"
@@ -4161,9 +5114,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-10-26",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "fyProfit2025"
-            ],
+            "claims": ["fyProfit2025"],
             "from": "2026-09-30",
             "to": "2026-09-30",
             "purchasingPowerDate": "2026-09-30"
@@ -4219,12 +5170,7 @@
         "to": "2026-10-29",
         "status": "PARTIAL",
         "sourceId": "disclosureList",
-        "pendingDates": [
-          "2026-07-29",
-          "2026-08-18",
-          "2026-09-22",
-          "2026-10-01"
-        ]
+        "pendingDates": ["2026-07-29", "2026-08-18", "2026-09-22", "2026-10-01"]
       },
       "disclosures": [
         {

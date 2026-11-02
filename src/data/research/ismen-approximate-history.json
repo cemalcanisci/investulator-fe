@@ -61,37 +61,28 @@
       "from": "2011-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2011-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2011-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "yahoo-events"
-      ],
+      "sourceIds": ["yahoo-events"],
       "method": "Yahoo Finance splits olay listesi; ISMENin 2012, 2013, 2014, 2015 (kucuk, ic kaynaklardan %7-11 araliginda) ve 2023 (buyuk, ic kaynaklardan %322,54) sermaye artirimlari, sirketin kendi Mali Tablolar/Sermaye Artirimlari sayfasindaki (Matriks verisi) tarih ve oranlarla tam ortustu (capraz dogrulandi)."
     },
     "dividends": {
       "from": "2011-10-01",
       "to": "2026-09-30",
       "state": "CONFLICT",
-      "sourceIds": [
-        "yahoo-events",
-        "companyDividendPage"
-      ],
+      "sourceIds": ["yahoo-events", "companyDividendPage"],
       "method": "Pay basina brut nakit temettu tutarlari sirketin kendi Mali Tablolar/Temettuler sayfasindaki (Matriks verisi) \"Hisse Basi Brut TL\" sutunundan (o donemin kendi pay sayisi bazinda, YENIDEN OLCEKLENMEMIS/ham); ex-temettu ve odeme tarihleri Yahoo Finance temettu olaylarindan alindi. Capraz dogrulama: Yahoo tarafinda (bugunku pay sayisina onceden yeniden olceklenmis) tutarlar, isyatirim ham degerinin ex-tarihi ile bugun arasindaki kumulatif bedelsiz faktorune bolunmesiyle neredeyse birebir yeniden uretildi (ornegin 2018: 0,3099 / 4,225352 = 0,07335, Yahoo degeri 0,073333; 2012: 0,0580 / 5,768276 = 0,01006, Yahoo degeri 0,010053) - bu da ham deger secimini dogruluyor. 2008 yilina ait iki ayri Yahoo kaydi (toplam ~0,0697) isyatirimin tek 2008 kaydiyla (0,0796) tam ortusmedi ve bu donem simulasyon penceresinin (2011 sonrasi) disinda kaldigi icin bu listeye DAHIL EDILMEDI. | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
     }
   },

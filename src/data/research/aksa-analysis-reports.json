@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "aksa-2026-11-01-v2",
+    "version": "aksa-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "INDUSTRIAL",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -90,9 +85,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares"
-          ],
+          "claims": ["shares"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -134,9 +127,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "cash"
-          ],
+          "claims": ["cash"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -178,9 +169,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtShort"
-          ],
+          "claims": ["debtShort"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -222,9 +211,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtLong"
-          ],
+          "claims": ["debtLong"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -266,9 +253,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialDebt"
-          ],
+          "claims": ["financialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -310,9 +295,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebt"
-          ],
+          "claims": ["netFinancialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -354,9 +337,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquity"
-          ],
+          "claims": ["parentEquity"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -398,9 +379,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentAssets"
-          ],
+          "claims": ["currentAssets"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -442,9 +421,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentLiabilities"
-          ],
+          "claims": ["currentLiabilities"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -486,9 +463,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "totalAssetsEnd"
-          ],
+          "claims": ["totalAssetsEnd"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -530,9 +505,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtWithinYear"
-          ],
+          "claims": ["debtWithinYear"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -574,9 +547,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fxBeforeNatural"
-          ],
+          "claims": ["fxBeforeNatural"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -618,9 +589,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fxAfterNatural"
-          ],
+          "claims": ["fxAfterNatural"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -662,9 +631,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialInvestments"
-          ],
+          "claims": ["financialInvestments"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -706,9 +673,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenue"
-          ],
+          "claims": ["revenue"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -750,9 +715,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfit"
-          ],
+          "claims": ["operatingProfit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -794,9 +757,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profit"
-          ],
+          "claims": ["profit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -838,9 +799,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash"
-          ],
+          "claims": ["operatingCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -882,9 +841,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "capex"
-          ],
+          "claims": ["capex"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -926,9 +883,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "workingCapitalCash"
-          ],
+          "claims": ["workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -970,9 +925,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitda"
-          ],
+          "claims": ["ebitda"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1014,9 +967,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "depreciation"
-          ],
+          "claims": ["depreciation"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1058,9 +1009,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenuePrevious"
-          ],
+          "claims": ["revenuePrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1102,9 +1051,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfitPrevious"
-          ],
+          "claims": ["operatingProfitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1146,9 +1093,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1190,9 +1135,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaPrevious"
-          ],
+          "claims": ["ebitdaPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1234,9 +1177,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1278,9 +1219,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025"
-          ],
+          "claims": ["parentEquityH12025"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1322,9 +1261,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFY2025"
-          ],
+          "claims": ["parentEquityFY2025"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1366,9 +1303,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaFy2025"
-          ],
+          "claims": ["ebitdaFy2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
@@ -1410,9 +1345,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebtFy2025"
-          ],
+          "claims": ["netFinancialDebtFy2025"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
@@ -1454,9 +1387,7 @@
           "publishedAt": "2026-03-31",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-04-07",
           "to": "2026-04-07",
           "purchasingPowerDate": null
@@ -1497,9 +1428,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendPrevious"
-          ],
+          "claims": ["dividendPrevious"],
           "from": "2025-05-23",
           "to": "2025-05-23",
           "purchasingPowerDate": null
@@ -1540,9 +1469,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2021"
-          ],
+          "claims": ["profitFY2021"],
           "from": "2021-01-01",
           "to": "2021-12-31",
           "purchasingPowerDate": null
@@ -1584,9 +1511,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2021"
-          ],
+          "claims": ["revenueFY2021"],
           "from": "2021-01-01",
           "to": "2021-12-31",
           "purchasingPowerDate": null
@@ -1628,9 +1553,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2022"
-          ],
+          "claims": ["profitFY2022"],
           "from": "2022-01-01",
           "to": "2022-12-31",
           "purchasingPowerDate": null
@@ -1672,9 +1595,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2022"
-          ],
+          "claims": ["revenueFY2022"],
           "from": "2022-01-01",
           "to": "2022-12-31",
           "purchasingPowerDate": null
@@ -1716,9 +1637,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2023"
-          ],
+          "claims": ["profitFY2023"],
           "from": "2023-01-01",
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31"
@@ -1760,9 +1679,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2023"
-          ],
+          "claims": ["revenueFY2023"],
           "from": "2023-01-01",
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31"
@@ -1804,148 +1721,481 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2024"
-          ],
+          "claims": ["profitFY2024"],
           "from": "2024-01-01",
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31"
         },
         "metricKey": "profit"
+      },
+      {
+        "id": "revenueFY2024",
+        "value": "28361359000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu s.3: Hasilat; sirketin 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+        "evidence": {
+          "id": "ev-aksa-revenueFY2024",
+          "sourceId": "fy2024",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2025/06/30/aksa-akrilik-1224-spk-0xw3sato.pdf",
+          "locator": "Gelir tablosu s.3: Hasilat; sirketin 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+          "excerpt": "revenueFY2024: 28361359000 TRY. Gelir tablosu s.3: Hasilat; sirketin 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-06-30",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenueFY2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "revenueFY2025",
+        "value": "32444223000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Gelir tablosu s.2: Hasilat; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. 2024 nominal degil, bu dosyada ayri revenueFY2024 ile karistirilmaz.",
+        "evidence": {
+          "id": "ev-aksa-revenueFY2025",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Gelir tablosu s.2: Hasilat; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. 2024 nominal degil, bu dosyada ayri revenueFY2024 ile karistirilmaz.",
+          "excerpt": "revenueFY2025: 32444223000 TRY. Gelir tablosu s.2: Hasilat; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. 2024 nominal degil, bu dosyada ayri revenueFY2024 ile karistirilmaz.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenueFY2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "revenue"
+      },
+      {
+        "id": "cashFY2024",
+        "value": "3162396000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Finansal durum tablosu / Not 4: Nakit ve nakit benzerleri; 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+        "evidence": {
+          "id": "ev-aksa-cashFY2024",
+          "sourceId": "fy2024",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2025/06/30/aksa-akrilik-1224-spk-0xw3sato.pdf",
+          "locator": "Finansal durum tablosu / Not 4: Nakit ve nakit benzerleri; 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+          "excerpt": "cashFY2024: 3162396000 TRY. Finansal durum tablosu / Not 4: Nakit ve nakit benzerleri; 2024 kendi konsolide finansal tablosu, 31.12.2024 satin alma gucu.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-06-30",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFY2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        },
+        "metricKey": "cash"
+      },
+      {
+        "id": "cashFY2025",
+        "value": "4957588000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Finansal durum tablosu / Not 5: Nakit ve nakit benzerleri; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. netFinancialDebtFy2025 (21.225.728.000) ile capraz tutarli: financialDebtFY2025 - bu deger = net borc.",
+        "evidence": {
+          "id": "ev-aksa-cashFY2025",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Finansal durum tablosu / Not 5: Nakit ve nakit benzerleri; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. netFinancialDebtFy2025 (21.225.728.000) ile capraz tutarli: financialDebtFY2025 - bu deger = net borc.",
+          "excerpt": "cashFY2025: 4957588000 TRY. Finansal durum tablosu / Not 5: Nakit ve nakit benzerleri; 2025 kendi konsolide finansal tablosu, 31.12.2025 satin alma gucu. netFinancialDebtFy2025 (21.225.728.000) ile capraz tutarli: financialDebtFY2025 - bu deger = net borc.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFY2025"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "cash"
+      },
+      {
+        "id": "parentEquityFY2024",
+        "value": "31253012000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Finansal durum tablosu (2025 raporunun 2024 karsilastirma sutunu): Toplam ozkaynak 33.637.784 bin TL - kontrol gucu olmayan paylar ~0 (2024) = Ana ortakliga ait ozkaynak 31.253.012 bin TL (dipnot aritmetigiyle caprazlandi). UYARI: Bu 2024 sutunu 31.12.2025 satin alma gucunde yeniden ifade edilmistir, 2024 kendi (nominal) satin alma gucunde DEGILDIR; 2024 kendi bazindaki ayri bir figur bu turda bulunamadi.",
+        "evidence": {
+          "id": "ev-aksa-parentEquityFY2024",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Finansal durum tablosu (2025 raporunun 2024 karsilastirma sutunu): Toplam ozkaynak 33.637.784 bin TL - kontrol gucu olmayan paylar ~0 (2024) = Ana ortakliga ait ozkaynak 31.253.012 bin TL (dipnot aritmetigiyle caprazlandi). UYARI: Bu 2024 sutunu 31.12.2025 satin alma gucunde yeniden ifade edilmistir, 2024 kendi (nominal) satin alma gucunde DEGILDIR; 2024 kendi bazindaki ayri bir figur bu turda bulunamadi.",
+          "excerpt": "parentEquityFY2024: 31253012000 TRY. Finansal durum tablosu (2025 raporunun 2024 karsilastirma sutunu): Toplam ozkaynak 33.637.784 bin TL - kontrol gucu olmayan paylar ~0 (2024) = Ana ortakliga ait ozkaynak 31.253.012 bin TL (dipnot aritmetigiyle caprazlandi). UYARI: Bu 2024 sutunu 31.12.2025 satin alma gucunde yeniden ifade edilmistir, 2024 kendi (nominal) satin alma gucunde DEGILDIR; 2024 kendi bazindaki ayri bir figur bu turda bulunamadi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFY2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "parentEquity"
+      },
+      {
+        "id": "financialDebtFY2025",
+        "value": "26183316000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 8 Finansal Borclanmalar: Toplam kisa vadeli finansal borclanmalar 18.471.584 + Toplam uzun vadeli finansal borclanmalar 7.711.732 = 26.183.316 bin TL (banka kredileri + kiralama islemlerinden borclar dahil). netFinancialDebtFy2025 (21.225.728.000) = bu deger - cashFY2025 (4.957.588.000) ile tam tutarli; capraz dogrulandi.",
+        "evidence": {
+          "id": "ev-aksa-financialDebtFY2025",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Not 8 Finansal Borclanmalar: Toplam kisa vadeli finansal borclanmalar 18.471.584 + Toplam uzun vadeli finansal borclanmalar 7.711.732 = 26.183.316 bin TL (banka kredileri + kiralama islemlerinden borclar dahil). netFinancialDebtFy2025 (21.225.728.000) = bu deger - cashFY2025 (4.957.588.000) ile tam tutarli; capraz dogrulandi.",
+          "excerpt": "financialDebtFY2025: 26183316000 TRY. Not 8 Finansal Borclanmalar: Toplam kisa vadeli finansal borclanmalar 18.471.584 + Toplam uzun vadeli finansal borclanmalar 7.711.732 = 26.183.316 bin TL (banka kredileri + kiralama islemlerinden borclar dahil). netFinancialDebtFy2025 (21.225.728.000) = bu deger - cashFY2025 (4.957.588.000) ile tam tutarli; capraz dogrulandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFY2025"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "financialDebt"
+      },
+      {
+        "id": "financialDebtFY2024",
+        "value": "8427696000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 8 Finansal Borclanmalar (2025 raporunun 2024 karsilastirma sutunu): Toplam kisa vadeli finansal borclanmalar 7.258.689 + Toplam uzun vadeli finansal borclanmalar 1.169.007 = 8.427.696 bin TL. UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur, 2024 kendi bazinda degildir.",
+        "evidence": {
+          "id": "ev-aksa-financialDebtFY2024",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Not 8 Finansal Borclanmalar (2025 raporunun 2024 karsilastirma sutunu): Toplam kisa vadeli finansal borclanmalar 7.258.689 + Toplam uzun vadeli finansal borclanmalar 1.169.007 = 8.427.696 bin TL. UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur, 2024 kendi bazinda degildir.",
+          "excerpt": "financialDebtFY2024: 8427696000 TRY. Not 8 Finansal Borclanmalar (2025 raporunun 2024 karsilastirma sutunu): Toplam kisa vadeli finansal borclanmalar 7.258.689 + Toplam uzun vadeli finansal borclanmalar 1.169.007 = 8.427.696 bin TL. UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur, 2024 kendi bazinda degildir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFY2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "financialDebt"
+      },
+      {
+        "id": "operatingCashFY2025",
+        "value": "5064708000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akis tablosu s.6, \"A. Isletme faaliyetlerinden nakit akislari\" toplam satiri. Donem kari (3.921.703 bin TL) ile capraz tutarli (gelir tablosundaki surdurulen faaliyetler donem kariyla birebir esleşiyor); ancak ara duzeltme kalemleri pdftotext cok sutunlu tabloda satir/sutun hizasi kaydigindan tek tek dogrulanamadi -- orta guven seviyesi.",
+        "evidence": {
+          "id": "ev-aksa-operatingCashFY2025",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Nakit akis tablosu s.6, \"A. Isletme faaliyetlerinden nakit akislari\" toplam satiri. Donem kari (3.921.703 bin TL) ile capraz tutarli (gelir tablosundaki surdurulen faaliyetler donem kariyla birebir esleşiyor); ancak ara duzeltme kalemleri pdftotext cok sutunlu tabloda satir/sutun hizasi kaydigindan tek tek dogrulanamadi -- orta guven seviyesi.",
+          "excerpt": "operatingCashFY2025: 5064708000 TRY. Nakit akis tablosu s.6, \"A. Isletme faaliyetlerinden nakit akislari\" toplam satiri. Donem kari (3.921.703 bin TL) ile capraz tutarli (gelir tablosundaki surdurulen faaliyetler donem kariyla birebir esleşiyor); ancak ara duzeltme kalemleri pdftotext cok sutunlu tabloda satir/sutun hizasi kaydigindan tek tek dogrulanamadi -- orta guven seviyesi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["operatingCashFY2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "operatingCash"
+      },
+      {
+        "id": "capexFY2024",
+        "value": "3691052000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 14 (Maddi Duran Varliklar) 2024 hareket tablosu \"Ilaveler\" toplami 3.534.945 + Not 15 (Maddi Olmayan Duran Varliklar) 2024 \"Ilaveler\" toplami 156.107 = 3.691.052 bin TL (bagli ortaklik giris etkisi/isletme birlesmesi haric, yalniz organik ilaveler). UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur.",
+        "evidence": {
+          "id": "ev-aksa-capexFY2024",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "bist-audit-2026-11-02",
+          "reviewerId": "claude-aksa-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "Not 14 (Maddi Duran Varliklar) 2024 hareket tablosu \"Ilaveler\" toplami 3.534.945 + Not 15 (Maddi Olmayan Duran Varliklar) 2024 \"Ilaveler\" toplami 156.107 = 3.691.052 bin TL (bagli ortaklik giris etkisi/isletme birlesmesi haric, yalniz organik ilaveler). UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur.",
+          "excerpt": "capexFY2024: 3691052000 TRY. Not 14 (Maddi Duran Varliklar) 2024 hareket tablosu \"Ilaveler\" toplami 3.534.945 + Not 15 (Maddi Olmayan Duran Varliklar) 2024 \"Ilaveler\" toplami 156.107 = 3.691.052 bin TL (bagli ortaklik giris etkisi/isletme birlesmesi haric, yalniz organik ilaveler). UYARI: 31.12.2025 satin alma gucunde yeniden ifade edilmis karsilastirma sutunudur.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capexFY2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "capex"
       }
     ],
     "calculations": [
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
@@ -1953,129 +2203,86 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
     ],
     "presentation": {
       "schemaVersion": 1,
-      "id": "aksa-2026-11-01-v2",
+      "id": "aksa-2026-11-02-v3",
       "assetId": "watch-bist-aksa",
       "symbol": "AKSA",
       "isin": "TRAAKSAW91E1",
@@ -2083,7 +2290,7 @@
       "sector": "Kimya · akrilik elyaf ve ileri malzemeler",
       "contentKey": "researchAksaAudit20261101",
       "asOf": "2026-10-31",
-      "retrievedAt": "2026-11-01",
+      "retrievedAt": "2026-11-02",
       "timezone": "Europe/Istanbul",
       "financialPeriod": "2026-01-01 / 2026-06-30",
       "priceAt": "2026-10-30T18:10:00+03:00",
@@ -2168,134 +2375,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }
@@ -2820,36 +2984,32 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
-        "factIds": [
-          "profitFY2021",
-          "revenueFY2021"
-        ],
+        "factIds": ["profitFY2021", "revenueFY2021"],
         "calculationIds": []
       },
       {
         "year": "2022",
-        "factIds": [
-          "profitFY2022",
-          "revenueFY2022"
-        ],
+        "factIds": ["profitFY2022", "revenueFY2022"],
         "calculationIds": []
       },
       {
         "year": "2023",
-        "factIds": [
-          "profitFY2023",
-          "revenueFY2023"
-        ],
+        "factIds": ["profitFY2023", "revenueFY2023"],
         "calculationIds": []
       },
       {
         "year": "2024",
         "factIds": [
-          "profitFY2024"
+          "profitFY2024",
+          "revenueFY2024",
+          "cashFY2024",
+          "parentEquityFY2024",
+          "financialDebtFY2024",
+          "capexFY2024"
         ],
         "calculationIds": []
       },
@@ -2859,7 +3019,11 @@
           "fyProfit2025",
           "parentEquityFY2025",
           "ebitdaFy2025",
-          "netFinancialDebtFy2025"
+          "netFinancialDebtFy2025",
+          "revenueFY2025",
+          "cashFY2025",
+          "financialDebtFY2025",
+          "operatingCashFY2025"
         ],
         "calculationIds": []
       }
@@ -2871,10 +3035,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "INDUSTRIAL",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -2913,9 +3074,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -2956,9 +3115,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares"
-          ],
+          "claims": ["shares"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -3000,9 +3157,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "cash"
-          ],
+          "claims": ["cash"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3044,9 +3199,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtShort"
-          ],
+          "claims": ["debtShort"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3088,9 +3241,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtLong"
-          ],
+          "claims": ["debtLong"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3132,9 +3283,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialDebt"
-          ],
+          "claims": ["financialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3176,9 +3325,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebt"
-          ],
+          "claims": ["netFinancialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3220,9 +3367,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquity"
-          ],
+          "claims": ["parentEquity"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3264,9 +3409,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentAssets"
-          ],
+          "claims": ["currentAssets"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3308,9 +3451,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentLiabilities"
-          ],
+          "claims": ["currentLiabilities"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3352,9 +3493,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "totalAssetsEnd"
-          ],
+          "claims": ["totalAssetsEnd"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3396,9 +3535,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtWithinYear"
-          ],
+          "claims": ["debtWithinYear"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3440,9 +3577,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fxBeforeNatural"
-          ],
+          "claims": ["fxBeforeNatural"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3484,9 +3619,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fxAfterNatural"
-          ],
+          "claims": ["fxAfterNatural"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3528,9 +3661,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialInvestments"
-          ],
+          "claims": ["financialInvestments"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3572,9 +3703,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenue"
-          ],
+          "claims": ["revenue"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3616,9 +3745,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfit"
-          ],
+          "claims": ["operatingProfit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3660,9 +3787,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profit"
-          ],
+          "claims": ["profit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3704,9 +3829,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash"
-          ],
+          "claims": ["operatingCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3748,9 +3871,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "capex"
-          ],
+          "claims": ["capex"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3792,9 +3913,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "workingCapitalCash"
-          ],
+          "claims": ["workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3836,9 +3955,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitda"
-          ],
+          "claims": ["ebitda"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3880,9 +3997,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "depreciation"
-          ],
+          "claims": ["depreciation"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3924,9 +4039,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenuePrevious"
-          ],
+          "claims": ["revenuePrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3968,9 +4081,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfitPrevious"
-          ],
+          "claims": ["operatingProfitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4012,9 +4123,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4056,9 +4165,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaPrevious"
-          ],
+          "claims": ["ebitdaPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4100,9 +4207,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -4144,9 +4249,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025"
-          ],
+          "claims": ["parentEquityH12025"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4188,9 +4291,7 @@
           "publishedAt": "2026-08-13",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFY2025"
-          ],
+          "claims": ["parentEquityFY2025"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -4232,9 +4333,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaFy2025"
-          ],
+          "claims": ["ebitdaFy2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
@@ -4276,9 +4375,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebtFy2025"
-          ],
+          "claims": ["netFinancialDebtFy2025"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
@@ -4320,9 +4417,7 @@
           "publishedAt": "2026-03-31",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-04-07",
           "to": "2026-04-07",
           "purchasingPowerDate": null
@@ -4363,9 +4458,7 @@
           "publishedAt": "2026-02-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendPrevious"
-          ],
+          "claims": ["dividendPrevious"],
           "from": "2025-05-23",
           "to": "2025-05-23",
           "purchasingPowerDate": null
@@ -4406,9 +4499,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2021"
-          ],
+          "claims": ["profitFY2021"],
           "from": "2021-01-01",
           "to": "2021-12-31",
           "purchasingPowerDate": null
@@ -4450,9 +4541,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2021"
-          ],
+          "claims": ["revenueFY2021"],
           "from": "2021-01-01",
           "to": "2021-12-31",
           "purchasingPowerDate": null
@@ -4494,9 +4583,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2022"
-          ],
+          "claims": ["profitFY2022"],
           "from": "2022-01-01",
           "to": "2022-12-31",
           "purchasingPowerDate": null
@@ -4538,9 +4625,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2022"
-          ],
+          "claims": ["revenueFY2022"],
           "from": "2022-01-01",
           "to": "2022-12-31",
           "purchasingPowerDate": null
@@ -4582,9 +4667,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2023"
-          ],
+          "claims": ["profitFY2023"],
           "from": "2023-01-01",
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31"
@@ -4626,9 +4709,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenueFY2023"
-          ],
+          "claims": ["revenueFY2023"],
           "from": "2023-01-01",
           "to": "2023-12-31",
           "purchasingPowerDate": "2023-12-31"
@@ -4670,9 +4751,7 @@
           "publishedAt": "2026-10-31",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitFY2024"
-          ],
+          "claims": ["profitFY2024"],
           "from": "2024-01-01",
           "to": "2024-12-31",
           "purchasingPowerDate": "2024-12-31"
@@ -4684,134 +4763,91 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
@@ -4819,122 +4855,79 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
@@ -5034,134 +5027,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }
@@ -5202,9 +5152,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "price"
-            ],
+            "claims": ["price"],
             "from": "2026-10-30",
             "to": "2026-10-30",
             "purchasingPowerDate": null
@@ -5245,9 +5193,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "shares"
-            ],
+            "claims": ["shares"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": null
@@ -5289,9 +5235,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "cash"
-            ],
+            "claims": ["cash"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5333,9 +5277,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "debtShort"
-            ],
+            "claims": ["debtShort"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5377,9 +5319,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "debtLong"
-            ],
+            "claims": ["debtLong"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5421,9 +5361,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "financialDebt"
-            ],
+            "claims": ["financialDebt"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5465,9 +5403,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "netFinancialDebt"
-            ],
+            "claims": ["netFinancialDebt"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5509,9 +5445,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquity"
-            ],
+            "claims": ["parentEquity"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5553,9 +5487,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "currentAssets"
-            ],
+            "claims": ["currentAssets"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5597,9 +5529,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "currentLiabilities"
-            ],
+            "claims": ["currentLiabilities"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5641,9 +5571,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "totalAssetsEnd"
-            ],
+            "claims": ["totalAssetsEnd"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5685,9 +5613,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "debtWithinYear"
-            ],
+            "claims": ["debtWithinYear"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5729,9 +5655,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "fxBeforeNatural"
-            ],
+            "claims": ["fxBeforeNatural"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5773,9 +5697,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "fxAfterNatural"
-            ],
+            "claims": ["fxAfterNatural"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5817,9 +5739,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "financialInvestments"
-            ],
+            "claims": ["financialInvestments"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5861,9 +5781,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "revenue"
-            ],
+            "claims": ["revenue"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5905,9 +5823,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingProfit"
-            ],
+            "claims": ["operatingProfit"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5949,9 +5865,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profit"
-            ],
+            "claims": ["profit"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5993,9 +5907,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingCash"
-            ],
+            "claims": ["operatingCash"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6037,9 +5949,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "capex"
-            ],
+            "claims": ["capex"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6081,9 +5991,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "workingCapitalCash"
-            ],
+            "claims": ["workingCapitalCash"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6125,9 +6033,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "ebitda"
-            ],
+            "claims": ["ebitda"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6169,9 +6075,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "depreciation"
-            ],
+            "claims": ["depreciation"],
             "from": "2026-01-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6213,9 +6117,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "revenuePrevious"
-            ],
+            "claims": ["revenuePrevious"],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6257,9 +6159,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "operatingProfitPrevious"
-            ],
+            "claims": ["operatingProfitPrevious"],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6301,9 +6201,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitPrevious"
-            ],
+            "claims": ["profitPrevious"],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6345,9 +6243,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "ebitdaPrevious"
-            ],
+            "claims": ["ebitdaPrevious"],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6389,9 +6285,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "fyProfit2025"
-            ],
+            "claims": ["fyProfit2025"],
             "from": "2025-01-01",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -6433,9 +6327,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquityH12025"
-            ],
+            "claims": ["parentEquityH12025"],
             "from": "2025-06-30",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -6477,9 +6369,7 @@
             "publishedAt": "2026-08-13",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquityFY2025"
-            ],
+            "claims": ["parentEquityFY2025"],
             "from": "2025-12-31",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -6521,9 +6411,7 @@
             "publishedAt": "2026-02-19",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "ebitdaFy2025"
-            ],
+            "claims": ["ebitdaFy2025"],
             "from": "2025-01-01",
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31"
@@ -6565,9 +6453,7 @@
             "publishedAt": "2026-02-19",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "netFinancialDebtFy2025"
-            ],
+            "claims": ["netFinancialDebtFy2025"],
             "from": "2025-12-31",
             "to": "2025-12-31",
             "purchasingPowerDate": "2025-12-31"
@@ -6609,9 +6495,7 @@
             "publishedAt": "2026-03-31",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "dividendTotal"
-            ],
+            "claims": ["dividendTotal"],
             "from": "2026-04-07",
             "to": "2026-04-07",
             "purchasingPowerDate": null
@@ -6652,9 +6536,7 @@
             "publishedAt": "2026-02-19",
             "publishedAtBasis": "EXACT",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "dividendPrevious"
-            ],
+            "claims": ["dividendPrevious"],
             "from": "2025-05-23",
             "to": "2025-05-23",
             "purchasingPowerDate": null
@@ -6695,9 +6577,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitFY2021"
-            ],
+            "claims": ["profitFY2021"],
             "from": "2021-01-01",
             "to": "2021-12-31",
             "purchasingPowerDate": null
@@ -6739,9 +6619,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "revenueFY2021"
-            ],
+            "claims": ["revenueFY2021"],
             "from": "2021-01-01",
             "to": "2021-12-31",
             "purchasingPowerDate": null
@@ -6783,9 +6661,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitFY2022"
-            ],
+            "claims": ["profitFY2022"],
             "from": "2022-01-01",
             "to": "2022-12-31",
             "purchasingPowerDate": null
@@ -6827,9 +6703,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "revenueFY2022"
-            ],
+            "claims": ["revenueFY2022"],
             "from": "2022-01-01",
             "to": "2022-12-31",
             "purchasingPowerDate": null
@@ -6871,9 +6745,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitFY2023"
-            ],
+            "claims": ["profitFY2023"],
             "from": "2023-01-01",
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31"
@@ -6915,9 +6787,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "revenueFY2023"
-            ],
+            "claims": ["revenueFY2023"],
             "from": "2023-01-01",
             "to": "2023-12-31",
             "purchasingPowerDate": "2023-12-31"
@@ -6959,9 +6829,7 @@
             "publishedAt": "2026-10-31",
             "publishedAtBasis": "OBSERVED_BY",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitFY2024"
-            ],
+            "claims": ["profitFY2024"],
             "from": "2024-01-01",
             "to": "2024-12-31",
             "purchasingPowerDate": "2024-12-31"

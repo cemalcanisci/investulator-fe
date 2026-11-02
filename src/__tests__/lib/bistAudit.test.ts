@@ -6,8 +6,24 @@ import { approximateBacktest } from '@/lib/approximateBacktest';
 import { isApproximateHistory } from '@/lib/approximateHistorySchema';
 import type { AnalysisReport } from '@/domain/analysis';
 
-const reports = researchBundle.reports.filter((report) =>
-  report.version.includes('2026-11-01'),
+const AUDITED_SYMBOLS = [
+  'TUPRS',
+  'DOAS',
+  'FROTO',
+  'TOASO',
+  'TTRAK',
+  'ISMEN',
+  'YGGYO',
+  'AKSA',
+  'AKMGY',
+  'PAGYO',
+];
+const reports = AUDITED_SYMBOLS.map((symbol) =>
+  researchBundle.reports
+    .filter((report) => report.presentation.symbol === symbol)
+    .reduce((newest, report) =>
+      (report.revision ?? 0) > (newest.revision ?? 0) ? report : newest,
+    ),
 );
 const find = (symbol: string): AnalysisReport => {
   const report = reports.find((r) => r.presentation.symbol === symbol);
@@ -69,7 +85,7 @@ describe('BIST source audit', () => {
   });
 
   it('blocks dividend returns for unresolved event histories but retains price results', () => {
-    for (const symbol of ['FROTO', 'TOASO', 'TTRAK', 'ISMEN', 'YGGYO']) {
+    for (const symbol of ['FROTO', 'TOASO', 'TTRAK', 'ISMEN']) {
       const history = researchBundle.approximate
         .flatMap((value) => (isApproximateHistory(value) ? [value] : []))
         .find((h) => h.assetId === find(symbol).presentation.assetId);
@@ -86,5 +102,23 @@ describe('BIST source audit', () => {
       expect(result.reinvest).toBeUndefined();
       expect(history.monthly.every((m) => m.fxDate <= m.date)).toBe(true);
     }
+  });
+
+  it('unblocks dividend returns for YGGYO once its event history was reconciled', () => {
+    const history = researchBundle.approximate
+      .flatMap((value) => (isApproximateHistory(value) ? [value] : []))
+      .find((h) => h.assetId === find('YGGYO').presentation.assetId);
+    if (!history) {
+      throw new Error('Missing history');
+    }
+    expect(history.coverage.dividends.state).toBe('REVIEWED');
+    const result = approximateBacktest(history, 10, {
+      mode: 'MONTHLY',
+      amountUsd: '1000',
+    });
+    expect(result.status).toBe('APPROXIMATE');
+    expect(result.cash).toBeDefined();
+    expect(result.reinvest).toBeDefined();
+    expect(history.monthly.every((m) => m.fxDate <= m.date)).toBe(true);
   });
 });

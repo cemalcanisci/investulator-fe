@@ -1,16 +1,16 @@
 {
-  "asOf": "2026-11-01",
-  "reviewer": "Codex",
+  "asOf": "2026-11-02",
+  "reviewer": "Codex (2026-11-01), Claude (2026-11-02)",
   "independent": false,
   "companies": [
     {
       "symbol": "TUPRS",
-      "version": "tuprs-2026-11-01-v8",
-      "previousVersion": "tuprs-2026-10-25-v7",
+      "version": "tuprs-2026-11-02-v10",
+      "previousVersion": "tuprs-2026-11-01-v8",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 73,
+      "verified": 79,
       "unverified": [],
       "verifiedIssues": [],
       "annual": [
@@ -19,43 +19,31 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenue2021"
-              ]
+              "factIds": ["revenue2021"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profit2021"
-              ]
+              "factIds": ["profit2021"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "equity2021"
-              ]
+              "factIds": ["equity2021"]
             },
             "cfo": {
               "status": "PARTIAL",
-              "factIds": [
-                "cfo2021"
-              ]
+              "factIds": ["cfo2021"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2021"]
             },
             "debt": {
               "status": "PARTIAL",
-              "factIds": [
-                "debt2021"
-              ]
+              "factIds": ["debt2021"]
             },
             "cash": {
               "status": "PARTIAL",
-              "factIds": [
-                "cash2021"
-              ]
+              "factIds": ["cash2021"]
             }
           }
         },
@@ -64,46 +52,31 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenue2022",
-                "revenue2023Comparable"
-              ]
+              "factIds": ["revenue2022"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profit2022",
-                "profit2023Comparable"
-              ]
+              "factIds": ["profit2022"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "equity2022"
-              ]
+              "factIds": ["equity2022"]
             },
             "cfo": {
               "status": "PARTIAL",
-              "factIds": [
-                "cfo2022",
-                "cfo2023Comparable"
-              ]
+              "factIds": ["cfo2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2022"]
             },
             "debt": {
               "status": "PARTIAL",
-              "factIds": [
-                "debt2022"
-              ]
+              "factIds": ["debt2022"]
             },
             "cash": {
               "status": "PARTIAL",
-              "factIds": [
-                "cash2022"
-              ]
+              "factIds": ["cash2022"]
             }
           }
         },
@@ -112,46 +85,31 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenue2023",
-                "revenue2024Comparable"
-              ]
+              "factIds": ["revenue2023"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profit2023",
-                "profit2024Comparable"
-              ]
+              "factIds": ["profit2023"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "equity2023"
-              ]
+              "factIds": ["equity2023"]
             },
             "cfo": {
               "status": "PARTIAL",
-              "factIds": [
-                "cfo2023",
-                "cfo2024Comparable"
-              ]
+              "factIds": ["cfo2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2023"]
             },
             "debt": {
               "status": "PARTIAL",
-              "factIds": [
-                "debt2023"
-              ]
+              "factIds": ["debt2023"]
             },
             "cash": {
               "status": "PARTIAL",
-              "factIds": [
-                "cash2023"
-              ]
+              "factIds": ["cash2023"]
             }
           }
         },
@@ -160,46 +118,31 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenue2024",
-                "revenue2025Comparable"
-              ]
+              "factIds": ["revenue2024"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profit2024",
-                "profit2025Comparable"
-              ]
+              "factIds": ["profit2024"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "equity2024"
-              ]
+              "factIds": ["equity2024"]
             },
             "cfo": {
               "status": "PARTIAL",
-              "factIds": [
-                "cfo2024",
-                "cfo2025Comparable"
-              ]
+              "factIds": ["cfo2024"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2024"]
             },
             "debt": {
               "status": "PARTIAL",
-              "factIds": [
-                "debt2024"
-              ]
+              "factIds": ["debt2024"]
             },
             "cash": {
               "status": "PARTIAL",
-              "factIds": [
-                "cash2024"
-              ]
+              "factIds": ["cash2024"]
             }
           }
         },
@@ -208,45 +151,31 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenue2025"
-              ]
+              "factIds": ["revenue2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profit2025"
-              ]
+              "factIds": ["profit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "equity2025"
-              ]
+              "factIds": ["equity2025"]
             },
             "cfo": {
               "status": "PARTIAL",
-              "factIds": [
-                "cfo2025"
-              ]
+              "factIds": ["cfo2025"]
             },
             "capex": {
               "status": "PARTIAL",
-              "factIds": [
-                "capex2025"
-              ]
+              "factIds": ["capex2025"]
             },
             "debt": {
               "status": "PARTIAL",
-              "factIds": [
-                "debt2025"
-              ]
+              "factIds": ["debt2025"]
             },
             "cash": {
               "status": "PARTIAL",
-              "factIds": [
-                "cash2025"
-              ]
+              "factIds": ["cash2025"]
             }
           }
         }
@@ -271,34 +200,22 @@
           },
           {
             "year": 2023,
-            "eventIds": [
-              "tuprs-2023-03-10",
-              "tuprs-2023-09-29"
-            ],
+            "eventIds": ["tuprs-2023-03-10", "tuprs-2023-09-29"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "tuprs-2024-04-03",
-              "tuprs-2024-09-27"
-            ],
+            "eventIds": ["tuprs-2024-04-03", "tuprs-2024-09-27"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "tuprs-2025-03-28",
-              "tuprs-2025-09-30"
-            ],
+            "eventIds": ["tuprs-2025-03-28", "tuprs-2025-09-30"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "tuprs-2026-03-16",
-              "tuprs-2026-09-30"
-            ],
+            "eventIds": ["tuprs-2026-03-16", "tuprs-2026-09-30"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -325,12 +242,12 @@
     },
     {
       "symbol": "DOAS",
-      "version": "doas-2026-11-01-v2",
-      "previousVersion": "doas-2026-10-27-v1",
+      "version": "doas-2026-11-02-v3",
+      "previousVersion": "doas-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 38,
+      "verified": 55,
       "unverified": [
         {
           "id": "netDebtQ1",
@@ -382,8 +299,8 @@
               "factIds": []
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyParentEquity2021"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -394,12 +311,12 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyFinancialDebt2021"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyCash2021"]
             }
           }
         },
@@ -407,32 +324,32 @@
           "year": 2022,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2022"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2022"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyParentEquity2022"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyOperatingCash2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyCapex2022"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyFinancialDebt2022"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyCash2022"]
             }
           }
         },
@@ -440,32 +357,32 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2023"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyParentEquity2023"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyOperatingCash2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyCapex2023"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyFinancialDebt2023"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyCash2023"]
             }
           }
         },
@@ -506,17 +423,12 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "fyRevenue2025"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025",
-                "fyProfit2025Restated"
-              ]
+              "factIds": ["fyProfit2025", "fyProfit2025Restated"]
             },
             "equity": {
               "status": "MISSING_DATA",
@@ -551,18 +463,12 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "doas-2021-04-27",
-              "doas-2021-07-12"
-            ],
+            "eventIds": ["doas-2021-04-27", "doas-2021-07-12"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "doas-2022-04-08",
-              "doas-2022-11-14"
-            ],
+            "eventIds": ["doas-2022-04-08", "doas-2022-11-14"],
             "status": "NEEDS_REVIEW"
           },
           {
@@ -576,25 +482,17 @@
           },
           {
             "year": 2024,
-            "eventIds": [
-              "doas-2024-04-19",
-              "doas-2024-09-02"
-            ],
+            "eventIds": ["doas-2024-04-19", "doas-2024-09-02"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "doas-2025-05-20"
-            ],
+            "eventIds": ["doas-2025-05-20"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "doas-2026-04-13",
-              "doas-2026-08-13"
-            ],
+            "eventIds": ["doas-2026-04-13", "doas-2026-08-13"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -609,23 +507,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "doas-issuer",
-          "dogusotomotiv-ir-site"
-        ],
+        "origins": ["yahoo-finance", "doas-issuer", "dogusotomotiv-ir-site"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "Net borç 33.739.782.000 − 1.512.478.000 = 32.227.304.000 TL. Krediler ve kiralamalar dahil; finansal yatırımlar düşülmedi. Yatırım nakit çıkışı maddi ve maddi olmayan varlıkları içerir. Yönetim FAVÖK tanımı ve 2025 nominal finansalları henüz mutabık değil."
     },
     {
       "symbol": "FROTO",
-      "version": "froto-2026-11-01-v2",
-      "previousVersion": "froto-2026-10-30-v1",
+      "version": "froto-2026-11-02-v3",
+      "previousVersion": "froto-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 32,
+      "verified": 38,
       "unverified": [],
       "verifiedIssues": [],
       "annual": [
@@ -699,16 +593,16 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2023"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFy2023End"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -732,18 +626,16 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2024"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2024"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFy2024End"
-              ]
+              "factIds": ["parentEquityFy2024End"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -767,20 +659,16 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFy2025End"
-              ]
+              "factIds": ["parentEquityFy2025End"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -791,8 +679,8 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["netFinancialDebtFy2025End"]
             },
             "cash": {
               "status": "MISSING_DATA",
@@ -811,49 +699,32 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021-02",
-              "div-2021-10"
-            ],
+            "eventIds": ["div-2021-02", "div-2021-10"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022-02",
-              "div-2022-10"
-            ],
+            "eventIds": ["div-2022-02", "div-2022-10"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023-02",
-              "div-2023-09"
-            ],
+            "eventIds": ["div-2023-02", "div-2023-09"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024-03",
-              "div-2024-10"
-            ],
+            "eventIds": ["div-2024-03", "div-2024-10"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025-03",
-              "div-2025-11"
-            ],
+            "eventIds": ["div-2025-03", "div-2025-11"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026-02"
-            ],
+            "eventIds": ["div-2026-02"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -868,23 +739,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "fordotosan-ir-site",
-          "froto-issuer"
-        ],
+        "origins": ["yahoo-finance", "fordotosan-ir-site", "froto-issuer"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir."
     },
     {
       "symbol": "TOASO",
-      "version": "toaso-2026-11-01-v2",
-      "previousVersion": "toaso-2026-10-31-v1",
+      "version": "toaso-2026-11-02-v3",
+      "previousVersion": "toaso-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 28,
+      "verified": 40,
       "unverified": [],
       "verifiedIssues": [],
       "annual": [
@@ -991,18 +858,16 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2024"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2024"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFy2024End"
-              ]
+              "factIds": ["parentEquityFy2024End"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -1013,12 +878,17 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": [
+                "debtShortFy2024End",
+                "debtLongFy2024End",
+                "financialDebtFy2024End",
+                "netFinancialDebtFy2024End"
+              ]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2024End"]
             }
           }
         },
@@ -1026,20 +896,16 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFy2025End"
-              ]
+              "factIds": ["parentEquityFy2025End"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -1050,12 +916,17 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": [
+                "netFinancialDebtFy2025End",
+                "debtShortFy2025End",
+                "debtLongFy2025End",
+                "financialDebtFy2025End"
+              ]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2025End"]
             }
           }
         }
@@ -1070,44 +941,32 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021-02-28"
-            ],
+            "eventIds": ["div-2021-02-28"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022-02-28"
-            ],
+            "eventIds": ["div-2022-02-28"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023-02-28"
-            ],
+            "eventIds": ["div-2023-02-28"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024-03-31"
-            ],
+            "eventIds": ["div-2024-03-31"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025-03-31"
-            ],
+            "eventIds": ["div-2025-03-31"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026-02-28"
-            ],
+            "eventIds": ["div-2026-02-28"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -1122,23 +981,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "toaso-issuer",
-          "tofas-ir-site"
-        ],
+        "origins": ["yahoo-finance", "toaso-issuer", "tofas-ir-site"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır."
     },
     {
       "symbol": "TTRAK",
-      "version": "ttrak-2026-11-01-v2",
-      "previousVersion": "ttrak-2026-10-29-v1",
+      "version": "ttrak-2026-11-02-v3",
+      "previousVersion": "ttrak-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 22,
+      "verified": 50,
       "unverified": [
         {
           "id": "dividendTotal",
@@ -1157,32 +1012,32 @@
           "year": 2021,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2021"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2021"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFy2021End"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFy2021"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFy2021"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFy2021End"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2021End"]
             }
           }
         },
@@ -1190,32 +1045,32 @@
           "year": 2022,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2022"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2022"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFy2022End"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFy2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFy2022"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFy2022End"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2022End"]
             }
           }
         },
@@ -1223,32 +1078,32 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2023"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFy2023End"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFy2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFy2023"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFy2023End"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2023End"]
             }
           }
         },
@@ -1256,32 +1111,32 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2024"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2024"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFy2024End"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFy2024"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFy2024"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFy2024End"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFy2024End"]
             }
           }
         },
@@ -1294,9 +1149,7 @@
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "MISSING_DATA",
@@ -1331,38 +1184,27 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021"
-            ],
+            "eventIds": ["div-2021"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022"
-            ],
+            "eventIds": ["div-2022"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023"
-            ],
+            "eventIds": ["div-2023"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024",
-              "div-2024-2"
-            ],
+            "eventIds": ["div-2024", "div-2024-2"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025"
-            ],
+            "eventIds": ["div-2025"],
             "status": "NEEDS_REVIEW"
           },
           {
@@ -1382,22 +1224,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "turktraktor-ir-site"
-        ],
+        "origins": ["yahoo-finance", "turktraktor-ir-site"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "Yeni zarar dönemi nedeniyle F/K hesaplanamaz. Eski kârlı yıl cari kâr yerine kullanılamaz. 2025 dağıtımı 2026 temettü verimine taşınmaz; KAP 1569214 dağıtmama kararını bildirir. Normalleştirilmiş kâr köprüsü eksik; PD/DD tek başına ucuzluk ölçüsü değildir."
     },
     {
       "symbol": "ISMEN",
-      "version": "ismen-2026-11-01-v2",
-      "previousVersion": "ismen-2026-10-30-v1",
+      "version": "ismen-2026-11-02-v3",
+      "previousVersion": "ismen-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 14,
+      "verified": 47,
       "unverified": [
         {
           "id": "commissionIncome",
@@ -1408,46 +1247,6 @@
           "id": "commissionIncomePrevious",
           "status": "CONFLICT",
           "reason": "Mali Tablolar 2025/6 sutunu - Gelir Tablosu, 'Faiz, Ucret, Prim, Komisyon ve Diger Gelirler' (karsilastirmali). | 2026-11-01: Faiz, ücret, prim, komisyon ve diğer gelir toplamı saf komisyon geliri değildir; hizmet geliri ayrı izlenmeli."
-        },
-        {
-          "id": "fyProfit2024",
-          "status": "CONFLICT",
-          "reason": "Mali Tablolar 2024/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
-        },
-        {
-          "id": "fyProfit2023",
-          "status": "CONFLICT",
-          "reason": "Mali Tablolar 2023/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
-        },
-        {
-          "id": "fyProfit2022",
-          "status": "CONFLICT",
-          "reason": "Mali Tablolar 2022/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
-        },
-        {
-          "id": "fyProfit2021",
-          "status": "CONFLICT",
-          "reason": "Mali Tablolar 2021/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik."
-        },
-        {
-          "id": "parentEquity2024",
-          "status": "UNVERIFIED",
-          "reason": "Mali Tablolar 2024/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
-        },
-        {
-          "id": "parentEquity2023",
-          "status": "UNVERIFIED",
-          "reason": "Mali Tablolar 2023/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
-        },
-        {
-          "id": "parentEquity2022",
-          "status": "UNVERIFIED",
-          "reason": "Mali Tablolar 2022/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
-        },
-        {
-          "id": "parentEquity2021",
-          "status": "UNVERIFIED",
-          "reason": "Mali Tablolar 2021/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı."
         }
       ],
       "verifiedIssues": [],
@@ -1456,36 +1255,32 @@
           "year": 2021,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2021"]
             },
             "profit": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "fyProfit2021"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2021"]
             },
             "equity": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "parentEquity2021"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2021"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cfo2021"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2021"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2021"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2021"]
             }
           }
         },
@@ -1493,36 +1288,32 @@
           "year": 2022,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2022"]
             },
             "profit": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "fyProfit2022"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2022"]
             },
             "equity": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "parentEquity2022"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2022"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cfo2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2022"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2022"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2022"]
             }
           }
         },
@@ -1530,36 +1321,32 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2023"]
             },
             "profit": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "fyProfit2023"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2023"]
             },
             "equity": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "parentEquity2023"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2023"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cfo2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2023"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2023"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2023"]
             }
           }
         },
@@ -1567,36 +1354,32 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2024"]
             },
             "profit": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "fyProfit2024"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2024"]
             },
             "equity": {
-              "status": "NEEDS_REVIEW",
-              "factIds": [
-                "parentEquity2024"
-              ]
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2024"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cfo2024"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2024"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2024"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2024"]
             }
           }
         },
@@ -1604,36 +1387,32 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenue2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquity2025"
-              ]
+              "factIds": ["parentEquity2025"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cfo2025"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capex2025"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2025"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2025"]
             }
           }
         }
@@ -1648,44 +1427,32 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021"
-            ],
+            "eventIds": ["div-2021"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022"
-            ],
+            "eventIds": ["div-2022"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023"
-            ],
+            "eventIds": ["div-2023"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024"
-            ],
+            "eventIds": ["div-2024"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025"
-            ],
+            "eventIds": ["div-2025"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026"
-            ],
+            "eventIds": ["div-2026"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -1700,23 +1467,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "isyatirim-sirket-karti",
-          "ismen-issuer"
-        ],
+        "origins": ["yahoo-finance", "isyatirim-sirket-karti", "ismen-issuer"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik."
     },
     {
       "symbol": "YGGYO",
-      "version": "yggyo-2026-11-01-v2",
-      "previousVersion": "yggyo-2026-10-29-v1",
+      "version": "yggyo-2026-11-02-v3",
+      "previousVersion": "yggyo-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 21,
+      "verified": 40,
       "unverified": [
         {
           "id": "netAssetValue",
@@ -1800,12 +1563,12 @@
               "factIds": []
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2023"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -1816,12 +1579,12 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2023"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2023"]
             }
           }
         },
@@ -1829,16 +1592,16 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2024"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2024"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2024"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -1849,12 +1612,12 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2024"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2024"]
             }
           }
         },
@@ -1862,16 +1625,16 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyRevenue2025"]
             },
             "profit": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquity2025"]
             },
             "cfo": {
               "status": "MISSING_DATA",
@@ -1882,12 +1645,12 @@
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebt2025"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cash2025"]
             }
           }
         }
@@ -1902,44 +1665,32 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021"
-            ],
+            "eventIds": ["div-2021"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022"
-            ],
+            "eventIds": ["div-2022"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023"
-            ],
+            "eventIds": ["div-2023"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024"
-            ],
+            "eventIds": ["div-2024"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025"
-            ],
+            "eventIds": ["div-2025"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026"
-            ],
+            "eventIds": ["div-2026"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -1958,23 +1709,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "yggyo-issuer",
-          "yenigimatgyo-ir-site"
-        ],
+        "origins": ["yahoo-finance", "yggyo-issuer", "yenigimatgyo-ir-site"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "ANKAmall doluluğu %99,9; kapalı oteli kapsamaz. İşletme nakdi 1.741.774.649 TL içinde 832.423.344 TL faiz vardır. Faiz hariç nakit 909.351.305 TL, yatırım sonrası toplam nakit 1.521.751.711 TL. Ödenen temettünün toplam işletme nakdiyle karşılanması %66,44; bu oran saf kira nakdi değildir. Bireysel özkaynak düzeltilmiş NAD değildir."
     },
     {
       "symbol": "AKSA",
-      "version": "aksa-2026-11-01-v2",
-      "previousVersion": "aksa-2026-10-31-v1",
+      "version": "aksa-2026-11-02-v3",
+      "previousVersion": "aksa-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 41,
+      "verified": 50,
       "unverified": [],
       "verifiedIssues": [],
       "annual": [
@@ -1983,15 +1730,11 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenueFY2021"
-              ]
+              "factIds": ["revenueFY2021"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2021"
-              ]
+              "factIds": ["profitFY2021"]
             },
             "equity": {
               "status": "MISSING_DATA",
@@ -2020,15 +1763,11 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenueFY2022"
-              ]
+              "factIds": ["revenueFY2022"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2022"
-              ]
+              "factIds": ["profitFY2022"]
             },
             "equity": {
               "status": "MISSING_DATA",
@@ -2057,15 +1796,11 @@
           "metrics": {
             "revenue": {
               "status": "PARTIAL",
-              "factIds": [
-                "revenueFY2023"
-              ]
+              "factIds": ["revenueFY2023"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2023"
-              ]
+              "factIds": ["profitFY2023"]
             },
             "equity": {
               "status": "MISSING_DATA",
@@ -2093,34 +1828,32 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2024"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2024"
-              ]
+              "factIds": ["profitFY2024"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["parentEquityFY2024"]
             },
             "cfo": {
               "status": "MISSING_DATA",
               "factIds": []
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2024"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2024"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2024"]
             }
           }
         },
@@ -2128,36 +1861,32 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFY2025"
-              ]
+              "factIds": ["parentEquityFY2025"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2025"]
             },
             "capex": {
               "status": "MISSING_DATA",
               "factIds": []
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["netFinancialDebtFy2025", "financialDebtFY2025"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2025"]
             }
           }
         }
@@ -2172,44 +1901,32 @@
         "years": [
           {
             "year": 2021,
-            "eventIds": [
-              "div-2021-04-13"
-            ],
+            "eventIds": ["div-2021-04-13"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022-04-21"
-            ],
+            "eventIds": ["div-2022-04-21"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023-04-11"
-            ],
+            "eventIds": ["div-2023-04-11"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024-04-03"
-            ],
+            "eventIds": ["div-2024-04-03"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025-05-21"
-            ],
+            "eventIds": ["div-2025-05-21"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026-04-03"
-            ],
+            "eventIds": ["div-2026-04-03"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -2224,22 +1941,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "aksa-issuer"
-        ],
+        "origins": ["yahoo-finance", "aksa-issuer"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır."
     },
     {
       "symbol": "AKMGY",
-      "version": "akmgy-2026-11-01-v2",
-      "previousVersion": "akmgy-2026-10-31-v1",
+      "version": "akmgy-2026-11-02-v3",
+      "previousVersion": "akmgy-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 38,
+      "verified": 68,
       "unverified": [
         {
           "id": "netAssetValue",
@@ -2253,34 +1967,32 @@
           "year": 2021,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2021"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2021"
-              ]
+              "factIds": ["profitFY2021"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2021"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2021"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2021"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2021"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2021"]
             }
           }
         },
@@ -2288,34 +2000,32 @@
           "year": 2022,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2022"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2022"
-              ]
+              "factIds": ["profitFY2022"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2022"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2022"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2022"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2022"]
             }
           }
         },
@@ -2323,34 +2033,32 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2023"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2023"
-              ]
+              "factIds": ["profitFY2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2023"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2023"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2023"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2023"]
             }
           }
         },
@@ -2358,34 +2066,32 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2024"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2024"
-              ]
+              "factIds": ["profitFY2024"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2024"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2024"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2024"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2024"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2024"]
             }
           }
         },
@@ -2393,36 +2099,32 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFY2025"
-              ]
+              "factIds": ["parentEquityFY2025", "equityFY2025End"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2025"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2025End"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2025End"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2025End"]
             }
           }
         }
@@ -2447,40 +2149,27 @@
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022-04-04",
-              "div-2022-08-10"
-            ],
+            "eventIds": ["div-2022-04-04", "div-2022-08-10"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023-04-19"
-            ],
+            "eventIds": ["div-2023-04-19"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024-04-17"
-            ],
+            "eventIds": ["div-2024-04-17"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2025,
-            "eventIds": [
-              "div-2025-04-09",
-              "div-2025-08-18"
-            ],
+            "eventIds": ["div-2025-04-09", "div-2025-08-18"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026-04-15",
-              "div-2026-08-11"
-            ],
+            "eventIds": ["div-2026-04-15", "div-2026-08-11"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -2495,23 +2184,19 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "akmerkez-issuer",
-          "akmgy-issuer"
-        ],
+        "origins": ["yahoo-finance", "akmerkez-issuer", "akmgy-issuer"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "İşletme nakdi 356.808.000 TL; aynı satın alma gücünde ödenen temettü 473.103.000 TL. İşletme nakdi karşılama oranı %75,419; alınan faiz yatırım nakdinde ayrıdır. Muhasebe özkaynağı, borç/vergi düzeltmeli bağımsız NAD değildir."
     },
     {
       "symbol": "PAGYO",
-      "version": "pagyo-2026-11-01-v2",
-      "previousVersion": "pagyo-2026-10-31-v1",
+      "version": "pagyo-2026-11-02-v4",
+      "previousVersion": "pagyo-2026-11-01-v2",
       "previousPreserved": true,
       "review": "NEEDS_REVIEW",
       "independent": false,
-      "verified": 34,
+      "verified": 71,
       "unverified": [
         {
           "id": "netAssetValue",
@@ -2525,34 +2210,32 @@
           "year": 2021,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2021"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2021"
-              ]
+              "factIds": ["profitFY2021"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2021"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2021"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2021"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2021"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2021"]
             }
           }
         },
@@ -2560,34 +2243,32 @@
           "year": 2022,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2022"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2022"
-              ]
+              "factIds": ["profitFY2022"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2022"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2022"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2022"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2022"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2022"]
             }
           }
         },
@@ -2595,34 +2276,32 @@
           "year": 2023,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2023"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2023"
-              ]
+              "factIds": ["profitFY2023"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2023"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2023"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2023"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2023"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2023"]
             }
           }
         },
@@ -2630,34 +2309,32 @@
           "year": 2024,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2024"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "profitFY2024"
-              ]
+              "factIds": ["profitFY2024"]
             },
             "equity": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["equityFY2024"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2024"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2024"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2024"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2024"]
             }
           }
         },
@@ -2665,36 +2342,32 @@
           "year": 2025,
           "metrics": {
             "revenue": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["revenueFY2025"]
             },
             "profit": {
               "status": "PARTIAL",
-              "factIds": [
-                "fyProfit2025"
-              ]
+              "factIds": ["fyProfit2025", "profitFY2025Native"]
             },
             "equity": {
               "status": "PARTIAL",
-              "factIds": [
-                "parentEquityFY2025"
-              ]
+              "factIds": ["parentEquityFY2025", "equityFY2025"]
             },
             "cfo": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["operatingCashFY2025"]
             },
             "capex": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["capexFY2025"]
             },
             "debt": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["financialDebtFY2025"]
             },
             "cash": {
-              "status": "MISSING_DATA",
-              "factIds": []
+              "status": "PARTIAL",
+              "factIds": ["cashFY2025"]
             }
           }
         }
@@ -2721,26 +2394,17 @@
           },
           {
             "year": 2022,
-            "eventIds": [
-              "div-2022-04-08"
-            ],
+            "eventIds": ["div-2022-04-08"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2023,
-            "eventIds": [
-              "div-2023-04-17",
-              "div-2023-09-21",
-              "div-2023-12-21"
-            ],
+            "eventIds": ["div-2023-04-17", "div-2023-09-21", "div-2023-12-21"],
             "status": "NEEDS_REVIEW"
           },
           {
             "year": 2024,
-            "eventIds": [
-              "div-2024-07-10",
-              "div-2024-12-24"
-            ],
+            "eventIds": ["div-2024-07-10", "div-2024-12-24"],
             "status": "NEEDS_REVIEW"
           },
           {
@@ -2755,9 +2419,7 @@
           },
           {
             "year": 2026,
-            "eventIds": [
-              "div-2026-05-11"
-            ],
+            "eventIds": ["div-2026-05-11"],
             "status": "NEEDS_REVIEW"
           }
         ],
@@ -2772,11 +2434,7 @@
       "sourceReview": {
         "level": "DOCUMENT_RECONCILIATION",
         "independent": false,
-        "origins": [
-          "yahoo-finance",
-          "panora-issuer",
-          "pagyo-issuer"
-        ],
+        "origins": ["yahoo-finance", "panora-issuer", "pagyo-issuer"],
         "note": "İhraççı web sitesi, aynı KAP eki ve aynalanmış kopya tek kökendir. İki URL bağımsız doğrulama sayılmaz. Fiyat/kur tek sağlayıcıdır."
       },
       "note": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir."

@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "doas-2026-11-01-v2",
+    "version": "doas-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-27",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-27",
           "to": "2026-10-27",
           "purchasingPowerDate": null
@@ -90,9 +85,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares"
-          ],
+          "claims": ["shares"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -133,9 +126,7 @@
           "publishedAt": "2026-10-27",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52Low"
-          ],
+          "claims": ["week52Low"],
           "from": "2026-10-27",
           "to": "2026-10-27",
           "purchasingPowerDate": null
@@ -176,9 +167,7 @@
           "publishedAt": "2026-10-27",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52High"
-          ],
+          "claims": ["week52High"],
           "from": "2026-10-27",
           "to": "2026-10-27",
           "purchasingPowerDate": null
@@ -398,9 +387,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-05-11",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "q1EquityEnd"
-          ],
+          "claims": ["q1EquityEnd"],
           "from": "2026-03-31",
           "to": "2026-03-31",
           "purchasingPowerDate": "2026-03-31"
@@ -441,9 +428,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "q2Revenue2026"
-          ],
+          "claims": ["q2Revenue2026"],
           "from": "2026-04-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -484,9 +469,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "q2Profit2026"
-          ],
+          "claims": ["q2Profit2026"],
           "from": "2026-04-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -549,9 +532,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netDebtQ2"
-          ],
+          "claims": ["netDebtQ2"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -897,11 +878,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-08-19",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "capex",
-            "workingCapitalCash"
-          ],
+          "claims": ["operatingCash", "capex", "workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -942,9 +919,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "capex"
-          ],
+          "claims": ["capex"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1263,11 +1238,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-08-19",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "capex",
-            "workingCapitalCash"
-          ],
+          "claims": ["operatingCash", "capex", "workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1619,9 +1590,7 @@
           "publishedAt": "2026-04-08",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividend1"
-          ],
+          "claims": ["dividend1"],
           "from": "2026-04-13",
           "to": "2026-04-13",
           "purchasingPowerDate": null
@@ -1662,9 +1631,7 @@
           "publishedAt": "2026-04-08",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividend2"
-          ],
+          "claims": ["dividend2"],
           "from": "2026-08-13",
           "to": "2026-08-13",
           "purchasingPowerDate": null
@@ -1705,9 +1672,7 @@
           "publishedAt": "2026-04-08",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-10-27",
           "to": "2026-10-27",
           "purchasingPowerDate": null
@@ -1792,9 +1757,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialDebt"
-          ],
+          "claims": ["financialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1835,9 +1798,7 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "depreciation"
-          ],
+          "claims": ["depreciation"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1878,172 +1839,811 @@
           "publishedAt": "2026-08-19",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025Restated"
-          ],
+          "claims": ["fyProfit2025Restated"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
         },
         "metricKey": "profit"
+      },
+      {
+        "id": "fyRevenue2023",
+        "value": "149244881000",
+        "unit": "TRY",
+        "period": "FY2023",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyRevenue2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Hasılat 149.244.881/88.487.132; Net dönem kârı (ana ortaklık payı) 19.622.080/15.612.776 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2023", "fyProfit2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2023",
+        "value": "19622080000",
+        "unit": "TRY",
+        "period": "FY2023",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyProfit2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Hasılat 149.244.881/88.487.132; Net dönem kârı (ana ortaklık payı) 19.622.080/15.612.776 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2023", "fyProfit2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyParentEquity2023",
+        "value": "41339017000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyParentEquity2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyParentEquity2023", "fyCash2023", "fyFinancialDebt2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyCash2023",
+        "value": "7643608000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyCash2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyParentEquity2023", "fyCash2023", "fyFinancialDebt2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyFinancialDebt2023",
+        "value": "10780452000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyFinancialDebt2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyParentEquity2023", "fyCash2023", "fyFinancialDebt2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyOperatingCash2023",
+        "value": "2610116000",
+        "unit": "TRY",
+        "period": "FY2023",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyOperatingCash2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Faaliyetlerden elde edilen nakit akışları 11.754.275/6.371.528, çalışanlara sağlanan faydalara ilişkin ödemeler (177.732)/(16.765), diğer karşılıklara ilişkin ödemeler (1.590.777)/(990.861), vergi iadeleri(ödemeleri) (7.376.897)/(3.369.129), diğer nakit girişleri 1.247/751 → İşletme faaliyetlerinden nakit akışları 2.610.116/1.995.524 (hesaplanan toplam). Maddi duran varlık alımı (1.518.192)/(2.174.441) + maddi olmayan duran varlık alımı (370.486)/(247.902) = 1.888.678/2.422.343 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyOperatingCash2023", "fyCapex2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyCapex2023",
+        "value": "1888678000",
+        "unit": "TRY",
+        "period": "FY2023",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyCapex2023",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Faaliyetlerden elde edilen nakit akışları 11.754.275/6.371.528, çalışanlara sağlanan faydalara ilişkin ödemeler (177.732)/(16.765), diğer karşılıklara ilişkin ödemeler (1.590.777)/(990.861), vergi iadeleri(ödemeleri) (7.376.897)/(3.369.129), diğer nakit girişleri 1.247/751 → İşletme faaliyetlerinden nakit akışları 2.610.116/1.995.524 (hesaplanan toplam). Maddi duran varlık alımı (1.518.192)/(2.174.441) + maddi olmayan duran varlık alımı (370.486)/(247.902) = 1.888.678/2.422.343 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyOperatingCash2023", "fyCapex2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyRevenue2022",
+        "value": "88487132000",
+        "unit": "TRY",
+        "period": "FY2022",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyRevenue2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Hasılat 149.244.881/88.487.132; Net dönem kârı (ana ortaklık payı) 19.622.080/15.612.776 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2022",
+        "value": "15612776000",
+        "unit": "TRY",
+        "period": "FY2022",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyProfit2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Hasılat 149.244.881/88.487.132; Net dönem kârı (ana ortaklık payı) 19.622.080/15.612.776 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyParentEquity2022",
+        "value": "31254523000",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyParentEquity2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyParentEquity2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyCash2022",
+        "value": "5574548000",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyCash2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyCash2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyFinancialDebt2022",
+        "value": "7177723000",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyFinancialDebt2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyFinancialDebt2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyOperatingCash2022",
+        "value": "1995524000",
+        "unit": "TRY",
+        "period": "FY2022",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyOperatingCash2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Faaliyetlerden elde edilen nakit akışları 11.754.275/6.371.528, çalışanlara sağlanan faydalara ilişkin ödemeler (177.732)/(16.765), diğer karşılıklara ilişkin ödemeler (1.590.777)/(990.861), vergi iadeleri(ödemeleri) (7.376.897)/(3.369.129), diğer nakit girişleri 1.247/751 → İşletme faaliyetlerinden nakit akışları 2.610.116/1.995.524 (hesaplanan toplam). Maddi duran varlık alımı (1.518.192)/(2.174.441) + maddi olmayan duran varlık alımı (370.486)/(247.902) = 1.888.678/2.422.343 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyOperatingCash2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyCapex2022",
+        "value": "2422343000",
+        "unit": "TRY",
+        "period": "FY2022",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyCapex2022",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+          "excerpt": "Faaliyetlerden elde edilen nakit akışları 11.754.275/6.371.528, çalışanlara sağlanan faydalara ilişkin ödemeler (177.732)/(16.765), diğer karşılıklara ilişkin ödemeler (1.590.777)/(990.861), vergi iadeleri(ödemeleri) (7.376.897)/(3.369.129), diğer nakit girişleri 1.247/751 → İşletme faaliyetlerinden nakit akışları 2.610.116/1.995.524 (hesaplanan toplam). Maddi duran varlık alımı (1.518.192)/(2.174.441) + maddi olmayan duran varlık alımı (370.486)/(247.902) = 1.888.678/2.422.343 (2023/2022, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyCapex2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyParentEquity2021",
+        "value": "18139701000",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun 3. karşılaştırma sütunudur (Doğuş GYO alımı nedeniyle ortak kontrol altındaki işletme birleşmeleri yöntemiyle YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir; orijinal 2021 yıl sonu raporundaki nominal/kendi dönem bazındaki rakamla AYNI DEĞİLDİR, karıştırılmamalı).",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyParentEquity2021",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyParentEquity2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyCash2021",
+        "value": "9262471000",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: yeniden düzenlenmiş (bkz. fyParentEquity2021 notu).",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyCash2021",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyCash2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyFinancialDebt2021",
+        "value": "13325832000",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "fy2023PrimaryReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: yeniden düzenlenmiş (bkz. fyParentEquity2021 notu).",
+        "evidence": {
+          "id": "ev-doas-fy2023report-fyFinancialDebt2021",
+          "sourceId": "fy2023PrimaryReport",
+          "originId": "dogusotomotiv-ir-site",
+          "collectionId": "doas-bist-audit-2026-11-02",
+          "reviewerId": "claude-doas-fork-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "excerpt": "Nakit ve nakit benzerleri 7.643.608/5.574.548/9.262.471; Kısa vadeli borçlanmalar 2.571.420/3.597.665/7.322.649; Uzun vadeli borçlanmaların kısa vadeli kısımları 2.023.170/665.688/1.367.660; Uzun vadeli borçlanmalar 6.185.862/2.914.370/4.635.523; Ana ortaklığa ait özkaynaklar 41.339.017/31.254.523/18.139.701 (2023/2022/2021, bin TL)",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-15",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyFinancialDebt2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
       }
     ],
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "q1ProfitMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "ebitdaMarginH1",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "fyEbitdaMargin2025",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "ebitdaBridge",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       }
@@ -2052,175 +2652,119 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "q1ProfitMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "q1Profit2026",
-          "q1Revenue2026"
-        ],
+        "inputs": ["q1Profit2026", "q1Revenue2026"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "ebitdaMarginH1",
         "operation": "PERCENT",
-        "inputs": [
-          "ebitdaH1",
-          "revenue"
-        ],
+        "inputs": ["ebitdaH1", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "fyEbitdaMargin2025",
         "operation": "PERCENT",
-        "inputs": [
-          "fyEbitda2025",
-          "fyRevenue2025"
-        ],
+        "inputs": ["fyEbitda2025", "fyRevenue2025"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtCurrent",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtCurrent", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "ebitdaBridge",
         "operation": "SUM",
-        "inputs": [
-          "operatingProfit",
-          "depreciation"
-        ],
+        "inputs": ["operatingProfit", "depreciation"],
         "unit": "TRY",
         "precision": 0
       }
@@ -2236,7 +2780,7 @@
       "sector": "AUTOMOTIVE_DISTRIBUTION",
       "contentKey": "researchDoasAudit20261101",
       "asOf": "2026-10-27",
-      "retrievedAt": "2026-11-01",
+      "retrievedAt": "2026-11-02",
       "timezone": "Europe/Istanbul",
       "financialPeriod": "2026-01-01 / 2026-06-30",
       "priceAt": "2026-10-27T18:10:00+03:00",
@@ -2378,6 +2922,15 @@
           "period": "2026-01-01 / 2026-06-30",
           "locator": "",
           "observedAt": "2026-11-01"
+        },
+        {
+          "id": "fy2023PrimaryReport",
+          "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+          "publishedAt": "2024-03-15",
+          "title": "Doğuş Otomotiv 31.12.2023 konsolide finansal rapor (2022/2021 ile karşılaştırmalı, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+          "period": "FY2023",
+          "locator": "",
+          "observedAt": "2026-11-02"
         }
       ],
       "facts": [
@@ -2704,175 +3257,119 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "q1ProfitMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "q1Profit2026",
-            "q1Revenue2026"
-          ],
+          "inputs": ["q1Profit2026", "q1Revenue2026"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "ebitdaMarginH1",
           "operation": "PERCENT",
-          "inputs": [
-            "ebitdaH1",
-            "revenue"
-          ],
+          "inputs": ["ebitdaH1", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "fyEbitdaMargin2025",
           "operation": "PERCENT",
-          "inputs": [
-            "fyEbitda2025",
-            "fyRevenue2025"
-          ],
+          "inputs": ["fyEbitda2025", "fyRevenue2025"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtCurrent",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtCurrent", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "ebitdaBridge",
           "operation": "SUM",
-          "inputs": [
-            "operatingProfit",
-            "depreciation"
-          ],
+          "inputs": ["operatingProfit", "depreciation"],
           "unit": "TRY",
           "precision": 0
         }
@@ -2967,21 +3464,37 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
-        "factIds": [],
+        "factIds": ["fyParentEquity2021", "fyCash2021", "fyFinancialDebt2021"],
         "calculationIds": []
       },
       {
         "year": "2022",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2022",
+          "fyProfit2022",
+          "fyParentEquity2022",
+          "fyCash2022",
+          "fyFinancialDebt2022",
+          "fyOperatingCash2022",
+          "fyCapex2022"
+        ],
         "calculationIds": []
       },
       {
         "year": "2023",
-        "factIds": [],
+        "factIds": [
+          "fyRevenue2023",
+          "fyProfit2023",
+          "fyParentEquity2023",
+          "fyCash2023",
+          "fyFinancialDebt2023",
+          "fyOperatingCash2023",
+          "fyCapex2023"
+        ],
         "calculationIds": []
       },
       {
@@ -3007,10 +3520,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -3316,9 +3826,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-05-11",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "q1EquityEnd"
-          ],
+          "claims": ["q1EquityEnd"],
           "from": "2026-03-31",
           "to": "2026-03-31",
           "purchasingPowerDate": "2026-03-31"
@@ -3750,11 +4258,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-08-19",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "capex",
-            "workingCapitalCash"
-          ],
+          "claims": ["operatingCash", "capex", "workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3794,11 +4298,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-08-19",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "capex",
-            "workingCapitalCash"
-          ],
+          "claims": ["operatingCash", "capex", "workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4117,11 +4617,7 @@
           "checkedAt": "2026-10-27",
           "publishedAt": "2026-08-19",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash",
-            "capex",
-            "workingCapitalCash"
-          ],
+          "claims": ["operatingCash", "capex", "workingCapitalCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -4552,141 +5048,91 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "q1ProfitMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "ebitdaMarginH1",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "fyEbitdaMargin2025",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       }
@@ -4695,155 +5141,105 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "q1ProfitMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "q1Profit2026",
-          "q1Revenue2026"
-        ],
+        "inputs": ["q1Profit2026", "q1Revenue2026"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "ebitdaMarginH1",
         "operation": "PERCENT",
-        "inputs": [
-          "ebitdaH1",
-          "revenue"
-        ],
+        "inputs": ["ebitdaH1", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "fyEbitdaMargin2025",
         "operation": "PERCENT",
-        "inputs": [
-          "fyEbitda2025",
-          "fyRevenue2025"
-        ],
+        "inputs": ["fyEbitda2025", "fyRevenue2025"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtCurrent",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtCurrent", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       }
@@ -5276,155 +5672,105 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "q1ProfitMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "q1Profit2026",
-            "q1Revenue2026"
-          ],
+          "inputs": ["q1Profit2026", "q1Revenue2026"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "ebitdaMarginH1",
           "operation": "PERCENT",
-          "inputs": [
-            "ebitdaH1",
-            "revenue"
-          ],
+          "inputs": ["ebitdaH1", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "fyEbitdaMargin2025",
           "operation": "PERCENT",
-          "inputs": [
-            "fyEbitda2025",
-            "fyRevenue2025"
-          ],
+          "inputs": ["fyEbitda2025", "fyRevenue2025"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtCurrent",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtCurrent", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         }

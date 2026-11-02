@@ -61,39 +61,28 @@
       "from": "2006-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2006-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2006-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "stock",
-        "actions"
-      ],
+      "sourceIds": ["stock", "actions"],
       "method": "Provider split events reconciled against broker action table; common upstream independence unknown."
     },
     "dividends": {
       "from": "2006-10-01",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "calendar",
-        "actions",
-        "company"
-      ],
+      "sourceIds": ["calendar", "actions", "company"],
       "method": "Twenty ex-date/amount records reconciled; payment dates from browser-accessible Investing calendar. Broker rounding tolerance 0.00002 TRY per pre-split share; no independent audit."
     }
   },
@@ -2192,7 +2181,5 @@
     "tuprs-2026-03-16",
     "tuprs-2026-09-30"
   ],
-  "expectedActionIds": [
-    "split-2023-04-04"
-  ]
+  "expectedActionIds": ["split-2023-04-04"]
 }

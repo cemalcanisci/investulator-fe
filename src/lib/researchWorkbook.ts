@@ -15,7 +15,10 @@ export interface ResearchBundle {
   readonly verified: readonly JsonValue[];
 }
 export const WORKBOOK_VERSION = 'investulator-research/1';
-export const MAX_WORKBOOK_ROWS = 100000;
+// The 10-company BIST research set alone is past 100k rows on a full export;
+// this is an import-time sanity bound, not a business limit, so it tracks
+// real growth with headroom rather than a fixed round number.
+export const MAX_WORKBOOK_ROWS = 200000;
 export const MAX_WORKBOOK_BYTES = 8 * 1024 * 1024;
 export const WORKBOOK_SHEETS = [
   'Companies',

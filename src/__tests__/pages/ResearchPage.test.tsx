@@ -32,6 +32,10 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
+// Growing per-company research history (now 10 sourced companies) pushes
+// jsdom render time past the 5s default on slower runs.
+vi.setConfig({ testTimeout: 20000 });
+
 describe('ResearchPage', () => {
   it('uses the PAGYO debt source without unrelated company explanations', async () => {
     await i18n.changeLanguage('tr');
@@ -126,7 +130,7 @@ describe('ResearchPage', () => {
           .length,
       ).toBeGreaterThan(0);
     },
-    20000,
+    30000,
   );
   it('reorders actual sections when the presentation strategy changes', async () => {
     renderPage();

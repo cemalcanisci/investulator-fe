@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "froto-2026-11-01-v2",
+    "version": "froto-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -141,9 +136,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52Low"
-          ],
+          "claims": ["week52Low"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -184,9 +177,7 @@
           "publishedAt": "2026-10-28",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52High"
-          ],
+          "claims": ["week52High"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -483,9 +474,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2025End"
-          ],
+          "claims": ["parentEquityFy2025End"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -526,9 +515,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2024End"
-          ],
+          "claims": ["parentEquityFy2024End"],
           "from": "2024-12-31",
           "to": "2024-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -569,9 +556,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025End"
-          ],
+          "claims": ["parentEquityH12025End"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -664,9 +649,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebtFy2025End"
-          ],
+          "claims": ["netFinancialDebtFy2025End"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -708,9 +691,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaTtm"
-          ],
+          "claims": ["ebitdaTtm"],
           "from": "2025-07-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -751,9 +732,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaFy2025"
-          ],
+          "claims": ["ebitdaFy2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1031,9 +1010,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1074,9 +1051,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1297,9 +1272,7 @@
           "publishedAt": "2026-03-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-10-28",
           "to": "2026-10-28",
           "purchasingPowerDate": null
@@ -1340,9 +1313,7 @@
           "publishedAt": "2026-11-01",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendPrevious"
-          ],
+          "claims": ["dividendPrevious"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": null
@@ -1500,127 +1471,336 @@
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
         }
+      },
+      {
+        "id": "revenue2023",
+        "value": "411905593000",
+        "unit": "TRY",
+        "period": "2023",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet gelir tablosu, 2023/12 Hasılat satırı",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-froto-revenue2023",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet gelir tablosu, 2023/12 Hasılat satırı",
+          "excerpt": "Hasılat (2023/12): 411.905.593 bin TL; KAP 1256107 kâr payı bildirimindeki 2023 dönem kârı rakamıyla (49.055.669.150 TL) aynı tablo kaynağından çapraz doğrulandı.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2023",
+        "value": "49055669150",
+        "unit": "TRY",
+        "period": "2023 (kendi bazında)",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet gelir tablosu Net Dönem Kârı (2023/12) = KAP 1256107 kâr payı dağıtım tablosu \"5. Net Dönem Kârı\" (SPK'ya göre) ile birebir eşleşiyor",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-froto-fyProfit2023",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet gelir tablosu Net Dönem Kârı (2023/12) = KAP 1256107 kâr payı dağıtım tablosu \"5. Net Dönem Kârı\" (SPK'ya göre) ile birebir eşleşiyor",
+          "excerpt": "Net Dönem Kârı (2023/12): 49.055.669 bin TL (KAP özet) = 49.055.669.150 TL (KAP 1256107 kâr payı dağıtım tablosu, SPK'ya göre net dönem kârı) — iki ayrı KAP kaynağı birebir örtüşüyor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "parentEquityFy2023End",
+        "value": "73007545000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet bilanço, Ana Ortaklığa Ait Özkaynaklar (2023/12)",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ev-froto-parentEquityFy2023End",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet bilanço, Ana Ortaklığa Ait Özkaynaklar (2023/12)",
+          "excerpt": "Ana Ortaklığa Ait Özkaynaklar (2023/12): 73.007.545 bin TL. NOT: Bu değer 31.12.2023 satın alma gücündedir; dosyadaki parentEquityFy2024End/2025End değerleri 30.06.2026 satın alma gücüne yeniden ifade edilmiştir — aynı TMS29 bazında DEĞİLDİR, TTM/trend hesaplarında karıştırılmamalıdır.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquityFy2023End"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "revenue2024",
+        "value": "594995138000",
+        "unit": "TRY",
+        "period": "2024",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet gelir tablosu, 2024/12 Hasılat satırı",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-froto-revenue2024",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet gelir tablosu, 2024/12 Hasılat satırı",
+          "excerpt": "Hasılat (2024/12): 594.995.138 bin TL.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2024",
+        "value": "38863566166",
+        "unit": "TRY",
+        "period": "2024 (kendi bazında)",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet gelir tablosu Net Dönem Kârı (2024/12) = KAP 1411957 kâr payı dağıtım tablosu \"5. Net Dönem Kârı\" (SPK'ya göre) ile birebir eşleşiyor",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-froto-fyProfit2024",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet gelir tablosu Net Dönem Kârı (2024/12) = KAP 1411957 kâr payı dağıtım tablosu \"5. Net Dönem Kârı\" (SPK'ya göre) ile birebir eşleşiyor",
+          "excerpt": "Net Dönem Kârı (2024/12): 38.863.566 bin TL (KAP özet) = 38.863.566.166 TL (KAP 1411957 kâr payı dağıtım tablosu, SPK'ya göre net dönem kârı) — iki ayrı KAP kaynağı birebir örtüşüyor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "revenue2025",
+        "value": "830827933000",
+        "unit": "TRY",
+        "period": "2025",
+        "sourceId": "kapFinansalOzet",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "KAP özet gelir tablosu, 2025/12 Hasılat satırı",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-froto-revenue2025",
+          "sourceId": "kapFinansalOzet",
+          "originId": "kap-resmi-ozet",
+          "collectionId": "froto-financials-2026-11-audit",
+          "reviewerId": "claude-froto-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "locator": "KAP özet gelir tablosu, 2025/12 Hasılat satırı",
+          "excerpt": "Hasılat (2025/12): 830.827.933 bin TL; aynı dönemin net dönem kârı (33.986.135 bin TL) KAP 1571600 kâr payı dağıtım tablosundaki 33.986.135.000 TL ile birebir örtüşüyor.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-11-02",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
       }
     ],
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
@@ -1629,134 +1809,91 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
@@ -1915,134 +2052,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }
@@ -2126,6 +2220,15 @@
           "period": "2026-01-01 / 2026-06-30",
           "locator": "",
           "observedAt": "2026-11-01"
+        },
+        {
+          "id": "kapFinansalOzet",
+          "title": "KAP - Ford Otomotiv Sanayi A.Ş. Şirket Finansal Bilgileri (özet bilanço/gelir tablosu, 2023/12-2026/06)",
+          "url": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/956-ford-otomotiv-sanayi-a-s",
+          "publishedAt": null,
+          "period": "2023/12, 2024/12, 2025/12, 2026/06",
+          "locator": "KAP resmi özet finansal tablo sayfası; her yılın kendi 31.12 satın alma gücü bazında (yeniden ifade tarihi sonraki döneme taşınmamış). Hasılat/net dönem kârı değerleri aynı yılın KAP kâr payı dağıtım bildirimindeki (1256107/1411957) rakamlarla birebir çapraz doğrulandı.",
+          "observedAt": "2026-11-02"
         }
       ],
       "facts": [
@@ -2368,7 +2471,7 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
@@ -2382,14 +2485,12 @@
       },
       {
         "year": "2023",
-        "factIds": [],
+        "factIds": ["revenue2023", "fyProfit2023", "parentEquityFy2023End"],
         "calculationIds": []
       },
       {
         "year": "2024",
-        "factIds": [
-          "parentEquityFy2024End"
-        ],
+        "factIds": ["parentEquityFy2024End", "revenue2024", "fyProfit2024"],
         "calculationIds": []
       },
       {
@@ -2398,7 +2499,8 @@
           "parentEquityFy2025End",
           "netFinancialDebtFy2025End",
           "ebitdaFy2025",
-          "fyProfit2025"
+          "fyProfit2025",
+          "revenue2025"
         ],
         "calculationIds": []
       }
@@ -2410,10 +2512,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -2825,9 +2924,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2025End"
-          ],
+          "claims": ["parentEquityFy2025End"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -2868,9 +2965,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2024End"
-          ],
+          "claims": ["parentEquityFy2024End"],
           "from": "2024-12-31",
           "to": "2024-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -2911,9 +3006,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025End"
-          ],
+          "claims": ["parentEquityH12025End"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3006,9 +3099,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "netFinancialDebtFy2025End"
-          ],
+          "claims": ["netFinancialDebtFy2025End"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -3050,9 +3141,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaTtm"
-          ],
+          "claims": ["ebitdaTtm"],
           "from": "2025-07-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3093,9 +3182,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "ebitdaFy2025"
-          ],
+          "claims": ["ebitdaFy2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -3373,9 +3460,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -3416,9 +3501,7 @@
           "checkedAt": "2026-10-29",
           "publishedAt": "2026-08-04",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -3805,122 +3888,79 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
@@ -3929,134 +3969,91 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
@@ -4215,134 +4212,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }
@@ -4810,9 +4764,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquityFy2025End"
-            ],
+            "claims": ["parentEquityFy2025End"],
             "from": "2025-12-31",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -4853,9 +4805,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquityFy2024End"
-            ],
+            "claims": ["parentEquityFy2024End"],
             "from": "2024-12-31",
             "to": "2024-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -4896,9 +4846,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "parentEquityH12025End"
-            ],
+            "claims": ["parentEquityH12025End"],
             "from": "2025-06-30",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -4991,9 +4939,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "netFinancialDebtFy2025End"
-            ],
+            "claims": ["netFinancialDebtFy2025End"],
             "from": "2025-12-31",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -5035,9 +4981,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "ebitdaTtm"
-            ],
+            "claims": ["ebitdaTtm"],
             "from": "2025-07-01",
             "to": "2026-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5078,9 +5022,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "ebitdaFy2025"
-            ],
+            "claims": ["ebitdaFy2025"],
             "from": "2025-01-01",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"
@@ -5358,9 +5300,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "profitPrevious"
-            ],
+            "claims": ["profitPrevious"],
             "from": "2025-01-01",
             "to": "2025-06-30",
             "purchasingPowerDate": "2026-06-30"
@@ -5401,9 +5341,7 @@
             "checkedAt": "2026-10-29",
             "publishedAt": "2026-08-04",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "fyProfit2025"
-            ],
+            "claims": ["fyProfit2025"],
             "from": "2025-01-01",
             "to": "2025-12-31",
             "purchasingPowerDate": "2026-06-30"

@@ -75,44 +75,28 @@
       "from": "2013-05-23",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2013-05-23",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2013-05-23",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "price",
-        "oyak",
-        "is",
-        "distribution",
-        "correction2020"
-      ],
+      "sourceIds": ["price", "oyak", "is", "distribution", "correction2020"],
       "method": "Yahoo bölünme olayı yok; OYAK/İş Yatırım sermaye takvimleri ve şirket raporlarında 87 milyon TL sermaye kontrol edildi. OYAK nakit temettü fiyat düzeltme katsayıları pay artırımı sayılmadı."
     },
     "dividends": {
       "from": "2013-05-23",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "price",
-        "oyak",
-        "is",
-        "distribution",
-        "correction2020"
-      ],
+      "sourceIds": ["price", "oyak", "is", "distribution", "correction2020"],
       "method": "Yahoo takvimi OYAK/İş Yatırım ve KAP ile karşılaştırıldı. 13.04.2020 sağlayıcı 0,226 yerine KAP837141 kesinleşen 0,023 TL kullanıldı; ertelenen0,203 aynı gün eklenmedi, sonraki2021 taksitlerinde var. OYAK04.06.2018 mükerreri tekilleştirildi. 2026 hak11Mayıs/ödeme13Mayıs. Eski ödeme günleri hak tarihinden iki hafta içi gün varsayımı; resmi tatiller modellenmez. Brüt temettü, küsuratlı pay, sıfır masraf/vergi, ay sonu yeniden yatırım; bağımsız doğrulama değildir."
     }
   },

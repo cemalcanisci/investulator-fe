@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "ismen-2026-11-01-v2",
+    "version": "ismen-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "BROKER",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-30",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -89,12 +84,7 @@
           "checkedAt": "2026-10-30",
           "publishedAt": "2026-08-12",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares",
-            "parentEquity",
-            "profit",
-            "commissionIncome"
-          ],
+          "claims": ["shares", "parentEquity", "profit", "commissionIncome"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -135,9 +125,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquity"
-          ],
+          "claims": ["parentEquity"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -178,9 +166,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profit"
-          ],
+          "claims": ["profit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -222,9 +208,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -357,9 +341,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -367,61 +349,99 @@
       },
       {
         "id": "fyProfit2024",
-        "value": "7207110945",
+        "value": "5506137000",
         "unit": "TRY",
-        "period": "2024 (tam yil)",
-        "sourceId": "maliTablolar",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
-          "accounting": "NOMINAL",
-          "purchasingPowerDate": null,
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
           "start": "2024-01-01",
           "end": "2024-12-31",
           "periodKind": "YEAR",
           "shareBasis": null
         },
-        "verification": "CONFLICT",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2024/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik.",
-        "metricKey": "profit"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Kar veya Zarar Tablosu: Donem Karinin Dagilimi, Ana Ortaklik Paylari, FY2024 (Bin TL, TAS29/31.12.2024 bazi). 2026-11-02: onceki deger (7.207.110.945) FY2025 raporunun 2025-bazina yeniden ifade edilmis 2024 sutunuydu - FY2024 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-fyProfit2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Konsolide Kar veya Zarar Tablosu: Donem Karinin Dagilimi, Ana Ortaklik Paylari, FY2024 (Bin TL, TAS29/31.12.2024 bazi). 2026-11-02: onceki deger (7.207.110.945) FY2025 raporunun 2025-bazina yeniden ifade edilmis 2024 sutunuydu - FY2024 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+          "excerpt": "fyProfit2024: 5506137000 TRY. Konsolide Kar veya Zarar Tablosu: Donem Karinin Dagilimi, Ana Ortaklik Paylari, FY2024 (Bin TL, TAS29/31.12.2024 bazi). 2026-11-02: onceki deger (7.207.110.945) FY2025 raporunun 2025-bazina yeniden ifade edilmis 2024 sutunuydu - FY2024 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
       },
       {
         "id": "fyProfit2023",
-        "value": "7998253000",
+        "value": "5539762000",
         "unit": "TRY",
-        "period": "2023 (tam yil)",
-        "sourceId": "maliTablolar",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
-          "accounting": "NOMINAL",
-          "purchasingPowerDate": null,
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
           "start": "2023-01-01",
           "end": "2023-12-31",
           "periodKind": "YEAR",
           "shareBasis": null
         },
-        "verification": "CONFLICT",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2023/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik.",
-        "metricKey": "profit"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Net Donem Kari/Zarari (Ana Ortaklik Paylari dagilimi), FY2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (7.998.253.000) FY2024 raporunun 2024-bazina yeniden ifade edilmis 2023 sutunuydu - FY2023 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-fyProfit2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Net Donem Kari/Zarari (Ana Ortaklik Paylari dagilimi), FY2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (7.998.253.000) FY2024 raporunun 2024-bazina yeniden ifade edilmis 2023 sutunuydu - FY2023 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+          "excerpt": "fyProfit2023: 5539762000 TRY. Konsolide Finansal Durum Tablosu: Net Donem Kari/Zarari (Ana Ortaklik Paylari dagilimi), FY2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (7.998.253.000) FY2024 raporunun 2024-bazina yeniden ifade edilmis 2023 sutunuydu - FY2023 raporunun KENDI baziyla degistirildi, CONFLICT kapandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
       },
       {
         "id": "fyProfit2022",
-        "value": "4562642000",
+        "value": "4331632301",
         "unit": "TRY",
-        "period": "2022 (tam yil)",
-        "sourceId": "maliTablolar",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022EN",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
+          "attribution": "GROUP",
           "accounting": "NOMINAL",
           "purchasingPowerDate": null,
           "start": "2022-01-01",
@@ -429,22 +449,41 @@
           "periodKind": "YEAR",
           "shareBasis": null
         },
-        "verification": "CONFLICT",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2022/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik.",
-        "metricKey": "profit"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, FY2022 (nominal TL). 2026-11-02: onceki deger (4.562.642.000) FY2023 raporunun 2022 karsilastirma sutunuydu (2023 satin alma gucune yeniden ifade edilmis) - FY2022 raporunun KENDI nominal baziyla degistirildi, CONFLICT kapandi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-fyProfit2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, FY2022 (nominal TL). 2026-11-02: onceki deger (4.562.642.000) FY2023 raporunun 2022 karsilastirma sutunuydu (2023 satin alma gucune yeniden ifade edilmis) - FY2022 raporunun KENDI nominal baziyla degistirildi, CONFLICT kapandi.",
+          "excerpt": "fyProfit2022: 4331632301 TRY. Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, FY2022 (nominal TL). 2026-11-02: onceki deger (4.562.642.000) FY2023 raporunun 2022 karsilastirma sutunuydu (2023 satin alma gucune yeniden ifade edilmis) - FY2022 raporunun KENDI nominal baziyla degistirildi, CONFLICT kapandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
       },
       {
         "id": "fyProfit2021",
         "value": "1170903975",
         "unit": "TRY",
-        "period": "2021 (tam yil)",
-        "sourceId": "maliTablolar",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2022EN",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
+          "attribution": "GROUP",
           "accounting": "NOMINAL",
           "purchasingPowerDate": null,
           "start": "2021-01-01",
@@ -452,10 +491,29 @@
           "periodKind": "YEAR",
           "shareBasis": null
         },
-        "verification": "CONFLICT",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2021/12 sutunu - Gelir Tablosu, Ana Ortaklik Paylari (tam mali yil). | 2026-11-01: Tarihsel satın alma gücü ve konsolidasyon bazının birincil tabloyla mutabakatı eksik.",
-        "metricKey": "profit"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, 1 Jan-31 Dec 2021 comparative (nominal TL). 2026-11-02: FY2022 raporunun kendi 2021 nominal sutunundan dogrulandi; onceki CONFLICT (satin alma gucu/konsolidasyon mutabakati eksik) kapandi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-fyProfit2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, 1 Jan-31 Dec 2021 comparative (nominal TL). 2026-11-02: FY2022 raporunun kendi 2021 nominal sutunundan dogrulandi; onceki CONFLICT (satin alma gucu/konsolidasyon mutabakati eksik) kapandi.",
+          "excerpt": "fyProfit2021: 1170903975 TRY. Consolidated Statement of Profit or Loss: Equity holders of the company distribution of Profit for the Year, 1 Jan-31 Dec 2021 comparative (nominal TL). 2026-11-02: FY2022 raporunun kendi 2021 nominal sutunundan dogrulandi; onceki CONFLICT (satin alma gucu/konsolidasyon mutabakati eksik) kapandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
       },
       {
         "id": "parentEquity2025",
@@ -493,9 +551,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquity2025"
-          ],
+          "claims": ["parentEquity2025"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -503,61 +559,99 @@
       },
       {
         "id": "parentEquity2024",
-        "value": "34829493175",
+        "value": "26609270000",
         "unit": "TRY",
-        "period": "2024 yil sonu",
-        "sourceId": "maliTablolar",
+        "period": "2024-12-31",
+        "sourceId": "fy2024",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
-          "accounting": "NOMINAL",
-          "purchasingPowerDate": null,
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
           "start": "2024-12-31",
           "end": "2024-12-31",
           "periodKind": "INSTANT",
           "shareBasis": null
         },
-        "verification": "UNVERIFIED",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2024/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı.",
-        "metricKey": "parentEquity"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla (26.609.270) bire bir capraz dogrulandi. 2026-11-02: onceki deger (34.829.493.175) FY2025 raporunun 2025-bazli sutunuydu, FY2024'un kendi baziyla degistirildi.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ismen-parentEquity2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla (26.609.270) bire bir capraz dogrulandi. 2026-11-02: onceki deger (34.829.493.175) FY2025 raporunun 2025-bazli sutunuydu, FY2024'un kendi baziyla degistirildi.",
+          "excerpt": "parentEquity2024: 26609270000 TRY. Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla (26.609.270) bire bir capraz dogrulandi. 2026-11-02: onceki deger (34.829.493.175) FY2025 raporunun 2025-bazli sutunuydu, FY2024'un kendi baziyla degistirildi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquity2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
       },
       {
         "id": "parentEquity2023",
-        "value": "23061490000",
+        "value": "15972884000",
         "unit": "TRY",
-        "period": "2023 yil sonu",
-        "sourceId": "maliTablolar",
+        "period": "2023-12-31",
+        "sourceId": "fy2023",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
-          "accounting": "NOMINAL",
-          "purchasingPowerDate": null,
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
           "start": "2023-12-31",
           "end": "2023-12-31",
           "periodKind": "INSTANT",
           "shareBasis": null
         },
-        "verification": "UNVERIFIED",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2023/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı.",
-        "metricKey": "parentEquity"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (23.061.490.000) FY2024 raporunun 2024-bazli sutunuydu, FY2023'un kendi baziyla degistirildi.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ismen-parentEquity2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (23.061.490.000) FY2024 raporunun 2024-bazli sutunuydu, FY2023'un kendi baziyla degistirildi.",
+          "excerpt": "parentEquity2023: 15972884000 TRY. Konsolide Finansal Durum Tablosu: Ana Ortakliga Ait Ozkaynaklar 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi). 2026-11-02: onceki deger (23.061.490.000) FY2024 raporunun 2024-bazli sutunuydu, FY2023'un kendi baziyla degistirildi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquity2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
       },
       {
         "id": "parentEquity2022",
-        "value": "11485623000",
+        "value": "6797036000",
         "unit": "TRY",
-        "period": "2022 yil sonu",
-        "sourceId": "maliTablolar",
+        "period": "2022-12-31",
+        "sourceId": "fy2022EN",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
+          "attribution": "GROUP",
           "accounting": "NOMINAL",
           "purchasingPowerDate": null,
           "start": "2022-12-31",
@@ -565,22 +659,41 @@
           "periodKind": "INSTANT",
           "shareBasis": null
         },
-        "verification": "UNVERIFIED",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2022/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı.",
-        "metricKey": "parentEquity"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2022. 2026-11-02: onceki deger (11.485.623.000) FY2023 raporunun 2023-bazli 2022 sutunuydu, FY2022'nin kendi nominal baziyla degistirildi.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ismen-parentEquity2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2022. 2026-11-02: onceki deger (11.485.623.000) FY2023 raporunun 2023-bazli 2022 sutunuydu, FY2022'nin kendi nominal baziyla degistirildi.",
+          "excerpt": "parentEquity2022: 6797036000 TRY. Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2022. 2026-11-02: onceki deger (11.485.623.000) FY2023 raporunun 2023-bazli 2022 sutunuydu, FY2022'nin kendi nominal baziyla degistirildi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquity2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
       },
       {
         "id": "parentEquity2021",
-        "value": "2761918203",
+        "value": "2761918000",
         "unit": "TRY",
-        "period": "2021 yil sonu",
-        "sourceId": "maliTablolar",
+        "period": "2021-12-31",
+        "sourceId": "fy2022EN",
         "basis": {
           "currency": "TRY",
           "scale": "1",
           "scope": "CONSOLIDATED",
-          "attribution": "PARENT",
+          "attribution": "GROUP",
           "accounting": "NOMINAL",
           "purchasingPowerDate": null,
           "start": "2021-12-31",
@@ -588,10 +701,29 @@
           "periodKind": "INSTANT",
           "shareBasis": null
         },
-        "verification": "UNVERIFIED",
-        "checkedAt": "2026-11-01",
-        "locator": "Mali Tablolar 2021/12 sutunu - Ana Ortakliga Ait Ozkaynaklar (yil sonu). | 01.11.2026: denetlenebilir belge kanıtı eksik; eski VERIFIED durumu kaldırıldı.",
-        "metricKey": "parentEquity"
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2021.",
+        "metricKey": "parentEquity",
+        "evidence": {
+          "id": "ismen-parentEquity2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2021.",
+          "excerpt": "parentEquity2021: 2761918000 TRY. Summary Balance Sheet (x1,000 TL): Shareholders' Equity of Parent Company at 31 December 2021.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["parentEquity2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
       },
       {
         "id": "dividendTotal",
@@ -628,9 +760,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-04-01",
           "to": "2026-04-01",
           "purchasingPowerDate": null
@@ -671,9 +801,7 @@
           "publishedAt": "2026-11-01",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendPrevious"
-          ],
+          "claims": ["dividendPrevious"],
           "from": "2025-03-28",
           "to": "2025-03-28",
           "purchasingPowerDate": null
@@ -714,9 +842,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025"
-          ],
+          "claims": ["parentEquityH12025"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -758,9 +884,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialDebt"
-          ],
+          "claims": ["financialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -801,9 +925,7 @@
           "publishedAt": "2026-08-12",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtSecurities"
-          ],
+          "claims": ["debtSecurities"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -844,9 +966,7 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "serviceIncome"
-          ],
+          "claims": ["serviceIncome"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -887,77 +1007,1103 @@
           "publishedAt": "2026-08-14",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "serviceIncomePrevious"
-          ],
+          "claims": ["serviceIncomePrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
+        }
+      },
+      {
+        "id": "revenue2021",
+        "value": "142406182348",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2021 comparative column (nominal TL, pre-TAS29).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-revenue2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2021 comparative column (nominal TL, pre-TAS29).",
+          "excerpt": "revenue2021: 142406182348 TRY. Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2021 comparative column (nominal TL, pre-TAS29).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cfo2021",
+        "value": "-2069412230",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, 1 Jan-31 Dec 2021 comparative (nominal TL; net cash outflow).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cfo2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, 1 Jan-31 Dec 2021 comparative (nominal TL; net cash outflow).",
+          "excerpt": "cfo2021: -2069412230 TRY. Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, 1 Jan-31 Dec 2021 comparative (nominal TL; net cash outflow).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cfo2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "capex2021",
+        "value": "28083184",
+        "unit": "TRY",
+        "period": "2021-01-01 / 2021-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Cash flow investing section: purchases of property/equipment (15.788.575) + purchases of intangible assets (12.294.609), 2021 comparative (nominal TL).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-capex2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Cash flow investing section: purchases of property/equipment (15.788.575) + purchases of intangible assets (12.294.609), 2021 comparative (nominal TL).",
+          "excerpt": "capex2021: 28083184 TRY. Cash flow investing section: purchases of property/equipment (15.788.575) + purchases of intangible assets (12.294.609), 2021 comparative (nominal TL).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capex2021"],
+          "from": "2021-01-01",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "financialDebt2021",
+        "value": "4681438554",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Balance sheet: Short Term Borrowings (4.594.784.270) + Short-term portion of Long-Term Borrowings (26.093.665) + Long-Term Borrowings (60.560.619) at 31 Dec 2021 (nominal TL; excludes trade payables).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-financialDebt2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Balance sheet: Short Term Borrowings (4.594.784.270) + Short-term portion of Long-Term Borrowings (26.093.665) + Long-Term Borrowings (60.560.619) at 31 Dec 2021 (nominal TL; excludes trade payables).",
+          "excerpt": "financialDebt2021: 4681438554 TRY. Balance sheet: Short Term Borrowings (4.594.784.270) + Short-term portion of Long-Term Borrowings (26.093.665) + Long-Term Borrowings (60.560.619) at 31 Dec 2021 (nominal TL; excludes trade payables).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebt2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cash2021",
+        "value": "1552493809",
+        "unit": "TRY",
+        "period": "2021-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2021 (nominal TL).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cash2021-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2021 (nominal TL).",
+          "excerpt": "cash2021: 1552493809 TRY. Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2021 (nominal TL).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cash2021"],
+          "from": "2021-12-31",
+          "to": "2021-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "revenue2022",
+        "value": "224180671638",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2022 (nominal TL, pre-TAS29).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-revenue2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2022 (nominal TL, pre-TAS29).",
+          "excerpt": "revenue2022: 224180671638 TRY. Consolidated Statement of Profit or Loss, Note 28: Revenue line, 1 Jan-31 Dec 2022 (nominal TL, pre-TAS29).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cfo2022",
+        "value": "-5676630288",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, FY2022 (nominal TL; net cash outflow).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cfo2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, FY2022 (nominal TL; net cash outflow).",
+          "excerpt": "cfo2022: -5676630288 TRY. Consolidated Statement of Cash Flows: A. CASH FLOWS FROM OPERATING ACTIVITIES, FY2022 (nominal TL; net cash outflow).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cfo2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "capex2022",
+        "value": "62837716",
+        "unit": "TRY",
+        "period": "2022-01-01 / 2022-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Cash flow investing section: purchases of property/equipment (47.084.126) + purchases of intangible assets (15.753.590), FY2022 (nominal TL).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-capex2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Cash flow investing section: purchases of property/equipment (47.084.126) + purchases of intangible assets (15.753.590), FY2022 (nominal TL).",
+          "excerpt": "capex2022: 62837716 TRY. Cash flow investing section: purchases of property/equipment (47.084.126) + purchases of intangible assets (15.753.590), FY2022 (nominal TL).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capex2022"],
+          "from": "2022-01-01",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "financialDebt2022",
+        "value": "10416638802",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Balance sheet: Short Term Borrowings (10.311.970.919) + Short-term portion of Long-Term Borrowings (25.795.293) + Long-Term Borrowings (78.872.590) at 31 Dec 2022 (nominal TL; excludes trade payables).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-financialDebt2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Balance sheet: Short Term Borrowings (10.311.970.919) + Short-term portion of Long-Term Borrowings (25.795.293) + Long-Term Borrowings (78.872.590) at 31 Dec 2022 (nominal TL; excludes trade payables).",
+          "excerpt": "financialDebt2022: 10416638802 TRY. Balance sheet: Short Term Borrowings (10.311.970.919) + Short-term portion of Long-Term Borrowings (25.795.293) + Long-Term Borrowings (78.872.590) at 31 Dec 2022 (nominal TL; excludes trade payables).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebt2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "cash2022",
+        "value": "745695470",
+        "unit": "TRY",
+        "period": "2022-12-31",
+        "sourceId": "fy2022EN",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2022 (nominal TL).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cash2022-20261102",
+          "sourceId": "fy2022EN",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "locator": "Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2022 (nominal TL).",
+          "excerpt": "cash2022: 745695470 TRY. Note 7 Cash and Cash Equivalents, balance sheet line at 31 December 2022 (nominal TL).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2023-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cash2022"],
+          "from": "2022-12-31",
+          "to": "2022-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "revenue2023",
+        "value": "458246086000",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Kar veya Zarar Tablosu Not 28: Hasilat, 1 Ocak-31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-revenue2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Konsolide Kar veya Zarar Tablosu Not 28: Hasilat, 1 Ocak-31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "excerpt": "revenue2023: 458246086000 TRY. Konsolide Kar veya Zarar Tablosu Not 28: Hasilat, 1 Ocak-31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "cfo2023",
+        "value": "19385570000",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2023 (Bin TL, TAS29/31.12.2023 bazi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cfo2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "excerpt": "cfo2023: 19385570000 TRY. Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cfo2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "capex2023",
+        "value": "272373000",
+        "unit": "TRY",
+        "period": "2023-01-01 / 2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (218.034) + maddi olmayan duran varlik alimi (54.339) bin TL, FY2023.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-capex2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (218.034) + maddi olmayan duran varlik alimi (54.339) bin TL, FY2023.",
+          "excerpt": "capex2023: 272373000 TRY. Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (218.034) + maddi olmayan duran varlik alimi (54.339) bin TL, FY2023.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capex2023"],
+          "from": "2023-01-01",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "financialDebt2023",
+        "value": "6035134000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (5.840.002) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (43.845) + Uzun Vadeli Borclanmalar (151.287) bin TL, 31 Aralik 2023 (ticari borclar haric).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-financialDebt2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (5.840.002) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (43.845) + Uzun Vadeli Borclanmalar (151.287) bin TL, 31 Aralik 2023 (ticari borclar haric).",
+          "excerpt": "financialDebt2023: 6035134000 TRY. Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (5.840.002) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (43.845) + Uzun Vadeli Borclanmalar (151.287) bin TL, 31 Aralik 2023 (ticari borclar haric).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebt2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "cash2023",
+        "value": "2474467000",
+        "unit": "TRY",
+        "period": "2023-12-31",
+        "sourceId": "fy2023",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cash2023-20261102",
+          "sourceId": "fy2023",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "locator": "Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "excerpt": "cash2023: 2474467000 TRY. Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2023 (Bin TL, TAS29/31.12.2023 bazi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2024-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cash2023"],
+          "from": "2023-12-31",
+          "to": "2023-12-31",
+          "purchasingPowerDate": "2023-12-31"
+        }
+      },
+      {
+        "id": "revenue2024",
+        "value": "963209409000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Kar veya Zarar Tablosu Not 22: Hasilat, 1 Ocak-31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-revenue2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Konsolide Kar veya Zarar Tablosu Not 22: Hasilat, 1 Ocak-31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi).",
+          "excerpt": "revenue2024: 963209409000 TRY. Konsolide Kar veya Zarar Tablosu Not 22: Hasilat, 1 Ocak-31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "cfo2024",
+        "value": "15101867000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2024 (Bin TL, TAS29/31.12.2024 bazi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cfo2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2024 (Bin TL, TAS29/31.12.2024 bazi).",
+          "excerpt": "cfo2024: 15101867000 TRY. Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2024 (Bin TL, TAS29/31.12.2024 bazi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cfo2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "capex2024",
+        "value": "212577000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (153.967) + maddi olmayan duran varlik alimi (58.610) bin TL, FY2024.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-capex2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (153.967) + maddi olmayan duran varlik alimi (58.610) bin TL, FY2024.",
+          "excerpt": "capex2024: 212577000 TRY. Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (153.967) + maddi olmayan duran varlik alimi (58.610) bin TL, FY2024.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capex2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "financialDebt2024",
+        "value": "1479245000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (1.392.191) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (2.699) + Uzun Vadeli Borclanmalar (84.355) bin TL, 31 Aralik 2024 (ticari borclar haric).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-financialDebt2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (1.392.191) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (2.699) + Uzun Vadeli Borclanmalar (84.355) bin TL, 31 Aralik 2024 (ticari borclar haric).",
+          "excerpt": "financialDebt2024: 1479245000 TRY. Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (1.392.191) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (2.699) + Uzun Vadeli Borclanmalar (84.355) bin TL, 31 Aralik 2024 (ticari borclar haric).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebt2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "cash2024",
+        "value": "8564235000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2024",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 6 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla capraz dogrulandi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cash2024-20261102",
+          "sourceId": "fy2024",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "locator": "Not 6 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla capraz dogrulandi.",
+          "excerpt": "cash2024: 8564235000 TRY. Not 6 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2024 (Bin TL, TAS29/31.12.2024 bazi); KAP ozet finansal bilgiler sayfasiyla capraz dogrulandi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2025-03-01",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cash2024"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2024-12-31"
+        }
+      },
+      {
+        "id": "revenue2025",
+        "value": "1622107612000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Kar veya Zarar Tablosu Not 26: Hasilat, 1 Ocak-31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi). NOT: mevcut fyProfit2025/parentEquity2025 fact'leri H1 2026 raporunun 30.06.2026 bazindaki TTM rekonstruksiyonu icin ayri tutulmustur, bu fact FY2025 raporunun kendi 31.12.2025 bazindadir, karistirilmamali.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-revenue2025-20261102",
+          "sourceId": "fy2025",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "locator": "Konsolide Kar veya Zarar Tablosu Not 26: Hasilat, 1 Ocak-31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi). NOT: mevcut fyProfit2025/parentEquity2025 fact'leri H1 2026 raporunun 30.06.2026 bazindaki TTM rekonstruksiyonu icin ayri tutulmustur, bu fact FY2025 raporunun kendi 31.12.2025 bazindadir, karistirilmamali.",
+          "excerpt": "revenue2025: 1622107612000 TRY. Konsolide Kar veya Zarar Tablosu Not 26: Hasilat, 1 Ocak-31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi). NOT: mevcut fyProfit2025/parentEquity2025 fact'leri H1 2026 raporunun 30.06.2026 bazindaki TTM rekonstruksiyonu icin ayri tutulmustur, bu fact FY2025 raporunun kendi 31.12.2025 bazindadir, karistirilmamali.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-03-05",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["revenue2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "cfo2025",
+        "value": "-5019381000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2025 (Bin TL, TAS29/31.12.2025 bazi; net nakit cikisi).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cfo2025-20261102",
+          "sourceId": "fy2025",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "locator": "Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2025 (Bin TL, TAS29/31.12.2025 bazi; net nakit cikisi).",
+          "excerpt": "cfo2025: -5019381000 TRY. Konsolide Nakit Akis Tablosu: A. ISLETME FAALIYETLERINDEN NAKIT AKISLARI, FY2025 (Bin TL, TAS29/31.12.2025 bazi; net nakit cikisi).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-03-05",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cfo2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "capex2025",
+        "value": "3947701000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (142.687) + maddi olmayan duran varlik alimi (3.805.014) bin TL, FY2025. Ayrica 129.105 bin TL yatirim amacli gayrimenkul alimi var, farkli varlik sinifi oldugu icin capex'e dahil edilmedi.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-capex2025-20261102",
+          "sourceId": "fy2025",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "locator": "Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (142.687) + maddi olmayan duran varlik alimi (3.805.014) bin TL, FY2025. Ayrica 129.105 bin TL yatirim amacli gayrimenkul alimi var, farkli varlik sinifi oldugu icin capex'e dahil edilmedi.",
+          "excerpt": "capex2025: 3947701000 TRY. Nakit akis tablosu yatirim bolumu: maddi duran varlik alimi (142.687) + maddi olmayan duran varlik alimi (3.805.014) bin TL, FY2025. Ayrica 129.105 bin TL yatirim amacli gayrimenkul alimi var, farkli varlik sinifi oldugu icin capex'e dahil edilmedi.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-03-05",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["capex2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "financialDebt2025",
+        "value": "11522146000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (9.548.197) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (1.713.388) + Uzun Vadeli Borclanmalar (260.561) bin TL, 31 Aralik 2025 (ticari borclar ve 733.842 bin TL'lik Diger Finansal Yukumlulukler haric, ayri not dusuldu).",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-financialDebt2025-20261102",
+          "sourceId": "fy2025",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "locator": "Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (9.548.197) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (1.713.388) + Uzun Vadeli Borclanmalar (260.561) bin TL, 31 Aralik 2025 (ticari borclar ve 733.842 bin TL'lik Diger Finansal Yukumlulukler haric, ayri not dusuldu).",
+          "excerpt": "financialDebt2025: 11522146000 TRY. Konsolide Finansal Durum Tablosu: Kisa Vadeli Borclanmalar (9.548.197) + Uzun Vadeli Borclanmalarin Kisa Vadeli Kisimlari (1.713.388) + Uzun Vadeli Borclanmalar (260.561) bin TL, 31 Aralik 2025 (ticari borclar ve 733.842 bin TL'lik Diger Finansal Yukumlulukler haric, ayri not dusuldu).",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-03-05",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebt2025"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "cash2025",
+        "value": "3603393000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi); KAP ozet finansal bilgiler sayfasindaki ana ortakliga ait ozkaynak (32.382.892) rakamiyla tutarli.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ismen-cash2025-20261102",
+          "sourceId": "fy2025",
+          "originId": "isyatirim-ir-site",
+          "collectionId": "ismen-audit-followup-2026-11-02",
+          "reviewerId": "claude-ismen-audit-followup-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "locator": "Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi); KAP ozet finansal bilgiler sayfasindaki ana ortakliga ait ozkaynak (32.382.892) rakamiyla tutarli.",
+          "excerpt": "cash2025: 3603393000 TRY. Not 7 Nakit ve Nakit Benzerleri, bilanco satiri, 31 Aralik 2025 (Bin TL, TAS29/31.12.2025 bazi); KAP ozet finansal bilgiler sayfasindaki ana ortakliga ait ozkaynak (32.382.892) rakamiyla tutarli.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-03-05",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cash2025"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
         }
       }
     ],
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "serviceIncomeGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "debtSecuritiesShare",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       }
@@ -966,21 +2112,14 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3,
         "metricKey": "pb"
@@ -988,10 +2127,7 @@
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -999,10 +2135,7 @@
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "yield"
@@ -1010,10 +2143,7 @@
       {
         "id": "serviceIncomeGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "serviceIncome",
-          "serviceIncomePrevious"
-        ],
+        "inputs": ["serviceIncome", "serviceIncomePrevious"],
         "unit": "PERCENT",
         "precision": 3,
         "metricKey": "growth"
@@ -1021,20 +2151,14 @@
       {
         "id": "debtSecuritiesShare",
         "operation": "PERCENT",
-        "inputs": [
-          "debtSecurities",
-          "financialDebt"
-        ],
+        "inputs": ["debtSecurities", "financialDebt"],
         "unit": "PERCENT",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 3
       }
@@ -1065,21 +2189,14 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3,
           "metricKey": "pb"
@@ -1087,10 +2204,7 @@
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -1098,10 +2212,7 @@
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "yield"
@@ -1109,10 +2220,7 @@
         {
           "id": "serviceIncomeGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "serviceIncome",
-            "serviceIncomePrevious"
-          ],
+          "inputs": ["serviceIncome", "serviceIncomePrevious"],
           "unit": "PERCENT",
           "precision": 3,
           "metricKey": "growth"
@@ -1120,20 +2228,14 @@
         {
           "id": "debtSecuritiesShare",
           "operation": "PERCENT",
-          "inputs": [
-            "debtSecurities",
-            "financialDebt"
-          ],
+          "inputs": ["debtSecurities", "financialDebt"],
           "unit": "PERCENT",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 3
         }
@@ -1210,6 +2312,42 @@
           "period": "2026-01-01 / 2026-06-30",
           "locator": "",
           "observedAt": "2026-11-01"
+        },
+        {
+          "id": "fy2022EN",
+          "url": "https://www.isyatirim.com.tr/en-us/who-we-are/investor-relations/Documents/annual-reports/IS_YATIRIM_ENG22_2303.pdf",
+          "publishedAt": "2023-03-01",
+          "title": "Is Investment (ISMEN) FY2022 Annual Report (English), consolidated financial statements FY2022 vs FY2021, nominal TL (pre-TAS29)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "fy2023",
+          "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+          "publishedAt": "2024-03-01",
+          "title": "ISMEN 31.12.2023 konsolide finansal tablolar (TAS29/31.12.2023 bazi)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "fy2024",
+          "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+          "publishedAt": "2025-03-01",
+          "title": "ISMEN 31.12.2024 konsolide finansal tablolar (TAS29/31.12.2024 bazi)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-02"
+        },
+        {
+          "id": "fy2025",
+          "url": "https://news-content.foreks.com/attachments/kap/4028328d9c81f589019cbf990ccc43cc.pdf",
+          "publishedAt": "2026-03-05",
+          "title": "ISMEN 31.12.2025 konsolide finansal tablolar (TAS29/31.12.2025 bazi, KAP bildirimi 05.03.2026)",
+          "period": "2026-01-01 / 2026-06-30",
+          "locator": "",
+          "observedAt": "2026-11-02"
         }
       ],
       "facts": [
@@ -1400,11 +2538,7 @@
         "to": "2026-10-30",
         "status": "PARTIAL",
         "sourceId": "maliTablolar",
-        "pendingDates": [
-          "2026-08-12",
-          "2026-09-21",
-          "2026-10-01"
-        ]
+        "pendingDates": ["2026-08-12", "2026-09-21", "2026-10-01"]
       },
       "disclosures": [
         {
@@ -1457,45 +2591,70 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
         "factIds": [
+          "revenue2021",
           "fyProfit2021",
-          "parentEquity2021"
+          "parentEquity2021",
+          "cfo2021",
+          "capex2021",
+          "financialDebt2021",
+          "cash2021"
         ],
         "calculationIds": []
       },
       {
         "year": "2022",
         "factIds": [
+          "revenue2022",
           "fyProfit2022",
-          "parentEquity2022"
+          "parentEquity2022",
+          "cfo2022",
+          "capex2022",
+          "financialDebt2022",
+          "cash2022"
         ],
         "calculationIds": []
       },
       {
         "year": "2023",
         "factIds": [
+          "revenue2023",
           "fyProfit2023",
-          "parentEquity2023"
+          "parentEquity2023",
+          "cfo2023",
+          "capex2023",
+          "financialDebt2023",
+          "cash2023"
         ],
         "calculationIds": []
       },
       {
         "year": "2024",
         "factIds": [
+          "revenue2024",
           "fyProfit2024",
-          "parentEquity2024"
+          "parentEquity2024",
+          "cfo2024",
+          "capex2024",
+          "financialDebt2024",
+          "cash2024"
         ],
         "calculationIds": []
       },
       {
         "year": "2025",
         "factIds": [
+          "revenue2025",
           "fyProfit2025",
-          "parentEquity2025"
+          "parentEquity2025",
+          "cfo2025",
+          "capex2025",
+          "financialDebt2025",
+          "cash2025"
         ],
         "calculationIds": []
       }
@@ -1507,10 +2666,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "BROKER",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -1570,12 +2726,7 @@
           "checkedAt": "2026-10-30",
           "publishedAt": "2026-08-12",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares",
-            "parentEquity",
-            "profit",
-            "commissionIncome"
-          ],
+          "claims": ["shares", "parentEquity", "profit", "commissionIncome"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -1615,12 +2766,7 @@
           "checkedAt": "2026-10-30",
           "publishedAt": "2026-08-12",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares",
-            "parentEquity",
-            "profit",
-            "commissionIncome"
-          ],
+          "claims": ["shares", "parentEquity", "profit", "commissionIncome"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -2084,47 +3230,31 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       }
@@ -2133,21 +3263,14 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3,
         "metricKey": "pb"
@@ -2155,20 +3278,14 @@
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "growth"
@@ -2176,10 +3293,7 @@
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2,
         "metricKey": "yield"
@@ -2211,21 +3325,14 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3,
           "metricKey": "pb"
@@ -2233,20 +3340,14 @@
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "growth"
@@ -2254,10 +3355,7 @@
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2,
           "metricKey": "yield"
@@ -2358,12 +3456,7 @@
             "checkedAt": "2026-10-30",
             "publishedAt": "2026-08-12",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "shares",
-              "parentEquity",
-              "profit",
-              "commissionIncome"
-            ],
+            "claims": ["shares", "parentEquity", "profit", "commissionIncome"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": null
@@ -2403,12 +3496,7 @@
             "checkedAt": "2026-10-30",
             "publishedAt": "2026-08-12",
             "method": "DOCUMENT_RECONCILIATION",
-            "claims": [
-              "shares",
-              "parentEquity",
-              "profit",
-              "commissionIncome"
-            ],
+            "claims": ["shares", "parentEquity", "profit", "commissionIncome"],
             "from": "2026-06-30",
             "to": "2026-06-30",
             "purchasingPowerDate": null
@@ -2874,11 +3962,7 @@
         "to": "2026-10-30",
         "status": "PARTIAL",
         "sourceId": "maliTablolar",
-        "pendingDates": [
-          "2026-08-12",
-          "2026-09-21",
-          "2026-10-01"
-        ]
+        "pendingDates": ["2026-08-12", "2026-09-21", "2026-10-01"]
       },
       "disclosures": [
         {

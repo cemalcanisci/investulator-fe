@@ -32,11 +32,12 @@ describe('ratio display contract', () => {
     expect(evaluateCalculation(report, calculation).status).toBe('BLOCKED');
   });
   it('distinguishes actual TTM from half-year scenarios', () => {
+    // TUPRS now reconstructs genuine TTM (profit2025 restated to the H1 2026
+    // purchasing-power basis + H1 2026 − H1 2025, same basis throughout), so
+    // this no longer falls back to an annualized half-year figure.
     expect(ratioPresentation(report, 'peTtm').status).toBe('INDICATIVE');
-    expect(ratioPresentation(report, 'peTtm').value).toBe('25.21');
-    expect(ratioPresentation(report, 'peTtm').issues).toContain(
-      'annualFallback',
-    );
+    expect(ratioPresentation(report, 'peTtm').value).toBe('10.23');
+    expect(ratioPresentation(report, 'peTtm').periodBasis).toBe('TTM');
     expect(ratioPresentation(report, 'peRunRate').issues).toContain(
       'annualized',
     );
@@ -230,12 +231,16 @@ describe('sector-relative classification gates', () => {
           }
         : q,
     );
+    // Once the quarterly reconstruction is invalidated (mixed purchasing-power
+    // basis), selection falls through to TUPRS's own H1-based TTM reconstruction
+    // (profit2025 restated to the H1 2026 basis + H1 2026 − H1 2025) rather than
+    // all the way to ANNUAL, since that basis-consistent TTM path still exists.
     expect(
       ratioPresentation(
         { ...report, facts: [...report.facts, ...changed] },
         'peTtm',
       ).periodBasis,
-    ).toBe('ANNUAL');
+    ).toBe('TTM');
   });
   it.each([
     ['1', 'CHEAP'],

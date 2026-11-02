@@ -47,6 +47,20 @@
       "title": "USD/TRY günlük gözlem; TL / USD",
       "origin": "Yahoo Finance; tek veri sağlayıcısı",
       "retrievedAt": "2026-11-01"
+    },
+    {
+      "id": "toasoDividendDateRecon",
+      "url": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=TOASO",
+      "title": "İş Yatırım TOASO temettü dağıtım geçmişi tablosu (dağıtım/ödeme tarihi + brüt/net tutar)",
+      "origin": "İş Yatırım (ikincil veri sağlayıcısı, KAP bildirimlerini derler)",
+      "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "toasoDividendExDateNews",
+      "url": "https://blog.r10.net/ekonomi/tofas-2026-temettu-odemesi-netlesti-hisse-basina-17-tl",
+      "title": "R10 / haber derlemeleri: Tofaş 2022-2026 temettü hak kullanım tarihi ayrı ayrı",
+      "origin": "İkincil haber kaynağı, KAP bildirimlerini aktarır",
+      "retrievedAt": "2026-11-02"
     }
   ],
   "coverage": {
@@ -54,27 +68,21 @@
       "from": "2005-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2005-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2005-08-31",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "yahoo-events"
-      ],
+      "sourceIds": ["yahoo-events"],
       "method": "Yahoo Finance splits olay listesinde TOASO icin 3 bedelsiz sermaye artisi var (2001-12, 2003-05, 2005-07); ucu de kullanilan pencerenin (2005-08 - 2026-09) basindan ONCE gerceklesmis, pencere icinde hicbir kurumsal aksiyon yok - actions dizisi bu yuzden bos birakildi, fiyat serisi pencere boyunca tek bir pay bazinda tutarlidir."
     },
     "dividends": {
@@ -83,9 +91,11 @@
       "state": "CONFLICT",
       "sourceIds": [
         "yahoo-events",
-        "companyDividendDecisionPage"
+        "companyDividendDecisionPage",
+        "toasoDividendDateRecon",
+        "toasoDividendExDateNews"
       ],
-      "method": "Yahoo Finance dividends olay listesi (brut/ham, o donemki pay adedine gore); en son 2 odeme (2026-02-28: 20 TL, 2025-03-31: 12 TL brut) sirketin kendi 2025 Entegre Faaliyet Raporu kar payi dagitim tablosu ve ikincil haber derlemeleriyle (net 17,00 TL / net 10,20 TL) capraz dogrulandi, tam ortustu. Daha eski yillar icin yalniz Yahoo brut tutari kullanildi, net/stopaj ayrimi uygulanmadi (bkz. arastirma raporu Veri eksikleri). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
+      "method": "Yahoo Finance dividends olay listesi (brut/ham, o donemki pay adedine gore) temel alinmisti. | 02.11.2026 denetimi: en son 5 odeme (FY2021-FY2025 kar paylari, 2022-2026'da odenen/onerilen) icin GERCEK hak kullanim (exDate) ve odeme (payDate) tarihleri İş Yatırım'ın dagitim tablosu + haber derlemeleri (R10, ekonomist.com.tr) + sirketin 2025 Entegre Faaliyet Raporu'ndaki 'X yili icinde ve [tarih] itibariyla ... odemesi yapilmistir' ifadeleriyle UC BAGIMSIZ kaynaktan capraz dogrulandi ve duzeltildi: onceki kayitlar Yahoo'nun ay-sonuna yuvarlanmis tek-tarih (exDate=payDate) yaklasimini kullaniyordu (ornegin div-2022-02-28), gercekte exDate 2 is gunu once gerceklesir (ornegin exDate 2022-03-22 / payDate 2022-03-24). Brut tutarlar (6.40/6.00/20.00/12.00/20.00 TL) degismedi, zaten dogruydu; sadece tarihler ve id'ler duzeltildi. 2006-2021 arasindaki 17 eski kayit HALA sadece Yahoo etkinlik tarihiyle kaldi (birincil KAP bildirimiyle tek tek dogrulanamadi, zaman kisiti); bu kayitlar SILINMEDI ama 'REVIEWED' sayilamaz. Kapsam durumu bu yuzden CONFLICT olarak kaliyor: dividendValid tum expectedDividendIds'in VERIFIED kalitede olmasini gerektirir, 10/15/20 yillik pencerelerin tumu eski kayitlari da icerir."
     }
   },
   "monthly": [
@@ -2244,39 +2254,39 @@
       "sourceId": "yahoo-events"
     },
     {
-      "id": "div-2022-02-28",
-      "exDate": "2022-02-28",
-      "payDate": "2022-02-28",
+      "id": "div-2022-03-24",
+      "exDate": "2022-03-22",
+      "payDate": "2022-03-24",
       "rawGrossPerShare": "6.400000",
-      "sourceId": "yahoo-events"
+      "sourceId": "toasoDividendDateRecon"
     },
     {
-      "id": "div-2023-02-28",
-      "exDate": "2023-02-28",
-      "payDate": "2023-02-28",
+      "id": "div-2023-03-23",
+      "exDate": "2023-03-21",
+      "payDate": "2023-03-23",
       "rawGrossPerShare": "6.000000",
-      "sourceId": "yahoo-events"
+      "sourceId": "toasoDividendDateRecon"
     },
     {
-      "id": "div-2024-03-31",
-      "exDate": "2024-03-31",
-      "payDate": "2024-03-31",
+      "id": "div-2024-04-08",
+      "exDate": "2024-04-04",
+      "payDate": "2024-04-08",
       "rawGrossPerShare": "20.000000",
-      "sourceId": "yahoo-events"
+      "sourceId": "toasoDividendDateRecon"
     },
     {
-      "id": "div-2025-03-31",
-      "exDate": "2025-03-31",
-      "payDate": "2025-03-31",
+      "id": "div-2025-04-07",
+      "exDate": "2025-04-03",
+      "payDate": "2025-04-07",
       "rawGrossPerShare": "12.000000",
-      "sourceId": "yahoo-events"
+      "sourceId": "toasoDividendDateRecon"
     },
     {
-      "id": "div-2026-02-28",
-      "exDate": "2026-02-28",
-      "payDate": "2026-02-28",
+      "id": "div-2026-03-25",
+      "exDate": "2026-03-23",
+      "payDate": "2026-03-25",
       "rawGrossPerShare": "20.000000",
-      "sourceId": "yahoo-events"
+      "sourceId": "toasoDividendDateRecon"
     }
   ],
   "expectedActionIds": [],
@@ -2298,10 +2308,10 @@
     "div-2019-02-28",
     "div-2020-02-29",
     "div-2021-02-28",
-    "div-2022-02-28",
-    "div-2023-02-28",
-    "div-2024-03-31",
-    "div-2025-03-31",
-    "div-2026-02-28"
+    "div-2022-03-24",
+    "div-2023-03-23",
+    "div-2024-04-08",
+    "div-2025-04-07",
+    "div-2026-03-25"
   ]
 }

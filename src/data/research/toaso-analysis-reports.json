@@ -1,14 +1,11 @@
 [
   {
     "schemaVersion": 2,
-    "version": "toaso-2026-11-01-v2",
+    "version": "toaso-2026-11-02-v3",
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -47,9 +44,7 @@
           "publishedAt": "2026-10-30",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "price"
-          ],
+          "claims": ["price"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -91,9 +86,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "shares"
-          ],
+          "claims": ["shares"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": null
@@ -134,9 +127,7 @@
           "publishedAt": "2026-10-30",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52Low"
-          ],
+          "claims": ["week52Low"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -177,9 +168,7 @@
           "publishedAt": "2026-10-30",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "week52High"
-          ],
+          "claims": ["week52High"],
           "from": "2026-10-30",
           "to": "2026-10-30",
           "purchasingPowerDate": null
@@ -220,9 +209,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "cash"
-          ],
+          "claims": ["cash"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -263,9 +250,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtShort"
-          ],
+          "claims": ["debtShort"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -306,9 +291,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "debtLong"
-          ],
+          "claims": ["debtLong"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -349,9 +332,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "financialDebt"
-          ],
+          "claims": ["financialDebt"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -392,9 +373,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "totalAssetsEnd"
-          ],
+          "claims": ["totalAssetsEnd"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -435,9 +414,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentAssets"
-          ],
+          "claims": ["currentAssets"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -478,9 +455,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "currentLiabilities"
-          ],
+          "claims": ["currentLiabilities"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -521,9 +496,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquity"
-          ],
+          "claims": ["parentEquity"],
           "from": "2026-06-30",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -565,9 +538,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2025End"
-          ],
+          "claims": ["parentEquityFy2025End"],
           "from": "2025-12-31",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -609,9 +580,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityFy2024End"
-          ],
+          "claims": ["parentEquityFy2024End"],
           "from": "2024-12-31",
           "to": "2024-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -653,9 +622,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "parentEquityH12025End"
-          ],
+          "claims": ["parentEquityH12025End"],
           "from": "2025-06-30",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -697,9 +664,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenue"
-          ],
+          "claims": ["revenue"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -741,9 +706,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "revenuePrevious"
-          ],
+          "claims": ["revenuePrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -785,9 +748,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfit"
-          ],
+          "claims": ["operatingProfit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -829,9 +790,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingProfitPrevious"
-          ],
+          "claims": ["operatingProfitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -873,9 +832,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profit"
-          ],
+          "claims": ["profit"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -917,9 +874,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "profitPrevious"
-          ],
+          "claims": ["profitPrevious"],
           "from": "2025-01-01",
           "to": "2025-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -961,9 +916,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "fyProfit2025"
-          ],
+          "claims": ["fyProfit2025"],
           "from": "2025-01-01",
           "to": "2025-12-31",
           "purchasingPowerDate": "2026-06-30"
@@ -1004,9 +957,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "operatingCash"
-          ],
+          "claims": ["operatingCash"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1047,9 +998,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "capex"
-          ],
+          "claims": ["capex"],
           "from": "2026-01-01",
           "to": "2026-06-30",
           "purchasingPowerDate": "2026-06-30"
@@ -1184,9 +1133,7 @@
           "publishedAt": "2026-07-29",
           "publishedAtBasis": "EXACT",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendTotal"
-          ],
+          "claims": ["dividendTotal"],
           "from": "2026-03-23",
           "to": "2026-03-23",
           "purchasingPowerDate": null
@@ -1227,134 +1174,593 @@
           "publishedAt": "2026-11-01",
           "publishedAtBasis": "OBSERVED_BY",
           "method": "DOCUMENT_RECONCILIATION",
-          "claims": [
-            "dividendPrevious"
-          ],
+          "claims": ["dividendPrevious"],
           "from": "2025-04-07",
           "to": "2025-04-07",
           "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "fyRevenue2025",
+        "value": "319413508000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-toaso-fyRevenue2025",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "fyRevenue2025: 319413508000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "fyRevenue2024",
+        "value": "157419715000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "revenue",
+        "evidence": {
+          "id": "ev-toaso-fyRevenue2024",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "fyRevenue2024: 157419715000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyRevenue2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "fyProfit2024",
+        "value": "6834463000",
+        "unit": "TRY",
+        "period": "2024-01-01 / 2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "profit",
+        "evidence": {
+          "id": "ev-toaso-fyProfit2024",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "fyProfit2024: 6834463000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["fyProfit2024"],
+          "from": "2024-01-01",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "cashFy2025End",
+        "value": "19967321000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "cash",
+        "evidence": {
+          "id": "ev-toaso-cashFy2025End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "cashFy2025End: 19967321000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "cashFy2024End",
+        "value": "25806496000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "cash",
+        "evidence": {
+          "id": "ev-toaso-cashFy2024End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "cashFy2024End: 25806496000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["cashFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "debtShortFy2025End",
+        "value": "16253582000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "debtShort",
+        "evidence": {
+          "id": "ev-toaso-debtShortFy2025End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "debtShortFy2025End: 16253582000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["debtShortFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "debtLongFy2025End",
+        "value": "37415420000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "debtLong",
+        "evidence": {
+          "id": "ev-toaso-debtLongFy2025End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "debtLongFy2025End: 37415420000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["debtLongFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "debtShortFy2024End",
+        "value": "14315835000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "debtShort",
+        "evidence": {
+          "id": "ev-toaso-debtShortFy2024End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "debtShortFy2024End: 14315835000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["debtShortFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "debtLongFy2024End",
+        "value": "22204378000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "debtLong",
+        "evidence": {
+          "id": "ev-toaso-debtLongFy2024End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "debtLongFy2024End: 22204378000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["debtLongFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "financialDebtFy2025End",
+        "value": "53669002000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "financialDebt",
+        "evidence": {
+          "id": "ev-toaso-financialDebtFy2025End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "financialDebtFy2025End: 53669002000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir. Capraz dogrulama: 16.253.582+37.415.420=53.669.002 bin TL.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "financialDebtFy2024End",
+        "value": "36520213000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "financialDebt",
+        "evidence": {
+          "id": "ev-toaso-financialDebtFy2024End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "financialDebtFy2024End: 36520213000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir. Capraz dogrulama: 14.315.835+22.204.378=36.520.213 bin TL.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["financialDebtFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        }
+      },
+      {
+        "id": "netFinancialDebtFy2024End",
+        "value": "10713717000",
+        "unit": "TRY",
+        "period": "2024-12-31",
+        "sourceId": "fy2025AnnualReport",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-02",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "metricKey": "netFinancialDebt",
+        "evidence": {
+          "id": "ev-toaso-netFinancialDebtFy2024End",
+          "sourceId": "fy2025AnnualReport",
+          "originId": "tofas-ir-site",
+          "collectionId": "toaso-audit-2026-11-02",
+          "reviewerId": "claude-toaso-audit-20261102",
+          "ancestorIds": [],
+          "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+          "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+          "excerpt": "netFinancialDebtFy2024End: 10713717000 TRY. 2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir. 36.520.213-25.806.496=10.713.717 bin TL; raporun kendi Net finansal borc/Ozkaynak orani %17 satiriyla tutarli.",
+          "checkedAt": "2026-11-02",
+          "publishedAt": "2026-02-17",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["netFinancialDebtFy2024End"],
+          "from": "2024-12-31",
+          "to": "2024-12-31",
+          "purchasingPowerDate": "2025-12-31"
         }
       }
     ],
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
@@ -1363,141 +1769,98 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
     ],
     "presentation": {
       "schemaVersion": 1,
-      "id": "toaso-2026-11-01-v2",
+      "id": "toaso-2026-11-02-v3",
       "assetId": "watch-bist-toaso",
       "symbol": "TOASO",
       "isin": "TRATOASO91H3",
@@ -1505,7 +1868,7 @@
       "sector": "Otomotiv - Fiat/Stellantis lisansli binek ve ticari arac uretimi (Koc Holding + Stellantis ortak girisimi)",
       "contentKey": "researchToasoAudit20261101",
       "asOf": "2026-10-30",
-      "retrievedAt": "2026-11-01",
+      "retrievedAt": "2026-11-02",
       "timezone": "Europe/Istanbul",
       "financialPeriod": "2026-01-01 / 2026-06-30",
       "priceAt": "2026-10-30T18:10:00+03:00",
@@ -1522,12 +1885,7 @@
         "to": "2026-10-31",
         "status": "PARTIAL",
         "sourceId": "disclosureList",
-        "pendingDates": [
-          "2026-08-18",
-          "2026-09-21",
-          "2026-10-01",
-          "2026-10-21"
-        ]
+        "pendingDates": ["2026-08-18", "2026-09-21", "2026-10-01", "2026-10-21"]
       },
       "disclosures": [
         {
@@ -1634,134 +1992,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }
@@ -2080,7 +2395,7 @@
       ],
       "narrativeStale": true
     },
-    "revision": 2,
+    "revision": 3,
     "financialHistory": [
       {
         "year": "2021",
@@ -2100,7 +2415,14 @@
       {
         "year": "2024",
         "factIds": [
-          "parentEquityFy2024End"
+          "parentEquityFy2024End",
+          "fyRevenue2024",
+          "fyProfit2024",
+          "cashFy2024End",
+          "debtShortFy2024End",
+          "debtLongFy2024End",
+          "financialDebtFy2024End",
+          "netFinancialDebtFy2024End"
         ],
         "calculationIds": []
       },
@@ -2110,7 +2432,12 @@
           "parentEquityFy2025End",
           "fyProfit2025",
           "ebitdaFy2025",
-          "netFinancialDebtFy2025End"
+          "netFinancialDebtFy2025End",
+          "fyRevenue2025",
+          "cashFy2025End",
+          "debtShortFy2025End",
+          "debtLongFy2025End",
+          "financialDebtFy2025End"
         ],
         "calculationIds": []
       }
@@ -2122,10 +2449,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
-      "strategies": [
-        "DIVIDEND",
-        "VALUE"
-      ]
+      "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
     "facts": [
@@ -3650,122 +3974,79 @@
     "contracts": [
       {
         "id": "marketCap",
-        "units": [
-          "TRY_SHARE",
-          "SHARES"
-        ],
+        "units": ["TRY_SHARE", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "priceBook",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "bookPerShare",
-        "units": [
-          "TRY",
-          "SHARES"
-        ],
+        "units": ["TRY", "SHARES"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "revenueGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "profitGrowth",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "COMPARABLE",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "dividendYield",
-        "units": [
-          "TRY_SHARE",
-          "TRY_SHARE"
-        ],
+        "units": ["TRY_SHARE", "TRY_SHARE"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "operatingMargin",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "currentRatio",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "financialDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "cashProxy",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "netDebt",
-        "units": [
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY", "TRY"],
         "periodPolicy": "SAME",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peHalfYear",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "REPORTED"
       },
       {
         "id": "peRunRate",
-        "units": [
-          "TRY_SHARE",
-          "SHARES",
-          "TRY",
-          "TRY"
-        ],
+        "units": ["TRY_SHARE", "SHARES", "TRY", "TRY"],
         "periodPolicy": "DATED_MARKET",
         "earningsBasis": "ANNUALIZED_ESTIMATE"
       }
@@ -3774,134 +4055,91 @@
       {
         "id": "marketCap",
         "operation": "MULTIPLY",
-        "inputs": [
-          "price",
-          "shares"
-        ],
+        "inputs": ["price", "shares"],
         "unit": "TRY",
         "precision": 2
       },
       {
         "id": "priceBook",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "parentEquity"
-        ],
+        "inputs": ["price", "shares", "parentEquity"],
         "unit": "MULTIPLE",
         "precision": 3
       },
       {
         "id": "bookPerShare",
         "operation": "RATIO",
-        "inputs": [
-          "parentEquity",
-          "shares"
-        ],
+        "inputs": ["parentEquity", "shares"],
         "unit": "TRY_SHARE",
         "precision": 4
       },
       {
         "id": "revenueGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "revenue",
-          "revenuePrevious"
-        ],
+        "inputs": ["revenue", "revenuePrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "profitGrowth",
         "operation": "GROWTH",
-        "inputs": [
-          "profit",
-          "profitPrevious"
-        ],
+        "inputs": ["profit", "profitPrevious"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "dividendYield",
         "operation": "PERCENT",
-        "inputs": [
-          "dividendTotal",
-          "price"
-        ],
+        "inputs": ["dividendTotal", "price"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "operatingMargin",
         "operation": "PERCENT",
-        "inputs": [
-          "operatingProfit",
-          "revenue"
-        ],
+        "inputs": ["operatingProfit", "revenue"],
         "unit": "PERCENT",
         "precision": 2
       },
       {
         "id": "currentRatio",
         "operation": "RATIO",
-        "inputs": [
-          "currentAssets",
-          "currentLiabilities"
-        ],
+        "inputs": ["currentAssets", "currentLiabilities"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "financialDebt",
         "operation": "SUM",
-        "inputs": [
-          "debtShort",
-          "debtLong"
-        ],
+        "inputs": ["debtShort", "debtLong"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "cashProxy",
         "operation": "SUBTRACT",
-        "inputs": [
-          "operatingCash",
-          "capex"
-        ],
+        "inputs": ["operatingCash", "capex"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "netDebt",
         "operation": "SUBTRACT",
-        "inputs": [
-          "financialDebt",
-          "cash"
-        ],
+        "inputs": ["financialDebt", "cash"],
         "unit": "TRY",
         "precision": 0
       },
       {
         "id": "peHalfYear",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       },
       {
         "id": "peRunRate",
         "operation": "PRODUCT_OVER_SUM",
-        "inputs": [
-          "price",
-          "shares",
-          "profit",
-          "profit"
-        ],
+        "inputs": ["price", "shares", "profit", "profit"],
         "unit": "MULTIPLE",
         "precision": 2
       }
@@ -3933,12 +4171,7 @@
         "to": "2026-10-31",
         "status": "PARTIAL",
         "sourceId": "disclosureList",
-        "pendingDates": [
-          "2026-08-18",
-          "2026-09-21",
-          "2026-10-01",
-          "2026-10-21"
-        ]
+        "pendingDates": ["2026-08-18", "2026-09-21", "2026-10-01", "2026-10-21"]
       },
       "disclosures": [
         {
@@ -4045,134 +4278,91 @@
         {
           "id": "marketCap",
           "operation": "MULTIPLY",
-          "inputs": [
-            "price",
-            "shares"
-          ],
+          "inputs": ["price", "shares"],
           "unit": "TRY",
           "precision": 2
         },
         {
           "id": "priceBook",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "parentEquity"
-          ],
+          "inputs": ["price", "shares", "parentEquity"],
           "unit": "MULTIPLE",
           "precision": 3
         },
         {
           "id": "bookPerShare",
           "operation": "RATIO",
-          "inputs": [
-            "parentEquity",
-            "shares"
-          ],
+          "inputs": ["parentEquity", "shares"],
           "unit": "TRY_SHARE",
           "precision": 4
         },
         {
           "id": "revenueGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "revenue",
-            "revenuePrevious"
-          ],
+          "inputs": ["revenue", "revenuePrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "profitGrowth",
           "operation": "GROWTH",
-          "inputs": [
-            "profit",
-            "profitPrevious"
-          ],
+          "inputs": ["profit", "profitPrevious"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "dividendYield",
           "operation": "PERCENT",
-          "inputs": [
-            "dividendTotal",
-            "price"
-          ],
+          "inputs": ["dividendTotal", "price"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "operatingMargin",
           "operation": "PERCENT",
-          "inputs": [
-            "operatingProfit",
-            "revenue"
-          ],
+          "inputs": ["operatingProfit", "revenue"],
           "unit": "PERCENT",
           "precision": 2
         },
         {
           "id": "currentRatio",
           "operation": "RATIO",
-          "inputs": [
-            "currentAssets",
-            "currentLiabilities"
-          ],
+          "inputs": ["currentAssets", "currentLiabilities"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "financialDebt",
           "operation": "SUM",
-          "inputs": [
-            "debtShort",
-            "debtLong"
-          ],
+          "inputs": ["debtShort", "debtLong"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "cashProxy",
           "operation": "SUBTRACT",
-          "inputs": [
-            "operatingCash",
-            "capex"
-          ],
+          "inputs": ["operatingCash", "capex"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "netDebt",
           "operation": "SUBTRACT",
-          "inputs": [
-            "financialDebt",
-            "cash"
-          ],
+          "inputs": ["financialDebt", "cash"],
           "unit": "TRY",
           "precision": 0
         },
         {
           "id": "peHalfYear",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         },
         {
           "id": "peRunRate",
           "operation": "PRODUCT_OVER_SUM",
-          "inputs": [
-            "price",
-            "shares",
-            "profit",
-            "profit"
-          ],
+          "inputs": ["price", "shares", "profit", "profit"],
           "unit": "MULTIPLE",
           "precision": 2
         }

@@ -156,13 +156,16 @@ describe('published compatible financial periods', () => {
     ).toMatchObject({ kind: 'INTERIM', value: '50' });
   });
   it('uses actual annual earnings with an explicit fallback instead of annualizing H1', () => {
+    // TUPRS now reconstructs genuine TTM (profit2025 restated to the H1 2026
+    // purchasing-power basis + H1 2026 − H1 2025, all on the same basis), so
+    // it no longer needs the annualFallback this test originally targeted.
     expect(
       selectFinancialFlow(report, 'profit', '2026-10-09', 'PARENT'),
-    ).toMatchObject({ kind: 'ANNUAL', value: '29523183000' });
+    ).toMatchObject({ kind: 'TTM', value: '72741357000' });
     expect(ratioPresentation(report, 'peTtm')).toMatchObject({
-      periodBasis: 'ANNUAL',
+      periodBasis: 'TTM',
       status: 'INDICATIVE',
-      value: '25.21',
+      value: '10.23',
     });
   });
   it('forms cumulative TTM only on a common basis', () => {

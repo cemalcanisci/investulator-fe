@@ -12,17 +12,22 @@ const assetId = 'watch-bist-tuprs';
 const rows = bundleRows(researchBundle, [assetId]);
 const report = researchBundle.reports[0];
 describe('research workbook transaction', () => {
-  it('recalculates annual P/E from imported earnings without promoting source quality', () => {
-    const index = report.facts.findIndex((fact) => fact.id === 'profit2025');
+  it('recalculates TTM P/E from imported earnings without promoting source quality', () => {
+    // TUPRS's live peTtm input is the H1-2026-purchasing-power-restated annual
+    // fact (profit2025RestatedJun2026), not the nominal-basis profit2025 this
+    // test originally edited, since TUPRS can now reconstruct genuine TTM.
+    const index = report.facts.findIndex(
+      (fact) => fact.id === 'profit2025RestatedJun2026',
+    );
     const changed = rows.map((row) =>
       row.recordId === report.version && row.field === `/facts/${index}/value`
-        ? { ...row, value: '14761591500' }
+        ? { ...row, value: '17382955000' }
         : row,
     );
     const preview = previewWorkbook(changed, researchBundle);
     expect(preview.issues).toEqual([]);
     expect(ratioPresentation(preview.bundle.reports[0], 'peTtm')).toMatchObject(
-      { value: '50.42', status: 'INDICATIVE', periodBasis: 'ANNUAL' },
+      { value: '13.44', status: 'INDICATIVE', periodBasis: 'TTM' },
     );
   });
   it('round-trips every report and simulation field without changing calculations', () => {

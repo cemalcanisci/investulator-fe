@@ -6,6 +6,22 @@
 
 ## ŞU AN
 
+**Son güncelleyen:** Claude — **Tarih:** 2026-11-02
+
+**1-2 Kasım denetiminin (DENETIM.md/audit.json) ikinci turu tamamlandı.** 10 şirketin her biri için SADECE o şirketin kendi dosyasına yazan bağımsız bir arka plan ajanı çalıştırıldı (hesap sağlayıcının rate limitine iki kez çarpıp tazeden yeniden başlatıldı — ara durumlar hep `git diff --stat` ile doğrulandı, bir ajanın "dosya değiştirmeden tamamladım" demesi bu şekilde yakalanıp düzeltildi). Sonra tüm değişiklikler merkezi olarak doğrulandı ve `DENETIM.md`/`audit.json` güncellendi.
+
+**Kapanan (çekirdek finansal seri 2021-2025 tam):** TUPRS (79 VERIFIED, capex 2021-2024 dahil + `profit2025RestatedJun2026` ile gerçek TTM köprüsü), ISMEN (47 VERIFIED, 10 UNVERIFIED/CONFLICT'ten 2'ye düştü — kök neden: profit/equity önceden sonraki yılın restate sütunundan alınmıştı), AKMGY (68 VERIFIED), PAGYO (71 VERIFIED, rev4).
+
+**Büyük ölçüde ilerleyen (ayrıntı ve kalan açıklar [docs/research-audit-20261101/DENETIM.md](docs/research-audit-20261101/DENETIM.md)'de):** DOAS (2022-2023 tam, 2024 hâlâ tamamen açık, 2021'in bir kısmı GYO-birleşmesi kapsam farkı nedeniyle BİLİNÇLİ eksik bırakıldı), TTRAK (2021-2024 **tam**, temettüde gerçek çift-bölme hatası düzeltildi), YGGYO (gerçek çift-bölme hatası düzeltildi, backtest **PRICE_ONLY→APPROXIMATE**, 2023-2025 seri eklendi), FROTO/TOASO/AKSA (2024-2025 büyük ölçüde tamam, 2021-2023 ve cfo/capex çoğu yerde açık).
+
+**Merkezi doğrulamada bulunup düzeltilen gerçek hatalar (uydurma değil, kanıtlı):** DOAS'ta 10 fact'in `evidence.claims` alanı kopyala-yapıştır yüzünden yanlıştı, düzeltildi. `bistAudit.test.ts`'in sabit tarih dizesi arayan seçicisi yeni sürümlerle kırılmıştı, revizyon bazlı seçime çevrildi. TUPRS'ın yeni TTM köprüsü üç test dosyasındaki eski annualFallback beklentilerini geçersiz kıldı, gerçek değerlerle güncellendi. `services/research.test.ts`'teki bayat TUPRS sürüm-id beklentisi düzeltildi. 10 şirketin toplam veri hacmi `MAX_WORKBOOK_ROWS` sınırını (100k) aştı, 200k'ya çıkarıldı. `ResearchPage.test.tsx`'te büyüyen veri jsdom render süresini zaman aşımı sınırının üzerine çıkardı, süreler artırıldı.
+
+**Doğrulama (tüm değişiklikler bittikten sonra tek seferde):** `npx tsc -b` 0 hata, `npm run build` PASS, `npm run lint` temiz, `npm run format` uygulandı, `npx vitest run` (tam suite) **553/558 geçti** — kalan 5 (`AnalysisPage.test.tsx` ×4, `researchPresentation.test.ts` ×1) `git stash` ile orijinal kodda da başarısız olduğu doğrulanan, bu işle ilgisiz önceden var olan hatalar.
+
+**Hâlâ açık (öncelik sırasıyla):** DOAS 2024 tam seri + 2025 nominal finansallar + Q1 net borç + FAVÖK tanımı; FROTO 2021-2022 (SSL erişim engeli) + tüm yıllarda cfo/capex; TOASO 2021-2023 + cfo/capex; TTRAK 2025 serisi + eski temettü (div-2005/06/07); YGGYO 2021-2022 + cfo/capex + düzeltilmiş NAD; AKSA 2021-2023 + SOLO/KONSOLİDE etiketleme hatası (önceki oturumdan kalma); AKMGY/PAGYO düzeltilmiş NAD (CONFLICT, gerçek ekspertiz verisi bulunup güvenilir toplanamadığı için bilerek çözülmedi); ISMEN düzenleyici sermaye yeterliliği + döviz/vade matrisi; **tüm şirketlerde iyimser/baz/kötümser adil değer senaryoları bu turda da ele alınmadı (BLOCKED/NOT_ASSESSED)**. Commit/push yapılmadı; 5173 sunucusuna dokunulmadı.
+
+### Önceki ŞU AN arşivi — 1 Kasım denetim turu (Codex)
+
 **Son güncelleyen:** Codex — **Tarih:** 2026-11-01
 
 On BIST şirketinin mevcut araştırmasına sürüm koruyan veri denetimi uygulandı. TUPRS v8; diğer dokuz şirket v2. DOAS net borç/capex ve Q2 kesin tutarları; ISMEN TMS 29, TTM/ROE ve fonlama; GYO nakit karşılama; brüt/net temettü ve günlük fiyat tarihleri düzeltildi. Eski raporlar ve kullanıcı verileri korundu.
@@ -19,6 +35,8 @@ TypeScript uygulama denetimi: 0 hata. Üretim Vite build: PASS. İlgili testler:
 ---
 
 ## GEÇMİŞ
+
+- **2026-11-02 — Claude:** 1 Kasım BIST veri denetiminin ikinci turu: 10 şirket paralel/bağımsız ajanlarla çalıştırıldı (her biri kendi dosyasına, sonuçlar `git diff` ile doğrulandı). TUPRS/ISMEN/AKMGY/PAGYO'nun 2021-2025 çekirdek finansal serisi tam tamamlandı; diğer altısı büyük ölçüde ilerletildi. ISMEN'de 10 UNVERIFIED/CONFLICT'ten 8'i gerçek kök nedenle (restate edilmiş sütun karışıklığı) çözüldü; YGGYO/TTRAK'ta gerçek çift-bölme temettü hatası bulunup düzeltildi (YGGYO backtest'i PRICE_ONLY'den APPROXIMATE'e geçti); DOAS'ta gerçek bir `evidence.claims` kopyala-yapıştır hatası düzeltildi. Üç pre-existing test varsayımı (TUPRS sürüm id, iki annualFallback beklentisi) ve iki sanity sınırı (MAX_WORKBOOK_ROWS, ResearchPage test timeout) gerçek veri büyümesiyle geçersiz kaldığı için güncellendi. Tam suite 553/558 (kalan 5, orijinal kodda da başarısız, ilgisiz). `DENETIM.md`/`audit.json` güncellendi.
 
 - **2026-11-01 — Codex:** PAGYO araştırması ve yaklaşık geçmiş yatırım entegre edildi; borç kaynak metni düzeltildi, üretim derlemesi ve tarayıcı kontrolleri tamamlandı.
 
@@ -176,7 +194,6 @@ BIST:DOAS (Doğuş Otomotiv) için TUPRS ile aynı mimaride gerçek araştırma 
 - Tarayıcıda gezinirken `imported-research.json`'ın (dev-only, gitignored ama izlenen) beklenmedik şekilde dolu yazıldığı fark edildi ve boş baseline'a döndürüldü; DOAS verisi zaten ayrı dosyalarda (overlay'e bağımlı değil).
 - Kullanıcının 5173 sunucusu korunur (bu oturumda bir ara kendiliğinden durdu, kullanıcıya dokunulmadan kendi 5199 doğrulama sunucusu kullanıldı). Commit/push yapılmadı. Sıradaki iş: kullanıcı incelemesi.
 
-
 - **2026-10-31 — Codex:** AKMGY araştırması ve20 yıllık yaklaşık tarihçe frontend’e eklendi; GYO nakit/borç görünürlüğü,metrik aliası,küçük tutar sunumu düzeltildi; hesap ve son tarayıcı QA tamamlandı.
 
 ### Önceki ŞU AN arşivi — AKMGY öncesi
@@ -196,6 +213,5 @@ Değişiklikler: iki AKSA JSON, researchBundle bağlantısı, TR/EN researchAksa
 Sırada: kullanıcı incelemesi; yeni finansal rapor yayımlandığında güncelleme ve açık veri sınırlarını kapatma. Önceden var olan diğer değişiklikler korundu. Backend/Keycloak/runtime AI, commit/push yok.
 
 ---
-
 
 - **2026-11-01 — Codex:** On BIST araştırması sürüm korunarak denetlendi; kaynak, dönem, temettü ve simülasyon hataları düzeltildi. Kalan veri açıkları ve son doğrulama sonuçları docs/research-audit-20261101 altında kaydedildi.

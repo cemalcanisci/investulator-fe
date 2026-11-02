@@ -47,6 +47,13 @@
       "title": "USD/TRY günlük gözlem; TL / USD",
       "origin": "Yahoo Finance; tek veri sağlayıcısı",
       "retrievedAt": "2026-11-01"
+    },
+    {
+      "id": "ttrakDividendPage",
+      "url": "https://www.turktraktor.com.tr/yatirimci-iliskileri/hisse-senedi-ve-borclanma-araclari/temettu-odeme-tarihcesi",
+      "title": "Türk Traktör - Temettü Ödeme Tarihçesi (şirketin kendi yatırımcı ilişkileri sayfası)",
+      "origin": "Türk Traktör - birincil kaynak (resmi kurumsal sayfa)",
+      "retrievedAt": "2026-11-02"
     }
   ],
   "coverage": {
@@ -54,38 +61,29 @@
       "from": "2005-02-28",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2005-02-28",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2005-02-28",
       "to": "2026-09-30",
       "state": "REVIEWED",
-      "sourceIds": [
-        "yahoo-events"
-      ],
+      "sourceIds": ["yahoo-events"],
       "method": "Yahoo Finance splits olay listesi; sirketin 06.06.2023 tarihli %87,5 bedelsiz sermaye artirimi (Yahoo tarafindan \"187.5:100 split\" olarak etiketlenmis, gercekte CLAUDE.md BONUS/SPLIT ayrimina gore bedelsiz pay dagitimidir, sermaye 53.369.000 TL-den 100.066.875 TL-ye, sirketin kendi sermaye-arttirimi sayfasiyla dogrulandi). 2004-12-31 tarihli \"1:1000\" olay redenominasyon artefakti oldugu icin HARIC TUTULDU (bkz. prices.method)."
     },
     "dividends": {
       "from": "2005-02-28",
       "to": "2026-09-30",
       "state": "CONFLICT",
-      "sourceIds": [
-        "yahoo-events",
-        "companyDividendPage"
-      ],
-      "method": "Yahoo Finance dividends olay listesi (2005-2025, ham/o donemki pay adedine gore); sirketin kendi resmi temettu odeme tarihcesi sayfasindaki toplam-TL tutarlari ve odeme tarihleriyle capraz dogrulandi (2007-2025 araligi orada mevcut, tam ortusme saglandi). Gercek stopaj/net ayrimi uygulanmadi, brut/duyurulan tutar kullanildi (bkz. arastirma raporu Veri eksikleri). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
+      "sourceIds": ["yahoo-events", "companyDividendPage", "ttrakDividendPage"],
+      "method": "Şirketin kendi resmi \"Temettü Ödeme Tarihçesi\" sayfasındaki (turktraktor.com.tr) FY/ödeme yılı, toplam brüt TL tutarı ve o dönemin ödenmiş sermayesi (pay sayısı) kullanılarak div-2008 ile div-2025 arası 19 ödemenin rawGrossPerShare = toplamTL / dönemin_sermayesi şeklinde yeniden hesaplandı (önceki Yahoo kaynaklı değerler, 2023 bedelsiz artırımından ÖNCEKİ ödemeler için güncel pay bazına göre ÖNCEDEN bölünmüş haldeydi; motor bunları tekrar bölünce 2021-2023 gibi yıllarda ~1,875x küçük sonuç veriyordu - çift bölme hatası). Ödeme tarihleri resmi sayfadan gün hassasiyetinde alındı; ex-tarih (hak kullanım) ayrıca doğrulanamadı, ödeme tarihiyle aynı kabul edildi (açıkça belirtilir, uydurma gün farkı yok). div-2024/div-2024-2/div-2025 için yeniden hesaplanan tutar önceki değerle TAM örtüştü (bağımsız doğrulama). | div-2005, div-2006, div-2007 şirketin resmi tarihçe sayfasında HİÇ yer almıyor (sayfa FY2007/ödeme 2008-05-12 ile başlıyor) - bu üç kaydın gerçek bir TTRAK kurumsal temettüsü olup olmadığı doğrulanamadı, silinmedi ama REVIEWED kapsamına dahil edilemez. Bu yüzden coverage CONFLICT kalır."
     }
   },
   "monthly": [
@@ -2203,141 +2201,139 @@
     },
     {
       "id": "div-2008",
-      "exDate": "2008-04-30",
-      "payDate": "2008-04-30",
-      "rawGrossPerShare": "0.939360",
-      "sourceId": "yahoo-events"
+      "exDate": "2008-05-12",
+      "payDate": "2008-05-12",
+      "rawGrossPerShare": "1.761322",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2009",
-      "exDate": "2009-03-31",
-      "payDate": "2009-03-31",
-      "rawGrossPerShare": "0.170667",
-      "sourceId": "yahoo-events"
+      "exDate": "2009-04-15",
+      "payDate": "2009-04-15",
+      "rawGrossPerShare": "0.320000",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2010",
-      "exDate": "2010-03-31",
-      "payDate": "2010-03-31",
-      "rawGrossPerShare": "0.122400",
-      "sourceId": "yahoo-events"
+      "exDate": "2010-04-02",
+      "payDate": "2010-04-02",
+      "rawGrossPerShare": "0.229480",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2011",
-      "exDate": "2011-03-31",
-      "payDate": "2011-03-31",
-      "rawGrossPerShare": "1.498997",
-      "sourceId": "yahoo-events"
+      "exDate": "2011-04-01",
+      "payDate": "2011-04-01",
+      "rawGrossPerShare": "2.810620",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2012",
-      "exDate": "2012-03-31",
-      "payDate": "2012-03-31",
-      "rawGrossPerShare": "1.998661",
-      "sourceId": "yahoo-events"
+      "exDate": "2012-04-09",
+      "payDate": "2012-04-09",
+      "rawGrossPerShare": "3.747494",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2013",
-      "exDate": "2013-02-28",
-      "payDate": "2013-02-28",
-      "rawGrossPerShare": "1.998661",
-      "sourceId": "yahoo-events"
+      "exDate": "2013-03-25",
+      "payDate": "2013-03-25",
+      "rawGrossPerShare": "3.747494",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2014",
-      "exDate": "2014-02-28",
-      "payDate": "2014-02-28",
-      "rawGrossPerShare": "2.997867",
-      "sourceId": "yahoo-events"
+      "exDate": "2014-03-31",
+      "payDate": "2014-03-31",
+      "rawGrossPerShare": "5.621241",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2015",
-      "exDate": "2015-02-28",
-      "payDate": "2015-02-28",
-      "rawGrossPerShare": "1.998663",
-      "sourceId": "yahoo-events"
+      "exDate": "2015-03-25",
+      "payDate": "2015-03-25",
+      "rawGrossPerShare": "3.747494",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2015-2",
-      "exDate": "2015-09-30",
-      "payDate": "2015-09-30",
-      "rawGrossPerShare": "0.999333",
-      "sourceId": "yahoo-events"
+      "exDate": "2015-10-30",
+      "payDate": "2015-10-30",
+      "rawGrossPerShare": "1.873747",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2016",
-      "exDate": "2016-03-31",
-      "payDate": "2016-03-31",
-      "rawGrossPerShare": "2.997995",
-      "sourceId": "yahoo-events"
+      "exDate": "2016-04-01",
+      "payDate": "2016-04-01",
+      "rawGrossPerShare": "5.621241",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2017",
-      "exDate": "2017-03-31",
-      "payDate": "2017-03-31",
-      "rawGrossPerShare": "2.498329",
-      "sourceId": "yahoo-events"
+      "exDate": "2017-04-03",
+      "payDate": "2017-04-03",
+      "rawGrossPerShare": "4.684367",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2018",
-      "exDate": "2018-02-28",
-      "payDate": "2018-02-28",
-      "rawGrossPerShare": "2.997995",
-      "sourceId": "yahoo-events"
+      "exDate": "2018-03-21",
+      "payDate": "2018-03-21",
+      "rawGrossPerShare": "5.621241",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2020",
-      "exDate": "2020-02-29",
-      "payDate": "2020-02-29",
-      "rawGrossPerShare": "0.999331",
-      "sourceId": "yahoo-events"
+      "exDate": "2020-03-20",
+      "payDate": "2020-03-20",
+      "rawGrossPerShare": "1.873747",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2021",
-      "exDate": "2021-02-28",
-      "payDate": "2021-02-28",
-      "rawGrossPerShare": "8.494320",
-      "sourceId": "yahoo-events"
+      "exDate": "2021-03-25",
+      "payDate": "2021-03-25",
+      "rawGrossPerShare": "15.926849",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2022",
-      "exDate": "2022-02-28",
-      "payDate": "2022-02-28",
-      "rawGrossPerShare": "11.991979",
-      "sourceId": "yahoo-events"
+      "exDate": "2022-03-28",
+      "payDate": "2022-03-28",
+      "rawGrossPerShare": "22.484963",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2023",
-      "exDate": "2023-02-28",
-      "payDate": "2023-02-28",
-      "rawGrossPerShare": "20.985966",
-      "sourceId": "yahoo-events"
+      "exDate": "2023-03-10",
+      "payDate": "2023-03-10",
+      "rawGrossPerShare": "39.348686",
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2024",
-      "exDate": "2024-03-31",
-      "payDate": "2024-03-31",
+      "exDate": "2024-04-01",
+      "payDate": "2024-04-01",
       "rawGrossPerShare": "62.957897",
-      "sourceId": "yahoo-events"
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2024-2",
-      "exDate": "2024-10-31",
-      "payDate": "2024-10-31",
+      "exDate": "2024-11-08",
+      "payDate": "2024-11-08",
       "rawGrossPerShare": "26.981956",
-      "sourceId": "yahoo-events"
+      "sourceId": "ttrakDividendPage"
     },
     {
       "id": "div-2025",
-      "exDate": "2025-03-31",
-      "payDate": "2025-03-31",
+      "exDate": "2025-04-02",
+      "payDate": "2025-04-02",
       "rawGrossPerShare": "48.467587",
-      "sourceId": "yahoo-events"
+      "sourceId": "ttrakDividendPage"
     }
   ],
-  "expectedActionIds": [
-    "bonus-2023"
-  ],
+  "expectedActionIds": ["bonus-2023"],
   "expectedDividendIds": [
     "div-2005",
     "div-2006",

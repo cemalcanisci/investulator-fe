@@ -40,6 +40,41 @@
       "title": "USD/TRY günlük gözlem; TL / USD",
       "origin": "Yahoo Finance; tek veri sağlayıcısı",
       "retrievedAt": "2026-11-01"
+    },
+    {
+      "id": "kap-froto-1256107",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1256107",
+      "title": "KAP - Ford Otomotiv 2023 kâr payı dağıtım bildirimi (06.03.2024)",
+      "origin": "KAP (Kamuyu Aydınlatma Platformu) birincil bildirim, PDF doğrudan okundu",
+      "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "kap-froto-1411957",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1411957",
+      "title": "KAP - Ford Otomotiv 2024 kâr payı dağıtım bildirimi (26.03.2025)",
+      "origin": "KAP (Kamuyu Aydınlatma Platformu) birincil bildirim, PDF doğrudan okundu",
+      "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "kap-froto-1571600",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1571600",
+      "title": "KAP - Ford Otomotiv 2025 kâr payı dağıtım bildirimi (12.03.2026)",
+      "origin": "KAP (Kamuyu Aydınlatma Platformu) birincil bildirim, PDF doğrudan okundu",
+      "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "secondary-froto-2024-11",
+      "url": "https://sanayigazetesi.com.tr/ford-otomotiv-temettu-odeme-kararini-acikladi-iste-temettu-miktari-ve-tarihi/",
+      "title": "Sanayi Gazetesi - Ford Otomotiv 2024 ikinci kâr payı ödeme haberi (KAP bildirimine dayanır)",
+      "origin": "İkincil haber derlemesi; bu oturumda doğrudan KAP bildirim ID'si bulunamadı, tutar dosyadaki mevcut değerle (14,25/10=1,425) birebir örtüştüğü için kullanıldı",
+      "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "secondary-froto-midas",
+      "url": "https://www.getmidas.com/canli-borsa/froto-hisse/temettu/",
+      "title": "Midas - Ford Otosan (FROTO) temettü geçmişi tablosu",
+      "origin": "İkincil aracı kurum derlemesi; yalnızca tek 'dağıtım tarihi' verir (hak kullanım/ödeme ayrımı yok), bu oturumda KAP bildirim ID'si bulunamadı",
+      "retrievedAt": "2026-11-02"
     }
   ],
   "coverage": {
@@ -47,27 +82,21 @@
       "from": "2005-02-28",
       "to": "2026-10-31",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-price"
-      ],
+      "sourceIds": ["audit-daily-price"],
       "method": "Günlük quote.close serisindeki her ayın son işlem günü. adjclose kullanılmadı; sağlayıcının bölünme düzeltmesi tekrar uygulanmadı. İki bağımsız kaynak iddiası yok."
     },
     "fx": {
       "from": "2005-02-28",
       "to": "2026-10-31",
       "state": "REVIEWED",
-      "sourceIds": [
-        "audit-daily-fx"
-      ],
+      "sourceIds": ["audit-daily-fx"],
       "method": "Fiyat işlem günü veya önceki en çok dört gündeki gerçek günlük USD/TRY kapanışı. İnterpolasyon yok; fxDate gerçek gözlem tarihi."
     },
     "actions": {
       "from": "2005-02-28",
       "to": "2026-10-31",
       "state": "REVIEWED",
-      "sourceIds": [
-        "yahoo-events"
-      ],
+      "sourceIds": ["yahoo-events"],
       "method": "Yahoo Finance splits olay listesi; sirketin 2001 (2,5x) ve 2003 (4x) bedelsiz artirimlari 20 yillik pencereden (2006 basi) once oldugu icin fiyat dizisine zaten yansitildi ama ayri eylem olarak listelenmedi; 2025 (10x) bedelsiz artirim pencere icinde oldugu icin listelendi. Sirketin 30.06.2026 mali tablosundaki 'Sermaye Artirimi' satiri (H1 2025, 350.910.000 TL'den 3.509.100.000 TL'ye, tam 10x) ile capraz dogrulandi. 2004-12-31 tarihli Yahoo '1:1000' kaydi 1 Ocak 2005 TL redenominasyon artefaktidir, gercek kurumsal aksiyon degildir, kullanilmadi."
     },
     "dividends": {
@@ -75,9 +104,14 @@
       "to": "2026-10-31",
       "state": "CONFLICT",
       "sourceIds": [
-        "yahoo-events"
+        "yahoo-events",
+        "kap-froto-1256107",
+        "kap-froto-1411957",
+        "kap-froto-1571600",
+        "secondary-froto-2024-11",
+        "secondary-froto-midas"
       ],
-      "method": "Yahoo Finance dividends olay listesi (2005-2026, o donemki/ham pay adedine gore); 2004'teki iki kayit (20.000 ve 18.756 TL/pay) 1 Ocak 2005 TL redenominasyonu oncesi eski-TL degerleridir, bu oturumda guvenilir sekilde donusturulemedigi icin KULLANILMADI (bkz. arastirma raporu Veri eksikleri). 27.10.2026 tarihli, henuz odenmemis 2,6095 TL/pay onerisi bu tarihsel seriye dahil edilmedi (backtest tamamlanmis odemeleri kapsar). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz."
+      "method": "Yahoo Finance dividends olay listesi (2005-2026, o donemki/ham pay adedine gore); 2004'teki iki kayit (20.000 ve 18.756 TL/pay) 1 Ocak 2005 TL redenominasyonu oncesi eski-TL degerleridir, bu oturumda guvenilir sekilde donusturulemedigi icin KULLANILMADI (bkz. arastirma raporu Veri eksikleri). 27.10.2026 tarihli, henuz odenmemis 2,6095 TL/pay onerisi bu tarihsel seriye dahil edilmedi (backtest tamamlanmis odemeleri kapsar). | 01.11.2026 denetimi: eski kayıtların hak kullanım/ödeme günleri veya brüt pay/bölünme bazı mutabık değil. Eski kayıtlar korunuyor; bu kayıtlarla temettülü sonuç üretilmez. Her ödeme birincil bildirimle doğrulanmadan kapsam REVIEWED yapılamaz. | 02.11.2026: div-2024-03 (KAP 1256107: hak kullanım 08.04.2024, ödeme 16.04.2024), div-2025-03 (KAP 1411957: hak kullanım 03.04.2025, ödeme 07.04.2025) ve div-2026-02 (KAP 1571600: hak kullanım 16.03.2026, ödeme 18.03.2026) birincil KAP bildirimiyle gerçek ayrı hak kullanım/ödeme tarihleriyle doğrulandı, tutarlar değişmedi. div-2024-10 ve div-2025-11 ikincil haber/aracı kurum kaynağıyla (KAP bildirim ID'si bu oturumda bulunamadı) gerçek tek tarihe (dağıtım/ödeme) güncellendi, ayrı hak kullanım tarihi doğrulanmadı. 2005-2023 arası kalan 36 kayıt hâlâ yahoo-events kaynaklı, exDate=payDate yer tutucu; KAP'tan tek tek doğrulanmadı. TÜMÜ doğrulanmadan state REVIEWED yapılamaz."
     }
   },
   "monthly": [
@@ -2426,43 +2460,41 @@
     },
     {
       "id": "div-2024-03",
-      "exDate": "2024-03-31",
-      "payDate": "2024-03-31",
+      "exDate": "2024-04-08",
+      "payDate": "2024-04-16",
       "rawGrossPerShare": "4.330000",
-      "sourceId": "yahoo-events"
+      "sourceId": "kap-froto-1256107"
     },
     {
       "id": "div-2024-10",
-      "exDate": "2024-10-31",
-      "payDate": "2024-10-31",
+      "exDate": "2024-11-22",
+      "payDate": "2024-11-26",
       "rawGrossPerShare": "1.425000",
-      "sourceId": "yahoo-events"
+      "sourceId": "secondary-froto-2024-11"
     },
     {
       "id": "div-2025-03",
-      "exDate": "2025-03-31",
-      "payDate": "2025-03-31",
+      "exDate": "2025-04-03",
+      "payDate": "2025-04-07",
       "rawGrossPerShare": "1.710000",
-      "sourceId": "yahoo-events"
+      "sourceId": "kap-froto-1411957"
     },
     {
       "id": "div-2025-11",
-      "exDate": "2025-11-30",
-      "payDate": "2025-11-30",
+      "exDate": "2025-12-03",
+      "payDate": "2025-12-03",
       "rawGrossPerShare": "6.050000",
-      "sourceId": "yahoo-events"
+      "sourceId": "secondary-froto-midas"
     },
     {
       "id": "div-2026-02",
-      "exDate": "2026-02-28",
-      "payDate": "2026-02-28",
+      "exDate": "2026-03-16",
+      "payDate": "2026-03-18",
       "rawGrossPerShare": "3.640000",
-      "sourceId": "yahoo-events"
+      "sourceId": "kap-froto-1571600"
     }
   ],
-  "expectedActionIds": [
-    "bonus-2025"
-  ],
+  "expectedActionIds": ["bonus-2025"],
   "expectedDividendIds": [
     "div-2005-02",
     "div-2005-08",
