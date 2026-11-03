@@ -5,6 +5,7 @@ import {
   WORKBOOK_SHEETS,
   MAX_WORKBOOK_BYTES,
   MAX_WORKBOOK_ROWS,
+  MAX_WORKBOOK_UNCOMPRESSED_BYTES,
   bundleRows,
 } from '@/lib/researchWorkbook';
 import type { ResearchBundle, WorkbookRow } from '@/lib/researchWorkbook';
@@ -55,7 +56,7 @@ function checkArchive(buffer: ArrayBuffer): void {
     }
     total += view.getUint32(offset + 24, true);
     if (
-      total > 48 * 1024 * 1024 ||
+      total > MAX_WORKBOOK_UNCOMPRESSED_BYTES ||
       (view.getUint16(offset + 8, true) & 1) !== 0
     ) {
       throw new Error('limit');

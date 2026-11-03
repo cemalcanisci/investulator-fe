@@ -85,7 +85,7 @@ describe('BIST source audit', () => {
   });
 
   it('blocks dividend returns for unresolved event histories but retains price results', () => {
-    for (const symbol of ['FROTO', 'TOASO', 'TTRAK', 'ISMEN']) {
+    for (const symbol of ['FROTO', 'TTRAK', 'ISMEN']) {
       const history = researchBundle.approximate
         .flatMap((value) => (isApproximateHistory(value) ? [value] : []))
         .find((h) => h.assetId === find(symbol).presentation.assetId);
@@ -108,6 +108,24 @@ describe('BIST source audit', () => {
     const history = researchBundle.approximate
       .flatMap((value) => (isApproximateHistory(value) ? [value] : []))
       .find((h) => h.assetId === find('YGGYO').presentation.assetId);
+    if (!history) {
+      throw new Error('Missing history');
+    }
+    expect(history.coverage.dividends.state).toBe('REVIEWED');
+    const result = approximateBacktest(history, 10, {
+      mode: 'MONTHLY',
+      amountUsd: '1000',
+    });
+    expect(result.status).toBe('APPROXIMATE');
+    expect(result.cash).toBeDefined();
+    expect(result.reinvest).toBeDefined();
+    expect(history.monthly.every((m) => m.fxDate <= m.date)).toBe(true);
+  });
+
+  it('unblocks dividend returns for TOASO once its event history was reconciled', () => {
+    const history = researchBundle.approximate
+      .flatMap((value) => (isApproximateHistory(value) ? [value] : []))
+      .find((h) => h.assetId === find('TOASO').presentation.assetId);
     if (!history) {
       throw new Error('Missing history');
     }

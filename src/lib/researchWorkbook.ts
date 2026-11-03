@@ -20,6 +20,9 @@ export const WORKBOOK_VERSION = 'investulator-research/1';
 // real growth with headroom rather than a fixed round number.
 export const MAX_WORKBOOK_ROWS = 200000;
 export const MAX_WORKBOOK_BYTES = 8 * 1024 * 1024;
+// Same import-time sanity bound as MAX_WORKBOOK_ROWS above: the full 10-company
+// export now round-trips to just over the previous 48 MiB cap.
+export const MAX_WORKBOOK_UNCOMPRESSED_BYTES = 96 * 1024 * 1024;
 export const WORKBOOK_SHEETS = [
   'Companies',
   'Financials',

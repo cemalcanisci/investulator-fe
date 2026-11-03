@@ -54,6 +54,20 @@
       "title": "Türk Traktör - Temettü Ödeme Tarihçesi (şirketin kendi yatırımcı ilişkileri sayfası)",
       "origin": "Türk Traktör - birincil kaynak (resmi kurumsal sayfa)",
       "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "ttrak2025AR",
+      "url": "https://www.turktraktor.com.tr/getmedia/f5c22a61-cf1e-43fc-942c-f986cfbd5402/TT_31-12-25_ENG_1.pdf",
+      "title": "Türk Traktör ve Ziraat Makineleri A.Ş. - 31.12.2025 Finansal Tablolar ve Bağımsız Denetçi Raporu",
+      "origin": "Birincil (şirketin kendi IR sitesi; Yönetim Kurulu 09.02.2026 tarihinde onayladı)",
+      "retrievedAt": "2026-11-03"
+    },
+    {
+      "id": "secondaryAggregator2005to2007",
+      "url": "https://rotaborsa.com/turk-traktor-ttrak-temettu-gecmisi-2/",
+      "title": "Rota Borsa (Fintables'tan alıntı) - TTRAK 2005-2007 temettü tablosu",
+      "origin": "İkincil toplama kaynağı (rotaborsa, kendi beyanıyla Fintables'tan alıntı); şirketin birincil belgesi DEĞİL, bağımsız teyit SAYILMAZ (bkz. CLAUDE.md kaynak güvenilirliği kuralı)",
+      "retrievedAt": "2026-11-03"
     }
   ],
   "coverage": {
@@ -82,8 +96,13 @@
       "from": "2005-02-28",
       "to": "2026-09-30",
       "state": "CONFLICT",
-      "sourceIds": ["yahoo-events", "companyDividendPage", "ttrakDividendPage"],
-      "method": "Şirketin kendi resmi \"Temettü Ödeme Tarihçesi\" sayfasındaki (turktraktor.com.tr) FY/ödeme yılı, toplam brüt TL tutarı ve o dönemin ödenmiş sermayesi (pay sayısı) kullanılarak div-2008 ile div-2025 arası 19 ödemenin rawGrossPerShare = toplamTL / dönemin_sermayesi şeklinde yeniden hesaplandı (önceki Yahoo kaynaklı değerler, 2023 bedelsiz artırımından ÖNCEKİ ödemeler için güncel pay bazına göre ÖNCEDEN bölünmüş haldeydi; motor bunları tekrar bölünce 2021-2023 gibi yıllarda ~1,875x küçük sonuç veriyordu - çift bölme hatası). Ödeme tarihleri resmi sayfadan gün hassasiyetinde alındı; ex-tarih (hak kullanım) ayrıca doğrulanamadı, ödeme tarihiyle aynı kabul edildi (açıkça belirtilir, uydurma gün farkı yok). div-2024/div-2024-2/div-2025 için yeniden hesaplanan tutar önceki değerle TAM örtüştü (bağımsız doğrulama). | div-2005, div-2006, div-2007 şirketin resmi tarihçe sayfasında HİÇ yer almıyor (sayfa FY2007/ödeme 2008-05-12 ile başlıyor) - bu üç kaydın gerçek bir TTRAK kurumsal temettüsü olup olmadığı doğrulanamadı, silinmedi ama REVIEWED kapsamına dahil edilemez. Bu yüzden coverage CONFLICT kalır."
+      "sourceIds": [
+        "yahoo-events",
+        "companyDividendPage",
+        "ttrakDividendPage",
+        "secondaryAggregator2005to2007"
+      ],
+      "method": "Şirketin kendi resmi \"Temettü Ödeme Tarihçesi\" sayfasındaki (turktraktor.com.tr) FY/ödeme yılı, toplam brüt TL tutarı ve o dönemin ödenmiş sermayesi (pay sayısı) kullanılarak div-2008 ile div-2025 arası 19 ödemenin rawGrossPerShare = toplamTL / dönemin_sermayesi şeklinde yeniden hesaplandı (önceki Yahoo kaynaklı değerler, 2023 bedelsiz artırımından ÖNCEKİ ödemeler için güncel pay bazına göre ÖNCEDEN bölünmüş haldeydi; motor bunları tekrar bölünce 2021-2023 gibi yıllarda ~1,875x küçük sonuç veriyordu - çift bölme hatası). Ödeme tarihleri resmi sayfadan gün hassasiyetinde alındı; ex-tarih (hak kullanım) ayrıca doğrulanamadı, ödeme tarihiyle aynı kabul edildi (açıkça belirtilir, uydurma gün farkı yok). div-2024/div-2024-2/div-2025 için yeniden hesaplanan tutar önceki değerle TAM örtüştü (bağımsız doğrulama); bu turda (2026-11-03) çift-bölme düzeltmesinin div-2008..div-2025 arasında TEKRARLANMADIĞI yeniden teyit edildi (rawGrossPerShare değerleri tek tek şirketin resmi toplam TL / o dönemin pay sayısı hesabıyla tutarlı, approximateBacktest.ts motoru bu değerleri artık yalnızca exDate-shareBasisDate arası bonus çarpanlarına BİR KEZ bölüyor). | div-2005, div-2006, div-2007 şirketin resmi tarihçe sayfasında HİÇ yer almıyor (sayfa FY2007/ödeme 2008-05-12 ile başlıyor) - 2026-11-03 turunda bu üç kayıt için ayrıca bağımsız doğrulama arandı: tek bulunan ikincil kaynak (rotaborsa, kendi beyanıyla Fintables'tan alıntı - secondaryAggregator2005to2007) 2005/2006/2007 için brüt 1,00/2,00/2,28 TL hisse başı ve toplam 47.000.000/94.000.000/107.000.012 TL iddia ediyor; ancak bu rakam ŞİRKETİN KENDİ resmi sayfasının FY2007/ödeme-2008-05-12 kaydıyla (94.000.000 TL, farklı bir mali yıl için) ÇAKIŞIYOR - aynı tutarın iki farklı yıla atfedilmesi ikincil kaynağın bu dönem için güvenilmez/hatalı etiketlenmiş olabileceğine işaret ediyor. Şirketin kendi 2004-2007 yıllık raporları IR sitesinde bulunamadı (yıllık rapor arşivi 2008'den başlıyor), KAP'ın \"Kar Payı Dağıtım Tablosu\" bildirimleri yalnızca tek bir mali yılı kapsıyor ve 2005-2007 için dijital arşivde bulunamadı. Sonuç: şirketin 2005-2007'de GERÇEKTEN temettü dağıtıp dağıtmadığı NE doğrulanabildi NE çürütülebildi (muhtemelen dağıttı, ama tutarlar güvenilir şekilde teyit edilemedi) - mevcut Yahoo kaynaklı placeholder rawGrossPerShare değerleri (0,533333 / 1,066667 / 1,214185) bu yüzden DEĞİŞTİRİLMEDİ (uydurma/doğrulanmamış ikincil kaynak rakamıyla değiştirmek de yanlış olurdu), silinmedi ama REVIEWED kapsamına dahil edilemez. Bu yüzden coverage CONFLICT kalır."
     }
   },
   "monthly": [

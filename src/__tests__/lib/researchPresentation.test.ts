@@ -12,7 +12,10 @@ describe('research presentation rules', () => {
       key: 'growth.positive',
       value: '319.87',
     });
-    expect(interpretMetric(report, 'peRunRate').key).toBe('missing');
+    expect(interpretMetric(report, 'peRunRate')).toMatchObject({
+      key: 'context',
+      value: '7.46',
+    });
     expect(interpretMetric(undefined, 'profitGrowth').key).toBe('missing');
     expect(interpretMetric(report, 'absent').key).toBe('missing');
     expect(metricDefinition('unknown')).toBeUndefined();

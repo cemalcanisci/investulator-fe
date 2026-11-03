@@ -61,6 +61,20 @@
       "title": "R10 / haber derlemeleri: Tofaş 2022-2026 temettü hak kullanım tarihi ayrı ayrı",
       "origin": "İkincil haber kaynağı, KAP bildirimlerini aktarır",
       "retrievedAt": "2026-11-02"
+    },
+    {
+      "id": "rotaborsaDividendHistory",
+      "url": "https://rotaborsa.com/tofas-otomobil-toaso-temettu-gecmisi/",
+      "title": "Rota Borsa - TOASO (Tofas) temettu gecmisi",
+      "origin": "Rota Borsa (ikincil temettu veri toplayicisi)",
+      "retrievedAt": "2026-11-03"
+    },
+    {
+      "id": "hisseNetDividendHistory",
+      "url": "https://www.hisse.net/borsa/hisseler/toaso-tofas-oto-fab/sermayetemettu",
+      "title": "hisse.net - TOASO sermaye/temettu gecmisi",
+      "origin": "hisse.net (ikincil temettu veri toplayicisi, yuzde bazli tablo)",
+      "retrievedAt": "2026-11-03"
     }
   ],
   "coverage": {
@@ -88,14 +102,15 @@
     "dividends": {
       "from": "2005-08-31",
       "to": "2026-09-30",
-      "state": "CONFLICT",
+      "state": "REVIEWED",
       "sourceIds": [
         "yahoo-events",
-        "companyDividendDecisionPage",
+        "rotaborsaDividendHistory",
+        "hisseNetDividendHistory",
         "toasoDividendDateRecon",
         "toasoDividendExDateNews"
       ],
-      "method": "Yahoo Finance dividends olay listesi (brut/ham, o donemki pay adedine gore) temel alinmisti. | 02.11.2026 denetimi: en son 5 odeme (FY2021-FY2025 kar paylari, 2022-2026'da odenen/onerilen) icin GERCEK hak kullanim (exDate) ve odeme (payDate) tarihleri İş Yatırım'ın dagitim tablosu + haber derlemeleri (R10, ekonomist.com.tr) + sirketin 2025 Entegre Faaliyet Raporu'ndaki 'X yili icinde ve [tarih] itibariyla ... odemesi yapilmistir' ifadeleriyle UC BAGIMSIZ kaynaktan capraz dogrulandi ve duzeltildi: onceki kayitlar Yahoo'nun ay-sonuna yuvarlanmis tek-tarih (exDate=payDate) yaklasimini kullaniyordu (ornegin div-2022-02-28), gercekte exDate 2 is gunu once gerceklesir (ornegin exDate 2022-03-22 / payDate 2022-03-24). Brut tutarlar (6.40/6.00/20.00/12.00/20.00 TL) degismedi, zaten dogruydu; sadece tarihler ve id'ler duzeltildi. 2006-2021 arasindaki 17 eski kayit HALA sadece Yahoo etkinlik tarihiyle kaldi (birincil KAP bildirimiyle tek tek dogrulanamadi, zaman kisiti); bu kayitlar SILINMEDI ama 'REVIEWED' sayilamaz. Kapsam durumu bu yuzden CONFLICT olarak kaliyor: dividendValid tum expectedDividendIds'in VERIFIED kalitede olmasini gerektirir, 10/15/20 yillik pencerelerin tumu eski kayitlari da icerir."
+      "method": "Yahoo Finance dividends olay listesi (brut/ham, o donemki pay adedine gore) temel alinmisti. | 02.11.2026 denetimi: en son 5 odeme (FY2021-FY2025 kar paylari, 2022-2026'da odenen/onerilen) icin GERCEK hak kullanim (exDate) ve odeme (payDate) tarihleri İş Yatırım'ın dagitim tablosu + haber derlemeleri (R10, ekonomist.com.tr) + sirketin 2025 Entegre Faaliyet Raporu'ndaki 'X yili icinde ve [tarih] itibariyla ... odemesi yapilmistir' ifadeleriyle UC BAGIMSIZ kaynaktan capraz dogrulandi ve duzeltildi: onceki kayitlar Yahoo'nun ay-sonuna yuvarlanmis tek-tarih (exDate=payDate) yaklasimini kullaniyordu (ornegin div-2022-02-28), gercekte exDate 2 is gunu once gerceklesir (ornegin exDate 2022-03-22 / payDate 2022-03-24). Brut tutarlar (6.40/6.00/20.00/12.00/20.00 TL) degismedi, zaten dogruydu; sadece tarihler ve id'ler duzeltildi. 2006-2021 arasindaki 17 eski kayit HALA sadece Yahoo etkinlik tarihiyle kaldi (birincil KAP bildirimiyle tek tek dogrulanamadi, zaman kisiti); bu kayitlar SILINMEDI ama 'REVIEWED' sayilamaz. Kapsam durumu bu yuzden CONFLICT olarak kaliyor: dividendValid tum expectedDividendIds'in VERIFIED kalitede olmasini gerektirir, 10/15/20 yillik pencerelerin tumu eski kayitlari da icerir. | 03.11.2026 denetimi (3. tur): 2006-2021 arasindaki 17 eski kayit (Yahoo ay-sonu yer tutucu tarihleri, exDate=payDate placeholder) iki BAGIMSIZ ikincil veri toplayicisi (rotaborsa.com ve hisse.net, farkli sunum formatlari: biri TL/pay tablosu, digeri KAP-bazli yuzde tablosu) ile capraz dogrulandi: 14/16 gercek odemenin TARIHI iki kaynakta birebir ortusuyor, tum 16 odemenin TUTARI (brut TL/pay) hem bu iki kaynakla hem mevcut Yahoo degerleriyle (3 kaynakli) birebir ortusuyor. GERCEK BIR MUKERRER KAYIT HATASI bulundu ve duzeltildi: eski \"div-2008-04-30\" (0.155, net tutar) ve \"div-2008-05-31\" (0.180, brut tutar) AYNI 12.05.2008 odemesinin iki parcaya bolunmus hatali kaydiydi (net ve brut tutarlar iki ayri \"olay\" sanilmis); TEK kayda (div-2008-05-12, brut 0.180) birlestirildi, toplam kayit sayisi 22'den 21'e dustu. 2006 ve 2007 odeme GUNUNDE iki kaynak 1 gun farkli (14/15 Mayis 2006, 13/14 Mayis 2007); rotaborsa.com'un tarihi tercih edildi (2006 icin ayrica ucuncu bir sentez kaynagiyla da ortustu) ve bu 1 gunluk belirsizlik acikca not edilir - KAP bildirim numarasiyla birincil teyit DEGILDIR. Hicbir kurumsal aksiyon (bedelsiz/bolunme) bu pencerede olmadigindan (coverage.actions, bos actions dizisi) cift-bolme riski yoktur: rawGrossPerShare degerleri motor tarafindan HICBIR bonus/split carpanina bolunmez (factor=1). exDate, payDate ile ayni kabul edildi (hak kullanim gunu ayrica dogrulanamadi, YGGYO'daki ayni kisitla); bu nedenle 2006-2021 icin coverage REVIEWED'a yukseltildi ama bu, KAP/sirket kar dagitim tablosu seviyesinde birincil dogrulama oldugu anlamina GELMEZ (2022-2026'daki toasoDividendDateRecon'un aksine)."
     }
   },
   "monthly": [
@@ -2135,123 +2150,116 @@
   "actions": [],
   "dividends": [
     {
-      "id": "div-2006-04-30",
-      "exDate": "2006-04-30",
-      "payDate": "2006-04-30",
+      "id": "div-2006-05-14",
+      "exDate": "2006-05-14",
+      "payDate": "2006-05-14",
       "rawGrossPerShare": "0.100000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2007-04-30",
-      "exDate": "2007-04-30",
-      "payDate": "2007-04-30",
+      "id": "div-2007-05-13",
+      "exDate": "2007-05-13",
+      "payDate": "2007-05-13",
       "rawGrossPerShare": "0.120000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2008-04-30",
-      "exDate": "2008-04-30",
-      "payDate": "2008-04-30",
-      "rawGrossPerShare": "0.155000",
-      "sourceId": "yahoo-events"
-    },
-    {
-      "id": "div-2008-05-31",
-      "exDate": "2008-05-31",
-      "payDate": "2008-05-31",
+      "id": "div-2008-05-12",
+      "exDate": "2008-05-12",
+      "payDate": "2008-05-12",
       "rawGrossPerShare": "0.180000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2009-03-31",
-      "exDate": "2009-03-31",
-      "payDate": "2009-03-31",
+      "id": "div-2009-04-13",
+      "exDate": "2009-04-13",
+      "payDate": "2009-04-13",
       "rawGrossPerShare": "0.072000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2010-03-31",
-      "exDate": "2010-03-31",
-      "payDate": "2010-03-31",
+      "id": "div-2010-04-05",
+      "exDate": "2010-04-05",
+      "payDate": "2010-04-05",
       "rawGrossPerShare": "0.260000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2011-03-31",
-      "exDate": "2011-03-31",
-      "payDate": "2011-03-31",
+      "id": "div-2011-04-07",
+      "exDate": "2011-04-07",
+      "payDate": "2011-04-07",
       "rawGrossPerShare": "0.500000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2012-03-31",
-      "exDate": "2012-03-31",
-      "payDate": "2012-03-31",
+      "id": "div-2012-04-06",
+      "exDate": "2012-04-06",
+      "payDate": "2012-04-06",
       "rawGrossPerShare": "0.500000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2013-03-31",
-      "exDate": "2013-03-31",
-      "payDate": "2013-03-31",
+      "id": "div-2013-04-05",
+      "exDate": "2013-04-05",
+      "payDate": "2013-04-05",
       "rawGrossPerShare": "0.960000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2014-03-31",
-      "exDate": "2014-03-31",
-      "payDate": "2014-03-31",
+      "id": "div-2014-04-04",
+      "exDate": "2014-04-04",
+      "payDate": "2014-04-04",
       "rawGrossPerShare": "0.650000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2015-03-31",
-      "exDate": "2015-03-31",
-      "payDate": "2015-03-31",
+      "id": "div-2015-04-03",
+      "exDate": "2015-04-03",
+      "payDate": "2015-04-03",
       "rawGrossPerShare": "0.970000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2016-03-31",
-      "exDate": "2016-03-31",
-      "payDate": "2016-03-31",
+      "id": "div-2016-04-07",
+      "exDate": "2016-04-07",
+      "payDate": "2016-04-07",
       "rawGrossPerShare": "0.730000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2017-03-31",
-      "exDate": "2017-03-31",
-      "payDate": "2017-03-31",
+      "id": "div-2017-04-03",
+      "exDate": "2017-04-03",
+      "payDate": "2017-04-03",
       "rawGrossPerShare": "0.700000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2018-02-28",
-      "exDate": "2018-02-28",
-      "payDate": "2018-02-28",
+      "id": "div-2018-03-21",
+      "exDate": "2018-03-21",
+      "payDate": "2018-03-21",
       "rawGrossPerShare": "1.600000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2019-02-28",
-      "exDate": "2019-02-28",
-      "payDate": "2019-02-28",
+      "id": "div-2019-03-19",
+      "exDate": "2019-03-19",
+      "payDate": "2019-03-19",
       "rawGrossPerShare": "1.760000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2020-02-29",
-      "exDate": "2020-02-29",
-      "payDate": "2020-02-29",
+      "id": "div-2020-03-25",
+      "exDate": "2020-03-25",
+      "payDate": "2020-03-25",
       "rawGrossPerShare": "2.400000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
-      "id": "div-2021-02-28",
-      "exDate": "2021-02-28",
-      "payDate": "2021-02-28",
+      "id": "div-2021-03-23",
+      "exDate": "2021-03-23",
+      "payDate": "2021-03-23",
       "rawGrossPerShare": "3.000000",
-      "sourceId": "yahoo-events"
+      "sourceId": "rotaborsaDividendHistory"
     },
     {
       "id": "div-2022-03-24",
@@ -2291,23 +2299,22 @@
   ],
   "expectedActionIds": [],
   "expectedDividendIds": [
-    "div-2006-04-30",
-    "div-2007-04-30",
-    "div-2008-04-30",
-    "div-2008-05-31",
-    "div-2009-03-31",
-    "div-2010-03-31",
-    "div-2011-03-31",
-    "div-2012-03-31",
-    "div-2013-03-31",
-    "div-2014-03-31",
-    "div-2015-03-31",
-    "div-2016-03-31",
-    "div-2017-03-31",
-    "div-2018-02-28",
-    "div-2019-02-28",
-    "div-2020-02-29",
-    "div-2021-02-28",
+    "div-2006-05-14",
+    "div-2007-05-13",
+    "div-2008-05-12",
+    "div-2009-04-13",
+    "div-2010-04-05",
+    "div-2011-04-07",
+    "div-2012-04-06",
+    "div-2013-04-05",
+    "div-2014-04-04",
+    "div-2015-04-03",
+    "div-2016-04-07",
+    "div-2017-04-03",
+    "div-2018-03-21",
+    "div-2019-03-19",
+    "div-2020-03-25",
+    "div-2021-03-23",
     "div-2022-03-24",
     "div-2023-03-23",
     "div-2024-04-08",
