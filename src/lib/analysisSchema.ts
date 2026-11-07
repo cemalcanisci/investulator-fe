@@ -79,6 +79,10 @@ function isValuationScenarioSet(value: unknown): boolean {
       }
       const s = c.scenario;
       return (
+        (s.review === undefined ||
+          (record(s.review) &&
+            oneOf(s.review.status, ['PASS', 'NEEDS_REVIEW', 'BLOCKED']) &&
+            stringFields(s.review, ['checkedAt', 'rationale']))) &&
         oneOf(s.id, ['BEAR', 'BASE', 'BULL']) &&
         stringFields(s, [
           'valuationAt',

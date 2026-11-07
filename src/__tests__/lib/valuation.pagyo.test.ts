@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/pagyo-analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -8,7 +9,9 @@ import {
 } from '@/lib/valuation';
 import { i18n } from '@/i18n';
 
-const reports = parseAnalysisReports(snapshots);
+const reports = parseAnalysisReports(snapshots).filter(
+  (r) => !r.version.includes('valuation-audit'),
+);
 const latest = reports.reduce((best, r) =>
   (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
 );
@@ -18,7 +21,7 @@ if (!navMethod) {
 }
 
 describe('PAGYO NAV valuation: BASE resolved from a single verified NAD bridge, BEAR/BULL blocked', () => {
-  it('picks the highest-revision report (pagyo-2026-11-03-v5, revision 5)', () => {
+  it('picks the pre-audit archived report (pagyo-2026-11-03-v5, revision 5)', () => {
     expect(latest.version).toBe('pagyo-2026-11-03-v5');
     expect(latest.revision).toBe(5);
     expect(latest.presentation.contentKey).toBe('researchPagyoAudit20261101');
@@ -51,7 +54,7 @@ describe('PAGYO NAV valuation: BASE resolved from a single verified NAD bridge, 
     );
 
     // adjustedNetAssetValueFY2025 (15,174,227,888) / sharesFy2025End (87,000,000),
-    // verified independently with the project's exact BigInt decimal math
+    // regression-checked with the project's exact BigInt decimal math
     // (lib/decimal.ts), not float math.
     expect(byCase.BASE?.status).toBe('PASS');
     expect(byCase.BASE?.value).toBe('174.42');

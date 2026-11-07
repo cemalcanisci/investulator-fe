@@ -1,0 +1,82 @@
+[
+  {
+    "symbol": "tuprs",
+    "date": "2026-10-09",
+    "stored": "386.25",
+    "sourceClose": 386.25,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "doas",
+    "date": "2026-10-27",
+    "stored": "134.30",
+    "sourceClose": 134.3000030517578,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "froto",
+    "date": "2026-10-28",
+    "stored": "69.20",
+    "sourceClose": 69.19999694824219,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "toaso",
+    "date": "2026-10-30",
+    "stored": "211.20",
+    "sourceClose": 211.1999969482422,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "aksa",
+    "date": "2026-10-30",
+    "stored": "9.99",
+    "sourceClose": 9.989999771118164,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKSA.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "ismen",
+    "date": "2026-10-30",
+    "stored": "25.22",
+    "sourceClose": 25.219999313354492,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/ISMEN.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "pagyo",
+    "date": "2026-10-30",
+    "stored": "113",
+    "sourceClose": 113,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "ttrak",
+    "date": "2026-10-28",
+    "stored": "341.75",
+    "sourceClose": 341.75,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "akmgy",
+    "date": "2026-10-30",
+    "stored": "176.4",
+    "sourceClose": 176.39999389648438,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+  },
+  {
+    "symbol": "yggyo",
+    "date": "2026-10-28",
+    "stored": "189.20",
+    "sourceClose": 189.1999969482422,
+    "matches": true,
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+  }
+]

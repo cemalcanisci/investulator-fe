@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/ismen-analysis-reports.json';
 import en from '@/i18n/locales/en.json';
@@ -9,8 +10,10 @@ import {
   scenarioUpsidePercent,
 } from '@/lib/valuation';
 
-describe('ISMEN BOOK_ROE BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('ISMEN BOOK_ROE BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const latest = reports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
   );
@@ -19,7 +22,7 @@ describe('ISMEN BOOK_ROE BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('BOOK_ROE method missing');
   }
 
-  it('picks the highest-revision report (ismen-2026-11-03-v4, revision 4)', () => {
+  it('picks the pre-audit archived report (ismen-2026-11-03-v4, revision 4)', () => {
     expect(latest.version).toBe('ismen-2026-11-03-v4');
     expect(latest.revision).toBe(4);
   });
@@ -38,7 +41,7 @@ describe('ISMEN BOOK_ROE BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (parentEquity 35,252,706,000 / shares 1,500,000,000) × (sustainableRoe / costOfEquity)
-    // Independently verified with the project's own BigInt decimal math (lib/decimal.ts
+    // Regression-checked with the project's own BigInt decimal math (lib/decimal.ts
     // semantics, not float math): node -e computed BEAR=10.73, BASE=11.87, BULL=20.73.
     expect(byCase.BEAR?.value).toBe('10.73'); // ROE %20.69 (FY2024, ending equity) / Ke %45.32 (CAPM +3pt buffer)
     expect(byCase.BASE?.value).toBe('11.87'); // ROE %21.38 (TTM, average equity) / Ke %42.32 (CAPM base)

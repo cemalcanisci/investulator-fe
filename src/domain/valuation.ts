@@ -13,6 +13,11 @@ export interface ValuationAssumption {
 }
 
 export interface ValuationScenario {
+  readonly review?: {
+    readonly status: 'PASS' | 'NEEDS_REVIEW' | 'BLOCKED';
+    readonly checkedAt: string;
+    readonly rationale: string;
+  };
   readonly id: 'BEAR' | 'BASE' | 'BULL';
   readonly valuationAt: string;
   readonly knowledgeAt: string;

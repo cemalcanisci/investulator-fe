@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/aksa-analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -8,8 +9,10 @@ import {
 } from '@/lib/valuation';
 import { i18n } from '@/i18n';
 
-describe('AKSA EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('AKSA EV/EBITDA BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const latest = reports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
   );
@@ -18,7 +21,7 @@ describe('AKSA EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('EV_EBITDA method missing');
   }
 
-  it('picks the highest-revision report (aksa-2026-11-03-v4, revision 4)', () => {
+  it('picks the pre-audit archived report (aksa-2026-11-03-v4, revision 4)', () => {
     expect(latest.version).toBe('aksa-2026-11-03-v4');
     expect(latest.revision).toBe(4);
     expect(latest.presentation.contentKey).toBe('researchAksaAudit20261101');
@@ -38,7 +41,7 @@ describe('AKSA EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (ebitdaFy2025 5,729,630,000 TRY × peer multiple − netFinancialDebtFy2025 21,225,728,000 TRY)
-    // / sharesFy2025End 3,885,000,000, verified independently with the project's exact BigInt
+    // / sharesFy2025End 3,885,000,000, regression-checked with the project's exact BigInt
     // decimal math (lib/decimal.ts), not float math.
     expect(byCase.BEAR?.value).toBe('2.56'); // × 5.44 (SGL Carbon SE, TTM)
     expect(byCase.BASE?.value).toBe('7.91'); // × 9.07 (Toray Industries, TTM)

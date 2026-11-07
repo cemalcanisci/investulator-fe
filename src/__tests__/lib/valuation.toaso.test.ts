@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/toaso-analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -7,8 +8,10 @@ import {
   scenarioUpsidePercent,
 } from '@/lib/valuation';
 
-describe('TOASO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('TOASO EV/EBITDA BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const latest = reports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
   );
@@ -17,7 +20,7 @@ describe('TOASO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('EV_EBITDA method missing');
   }
 
-  it('picks the highest-revision report (toaso-2026-11-03-v4, revision 4)', () => {
+  it('picks the pre-audit archived report (toaso-2026-11-03-v4, revision 4)', () => {
     expect(latest.version).toBe('toaso-2026-11-03-v4');
     expect(latest.revision).toBe(4);
   });
@@ -36,7 +39,7 @@ describe('TOASO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (ebitdaFy2025 10,000,000,000 × peer multiple − netFinancialDebtFy2025End 33,701,681,000) /
-    // sharesFy2025End 500,000,000 — verified independently with the project's exact BigInt
+    // sharesFy2025End 500,000,000 — regression-checked with the project's exact BigInt
     // decimal math (lib/decimal.ts), not float math.
     expect(byCase.BEAR?.value).toBe('58.60'); // × 6.3 (Siblis Research, Europe regional median)
     expect(byCase.BASE?.value).toBe('102.60'); // × 8.5 (Siblis Research, worldwide median)

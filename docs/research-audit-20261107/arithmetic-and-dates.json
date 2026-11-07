@@ -1,0 +1,920 @@
+[
+  {
+    "symbol": "tuprs",
+    "oldVersion": "tuprs-2026-11-02-v10",
+    "newVersion": "tuprs-2026-11-07-valuation-audit-v11",
+    "historyPreserved": true,
+    "originalSha256": "cf375e4819e4ca44a5e52396ed51848e64e3ef87fa53571d0923f8042b75be8e",
+    "price": {
+      "value": "386.25",
+      "date": "2026-10-09",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "159.07",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-07",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "56272759000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "-41455028000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "1926795598",
+            "source": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "publishedAt": "2026-03-11",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBear",
+            "value": "4.71",
+            "source": "https://stockanalysis.com/stocks/vlo/statistics/",
+            "publishedAt": "2026-11-07",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "171.92",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-07",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "56272759000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "-41455028000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "1926795598",
+            "source": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "publishedAt": "2026-03-11",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBase",
+            "value": "5.15",
+            "source": "https://stockanalysis.com/stocks/mpc/statistics/",
+            "publishedAt": "2026-11-07",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "227.70",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-07",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "56272759000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "-41455028000",
+            "source": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+            "publishedAt": "2026-02-06",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "1926795598",
+            "source": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+            "publishedAt": "2026-03-11",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBull",
+            "value": "7.06",
+            "source": "https://stockanalysis.com/stocks/psx/statistics/",
+            "publishedAt": "2026-11-07",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "doas",
+    "oldVersion": "doas-2026-11-03-v4",
+    "newVersion": "doas-2026-11-07-valuation-audit-v5",
+    "historyPreserved": true,
+    "originalSha256": "904557b2bde4332e3d567925a40b931d9378fc44b6799d35a27047923f535c6e",
+    "price": {
+      "value": "134.30",
+      "date": "2026-10-27",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "372.01",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "fyEbitda2025",
+            "value": "14864838000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "fyNetFinancialDebt2025",
+            "value": "25184576000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "220000000",
+            "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+            "publishedAt": "2026-04-08",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBear",
+            "value": "7.2",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "412.55",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "fyEbitda2025",
+            "value": "14864838000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "fyNetFinancialDebt2025",
+            "value": "25184576000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "220000000",
+            "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+            "publishedAt": "2026-04-08",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBase",
+            "value": "7.8",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "547.69",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "fyEbitda2025",
+            "value": "14864838000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "fyNetFinancialDebt2025",
+            "value": "25184576000",
+            "source": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+            "publishedAt": "2026-02-27",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "220000000",
+            "source": "https://www.kap.org.tr/en/Bildirim/1589325",
+            "publishedAt": "2026-04-08",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBull",
+            "value": "9.8",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "froto",
+    "oldVersion": "froto-2026-11-03-v4",
+    "newVersion": "froto-2026-11-07-valuation-audit-v5",
+    "historyPreserved": true,
+    "originalSha256": "2e284f50d92467c6cc9113da34d5f64cceaa131b8dbd6e5836d2010728db2f97",
+    "price": {
+      "value": "69.20",
+      "date": "2026-10-28",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "109.18",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "ebitdaTtm",
+            "value": "63557627000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "netFinancialDebt",
+            "value": "111981980000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "shares",
+            "value": "3509100000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "peerEvEbitdaBear",
+            "value": "7.79",
+            "source": "https://stockanalysis.com/quote/etr/VOW3/statistics/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "136.89",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "ebitdaTtm",
+            "value": "63557627000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "netFinancialDebt",
+            "value": "111981980000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "shares",
+            "value": "3509100000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "peerEvEbitdaBase",
+            "value": "9.32",
+            "source": "https://stockanalysis.com/quote/epa/RNO/statistics/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "226.19",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "ebitdaTtm",
+            "value": "63557627000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "netFinancialDebt",
+            "value": "111981980000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "shares",
+            "value": "3509100000",
+            "source": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+            "publishedAt": "2026-08-04"
+          },
+          {
+            "id": "peerEvEbitdaBull",
+            "value": "14.25",
+            "source": "https://stockanalysis.com/quote/krx/005380/statistics/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "toaso",
+    "oldVersion": "toaso-2026-11-03-v4",
+    "newVersion": "toaso-2026-11-07-valuation-audit-v5",
+    "historyPreserved": true,
+    "originalSha256": "b5a88d09905bc1ff3524f96ef247588e5dcb63d4c976841cf5bc6f517ab21566",
+    "price": {
+      "value": "211.20",
+      "date": "2026-10-30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "58.60",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "10000000000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "33701681000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "500000000",
+            "source": "https://www.kap.org.tr/tr/Bildirim/1573202",
+            "publishedAt": "2026-03-16",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBear",
+            "value": "6.3",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "102.60",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "10000000000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "33701681000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "500000000",
+            "source": "https://www.kap.org.tr/tr/Bildirim/1573202",
+            "publishedAt": "2026-03-16",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBase",
+            "value": "8.5",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "168.60",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-05",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "10000000000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "netFinancialDebtFy2025End",
+            "value": "33701681000",
+            "source": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+            "publishedAt": "2026-02-17"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "500000000",
+            "source": "https://www.kap.org.tr/tr/Bildirim/1573202",
+            "publishedAt": "2026-03-16",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBull",
+            "value": "11.8",
+            "source": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "aksa",
+    "oldVersion": "aksa-2026-11-03-v4",
+    "newVersion": "aksa-2026-11-07-valuation-audit-v5",
+    "historyPreserved": true,
+    "originalSha256": "16e3515f5b90d59f697bc6c9cc2a23689a21c7353b9c611b87172b93bba8ee1c",
+    "price": {
+      "value": "9.99",
+      "date": "2026-10-30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKSA.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "2.56",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "5729630000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025",
+            "value": "21225728000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "3885000000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBear",
+            "value": "5.44",
+            "source": "https://stockanalysis.com/quote/etr/SGL/statistics/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "7.91",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "5729630000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025",
+            "value": "21225728000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "3885000000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBase",
+            "value": "9.07",
+            "source": "https://stockanalysis.com/quote/tyo/3402/statistics/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "EV_EBITDA",
+        "arithmeticOnly": "19.79",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-01-01", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "ebitdaFy2025",
+            "value": "5729630000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "netFinancialDebtFy2025",
+            "value": "21225728000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "3885000000",
+            "source": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+            "publishedAt": "2026-02-19",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "peerEvEbitdaBull",
+            "value": "17.12",
+            "source": "https://stockanalysis.com/stocks/hxl/statistics/",
+            "publishedAt": "2026-11-06",
+            "publishedAtBasis": "OBSERVED_BY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "ismen",
+    "oldVersion": "ismen-2026-11-03-v4",
+    "newVersion": "ismen-2026-11-07-valuation-audit-v5",
+    "historyPreserved": true,
+    "originalSha256": "d5e9491b60fd09c2efd9162f79f4a6c61bd21516c97e7def5d36e509c71c5c8d",
+    "price": {
+      "value": "25.22",
+      "date": "2026-10-30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ISMEN.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "BOOK_ROE",
+        "arithmeticOnly": "10.73",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "parentEquity",
+            "value": "35252706000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sustainableRoeBear",
+            "value": "20.69",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2024/ISMEN%20Finansal%20Tablolar_31%20Aral%C4%B1k%202024%20Final.pdf",
+            "publishedAt": "2025-03-01",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "costOfEquityBear",
+            "value": "45.32",
+            "source": "https://tradingeconomics.com/turkey/government-bond-yield",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          },
+          {
+            "id": "capitalAdequacy",
+            "value": "92.77",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "shares",
+            "value": "1500000000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ISMEN",
+            "publishedAt": "2026-08-12"
+          }
+        ]
+      },
+      {
+        "case": "BASE",
+        "method": "BOOK_ROE",
+        "arithmeticOnly": "11.87",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "parentEquity",
+            "value": "35252706000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sustainableRoeBase",
+            "value": "21.38",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "costOfEquityBase",
+            "value": "42.32",
+            "source": "https://tradingeconomics.com/turkey/government-bond-yield",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          },
+          {
+            "id": "capitalAdequacy",
+            "value": "92.77",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "shares",
+            "value": "1500000000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ISMEN",
+            "publishedAt": "2026-08-12"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "BOOK_ROE",
+        "arithmeticOnly": "20.73",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-07-01", "2026-06-30"],
+        "stockAt": "2026-06-30",
+        "purchasingPowerDate": "2026-06-30",
+        "inputs": [
+          {
+            "id": "parentEquity",
+            "value": "35252706000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sustainableRoeBull",
+            "value": "34.68",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2023/Finansal%20Tablolar_31%20Aral%C4%B1k%202023.pdf",
+            "publishedAt": "2024-03-01",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "costOfEquityBull",
+            "value": "39.32",
+            "source": "https://tradingeconomics.com/turkey/government-bond-yield",
+            "publishedAt": "2026-11-05",
+            "publishedAtBasis": "OBSERVED_BY"
+          },
+          {
+            "id": "capitalAdequacy",
+            "value": "92.77",
+            "source": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/ISMEN_Finansal%20Tablolar_30Haziran2026.pdf",
+            "publishedAt": "2026-08-12",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "shares",
+            "value": "1500000000",
+            "source": "https://www.isyatirim.com.tr/tr-tr/analiz/hisse/Sayfalar/sirket-karti.aspx?hisse=ISMEN",
+            "publishedAt": "2026-08-12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "symbol": "pagyo",
+    "oldVersion": "pagyo-2026-11-03-v5",
+    "newVersion": "pagyo-2026-11-07-valuation-audit-v6",
+    "historyPreserved": true,
+    "originalSha256": "a11f33ec968cffe41098a62f300dfcc3b927d8bc7dba4b04524205b7f9d6551d",
+    "price": {
+      "value": "113",
+      "date": "2026-10-30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": [
+      {
+        "case": "BEAR",
+        "method": "NAV",
+        "arithmeticOnly": "174.42",
+        "wasAuthored": false,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-12-31", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": []
+      },
+      {
+        "case": "BASE",
+        "method": "NAV",
+        "arithmeticOnly": "174.42",
+        "wasAuthored": true,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-12-31", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": [
+          {
+            "id": "adjustedNetAssetValueFY2025",
+            "value": "15174227888",
+            "source": "https://www.panoragyo.com/storage/pages/March2026/panora-gyo-31-12-2025-konsolide-rapor-final-g.pdf",
+            "publishedAt": "2026-03-10",
+            "publishedAtBasis": "EXACT"
+          },
+          {
+            "id": "sharesFy2025End",
+            "value": "87000000",
+            "source": "https://kap.org.tr/tr/Bildirim/1597263",
+            "publishedAt": "2026-04-24",
+            "publishedAtBasis": "EXACT"
+          }
+        ]
+      },
+      {
+        "case": "BULL",
+        "method": "NAV",
+        "arithmeticOnly": "174.42",
+        "wasAuthored": false,
+        "valuationAt": "2026-11-06",
+        "financialFlow": ["2025-12-31", "2025-12-31"],
+        "stockAt": "2025-12-31",
+        "purchasingPowerDate": "2025-12-31",
+        "inputs": []
+      }
+    ]
+  },
+  {
+    "symbol": "ttrak",
+    "oldVersion": "ttrak-2026-11-03-v4",
+    "newVersion": "ttrak-2026-11-03-v4",
+    "historyPreserved": true,
+    "originalSha256": "b7e6ce5d9ca0451af6f88454dac231f86c4b01f7bca6f20d9e2b837b3cfff3ab",
+    "price": {
+      "value": "341.75",
+      "date": "2026-10-28",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-09-30",
+    "cases": []
+  },
+  {
+    "symbol": "akmgy",
+    "oldVersion": "akmgy-2026-11-03-v4",
+    "newVersion": "akmgy-2026-11-03-v4",
+    "historyPreserved": true,
+    "originalSha256": "ff8b7badeb0690a88a5b71ddea0fc6c6288d3d2824f4ecf48de045fda13b0b39",
+    "price": {
+      "value": "176.4",
+      "date": "2026-10-30",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1104537600&period2=1793491200&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": []
+  },
+  {
+    "symbol": "yggyo",
+    "oldVersion": "yggyo-2026-11-03-v4",
+    "newVersion": "yggyo-2026-11-03-v4",
+    "historyPreserved": true,
+    "originalSha256": "9a3db110f2f48bff64ec14ccf375daed7f5b709a84f1550c69162be7469b412b",
+    "price": {
+      "value": "189.20",
+      "date": "2026-10-28",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits"
+    },
+    "reportPeriod": "2026-01-01 / 2026-06-30",
+    "cases": []
+  }
+]

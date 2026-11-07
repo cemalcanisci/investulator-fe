@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/doas-analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -7,8 +8,10 @@ import {
   scenarioUpsidePercent,
 } from '@/lib/valuation';
 
-describe('DOAS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('DOAS EV/EBITDA BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const latest = reports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
   );
@@ -17,7 +20,7 @@ describe('DOAS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('EV_EBITDA method missing');
   }
 
-  it('picks the highest-revision report (doas-2026-11-03-v4, revision 4)', () => {
+  it('picks the pre-audit archived report (doas-2026-11-03-v4, revision 4)', () => {
     expect(latest.version).toBe('doas-2026-11-03-v4');
     expect(latest.revision).toBe(4);
   });
@@ -36,7 +39,7 @@ describe('DOAS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (fyEbitda2025 14,864,838,000 × peer multiple − fyNetFinancialDebt2025 25,184,576,000) / sharesFy2025End 220,000,000
-    // Independently verified with the project's own BigInt decimal math (lib/decimal.ts semantics,
+    // Regression-checked with the project's own BigInt decimal math (lib/decimal.ts semantics,
     // not float math): node -e computed BEAR=37201, BASE=41255, BULL=54769 (value × 100).
     expect(byCase.BEAR?.value).toBe('372.01'); // × 7.2 (Siblis Research retail sector, Europe median)
     expect(byCase.BASE?.value).toBe('412.55'); // × 7.8 (Siblis Research retail sector, worldwide median)

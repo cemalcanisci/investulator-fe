@@ -6,6 +6,18 @@
 
 ## ŞU AN
 
+**Son güncelleyen:** Codex — **Tarih:** 2026-11-07
+
+10 BIST şirketinin `valuationScenarios` hesapları önceki yazım oturumundan bağımsız denetlendi. **Güncel güvenilir fiyat hedefi PASS yok.** Önceki 19 sayısal sonuç üretim decimal fonksiyonlarını kullanmayan tam sayı/rasyonel hesapla yeniden üretildi; PAGYO'nun 31.12.2025 NAD köprüsü tarihli varlık hesabı olarak tutarlı. TUPRS/DOAS/FROTO/TOASO/AKSA/ISMEN üç senaryo, PAGYO baz senaryo NEEDS_REVIEW; motor bunlarda BLOCKED/REVIEW_REQUIRED döndürüyor. PAGYO BEAR/BULL, TTRAK/AKMGY/YGGYO veri eksikliği nedeniyle bloke kalıyor.
+
+Yedi yeni rapor revizyonu ve ayrı TR/EN anlatım anahtarları eklendi. Önceki raporlar içerik bazında `git HEAD` ile aynı; ham finansallar ve geçmiş simülasyonlar değiştirilmedi. `domain/valuation.ts` senaryo inceleme alanı, `analysisSchema.ts` parse kontrolü ve `valuationBasis.ts` inceleme engeli eklendi. Önceki şirket testleri tarihsel aritmetik regresyonuna sabitlendi; `valuationAudit.test.ts` bağımsız hesap, güncel engel, veri korunumu ve şema geçişini test ediyor. Sayfa/servis testleri yeni sürüm ve engellenen hedefi doğruluyor.
+
+Kanıt ve sonuç: `docs/research-audit-20261107/DENETIM.md`, `arithmetic-and-dates.json`, `price-checks.json`; eski `docs/research-audit-20261101/DENETIM.md` yeni karara yönlendirildi. On tarihli fiyat Yahoo günlük kapanışla yeniden eşleşti (aynı sağlayıcı kontrolü, ikinci sağlayıcı onayı değil). TUPRS şirket FAVÖK/CCS tanımı, DOAS için Inchcape faaliyet karşılaştırması, ISMEN Ke/ROE ve sermaye kapısı, PAGYO ekspertiz duyarlılığı raporda. Sıradaki iş: kaynaklı normalizasyon/emsal/tarih köprülerini kapatmak; yeni hedef ancak bunlardan sonra.
+
+Doğrulama: **641/641 test**, satır %92,03 / dal %86,63; TypeScript+build PASS; lint 0 hata, 3 eski uyarı. Ayrı 5251 portunda üretim tarayıcı kontrolü: 10 şirket × 2 görünüm × 5 boyut = 100 kontrol, sıfır taşma/ham anahtar/sayısal hedef başlığı/runtime hata; koyu tema ve TRY. Test sunucusu kapatıldı. Commit/push yapılmadı; backend/Keycloak kapsamı değişmedi, kullanıcının 5173 sunucusuna dokunulmadı.
+
+### Önceki ŞU AN arşivi — 7 Kasım ilk senaryo uygulaması
+
 **Son güncelleyen:** Claude — **Tarih:** 2026-11-07
 
 **10 BIST şirketinin kaynaklı adil değer senaryoları (kötümser/baz/iyimser) eklendi** — DENETIM.md'nin "ayrı büyük bir aşama" dediği, üç denetim turunda da bilerek ele alınmayan iş. Önce merkezi altyapı kuruldu: `src/lib/valuation.ts`'teki `VALUATION_METHODS` daha önce yalnızca EV_EBITDA için gerçek hesap yapıyordu (FCF/BOOK_ROE/NAV `METHOD_PENDING`'di) — üçüne de gerçek decimal `calculate` eklendi; yeni `scenarioMethod`/`evaluateValuationScenarios`/`reportValuationScenarios` fonksiyonları ve `AnalysisReport.valuationScenarios` alanı (yeni `src/domain/valuation.ts`, şema doğrulaması `analysisSchema.ts`'e eklendi) BEAR/BASE/BULL'u raporun kendi verisinden otomatik hesaplayıp UI'da gösteriyor (`AnalysisQuality.tsx`'teki `ProfileValuation`, `ResearchPage.tsx`'in değerleme bölümü) — hiçbir şirkete özel UI kodu yazılmadı. Ayrıca `AnalysisPage.test.tsx`'teki 4 eski i18n hatası ayrı düzeltildi: kök neden gerçekten DENETIM.md'nin işaret ettiği gibi `analysis.*` namespace'inin Sayfa 5 (portföy) ile BIST araştırma domeni arasında çarpışmasıydı — araştırma tarafı `researchAnalysis.*`'e taşındı (8 kaynak dosya + 2 test dosyası + `analysis-reports.json`'daki eski `contentKey` referansları), Sayfa 5'in orijinal metinleri git geçmişinden (`3ea37b7`) geri getirildi.
@@ -243,3 +255,5 @@ Sırada: kullanıcı incelemesi; yeni finansal rapor yayımlandığında güncel
 ---
 
 - **2026-11-01 — Codex:** On BIST araştırması sürüm korunarak denetlendi; kaynak, dönem, temettü ve simülasyon hataları düzeltildi. Kalan veri açıkları ve son doğrulama sonuçları docs/research-audit-20261101 altında kaydedildi.
+
+- **2026-11-07 — Codex:** On şirketin değerleme senaryoları bağımsız kaynak/rasyonel hesap denetiminden geçirildi; yedi yeni revizyonda güvenilir olmayan hedefler bloke edildi, eski raporlar korundu. 641/641 test, satır/dal %92,03/%86,63; build/lint geçti. Ayrıntı `docs/research-audit-20261107/DENETIM.md`.

@@ -112,7 +112,11 @@ DOAS’ın 21 temettü olayı günlük sağlayıcı serisiyle tutar ve hak kulla
 
 Kaynak ve hesap yeniden oynatma çıktıları yerel çalışma kökündeki outputs/bist-audit-20261101 dizininde; önceki tarihçe yedekleri aynı dizinde tutulur. 2 Kasım ve 3 Kasım turlarının kaynak kanıtları (KAP/şirket IR URL'leri, locator, excerpt) merkezi bir değişiklik defterine (`audit.json`) değil, doğrudan her şirketin kendi `*-analysis-reports.json` dosyasındaki `evidence` nesnelerine yazıldı — `audit.json` son olarak 1 Kasım turunda güncellendi, bu kasıtlı bir sözleşme (2 Kasım turunda da aynı karar verildi), eksik/bayat değil.
 
-## Adil değer senaryoları — 7 Kasım 2026 turunda tamamlandı
+## 7 Kasım bağımsız denetim — önceki tamamlanma hükmü sınırlandırıldı
+
+**Codex, 07.11.2026:** Aşağıdaki ilk uygulama kaydı tarihçe olarak korunur; “kaynaklı/hesaplandı” ifadesi finansal güvenilirlik onayı değildir. Bağımsız rasyonel yeniden hesap 19 eski sayısal sonucu doğruladı, fakat emsal seçimi, normalizasyon, sermaye yeterliliği ve tarih köprüleri nedeniyle yedi şirketin fiyat hedefleri yeni revizyonlarda NEEDS_REVIEW → BLOCKED yapıldı. PAGYO'nun 31.12.2025 NAD hesabı tarihli hesap olarak korunur; BEAR/BULL ve TTRAK/AKMGY/YGGYO veri engelleri devam eder. On referans fiyatı kayıtlı günleri için yeniden doğrulandı. Ayrıntılı karar, kaynaklar, tarih tablosu ve veri gereksinimleri: [yeni DENETIM.md](../research-audit-20261107/DENETIM.md). Testler 641/641; satır/dal kapsamı %92,03/%86,63; build/lint geçti. Eski rapor nesneleri değişmedi.
+
+## Adil değer senaryoları — 7 Kasım 2026 ilk uygulama kaydı
 
 İyimser/baz/kötümser adil değer senaryoları 1, 2 ve 3 Kasım turlarının üçünde de **kasıtlı olarak ele alınmamıştı** (BLOCKED/NOT_ASSESSED). **7 Kasım 2026 turunda** bu aşama tamamlandı: `src/lib/valuation.ts`'e FCF/BOOK_ROE/NAV için gerçek decimal hesap + BEAR/BASE/BULL senaryo altyapısı (`scenarioMethod`/`evaluateValuationScenarios`/`reportValuationScenarios`, `AnalysisReport.valuationScenarios`) eklendi, sonra her şirket için sektöre uygun yöntemle (REFINING/AUTOMOTIVE/INDUSTRIAL → EV/FAVÖK; BROKER → özkaynak/sürdürülebilir ROE; REIT → NAD) kaynaklı normalleştirilmiş girdi + forward-looking varsayım (emsal çarpanı veya özkaynak maliyeti) eklendi.
 

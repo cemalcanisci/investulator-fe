@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/froto-analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -7,8 +8,10 @@ import {
   scenarioUpsidePercent,
 } from '@/lib/valuation';
 
-describe('FROTO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('FROTO EV/EBITDA BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const latest = reports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
   );
@@ -17,7 +20,7 @@ describe('FROTO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('EV_EBITDA method missing');
   }
 
-  it('picks the highest-revision report (froto-2026-11-03-v4, revision 4)', () => {
+  it('picks the pre-audit archived report (froto-2026-11-03-v4, revision 4)', () => {
     expect(latest.version).toBe('froto-2026-11-03-v4');
     expect(latest.revision).toBe(4);
   });
@@ -36,7 +39,7 @@ describe('FROTO EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (ebitdaTtm 63,557,627,000 × peer multiple − netFinancialDebt 111,981,980,000) / shares 3,509,100,000
-    // verified independently with the project's exact BigInt decimal math (lib/decimal.ts), not float math.
+    // regression-checked with the project's exact BigInt decimal math (lib/decimal.ts), not float math.
     expect(byCase.BEAR?.value).toBe('109.18'); // × 7.79 (Volkswagen AG, TTM)
     expect(byCase.BASE?.value).toBe('136.89'); // × 9.32 (Renault SA, TTM)
     expect(byCase.BULL?.value).toBe('226.19'); // × 14.25 (Hyundai Motor, TTM)

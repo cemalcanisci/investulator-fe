@@ -19,6 +19,9 @@ export function valuationBasisIssues(
     return ['ASSUMPTIONS'];
   }
   const issues: string[] = [];
+  if (scenario.review && scenario.review.status !== 'PASS') {
+    issues.push('REVIEW_REQUIRED');
+  }
   if (
     ![
       scenario.valuationAt,

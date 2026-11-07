@@ -11,23 +11,12 @@ import * as research from '@/services/research';
 import { tuprsReport } from '@/data/research/tuprs-2026-10-11';
 import { researchBundle } from '@/services/researchBundle';
 import { metricDefinition } from '@/domain/metricEducation';
-import { VALUATION_METHODS, reportValuationScenarios } from '@/lib/valuation';
 
 const current = researchBundle.reports.find(
   (report) => report.presentation.symbol === 'TUPRS',
 );
 if (!current) {
   throw new Error('Missing TUPRS report');
-}
-const tuprsEvEbitda = VALUATION_METHODS.find((m) => m.id === 'EV_EBITDA');
-if (!tuprsEvEbitda) {
-  throw new Error('Missing EV_EBITDA method');
-}
-const tuprsBaseValue = reportValuationScenarios(current, tuprsEvEbitda)?.find(
-  (s) => s.case === 'BASE',
-)?.result.value;
-if (!tuprsBaseValue) {
-  throw new Error('Missing TUPRS BASE scenario value');
 }
 
 function renderPage(id = 'watch-bist-tuprs'): void {
@@ -240,7 +229,7 @@ describe('ResearchPage', () => {
       screen.getAllByText('TRATUPRS91E8', { exact: false })[0],
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: tuprsBaseValue }),
+      screen.getByRole('heading', { name: i18n.t('research.notAssessed') }),
     ).toBeInTheDocument();
     expect(
       screen.getByText(i18n.t('researchTuprs.scanLimit')),

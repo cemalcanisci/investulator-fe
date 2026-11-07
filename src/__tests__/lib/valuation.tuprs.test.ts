@@ -1,3 +1,4 @@
+// Historical arithmetic regression only; current financial acceptance is tested in valuationAudit.test.ts.
 import { describe, expect, it } from 'vitest';
 import snapshots from '@/data/research/analysis-reports.json';
 import { parseAnalysisReports } from '@/lib/analysisSchema';
@@ -7,8 +8,10 @@ import {
   scenarioUpsidePercent,
 } from '@/lib/valuation';
 
-describe('TUPRS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
-  const reports = parseAnalysisReports(snapshots);
+describe('TUPRS EV/EBITDA BEAR/BASE/BULL scenarios (pre-audit archive)', () => {
+  const reports = parseAnalysisReports(snapshots).filter(
+    (r) => !r.version.includes('valuation-audit'),
+  );
   const tuprsReports = reports.filter((r) => r.version.startsWith('tuprs-'));
   const latest = tuprsReports.reduce((best, r) =>
     (r.revision ?? 0) > (best.revision ?? 0) ? r : best,
@@ -18,7 +21,7 @@ describe('TUPRS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     throw new Error('EV_EBITDA method missing');
   }
 
-  it('picks the highest-revision TUPRS report (tuprs-2026-11-02-v10, revision 10)', () => {
+  it('picks the pre-audit archived TUPRS report (tuprs-2026-11-02-v10, revision 10)', () => {
     expect(latest.version).toBe('tuprs-2026-11-02-v10');
     expect(latest.revision).toBe(10);
   });
@@ -37,7 +40,7 @@ describe('TUPRS EV/EBITDA BEAR/BASE/BULL scenarios (highest revision)', () => {
     expect(byCase.BULL?.issues).toEqual([]);
 
     // (ebitdaFy2025 56,272,759,000 × peer multiple − netFinancialDebtFy2025End -41,455,028,000) /
-    // sharesFy2025End 1,926,795,598 — verified independently with the project's exact BigInt
+    // sharesFy2025End 1,926,795,598 — regression-checked with the project's exact BigInt
     // decimal math (lib/decimal.ts), not float math. Net debt is negative (net cash), so
     // subtracting it adds back to the numerator.
     expect(byCase.BEAR?.value).toBe('159.07'); // × 4.71 (stockanalysis.com, Valero Energy / VLO, EV/EBITDA ttm, 2026-11-07)
