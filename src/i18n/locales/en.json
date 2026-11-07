@@ -373,195 +373,29 @@
     "historyNote": "Amounts use the transaction currency. USD equivalents use the exchange rate saved with each transaction."
   },
   "analysis": {
-    "title": "Analysis validation and data quality",
-    "blocked": "Calculation not verified",
-    "verified": "Reconciled to primary document; not independently confirmed",
-    "profile": "Business model profile",
-    "scale": "Unit scale",
-    "counts": "{{passed}} of {{total}} calculations passed data checks. This is not approval of the entire report.",
-    "reviewNotice": "Historical research snapshot. Earlier narrative and price commentary are retained for context; unverified figures are not current or audited results. Calculation-card validation takes precedence. Disclosure and long-term source reviews remain partial; this is not an independent audit.",
-    "auditTrail": "Inspect sources, periods and accounting bases",
-    "unverifiedInputs": "These are archived input records, not verified calculation inputs.",
-    "missingInput": "Missing/unverified input: {{input}}",
-    "profiles": {
-      "REFINING": "Refining",
-      "AUTOMOTIVE": "Automotive",
-      "INDUSTRIAL": "Industrial",
-      "BANK": "Bank",
-      "REIT": "REIT",
-      "BROKER": "Broker",
-      "TECHNOLOGY": "Technology",
-      "CRYPTO": "Crypto",
-      "FUND": "Fund",
-      "UNSUPPORTED": "Unsupported profile"
+    "metrics": {
+      "PERCENT": "Profit / loss percentage",
+      "AMOUNT": "Profit / loss amount"
     },
-    "scope": {
-      "CONSOLIDATED": "Consolidated",
-      "SOLO": "Standalone",
-      "MARKET": "Market/share data"
+    "empty": "No investments to analyze yet",
+    "positionValue": "Value: {{value}}",
+    "typeAmounts": "Value: {{value}} · Cost: {{cost}}",
+    "ranking": "Asset performance",
+    "emptyNote": "Add your first transaction to start building your portfolio.",
+    "filter": "Performance filter",
+    "scopeNote": "The range selector only changes the chart above. Allocation and rankings show current positions; profit / loss excludes dividends and closed positions. An increase in portfolio value alone is not an investment return.",
+    "filters": {
+      "LOSERS": "Losers",
+      "ALL": "All",
+      "GAINERS": "Gainers"
     },
-    "attribution": {
-      "GROUP": "Group total",
-      "PARENT": "Parent owners",
-      "SHARE": "Per share"
-    },
-    "earnings": {
-      "REPORTED": "Reported-period data; not actual TTM or normalized earnings.",
-      "ANNUALIZED_ESTIMATE": "Annualized estimate: six-month profit × 2; not actual trailing twelve months.",
-      "NORMALIZED": "Normalized data with explicit assumptions",
-      "TTM": "Trailing twelve months from four compatible quarters"
-    },
-    "issues": {
-      "UNVERIFIED": "Source or data basis is not verified.",
-      "CONFLICT": "Unresolved source conflict.",
-      "SOURCE": "Missing source/review evidence.",
-      "NUMBER": "Invalid numeric input.",
-      "PERIOD": "Incompatible financial periods.",
-      "SCALE": "Incompatible unit scale; explicit conversion required.",
-      "BASIS": "Incompatible consolidation, attribution or accounting basis.",
-      "CURRENCY": "Incompatible currencies.",
-      "SHARE_BASIS": "Unverified price, share or dividend basis.",
-      "MISSING": "Missing data or calculation contract.",
-      "DUPLICATE": "Duplicate fact identifier.",
-      "UNIT": "Units do not match the method.",
-      "ARITHMETIC": "Zero denominator or inadmissible numeric input.",
-      "NOT_APPLICABLE": "Method does not apply to this business model.",
-      "ASSUMPTIONS": "Sourced normalization/scenario assumptions are missing.",
-      "METHOD_PENDING": "This calculation strategy has not been implemented.",
-      "EVIDENCE": "Source provenance and document reconciliation evidence are missing.",
-      "RESTATEMENT": "Document evidence does not match the IAS 29 purchasing-power basis.",
-      "LOOKAHEAD": "Availability at the valuation date is not verified."
-    },
-    "historyIssues": {
-      "COVERAGE": "Independently verified trading-session, dividend and corporate-action coverage is missing. The earlier approximation is not displayed as a verified result.",
-      "UNVERIFIED": "Historical source review is partial.",
-      "CONFLICT": "Historical sources conflict.",
-      "LISTING": "Listing start is not verified in the model.",
-      "SHARE_BASIS": "Missing/incompatible price and dividend adjustment basis.",
-      "SOURCE": "Missing transaction sources.",
-      "FX": "Invalid transaction FX or observation date.",
-      "SESSIONS": "Prices do not match expected exchange sessions.",
-      "ACTIONS": "Unverified corporate action or adjustment factor.",
-      "DIVIDENDS": "Dividends do not match the reconciled event register.",
-      "PERIOD": "The cutoff is not a valid calendar month-end.",
-      "INDEPENDENCE": "Data coverage lacks independent source reconciliation."
-    },
-    "methods": {
-      "EV_EBITDA": "Normalized EV/EBITDA",
-      "FCF": "Free cash flow valuation",
-      "BOOK_ROE": "Book value and sustainable ROE",
-      "NAV": "Net asset value"
-    },
-    "inputs": {
-      "normalizedEbitda": "normalized EBITDA",
-      "peerEvEbitda": "comparable peer/historical EV/EBITDA",
-      "valuationNetDebt": "valuation net debt bridge",
-      "shares": "shares at valuation date",
-      "normalizedFcf": "normalized free cash flow",
-      "discountRate": "discount rate",
-      "terminalGrowth": "terminal growth",
-      "investmentPlan": "investment plan",
-      "parentEquity": "parent equity",
-      "sustainableRoe": "sustainable ROE",
-      "costOfEquity": "cost of equity",
-      "capitalAdequacy": "capital adequacy",
-      "netAssetValue": "net asset value",
-      "appraisalDate": "appraisal date"
-    },
-    "limits": {
-      "EV_EBITDA": "A single period of EBITDA does not establish a price target without normalizing operating margins, inventory effects and the sector cycle. Peer lease and debt definitions must be consistent.",
-      "FCF": "Current cash differences cannot be extrapolated without maintenance/growth capex and working-capital analysis.",
-      "BOOK_ROE": "Capital and asset quality matter; low P/B alone does not prove undervaluation.",
-      "NAV": "Appraisal dates, debt scope and asset liquidity affect the result."
-    },
-    "qualitySeparation": "Sources: {{sources}}. Section completion: partial. Independent report review: not performed. Calculation PASS only refers to arithmetic validation with the stated inputs.",
-    "priorities": "Strategy review priorities (financial results unchanged)",
-    "provenance": "Document origin / collection / method",
-    "sourceState": {
-      "PRIMARY_ONLY": "Primary document reconciled; no independent confirmation",
-      "INCOMPLETE": "Partially reconciled; missing sources"
-    },
-    "sections": {
-      "FINANCIALS": "Financial health",
-      "DIVIDEND": "Dividend sustainability",
-      "VALUATION": "Valuation",
-      "GROWTH": "Growth",
-      "RISK": "Long-term risks",
-      "TECHNICAL": "Technical analysis"
-    },
-    "reconciliation": {
-      "FINANCIALS": {
-        "title": "Official financial reconciliation",
-        "text": "The June 2026 consolidated statements use thousand TRY at June purchasing power. Financial debt is TRY 68.201bn; excluding blocked cash and deducting financial investments gives net debt of −TRY 102.232bn. Presentation cash uses a broader definition. Primary documents were reconciled; no second independent data source was established."
-      },
-      "HISTORY": {
-        "title": "Five-year comparison",
-        "text": "Official 2021–2025 reports were located. 2021 sales were TRY 150.972bn originally and TRY 152.492bn in the 2022 comparative. The 2023–2025 reports also use different year-end purchasing-power bases. Full scope and restatement reconciliation remains missing; no common-basis growth series was generated."
-      },
-      "DIVIDEND": {
-        "title": "Dividend sustainability",
-        "text": "KAP approved gross TRY 17.1268815/share and net TRY 14.5578492 with 15% withholding. Ex and payment dates differ; the schedule is not independent settlement evidence. H1 operating cash of TRY 132.366bn minus asset purchases of TRY 11.858bn equals TRY 120.508bn. Working capital contributed TRY 28.497bn and derivative cash classification needs normalization. This is not sustainable FCF. Full history and cash coverage are missing; 10/15/20-year backtests remain blocked."
-      },
-      "VALUATION": {
-        "title": "Why refining valuation remains open",
-        "text": "The October presentation reports H1 refining margin of USD 15.6/bbl and capex of USD 246m; annual capex of USD 700m is guidance. Inventory effects and exceptional margins are not normalized earnings. A sourced annual normalized EBITDA bridge, consistent net debt, current shares and peer multiple are missing. No bear/base/bull price was produced. Formula: (normalized EBITDA × multiple − net debt) / shares. FCF, BOOK_ROE, NAV and DDM implementations remain pending."
-      },
-      "TECHNICAL": {
-        "title": "Price and volume coverage",
-        "text": "Independently reconciled daily price, volume, corporate-action and FX data are missing. SMA20/50/200, RSI, MACD and support/resistance were not calculated. Prior price snapshots are not live prices."
-      },
-      "DISCLOSURES": {
-        "title": "Disclosure coverage limit",
-        "text": "Earlier KAP events and sources are retained. This review does not establish full coverage of 11–22 October 2026 or previously unread attachments. An issuer KAP filing and its investor presentation are not two independent economic sources."
-      }
-    },
-    "completion": {
-      "PARTIAL": "Partial",
-      "MISSING": "Missing",
-      "COMPLETE": "Complete"
-    },
-    "strategySelector": "Analysis presentation priority",
-    "strategyOptions": {
-      "REPORT": "Report strategies",
-      "DIVIDEND": "Dividend",
-      "GROWTH": "Growth",
-      "VALUE": "Value",
-      "LONG_TERM": "Long term"
-    },
-    "factTechnical": "Technical input validity",
-    "technicalValid": "Valid (not source verification)",
-    "factPrimary": "Primary source reconciliation",
-    "factIndependent": "Independent review",
-    "notReviewed": "Not reviewed",
-    "reconciliationV6": {
-      "FINANCIALS": {
-        "title": "Primary financial reconciliation",
-        "text": "14 key rows match KAP #1643116 and the issuer’s H1 2026 report. Thousand TRY was converted to TRY, preserving consolidated scope and 30 June 2026 purchasing power. Financial debt is TRY 68.20bn; net cash under the issuer’s note definition is TRY 102.23bn. TRY 28.49bn of total cash is blocked. This match is not an independent review."
-      },
-      "HISTORY": {
-        "title": "Five-year documents and basis differences",
-        "text": "Revenue, parent profit/equity, operating cash, debt and unblocked cash are available for 2021–2025. 2021 uses the restated 2022 column following the Entek combination. 2023–2025 annual changes use comparable columns in the same report. A single purchasing-power basis for all five years remains unavailable."
-      },
-      "DIVIDEND": {
-        "title": "Cash coverage and historical-data limits",
-        "text": "2025 operating cash of TRY 49.46bn less TRY 19.12bn capex leaves TRY 30.35bn, versus TRY 34.84bn cash dividends on the same basis. Operating cash covers distributions 1.42 times; the post-capex proxy does not fully cover them. This does not automatically predict a cut. The 2026 payment schedule and 2023 600% bonus record were located; full historical settlement, price and FX coverage remain unverified. None of the 10/15/20-year backtests is complete. MKK #1671443 records the second instalment as settled on 2 October 2026 at a gross rate of 674.69533% (TRY 6.7469533/share). This is custodian evidence for one event, not an independent review of the full history."
-      },
-      "VALUATION": {
-        "title": "Refining cycle; no target price",
-        "text": "The issuer reports H1 2026 net refining margin of USD 15.6/bbl, with Q1 at 9.4 and Q2 at 21.4. Such volatility cautions against treating one strong quarter as permanent earnings. Full-year margin guidance of USD 13–15/bbl and USD 700m capex are plans, not realized results. A verified multi-year normalized EBITDA bridge addressing inventory/working-capital effects and comparable peer multiples is still missing. No bear/base/bull price targets were produced."
-      },
-      "TECHNICAL": {
-        "title": "Price and volume verification missing",
-        "text": "The market series has not been reconciled with an official session calendar and independent raw price/volume history. TCMB indicative USD buying/selling rates on 9 October 2026 are 49.1274/49.2160; these are not market closing rates. One sample does not verify 20 years of FX. No new SMA20/50/200, RSI, MACD or support/resistance outputs were produced without validated inputs."
-      },
-      "DISCLOSURES": {
-        "title": "Disclosure scan partial",
-        "text": "The financial filing, dividend resolution and MKK bonus settlement were inspected as documents. The company report and KAP filing share the same issuer origin. Existing news and transition commentary are retained; exhaustive review of all filings and attachments is not claimed."
-      }
-    },
-    "historyTitle": "Annual financials and comparable changes",
-    "historyBasis": "Amounts are shown in TRY billions. 2021–2022 are nominal; 2023–2025 use each year-end purchasing power. Do not compare raw amounts directly. Annual-change cards use the restated previous year in the same report. 2021 includes the Entek restatement. Sources and exact inputs are available in card details.",
-    "inputStates": "Inputs: technical checks {{technical}}/{{total}}; primary-document reconciliation {{primary}}/{{total}}. Independent report review: not performed."
+    "description": "Explore your portfolio allocation and the performance of your open positions.",
+    "byTypeNote": "Bar length represents the absolute profit or loss amount.",
+    "noResults": "No assets in this group",
+    "noResultsNote": "Try another performance filter.",
+    "metric": "Ranking metric",
+    "byType": "Profit / loss by asset type",
+    "rankingNote": "Ranked by unrealized profit / loss. Select an asset name for details."
   },
   "transfer": {
     "description": "Add transactions from a file or download a copy of your records.",
@@ -750,7 +584,7 @@
     "valuationResult": "Valuation conclusion",
     "notAssessed": "Fair value cannot be assessed",
     "scenarios": "Scenarios and sensitivity",
-    "discountFormula": "Discount = (fair value − market price) / fair value. Potential return = (fair value − market price) / market price. Neither is calculated without a supported fair value.",
+    "discountFormula": "Discount = (fair value − market price) / fair value. Potential return = (fair value − market price) / market price. Neither is produced for a scenario that cannot be computed from sourced assumptions; the \"Not assessed\" label above marks that case.",
     "scanRange": "KAP review window",
     "kapList": "KAP company disclosure list",
     "analystInterpretation": "Analyst interpretation",
@@ -954,12 +788,16 @@
     "methods": {
       "pe": "Normalised P/E",
       "ev": "EV / EBITDA",
-      "dcf": "Discounted cash flow"
+      "dcf": "Discounted cash flow",
+      "nav": "Net asset value",
+      "bookRoe": "Equity and sustainable profitability"
     },
     "methodFormulas": {
       "pe": "Fair price = normalised annual EPS × justified P/E",
       "ev": "Equity value = normalised EBITDA × multiple − net debt − minority interest + other adjustments",
-      "dcf": "Enterprise value = Σ FCFₜ / (1 + WACC)ᵗ + present value of terminal value"
+      "dcf": "Enterprise value = Σ FCFₜ / (1 + WACC)ᵗ + present value of terminal value",
+      "nav": "Fair value per share = adjusted net asset value / share count",
+      "bookRoe": "Fair value per share = (equity / share count) × (sustainable ROE / cost of equity)"
     },
     "scenarioNames": {
       "bear": "Bear",
@@ -3198,17 +3036,17 @@
     "peers": "Peer refinery valuations on comparable periods and accounting bases are incomplete. No sector-average multiple or peer discount is asserted.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The BASE case was computed with the EV/EBITDA method using the current multiple of US refining peer Marathon Petroleum (MPC) (stockanalysis.com, EV/EBITDA ttm 5.15x; 2026-11-07): the fair value is about TRY 171.92 per share, a potential downside of -55.5% versus the current price (TRY 386.25) — i.e. by this method the current price looks distinctly rich. Inputs are the FY2025 normalized EBITDA (operating profit TRY 41,646,897 thousand + depreciation and amortisation TRY 14,625,862 thousand = TRY 56,272,759 thousand; derived in this report from Notes 4 and 21 of Tüpraş's audited FY2025 financial statements, not the company's own investor-presentation 'FAVÖK' KPI), the FY2025 year-end net financial liabilities (TRY -41,455,028 thousand, i.e. net cash; Note 29) and the share count (1,926,795,598); all three are equalized to the same 31.12.2025 TAS29 basis. IMPORTANT LIMITATION: 2026's refining margins are markedly stronger than 2025's (the company's own H1 2026 net refining margin was USD 15.6/bbl, and full-year guidance was raised to USD 13-15/bbl; 2025 was a much weaker year) — so FY2025 EBITDA likely understates current earning power, and this calculation is probably conservative as a result; it is not a claim about today's target price. The result also rests on a researcher-chosen peer group (US refiners) assumption (see scenarioNotes); a different peer group or TTM EBITDA would change the result.",
     "methods": {
       "pe": "Applicable to refining, but peak-cycle earnings may produce a misleadingly low P/E. Normalised annual EPS and justified peer multiples are missing. Doubling half-year earnings does not resolve this; no valuation result.",
       "ev": "Helps separate operations from financing. Comparable normalised EBITDA, peer multiples and the net debt/minority/associate bridge are required. Cash less debt alone is not a complete enterprise-value bridge; no valuation result.",
       "dcf": "Models investment and cash conversion explicitly. Multi-year volumes, margins, tax, capex, working capital, WACC and terminal growth are missing. Nominal TRY cash flows must not be discounted at a real rate; no valuation result."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "A BEAR/BASE/BULL fair value can now be computed with the EV/EBITDA method: a fixed FY2025 normalized EBITDA (TRY 56,272,759 thousand, 31.12.2025 TAS29 basis; not the company's own investor-presentation 'FAVÖK' KPI — derived in this report from operating profit plus depreciation and amortisation across two footnotes) and the same-dated net financial liabilities (TRY -41,455,028 thousand, i.e. net cash) are combined with a different EV/EBITDA multiple per scenario, sourced from three US independent refiners (Valero Energy/VLO, Marathon Petroleum/MPC, Phillips 66/PSX; stockanalysis.com, 2026-11-07). All three land well below the current price (TRY 386.25); but FY2025 does not yet reflect 2026's much stronger refining margins (see the 'nrm' figure and the company's raised margin guidance), so this result is likely conservative, and it would change with a different peer set or TTM EBITDA basis — it is not a guaranteed target price or sell signal (see scenarioNotes).",
     "scenarioNotes": {
-      "bear": "Lower refining margins with sustained investment and working-capital needs could constrain distributions.",
-      "base": "Margins move toward a cycle average and investment stays within budget. The cycle average is not yet verified.",
-      "bull": "Strong product margins persist and investments deliver expected cash contributions. These outcomes are not assumed."
+      "bear": "The bear case uses the lowest EV/EBITDA multiple among three US refining peers (stockanalysis.com, 2026-11-07): Valero Energy (VLO), 4.71x. Applying it to Tüpraş's FY2025 normalized EBITDA (TRY 56.27bn) and adding back net cash (TRY 41.46bn) gives a fair value of about TRY 159.07 per share — well below the current price (TRY 386.25). This assumes Tüpraş is valued like the cheapest US refiner and that 2025's weaker-margin earnings power persists; not a guaranteed outcome.",
+      "base": "The base case uses the median multiple among the three US refining peers: Marathon Petroleum (MPC), 5.15x (stockanalysis.com, 2026-11-07). With the same EBITDA and net cash, the fair value is about TRY 171.92 per share — well below the current price (TRY 386.25). This is an assumption-driven calculation, not a guaranteed target price: FY2025 earnings do not yet reflect 2026's strong refining margins (see the valuation note), and Tüpraş's TRY financials are compared directly with USD-denominated peer multiples without separately assessing that currency/accounting-basis gap.",
+      "bull": "The bull case uses the highest multiple among the three US refining peers: Phillips 66 (PSX), 7.06x (stockanalysis.com, 2026-11-07). With the same EBITDA and net cash, the fair value is about TRY 227.70 per share — still below the current price (TRY 386.25) even in this most optimistic case. This assumes Tüpraş is valued like the richest-multiple US refiner; since it uses 2025's weak-margin earnings, this result is likely conservative (see the valuation note), though it remains an assumption, not a guaranteed outcome."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "The company KAP list and selected direct disclosures were examined for 11 July–11 October. A headline scan is not a completed content review. July rating/bonds, August redemption, September insurance and some attachments remain outstanding. Share sale, Entek contribution, margin revision and debt decision/application were reviewed. No claim is made that other material disclosures are absent.",
@@ -3477,17 +3315,17 @@
     "peers": "No direct multiple comparison against other BIST automotive names (e.g. TOASO, TTRAK) was done in this session; FROTO’s export-weighted (European) model and its Ford/Koc joint-venture structure are noted as a structural difference from other BIST automotive names.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The BASE case fair value is calculated with the EV/EBITDA method using a peer multiple (Renault SA, 9.32x TTM): about TRY 136.89 per share, a 97.8% potential return versus the current price (TRY 69.20). This rests on a researcher-chosen comparable-company assumption (a moderate point between the lowest and highest reliable sector multiples) — it is not a verified target price or a guarantee of return; a different peer choice would change the result.",
     "methods": {
       "pe": "A genuine TTM P/E could be computed: FY2025 full-year net profit (TRY 40,021,393 thousand, from this report’s own equity-change statement, June 2026 basis) + H1 2026 (10,336,713) − H1 2025 (17,157,738) = TRY 33,200,368 thousand TTM profit. P/E = 242,829,720,000 / 33,200,368,000 ≈ 7.31x. This is a genuine trailing-12-month reconstruction, not a naive annualization.",
       "ev": "For EV/EBITDA, the company’s OWN disclosed Adjusted EBITDA (trailing 4 quarters, TRY 63,557,627 thousand) and Net Financial Debt (TRY 111,981,980 thousand) were used — not separately calculated for this report, taken directly from the primary source. EV = Market cap + Net debt = TRY 354,811,700,000; EV/EBITDA ≈ 5.58x.",
       "dcf": "A multi-year free-cash-flow projection, an appropriate discount rate and terminal-value assumptions could not be sourced in this session; no result."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "A BEAR/BASE/BULL fair value can now be computed with the EV/EBITDA method: the same TTM EBITDA (TRY 63.56bn) and net financial debt (TRY 111.98bn) are held fixed, and each scenario applies a different sourced global-OEM peer multiple (EV/EBITDA). These multiples are not FROTO's own data but a researcher-chosen comparable-company assumption; they are not a guaranteed target price, and the result changes if the peer choice changes.",
     "scenarioNotes": {
-      "bear": "If European demand weakness persists through H2 2026, operating margin stays in the 2-3% band and FY2026 net profit stays well below FY2025.",
-      "base": "Q3 results (5 November 2026) come in consistent with the H1 trend; the proposed TRY 2.6095/share dividend is approved and paid.",
-      "bull": "European automotive demand recovers toward end-2026 and margin pressure eases. This condition is not assumed to occur."
+      "bear": "The bear case assumes FROTO is valued at the lowest EV/EBITDA multiple among global OEM peers, Volkswagen AG's 7.79x (TTM): applying that multiple to FROTO's EBITDA gives a fair value of about TRY 109.18 per share. This is the assumption that FROTO prices like the most mature, highly leveraged OEM — not a guaranteed outcome.",
+      "base": "The base case uses Renault SA's 9.32x (TTM) multiple — a moderate point between the lowest (Volkswagen 7.79x) and the highest reliable one (Hyundai 14.25x; Stellantis's 15.62x was excluded as temporarily inflated by a low EBITDA base). Applying it gives a fair value of about TRY 136.89 per share. This is an assumption-driven calculation, not a guaranteed target price.",
+      "bull": "The bull case uses Hyundai Motor's 14.25x (TTM) multiple, a full-line (passenger and commercial) OEM with strong margins: applying it to the same EBITDA gives a fair value of about TRY 226.19 per share. This assumes FROTO is valued like the strongest-margin global OEMs — not a guaranteed outcome."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "KAP's own detailed query interface could not be accessed in this session for the 29 July-29 October 2026 window (JS-rendered); a compilation site citing KAP (borsacoo.com) was used instead. Disclosure IDs and direct KAP URLs could not be verified this session. The dividend proposal, the Extraordinary General Meeting call, the Q3 calendar, the independent board member CMB opinion, the H1 2026 results publication, and the July partial-production-halt notice were reviewed. \"No other material disclosure\" cannot be concluded; coverage is PARTIAL.",
@@ -3605,17 +3443,17 @@
     "peers": "No direct multiple comparison against other BIST automotive names (e.g. FROTO, TTRAK) was done in this session; Tofaş's Fiat/Stellantis-licensed manufacturing model and the Koç+Stellantis joint-venture structure are noted as a structural difference from other BIST automotive names.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The BASE case fair value is calculated with the EV/EBITDA method using a peer multiple (Siblis Research, worldwide automotive sector median, 8.5x, 30 September 2026): about TRY 102.60 per share, a -51.4% potential return versus the current price (TRY 211.20) - i.e. by this method the current price looks markedly rich. Inputs are FY2025 EBITDA (TRY 10.0bn), net financial debt (TRY 33,701,681,000) and the 31 Dec 2025 share count (500,000,000); all three were aligned to the same 2025-12-31 basis. The result rests on a researcher-chosen comparable-company-universe assumption (see scenarioNotes) - it is not a verified target price or a sell signal; a different peer group or normalized EBITDA would change the result.",
     "methods": {
       "pe": "A genuine TTM P/E could be computed: FY2025 full-year net profit (9,837,424 thousand TL, from this report's own statement of changes in equity \"Transfers\" line, on the June 2026 basis) + H1 2026 (6,290,532) - H1 2025 (2,116,615) = 14,011,341 thousand TL TTM profit. P/E = 105,600,000,000 / 14,011,341,000 ~ 7.54x. This is a genuine trailing-12-month reconstruction, not a naive annualization (all inputs share the same 30 June 2026 purchasing-power basis).",
       "ev": "Because EV/EBITDA and Net Debt/EBITDA need full-year data, and the H1 2026 report does not restate FY2025 EBITDA, the company's OWN 2025 Integrated Annual Report FY2025 figures (original 31 Dec 2025 purchasing-power basis) were used instead: EBITDA ~10.0bn TL (board report summary table), net financial debt 33,701,681 thousand TL (current portion of long-term borrowings + long-term borrowings - cash, from the same FY2025 report). EV = market cap + net debt = 139,301,681,000 TL; EV/EBITDA ~13.93x. This is a deliberate mixed-period choice (price current, debt/EBITDA as of FY2025 year-end) because the H1 2026 report does not restate full-year EBITDA; the two TAS29 bases were not mixed with each other (each stayed within its own internally-consistent set).",
       "dcf": "A multi-year free-cash-flow projection with a suitable discount rate and terminal-value assumptions could not be sourced in this session; no computed result."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "A BEAR/BASE/BULL fair value can now be computed with the EV/EBITDA method: the same FY2025 EBITDA (TRY 10.0bn) and net financial debt (TRY 33,701,681,000) are held fixed, and each scenario applies a different sourced EV/EBITDA median from Siblis Research's regional/worldwide automotive peer set. All three come out below the current price (TRY 211.20); this shows this peer set stays low relative to TOASO's current price, but is not a guaranteed target price or sell signal given the choice of peer group and the TAS29/nominal accounting-basis gap.",
     "scenarioNotes": {
-      "bear": "If the inventory build continues into Q3 without converting to sales, operating cash flow stays negative and short-term borrowing rises further; dividend sustainability could then be questioned.",
-      "base": "Q3 results (5 November 2026) show the inventory build converting to sales and operating cash flow turning positive again; H1's real growth trend (revenue +60.6%) continues.",
-      "bull": "The inventory build is quickly worked down through sales, operating cash flow turns strongly positive, and full-year FY2026 profit clearly exceeds FY2025. This condition is not assumed to occur."
+      "bear": "The bear case uses Siblis Research's European regional EV/EBITDA median (6.3x, 30 September 2026) - the regional slice closest to Tofaş's Fiat/Stellantis-licensed, Europe-export-focused manufacturing model. Applying it to FY2025 EBITDA (TRY 10.0bn) and subtracting net financial debt (TRY 33,701,681,000) gives a fair value of about TRY 58.60 per share - far below the current price (TRY 211.20). This is the assumption that Tofaş prices like the lowest-multiple OEMs in Europe - not a guaranteed outcome.",
+      "base": "The base case uses Siblis Research's worldwide (426-company) automotive EV/EBITDA median (8.5x, 30 September 2026). Applying it to the same EBITDA and net debt gives a fair value of about TRY 102.60 per share - markedly below the current price (TRY 211.20). This is an assumption-driven calculation, not a guaranteed target price; Tofaş's TAS29-restated TL financials are compared directly against the global peer set's nominal/USD-based multiples, and that accounting-basis gap was not separately assessed.",
+      "bull": "The bull case uses Siblis Research's Emerging Asia regional EV/EBITDA median (11.8x, 30 September 2026) - the highest regional slice, carrying a growth premium. Applying it to the same EBITDA and net debt gives a fair value of about TRY 168.60 per share; even in this most optimistic case it stays below the current price (TRY 211.20). This assumes Tofaş is valued like the highest-multiple emerging-market OEMs - not a guaranteed outcome."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "KAP's own detailed query interface could not be reached in this session for the 31 July-31 October 2026 window (JS rendering); a compilation site citing KAP (borsacoo.com) and web search were used instead. Disclosure IDs and direct KAP URLs could not be systematically verified in this session. The publication of H1 2026 results, the Q3 financial calendar, the June production capacity increase and board committee update, and the July planned-maintenance production halt were reviewed. \"No other material disclosures\" cannot be concluded; coverage is PARTIAL.",
@@ -3738,11 +3576,11 @@
       "ev": "EV/EBITDA = (Market cap + Net debt) / EBITDA. 9M2026 EBITDA = operating loss (-860.2 million TL) + depreciation (2.65 billion TL) = 1.79 billion TL (margin 4.87%, a sharp drop from 9.68% in 9M2025). EV is approximately 42.18 billion TL. With a naive annualization (x4/3), EV/EBITDA is approximately 17.7x - high relative to the cyclical-trough EBITDA base; a normalized comparison is missing (see guide.missing).",
       "dcf": "Multi-year tractor demand/price projections, an appropriate discount rate, and terminal-value assumptions could not be sourced in this session; no result is given."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "Bull, base and bear conditions are not calculated fair values. The EV/EBITDA method stays BLOCKED due to a missing normalized EBITDA; no numerical scenario result is produced (see scenarioNotes).",
     "scenarioNotes": {
-      "bear": "If Turkey's tractor market keeps shrinking into 2027 and the policy rate stays high, financing expense keeps weighing on profitability; once inventory drawdown is exhausted, operating cash flow could weaken too.",
-      "base": "The market partially recovers from the 2026 trough in 2027, the rate environment improves gradually, export growth continues.",
-      "bull": "The policy rate falls quickly, farmer financing eases, domestic demand rebounds fast, and operating leverage improves margins quickly. These conditions are not assumed to occur."
+      "bear": "If Turkey's tractor market keeps shrinking into 2027 and the policy rate stays high, financing expense keeps weighing on profitability; once inventory drawdown is exhausted, operating cash flow could weaken too. No numerical bear-case EV/EBITDA was produced: the normalizedEbitda fact is missing. Note 24 (capital risk management) of the 30 Sep 2026 interim report lets net financial debt be verified from a primary source (total financial debt 13,133,877,360 TRY - cash 5,154,157,976 TRY - financial investments 95,692,957 TRY = 7,884,026,427 TRY), but that report carries no EBITDA/VAFÖK reconciliation note comparable to FROTO's Note 2.3. Rounded margins gathered from three different secondary sources (investing.com/iDealData, 2024-02-23: FY2023 EBITDA margin 22.6%; Foreks, 2025-02-14: FY2024 margin 14.7%; Akbank Yatırım, 2026-02-10: FY2025 EBITDA 4,956 million TRY / margin 9.2%) roughly corroborate each other, but each sits on its own year's purchasing-power basis and cannot be reliably bridged to the 30 Sep 2026 net-debt basis; cyclical normalization could not be established, so EV/EBITDA stays BLOCKED.",
+      "base": "The market partially recovers from the 2026 trough in 2027, the rate environment improves gradually, export growth continues. No numerical base-case EV/EBITDA was produced either: averaging the FY2023-2025 EBITDA margins (22.6% / 14.7% / 9.2%) and applying them to current revenue might look like a 'normalized EBITDA' estimate, but those three figures come from three different secondary/analyst sources rather than the company's own primary reconciliation note, and sit on different TAS 29 purchasing-power bases; they cannot be reliably assembled into a single normalizedEbitda fact. The method therefore stays BLOCKED with MISSING:normalizedEbitda, MISSING:peerEvEbitda, MISSING:valuationNetDebt.",
+      "bull": "The policy rate falls quickly, farmer financing eases, domestic demand rebounds fast, and operating leverage improves margins quickly. These conditions are not assumed to occur. The bull case was not quantified either: EV/EBITDA multiples for global tractor makers (stockanalysis.com, observed 2026-11-06: CNH Industrial ~15x, Deere ~27x, AGCO ~10x) are available, but there is still no reliable normalizedEbitda to apply them to; multiplying an unsourced number would produce a bullish-looking but unsupported figure."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "KAP's own detailed query interface could not be reached in this session for the 29 July-29 October 2026 window (JS-rendered); a compilation site citing KAP was used instead. Disclosure IDs and direct KAP URLs could not be verified in this session. The 9M2026 results, the credit-rating downgrade, the routine maintenance shutdown, and the circuit breakers were reviewed. It was verified that the \"CMB trading ban\" notices do not concern TTRAK itself (see company.ownership). \"No other material disclosure\" cannot be concluded; coverage is PARTIAL.",
@@ -3847,17 +3685,17 @@
     "peers": "No direct, like-for-like multiple comparison with another brokerage was made this session. Its position within the İş Bankası group (see company.ownership) is the closest structural reference.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The BASE case was computed with the BOOK_ROE method (justified P/B = ROE/Ke): parent equity (TRY 35.25bn, 2026-06-30) ÷ shares (1.5bn) × (TTM sustainable ROE 21.38% ÷ CAPM cost of equity Ke 42.32%) = a fair value of roughly TRY 11.87/share, about -52.9% versus the current price (TRY 25.22). Ke coming out this high (42.32% = TR 10-year TL government bond yield 33.02% + Damodaran's Turkey equity risk premium 9.30%) is driven by Turkey's currently very high nominal interest-rate environment; under high inflation, a nominal CAPM can produce a low justified P/B even for a company with a healthy real ROE — this is a known limitation of the method, not by itself a verdict that the company is overvalued. A different ROE/Ke assumption would change the result; this is not a verified price target or a guarantee of returns.",
     "methods": {
       "pe": "A P/E was not computed for the broker profile (BOOK_ROE method); the company's own Finansal Oranlar tab shows P/E=5.1 for the 6/2026 period, but its full calculation trail (which earnings base, which price date) was not reproduced this session, so it was not included in this report's own figures (see Data gaps).",
       "ev": "EV/EBITDA does not apply to a brokerage (per CLAUDE.md, industrial-company logic is not applied to financial institutions); P/B and ROE were used instead (see valuation).",
       "dcf": "A multi-year commission income/trading volume projection, a suitable discount rate and terminal-value assumptions could not be sourced this session; there is no computed result."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "BEAR/BASE/BULL fair values can now be computed with the BOOK_ROE method: on top of the fixed parent equity (TRY 35.25bn) and share count (1.5bn), each case applies a different sourced sustainable-ROE assumption (from past fiscal years) and a CAPM-based cost-of-equity (Ke) assumption. All three cases come out below the current price (TRY 25.22); this is largely driven by Turkey's currently high nominal TL risk-free rate pushing Ke into the 39-45% range, not by itself a verdict that the company is overvalued (see valuation). The ROE/Ke assumptions are the researcher's choices, not a guaranteed price target.",
     "scenarioNotes": {
-      "bear": "If BIST trading volumes keep shrinking through H2 2026, core commission income could start declining too; without a one-off investment gain like 2025's, full-year 2026 profit could end up well below FY2025.",
-      "base": "Core commission income continues near the H1 2026 run-rate (roughly -4% y/y), and Q3 results (expected 2026-10-01 to 2026-11-09) come in consistent with the H1 trend.",
-      "bull": "BIST trading volumes recover and/or a new one-off investment/associate gain materializes, bringing full-year profit closer to the FY2025 level. This is not assumed to occur."
+      "bear": "The bear case uses the lowest annual ROE observed in its own period, FY2024 (20.69%, on ending equity), together with a cost of equity (Ke 45.32%) raised by an extra +3-point risk buffer on top of the CAPM base: the resulting fair value is roughly TRY 10.73/share, about -57.5% versus the current price (TRY 25.22). This is the assumption that 'commission income weakens and the market demands a higher risk premium'; it is not a guaranteed outcome.",
+      "base": "The base case uses the report's own TTM (Q3 2025-Q2 2026) ROE calculation (21.38%, on average equity) together with a CAPM-derived Ke (42.32% = TR 10-year bond yield 33.02% + Damodaran's Turkey equity risk premium 9.30%): the resulting fair value is roughly TRY 11.87/share, about -52.9% versus the current price (TRY 25.22). The high Ke stems from Turkey's current nominal rate environment (see valuation); this is not a verified price target.",
+      "bull": "The bull case uses the highest annual ROE among the last 3 full fiscal years, FY2023 (34.68%, on ending equity), together with a Ke lowered by a -3-point risk-premium reduction on top of the CAPM base (39.32%): the resulting fair value is roughly TRY 20.73/share, about -17.8% versus the current price (TRY 25.22) — even the optimistic case stays below the current price. This is the assumption that 'commission income returns to its 2023 level and the risk premium eases'; it is not a guaranteed outcome."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "KAP's own detailed query interface could not be reached this session; İş Yatırım's own Mali Tablolar/Finansal Oranlar tool (Matriks data, the company's own site) was used as the primary source. The H1 2026 results' KAP filing date (~12 August 2026) was corroborated by secondary news aggregators (bigpara, vkyanaliz), but the exact KAP filing number was not identified this session. That Q3 (9-month) results have not yet been published was confirmed via KAP's own filing-calendar page. \"No other material disclosure\" cannot be inferred; coverage is PARTIAL.",
@@ -3946,9 +3784,9 @@
     },
     "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
     "scenarioNotes": {
-      "bear": "If the year-end 2026 appraisal leaves ANKAmall's value flat or revises it down, the price stays above NAV; if the hotel renovation drags on, the income loss continues.",
-      "base": "The hotel returns to full capacity as planned, ANKAmall's rental income grows in line with inflation, and the return on the PROEN investment remains uncertain for now.",
-      "bull": "The year-end 2026 appraisal revises ANKAmall's value meaningfully upward (NAV grows, the premium shrinks) and the hotel returns to full capacity early. These conditions are not assumed to occur."
+      "bear": "No bear figure either: the netAssetValue input used for NAV (TRY28,214,691,004, 30.06.2026 solo equity) is flagged CONFLICT - this line is not an independent, debt/tax-adjusted portfolio NAV. The only complete ('unredacted') ANKAmall appraisal found (YGMT-1910181) dates to 2015-2016, far too old to bridge to today, and CP Ankara Oteli is carried at cost. This session located a 31 December 2025 KAP filing, 'Ankamall AVM ve CP Ankara Oteli Değerleme Raporu' (YGMT-2510222, Reel Gayrimenkul Değerleme A.Ş.), but could not verify whether its hotel section assigns a separate fair value, or whether any such figure feeds into the financial statements or the CMB portfolio-compliance NAV table. Applying an arbitrary bear multiple to an unverified adjustment could misstate the real downside, so no figure is given.",
+      "base": "The base case is blocked too: consolidated parentEquity (TRY28,109,740,451, 30.06.2026) sits very close to the solo netAssetValue (TRY28,214,691,004, ~0.4% apart, from consolidation scope), but that proximity does NOT prove either figure equals an independent, current, debt/tax-adjusted NAV: the investment-property line (TRY22,377,304,451) is carried at fair value based on the 31.12.2025 appraisal, but it excludes CP Ankara Oteli, which remains at cost. No separate, current, independent fair value for the hotel (or its bridge into equity) could be verified this session; presenting an unverified figure as the base case would be misleading.",
+      "bull": "No bull figure either: a genuine NAV premium or discount first requires a verified NAV that includes the hotel. Only solo/consolidated book equity is available; adding an arbitrary premium would produce an optimistic-looking number with no independent backing. This should be revisited if the year-end 2026 appraisal or a separated fair value for the hotel component is published."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "For the 29 July-29 October 2026 window, KAP's own detailed-query interface could not be reached in this session (JS rendering); a compilation site that cites KAP was used instead. Disclosure IDs and direct KAP URLs could not be verified this session. The PROEN capital increase, circuit breakers and the routine financial-statement/activity-report filings were reviewed. \"No other important disclosure\" cannot be concluded; coverage is PARTIAL.",
@@ -4036,17 +3874,17 @@
     "peers": "Same-basis H1 comparisons are used. SASA/PETKM are not treated as direct peers because of different products, capacity, debt and accounting effects. Reviewed issuer/analyst sources did not provide a comparable dated normalized peer set, so no arbitrary cheap-multiple threshold is used.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The BASE scenario was calculated with the EV/EBITDA method using a peer multiple (Toray Industries, Inc., TYO:3402, TTM EV/EBITDA 9.07x; StockAnalysis.com, 6 November 2026): fair value per share is approximately TRY7.91, about 20.8% below the current price (TRY9.99) — under this method the current price looks moderately rich. Inputs are FY2025 full-year EBITDA (TRY5.72963bn) and net financial debt (TRY21.225728bn) with the 31 December 2025 share count (3,885,000,000); all three are aligned to the same 31 December 2025 TAS29 basis. TTM EBITDA (likely higher given the H1 2026 recovery) was deliberately not used, because H1 2026 and FY2025 carry different TAS29 purchasing-power bases (06.2026 vs 12.2025) and bridging them without mixing bases was not done in this session. The result rests on the researcher's choice of peer company (Toray) (see scenarioNotes); it is not a verified target price or a sell/buy recommendation — a different peer or TTM EBITDA would change the result.",
     "methods": {
       "pe": "TTM profit = TRY4,729,672,000 + 2,050,357,000 − 280,865,000 = 6,499,164,000. Market cap TRY38,811,150,000 / earnings ≈5.97x. Consistent interim purchasing-power basis; consolidation and non-recurring effects are not normalized.",
       "ev": "FY2025 EBITDA is TRY5.72963bn and matching net debt TRY21.225728bn. EV proxy = current market cap 38.81115 + annual debt 21.225728 + non-controlling interests 0.913591 = TRY60.950469bn; about 10.64x. This is not TTM. NCI uses book value. Current debt of TRY23.10bn differs from the annual inputs. Management’s 2.79x denominator is insufficiently defined; our FY2025 net debt/EBITDA is 3.70x.",
       "dcf": "DCF requires normalized unlevered cash flow, WACC and a capex schedule. Doubling interim FCF and perpetuating it is inappropriate; a price target is not produced without those inputs."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "BEAR/BASE/BULL fair value per share can now be calculated with the EV/EBITDA method: a fixed FY2025 EBITDA (TRY5.72963bn, 31 December 2025 TAS29 basis) and matching net financial debt (TRY21.225728bn) are combined with a different multiple per scenario from a global acrylic/carbon-fibre peer set (SGL Carbon, Toray Industries, Hexcel Corporation; StockAnalysis.com, 5–6 November 2026). The pessimistic and base scenarios fall below the current price (TRY9.99); the optimistic scenario falls above it. Because of the peer-group choice and because the FY2025 basis does not yet reflect the H1 2026 cyclical recovery, this is not a guaranteed target price or a buy/sell signal.",
     "scenarioNotes": {
-      "bear": "ACN costs cannot be passed through, utilisation and margins fall, pressuring covenants and dividends.",
-      "base": "Management’s 15–18% margin and approximately USD1bn revenue guidance is achieved; cash after capex and interest still needs monitoring.",
-      "bull": "Advanced-material sales grow, debt declines and post-interest cash exceeds dividends; persistence is required for a stronger valuation case."
+      "bear": "The pessimistic (BEAR) scenario uses the TTM EV/EBITDA multiple (5.44x, StockAnalysis.com, 6 November 2026) of European carbon-fibre/graphite material producer SGL Carbon SE (ETR:SGL) — the lowest-multiple, cyclical, lower-margin end of the global carbon-fibre peer set. Valuing FY2025 EBITDA (TRY5.72963bn) at this multiple and subtracting net financial debt (TRY21.225728bn) gives a fair value per share of approximately TRY2.56 — about 74.4% below the current price (TRY9.99). This assumes AKSA would be valued like the lowest-multiple European carbon-fibre producer; it is not a guaranteed outcome.",
+      "base": "The BASE scenario uses the TTM EV/EBITDA multiple (9.07x, StockAnalysis.com, 6 November 2026) of Toray Industries, Inc. (TYO:3402) — the global peer closest to AKSA's business mix (acrylic fibre + carbon fibre, Note 1), and the world's largest carbon-fibre producer and a major acrylic-fibre producer. With the same EBITDA and net debt, fair value per share is approximately TRY7.91 — about 20.8% below the current price (TRY9.99). The calculation uses FY2025 full-year EBITDA; since H1 2026 EBITDA (TRY4.135978bn) is markedly higher than H1 2025 (TRY2.790664bn), normalized EBITDA and this result could be revised upward if the cyclical recovery continues. This is an assumption-based calculation, not a guaranteed target price.",
+      "bull": "The optimistic (BULL) scenario uses the TTM EV/EBITDA multiple (17.12x, StockAnalysis.com, 6 November 2026) of aerospace-focused advanced carbon-fibre composite producer Hexcel Corporation (NYSE:HXL) — the highest-multiple, growth/margin-premium end of this peer set. With the same EBITDA and net debt, fair value per share is approximately TRY19.79 — about 98.1% above the current price (TRY9.99). Hexcel's aircraft-composite-focused product mix is noted to carry a higher growth/margin profile than AKSA's more industrial acrylic/carbon-fibre mix; this scenario is therefore an upper bound and not a guaranteed outcome."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "Scan window: 1 August–31 October 2026, Europe/Istanbul. KAP company 840, issuer archive and attachments were accessed, but full detailed-query pagination was not verified: PARTIAL. August financials/governance updates and the September Tunisia investment were identified. KAP lists 1 October–9 November as the nine-month reporting window; H1 is the latest located filing. Absence of other material disclosures cannot be concluded.",
@@ -4172,9 +4010,9 @@
     },
     "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
     "scenarioNotes": {
-      "bear": "Property−20%:NAV TRY8.586bn or230.40 per share; additional zoning costs could reduce this further.",
-      "base": "Unchanged property:book NAV TRY11.131bn or298.71 per share. Holding value fixed does not verify that it is current.",
-      "bull": "Property+10%:NAV TRY12.404bn or332.86 per share. Fixed deferred tax may overstate this upside case."
+      "bear": "No bear figure either: whatever discount is applied, the starting point (TRY11.13bn book equity) is not an independent, current, debt/tax-adjusted NAV. Potential zoning-case penalties and remediation costs are not reflected in this equity proxy, so an arbitrary bear multiple could understate or overstate the real downside, which is why no figure is given.",
+      "base": "The base case is blocked too: book equity (TRY11.13bn, 30 June2026) was shown to match the FY2025 independent appraisal's final total (TRY10.80bn, 31 December2025) once both are restated to the same purchasing-power date (TAS29 + rollforward) — but that match does NOT prove book equity itself equals an independently adjusted NAV (discount/transaction-cost conventions included). The company has no separate 'Net Asset Value' table, and no current (H1/Q3 2026) independent appraisal has been published. Presenting an unverified figure as the base case would be misleading.",
+      "bull": "No bull figure either: a genuine NAV premium or discount requires a verified NAV first. Only book equity is available; adding an arbitrary premium would produce an optimistic-looking number with no independent backing."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "1 August–31 October2026, Europe/Istanbul; KAP1399 and issuer archive. KAP results were limited to an18 October cached view;21/26 October attachments were accessed through the issuer. Full pagination remains unverified:PARTIAL. H1 is the latest located financial report; issuer calendar expects Q3 on6 November, not an already published result.",
@@ -4303,17 +4141,17 @@
     "peers": "İş Yatırım’s roughly 5.4x P/E and 0.6x P/B are close to the recalculated ratios, not an independent fair value. The dated Vakıf report returned 404. No aligned mall-REIT peer set with consistent appraisal, tax and rent scope was established, so no target multiple is assigned.",
     "dividend": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "sustainability": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
-    "valuation": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
+    "valuation": "The 31.12.2025 NAV bridge is now fully built: independent portfolio appraisal (Panora mall TRY13,978,400,000 + land TRY2,296,320,000 =TRY16,274,720,000) + other assets TRY424,875,054 − total liabilities (including the land payable and deferred tax) TRY1,525,367,166 =adjustedNetAssetValueFY2025 TRY15,174,227,888, matching equityFY2025 TRY for TRY on the same date. The BASE case computes to 174.42/share using this figure and sharesFy2025End (87,000,000 shares, unchanged from H1 2026) — a 54.4% potential return vs. the 113 TRY price. The original 'netAssetValue' fact (30.06.2026 basis, no fresh appraisal cross-check) stays CONFLICT and was not used in the BASE calculation. BEAR/BULL remain BLOCKED because no sourced discount/premium differentiator was found (see scenarioNotes).",
     "methods": {
       "nav": "Property19,166,797,096 +other assets424,291,367 −all liabilities1,812,054,091 =TRY17,779,034,372. Property includes mall16,462,685,771 and land2,704,111,325. Debt and deferred tax are already deducted; market cap113×87m=TRY9.831bn.",
       "pe": "On the same interim purchasing-power basis, trailing profit=1,849,101,621 +424,346,001 −435,021,755 =TRY1,838,425,867. Market cap divided by this gives5.35x. Annual appraisal effects and monetary results remain included; this is not normalized rental earnings.",
       "dcf": "The2025 appraisal p.59 gives29% discounting and91% current occupancy; H1 note6 reports21% and97–98% assumptions. These conflicting sets are not combined. A fresh DCF needs current leases, occupancy, capex and discount rates; doubling H1 is no substitute."
     },
-    "scenarios": "Bull, base and bear conditions are not calculated fair values. Missing normalized earnings, discount rates or adjusted NAV block numerical scenario results.",
+    "scenarios": "The BASE case is now calculable: the single, dual-appraisal-verified NAV figure (adjustedNetAssetValueFY2025, 31.12.2025) is divided by the matching share count (sharesFy2025End). For BEAR/BULL, rather than multiplying that NAV by an arbitrary percentage, a sourced differentiator was sought; the appraisal's own occupancy-rate conflict (occupancyRateDisclosureConflict) does not provide an alternative TRY figure, and no company-specific, dated, reliable BIST REIT NAV discount/premium range could be established, so both scenarios stay BLOCKED.",
     "scenarioNotes": {
-      "bear": "Property−20%:NAV TRY13.946bn,160.30/share. Tax changes and development costs are not separately modeled.",
-      "base": "Unchanged property:NAV TRY17.779bn,204.36/share. Holding book value constant does not verify current value.",
-      "bull": "Property+10%:NAV TRY19.696bn,226.39/share. Holding tax fixed may overstate upside."
+      "bear": "BLOCKED: the appraisal's DCF table gives one final value for 31.12.2025 (mall TRY13,978,400,000); its own report shows an unresolved conflict between 91% (DCF) and the 97–98% occupancy assumption disclosed in FY2025 note 6 (occupancyRateDisclosureConflict), but no alternative TRY figure. The BIST REIT NAV discount/premium data found (İş GYO, Emlak Konut, Torunlar GYO) is company-specific and inconsistent across sources; with no applicable, dated, reliable sector range for PAGYO, no unsourced discount was applied.",
+      "base": "PASS: adjustedNetAssetValueFY2025 (TRY15,174,227,888, 31.12.2025; the single NAV figure cross-verified by two independent appraisals and the balance-sheet bridge, matching equityFY2025 TRY for TRY) / sharesFy2025End (87,000,000 shares; the KAP 1597263 dividend decision confirms no capital/share change between 2025-12-31 and 2026-06-30) =174.42/share. A 54.4% potential return vs. the 113 TRY price; not a definitive target price.",
+      "bull": "BLOCKED: symmetric with BEAR — with neither the appraisal's own sensitivity output nor a company-specific, dated, reliable BIST REIT NAV premium source available, NAV was not scaled up by an arbitrary percentage, so this case stays BLOCKED."
     },
     "technical": "The 1 November 2026 source audit supersedes the previous numerical narrative. Calculated cards use dated source inputs. Unreconciled facts and incomplete valuation methods remain blocked; primary-document reconciliation is not independent verification.",
     "scanLimit": "Window1 August–31 October2026, Europe/Istanbul. KAP company 1753 returned92 cached records ending26 October. Issuer August financials were reviewed; circuit-breaker/index/MKK records are third-party notices.27–31 October and full pagination remain unverified:PARTIAL. Latest located financials are H1;9 November is the Q3 deadline, not an actual publication.",
@@ -4407,5 +4245,197 @@
       "peRunRate": "If H2 repeats H1,9,831,000,000/(2×424,346,001)=11.58x; hypothetical, distinct from5.35x trailing P/E.",
       "roe": "1,838,425,867/((16,454,858,863+17,779,034,372)/2)×100=10.74% trailing ROE. Earnings include appraisal/monetary effects, not guaranteed sustainable return."
     }
+  },
+  "researchAnalysis": {
+    "title": "Analysis validation and data quality",
+    "blocked": "Calculation not verified",
+    "verified": "Reconciled to primary document; not independently confirmed",
+    "profile": "Business model profile",
+    "scale": "Unit scale",
+    "counts": "{{passed}} of {{total}} calculations passed data checks. This is not approval of the entire report.",
+    "reviewNotice": "Historical research snapshot. Earlier narrative and price commentary are retained for context; unverified figures are not current or audited results. Calculation-card validation takes precedence. Disclosure and long-term source reviews remain partial; this is not an independent audit.",
+    "auditTrail": "Inspect sources, periods and accounting bases",
+    "unverifiedInputs": "These are archived input records, not verified calculation inputs.",
+    "missingInput": "Missing/unverified input: {{input}}",
+    "scenarioUpside": "Potential return vs. market price: {{percent}}%",
+    "profiles": {
+      "REFINING": "Refining",
+      "AUTOMOTIVE": "Automotive",
+      "INDUSTRIAL": "Industrial",
+      "BANK": "Bank",
+      "REIT": "REIT",
+      "BROKER": "Broker",
+      "TECHNOLOGY": "Technology",
+      "CRYPTO": "Crypto",
+      "FUND": "Fund",
+      "UNSUPPORTED": "Unsupported profile"
+    },
+    "scope": {
+      "CONSOLIDATED": "Consolidated",
+      "SOLO": "Standalone",
+      "MARKET": "Market/share data"
+    },
+    "attribution": {
+      "GROUP": "Group total",
+      "PARENT": "Parent owners",
+      "SHARE": "Per share"
+    },
+    "earnings": {
+      "REPORTED": "Reported-period data; not actual TTM or normalized earnings.",
+      "ANNUALIZED_ESTIMATE": "Annualized estimate: six-month profit × 2; not actual trailing twelve months.",
+      "NORMALIZED": "Normalized data with explicit assumptions",
+      "TTM": "Trailing twelve months from four compatible quarters"
+    },
+    "issues": {
+      "UNVERIFIED": "Source or data basis is not verified.",
+      "CONFLICT": "Unresolved source conflict.",
+      "SOURCE": "Missing source/review evidence.",
+      "NUMBER": "Invalid numeric input.",
+      "PERIOD": "Incompatible financial periods.",
+      "SCALE": "Incompatible unit scale; explicit conversion required.",
+      "BASIS": "Incompatible consolidation, attribution or accounting basis.",
+      "CURRENCY": "Incompatible currencies.",
+      "SHARE_BASIS": "Unverified price, share or dividend basis.",
+      "MISSING": "Missing data or calculation contract.",
+      "DUPLICATE": "Duplicate fact identifier.",
+      "UNIT": "Units do not match the method.",
+      "ARITHMETIC": "Zero denominator or inadmissible numeric input.",
+      "NOT_APPLICABLE": "Method does not apply to this business model.",
+      "ASSUMPTIONS": "Sourced normalization/scenario assumptions are missing.",
+      "METHOD_PENDING": "This calculation strategy has not been implemented.",
+      "EVIDENCE": "Source provenance and document reconciliation evidence are missing.",
+      "RESTATEMENT": "Document evidence does not match the IAS 29 purchasing-power basis.",
+      "LOOKAHEAD": "Availability at the valuation date is not verified."
+    },
+    "historyIssues": {
+      "COVERAGE": "Independently verified trading-session, dividend and corporate-action coverage is missing. The earlier approximation is not displayed as a verified result.",
+      "UNVERIFIED": "Historical source review is partial.",
+      "CONFLICT": "Historical sources conflict.",
+      "LISTING": "Listing start is not verified in the model.",
+      "SHARE_BASIS": "Missing/incompatible price and dividend adjustment basis.",
+      "SOURCE": "Missing transaction sources.",
+      "FX": "Invalid transaction FX or observation date.",
+      "SESSIONS": "Prices do not match expected exchange sessions.",
+      "ACTIONS": "Unverified corporate action or adjustment factor.",
+      "DIVIDENDS": "Dividends do not match the reconciled event register.",
+      "PERIOD": "The cutoff is not a valid calendar month-end.",
+      "INDEPENDENCE": "Data coverage lacks independent source reconciliation."
+    },
+    "methods": {
+      "EV_EBITDA": "Normalized EV/EBITDA",
+      "FCF": "Free cash flow valuation",
+      "BOOK_ROE": "Book value and sustainable ROE",
+      "NAV": "Net asset value"
+    },
+    "inputs": {
+      "normalizedEbitda": "normalized EBITDA",
+      "peerEvEbitda": "comparable peer/historical EV/EBITDA",
+      "valuationNetDebt": "valuation net debt bridge",
+      "shares": "shares at valuation date",
+      "normalizedFcf": "normalized free cash flow",
+      "discountRate": "discount rate",
+      "terminalGrowth": "terminal growth",
+      "investmentPlan": "investment plan",
+      "parentEquity": "parent equity",
+      "sustainableRoe": "sustainable ROE",
+      "costOfEquity": "cost of equity",
+      "capitalAdequacy": "capital adequacy",
+      "netAssetValue": "net asset value",
+      "appraisalDate": "appraisal date"
+    },
+    "limits": {
+      "EV_EBITDA": "A single period of EBITDA does not establish a price target without normalizing operating margins, inventory effects and the sector cycle. Peer lease and debt definitions must be consistent.",
+      "FCF": "Current cash differences cannot be extrapolated without maintenance/growth capex and working-capital analysis.",
+      "BOOK_ROE": "Capital and asset quality matter; low P/B alone does not prove undervaluation.",
+      "NAV": "Appraisal dates, debt scope and asset liquidity affect the result."
+    },
+    "qualitySeparation": "Sources: {{sources}}. Section completion: partial. Independent report review: not performed. Calculation PASS only refers to arithmetic validation with the stated inputs.",
+    "priorities": "Strategy review priorities (financial results unchanged)",
+    "provenance": "Document origin / collection / method",
+    "sourceState": {
+      "PRIMARY_ONLY": "Primary document reconciled; no independent confirmation",
+      "INCOMPLETE": "Partially reconciled; missing sources"
+    },
+    "sections": {
+      "FINANCIALS": "Financial health",
+      "DIVIDEND": "Dividend sustainability",
+      "VALUATION": "Valuation",
+      "GROWTH": "Growth",
+      "RISK": "Long-term risks",
+      "TECHNICAL": "Technical analysis"
+    },
+    "reconciliation": {
+      "FINANCIALS": {
+        "title": "Official financial reconciliation",
+        "text": "The June 2026 consolidated statements use thousand TRY at June purchasing power. Financial debt is TRY 68.201bn; excluding blocked cash and deducting financial investments gives net debt of −TRY 102.232bn. Presentation cash uses a broader definition. Primary documents were reconciled; no second independent data source was established."
+      },
+      "HISTORY": {
+        "title": "Five-year comparison",
+        "text": "Official 2021–2025 reports were located. 2021 sales were TRY 150.972bn originally and TRY 152.492bn in the 2022 comparative. The 2023–2025 reports also use different year-end purchasing-power bases. Full scope and restatement reconciliation remains missing; no common-basis growth series was generated."
+      },
+      "DIVIDEND": {
+        "title": "Dividend sustainability",
+        "text": "KAP approved gross TRY 17.1268815/share and net TRY 14.5578492 with 15% withholding. Ex and payment dates differ; the schedule is not independent settlement evidence. H1 operating cash of TRY 132.366bn minus asset purchases of TRY 11.858bn equals TRY 120.508bn. Working capital contributed TRY 28.497bn and derivative cash classification needs normalization. This is not sustainable FCF. Full history and cash coverage are missing; 10/15/20-year backtests remain blocked."
+      },
+      "VALUATION": {
+        "title": "Why refining valuation remains open",
+        "text": "The October presentation reports H1 refining margin of USD 15.6/bbl and capex of USD 246m; annual capex of USD 700m is guidance. Inventory effects and exceptional margins are not normalized earnings. A sourced annual normalized EBITDA bridge, consistent net debt, current shares and peer multiple are missing. No bear/base/bull price was produced. Formula: (normalized EBITDA × multiple − net debt) / shares. FCF, BOOK_ROE, NAV and DDM implementations remain pending."
+      },
+      "TECHNICAL": {
+        "title": "Price and volume coverage",
+        "text": "Independently reconciled daily price, volume, corporate-action and FX data are missing. SMA20/50/200, RSI, MACD and support/resistance were not calculated. Prior price snapshots are not live prices."
+      },
+      "DISCLOSURES": {
+        "title": "Disclosure coverage limit",
+        "text": "Earlier KAP events and sources are retained. This review does not establish full coverage of 11–22 October 2026 or previously unread attachments. An issuer KAP filing and its investor presentation are not two independent economic sources."
+      }
+    },
+    "completion": {
+      "PARTIAL": "Partial",
+      "MISSING": "Missing",
+      "COMPLETE": "Complete"
+    },
+    "strategySelector": "Analysis presentation priority",
+    "strategyOptions": {
+      "REPORT": "Report strategies",
+      "DIVIDEND": "Dividend",
+      "GROWTH": "Growth",
+      "VALUE": "Value",
+      "LONG_TERM": "Long term"
+    },
+    "factTechnical": "Technical input validity",
+    "technicalValid": "Valid (not source verification)",
+    "factPrimary": "Primary source reconciliation",
+    "factIndependent": "Independent review",
+    "notReviewed": "Not reviewed",
+    "reconciliationV6": {
+      "FINANCIALS": {
+        "title": "Primary financial reconciliation",
+        "text": "14 key rows match KAP #1643116 and the issuer’s H1 2026 report. Thousand TRY was converted to TRY, preserving consolidated scope and 30 June 2026 purchasing power. Financial debt is TRY 68.20bn; net cash under the issuer’s note definition is TRY 102.23bn. TRY 28.49bn of total cash is blocked. This match is not an independent review."
+      },
+      "HISTORY": {
+        "title": "Five-year documents and basis differences",
+        "text": "Revenue, parent profit/equity, operating cash, debt and unblocked cash are available for 2021–2025. 2021 uses the restated 2022 column following the Entek combination. 2023–2025 annual changes use comparable columns in the same report. A single purchasing-power basis for all five years remains unavailable."
+      },
+      "DIVIDEND": {
+        "title": "Cash coverage and historical-data limits",
+        "text": "2025 operating cash of TRY 49.46bn less TRY 19.12bn capex leaves TRY 30.35bn, versus TRY 34.84bn cash dividends on the same basis. Operating cash covers distributions 1.42 times; the post-capex proxy does not fully cover them. This does not automatically predict a cut. The 2026 payment schedule and 2023 600% bonus record were located; full historical settlement, price and FX coverage remain unverified. None of the 10/15/20-year backtests is complete. MKK #1671443 records the second instalment as settled on 2 October 2026 at a gross rate of 674.69533% (TRY 6.7469533/share). This is custodian evidence for one event, not an independent review of the full history."
+      },
+      "VALUATION": {
+        "title": "Refining cycle; no target price",
+        "text": "The issuer reports H1 2026 net refining margin of USD 15.6/bbl, with Q1 at 9.4 and Q2 at 21.4. Such volatility cautions against treating one strong quarter as permanent earnings. Full-year margin guidance of USD 13–15/bbl and USD 700m capex are plans, not realized results. A verified multi-year normalized EBITDA bridge addressing inventory/working-capital effects and comparable peer multiples is still missing. No bear/base/bull price targets were produced."
+      },
+      "TECHNICAL": {
+        "title": "Price and volume verification missing",
+        "text": "The market series has not been reconciled with an official session calendar and independent raw price/volume history. TCMB indicative USD buying/selling rates on 9 October 2026 are 49.1274/49.2160; these are not market closing rates. One sample does not verify 20 years of FX. No new SMA20/50/200, RSI, MACD or support/resistance outputs were produced without validated inputs."
+      },
+      "DISCLOSURES": {
+        "title": "Disclosure scan partial",
+        "text": "The financial filing, dividend resolution and MKK bonus settlement were inspected as documents. The company report and KAP filing share the same issuer origin. Existing news and transition commentary are retained; exhaustive review of all filings and attachments is not claimed."
+      }
+    },
+    "historyTitle": "Annual financials and comparable changes",
+    "historyBasis": "Amounts are shown in TRY billions. 2021–2022 are nominal; 2023–2025 use each year-end purchasing power. Do not compare raw amounts directly. Annual-change cards use the restated previous year in the same report. 2021 includes the Entek restatement. Sources and exact inputs are available in card details.",
+    "inputStates": "Inputs: technical checks {{technical}}/{{total}}; primary-document reconciliation {{primary}}/{{total}}. Independent report review: not performed."
   }
 }

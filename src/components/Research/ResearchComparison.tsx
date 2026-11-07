@@ -50,7 +50,7 @@ export function ResearchComparison({
             <p className="mb-3 text-sm">
               {basis?.currency} · {basis?.accounting} ·{' '}
               {basis?.purchasingPowerDate ?? t('researchUx.comparison.nominal')}{' '}
-              · {t(`analysis.scope.${basis?.scope}`)}
+              · {t(`researchAnalysis.scope.${basis?.scope}`)}
             </p>
             {group.points.length >= 2 ? (
               <figure>

@@ -8948,6 +8948,174 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
         }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "id": "sharesFy2025End",
+        "value": "500000000",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "profitDistribution2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "500000000"
+        },
+        "locator": "KAP 1573202 Kar Payi Dagitim Islemlerine Iliskin Bildirim, 01.01.2025-31.12.2025 donemi kar payi dagitim tablosu: odenmis/cikarilmis sermaye 500.000.000 TL; donem icinde bedelsiz sermaye artisi/pay sayisi degisikligi yok (ayni pay sayisi 30.06.2026 H1 raporuyla da eslesiyor).",
+        "metricKey": "shares",
+        "evidence": {
+          "id": "ev-toaso-sharesFy2025End",
+          "sourceId": "profitDistribution2025",
+          "originId": "kap",
+          "collectionId": "toaso-valuation-scenarios-2026-11-05",
+          "reviewerId": "claude-toaso-valuation-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/tr/Bildirim/1573202",
+          "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye 500.000.000 TL satiri; bedelsiz pay dagitimi 0.",
+          "excerpt": "sharesFy2025End: 500000000 SHARES. KAP 1573202: Odenmis/cikarilmis sermaye 500.000.000 TL (01.01.2025-31.12.2025 kar payi dagitim tablosu); bedelsiz sermaye artisi/pay sayisi degisikligi yok.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-03-16",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["sharesFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "id": "peerEvEbitdaBear",
+        "value": "6.3",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "automotiveSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "Siblis Research otomotiv sektoru EV/EBITDA tablosu, Avrupa bolgesel medyani (30 Eylul 2026): 6.3x. Tofas'in Fiat/Stellantis lisansli Avrupa odakli uretim modeline en yakin bolgesel kirilim; kotumser senaryoda kullanilir.",
+        "metricKey": "peerEvEbitda",
+        "evidence": {
+          "id": "ev-toaso-peerEvEbitdaBear",
+          "sourceId": "automotiveSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "toaso-valuation-scenarios-2026-11-05",
+          "reviewerId": "claude-toaso-valuation-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+          "locator": "\"Worldwide, the median listed automotive company was valued at 8.5x EBITDA ... at 30 September 2026. By region, the median was 6.6x in the United States, 6.3x in Europe, 4.9x in Japan and 11.8x in Emerging Asia.\" - Avrupa kirilimi.",
+          "excerpt": "peerEvEbitdaBear: 6.3 MULTIPLE. Siblis Research, otomotiv sektoru Avrupa bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBear"],
+          "from": "2026-09-30",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "id": "peerEvEbitdaBase",
+        "value": "8.5",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "automotiveSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "Siblis Research otomotiv sektoru EV/EBITDA tablosu, dunya capinda medyan (30 Eylul 2026, 426 sirket): 8.5x. Baz senaryoda kullanilir.",
+        "metricKey": "peerEvEbitda",
+        "evidence": {
+          "id": "ev-toaso-peerEvEbitdaBase",
+          "sourceId": "automotiveSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "toaso-valuation-scenarios-2026-11-05",
+          "reviewerId": "claude-toaso-valuation-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+          "locator": "\"Worldwide, the median listed automotive company was valued at 8.5x EBITDA ... at 30 September 2026.\" - dunya capinda medyan.",
+          "excerpt": "peerEvEbitdaBase: 8.5 MULTIPLE. Siblis Research, otomotiv sektoru dunya capinda medyan EV/EBITDA, 30 Eylul 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBase"],
+          "from": "2026-09-30",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "id": "peerEvEbitdaBull",
+        "value": "11.8",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "automotiveSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "locator": "Siblis Research otomotiv sektoru EV/EBITDA tablosu, Gelisen Asya bolgesel medyani (30 Eylul 2026): 11.8x. Iyimser senaryoda buyume primi tasiyan kirilim olarak kullanilir.",
+        "metricKey": "peerEvEbitda",
+        "evidence": {
+          "id": "ev-toaso-peerEvEbitdaBull",
+          "sourceId": "automotiveSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "toaso-valuation-scenarios-2026-11-05",
+          "reviewerId": "claude-toaso-valuation-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+          "locator": "\"the median was ... 11.8x in Emerging Asia.\" - Gelisen Asya kirilimi, 30 Eylul 2026.",
+          "excerpt": "peerEvEbitdaBull: 11.8 MULTIPLE. Siblis Research, otomotiv sektoru Gelisen Asya bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBull"],
+          "from": "2026-09-30",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
       }
     ],
     "contracts": [
@@ -9472,6 +9640,24 @@
           "locator": "Konsolide finansal tablolar (TMS29 ilk uygulama yili, 31.12.2023 satin alma gucu)",
           "observedAt": "2026-11-03",
           "publishedAt": "2024-02-13"
+        },
+        {
+          "id": "profitDistribution2025",
+          "title": "KAP - Tofas Kar Payi Dagitim Islemlerine Iliskin Bildirim (1573202)",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1573202",
+          "period": "2025-12-31",
+          "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye ve bedelsiz pay dagitimi satiri",
+          "observedAt": "2026-11-05",
+          "publishedAt": "2026-03-16"
+        },
+        {
+          "id": "automotiveSectorMultiples",
+          "title": "Siblis Research - Autos & Components Valuation Multiples",
+          "url": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+          "period": "2026-09-30",
+          "locator": "Dunya capinda listelenmis otomotiv sirketleri icin EV/EBITDA medyani ve bolgesel kirilim (ABD, Avrupa, Japonya, Gelisen Asya), 30 Eylul 2026 degerleme tarihi",
+          "observedAt": "2026-11-05",
+          "publishedAt": null
         }
       ],
       "facts": [
@@ -9688,6 +9874,394 @@
       "narrativeStale": true
     },
     "revision": 4,
+    "valuationScenarios": [
+      {
+        "methodId": "EV_EBITDA",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBear"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "500000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "10000000000",
+                  "rationale": "FY2025 FAVOK (10,0 milyar TL); uc senaryoda sabit, FY2025 net borc ve pay sayisi ile ayni 2025-12-31 bazina esitlendi.",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "33701681000",
+                  "rationale": "FY2025 sonu net finansal borc (33.701.681.000 TL); uc senaryoda sabit, FAVOK ile ayni 2025-12-31 bazi ve ayni kaynak (fy2025AnnualReport).",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "500000000",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayisi; KAP kar payi dagitim bildirimiyle dogrulandi, FAVOK/net borc ile ayni donem bazinda - mevcut 30.06.2026 tarihli 'shares' fact'inin tarih uyusmazligini bu senaryoda cozer.",
+                  "evidence": {
+                    "id": "ev-toaso-sharesFy2025End",
+                    "sourceId": "profitDistribution2025",
+                    "originId": "kap",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/tr/Bildirim/1573202",
+                    "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye 500.000.000 TL satiri; bedelsiz pay dagitimi 0.",
+                    "excerpt": "sharesFy2025End: 500000000 SHARES. KAP 1573202: Odenmis/cikarilmis sermaye 500.000.000 TL (01.01.2025-31.12.2025 kar payi dagitim tablosu); bedelsiz sermaye artisi/pay sayisi degisikligi yok.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-03-16",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBear",
+                  "value": "6.3",
+                  "rationale": "Siblis Research otomotiv sektoru Avrupa bolgesel EV/FAVOK medyani (6,3x, 30 Eylul 2026); Tofas'in Fiat/Stellantis lisansli Avrupa odakli uretim modeline en yakin bolgesel kirilim, kotumser senaryo carpani.",
+                  "evidence": {
+                    "id": "ev-toaso-peerEvEbitdaBear",
+                    "sourceId": "automotiveSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+                    "locator": "\"Worldwide, the median listed automotive company was valued at 8.5x EBITDA ... at 30 September 2026. By region, the median was 6.6x in the United States, 6.3x in Europe, 4.9x in Japan and 11.8x in Emerging Asia.\" - Avrupa kirilimi.",
+                    "excerpt": "peerEvEbitdaBear: 6.3 MULTIPLE. Siblis Research, otomotiv sektoru Avrupa bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBear"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBase"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "500000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "10000000000",
+                  "rationale": "FY2025 FAVOK (10,0 milyar TL); uc senaryoda sabit, FY2025 net borc ve pay sayisi ile ayni 2025-12-31 bazina esitlendi.",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "33701681000",
+                  "rationale": "FY2025 sonu net finansal borc (33.701.681.000 TL); uc senaryoda sabit, FAVOK ile ayni 2025-12-31 bazi ve ayni kaynak (fy2025AnnualReport).",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "500000000",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayisi; KAP kar payi dagitim bildirimiyle dogrulandi, FAVOK/net borc ile ayni donem bazinda - mevcut 30.06.2026 tarihli 'shares' fact'inin tarih uyusmazligini bu senaryoda cozer.",
+                  "evidence": {
+                    "id": "ev-toaso-sharesFy2025End",
+                    "sourceId": "profitDistribution2025",
+                    "originId": "kap",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/tr/Bildirim/1573202",
+                    "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye 500.000.000 TL satiri; bedelsiz pay dagitimi 0.",
+                    "excerpt": "sharesFy2025End: 500000000 SHARES. KAP 1573202: Odenmis/cikarilmis sermaye 500.000.000 TL (01.01.2025-31.12.2025 kar payi dagitim tablosu); bedelsiz sermaye artisi/pay sayisi degisikligi yok.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-03-16",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBase",
+                  "value": "8.5",
+                  "rationale": "Siblis Research otomotiv sektoru dunya capinda medyan EV/FAVOK (8,5x, 30 Eylul 2026, 426 sirket); baz senaryo carpani.",
+                  "evidence": {
+                    "id": "ev-toaso-peerEvEbitdaBase",
+                    "sourceId": "automotiveSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+                    "locator": "\"Worldwide, the median listed automotive company was valued at 8.5x EBITDA ... at 30 September 2026.\" - dunya capinda medyan.",
+                    "excerpt": "peerEvEbitdaBase: 8.5 MULTIPLE. Siblis Research, otomotiv sektoru dunya capinda medyan EV/EBITDA, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBase"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBull"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "500000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "10000000000",
+                  "rationale": "FY2025 FAVOK (10,0 milyar TL); uc senaryoda sabit, FY2025 net borc ve pay sayisi ile ayni 2025-12-31 bazina esitlendi.",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "33701681000",
+                  "rationale": "FY2025 sonu net finansal borc (33.701.681.000 TL); uc senaryoda sabit, FAVOK ile ayni 2025-12-31 bazi ve ayni kaynak (fy2025AnnualReport).",
+                  "evidence": {
+                    "id": "ev-toaso-fy2025-annual",
+                    "sourceId": "fy2025AnnualReport",
+                    "originId": "tofas-ir-site",
+                    "collectionId": "toaso-financials-2026",
+                    "reviewerId": "claude-toaso-research-20261031",
+                    "ancestorIds": [],
+                    "documentUrl": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+                    "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu (s.161-163) ve Finansal Performans Gostergeleri ozet tablosu",
+                    "excerpt": "Konsolide finansal durum tablosu 31 Aralik 2025/2024 (bin TL, 31.12.2025 satin alma gucu): Toplam varliklar 173.524.206/119.975.884; Uzun vadeli borclanmalarin kisa vadeli kismi 16.253.582/14.315.835 (ayrica kisa vadeli borclanma kalemi yok, 0); Uzun vadeli borclanmalar 37.415.420/22.204.378; Toplam ozkaynaklar 60.031.247/61.652.399; Nakit ve nakit benzerleri 19.967.321/25.806.496; Net donem kari (ana ortaklik, tek kontrol gucu olmayan pay yok) 8.353.933/6.834.463; Hasilat 319.413.508/157.419.715. Finansal Performans Gostergeleri (milyar TL, yonetim kurulu faaliyet raporu ozet tablosu, 1 ondalik hassasiyetle): FAVOK 2024: 12,1 / 2025: 10,0 (-%17,7).",
+                    "checkedAt": "2026-10-31",
+                    "publishedAt": "2026-02-17",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": [
+                      "ebitdaFy2025",
+                      "netFinancialDebtFy2025End",
+                      "debtShortFy2025End",
+                      "debtLongFy2025End",
+                      "cashFy2025End"
+                    ],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "500000000",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayisi; KAP kar payi dagitim bildirimiyle dogrulandi, FAVOK/net borc ile ayni donem bazinda - mevcut 30.06.2026 tarihli 'shares' fact'inin tarih uyusmazligini bu senaryoda cozer.",
+                  "evidence": {
+                    "id": "ev-toaso-sharesFy2025End",
+                    "sourceId": "profitDistribution2025",
+                    "originId": "kap",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/tr/Bildirim/1573202",
+                    "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye 500.000.000 TL satiri; bedelsiz pay dagitimi 0.",
+                    "excerpt": "sharesFy2025End: 500000000 SHARES. KAP 1573202: Odenmis/cikarilmis sermaye 500.000.000 TL (01.01.2025-31.12.2025 kar payi dagitim tablosu); bedelsiz sermaye artisi/pay sayisi degisikligi yok.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-03-16",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBull",
+                  "value": "11.8",
+                  "rationale": "Siblis Research otomotiv sektoru Gelisen Asya bolgesel EV/FAVOK medyani (11,8x, 30 Eylul 2026); buyume primi tasiyan iyimser senaryo carpani.",
+                  "evidence": {
+                    "id": "ev-toaso-peerEvEbitdaBull",
+                    "sourceId": "automotiveSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "toaso-valuation-scenarios-2026-11-05",
+                    "reviewerId": "claude-toaso-valuation-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+                    "locator": "\"the median was ... 11.8x in Emerging Asia.\" - Gelisen Asya kirilimi, 30 Eylul 2026.",
+                    "excerpt": "peerEvEbitdaBull: 11.8 MULTIPLE. Siblis Research, otomotiv sektoru Gelisen Asya bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBull"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
     "financialHistory": [
       {
         "year": "2021",

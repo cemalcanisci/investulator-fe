@@ -54,7 +54,7 @@ export function FinancialHistory({
   );
   return (
     <div className="space-y-4">
-      <h3 className="font-semibold">{t('analysis.historyTitle')}</h3>
+      <h3 className="font-semibold">{t('researchAnalysis.historyTitle')}</h3>
       <p className="rounded-lg bg-warn-soft p-4 text-sm leading-7">
         {t('researchUx.comparison.basisNotice')}
       </p>

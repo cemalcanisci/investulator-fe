@@ -3269,6 +3269,48 @@
         }
       },
       {
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "id": "sharesFy2025End",
+        "value": "87000000",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "distribution",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "87000000"
+        },
+        "locator": "KAP 1597263 (24.04.2026, düzeltilmiş 2025 kâr payı dağıtım kararı): ödenmiş/çıkarılmış sermaye 87.000.000 TL, 87.000.000 pay (1 TL nominal); bedelsiz pay dağıtımı 0 TL — dönem içinde (31.12.2025 dahil) sermaye/pay sayısı değişikliği yok. H1 2026 'shares' fact'iyle (87.000.000) aynı pay sayısını doğrular; 2025-12-31 ile 2026-06-30 arasında ek sermaye hareketi bu kaynakta görülmedi.",
+        "evidence": {
+          "id": "ev-pagyo-sharesFy2025End",
+          "sourceId": "distribution",
+          "originId": "kap",
+          "collectionId": "pagyo-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-pagyo-valuation-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://kap.org.tr/tr/Bildirim/1597263",
+          "locator": "KAP 1597263, 24.04.2026, 2025 kâr payı dağıtım kararı: Ödenmiş/çıkarılmış sermaye 87.000.000 TL, 87.000.000 pay (1 TL nominal); bedelsiz sermaye artışı/pay dağıtımı 0 TL.",
+          "excerpt": "sharesFy2025End: 87000000 SHARES. KAP 1597263: Ödenmiş/çıkarılmış sermaye 87.000.000 TL, 87.000.000 pay (1 TL nominal), bedelsiz pay dağıtımı 0; dönem içinde sermaye/pay sayısı değişikliği yok.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-04-24",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["sharesFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "shares"
+      },
+      {
         "id": "occupancyRateDisclosureConflict",
         "value": "91",
         "unit": "PERCENT",
@@ -4401,6 +4443,116 @@
           "adjustedNetAssetValueFY2025"
         ],
         "calculationIds": []
+      }
+    ],
+    "valuationScenarios": [
+      {
+        "methodId": "NAV",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "netAssetValue": "adjustedNetAssetValueFY2025",
+              "shares": "sharesFy2025End"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-12-31",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "87000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": []
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "netAssetValue": "adjustedNetAssetValueFY2025",
+              "shares": "sharesFy2025End"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-12-31",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "87000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "adjustedNetAssetValueFY2025",
+                  "value": "15174227888",
+                  "rationale": "PAGYO için TEK çözülmüş NAD rakamı: bağımsız portföy ekspertizi (Panora AVM 13.978.400.000 TL + arsa 2.296.320.000 TL = 16.274.720.000 TL) + diğer varlıklar 424.875.054 TL − toplam yükümlülük (arsa ticari borcu + ertelenmiş vergi dahil) 1.525.367.166 TL = 15.174.227.888 TL; equityFY2025 ile TL'si TL'sine örtüşür (31.12.2025). BASE senaryosunda sabit kullanılır; kaynaksız bir iskonto/primle BEAR/BULL için çarpılmaz — bkz. scenarioNotes.",
+                  "evidence": {
+                    "id": "ev-pagyo-scenario-base-nav",
+                    "sourceId": "fy",
+                    "originId": "panora-issuer",
+                    "collectionId": "pagyo-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-pagyo-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.panoragyo.com/storage/pages/March2026/panora-gyo-31-12-2025-konsolide-rapor-final-g.pdf",
+                    "locator": "FY2025 Not 6 gerçeğe uygun değer tablosu + NAD köprüsü (bkz. adjustedNetAssetValueFY2025 fact'i): 15.174.227.888 TL, 31.12.2025.",
+                    "excerpt": "adjustedNetAssetValueFY2025: 15174227888 TRY, 31.12.2025; iki bağımsız ekspertiz (Panora AVM + arsa) ve bilanço Not 6 ile çapraz doğrulanmış tek NAD rakamı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-03-10",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["adjustedNetAssetValueFY2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "87000000",
+                  "rationale": "KAP 1597263 (24.04.2026) 2025 kâr payı dağıtım kararı, 31.12.2025 ödenmiş sermaye/pay sayısının (87.000.000) H1 2026 ile aynı olduğunu ve dönem içinde bedelsiz pay dağıtımı olmadığını doğrular; BASE senaryosunda sabit kullanılır.",
+                  "evidence": {
+                    "id": "ev-pagyo-scenario-base-shares",
+                    "sourceId": "distribution",
+                    "originId": "kap",
+                    "collectionId": "pagyo-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-pagyo-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://kap.org.tr/tr/Bildirim/1597263",
+                    "locator": "KAP 1597263, 24.04.2026, 2025 kâr payı dağıtım kararı: 87.000.000 TL ödenmiş sermaye, 87.000.000 pay; bedelsiz dağıtım 0.",
+                    "excerpt": "sharesFy2025End: 87000000 SHARES, 31.12.2025; H1 2026 ile aynı, dönem içinde sermaye hareketi yok.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-04-24",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "netAssetValue": "adjustedNetAssetValueFY2025",
+              "shares": "sharesFy2025End"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-12-31",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "87000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": []
+            }
+          }
+        ]
       }
     ],
     "previousVersion": "pagyo-2026-11-02-v4",

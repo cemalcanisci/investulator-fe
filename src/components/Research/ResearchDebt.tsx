@@ -60,7 +60,7 @@ export function ResearchDebt({
                 <span className="font-semibold">{currency}</span>
                 <span className="mt-2 block text-lg font-medium tabular-nums">
                   <span className="text-xs text-fg-2">
-                    {t('analysis.unverifiedInputs')}
+                    {t('researchAnalysis.unverifiedInputs')}
                   </span>
                 </span>
               </summary>

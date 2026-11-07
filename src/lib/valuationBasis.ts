@@ -1,29 +1,13 @@
 import type { FinancialFact } from '@/domain/analysis';
-import type { SourceEvidence } from '@/domain/evidence';
+import type {
+  ValuationAssumption,
+  ValuationInputRule,
+  ValuationScenario,
+} from '@/domain/valuation';
 import { validDate } from '@/lib/analysisValidation';
 import { validEvidence } from '@/lib/sourceEvidence';
 
-export interface ValuationInputRule {
-  readonly id: string;
-  readonly role: 'FLOW' | 'STOCK' | 'MULTIPLE' | 'SHARES';
-}
-export interface ValuationAssumption {
-  readonly inputId: string;
-  readonly value: string;
-  readonly rationale: string;
-  readonly evidence: SourceEvidence;
-}
-export interface ValuationScenario {
-  readonly id: 'BEAR' | 'BASE' | 'BULL';
-  readonly valuationAt: string;
-  readonly knowledgeAt: string;
-  readonly flowStart: string;
-  readonly flowEnd: string;
-  readonly stockAt: string;
-  readonly shareBasis: string;
-  readonly purchasingPowerDate: string | null;
-  readonly assumptions: readonly ValuationAssumption[];
-}
+export type { ValuationAssumption, ValuationInputRule, ValuationScenario };
 
 /** Date bridges require a documented assumption for each input, not equal flow/stock periods. */
 export function valuationBasisIssues(

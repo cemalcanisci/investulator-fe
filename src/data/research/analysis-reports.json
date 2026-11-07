@@ -3321,6 +3321,258 @@
         },
         "metricKey": "capex",
         "comparisonKey": "capex"
+      },
+      {
+        "id": "ebitdaFy2025",
+        "value": "56272759000",
+        "unit": "TRY",
+        "period": "2025-01-01 / 2025-12-31",
+        "sourceId": "annual2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "PDF s.27, Not 4 (Bölüm raporlaması, konsolide toplam esas faaliyet kârı 41.646.897 bin TL) + PDF s.47-48, Not 21 (Niteliğine göre giderler: amortisman ve itfa payı toplamı 14.625.862 bin TL = 11.434.401 SMM + 1.572.634 genel yönetim + 1.357.508 pazarlama + 261.319 Ar-Ge). FAVÖK = esas faaliyet kârı + amortisman/itfa = 56.272.759 bin TL. Şirketin yatırımcı sunumundaki kendi 'FAVÖK' KPI'sı değildir (o sunum bu oturumda metin olarak okunamadı); bu rapor tarafından iki dipnottan türetilmiş normalize FAVÖK'tür.",
+        "evidence": {
+          "id": "ev-tuprs-ebitdaFy2025",
+          "sourceId": "annual2025",
+          "originId": "tupras-issuer",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": [],
+          "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+          "locator": "PDF s.27, Not 4 (segment raporlaması, konsolide toplam sütunu); PDF s.47-48, Not 21 (niteliğine göre giderler).",
+          "excerpt": "ebitdaFy2025: 56272759000 TRY. Note 4 segment reporting, consolidated total, 1 January-31 December 2025: Operating profit (loss) 41,646,897 thousand TRY. Note 21 expenses by nature, depreciation and amortization 1 January-31 December 2025: 14,625,862 thousand TRY (cost of sales 11,434,401 + general administrative expenses 1,572,634 + marketing expenses 1,357,508 + research and development expenses 261,319). FAVÖK = 41,646,897 + 14,625,862 = 56,272,759 thousand TRY, TAS29 31.12.2025 satın alma gücü bazında.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["ebitdaFy2025"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "ebitda"
+      },
+      {
+        "id": "netFinancialDebtFy2025End",
+        "value": "-41455028000",
+        "unit": "TRY",
+        "period": "2025-12-31",
+        "sourceId": "annual2025",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "PDF s.63-64, Not 29 (Sermaye risk yönetimi, 'gearing ratio' tablosu): Toplam finansal yükümlülük (Not 6) 50.249.485 − nakit ve nakit benzerleri (Not 5) 91.704.478 − finansal yatırımlar 35 = net finansal yükümlülük (41.455.028) bin TL; negatif işaret net nakit pozisyonunu gösterir. H1 2026 'netFinancialDebt' fact'inden farklı bir dipnot alt tablosu (daha dar kapsam: borç tahakkukları/doğal korunma dahil değildir); bu nedenle aynı fact yeniden kullanılmadı, FY2025 sonu için ayrı ve kendi içinde tutarlı bir fact oluşturuldu.",
+        "evidence": {
+          "id": "ev-tuprs-netFinancialDebtFy2025End",
+          "sourceId": "annual2025",
+          "originId": "tupras-issuer",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": [],
+          "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+          "locator": "PDF s.63-64, Not 29, Capital risk management / gearing ratio table.",
+          "excerpt": "netFinancialDebtFy2025End: -41455028000 TRY. Note 29, capital risk management, as of 31 December 2025: Total financial liabilities (Note 6) 50,249,485; Less: cash and cash equivalents (Note 5) (91,704,478); Less: financial investments (35); Net financial liabilities (41,455,028) thousand TRY — negative sign denotes a net cash position, TAS29 31.12.2025 satın alma gücü bazında.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-02-06",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["netFinancialDebtFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": "2025-12-31"
+        },
+        "metricKey": "netFinancialDebt"
+      },
+      {
+        "id": "sharesFy2025End",
+        "value": "1926795598",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "dividend",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "post-2023-capital"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "FY2025 konsolide özkaynak değişim tablosu (annual2025, PDF s.5): 'Share capital' 1 Ocak 2025 → 31 Aralık 2025 boyunca 1.926.796 bin TL olarak sabit kalır (dönem içi 'Transfers'/'Dividends paid' sütunları sermaye için boş/sıfır); KAP 1570793 (11.03.2026) aynı sermayenin tam hassasiyetli pay adedini (1.926.795.598, nominal 1 TL/pay) teyit eder. Mevcut 'shares' fact'i (2026-03-11 tarihli) ile aynı post-2023-capital bazı; FY2025 sonu için tarih köprüsü kurar.",
+        "evidence": {
+          "id": "ev-tuprs-sharesFy2025End",
+          "sourceId": "dividend",
+          "originId": "tupras-issuer",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": ["audit-TUPRS-shares"],
+          "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+          "locator": "KAP 1570793: ödenmiş sermaye 1.926.795.598 TL, nominal 1 TL/pay; annual2025 (PDF s.5) özkaynak değişim tablosunda 'Share capital' 31.12.2024 → 31.12.2025 arası değişmeden 1.926.796 bin TL olarak görünür.",
+          "excerpt": "sharesFy2025End: 1926795598 SHARES. Consolidated statement of changes in equity (annual2025): Share Capital column reads 1,926,796 (thousand TRY) at both 1 January 2025 and 31 December 2025, with zero movement in between (Transfers/Dividends paid/etc. all nil for that column). KAP #1570793 (11.03.2026) states the exact paid-in capital as TRY1,926,795,598 at TRY1.00 nominal per share, consistent with the rounded FY2025 figure; no capital increase/bonus issue occurred between 31.12.2025 and 11.03.2026 per the same notice.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-03-11",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["sharesFy2025End"],
+          "from": "2025-01-01",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "shares"
+      },
+      {
+        "id": "peerEvEbitdaBear",
+        "value": "4.71",
+        "unit": "MULTIPLE",
+        "period": "2026-11-07",
+        "sourceId": "peerVlo",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-07",
+          "end": "2026-11-07",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "stockanalysis.com, Valero Energy (VLO) istatistik sayfası, EV/EBITDA (ttm) 4.71x, 'Last updated: Nov 7, 2026'. ABD'li büyük bağımsız rafineriler arasında en düşük çarpanlı isim; kötümser senaryoda kullanılır.",
+        "evidence": {
+          "id": "ev-tuprs-peerEvEbitdaBear",
+          "sourceId": "peerVlo",
+          "originId": "stockanalysis",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/stocks/vlo/statistics/",
+          "locator": "Valero Energy (VLO), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+          "excerpt": "peerEvEbitdaBear: 4.71 MULTIPLE. Valero Energy Corporation (VLO), EV/EBITDA (ttm) = 4.71x; 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) en düşük çarpan; kötümser senaryo girdisi.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-11-07",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBear"],
+          "from": "2026-11-07",
+          "to": "2026-11-07",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "peerEvEbitda"
+      },
+      {
+        "id": "peerEvEbitdaBase",
+        "value": "5.15",
+        "unit": "MULTIPLE",
+        "period": "2026-11-07",
+        "sourceId": "peerMpc",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-07",
+          "end": "2026-11-07",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "stockanalysis.com, Marathon Petroleum (MPC) istatistik sayfası, EV/EBITDA (ttm) 5.15x, 'Last updated: Nov 7, 2026'. Üç ABD emsali (VLO 4.71x, MPC 5.15x, PSX 7.06x) arasında ortanca; baz senaryoda kullanılır.",
+        "evidence": {
+          "id": "ev-tuprs-peerEvEbitdaBase",
+          "sourceId": "peerMpc",
+          "originId": "stockanalysis",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/stocks/mpc/statistics/",
+          "locator": "Marathon Petroleum (MPC), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+          "excerpt": "peerEvEbitdaBase: 5.15 MULTIPLE. Marathon Petroleum Corporation (MPC), EV/EBITDA (ttm) = 5.15x; 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) ortanca çarpan; baz senaryo girdisi.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-11-07",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBase"],
+          "from": "2026-11-07",
+          "to": "2026-11-07",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "peerEvEbitda"
+      },
+      {
+        "id": "peerEvEbitdaBull",
+        "value": "7.06",
+        "unit": "MULTIPLE",
+        "period": "2026-11-07",
+        "sourceId": "peerPsx",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-07",
+          "end": "2026-11-07",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-07",
+        "locator": "stockanalysis.com, Phillips 66 (PSX) istatistik sayfası, EV/EBITDA (ttm) 7.06x, 'Data Source: S&P Global Market Intelligence. Last updated: Nov 7, 2026'. Üç ABD emsali arasında en yüksek çarpan; iyimser senaryoda kullanılır.",
+        "evidence": {
+          "id": "ev-tuprs-peerEvEbitdaBull",
+          "sourceId": "peerPsx",
+          "originId": "stockanalysis",
+          "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+          "reviewerId": "claude-tuprs-valuation-20261107",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/stocks/psx/statistics/",
+          "locator": "Phillips 66 (PSX), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+          "excerpt": "peerEvEbitdaBull: 7.06 MULTIPLE. Phillips 66 (PSX), EV/EBITDA (ttm) = 7.06x; Data Source: S&P Global Market Intelligence, 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) en yüksek çarpan; iyimser senaryo girdisi.",
+          "checkedAt": "2026-11-07",
+          "publishedAt": "2026-11-07",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBull"],
+          "from": "2026-11-07",
+          "to": "2026-11-07",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "peerEvEbitda"
       }
     ],
     "contracts": [
@@ -4047,6 +4299,33 @@
           "publishedAt": "2025-02-06",
           "period": "2024 FY / 2023 FY (TAS29 31.12.2024)",
           "locator": "Konsolide nakit akış tablosu, s.12"
+        },
+        {
+          "id": "peerVlo",
+          "title": "stockanalysis.com · Valero Energy (VLO)",
+          "url": "https://stockanalysis.com/stocks/vlo/statistics/",
+          "publishedAt": null,
+          "period": "2026-11-07",
+          "locator": "Statistics / Enterprise Valuation, EV/EBITDA (ttm)",
+          "observedAt": "2026-11-07"
+        },
+        {
+          "id": "peerMpc",
+          "title": "stockanalysis.com · Marathon Petroleum (MPC)",
+          "url": "https://stockanalysis.com/stocks/mpc/statistics/",
+          "publishedAt": null,
+          "period": "2026-11-07",
+          "locator": "Statistics / Enterprise Valuation, EV/EBITDA (ttm)",
+          "observedAt": "2026-11-07"
+        },
+        {
+          "id": "peerPsx",
+          "title": "stockanalysis.com · Phillips 66 (PSX)",
+          "url": "https://stockanalysis.com/stocks/psx/statistics/",
+          "publishedAt": null,
+          "period": "2026-11-07",
+          "locator": "Statistics / Enterprise Valuation, EV/EBITDA (ttm); Data Source: S&P Global Market Intelligence",
+          "observedAt": "2026-11-07"
         }
       ],
       "facts": [
@@ -4953,7 +5232,7 @@
         "id": "FINANCIALS",
         "status": "PARTIAL",
         "sourceIds": ["financials", "kapFinancial"],
-        "contentKey": "analysis.reconciliationV6.FINANCIALS"
+        "contentKey": "researchAnalysis.reconciliationV6.FINANCIALS"
       },
       {
         "id": "HISTORY",
@@ -4965,7 +5244,7 @@
           "annual2024",
           "annual2025"
         ],
-        "contentKey": "analysis.reconciliationV6.HISTORY"
+        "contentKey": "researchAnalysis.reconciliationV6.HISTORY"
       },
       {
         "id": "DIVIDEND",
@@ -4978,25 +5257,25 @@
           "tcmbSample",
           "mkkPayment"
         ],
-        "contentKey": "analysis.reconciliationV6.DIVIDEND"
+        "contentKey": "researchAnalysis.reconciliationV6.DIVIDEND"
       },
       {
         "id": "VALUATION",
         "status": "MISSING",
         "sourceIds": ["presentation", "financials"],
-        "contentKey": "analysis.reconciliationV6.VALUATION"
+        "contentKey": "researchAnalysis.reconciliationV6.VALUATION"
       },
       {
         "id": "TECHNICAL",
         "status": "MISSING",
         "sourceIds": [],
-        "contentKey": "analysis.reconciliationV6.TECHNICAL"
+        "contentKey": "researchAnalysis.reconciliationV6.TECHNICAL"
       },
       {
         "id": "DISCLOSURES",
         "status": "PARTIAL",
         "sourceIds": ["kapList"],
-        "contentKey": "analysis.reconciliationV6.DISCLOSURES"
+        "contentKey": "researchAnalysis.reconciliationV6.DISCLOSURES"
       }
     ],
     "financialHistory": [
@@ -5078,6 +5357,364 @@
           "cfo2025Growth",
           "cashProxy2025",
           "dividendCashCoverage2025"
+        ]
+      }
+    ],
+    "valuationScenarios": [
+      {
+        "methodId": "EV_EBITDA",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBear"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-07",
+              "knowledgeAt": "2026-11-07",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "post-2023-capital",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "56272759000",
+                  "rationale": "FY2025 normalize FAVÖK (esas faaliyet kârı 41.646.897 bin TL + amortisman/itfa 14.625.862 bin TL = 56.272.759 bin TL, Not 4 ve Not 21); üç senaryoda sabit, net borç ve pay sayısı ile aynı 2025-12-31 TAS29 bazına eşitlendi.",
+                  "evidence": {
+                    "id": "ev-tuprs-ebitdaFy2025",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.27, Not 4 (segment raporlaması, konsolide toplam sütunu); PDF s.47-48, Not 21 (niteliğine göre giderler).",
+                    "excerpt": "ebitdaFy2025: 56272759000 TRY. Note 4 segment reporting, consolidated total, 1 January-31 December 2025: Operating profit (loss) 41,646,897 thousand TRY. Note 21 expenses by nature, depreciation and amortization 1 January-31 December 2025: 14,625,862 thousand TRY (cost of sales 11,434,401 + general administrative expenses 1,572,634 + marketing expenses 1,357,508 + research and development expenses 261,319). FAVÖK = 41,646,897 + 14,625,862 = 56,272,759 thousand TRY, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "-41455028000",
+                  "rationale": "FY2025 sonu net finansal yükümlülük (Not 29 gearing ratio tablosu: 50.249.485 − 91.704.478 − 35 = (41.455.028) bin TL, yani net nakit); üç senaryoda sabit, FAVÖK ile aynı 2025-12-31 TAS29 bazı ve aynı kaynak (annual2025).",
+                  "evidence": {
+                    "id": "ev-tuprs-netFinancialDebtFy2025End",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.63-64, Not 29, Capital risk management / gearing ratio table.",
+                    "excerpt": "netFinancialDebtFy2025End: -41455028000 TRY. Note 29, capital risk management, as of 31 December 2025: Total financial liabilities (Note 6) 50,249,485; Less: cash and cash equivalents (Note 5) (91,704,478); Less: financial investments (35); Net financial liabilities (41,455,028) thousand TRY — negative sign denotes a net cash position, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "1926795598",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayısı; özkaynak değişim tablosunda 'Share capital' yıl boyunca 1.926.796 bin TL sabit, tam hassasiyet KAP 1570793 (11.03.2026) ile doğrulandı — mevcut 'shares' fact'inin (2026-03-11) tarih uyuşmazlığını bu senaryoda çözer.",
+                  "evidence": {
+                    "id": "ev-tuprs-sharesFy2025End",
+                    "sourceId": "dividend",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": ["audit-TUPRS-shares"],
+                    "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+                    "locator": "KAP 1570793: ödenmiş sermaye 1.926.795.598 TL, nominal 1 TL/pay; annual2025 (PDF s.5) özkaynak değişim tablosunda 'Share capital' 31.12.2024 → 31.12.2025 arası değişmeden 1.926.796 bin TL olarak görünür.",
+                    "excerpt": "sharesFy2025End: 1926795598 SHARES. Consolidated statement of changes in equity (annual2025): Share Capital column reads 1,926,796 (thousand TRY) at both 1 January 2025 and 31 December 2025, with zero movement in between (Transfers/Dividends paid/etc. all nil for that column). KAP #1570793 (11.03.2026) states the exact paid-in capital as TRY1,926,795,598 at TRY1.00 nominal per share, consistent with the rounded FY2025 figure; no capital increase/bonus issue occurred between 31.12.2025 and 11.03.2026 per the same notice.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-03-11",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBear",
+                  "value": "4.71",
+                  "rationale": "stockanalysis.com, Valero Energy (VLO) EV/EBITDA (ttm) 4.71x (07.11.2026); ABD büyük bağımsız rafinerileri arasında en düşük çarpanlı isim, kötümser senaryo girdisi.",
+                  "evidence": {
+                    "id": "ev-tuprs-peerEvEbitdaBear",
+                    "sourceId": "peerVlo",
+                    "originId": "stockanalysis",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/stocks/vlo/statistics/",
+                    "locator": "Valero Energy (VLO), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+                    "excerpt": "peerEvEbitdaBear: 4.71 MULTIPLE. Valero Energy Corporation (VLO), EV/EBITDA (ttm) = 4.71x; 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) en düşük çarpan; kötümser senaryo girdisi.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-11-07",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBear"],
+                    "from": "2026-11-07",
+                    "to": "2026-11-07",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBase"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-07",
+              "knowledgeAt": "2026-11-07",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "post-2023-capital",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "56272759000",
+                  "rationale": "FY2025 normalize FAVÖK (esas faaliyet kârı 41.646.897 bin TL + amortisman/itfa 14.625.862 bin TL = 56.272.759 bin TL, Not 4 ve Not 21); üç senaryoda sabit, net borç ve pay sayısı ile aynı 2025-12-31 TAS29 bazına eşitlendi.",
+                  "evidence": {
+                    "id": "ev-tuprs-ebitdaFy2025",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.27, Not 4 (segment raporlaması, konsolide toplam sütunu); PDF s.47-48, Not 21 (niteliğine göre giderler).",
+                    "excerpt": "ebitdaFy2025: 56272759000 TRY. Note 4 segment reporting, consolidated total, 1 January-31 December 2025: Operating profit (loss) 41,646,897 thousand TRY. Note 21 expenses by nature, depreciation and amortization 1 January-31 December 2025: 14,625,862 thousand TRY (cost of sales 11,434,401 + general administrative expenses 1,572,634 + marketing expenses 1,357,508 + research and development expenses 261,319). FAVÖK = 41,646,897 + 14,625,862 = 56,272,759 thousand TRY, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "-41455028000",
+                  "rationale": "FY2025 sonu net finansal yükümlülük (Not 29 gearing ratio tablosu: 50.249.485 − 91.704.478 − 35 = (41.455.028) bin TL, yani net nakit); üç senaryoda sabit, FAVÖK ile aynı 2025-12-31 TAS29 bazı ve aynı kaynak (annual2025).",
+                  "evidence": {
+                    "id": "ev-tuprs-netFinancialDebtFy2025End",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.63-64, Not 29, Capital risk management / gearing ratio table.",
+                    "excerpt": "netFinancialDebtFy2025End: -41455028000 TRY. Note 29, capital risk management, as of 31 December 2025: Total financial liabilities (Note 6) 50,249,485; Less: cash and cash equivalents (Note 5) (91,704,478); Less: financial investments (35); Net financial liabilities (41,455,028) thousand TRY — negative sign denotes a net cash position, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "1926795598",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayısı; özkaynak değişim tablosunda 'Share capital' yıl boyunca 1.926.796 bin TL sabit, tam hassasiyet KAP 1570793 (11.03.2026) ile doğrulandı — mevcut 'shares' fact'inin (2026-03-11) tarih uyuşmazlığını bu senaryoda çözer.",
+                  "evidence": {
+                    "id": "ev-tuprs-sharesFy2025End",
+                    "sourceId": "dividend",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": ["audit-TUPRS-shares"],
+                    "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+                    "locator": "KAP 1570793: ödenmiş sermaye 1.926.795.598 TL, nominal 1 TL/pay; annual2025 (PDF s.5) özkaynak değişim tablosunda 'Share capital' 31.12.2024 → 31.12.2025 arası değişmeden 1.926.796 bin TL olarak görünür.",
+                    "excerpt": "sharesFy2025End: 1926795598 SHARES. Consolidated statement of changes in equity (annual2025): Share Capital column reads 1,926,796 (thousand TRY) at both 1 January 2025 and 31 December 2025, with zero movement in between (Transfers/Dividends paid/etc. all nil for that column). KAP #1570793 (11.03.2026) states the exact paid-in capital as TRY1,926,795,598 at TRY1.00 nominal per share, consistent with the rounded FY2025 figure; no capital increase/bonus issue occurred between 31.12.2025 and 11.03.2026 per the same notice.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-03-11",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBase",
+                  "value": "5.15",
+                  "rationale": "stockanalysis.com, Marathon Petroleum (MPC) EV/EBITDA (ttm) 5.15x (07.11.2026); üç ABD rafineri emsali (VLO 4.71x, MPC 5.15x, PSX 7.06x) arasında ortanca çarpan, baz senaryo girdisi.",
+                  "evidence": {
+                    "id": "ev-tuprs-peerEvEbitdaBase",
+                    "sourceId": "peerMpc",
+                    "originId": "stockanalysis",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/stocks/mpc/statistics/",
+                    "locator": "Marathon Petroleum (MPC), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+                    "excerpt": "peerEvEbitdaBase: 5.15 MULTIPLE. Marathon Petroleum Corporation (MPC), EV/EBITDA (ttm) = 5.15x; 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) ortanca çarpan; baz senaryo girdisi.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-11-07",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBase"],
+                    "from": "2026-11-07",
+                    "to": "2026-11-07",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025End",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBull"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-07",
+              "knowledgeAt": "2026-11-07",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "post-2023-capital",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "56272759000",
+                  "rationale": "FY2025 normalize FAVÖK (esas faaliyet kârı 41.646.897 bin TL + amortisman/itfa 14.625.862 bin TL = 56.272.759 bin TL, Not 4 ve Not 21); üç senaryoda sabit, net borç ve pay sayısı ile aynı 2025-12-31 TAS29 bazına eşitlendi.",
+                  "evidence": {
+                    "id": "ev-tuprs-ebitdaFy2025",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.27, Not 4 (segment raporlaması, konsolide toplam sütunu); PDF s.47-48, Not 21 (niteliğine göre giderler).",
+                    "excerpt": "ebitdaFy2025: 56272759000 TRY. Note 4 segment reporting, consolidated total, 1 January-31 December 2025: Operating profit (loss) 41,646,897 thousand TRY. Note 21 expenses by nature, depreciation and amortization 1 January-31 December 2025: 14,625,862 thousand TRY (cost of sales 11,434,401 + general administrative expenses 1,572,634 + marketing expenses 1,357,508 + research and development expenses 261,319). FAVÖK = 41,646,897 + 14,625,862 = 56,272,759 thousand TRY, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025End",
+                  "value": "-41455028000",
+                  "rationale": "FY2025 sonu net finansal yükümlülük (Not 29 gearing ratio tablosu: 50.249.485 − 91.704.478 − 35 = (41.455.028) bin TL, yani net nakit); üç senaryoda sabit, FAVÖK ile aynı 2025-12-31 TAS29 bazı ve aynı kaynak (annual2025).",
+                  "evidence": {
+                    "id": "ev-tuprs-netFinancialDebtFy2025End",
+                    "sourceId": "annual2025",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.tupras.com.tr/assets/uploads/financial-reports/tupras-consolidated-cmb-31122025.pdf",
+                    "locator": "PDF s.63-64, Not 29, Capital risk management / gearing ratio table.",
+                    "excerpt": "netFinancialDebtFy2025End: -41455028000 TRY. Note 29, capital risk management, as of 31 December 2025: Total financial liabilities (Note 6) 50,249,485; Less: cash and cash equivalents (Note 5) (91,704,478); Less: financial investments (35); Net financial liabilities (41,455,028) thousand TRY — negative sign denotes a net cash position, TAS29 31.12.2025 satın alma gücü bazında.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-02-06",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "1926795598",
+                  "rationale": "FY2025 sonu (31.12.2025) pay sayısı; özkaynak değişim tablosunda 'Share capital' yıl boyunca 1.926.796 bin TL sabit, tam hassasiyet KAP 1570793 (11.03.2026) ile doğrulandı — mevcut 'shares' fact'inin (2026-03-11) tarih uyuşmazlığını bu senaryoda çözer.",
+                  "evidence": {
+                    "id": "ev-tuprs-sharesFy2025End",
+                    "sourceId": "dividend",
+                    "originId": "tupras-issuer",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": ["audit-TUPRS-shares"],
+                    "documentUrl": "https://kap.org.tr/en/api/BildirimPdf/1570793",
+                    "locator": "KAP 1570793: ödenmiş sermaye 1.926.795.598 TL, nominal 1 TL/pay; annual2025 (PDF s.5) özkaynak değişim tablosunda 'Share capital' 31.12.2024 → 31.12.2025 arası değişmeden 1.926.796 bin TL olarak görünür.",
+                    "excerpt": "sharesFy2025End: 1926795598 SHARES. Consolidated statement of changes in equity (annual2025): Share Capital column reads 1,926,796 (thousand TRY) at both 1 January 2025 and 31 December 2025, with zero movement in between (Transfers/Dividends paid/etc. all nil for that column). KAP #1570793 (11.03.2026) states the exact paid-in capital as TRY1,926,795,598 at TRY1.00 nominal per share, consistent with the rounded FY2025 figure; no capital increase/bonus issue occurred between 31.12.2025 and 11.03.2026 per the same notice.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-03-11",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBull",
+                  "value": "7.06",
+                  "rationale": "stockanalysis.com, Phillips 66 (PSX) EV/EBITDA (ttm) 7.06x (07.11.2026); üç ABD rafineri emsali (VLO 4.71x, MPC 5.15x, PSX 7.06x) arasında en yüksek çarpan, iyimser senaryo girdisi.",
+                  "evidence": {
+                    "id": "ev-tuprs-peerEvEbitdaBull",
+                    "sourceId": "peerPsx",
+                    "originId": "stockanalysis",
+                    "collectionId": "tuprs-valuation-scenarios-2026-11-07",
+                    "reviewerId": "claude-tuprs-valuation-20261107",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/stocks/psx/statistics/",
+                    "locator": "Phillips 66 (PSX), Enterprise Valuation bölümü, EV/EBITDA (ttm).",
+                    "excerpt": "peerEvEbitdaBull: 7.06 MULTIPLE. Phillips 66 (PSX), EV/EBITDA (ttm) = 7.06x; Data Source: S&P Global Market Intelligence, 'Last updated: Nov 7, 2026'. ABD rafineri emsalleri arasında (VLO 4.71x, MPC 5.15x, PSX 7.06x) en yüksek çarpan; iyimser senaryo girdisi.",
+                    "checkedAt": "2026-11-07",
+                    "publishedAt": "2026-11-07",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBull"],
+                    "from": "2026-11-07",
+                    "to": "2026-11-07",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          }
         ]
       }
     ],
@@ -9780,7 +10417,7 @@
         "id": "FINANCIALS",
         "status": "PARTIAL",
         "sourceIds": ["financials", "kapFinancial"],
-        "contentKey": "analysis.reconciliationV6.FINANCIALS"
+        "contentKey": "researchAnalysis.reconciliationV6.FINANCIALS"
       },
       {
         "id": "HISTORY",
@@ -9792,7 +10429,7 @@
           "annual2024",
           "annual2025"
         ],
-        "contentKey": "analysis.reconciliationV6.HISTORY"
+        "contentKey": "researchAnalysis.reconciliationV6.HISTORY"
       },
       {
         "id": "DIVIDEND",
@@ -9805,25 +10442,25 @@
           "tcmbSample",
           "mkkPayment"
         ],
-        "contentKey": "analysis.reconciliationV6.DIVIDEND"
+        "contentKey": "researchAnalysis.reconciliationV6.DIVIDEND"
       },
       {
         "id": "VALUATION",
         "status": "MISSING",
         "sourceIds": ["presentation", "financials"],
-        "contentKey": "analysis.reconciliationV6.VALUATION"
+        "contentKey": "researchAnalysis.reconciliationV6.VALUATION"
       },
       {
         "id": "TECHNICAL",
         "status": "MISSING",
         "sourceIds": [],
-        "contentKey": "analysis.reconciliationV6.TECHNICAL"
+        "contentKey": "researchAnalysis.reconciliationV6.TECHNICAL"
       },
       {
         "id": "DISCLOSURES",
         "status": "PARTIAL",
         "sourceIds": ["kapList"],
-        "contentKey": "analysis.reconciliationV6.DISCLOSURES"
+        "contentKey": "researchAnalysis.reconciliationV6.DISCLOSURES"
       }
     ],
     "financialHistory": [
@@ -16711,7 +17348,7 @@
         "id": "FINANCIALS",
         "status": "PARTIAL",
         "sourceIds": ["financials", "kapFinancial"],
-        "contentKey": "analysis.reconciliationV6.FINANCIALS"
+        "contentKey": "researchAnalysis.reconciliationV6.FINANCIALS"
       },
       {
         "id": "HISTORY",
@@ -16723,7 +17360,7 @@
           "annual2024",
           "annual2025"
         ],
-        "contentKey": "analysis.reconciliationV6.HISTORY"
+        "contentKey": "researchAnalysis.reconciliationV6.HISTORY"
       },
       {
         "id": "DIVIDEND",
@@ -16736,25 +17373,25 @@
           "tcmbSample",
           "mkkPayment"
         ],
-        "contentKey": "analysis.reconciliationV6.DIVIDEND"
+        "contentKey": "researchAnalysis.reconciliationV6.DIVIDEND"
       },
       {
         "id": "VALUATION",
         "status": "MISSING",
         "sourceIds": ["presentation", "financials"],
-        "contentKey": "analysis.reconciliationV6.VALUATION"
+        "contentKey": "researchAnalysis.reconciliationV6.VALUATION"
       },
       {
         "id": "TECHNICAL",
         "status": "MISSING",
         "sourceIds": [],
-        "contentKey": "analysis.reconciliationV6.TECHNICAL"
+        "contentKey": "researchAnalysis.reconciliationV6.TECHNICAL"
       },
       {
         "id": "DISCLOSURES",
         "status": "PARTIAL",
         "sourceIds": ["kapList"],
-        "contentKey": "analysis.reconciliationV6.DISCLOSURES"
+        "contentKey": "researchAnalysis.reconciliationV6.DISCLOSURES"
       }
     ],
     "financialHistory": [
@@ -23634,7 +24271,7 @@
         "id": "FINANCIALS",
         "status": "PARTIAL",
         "sourceIds": ["financials", "kapFinancial"],
-        "contentKey": "analysis.reconciliationV6.FINANCIALS"
+        "contentKey": "researchAnalysis.reconciliationV6.FINANCIALS"
       },
       {
         "id": "HISTORY",
@@ -23646,7 +24283,7 @@
           "annual2024",
           "annual2025"
         ],
-        "contentKey": "analysis.reconciliationV6.HISTORY"
+        "contentKey": "researchAnalysis.reconciliationV6.HISTORY"
       },
       {
         "id": "DIVIDEND",
@@ -23659,25 +24296,25 @@
           "tcmbSample",
           "mkkPayment"
         ],
-        "contentKey": "analysis.reconciliationV6.DIVIDEND"
+        "contentKey": "researchAnalysis.reconciliationV6.DIVIDEND"
       },
       {
         "id": "VALUATION",
         "status": "MISSING",
         "sourceIds": ["presentation", "financials"],
-        "contentKey": "analysis.reconciliationV6.VALUATION"
+        "contentKey": "researchAnalysis.reconciliationV6.VALUATION"
       },
       {
         "id": "TECHNICAL",
         "status": "MISSING",
         "sourceIds": [],
-        "contentKey": "analysis.reconciliationV6.TECHNICAL"
+        "contentKey": "researchAnalysis.reconciliationV6.TECHNICAL"
       },
       {
         "id": "DISCLOSURES",
         "status": "PARTIAL",
         "sourceIds": ["kapList"],
-        "contentKey": "analysis.reconciliationV6.DISCLOSURES"
+        "contentKey": "researchAnalysis.reconciliationV6.DISCLOSURES"
       }
     ],
     "financialHistory": [
@@ -26719,7 +27356,7 @@
         "id": "FINANCIALS",
         "status": "PARTIAL",
         "sourceIds": ["financials"],
-        "contentKey": "analysis.reconciliation.FINANCIALS"
+        "contentKey": "researchAnalysis.reconciliation.FINANCIALS"
       },
       {
         "id": "HISTORY",
@@ -26731,31 +27368,31 @@
           "annual2024",
           "annual2025"
         ],
-        "contentKey": "analysis.reconciliation.HISTORY"
+        "contentKey": "researchAnalysis.reconciliation.HISTORY"
       },
       {
         "id": "DIVIDEND",
         "status": "PARTIAL",
         "sourceIds": ["dividend", "financials"],
-        "contentKey": "analysis.reconciliation.DIVIDEND"
+        "contentKey": "researchAnalysis.reconciliation.DIVIDEND"
       },
       {
         "id": "VALUATION",
         "status": "MISSING",
         "sourceIds": ["presentation", "financials"],
-        "contentKey": "analysis.reconciliation.VALUATION"
+        "contentKey": "researchAnalysis.reconciliation.VALUATION"
       },
       {
         "id": "TECHNICAL",
         "status": "MISSING",
         "sourceIds": [],
-        "contentKey": "analysis.reconciliation.TECHNICAL"
+        "contentKey": "researchAnalysis.reconciliation.TECHNICAL"
       },
       {
         "id": "DISCLOSURES",
         "status": "PARTIAL",
         "sourceIds": ["kapList"],
-        "contentKey": "analysis.reconciliation.DISCLOSURES"
+        "contentKey": "researchAnalysis.reconciliation.DISCLOSURES"
       }
     ],
     "revision": 5

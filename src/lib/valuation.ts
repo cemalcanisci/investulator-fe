@@ -7,11 +7,25 @@ import type {
   ValuationInputRule,
 } from '@/lib/valuationBasis';
 import {
+  addDecimals,
   compareDecimals,
   divideDecimals,
   multiplyDecimals,
+  percentageOf,
+  roundDecimal,
   subtractDecimals,
 } from '@/lib/decimal';
+
+/** Potential return = (fair value − market price) / market price × 100; `null` without both inputs. */
+export function scenarioUpsidePercent(
+  fairValue: string | undefined,
+  price: string | undefined,
+): string | null {
+  if (!fairValue || !price || /^0(\.0+)?$/.test(price)) {
+    return null;
+  }
+  return percentageOf(subtractDecimals(fairValue, price), price);
+}
 
 export interface ValuationMethod {
   readonly id: string;
@@ -54,30 +68,144 @@ export const VALUATION_METHODS: readonly ValuationMethod[] = [
   },
   {
     id: 'FCF',
+    inputRules: [
+      { id: 'normalizedFcf', role: 'FLOW' },
+      { id: 'investmentPlan', role: 'FLOW' },
+      { id: 'discountRate', role: 'MULTIPLE' },
+      { id: 'terminalGrowth', role: 'MULTIPLE' },
+      { id: 'shares', role: 'SHARES' },
+    ],
     required: [
       'normalizedFcf',
+      'investmentPlan',
       'discountRate',
       'terminalGrowth',
-      'investmentPlan',
+      'shares',
     ],
-    formula: 'Σ FCF(t)/(1+r)^t + terminal value',
+    formula:
+      '((normalizedFcf − investmentPlan) × (100 + terminalGrowth) / (discountRate − terminalGrowth)) / shares',
+    calculate: (v) =>
+      divideDecimals(
+        divideDecimals(
+          multiplyDecimals(
+            subtractDecimals(v.normalizedFcf, v.investmentPlan),
+            addDecimals(['100', v.terminalGrowth]),
+          ),
+          subtractDecimals(v.discountRate, v.terminalGrowth),
+          6,
+        ),
+        v.shares,
+        2,
+      ),
   },
   {
     id: 'BOOK_ROE',
+    inputRules: [
+      { id: 'parentEquity', role: 'STOCK' },
+      { id: 'sustainableRoe', role: 'MULTIPLE' },
+      { id: 'costOfEquity', role: 'MULTIPLE' },
+      { id: 'capitalAdequacy', role: 'STOCK' },
+      { id: 'shares', role: 'SHARES' },
+    ],
     required: [
       'parentEquity',
       'sustainableRoe',
       'costOfEquity',
       'capitalAdequacy',
+      'shares',
     ],
-    formula: 'P/B justified by sustainable ROE and cost of equity',
+    formula: '(parentEquity / shares) × (sustainableRoe / costOfEquity)',
+    calculate: (v) =>
+      roundDecimal(
+        multiplyDecimals(
+          divideDecimals(v.parentEquity, v.shares, 6),
+          divideDecimals(v.sustainableRoe, v.costOfEquity, 6),
+        ),
+        2,
+      ),
   },
   {
     id: 'NAV',
-    required: ['netAssetValue', 'shares', 'appraisalDate'],
+    inputRules: [
+      { id: 'netAssetValue', role: 'STOCK' },
+      { id: 'shares', role: 'SHARES' },
+    ],
+    required: ['netAssetValue', 'shares'],
     formula: 'netAssetValue / shares',
+    calculate: (v) => divideDecimals(v.netAssetValue, v.shares, 2),
   },
 ];
+
+/**
+ * Renames a method's generic input ids to scenario-specific fact ids (e.g. `peerEvEbitda` →
+ * `peerEvEbitdaBear`) so BEAR/BASE/BULL cases can each reference their own sourced fact while
+ * sharing one `calculate` implementation.
+ */
+export function scenarioMethod(
+  method: ValuationMethod,
+  idMap: Readonly<Record<string, string>>,
+): ValuationMethod {
+  const rename = (id: string): string => idMap[id] ?? id;
+  const calculate = method.calculate;
+  return {
+    ...method,
+    required: method.required.map(rename),
+    inputRules: method.inputRules?.map((rule) => ({
+      ...rule,
+      id: rename(rule.id),
+    })),
+    calculate: calculate
+      ? (values) =>
+          calculate(
+            Object.fromEntries(
+              method.required.map((id) => [id, values[rename(id)]]),
+            ),
+          )
+      : undefined,
+  };
+}
+
+export interface ScenarioCase {
+  readonly case: ValuationScenario['id'];
+  readonly idMap: Readonly<Record<string, string>>;
+  readonly scenario: ValuationScenario;
+}
+
+export function evaluateValuationScenarios(
+  report: AnalysisReport,
+  method: ValuationMethod,
+  cases: readonly ScenarioCase[],
+): readonly {
+  readonly case: ValuationScenario['id'];
+  readonly result: CalculationResult;
+}[] {
+  return cases.map((c) => ({
+    case: c.case,
+    result: evaluateValuation(
+      report,
+      scenarioMethod(method, c.idMap),
+      c.scenario,
+    ),
+  }));
+}
+
+/**
+ * Looks up a report's authored BEAR/BASE/BULL cases for a method (if any were integrated) and
+ * evaluates all three; returns `null` when the report carries no scenario set for this method,
+ * so the caller can fall back to the scenario-less `evaluateValuation` (always BLOCKED/ASSUMPTIONS).
+ */
+export function reportValuationScenarios(
+  report: AnalysisReport,
+  method: ValuationMethod,
+): readonly {
+  readonly case: ValuationScenario['id'];
+  readonly result: CalculationResult;
+}[] | null {
+  const set = report.valuationScenarios?.find(
+    (entry) => entry.methodId === method.id,
+  );
+  return set ? evaluateValuationScenarios(report, method, set.cases) : null;
+}
 
 export function evaluateValuation(
   report: AnalysisReport,
@@ -120,19 +248,22 @@ export function evaluateValuation(
     issues.push('DUPLICATE');
   }
   if (method.id === 'EV_EBITDA') {
-    const byId = Object.fromEntries(inputs.map((f) => [f.id, f]));
+    // Positional, not id-keyed: `scenarioMethod` renames the per-case multiple id
+    // (e.g. `peerEvEbitda` → `peerEvEbitdaBear`), but required[]'s slot order is preserved.
+    const [normalizedEbitda, peerEvEbitda, valuationNetDebt, shares] =
+      method.required.map((id) => inputs.find((f) => f.id === id));
     if (
-      byId.shares?.unit !== 'SHARES' ||
-      byId.peerEvEbitda?.unit !== 'MULTIPLE' ||
-      !['TRY', 'USD'].includes(byId.normalizedEbitda?.unit ?? '') ||
-      byId.valuationNetDebt?.unit !== byId.normalizedEbitda?.unit
+      shares?.unit !== 'SHARES' ||
+      peerEvEbitda?.unit !== 'MULTIPLE' ||
+      !['TRY', 'USD'].includes(normalizedEbitda?.unit ?? '') ||
+      valuationNetDebt?.unit !== normalizedEbitda?.unit
     ) {
       issues.push('UNIT');
     }
     if (
-      inputs.some(
+      [normalizedEbitda, peerEvEbitda, shares].some(
         (f) =>
-          ['normalizedEbitda', 'peerEvEbitda', 'shares'].includes(f.id) &&
+          f &&
           /^-?\d+(\.\d+)?$/.test(f.value) &&
           compareDecimals(f.value, '0') <= 0,
       )

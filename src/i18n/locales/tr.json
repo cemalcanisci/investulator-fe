@@ -373,195 +373,29 @@
     "historyNote": "Tutarlar işlemin yapıldığı para biriminde, dolar karşılıkları ise işlemde kayıtlı kurla gösterilir."
   },
   "analysis": {
-    "title": "Analiz doğrulaması ve veri kalitesi",
-    "blocked": "Hesaplama doğrulanamadı",
-    "verified": "Birincil belgeyle mutabık; bağımsız teyit değil",
-    "profile": "İş modeli profili",
-    "scale": "Birim çarpanı",
-    "counts": "{{total}} hesaplamanın {{passed}} tanesi veri kontrollerini geçti. Bu, raporun tamamının onaylandığı anlamına gelmez.",
-    "reviewNotice": "Bu bir tarihsel araştırma snapshot’ıdır. Aşağıdaki eski anlatım ve fiyat yorumları önceki rapordan korunmuştur; doğrulanamayan rakamlar güncel/denetlenmiş sonuç sayılmaz. Hesap kartlarındaki doğrulama durumları esas alınır. KAP taraması ve uzun dönem kaynak incelemesi kısmi; bağımsız denetim yapılmadı.",
-    "auditTrail": "Kaynak, dönem ve muhasebe bazını incele",
-    "unverifiedInputs": "Bu girdiler önceki kaynak kaydıdır; doğrulanmış sonuç üretmek için kullanılamaz.",
-    "missingInput": "Eksik/doğrulanmamış girdi: {{input}}",
-    "profiles": {
-      "REFINING": "Rafineri",
-      "AUTOMOTIVE": "Otomotiv",
-      "INDUSTRIAL": "Sanayi",
-      "BANK": "Banka",
-      "REIT": "GYO",
-      "BROKER": "Aracı kurum",
-      "TECHNOLOGY": "Teknoloji",
-      "CRYPTO": "Kripto",
-      "FUND": "Fon",
-      "UNSUPPORTED": "Profil tanımlanmamış"
+    "metrics": {
+      "PERCENT": "Kâr / zarar yüzdesi",
+      "AMOUNT": "Kâr / zarar tutarı"
     },
-    "scope": {
-      "CONSOLIDATED": "Konsolide",
-      "SOLO": "Solo",
-      "MARKET": "Piyasa/pay verisi"
+    "empty": "Analiz için henüz yatırım yok",
+    "positionValue": "Değer: {{value}}",
+    "typeAmounts": "Değer: {{value}} · Maliyet: {{cost}}",
+    "ranking": "Varlık performansı",
+    "emptyNote": "İlk işleminizi ekleyerek portföyünüzü oluşturmaya başlayın.",
+    "filter": "Performans filtresi",
+    "scopeNote": "Dönem seçimi yalnızca üstteki grafiği değiştirir. Dağılım ve sıralamalar mevcut pozisyonları gösterir; kâr / zarar temettüleri ve kapanan pozisyonları içermez. Grafikteki değer artışı, tek başına yatırım getirisi değildir.",
+    "filters": {
+      "LOSERS": "Kaybettirenler",
+      "ALL": "Tümü",
+      "GAINERS": "Kazandıranlar"
     },
-    "attribution": {
-      "GROUP": "Grup toplamı",
-      "PARENT": "Ana ortaklık",
-      "SHARE": "Pay bazında"
-    },
-    "earnings": {
-      "REPORTED": "Raporlanan dönem verisi; gerçek TTM veya normalize kazanç değildir.",
-      "ANNUALIZED_ESTIMATE": "Yıllıklandırılmış tahmin: altı aylık kâr × 2; gerçekleşmiş son 12 ay kârı değildir.",
-      "NORMALIZED": "Varsayımları açıklanmış normalize veri",
-      "TTM": "Uyumlu dört çeyrekten son 12 ay"
-    },
-    "issues": {
-      "UNVERIFIED": "Kaynak veya veri bazı henüz doğrulanmadı.",
-      "CONFLICT": "Kaynaklar arasında çözülmemiş çelişki var.",
-      "SOURCE": "Kaynak/inceleme kanıtı eksik.",
-      "NUMBER": "Geçersiz sayısal veri.",
-      "PERIOD": "Finansal dönemler uyumsuz.",
-      "SCALE": "Birim ölçeği uyumsuz; açık dönüşüm gerekli.",
-      "BASIS": "Konsolidasyon, atıf veya muhasebe bazı uyumsuz.",
-      "CURRENCY": "Para birimleri uyumsuz.",
-      "SHARE_BASIS": "Fiyat, pay ve temettü bazı doğrulanmadı.",
-      "MISSING": "Gerekli veri veya hesap sözleşmesi eksik.",
-      "DUPLICATE": "Tekrarlanan veri kimliği var.",
-      "UNIT": "Finansal birimler yönteme uygun değil.",
-      "ARITHMETIC": "Sıfır payda veya yönteme uygun olmayan sayısal girdi.",
-      "NOT_APPLICABLE": "Bu yöntem seçili iş modeline uygun değil.",
-      "ASSUMPTIONS": "Kaynaklı normalizasyon ve senaryo varsayımları eksik.",
-      "METHOD_PENDING": "Bu yöntemin hesap stratejisi henüz uygulanmadı.",
-      "EVIDENCE": "Kaynak kökeni ve belge mutabakat kanıtı eksik.",
-      "RESTATEMENT": "TMS 29 satın alma gücü bazının belge kanıtı uyuşmuyor.",
-      "LOOKAHEAD": "Verinin değerleme tarihinde bilinebilir olduğu doğrulanmadı."
-    },
-    "historyIssues": {
-      "COVERAGE": "Bağımsız doğrulanmış işlem günü, temettü ve kurumsal işlem kapsamı bulunmuyor. Önceki yaklaşık sonucu doğrulanmış hesap olarak göstermiyoruz.",
-      "UNVERIFIED": "Tarihsel veri incelemesi kısmi.",
-      "CONFLICT": "Tarihsel kaynak çelişkisi var.",
-      "LISTING": "Kotasyon başlangıcı modelde doğrulanmadı.",
-      "SHARE_BASIS": "Fiyat ve temettü düzeltme bazı eksik/uyumsuz.",
-      "SOURCE": "İşlem kaynakları eksik.",
-      "FX": "İşlem kuru veya gerçek kur tarihi geçersiz.",
-      "SESSIONS": "Beklenen işlem günleriyle fiyat kayıtları örtüşmüyor.",
-      "ACTIONS": "Kurumsal işlem veya düzeltme faktörü doğrulanamıyor.",
-      "DIVIDENDS": "Temettü takvimi doğrulanmış olay listesiyle uyuşmuyor.",
-      "PERIOD": "Kesim tarihi geçerli bir takvim ayı sonu değil.",
-      "INDEPENDENCE": "Veri kapsamının bağımsız kaynak mutabakatı yok."
-    },
-    "methods": {
-      "EV_EBITDA": "Normalize FD/FAVÖK",
-      "FCF": "Serbest nakit akışı değerlemesi",
-      "BOOK_ROE": "Özkaynak ve sürdürülebilir kârlılık",
-      "NAV": "Net aktif değer"
-    },
-    "inputs": {
-      "normalizedEbitda": "normalize FAVÖK",
-      "peerEvEbitda": "uygun emsal/tarihsel FD/FAVÖK",
-      "valuationNetDebt": "değerleme kapsamındaki net borç köprüsü",
-      "shares": "değerleme tarihindeki pay sayısı",
-      "normalizedFcf": "normalize serbest nakit akışı",
-      "discountRate": "iskonto oranı",
-      "terminalGrowth": "uzun dönem büyüme oranı",
-      "investmentPlan": "yatırım planı",
-      "parentEquity": "ana ortaklık özkaynağı",
-      "sustainableRoe": "sürdürülebilir özkaynak kârlılığı",
-      "costOfEquity": "özkaynak maliyeti",
-      "capitalAdequacy": "sermaye yeterliliği",
-      "netAssetValue": "net aktif değer",
-      "appraisalDate": "ekspertiz tarihi"
-    },
-    "limits": {
-      "EV_EBITDA": "Faaliyet marjı, stok etkileri ve sektör döngüsü normalize edilmeden tek dönem FAVÖK ile hedef fiyat verilmez. Emsallerin kiralama ve borç kapsamları tutarlı olmalı.",
-      "FCF": "Bakım/büyüme yatırımları ve işletme sermayesi ayrılmadan mevcut nakit farkı geleceğe taşınmaz.",
-      "BOOK_ROE": "Sermaye ve aktif kalitesiyle birlikte değerlendirilir; düşük PD/DD tek başına ucuzluk değildir.",
-      "NAV": "Ekspertiz tarihi, borç kapsamı ve varlıkların satılabilirliği sonucu etkiler."
-    },
-    "qualitySeparation": "Kaynak durumu: {{sources}}. Bölüm tamamlanması: kısmi. Bağımsız rapor incelemesi: yapılmadı. Hesap PASS sonucu yalnız ilgili girdilerle matematiksel kontrolü ifade eder.",
-    "priorities": "Stratejiye göre inceleme sırası (finansal sonuçları değiştirmez)",
-    "provenance": "Belge kökeni / toplama / yöntem",
-    "sourceState": {
-      "PRIMARY_ONLY": "Birincil belge mutabakatı; bağımsız teyit yok",
-      "INCOMPLETE": "Kısmen mutabık; eksik kaynaklar var"
-    },
-    "sections": {
-      "FINANCIALS": "Finansal sağlık",
-      "DIVIDEND": "Temettü sürdürülebilirliği",
-      "VALUATION": "Değerleme",
-      "GROWTH": "Büyüme",
-      "RISK": "Uzun vadeli riskler",
-      "TECHNICAL": "Teknik analiz"
-    },
-    "reconciliation": {
-      "FINANCIALS": {
-        "title": "Resmî finansal kaynak mutabakatı",
-        "text": "30 Haziran 2026 konsolide tablo, aynı tarihin satın alma gücüyle bin TL sunuluyor. Finansal borç 68,201 milyar TL; bloke nakit hariç nakit ve finansal yatırımlar düşüldüğünde net finansal borç −102,232 milyar TL (net nakit). Bu kapsam, sunumdaki daha geniş nakit tanımıyla aynı değildir. Belge mutabakatı yapıldı; ikinci bağımsız veri kaynağı yok."
-      },
-      "HISTORY": {
-        "title": "Beş yıllık karşılaştırma",
-        "text": "2021–2025 resmî raporları bulundu. 2021 satışları ilk raporda 150,972 milyar TL, 2022 raporunun karşılaştırmalı sütununda 152,492 milyar TL: geçmiş rakamları otomatik birleştirmek yanlış olur. 2023–2025 tabloları ayrıca farklı yıl sonu satın alma gücü bazlarındadır. Beş yıllık gelir/kâr/borç/nakit serisinin tam yeniden ifade ve kapsam mutabakatı eksik; ortak bazlı büyüme grafiği üretilmedi."
-      },
-      "DIVIDEND": {
-        "title": "Temettü sürdürülebilirliği",
-        "text": "KAP onayı toplam 17,1268815 TL/pay brüt, %15 stopajla 14,5578492 TL/pay net dağıtım planlıyor; hak tarihi ödeme tarihinden ayrıdır. Plan, ödeme gerçekleşmesinin bağımsız kanıtı değildir. 2026 ilk yarı işletme nakdi 132,366; yatırım alımları 11,858; fark 120,508 milyar TL. İşletme sermayesinin 28,497 milyar TL katkısı ve türev nakit akışlarının sınıflandırılması nedeniyle bu fark sürdürülebilir FCF sayılmadı. Tam ödeme geçmişi ve normalleştirilmiş nakit karşılaması eksik; 10/15/20 yıl backtest kapalı."
-      },
-      "VALUATION": {
-        "title": "Rafineri değerlemesi neden açık?",
-        "text": "Ekim sunumunda ilk yarı net rafineri marjı 15,6 USD/varil ve yatırım 246 milyon USD; 700 milyon USD yıllık yatırım ise hedeftir. Stok etkisi ile güçlü ürün marjı normal kârlılık değildir. Normalleştirilmiş yıllık FAVÖK köprüsü, aynı bazdaki net borç, güncel pay sayısı ve kaynaklı akran çarpanı birlikte doğrulanmadığından kötümser/baz/iyimser fiyat üretilmedi. EV/FAVÖK formülü: (normalleştirilmiş FAVÖK × çarpan − net borç) / pay adedi. FCF, ROE/PD-DD, NAV ve temettü indirgeme uygulamaları ayrıca eksik."
-      },
-      "TECHNICAL": {
-        "title": "Fiyat ve hacim kapsamı",
-        "text": "Bağımsız doğrulanmış kurumsal işlem uyumlu günlük fiyat/hacim ve döviz serisi yok. SMA20/50/200, RSI, MACD ve destek/direnç hesaplanmadı. Önceki fiyat snapshot’ları güncel fiyat olarak kabul edilmez."
-      },
-      "DISCLOSURES": {
-        "title": "KAP tarama sınırı",
-        "text": "Önceki KAP olayları ve kaynakları korunuyor. Son inceleme, 11 Ekim–22 Ekim 2026 aralığının ve önceki incelenmemiş eklerin tam tarandığı anlamına gelmez. Aynı ihraççının KAP bildirimi ve yatırımcı sunumu bağımsız iki ekonomik kaynak sayılmaz."
-      }
-    },
-    "completion": {
-      "PARTIAL": "Kısmi",
-      "MISSING": "Eksik",
-      "COMPLETE": "Tamamlandı"
-    },
-    "strategySelector": "Analiz sunum önceliği",
-    "strategyOptions": {
-      "REPORT": "Rapordaki stratejiler",
-      "DIVIDEND": "Temettü",
-      "GROWTH": "Büyüme",
-      "VALUE": "Değer",
-      "LONG_TERM": "Uzun vade"
-    },
-    "factTechnical": "Teknik veri geçerliliği",
-    "technicalValid": "Geçerli (kaynak teyidi değildir)",
-    "factPrimary": "Birincil kaynak mutabakatı",
-    "factIndependent": "Bağımsız inceleme",
-    "notReviewed": "İncelenmedi",
-    "reconciliationV6": {
-      "FINANCIALS": {
-        "title": "Birincil finansal mutabakat",
-        "text": "14 ana satır KAP #1643116 ile şirketin 2026 ilk yarı raporunda eşleşti. Tutarlar bin TL’den TL’ye dönüştürüldü; konsolide kapsam ve 30.06.2026 satın alma gücü korundu. 68,20 milyar TL finansal borca karşı şirketin dipnot tanımıyla 102,23 milyar TL net nakit var. Toplam nakdin 28,49 milyar TL’si bloke; tüm nakit serbestçe kullanılabilir sayılmıyor. Bu eşleşme bağımsız inceleme değildir."
-      },
-      "HISTORY": {
-        "title": "Beş yıllık belgeler ve baz farkları",
-        "text": "2021–2025 hasılat, ana ortaklık kârı/özkaynağı, işletme nakdi, finansal borç ve bloke olmayan nakit eklendi. 2021, Entek birleşmesi nedeniyle 2022 raporundaki yeniden düzenlenmiş sütundan alındı. 2023–2025 yıllık değişimleri aynı raporun karşılaştırmalı sütunlarıyla hesaplanır. Beş yılın tamamını tek satın alma gücünde karşılaştıran seri henüz yok; farklı bazlı tutarlar üzerinden trend yüzdesi üretilmez."
-      },
-      "DIVIDEND": {
-        "title": "Nakit karşılama ve tarihsel veri sınırı",
-        "text": "2025 işletme nakdi 49,46 milyar TL, yatırım harcaması 19,12 milyar TL; fark 30,35 milyar TL. Aynı bazdaki nakit temettü çıkışı 34,84 milyar TL: işletme nakdi 1,42 kat karşılıyor, yatırım sonrası fark ise dağıtımı tek başına karşılamıyor. Bu, otomatik temettü kesintisi anlamına gelmez; nakit tamponu, yatırımlar ve döngü birlikte izlenmeli. 2026 ödeme takvimi ve 2023 %600 bedelsiz kaydı bulundu; bütün tarihsel ödemelerin gerçekleşmesi ve bağımsız fiyat/kur kapsamı doğrulanmadı. 10/15/20 yıllık backtest tamamlanmış değildir. MKK #1671443, 02.10.2026 ikinci taksit ödemesini %674,69533 brüt oranla (6,7469533 TL/pay) gerçekleşmiş kayıt olarak doğruluyor. Bu tek olay için saklama kuruluşu kanıtıdır; tüm geçmişin bağımsız incelemesi değildir."
-      },
-      "VALUATION": {
-        "title": "Rafineri döngüsü; hedef fiyat yok",
-        "text": "Şirket sunumunda 2026 ilk yarı net rafineri marjı 15,6 USD/varil; ilk çeyrek 9,4, ikinci çeyrek 21,4. Bu oynaklık, güçlü bir çeyreği kalıcı kazanç saymamamız gerektiğini gösterir. 13–15 USD/varil yıl sonu marj yönlendirmesi ve 700 milyon USD yatırım planı gerçekleşmiş sonuç değildir. İşletme sermayesi ve stok etkilerini ayrıştıran çok yıllı normalleştirilmiş FAVÖK köprüsü ile karşılaştırılabilir emsal çarpanları henüz doğrulanmadı. EV/FAVÖK kötümser/baz/iyimser hedefleri üretilmedi; diğer uygulanmamış yöntemler eksik kalır."
-      },
-      "TECHNICAL": {
-        "title": "Fiyat ve hacim doğrulaması eksik",
-        "text": "Mevcut piyasa serisi resmî işlem takvimi ve bağımsız ham fiyat/hacim serisiyle mutabık değil. TCMB 09.10.2026 USD alış 49,1274 / satış 49,2160 kaydı erişilebilir; gösterge kur, piyasa kapanış kuru değildir. Tek günlük örnek 20 yıllık kur kapsamını doğrulamaz. SMA20/50/200, RSI, MACD ve destek/direnç için doğrulanmış seri olmadan yeni sonuç üretilmedi."
-      },
-      "DISCLOSURES": {
-        "title": "Bildirim taraması kısmi",
-        "text": "Finansal bildirim, temettü kararı ve MKK bedelsiz gerçekleşme kaydı belge düzeyinde incelendi. Finansal rapor ile KAP yayını aynı ihraççı kökenindedir. Önceki haber ve stratejik dönüşüm açıklamaları korunuyor; bütün bildirimlerin ve eklerin eksiksiz tarandığı iddia edilmiyor."
-      }
-    },
-    "historyTitle": "Yıllık finansallar ve karşılaştırılabilir değişimler",
-    "historyBasis": "Tutarlar milyar TL gösterilir. 2021–2022 nominaldir; 2023–2025 kendi yıl sonu satın alma gücündedir. Satırların nominal büyüklüğünü doğrudan karşılaştırmayın. Yıllık değişim kartları aynı raporun yeniden düzenlenmiş önceki yılını kullanır. 2021 verileri Entek sonrası yeniden düzenlenmiştir. Kaynak ve tam girdiler kartların ayrıntılarındadır.",
-    "inputStates": "Girdiler: teknik kontroller {{technical}}/{{total}}; birincil belge mutabakatı {{primary}}/{{total}}. Bağımsız rapor incelemesi: yapılmadı."
+    "description": "Portföyünüzün dağılımını ve açık pozisyonlarınızın performansını inceleyin.",
+    "byTypeNote": "Çubuk uzunluğu kâr veya zararın tutarını gösterir.",
+    "noResults": "Bu grupta varlık yok",
+    "noResultsNote": "Başka bir performans filtresi seçebilirsiniz.",
+    "metric": "Sıralama ölçütü",
+    "byType": "Varlık türüne göre kâr / zarar",
+    "rankingNote": "Gerçekleşmemiş kâr / zarara göre sıralanır. Detay için varlık adına tıklayın."
   },
   "transfer": {
     "description": "İşlemlerini dosyadan ekle veya kayıtlarının bir kopyasını indir.",
@@ -750,7 +584,7 @@
     "valuationResult": "Fiyat analizi sonucu",
     "notAssessed": "Adil değer değerlendirilemiyor",
     "scenarios": "Senaryolar ve duyarlılık",
-    "discountFormula": "İskonto = (adil değer − piyasa fiyatı) / adil değer. Potansiyel getiri = (adil değer − piyasa fiyatı) / piyasa fiyatı. Doğrulanmış adil değer olmadığından ikisi de hesaplanmadı.",
+    "discountFormula": "İskonto = (adil değer − piyasa fiyatı) / adil değer. Potansiyel getiri = (adil değer − piyasa fiyatı) / piyasa fiyatı. Kaynaklı varsayımlarla hesaplanamayan senaryolar için ikisi de üretilmez; yukarıdaki \"Değerlendirilemedi\" etiketi bunu gösterir.",
     "scanRange": "KAP inceleme aralığı",
     "kapList": "KAP şirket bildirim listesi",
     "analystInterpretation": "Analiz yorumu",
@@ -954,12 +788,16 @@
     "methods": {
       "pe": "Normalize F/K",
       "ev": "FD / FAVÖK",
-      "dcf": "İndirgenmiş nakit akışı"
+      "dcf": "İndirgenmiş nakit akışı",
+      "nav": "Net aktif değer",
+      "bookRoe": "Özkaynak ve sürdürülebilir kârlılık"
     },
     "methodFormulas": {
       "pe": "Adil fiyat = normalize yıllık pay başına kâr × gerekçeli F/K",
       "ev": "Özkaynak değeri = normalize FAVÖK × çarpan − net borç − azınlık payı + diğer düzeltmeler",
-      "dcf": "Firma değeri = Σ FCFₜ / (1 + WACC)ᵗ + terminal değerin bugünkü değeri"
+      "dcf": "Firma değeri = Σ FCFₜ / (1 + WACC)ᵗ + terminal değerin bugünkü değeri",
+      "nav": "Pay başına adil değer = düzeltilmiş net aktif değer / pay sayısı",
+      "bookRoe": "Pay başına adil değer = (özkaynak / pay sayısı) × (sürdürülebilir özkaynak kârlılığı / özkaynak maliyeti)"
     },
     "scenarioNames": {
       "bear": "Kötümser",
@@ -3198,17 +3036,17 @@
     "peers": "Uyumlu dönem ve muhasebe bazında emsal rafineri değerlemesi tamamlanmadı. Bu nedenle sektör ortalaması veya emsallere göre ucuzluk iddiası yok.",
     "dividend": "Borç faiz tahakkukları ve döviz pozisyonu birincil raporla mutabık. Doğal stok korunması hazır nakit değildir. Fiyat 9 Ekim kapanışıdır; güncel fiyat iddiası taşımaz. TTM için aynı satın alma gücünde tam yıl köprüsü eksik.",
     "sustainability": "Borç faiz tahakkukları ve döviz pozisyonu birincil raporla mutabık. Doğal stok korunması hazır nakit değildir. Fiyat 9 Ekim kapanışıdır; güncel fiyat iddiası taşımaz. TTM için aynı satın alma gücünde tam yıl köprüsü eksik.",
-    "valuation": "Borç faiz tahakkukları ve döviz pozisyonu birincil raporla mutabık. Doğal stok korunması hazır nakit değildir. Fiyat 9 Ekim kapanışıdır; güncel fiyat iddiası taşımaz. TTM için aynı satın alma gücünde tam yıl köprüsü eksik.",
+    "valuation": "BASE senaryosu, EV/FAVÖK yöntemiyle ABD rafineri emsali Marathon Petroleum'un (MPC) güncel çarpanı (stockanalysis.com, EV/EBITDA ttm 5,15x; 07.11.2026) kullanılarak hesaplandı: pay başına adil değer yaklaşık 171,92 TL, güncel fiyata (386,25 TL) göre %55,5 potansiyel düşüşe karşılık gelir — yani bu yöntemle güncel fiyat belirgin primli görünüyor. Girdiler FY2025 normalize FAVÖK'ü (esas faaliyet kârı 41.646.897 bin TL + amortisman/itfa 14.625.862 bin TL = 56.272.759 bin TL; Tüpraş'ın 2025 yıl sonu denetlenmiş finansal tablolarının Not 4 ve Not 21'inden bu rapor tarafından türetildi, şirketin kendi yatırımcı sunumundaki 'FAVÖK' KPI'sı değil) ile FY2025 sonu net finansal yükümlülüğü (−41.455.028 bin TL, yani net nakit; Not 29) ve pay sayısı (1.926.795.598); üçü de aynı 31.12.2025 TAS29 bazına eşitlendi. ÖNEMLİ SINIRLAMA: 2026'nın rafineri marjları 2025'e göre belirgin yüksek (şirketin kendi H1 2026 net rafineri marjı 15,6 USD/varil, tam yıl beklentisi 13-15 USD/varile yükseltildi; 2025 çok daha zayıf bir yıldı) — bu nedenle FY2025 FAVÖK'ü muhtemelen güncel kazanç gücünü olduğundan düşük gösteriyor ve hesap bu yüzden muhafazakâr kalabilir; bu bir güncel hedef fiyat iddiası değildir. Sonuç ayrıca araştırmacının seçtiği bir emsal şirket grubu (ABD'li rafineriler) varsayımına dayanır (bkz. scenarioNotes); farklı bir emsal grubu veya TTM FAVÖK seçilseydi sonuç değişirdi.",
     "methods": {
       "pe": "Rafineride uygulanabilir, ancak çevrim tepesindeki kâr yanıltıcı düşük F/K yaratabilir. Normalize yıllık kâr ve karşılaştırılabilir emsal çarpanı eksik. Altı aylık kârı ikiyle çarpmak bu eksikleri gidermez; hesap sonucu yok.",
       "ev": "Faaliyet performansını sermaye yapısından ayırmaya yardımcı olur. Aynı bazda normalize FAVÖK, emsal çarpanları, net borç ve azınlık/iştirak köprüsü gerekli. Nakit ile borç farkı tek başına tam firma değeri köprüsü değildir; hesap sonucu yok.",
       "dcf": "Yatırım ve nakit dönüşümünü açıkça modeller. Çok yıllı hacim/marj, vergi, yatırım, işletme sermayesi, WACC ve terminal büyüme eksik. Nominal TL nakit akışıyla reel iskonto oranı karıştırılmamalı; hesap sonucu yok."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "EV/FAVÖK yöntemiyle BEAR/BASE/BULL adil değer artık hesaplanabiliyor: sabit tutulan FY2025 normalize FAVÖK'ü (56.272.759 bin TL, 31.12.2025 TAS29 bazı; şirketin kendi yatırımcı sunumundaki 'FAVÖK' KPI'sı değil, bu rapor tarafından esas faaliyet kârı + amortisman/itfa olarak iki dipnottan türetildi) ve aynı tarihli net finansal yükümlülük (−41.455.028 bin TL, yani net nakit) üzerine, her senaryoda üç ABD'li bağımsız rafineri emsalinden (Valero Energy/VLO, Marathon Petroleum/MPC, Phillips 66/PSX; stockanalysis.com, 07.11.2026) farklı bir FD/FAVÖK çarpanı uygulanıyor. Üçü de güncel fiyatın (386,25 TL) belirgin altında bir adil değer veriyor; ancak FY2025, 2026'nın çok daha güçlü rafineri marjlarını (bkz. 'nrm' ve şirketin yükselttiği marj beklentisi) henüz yansıtmadığından bu sonuç muhtemelen muhafazakârdır ve emsal grubu veya TTM FAVÖK seçilseydi sonuç değişirdi — garantili bir hedef fiyat veya sat sinyali değildir (bkz. scenarioNotes).",
     "scenarioNotes": {
-      "bear": "Rafineri marjı gerilerken yatırım ve işletme sermayesi ihtiyacı yüksek kalırsa dağıtım kapasitesi daralabilir.",
-      "base": "Marjlar çevrim ortalamasına yakınsar; yatırımlar bütçe içinde kalır. Çevrim ortalaması henüz doğrulanmadı.",
-      "bull": "Güçlü ürün marjları sürer, yatırımlar beklenen nakit katkısını sağlar. Bu koşulların gerçekleşeceği varsayılmıyor."
+      "bear": "Kötümser (BEAR) senaryo, üç ABD rafineri emsali arasında (stockanalysis.com, 07.11.2026) en düşük FD/FAVÖK çarpanını kullanır: Valero Energy (VLO), 4,71x. Tüpraş'ın FY2025 normalize FAVÖK'ü (56,27 milyar TL) bu çarpanla değerlenip net nakit (41,46 milyar TL) eklenince pay başına adil değer yaklaşık 159,07 TL çıkar — güncel fiyatın (386,25 TL) belirgin altında. Bu, Tüpraş'ın en düşük çarpanlı ABD rafinerisi kadar değerleneceği ve 2025'in daha zayıf marjlı kazanç gücünün kalıcı kabul edildiği varsayımıdır; garanti bir sonuç değildir.",
+      "base": "Baz (BASE) senaryo, üç ABD rafineri emsali arasında ortanca çarpanı kullanır: Marathon Petroleum (MPC), 5,15x (stockanalysis.com, 07.11.2026). Aynı FAVÖK ve net nakitle pay başına adil değer yaklaşık 171,92 TL çıkar — güncel fiyatın (386,25 TL) belirgin altında. Bu varsayıma dayalı bir hesaplamadır, garanti bir hedef fiyat değildir: FY2025 kazancı 2026'nın güçlü rafineri marjlarını henüz yansıtmıyor (bkz. valuation notu) ve Tüpraş'ın TL finansalları ABD emsallerinin USD bazlı çarpanlarıyla doğrudan karşılaştırılıyor; bu para birimi/muhasebe bazı farkı ayrıca değerlendirilmedi.",
+      "bull": "İyimser (BULL) senaryo, üç ABD rafineri emsali arasında en yüksek çarpanı kullanır: Phillips 66 (PSX), 7,06x (stockanalysis.com, 07.11.2026). Aynı FAVÖK ve net nakitle pay başına adil değer yaklaşık 227,70 TL çıkar; bu en iyimser senaryoda bile güncel fiyatın (386,25 TL) altında kalır. Bu, Tüpraş'ın en yüksek çarpanlı ABD rafinerisi kadar değerleneceği varsayımıdır; 2025'in zayıf marj yılı kazancı kullanıldığından bu sonuç muhtemelen muhafazakârdır (bkz. valuation notu), yine de gerçekleşmesi garanti değildir."
     },
     "technical": "Borç faiz tahakkukları ve döviz pozisyonu birincil raporla mutabık. Doğal stok korunması hazır nakit değildir. Fiyat 9 Ekim kapanışıdır; güncel fiyat iddiası taşımaz. TTM için aynı satın alma gücünde tam yıl köprüsü eksik.",
     "scanLimit": "11 Temmuz–11 Ekim aralığı için KAP şirket listesi ve seçili doğrudan bildirimler incelendi. Başlık taraması tamamlanmış içerik denetimi değildir. Temmuz derecelendirme/tahvil, Ağustos itfa, Eylül sigorta dahil bazı içerikler ve ekler açık kalıyor. Pay satışı, Entek katkısı, marj revizyonu ve ihraç kararı/başvurusu incelendi. “Başka önemli bildirim yok” sonucu çıkarılamaz.",
@@ -3477,17 +3315,17 @@
     "peers": "Otomotiv/traktor sektorunde (TOASO, TTRAK gibi) dogrudan bire bir carpan kiyasi bu oturumda yapilmadi; FROTO’nun agirlikli ihracat modeli (Avrupa) ve Ford/Koc ortak girisim yapisi diger BIST otomotiv sirketlerinden yapisal bir fark olarak not edilir.",
     "dividend": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir.",
     "sustainability": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir.",
-    "valuation": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir.",
+    "valuation": "BASE senaryosu, EV/FAVÖK yöntemiyle emsal çarpanı (Renault SA, 9,32x TTM) kullanılarak hesaplandı: pay başına adil değer yaklaşık 136,89 TL, güncel fiyata (69,20 TL) göre %97,8 potansiyel getiriye karşılık gelir. Bu sonuç araştırmacının seçtiği bir emsal şirket varsayımına (sektörün en düşük ve en yüksek güvenilir çarpanları arasında orta bir nokta) dayanır; doğrulanmış bir hedef fiyat veya kazanç garantisi değildir — farklı bir emsal seçilseydi sonuç da değişirdi.",
     "methods": {
       "pe": "Gercek TTM F/K hesaplanabildi: FY2025 tam yil net kari (40.021.393 bin TL, bu raporun kendi ozkaynak degisim tablosundan, Haziran 2026 bazinda) + H1 2026 (10.336.713) − H1 2025 (17.157.738) = 33.200.368 bin TL TTM kar. F/K = 242.829.720.000 / 33.200.368.000 ≈ 7,31x. Bu, naif bir yillikandirma degil, gercek kayan-12-ay rekonstruksiyonudur.",
       "ev": "EV/VAFOK icin sirketin KENDI acikladigi Duzeltilmis VAFOK (son 4 ceyrek, 63.557.627 bin TL) ve Net Finansal Borc (111.981.980 bin TL) kullanildi — bu rapor icin ayrica hesaplanmadi, dogrudan birincil kaynaktan alindi. EV = Piyasa degeri + Net borc = 354.811.700.000 TL; EV/VAFOK ≈ 5,58x.",
       "dcf": "Cok yilli serbest nakit akisi projeksiyonu, uygun iskonto orani ve terminal deger varsayimlari bu oturumda kaynaklanamadi; hesap sonucu yok."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "EV/FAVÖK yöntemiyle BEAR/BASE/BULL adil değer artık hesaplanabiliyor: sabit tutulan TTM VAFÖK (63,56 milyar TL) ve net finansal borç (111,98 milyar TL) üzerine, her senaryoda kaynaklı farklı bir küresel OEM emsal çarpanı (FD/FAVÖK) uygulanıyor. Bu çarpanlar FROTO'nun kendi verisi değil, araştırmacının seçtiği karşılaştırılabilir şirket varsayımıdır; garantili bir hedef fiyat değildir ve emsal seçimi değişirse sonuç da değişir.",
     "scenarioNotes": {
-      "bear": "Avrupa talep daralmasi 2026 ikinci yarisinda da surerse, esas faaliyet marji %2-3 bandinda kalmaya devam eder ve FY2026 net kari FY2025’in belirgin altinda kalir.",
-      "base": "3. ceyrek (5 Kasim 2026) sonuclari H1 trendiyle tutarli gelir; onerilen 2,6095 TL/pay temettu Genel Kurul’da onaylanir ve odenir.",
-      "bull": "Avrupa otomotiv talebi 2026 sonuna dogru toparlanir, marj baskisi hafifler. Bu kosulun gerceklesecegi varsayilmiyor."
+      "bear": "Kötümser (BEAR) senaryo, küresel OEM emsalleri arasında en düşük FD/FAVÖK çarpanına sahip Volkswagen AG'nin (7,79x, TTM) kullanıldığı varsayıma dayanır: FROTO'nun VAFÖK'ü aynı 7,79 katla değerlenirse pay başına adil değer yaklaşık 109,18 TL çıkar. Bu, \"FROTO en olgun/yüksek kaldıraçlı bir OEM gibi fiyatlanır\" varsayımıdır; garanti bir sonuç değildir.",
+      "base": "Baz (BASE) senaryo, Renault SA'nın (9,32x, TTM) emsal çarpanını kullanır — en düşük (Volkswagen 7,79x) ile en yüksek güvenilir (Hyundai 14,25x; Stellantis'in geçici düşük VAFÖK tabanından şişen 15,62x'i hariç tutuldu) arasında ılımlı bir nokta. Bu çarpanla FROTO'nun VAFÖK'ü değerlenince pay başına adil değer yaklaşık 136,89 TL çıkar. Bu varsayıma dayalı bir hesaplamadır, garanti bir hedef fiyat değildir.",
+      "bull": "İyimser (BULL) senaryo, tam hat (binek+ticari araç) üreten ve güçlü marjlara sahip Hyundai Motor'un (14,25x, TTM) emsal çarpanını kullanır: aynı VAFÖK bu çarpanla değerlenirse pay başına adil değer yaklaşık 226,19 TL çıkar. Bu, FROTO'nun en güçlü marjlı küresel OEM'ler kadar değerleneceği varsayımıdır; gerçekleşmesi garanti değildir."
     },
     "technical": "2026 ödenen brüt temettü 3,64 TL/paydır; Kasım için önerilen ödeme dahil değildir. 2025 toplamı güncel pay bazında 17,10 / 10 + 6,05 = 7,76 TL/paydır. Fiyatın gerçek işlem tarihi 28 Ekimdir.",
     "scanLimit": "29 Temmuz-29 Ekim 2026 araligi icin KAP’in kendi detayli sorgu arayuzune bu oturumda erisilemedi (JS render); bunun yerine KAP’i kaynak gosteren bir derleme sitesi (borsacoo.com) kullanildi. Bildirim ID’leri ve dogrudan KAP URL’leri bu oturumda dogrulanamadi. Kar payi onerisi, Olaganustu Genel Kurul cagrisi, 3. ceyrek takvimi, bagimsiz yonetim kurulu uyeligi SPK gorusu, H1 2026 sonuclarinin yayimlanmasi ve Temmuz’daki kismi uretim durdurma bildirimleri incelendi. \"Baska onemli bildirim yok\" sonucu cikarilamaz; kapsam PARTIAL'dir.",
@@ -3605,17 +3443,17 @@
     "peers": "Otomotiv sektöründe (FROTO, TTRAK gibi) doğrudan bire bir çarpan kıyası bu oturumda yapılmadı; Tofaş’ın Fiat/Stellantis lisanslı üretim modeli ve Koç+Stellantis ortak girişim yapısı diğer BIST otomotiv şirketlerinden yapısal bir fark olarak not edilir.",
     "dividend": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır.",
     "sustainability": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır.",
-    "valuation": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır.",
+    "valuation": "BASE senaryosu, EV/FAVÖK yöntemiyle emsal çarpanı (Siblis Research, dünya çapında otomotiv sektörü medyanı, 8,5x; 30 Eylül 2026) kullanılarak hesaplandı: pay başına adil değer yaklaşık 102,60 TL, güncel fiyata (211,20 TL) göre %51,4 potansiyel düşüşe karşılık gelir — yani bu yöntemle güncel fiyat belirgin primli görünüyor. Girdiler FY2025 FAVÖK (10,0 milyar TL) ve net finansal borç (33.701.681.000 TL) ile 31.12.2025 pay sayısı (500.000.000); üçü de aynı 2025-12-31 bazına eşitlendi. Sonuç, araştırmacının seçtiği bir emsal şirket evreni varsayımına dayanır (bkz. scenarioNotes); doğrulanmış bir hedef fiyat veya satış tavsiyesi değildir — farklı bir emsal grubu veya normalize FAVÖK seçilseydi sonuç değişirdi.",
     "methods": {
       "pe": "Gerçek TTM F/K hesaplanabildi: FY2025 tam yıl net kârı (9.837.424 bin TL, bu raporun kendi özkaynak değişim tablosunun \"Transferler\" satırından, Haziran 2026 bazında) + H1 2026 (6.290.532) − H1 2025 (2.116.615) = 14.011.341 bin TL TTM kâr. F/K = 105.600.000.000 / 14.011.341.000 ≈ 7,54x. Bu, naif bir yıllıklandırma değil, gerçek kayan-12-ay rekonstrüksiyonudur (tüm girdiler aynı 30.06.2026 satın alma gücü bazında).",
       "ev": "FD/FAVÖK ve Net Borç/FAVÖK için TAM YIL verisi gerektiğinden ve H1 2026 raporunda FY2025’e ait FAVÖK yeniden ifade edilmediğinden, şirketin KENDİ 2025 Entegre Faaliyet Raporu’ndaki FY2025 verileri (orijinal 31.12.2025 satın alma gücü bazında) kullanıldı: FAVÖK ~10,0 milyar TL (yönetim kurulu raporu özet tablosu), net finansal borç 33.701.681 bin TL (UV borçlanmanın KV kısmı + UV borçlanma − nakit, aynı FY2025 raporundan). EV = Piyasa değeri + Net borç = 139.301.681.000 TL; FD/FAVÖK ≈13,93x. Bu kasıtlı bir karma-dönem seçimidir (fiyat güncel, borç/FAVÖK FY2025 sonu) çünkü H1 2026 raporunda tam yıl FAVÖK yeniden ifade edilmiyor; TMS29 bazları birbirine karıştırılmadı (ikisi kendi iç-tutarlı setinde kaldı).",
       "dcf": "Çok yıllı serbest nakit akışı projeksiyonu, uygun iskonto oranı ve terminal değer varsayımları bu oturumda kaynaklanamadı; hesap sonucu yok."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "EV/FAVÖK yöntemiyle BEAR/BASE/BULL adil değer artık hesaplanabiliyor: sabit tutulan FY2025 FAVÖK (10,0 milyar TL) ve net finansal borç (33.701.681.000 TL) üzerine, her senaryoda Siblis Research’ün otomotiv sektörü bölgesel/dünya EV/FAVÖK medyanlarından kaynaklı farklı bir çarpan uygulanıyor. Üçü de güncel fiyatın (211,20 TL) altında bir adil değer veriyor; bu, bu emsal setinin TOASO’nun güncel fiyatına göre düşük kaldığını gösteriyor, ama emsal grubu seçimi ve TMS 29/nominal muhasebe bazı farkı nedeniyle garantili bir hedef fiyat veya satış sinyali değildir.",
     "scenarioNotes": {
-      "bear": "Stok birikimi 3. çeyrekte de sürer ve satışa dönüşmezse, işletme nakit akışı negatif kalır ve kısa vadeli borçlanma daha da artar; bu durumda temettü sürdürülebilirliği sorgulanabilir.",
-      "base": "3. çeyrek (5 Kasım 2026) sonuçları stok birikiminin satışa döndüğünü gösterir ve işletme nakit akışı pozitife döner; H1’in reel büyüme trendi (ciro +%60,6) sürer.",
-      "bull": "Stok birikimi hızlı satışla eritilir, işletme nakit akışı güçlü pozitife döner ve FY2026 tam yıl kârı FY2025’i belirgin aşar. Bu koşulun gerçekleşeceği varsayılmıyor."
+      "bear": "Kötümser (BEAR) senaryo, Siblis Research’ün otomotiv sektörü Avrupa bölgesel EV/FAVÖK medyanını (6,3x, 30 Eylül 2026) kullanır — Tofaş’ın Fiat/Stellantis lisanslı, Avrupa’ya ihracat odaklı üretim modeline en yakın bölgesel kırılım. FY2025 FAVÖK’ü (10,0 milyar TL) bu çarpanla değerlenip net finansal borç (33.701.681.000 TL) düşülünce pay başına adil değer yaklaşık 58,60 TL çıkar — güncel fiyatın (211,20 TL) çok altında. Bu, Tofaş’ın Avrupa’daki en düşük çarpanlı OEM’ler kadar değerleneceği varsayımıdır; garanti bir sonuç değildir.",
+      "base": "Baz (BASE) senaryo, Siblis Research’ün dünya çapında (426 şirket) otomotiv sektörü EV/FAVÖK medyanını (8,5x, 30 Eylül 2026) kullanır. Aynı FAVÖK ve net borçla pay başına adil değer yaklaşık 102,60 TL çıkar — güncel fiyatın (211,20 TL) belirgin altında. Bu varsayıma dayalı bir hesaplamadır, garanti bir hedef fiyat değildir; TOASO’nun TMS 29 ile yeniden ifade edilmiş TL finansalları, global emsal setinin nominal/dolar bazlı çarpanlarıyla doğrudan karşılaştırılıyor, bu muhasebe bazı farkı ayrıca değerlendirilmedi.",
+      "bull": "İyimser (BULL) senaryo, Siblis Research’ün Gelişen Asya bölgesel EV/FAVÖK medyanını (11,8x, 30 Eylül 2026) kullanır — büyüme primi taşıyan en yüksek bölgesel kırılım. Aynı FAVÖK ve net borçla pay başına adil değer yaklaşık 168,60 TL çıkar; bu en iyimser senaryoda bile güncel fiyatın (211,20 TL) altında kalır. Bu, Tofaş’ın en yüksek çarpanlı gelişen piyasa OEM’leri kadar değerleneceği varsayımıdır; gerçekleşmesi garanti değildir."
     },
     "technical": "Temettü veriminde 17 TL net yerine 20 TL brüt tutar kullanılır; önceki yıl 12 TL brüttür. KAP 1639026 finansal tablo eki ile faaliyet raporu bağlantısı ayrıldı. Piyasa payı 1 TL işlem birimi üzerinden kullanılır.",
     "scanLimit": "31 Temmuz-31 Ekim 2026 aralığı için KAP’in kendi detaylı sorgu arayüzüne bu oturumda erişilemedi (JS render); bunun yerine KAP’i kaynak gösteren bir derleme sitesi (borsacoo.com) ve web araması kullanıldı. Bildirim ID’leri ve doğrudan KAP URL’leri bu oturumda sistematik doğrulanamadı. H1 2026 sonuçlarının yayımlanması, 3. çeyrek finansal takvimi, Haziran’daki üretim kapasitesi artışı ve yönetim kurulu komite güncellemesi, Temmuz’daki planlı bakım/üretim durdurma bildirimleri incelendi. \"Başka önemli bildirim yok\" sonucu çıkarılamaz; kapsam PARTIAL’dır.",
@@ -3738,11 +3576,11 @@
       "ev": "FD/FAVÖK = (Piyasa değeri + Net borç) / FAVÖK. 9A2026 FAVÖK = Esas faaliyet zararı (−860,2 milyon TL) + Amortisman (2,65 milyar TL) = 1,79 milyar TL (marj %4,87, 9A2025'te %9,68'den ciddi düşüş). FD ≈42,18 milyar TL. Naif yıllıklaştırmayla (×4/3) FD/FAVÖK ≈17,7x — döngüsel dip FAVÖK'üne göre yüksek, normalize edilmiş karşılaştırma eksik (bkz. guide.missing).",
       "dcf": "Çok yıllı traktör talebi/fiyat projeksiyonu, uygun iskonto oranı ve terminal değer varsayımları bu oturumda kaynaklanamadı; hesap sonucu yok."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. FD/FAVÖK yöntemi normalleştirilmiş FAVÖK eksikliği nedeniyle BLOCKED kalır; sayısal senaryo sonucu üretilmez (bkz. scenarioNotes).",
     "scenarioNotes": {
-      "bear": "Türkiye traktör pazarı 2027'de de küçülmeye devam ederse ve politika faizi yüksek kalırsa, finansman giderleri kârlılığı baskılamaya devam eder; stok eritmesi tükendiğinde işletme nakit akışı da zayıflayabilir.",
-      "base": "Pazar 2026 dip seviyesinden 2027'de kısmen toparlanır, faiz ortamı kademeli iyileşir, ihracat büyümesi sürer.",
-      "bull": "Politika faizi hızlı düşer, çiftçi finansmanı rahatlar, yurt içi talep hızla geri döner ve operasyonel kaldıraç marjları hızla iyileştirir. Bu koşulların gerçekleşeceği varsayılmıyor."
+      "bear": "Türkiye traktör pazarı 2027'de de küçülmeye devam ederse ve politika faizi yüksek kalırsa, finansman giderleri kârlılığı baskılamaya devam eder; stok eritmesi tükendiğinde işletme nakit akışı da zayıflayabilir. Sayısal FD/FAVÖK kötümser senaryosu üretilmedi: normalizedEbitda fact'i eksik. 30.09.2026 ara dönem raporunun Not 24'ünde (Sermaye risk yönetimi) net finansal borç birincil kaynaktan doğrulandı (13.133.877.360 TL toplam finansal borç − 5.154.157.976 TL nakit − 95.692.957 TL finansal yatırım = 7.884.026.427 TL), ama FROTO'nun Not 2.3'üne benzer bir FAVÖK/VAFÖK mutabakat notu bu raporda yok. Üç farklı ikincil kaynaktan (investing.com/iDealData 23.02.2024: FY2023 FAVÖK marjı %22,6; Foreks 14.02.2025: FY2024 marjı %14,7; Akbank Yatırım 10.02.2026: FY2025 FAVÖK 4.956 milyon TL/marj %9,2) toplanan yuvarlak marjlar birbirini kabaca doğruluyor, ama her biri kendi yılının satın alma gücü bazındadır ve 30.09.2026 net borç bazına güvenilir şekilde köprülenemiyor; bu yüzden döngüsel normalizasyon kurulamadı ve FD/FAVÖK BLOCKED kaldı.",
+      "base": "Pazar 2026 dip seviyesinden 2027'de kısmen toparlanır, faiz ortamı kademeli iyileşir, ihracat büyümesi sürer. Baz senaryo için de sayısal FD/FAVÖK üretilmedi: 2023-2025 FAVÖK marjlarının (%22,6 / %14,7 / %9,2) ortalamasını güncel hasılata uygulayarak bir 'normalize FAVÖK' tahmini çıkarılabilir görünse de, bu üç rakam şirketin kendi birincil mutabakat notundan değil üç farklı ikincil/analist kaynağından geliyor ve farklı TAS29 satın alma gücü bazlarında; tek bir normalizedEbitda fact'i olarak güvenilir şekilde kurulamıyor. Yöntem bu yüzden MISSING:normalizedEbitda, MISSING:peerEvEbitda, MISSING:valuationNetDebt ile BLOCKED kalır.",
+      "bull": "Politika faizi hızlı düşer, çiftçi finansmanı rahatlar, yurt içi talep hızla geri döner ve operasyonel kaldıraç marjları hızla iyileştirir. Bu koşulların gerçekleşeceği varsayılmıyor. İyimser senaryo da sayısallaştırılmadı: küresel traktör üreticileri için FD/FAVÖK çarpanları (stockanalysis.com, 2026-11-06 gözlemi: CNH Industrial ~15x, Deere ~27x, AGCO ~10x) bulunabilse de, bunları çarpacak güvenilir bir normalizedEbitda hâlâ eksik; kaynaksız bir çarpım iyimser görünen ama dayanaksız bir sayı üretirdi."
     },
     "technical": "Yeni zarar dönemi nedeniyle F/K hesaplanamaz. Eski kârlı yıl cari kâr yerine kullanılamaz. 2025 dağıtımı 2026 temettü verimine taşınmaz; KAP 1569214 dağıtmama kararını bildirir. Normalleştirilmiş kâr köprüsü eksik; PD/DD tek başına ucuzluk ölçüsü değildir.",
     "scanLimit": "29 Temmuz-29 Ekim 2026 aralığı için KAP'ın kendi detaylı sorgu arayüzüne bu oturumda erişilemedi (JS render); bunun yerine KAP'ı kaynak gösteren bir derleme sitesi kullanıldı. Bildirim ID'leri ve doğrudan KAP URL'leri bu oturumda doğrulanamadı. 9A2026 sonuçları, kredi derecelendirmesi düşüşü, rutin bakım kapanışı ve devre kesiciler incelendi. \"SPK İşlem Yasağı\" bildirimlerinin TTRAK'ın kendisiyle ilgisi olmadığı araştırıldı (bkz. company.ownership). \"Başka önemli bildirim yok\" sonucu çıkarılamaz; kapsam PARTIAL'dır.",
@@ -3847,17 +3685,17 @@
     "peers": "Broker/aracı kurum sektöründe bu oturumda doğrudan bire bir emsal karşılaştırması yapılmadı. İş Bankası grubu içindeki konumu (bkz. company.ownership) en yakın yapısal referans.",
     "dividend": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik.",
     "sustainability": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik.",
-    "valuation": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik.",
+    "valuation": "BASE senaryosu BOOK_ROE yöntemiyle (gerekçeli PD/DD = ROE/Ke) hesaplandı: ana ortaklık özkaynağı (35,25 milyar TL, 30.06.2026) ÷ pay sayısı (1,5 milyar) × (TTM sürdürülebilir ROE %21,38 ÷ CAPM özkaynak maliyeti Ke %42,32) = pay başına adil değer ≈11,87 TL, güncel fiyata (25,22 TL) göre ≈%-52,9 potansiyel getiri. Ke'nin bu denli yüksek çıkması (%42,32 = TR 10 yıllık TL devlet tahvili %33,02 + Damodaran Türkiye özkaynak risk primi %9,30) Türkiye'nin güncel yüksek nominal faiz ortamından kaynaklanır; yüksek enflasyonlu bir ortamda nominal CAPM, reel olarak sağlıklı bir ROE'ye sahip şirketler için de düşük bir gerekçeli PD/DD üretebilir — bu, yöntemin bilinen bir sınırlamasıdır, tek başına 'şirket aşırı değerli' hükmü değildir. Farklı bir ROE/Ke varsayımı seçilseydi sonuç değişirdi; doğrulanmış bir hedef fiyat veya kazanç garantisi değildir.",
     "methods": {
       "pe": "Broker profili için F/K (BOOK_ROE yöntemi) hesaplanmadı; şirketin kendi Finansal Oranlar sekmesi 6/2026 dönemi için F/K=5,1 veriyor ama bu rakamın tam hesap izi (hangi kâr tabanı, hangi fiyat tarihi) bu oturumda yeniden üretilmedi, bu yüzden bu raporun kendi hesaplarına dahil edilmedi (bkz. Veri eksikleri).",
       "ev": "Broker/aracı kurum için FD/FAVÖK yöntemi uygulanmaz (CLAUDE.md: sanayi şirketi mantığı finansal kuruluşlara uygulanmaz); bunun yerine PD/DD ve ROE kullanıldı (bkz. valuation).",
       "dcf": "Çok yıllı komisyon geliri/işlem hacmi projeksiyonu, uygun iskonto oranı ve terminal değer varsayımları bu oturumda kaynaklanamadı; hesap sonucu yok."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "BOOK_ROE yöntemiyle BEAR/BASE/BULL adil değer artık hesaplanabiliyor: sabit tutulan ana ortaklık özkaynağı (35,25 milyar TL) ve pay sayısı (1,5 milyar) üzerine, her senaryoda geçmiş yıllardan kaynaklı farklı bir sürdürülebilir ROE ve CAPM bazlı bir özkaynak maliyeti (Ke) varsayımı uygulanıyor. Üç senaryonun da pay başına adil değeri güncel fiyatın (25,22 TL) altında çıkıyor; bu büyük ölçüde Türkiye'nin güncel yüksek nominal TL risksiz faiz oranının Ke'yi %39-45 aralığına taşımasından kaynaklanır, tek başına 'şirket aşırı değerli' hükmü değildir (bkz. valuation). ROE/Ke varsayımları araştırmacının seçimidir, garantili bir hedef fiyat değildir.",
     "scenarioNotes": {
-      "bear": "BIST işlem hacimleri 2026 ikinci yarısında daralmaya devam ederse çekirdek komisyon geliri de gerilemeye başlayabilir; 2025'teki gibi bir tek seferlik yatırım geliri tekrarlanmazsa 2026 tam yıl kârı FY2025'in belirgin altında kalabilir.",
-      "base": "Çekirdek komisyon geliri H1 2026 seviyesinde (~%4 civarı yıllık daralma) devam eder, 3. çeyrek sonuçları (beklenen 01.10-09.11.2026 arası) H1 trendiyle tutarlı gelir.",
-      "bull": "BIST işlem hacimleri toparlanır ve/veya yeni bir tek seferlik yatırım/iştirak geliri gerçekleşirse yıllık kâr FY2025 seviyesine yaklaşabilir. Bu koşulun gerçekleşeceği varsayılmıyor."
+      "bear": "Kötümser (BEAR) senaryo, FY2024'ün kendi döneminde gözlenen en düşük yıllık ROE'yi (%20,69, dönem-sonu özkaynakla) ve CAPM bazına +3 puanlık ek bir risk tamponuyla yükseltilmiş özkaynak maliyetini (Ke %45,32) kullanır: pay başına adil değer yaklaşık 10,73 TL çıkar, güncel fiyata (25,22 TL) göre ≈%-57,5. Bu, 'komisyon geliri zayıflar ve piyasa daha yüksek bir risk primi talep eder' varsayımıdır; garanti bir sonuç değildir.",
+      "base": "Baz (BASE) senaryo, raporun kendi TTM (3Ç2025-2Ç2026) ROE hesabını (%21,38, ortalama özkaynakla) ve CAPM'den türetilen Ke'yi (%42,32 = TR 10 yıllık tahvil %33,02 + Damodaran Türkiye özkaynak risk primi %9,30) kullanır: pay başına adil değer yaklaşık 11,87 TL çıkar, güncel fiyata (25,22 TL) göre ≈%-52,9. Yüksek Ke, Türkiye'nin güncel nominal faiz ortamından kaynaklanır (bkz. valuation); doğrulanmış bir hedef fiyat değildir.",
+      "bull": "İyimser (BULL) senaryo, son 3 tam mali yıl içindeki en yüksek yıllık ROE'yi (FY2023, %34,68, dönem-sonu özkaynakla) ve CAPM bazına −3 puanlık bir risk primi düşüşüyle indirilmiş Ke'yi (%39,32) kullanır: pay başına adil değer yaklaşık 20,73 TL çıkar, güncel fiyata (25,22 TL) göre ≈%-17,8 — en iyimser senaryoda bile güncel fiyatın altında kalır. Bu, 'komisyon geliri 2023 seviyesine döner ve risk primi hafifler' varsayımıdır; garanti bir sonuç değildir."
     },
     "technical": "Finansallar konsolide TMS 29 ve 30.06.2026 satın alma gücündedir. TTM ana ortaklık kârı ve başlangıç/bitiş özkaynağı ile ROE hesaplanır. Faiz/ücret/prim toplamı saf komisyon değildir. Düzenleyici sermaye yeterliliği için sermaye tabanı ve risk karşılığı verileri eksik.",
     "scanLimit": "KAP'ın kendi detaylı sorgu arayüzüne bu oturumda erişilemedi; İş Yatırım'ın kendi Mali Tablolar/Finansal Oranlar aracı (Matriks verisi, şirketin kendi sitesi) ana kaynak olarak kullanıldı. H1 2026 sonuçlarının KAP bildirim tarihi (≈12 Ağustos 2026) ikincil haber derlemeleriyle (bigpara, vkyanaliz) teyit edildi ama doğrudan KAP bildirim numarası bu oturumda tespit edilemedi. 3. çeyrek (9 aylık) sonuçlarının henüz yayımlanmadığı KAP'ın kendi bildirim takvimi sayfasından doğrulandı. \"Başka önemli bildirim yok\" sonucu çıkarılamaz; kapsam PARTIAL'dır.",
@@ -3946,9 +3784,9 @@
     },
     "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
     "scenarioNotes": {
-      "bear": "2026 yıl sonu değerleme raporunda ANKAmall değeri sabit kalır veya aşağı revize edilirse, fiyat NAD'ın üzerinde kalmaya devam eder; otel renovasyonu uzarsa gelir kaybı sürer.",
-      "base": "Otel planlanan şekilde tam kapasiteye döner, ANKAmall kira gelirleri enflasyona paralel büyür, PROEN yatırımının getirisi henüz belirsiz kalır.",
-      "bull": "2026 yıl sonu değerleme raporu ANKAmall değerini belirgin yukarı revize eder (NAD büyür, prim küçülür) ve otel tam kapasiteye erken döner. Bu koşulların gerçekleşeceği varsayılmıyor."
+      "bear": "Kötümser senaryo da üretilmiyor: NAD girdisi olarak kullanılan netAssetValue (28.214.691.004 TL, 30.06.2026 bireysel özkaynak) CONFLICT olarak işaretli — bu satır borç/vergi düzeltmeli, bağımsız bir portföy NAD'ı değildir. Bulunabilen tek 'eksiz' ANKAmall ekspertizi (YGMT-1910181) 2015-2016 tarihli ve günümüz köprüsü için kullanılamayacak kadar eski; CP Ankara Oteli ise maliyet bazlı taşınıyor. Bu oturumda KAP'ta 31.12.2025 tarihli 'Ankamall AVM ve CP Ankara Oteli Değerleme Raporu' (YGMT-2510222, Reel Gayrimenkul Değerleme A.Ş.) bulundu, ancak PDF'in otel bölümünde ayrı bir rayiç değer rakamı verip vermediği ve bu rakamın finansallara veya SPK portföy NAD tablosuna yansıyıp yansımadığı bu oturumda doğrulanamadı. Doğrulanamamış bir düzeltmeyi keyfi bir kötümser çarpanla sayısallaştırmak gerçek aşağı riski yanlış gösterebilir; bu yüzden rakam verilmiyor.",
+      "base": "Baz senaryo da bloke: konsolide parentEquity (28.109.740.451 TL, 30.06.2026) bireysel netAssetValue'ya (28.214.691.004 TL) çok yakın (~%0,4 fark, konsolidasyon kapsamından), ama bu yakınlık özkaynağın kendisinin bağımsız, güncel, borç/vergi düzeltmeli bir NAD'a eşit olduğunu KANITLAMAZ: yatırım amaçlı gayrimenkul kalemi (22.377.304.451 TL) 31.12.2025 ekspertizine dayanıp rayiç bedelle taşınsa da, bu kalem CP Ankara Otelini içermiyor — otel maliyet bazlı taşınıyor. Otel için ayrı, güncel ve bağımsız bir rayiç değer rakamı (ve bunun özkaynağa köprüsü) bu oturumda doğrulanamadı; doğrulanmamış bir rakamı 'baz senaryo' diye sunmak yanıltıcı olurdu.",
+      "bull": "İyimser senaryo da üretilmiyor: gerçek bir NAD primi/iskontosu hesaplamak önce otel dahil, doğrulanmış tam bir NAD gerektirir. Elde yalnızca bireysel/konsolide özkaynak var; buna keyfi bir prim eklemek iyimser görünen bir sayı üretir ama hiçbir bağımsız kaynağa dayanmaz. 2026 yıl sonu ekspertizi veya otelin ayrıştırılmış rayiç değeri yayımlanırsa yeniden değerlendirilmeli."
     },
     "technical": "ANKAmall doluluğu %99,9; kapalı oteli kapsamaz. İşletme nakdi 1.741.774.649 TL içinde 832.423.344 TL faiz vardır. Faiz hariç nakit 909.351.305 TL, yatırım sonrası toplam nakit 1.521.751.711 TL. Ödenen temettünün toplam işletme nakdiyle karşılanması %66,44; bu oran saf kira nakdi değildir. Bireysel özkaynak düzeltilmiş NAD değildir.",
     "scanLimit": "29 Temmuz-29 Ekim 2026 aralığı için KAP'ın kendi detaylı sorgu arayüzüne bu oturumda erişilemedi (JS render); bunun yerine KAP'ı kaynak gösteren bir derleme sitesi kullanıldı. Bildirim ID'leri ve doğrudan KAP URL'leri bu oturumda doğrulanamadı. PROEN sermaye artırımı, devre kesiciler ve periyodik mali tablo/faaliyet raporu bildirimleri incelendi. \"Başka önemli bildirim yok\" sonucu çıkarılamaz; kapsam PARTIAL'dır.",
@@ -4036,17 +3874,17 @@
     "peers": "Şirketin aynı bazlı H1 karşılaştırması kullanıldı. SASA/PETKM farklı ürün, kapasite, borç ve muhasebe etkileri nedeniyle doğrudan emsal kabul edilmedi. Açılan şirket/analist kaynakları aynı tarihli normalize emsal seti sağlamadı; bu nedenle sektör için keyfî “ucuz çarpan” eşiği seçilmedi.",
     "dividend": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır.",
     "sustainability": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır.",
-    "valuation": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır.",
+    "valuation": "BASE senaryosu, EV/FAVÖK yöntemiyle emsal çarpanı (Toray Industries, Inc., TYO:3402, TTM FD/FAVÖK 9,07x; StockAnalysis.com, 06.11.2026) kullanılarak hesaplandı: pay başına adil değer yaklaşık 7,91 TL, güncel fiyata (9,99 TL) göre %20,8 potansiyel düşüşe karşılık gelir — bu yöntemle güncel fiyat hafif primli görünüyor. Girdiler FY2025 tam yıl FAVÖK'ü (5,72963 milyar TL) ve net finansal borç (21,225728 milyar TL) ile 31.12.2025 pay sayısı (3.885.000.000); üçü de aynı 2025-12-31 TMS29 bazına eşitlendi. TTM FAVÖK (H1 2026'daki toparlanma nedeniyle muhtemelen daha yüksek) kasıtlı olarak kullanılmadı, çünkü H1 2026 ve FY2025 farklı TMS29 satın alma gücü bazlarını (06.2026 vs 12.2025) taşır ve bunları karıştırmadan birleştirmek bu oturumda yapılamadı. Sonuç, araştırmacının seçtiği bir emsal şirket (Toray) varsayımına dayanır (bkz. scenarioNotes); doğrulanmış bir hedef fiyat veya satış tavsiyesi değildir — farklı bir emsal veya TTM FAVÖK seçilseydi sonuç değişirdi.",
     "methods": {
       "pe": "TTM kâr = 4.729.672.000 + 2.050.357.000 − 280.865.000 = 6.499.164.000 TL; piyasa değeri 38.811.150.000 / kâr ≈ 5,97x. Aynı H1 raporu bazı; konsolidasyon değişimi ve tek seferlik etkiler normalize edilmedi.",
       "ev": "FY2025 FAVÖK 5,72963 milyar TL; aynı tarihli net borç 21,225728 milyar TL. Firma değeri vekili = 38,81115 güncel piyasa değeri + 21,225728 borç + 0,913591 kontrol gücü olmayan pay = 60,950469 milyar TL; oran ≈10,64x. Bu TTM değildir. NCI defter değeri vekilidir; güncel borç 23,10 milyar TL olup yıllık oranla karıştırılmaz. Şirket sunumundaki 2,79x oranının payda tanımı açık değil; bizim FY2025 net borç/FAVÖK hesabımız 3,70x.",
       "dcf": "DCF için normalize, faizden arındırılmış nakit akışı, borç maliyeti/WACC ve yatırım takvimi gerekir. H1 FCF vekilini ikiyle çarpıp sonsuza taşımak uygun değildir. Bu girdiler güvenilir biçimde tamamlanmadığından hedef fiyat üretilmedi."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "EV/FAVÖK yöntemiyle BEAR/BASE/BULL pay başına adil değer artık hesaplanabiliyor: sabit tutulan FY2025 FAVÖK'ü (5,72963 milyar TL, 31.12.2025 TMS29 bazı) ve aynı tarihli net finansal borç (21,225728 milyar TL) üzerine, her senaryoda küresel akrilik/karbon elyaf emsalleri setinden (SGL Carbon, Toray Industries, Hexcel Corporation; StockAnalysis.com, 05–06.11.2026) farklı bir çarpan uygulanıyor. Kötümser ve baz senaryo güncel fiyatın (9,99 TL) altında, iyimser senaryo üzerinde adil değer veriyor; emsal grubu seçimi ve FY2025 bazının H1 2026'daki döngüsel toparlanmayı henüz yansıtmaması nedeniyle garantili bir hedef fiyat veya al/sat sinyali değildir.",
     "scenarioNotes": {
-      "bear": "ACN maliyeti fiyatlara aktarılamaz, kapasite ve marj düşer; kredi koşulları ve temettü üzerinde baskı artar.",
-      "base": "Yönetimin %15–18 marj ve yaklaşık 1 milyar USD ciro beklentisi gerçekleşir; yatırımlar ve faiz sonrası dağıtılabilir nakit ayrıca izlenir.",
-      "bull": "İleri malzeme satışları büyür, borç azalır ve faiz sonrası nakit temettüyü aşar; değerleme için bu koşulların sürekliliği gerekir."
+      "bear": "Kötümser (BEAR) senaryo, Avrupalı karbon elyaf/grafit malzeme üreticisi SGL Carbon SE'nin (ETR:SGL) TTM FD/FAVÖK çarpanını (5,44x, StockAnalysis.com, 06.11.2026) kullanır — küresel karbon elyaf emsalleri arasında en düşük çarpanlı, döngüsel ve düşük marjlı uç. FY2025 FAVÖK'ü (5,72963 milyar TL) bu çarpanla değerlenip net finansal borç (21,225728 milyar TL) düşülünce pay başına adil değer yaklaşık 2,56 TL çıkar — güncel fiyatın (9,99 TL) %74,4 altında. Bu, AKSA'nın en düşük çarpanlı Avrupalı karbon elyaf üreticisi kadar değerleneceği varsayımıdır; garanti bir sonuç değildir.",
+      "base": "Baz (BASE) senaryo, AKSA'nın iş modeline (akrilik elyaf + karbon elyaf, Not 1) en yakın küresel emsal olan Toray Industries, Inc.'in (TYO:3402) TTM FD/FAVÖK çarpanını (9,07x, StockAnalysis.com, 06.11.2026) kullanır — dünyanın en büyük karbon elyaf üreticisi ve önemli bir akrilik elyaf üreticisi. Aynı FAVÖK ve net borçla pay başına adil değer yaklaşık 7,91 TL çıkar — güncel fiyatın (9,99 TL) %20,8 altında. Hesap FY2025'in tam yıl FAVÖK'ünü baz alır; H1 2026 FAVÖK'ü (4,135978 milyar TL) H1 2025'e (2,790664 milyar TL) göre belirgin yüksek olduğundan, döngüsel toparlanma sürerse normalize FAVÖK ve bu sonuç yukarı güncellenebilir. Varsayıma dayalı bir hesaplamadır, garanti bir hedef fiyat değildir.",
+      "bull": "İyimser (BULL) senaryo, havacılık odaklı ileri karbon elyaf kompozit üreticisi Hexcel Corporation'ın (NYSE:HXL) TTM FD/FAVÖK çarpanını (17,12x, StockAnalysis.com, 06.11.2026) kullanır — bu emsal setinin en yüksek çarpanlı, büyüme/marj primli ucu. Aynı FAVÖK ve net borçla pay başına adil değer yaklaşık 19,79 TL çıkar — güncel fiyatın (9,99 TL) %98,1 üzerinde. Hexcel'in uçak kompozit odaklı ürün karmasının AKSA'nın endüstriyel ağırlıklı akrilik/karbon elyaf karmasından daha yüksek büyüme/marj profiline sahip olduğu not edilir; bu nedenle üst sınır niteliğindedir ve gerçekleşmesi garanti değildir."
     },
     "technical": "Brüt temettüler 2026 için 0,58 ve 2025 için 0,48 TL/paydır; önceki net tutarlar brüt verimden ayrıldı. Net borç krediler ve kiralamaları içerir, finansal yatırımlar ayrıca izlenir. TMS 29 dönemleri karıştırılmadan TTM hesaplanır.",
     "scanLimit": "Tarama: 01.08–31.10.2026, Europe/Istanbul. KAP şirket 840, şirket arşivi ve ek PDF’ler açıldı. KAP ayrıntılı sorgunun tüm sayfaları doğrulanamadı: PARTIAL. 13 Ağustos finansalları, ilişkili taraf/kurumsal yönetim güncellemeleri ve 24 Eylül Tunus yatırımı arşivde görüldü. 9 aylık rapor için KAP beklenen pencere 01.10–09.11; arşivde en son H1 bulunuyor. “Başka önemli bildirim yok” sonucu çıkarılamaz.",
@@ -4172,9 +4010,9 @@
     },
     "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
     "scenarioNotes": {
-      "bear": "Gayrimenkul −%20: NAD 8,586 milyar TL; pay başına 230,40 TL. İmar maliyetleri ayrıca doğarsa sonuç daha düşük olabilir.",
-      "base": "Gayrimenkul sabit: bilanço NAD 11,131 milyar TL; 298,71 TL/pay. Sabit değer varsayımı güncellik doğrulaması değildir.",
-      "bull": "Gayrimenkul +%10: NAD 12,404 milyar TL; 332,86 TL/pay. Vergi yükünün sabit tutulması bu senaryoyu iyimser gösterebilir."
+      "bear": "Kötümser senaryo da üretilmiyor: hangi iskonto uygulanırsa uygulansın başlangıç noktası (11,13 milyar TL bilanço özkaynağı) bağımsız, güncel ve borç/vergi düzeltmeli bir NAD değil. İmar davalarındaki olası ek ceza/tadilat maliyeti bu özkaynak vekiline yansımadığından, keyfi bir kötümser çarpan gerçek aşağı riski az veya çok gösterebilir; bu yüzden sayı verilmiyor.",
+      "base": "Baz senaryo da bloke: muhasebe özkaynağı (11,13 milyar TL, 30.06.2026) ile FY2025 bağımsız ekspertizinin nihai toplamı (10,80 milyar TL, 31.12.2025) aynı satın alma gücüne taşındığında (TMS 29 + rollforward) örtüştüğü doğrulandı — ama bu örtüşme, muhasebe özkaynağının kendisinin bağımsız düzeltilmiş NAD'a (iskonto/işlem maliyeti dahil) eşit olduğunu KANITLAMAZ. Şirketin ayrı bir 'Net Aktif Değer' tablosu yok, güncel (H1/Q3 2026) bağımsız ekspertiz de henüz yayımlanmadı. Doğrulanmamış bir rakamı 'baz senaryo' diye sunmak yanıltıcı olurdu.",
+      "bull": "İyimser senaryo da üretilmiyor: gerçek bir NAD primi/iskontosu hesaplamak önce doğrulanmış bir NAD gerektirir. Elde yalnızca muhasebe özkaynağı var; buna keyfi bir prim eklemek iyimser görünen bir sayı üretir ama hiçbir bağımsız kaynağa dayanmaz."
     },
     "technical": "İşletme nakdi 356.808.000 TL; aynı satın alma gücünde ödenen temettü 473.103.000 TL. İşletme nakdi karşılama oranı %75,419; alınan faiz yatırım nakdinde ayrıdır. Muhasebe özkaynağı, borç/vergi düzeltmeli bağımsız NAD değildir.",
     "scanLimit": "01.08–31.10.2026, Europe/Istanbul; KAP şirket1399 ve ihraççı arşivi. KAP sorgu görünümü 18 Ekim önbelleğiyle sınırlı kaldı; 21/26 Ekim ekleri şirket arşivinden açıldı. Tüm sayfalama doğrulanmadığından PARTIAL. En son bulunan finansal H1; şirket takviminde Q3 için 06.11.2026 bekleniyor. Bu tarih yayımlanmış sonuç değildir.",
@@ -4303,17 +4141,17 @@
     "peers": "İş Yatırım kartındaki yaklaşık 5,4x F/K ve 0,6x PD/DD, yeniden hesaplanan oranlara yakındır; bağımsız adil değer değildir. Vakıf’ın tarihli rapor bağlantısı 404 döndü. Aynı tarihli, aynı ekspertiz/vergi ve kira kapsamındaki AVM GYO emsal seti kurulamadığından sektör hedef çarpanı atanmadı.",
     "dividend": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir.",
     "sustainability": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir.",
-    "valuation": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir.",
+    "valuation": "NAD köprüsü 31.12.2025 için TAM kuruldu: bağımsız portföy ekspertizi (Panora AVM 13.978.400.000 + arsa 2.296.320.000 =16.274.720.000 TL) + diğer varlıklar 424.875.054 TL − toplam yükümlülük (arsa ticari borcu + ertelenmiş vergi dahil) 1.525.367.166 TL =adjustedNetAssetValueFY2025 15.174.227.888 TL; aynı tarihli equityFY2025 ile TL'si TL'sine örtüşür. BASE senaryo bu rakamla ve sharesFy2025End (87.000.000 pay, H1 2026 ile aynı) üzerinden 174,42 TL/pay hesaplanabildi — 113 TL fiyata göre %54,4 potansiyel getiri. Orijinal 'netAssetValue' fact'i (30.06.2026 bazlı, taze ekspertiz çapraz kontrolü yok) CONFLICT kaldığından BASE hesaplamasında kullanılmadı. BEAR/BULL için kaynaklı bir iskonto/prim bulunamadığından bu iki senaryo BLOCKED kaldı (bkz. scenarioNotes).",
     "methods": {
       "nav": "19.166.797.096 gayrimenkul +424.291.367 diğer varlık −1.812.054.091 tüm yükümlülük =17.779.034.372 TL. Gayrimenkul içinde AVM16.462.685.771, arsa2.704.111.325 TL. Borç ve ertelenmiş vergi zaten düşülüdür; piyasa değeri 113×87m=9,831 milyar TL.",
       "pe": "Aynı H1 raporu satın alma gücünde TTM kâr =1.849.101.621 +424.346.001 −435.021.755 =1.838.425.867 TL. 9.831.000.000 /1.838.425.867 ≈5,35x. Önceki yıllık ekspertiz etkisini ve parasal sonucu içerir; normalize kira kârı değildir.",
       "dcf": "2025 ekspertizi s.59’da %29 indirgeme ve %91 mevcut doluluk verir; H1 Not6 ise %21 ve %97–98 varsayımı aktarır. Fark açıklığa kavuşmadan bu iki set birleştirilmedi. Güncel kira takvimi, doluluk, yatırım gideri ve iskonto oranıyla yeni DCF gerekir; H1’i ikiyle çarpmak bunun yerine geçmez."
     },
-    "scenarios": "İyimser, baz ve kötümser koşullar hesaplanmış adil değer değildir. Eksik normalleştirilmiş kâr, iskonto oranı veya düzeltilmiş NAD nedeniyle sayısal senaryo sonucu üretilmez.",
+    "scenarios": "BASE senaryo artık hesaplanabiliyor: tek çözülmüş ve çift ekspertizle doğrulanmış NAD rakamı (adjustedNetAssetValueFY2025, 31.12.2025) sabit pay sayısına (sharesFy2025End) bölünüyor. BEAR/BULL için NAD'ı keyfi bir yüzdeyle çarpmak yerine kaynaklı bir farklılaştırıcı arandı; ekspertizin kendi doluluk oranı çelişkisi (occupancyRateDisclosureConflict) sayısal bir alternatif değer vermiyor ve PAGYO'ya özgü, tarihli, güvenilir bir BIST GYO NAD iskonto/prim aralığı bulunamadığından bu iki senaryo BLOCKED bırakıldı.",
     "scenarioNotes": {
-      "bear": "Gayrimenkul −%20: NAD13,946 milyar TL, 160,30 TL/pay. Vergi değişimi ve geliştirme maliyeti ayrıca modellenmedi.",
-      "base": "Gayrimenkul sabit: NAD17,779 milyar TL,204,36 TL/pay. Bilanço değerini sabit tutmak güncellik doğrulaması değildir.",
-      "bull": "Gayrimenkul +%10: NAD19,696 milyar TL,226,39 TL/pay. Vergi sabitliği iyimser sonucu yüksek gösterebilir."
+      "bear": "BLOCKED: Ekspertizin DCF tablosu 31.12.2025 için tek bir nihai değer verir (Panora AVM 13.978.400.000 TL); kendi raporu içinde %91 (DCF) ile FY2025 Not 6'daki %97–98 doluluk varsayımı arasında çözülmemiş bir tutarsızlık vardır (occupancyRateDisclosureConflict) ama alternatif bir TL değeri içermez. Taranan BIST GYO NAD iskonto/prim verileri (İş GYO, Emlak Konut, Torunlar GYO) şirkete özgü ve kaynaklar arası tutarsızdır; PAGYO'ya uygulanabilir, tarihli, güvenilir bir sektör aralığı bulunamadığından kaynaksız bir iskonto uygulanmadı.",
+      "base": "PASS: adjustedNetAssetValueFY2025 (15.174.227.888 TL, 31.12.2025; iki bağımsız ekspertiz + bilanço köprüsüyle çapraz doğrulanmış, equityFY2025 ile TL'si TL'sine örtüşen tek NAD rakamı) / sharesFy2025End (87.000.000 pay; KAP 1597263 kâr dağıtım kararı 2025-12-31–2026-06-30 arasında sermaye/pay değişikliği olmadığını doğruluyor) =174,42 TL/pay. 113 TL fiyata göre %54,4 potansiyel getiri; kesin hedef fiyat değildir.",
+      "bull": "BLOCKED: Aynı nedenle BEAR ile simetrik — ekspertizin kendi duyarlılık çıktısı veya PAGYO'ya özgü, tarihli, güvenilir bir BIST GYO NAD primi kaynağı bulunamadığından NAD'ı keyfi bir yüzdeyle büyütmek yerine bu senaryo BLOCKED bırakıldı."
     },
     "technical": "İşletme nakdi 488.323.041 TL, ödenen temettü 514.250.404 TL; karşılama %94,958. Yatırım harcaması sonrası nakit daha düşüktür. Faizli arsa ticari borcu banka net borcundan ayrı değerlendirilir. Muhasebe özkaynağı düzeltilmiş portföy NAD değildir.",
     "scanLimit": "Tarama01.08–31.10.2026, Europe/Istanbul. KAP şirket 1753; erişilen sorgu26 Ekim’de biten önbellekli92 kayıt gösterdi. 14 Ağustos şirket finansalları incelendi; devre kesici/endeks/MKK kayıtları üçüncü taraf açıklamalarıdır. 27–31 Ekim ve tüm sayfalama doğrulanamadı: PARTIAL. Son bulunan finansal H1; KAP Q3 bildirim son tarihi9 Kasım, gerçekleşmiş yayın değildir.",
@@ -4407,5 +4245,197 @@
       "peRunRate": "H2 kârı H1 ile aynı olursa9.831.000.000/(2×424.346.001)=11,58x; gerçekleşmiş5,35xTTM’den ayrı varsayım.",
       "roe": "1.838.425.867/((16.454.858.863+17.779.034.372)/2)×100=%10,74 TTM özkaynak getirisi. Kâr ekspertiz/parasal etki içerir; sürdürülebilir getiri garantisi değildir."
     }
+  },
+  "researchAnalysis": {
+    "title": "Analiz doğrulaması ve veri kalitesi",
+    "blocked": "Hesaplama doğrulanamadı",
+    "verified": "Birincil belgeyle mutabık; bağımsız teyit değil",
+    "profile": "İş modeli profili",
+    "scale": "Birim çarpanı",
+    "counts": "{{total}} hesaplamanın {{passed}} tanesi veri kontrollerini geçti. Bu, raporun tamamının onaylandığı anlamına gelmez.",
+    "reviewNotice": "Bu bir tarihsel araştırma snapshot’ıdır. Aşağıdaki eski anlatım ve fiyat yorumları önceki rapordan korunmuştur; doğrulanamayan rakamlar güncel/denetlenmiş sonuç sayılmaz. Hesap kartlarındaki doğrulama durumları esas alınır. KAP taraması ve uzun dönem kaynak incelemesi kısmi; bağımsız denetim yapılmadı.",
+    "auditTrail": "Kaynak, dönem ve muhasebe bazını incele",
+    "unverifiedInputs": "Bu girdiler önceki kaynak kaydıdır; doğrulanmış sonuç üretmek için kullanılamaz.",
+    "missingInput": "Eksik/doğrulanmamış girdi: {{input}}",
+    "scenarioUpside": "Piyasa fiyatına göre potansiyel getiri: %{{percent}}",
+    "profiles": {
+      "REFINING": "Rafineri",
+      "AUTOMOTIVE": "Otomotiv",
+      "INDUSTRIAL": "Sanayi",
+      "BANK": "Banka",
+      "REIT": "GYO",
+      "BROKER": "Aracı kurum",
+      "TECHNOLOGY": "Teknoloji",
+      "CRYPTO": "Kripto",
+      "FUND": "Fon",
+      "UNSUPPORTED": "Profil tanımlanmamış"
+    },
+    "scope": {
+      "CONSOLIDATED": "Konsolide",
+      "SOLO": "Solo",
+      "MARKET": "Piyasa/pay verisi"
+    },
+    "attribution": {
+      "GROUP": "Grup toplamı",
+      "PARENT": "Ana ortaklık",
+      "SHARE": "Pay bazında"
+    },
+    "earnings": {
+      "REPORTED": "Raporlanan dönem verisi; gerçek TTM veya normalize kazanç değildir.",
+      "ANNUALIZED_ESTIMATE": "Yıllıklandırılmış tahmin: altı aylık kâr × 2; gerçekleşmiş son 12 ay kârı değildir.",
+      "NORMALIZED": "Varsayımları açıklanmış normalize veri",
+      "TTM": "Uyumlu dört çeyrekten son 12 ay"
+    },
+    "issues": {
+      "UNVERIFIED": "Kaynak veya veri bazı henüz doğrulanmadı.",
+      "CONFLICT": "Kaynaklar arasında çözülmemiş çelişki var.",
+      "SOURCE": "Kaynak/inceleme kanıtı eksik.",
+      "NUMBER": "Geçersiz sayısal veri.",
+      "PERIOD": "Finansal dönemler uyumsuz.",
+      "SCALE": "Birim ölçeği uyumsuz; açık dönüşüm gerekli.",
+      "BASIS": "Konsolidasyon, atıf veya muhasebe bazı uyumsuz.",
+      "CURRENCY": "Para birimleri uyumsuz.",
+      "SHARE_BASIS": "Fiyat, pay ve temettü bazı doğrulanmadı.",
+      "MISSING": "Gerekli veri veya hesap sözleşmesi eksik.",
+      "DUPLICATE": "Tekrarlanan veri kimliği var.",
+      "UNIT": "Finansal birimler yönteme uygun değil.",
+      "ARITHMETIC": "Sıfır payda veya yönteme uygun olmayan sayısal girdi.",
+      "NOT_APPLICABLE": "Bu yöntem seçili iş modeline uygun değil.",
+      "ASSUMPTIONS": "Kaynaklı normalizasyon ve senaryo varsayımları eksik.",
+      "METHOD_PENDING": "Bu yöntemin hesap stratejisi henüz uygulanmadı.",
+      "EVIDENCE": "Kaynak kökeni ve belge mutabakat kanıtı eksik.",
+      "RESTATEMENT": "TMS 29 satın alma gücü bazının belge kanıtı uyuşmuyor.",
+      "LOOKAHEAD": "Verinin değerleme tarihinde bilinebilir olduğu doğrulanmadı."
+    },
+    "historyIssues": {
+      "COVERAGE": "Bağımsız doğrulanmış işlem günü, temettü ve kurumsal işlem kapsamı bulunmuyor. Önceki yaklaşık sonucu doğrulanmış hesap olarak göstermiyoruz.",
+      "UNVERIFIED": "Tarihsel veri incelemesi kısmi.",
+      "CONFLICT": "Tarihsel kaynak çelişkisi var.",
+      "LISTING": "Kotasyon başlangıcı modelde doğrulanmadı.",
+      "SHARE_BASIS": "Fiyat ve temettü düzeltme bazı eksik/uyumsuz.",
+      "SOURCE": "İşlem kaynakları eksik.",
+      "FX": "İşlem kuru veya gerçek kur tarihi geçersiz.",
+      "SESSIONS": "Beklenen işlem günleriyle fiyat kayıtları örtüşmüyor.",
+      "ACTIONS": "Kurumsal işlem veya düzeltme faktörü doğrulanamıyor.",
+      "DIVIDENDS": "Temettü takvimi doğrulanmış olay listesiyle uyuşmuyor.",
+      "PERIOD": "Kesim tarihi geçerli bir takvim ayı sonu değil.",
+      "INDEPENDENCE": "Veri kapsamının bağımsız kaynak mutabakatı yok."
+    },
+    "methods": {
+      "EV_EBITDA": "Normalize FD/FAVÖK",
+      "FCF": "Serbest nakit akışı değerlemesi",
+      "BOOK_ROE": "Özkaynak ve sürdürülebilir kârlılık",
+      "NAV": "Net aktif değer"
+    },
+    "inputs": {
+      "normalizedEbitda": "normalize FAVÖK",
+      "peerEvEbitda": "uygun emsal/tarihsel FD/FAVÖK",
+      "valuationNetDebt": "değerleme kapsamındaki net borç köprüsü",
+      "shares": "değerleme tarihindeki pay sayısı",
+      "normalizedFcf": "normalize serbest nakit akışı",
+      "discountRate": "iskonto oranı",
+      "terminalGrowth": "uzun dönem büyüme oranı",
+      "investmentPlan": "yatırım planı",
+      "parentEquity": "ana ortaklık özkaynağı",
+      "sustainableRoe": "sürdürülebilir özkaynak kârlılığı",
+      "costOfEquity": "özkaynak maliyeti",
+      "capitalAdequacy": "sermaye yeterliliği",
+      "netAssetValue": "net aktif değer",
+      "appraisalDate": "ekspertiz tarihi"
+    },
+    "limits": {
+      "EV_EBITDA": "Faaliyet marjı, stok etkileri ve sektör döngüsü normalize edilmeden tek dönem FAVÖK ile hedef fiyat verilmez. Emsallerin kiralama ve borç kapsamları tutarlı olmalı.",
+      "FCF": "Bakım/büyüme yatırımları ve işletme sermayesi ayrılmadan mevcut nakit farkı geleceğe taşınmaz.",
+      "BOOK_ROE": "Sermaye ve aktif kalitesiyle birlikte değerlendirilir; düşük PD/DD tek başına ucuzluk değildir.",
+      "NAV": "Ekspertiz tarihi, borç kapsamı ve varlıkların satılabilirliği sonucu etkiler."
+    },
+    "qualitySeparation": "Kaynak durumu: {{sources}}. Bölüm tamamlanması: kısmi. Bağımsız rapor incelemesi: yapılmadı. Hesap PASS sonucu yalnız ilgili girdilerle matematiksel kontrolü ifade eder.",
+    "priorities": "Stratejiye göre inceleme sırası (finansal sonuçları değiştirmez)",
+    "provenance": "Belge kökeni / toplama / yöntem",
+    "sourceState": {
+      "PRIMARY_ONLY": "Birincil belge mutabakatı; bağımsız teyit yok",
+      "INCOMPLETE": "Kısmen mutabık; eksik kaynaklar var"
+    },
+    "sections": {
+      "FINANCIALS": "Finansal sağlık",
+      "DIVIDEND": "Temettü sürdürülebilirliği",
+      "VALUATION": "Değerleme",
+      "GROWTH": "Büyüme",
+      "RISK": "Uzun vadeli riskler",
+      "TECHNICAL": "Teknik analiz"
+    },
+    "reconciliation": {
+      "FINANCIALS": {
+        "title": "Resmî finansal kaynak mutabakatı",
+        "text": "30 Haziran 2026 konsolide tablo, aynı tarihin satın alma gücüyle bin TL sunuluyor. Finansal borç 68,201 milyar TL; bloke nakit hariç nakit ve finansal yatırımlar düşüldüğünde net finansal borç −102,232 milyar TL (net nakit). Bu kapsam, sunumdaki daha geniş nakit tanımıyla aynı değildir. Belge mutabakatı yapıldı; ikinci bağımsız veri kaynağı yok."
+      },
+      "HISTORY": {
+        "title": "Beş yıllık karşılaştırma",
+        "text": "2021–2025 resmî raporları bulundu. 2021 satışları ilk raporda 150,972 milyar TL, 2022 raporunun karşılaştırmalı sütununda 152,492 milyar TL: geçmiş rakamları otomatik birleştirmek yanlış olur. 2023–2025 tabloları ayrıca farklı yıl sonu satın alma gücü bazlarındadır. Beş yıllık gelir/kâr/borç/nakit serisinin tam yeniden ifade ve kapsam mutabakatı eksik; ortak bazlı büyüme grafiği üretilmedi."
+      },
+      "DIVIDEND": {
+        "title": "Temettü sürdürülebilirliği",
+        "text": "KAP onayı toplam 17,1268815 TL/pay brüt, %15 stopajla 14,5578492 TL/pay net dağıtım planlıyor; hak tarihi ödeme tarihinden ayrıdır. Plan, ödeme gerçekleşmesinin bağımsız kanıtı değildir. 2026 ilk yarı işletme nakdi 132,366; yatırım alımları 11,858; fark 120,508 milyar TL. İşletme sermayesinin 28,497 milyar TL katkısı ve türev nakit akışlarının sınıflandırılması nedeniyle bu fark sürdürülebilir FCF sayılmadı. Tam ödeme geçmişi ve normalleştirilmiş nakit karşılaması eksik; 10/15/20 yıl backtest kapalı."
+      },
+      "VALUATION": {
+        "title": "Rafineri değerlemesi neden açık?",
+        "text": "Ekim sunumunda ilk yarı net rafineri marjı 15,6 USD/varil ve yatırım 246 milyon USD; 700 milyon USD yıllık yatırım ise hedeftir. Stok etkisi ile güçlü ürün marjı normal kârlılık değildir. Normalleştirilmiş yıllık FAVÖK köprüsü, aynı bazdaki net borç, güncel pay sayısı ve kaynaklı akran çarpanı birlikte doğrulanmadığından kötümser/baz/iyimser fiyat üretilmedi. EV/FAVÖK formülü: (normalleştirilmiş FAVÖK × çarpan − net borç) / pay adedi. FCF, ROE/PD-DD, NAV ve temettü indirgeme uygulamaları ayrıca eksik."
+      },
+      "TECHNICAL": {
+        "title": "Fiyat ve hacim kapsamı",
+        "text": "Bağımsız doğrulanmış kurumsal işlem uyumlu günlük fiyat/hacim ve döviz serisi yok. SMA20/50/200, RSI, MACD ve destek/direnç hesaplanmadı. Önceki fiyat snapshot’ları güncel fiyat olarak kabul edilmez."
+      },
+      "DISCLOSURES": {
+        "title": "KAP tarama sınırı",
+        "text": "Önceki KAP olayları ve kaynakları korunuyor. Son inceleme, 11 Ekim–22 Ekim 2026 aralığının ve önceki incelenmemiş eklerin tam tarandığı anlamına gelmez. Aynı ihraççının KAP bildirimi ve yatırımcı sunumu bağımsız iki ekonomik kaynak sayılmaz."
+      }
+    },
+    "completion": {
+      "PARTIAL": "Kısmi",
+      "MISSING": "Eksik",
+      "COMPLETE": "Tamamlandı"
+    },
+    "strategySelector": "Analiz sunum önceliği",
+    "strategyOptions": {
+      "REPORT": "Rapordaki stratejiler",
+      "DIVIDEND": "Temettü",
+      "GROWTH": "Büyüme",
+      "VALUE": "Değer",
+      "LONG_TERM": "Uzun vade"
+    },
+    "factTechnical": "Teknik veri geçerliliği",
+    "technicalValid": "Geçerli (kaynak teyidi değildir)",
+    "factPrimary": "Birincil kaynak mutabakatı",
+    "factIndependent": "Bağımsız inceleme",
+    "notReviewed": "İncelenmedi",
+    "reconciliationV6": {
+      "FINANCIALS": {
+        "title": "Birincil finansal mutabakat",
+        "text": "14 ana satır KAP #1643116 ile şirketin 2026 ilk yarı raporunda eşleşti. Tutarlar bin TL’den TL’ye dönüştürüldü; konsolide kapsam ve 30.06.2026 satın alma gücü korundu. 68,20 milyar TL finansal borca karşı şirketin dipnot tanımıyla 102,23 milyar TL net nakit var. Toplam nakdin 28,49 milyar TL’si bloke; tüm nakit serbestçe kullanılabilir sayılmıyor. Bu eşleşme bağımsız inceleme değildir."
+      },
+      "HISTORY": {
+        "title": "Beş yıllık belgeler ve baz farkları",
+        "text": "2021–2025 hasılat, ana ortaklık kârı/özkaynağı, işletme nakdi, finansal borç ve bloke olmayan nakit eklendi. 2021, Entek birleşmesi nedeniyle 2022 raporundaki yeniden düzenlenmiş sütundan alındı. 2023–2025 yıllık değişimleri aynı raporun karşılaştırmalı sütunlarıyla hesaplanır. Beş yılın tamamını tek satın alma gücünde karşılaştıran seri henüz yok; farklı bazlı tutarlar üzerinden trend yüzdesi üretilmez."
+      },
+      "DIVIDEND": {
+        "title": "Nakit karşılama ve tarihsel veri sınırı",
+        "text": "2025 işletme nakdi 49,46 milyar TL, yatırım harcaması 19,12 milyar TL; fark 30,35 milyar TL. Aynı bazdaki nakit temettü çıkışı 34,84 milyar TL: işletme nakdi 1,42 kat karşılıyor, yatırım sonrası fark ise dağıtımı tek başına karşılamıyor. Bu, otomatik temettü kesintisi anlamına gelmez; nakit tamponu, yatırımlar ve döngü birlikte izlenmeli. 2026 ödeme takvimi ve 2023 %600 bedelsiz kaydı bulundu; bütün tarihsel ödemelerin gerçekleşmesi ve bağımsız fiyat/kur kapsamı doğrulanmadı. 10/15/20 yıllık backtest tamamlanmış değildir. MKK #1671443, 02.10.2026 ikinci taksit ödemesini %674,69533 brüt oranla (6,7469533 TL/pay) gerçekleşmiş kayıt olarak doğruluyor. Bu tek olay için saklama kuruluşu kanıtıdır; tüm geçmişin bağımsız incelemesi değildir."
+      },
+      "VALUATION": {
+        "title": "Rafineri döngüsü; hedef fiyat yok",
+        "text": "Şirket sunumunda 2026 ilk yarı net rafineri marjı 15,6 USD/varil; ilk çeyrek 9,4, ikinci çeyrek 21,4. Bu oynaklık, güçlü bir çeyreği kalıcı kazanç saymamamız gerektiğini gösterir. 13–15 USD/varil yıl sonu marj yönlendirmesi ve 700 milyon USD yatırım planı gerçekleşmiş sonuç değildir. İşletme sermayesi ve stok etkilerini ayrıştıran çok yıllı normalleştirilmiş FAVÖK köprüsü ile karşılaştırılabilir emsal çarpanları henüz doğrulanmadı. EV/FAVÖK kötümser/baz/iyimser hedefleri üretilmedi; diğer uygulanmamış yöntemler eksik kalır."
+      },
+      "TECHNICAL": {
+        "title": "Fiyat ve hacim doğrulaması eksik",
+        "text": "Mevcut piyasa serisi resmî işlem takvimi ve bağımsız ham fiyat/hacim serisiyle mutabık değil. TCMB 09.10.2026 USD alış 49,1274 / satış 49,2160 kaydı erişilebilir; gösterge kur, piyasa kapanış kuru değildir. Tek günlük örnek 20 yıllık kur kapsamını doğrulamaz. SMA20/50/200, RSI, MACD ve destek/direnç için doğrulanmış seri olmadan yeni sonuç üretilmedi."
+      },
+      "DISCLOSURES": {
+        "title": "Bildirim taraması kısmi",
+        "text": "Finansal bildirim, temettü kararı ve MKK bedelsiz gerçekleşme kaydı belge düzeyinde incelendi. Finansal rapor ile KAP yayını aynı ihraççı kökenindedir. Önceki haber ve stratejik dönüşüm açıklamaları korunuyor; bütün bildirimlerin ve eklerin eksiksiz tarandığı iddia edilmiyor."
+      }
+    },
+    "historyTitle": "Yıllık finansallar ve karşılaştırılabilir değişimler",
+    "historyBasis": "Tutarlar milyar TL gösterilir. 2021–2022 nominaldir; 2023–2025 kendi yıl sonu satın alma gücündedir. Satırların nominal büyüklüğünü doğrudan karşılaştırmayın. Yıllık değişim kartları aynı raporun yeniden düzenlenmiş önceki yılını kullanır. 2021 verileri Entek sonrası yeniden düzenlenmiştir. Kaynak ve tam girdiler kartların ayrıntılarındadır.",
+    "inputStates": "Girdiler: teknik kontroller {{technical}}/{{total}}; birincil belge mutabakatı {{primary}}/{{total}}. Bağımsız rapor incelemesi: yapılmadı."
   }
 }

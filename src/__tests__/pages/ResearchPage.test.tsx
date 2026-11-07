@@ -11,12 +11,23 @@ import * as research from '@/services/research';
 import { tuprsReport } from '@/data/research/tuprs-2026-10-11';
 import { researchBundle } from '@/services/researchBundle';
 import { metricDefinition } from '@/domain/metricEducation';
+import { VALUATION_METHODS, reportValuationScenarios } from '@/lib/valuation';
 
 const current = researchBundle.reports.find(
   (report) => report.presentation.symbol === 'TUPRS',
 );
 if (!current) {
   throw new Error('Missing TUPRS report');
+}
+const tuprsEvEbitda = VALUATION_METHODS.find((m) => m.id === 'EV_EBITDA');
+if (!tuprsEvEbitda) {
+  throw new Error('Missing EV_EBITDA method');
+}
+const tuprsBaseValue = reportValuationScenarios(current, tuprsEvEbitda)?.find(
+  (s) => s.case === 'BASE',
+)?.result.value;
+if (!tuprsBaseValue) {
+  throw new Error('Missing TUPRS BASE scenario value');
 }
 
 function renderPage(id = 'watch-bist-tuprs'): void {
@@ -82,7 +93,7 @@ describe('ResearchPage', () => {
       });
       expect(view).toHaveValue('EASY');
       const strategy = screen.getByRole('combobox', {
-        name: i18n.t('analysis.strategySelector'),
+        name: i18n.t('researchAnalysis.strategySelector'),
       });
       await userEvent.selectOptions(strategy, 'VALUE');
       const simulation = document.getElementById('approximate-backtest');
@@ -135,7 +146,7 @@ describe('ResearchPage', () => {
   it('reorders actual sections when the presentation strategy changes', async () => {
     renderPage();
     const selector = await screen.findByRole('combobox', {
-      name: i18n.t('analysis.strategySelector'),
+      name: i18n.t('researchAnalysis.strategySelector'),
     });
     await userEvent.selectOptions(selector, 'VALUE');
     const nav = screen.getByRole('navigation', {
@@ -172,18 +183,20 @@ describe('ResearchPage', () => {
     );
     expect(
       await screen.findByText(
-        i18n.t('analysis.reconciliationV6.VALUATION.text'),
+        i18n.t('researchAnalysis.reconciliationV6.VALUATION.text'),
       ),
     ).toBeVisible();
     expect(
       screen.getByText(
-        i18n.t('analysis.qualitySeparation', {
-          sources: i18n.t('analysis.sourceState.PRIMARY_ONLY'),
+        i18n.t('researchAnalysis.qualitySeparation', {
+          sources: i18n.t('researchAnalysis.sourceState.PRIMARY_ONLY'),
         }),
       ),
     ).toBeVisible();
     expect(
-      screen.getByText(i18n.t('analysis.reconciliationV6.HISTORY.text')),
+      screen.getByText(
+        i18n.t('researchAnalysis.reconciliationV6.HISTORY.text'),
+      ),
     ).toBeVisible();
   });
   it('shows a plain-language price verdict and company context', async () => {
@@ -227,7 +240,7 @@ describe('ResearchPage', () => {
       screen.getAllByText('TRATUPRS91E8', { exact: false })[0],
     ).toBeInTheDocument();
     expect(
-      screen.getByRole('heading', { name: i18n.t('research.notAssessed') }),
+      screen.getByRole('heading', { name: tuprsBaseValue }),
     ).toBeInTheDocument();
     expect(
       screen.getByText(i18n.t('researchTuprs.scanLimit')),

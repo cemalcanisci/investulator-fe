@@ -152,7 +152,7 @@ export function DividendBacktest({
                   <ul>
                     {row?.issues?.map((issue) => (
                       <li key={issue}>
-                        {t(`analysis.historyIssues.${issue}`)}
+                        {t(`researchAnalysis.historyIssues.${issue}`)}
                       </li>
                     ))}
                   </ul>

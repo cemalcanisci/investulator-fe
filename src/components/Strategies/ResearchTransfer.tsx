@@ -118,7 +118,7 @@ export function ResearchTransfer({
       .split(',')
       .map((item) =>
         t(`researchTransfer.errors.${item}`, {
-          defaultValue: t(`analysis.issues.${item}`, {
+          defaultValue: t(`researchAnalysis.issues.${item}`, {
             defaultValue: t('researchTransfer.errors.invalid'),
           }),
         }),

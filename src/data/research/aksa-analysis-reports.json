@@ -1353,6 +1353,171 @@
         "metricKey": "netFinancialDebt"
       },
       {
+        "id": "sharesFy2025End",
+        "value": "3885000000",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "fy",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "3885000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "2025 FY raporu sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL, 31.12.2025; aynı pay sayısı 07.04.2026 kâr payı dağıtımı ve 30.06.2026 H1 raporuyla da eşleşiyor (dönem içinde sermaye artışı/pay sayısı değişikliği yok).",
+        "evidence": {
+          "id": "ev-aksa-sharesFy2025End",
+          "sourceId": "fy",
+          "originId": "aksa-issuer",
+          "collectionId": "aksa-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-aksa-valuation-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+          "locator": "2025 yıllık finansal tablolar, sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL, 31.12.2025.",
+          "excerpt": "sharesFy2025End: 3885000000 SHARES. 2025 FY raporu sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL (31.12.2025); aynı pay sayısı 07.04.2026 kâr payı dağıtımı (dividendTotal/dividendPrevious shareBasis 3885000000) ve 30.06.2026 H1 raporuyla (shares fact) da eşleşiyor; sermaye artışı yok.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-02-19",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["sharesFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        },
+        "metricKey": "shares"
+      },
+      {
+        "id": "peerEvEbitdaBear",
+        "value": "5.44",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "peerSglCarbonEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-aksa-peer-sgl-evebitda",
+          "sourceId": "peerSglCarbonEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "aksa-valuation-peers-2026-11-06",
+          "reviewerId": "claude-aksa-valuation-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/quote/etr/SGL/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "SGL Carbon SE (ETR:SGL): EV/EBITDA = 5.44 (TTM). Last updated: Nov 5, 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBear"],
+          "from": "2026-11-06",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBase",
+        "value": "9.07",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "peerTorayEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-aksa-peer-toray-evebitda",
+          "sourceId": "peerTorayEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "aksa-valuation-peers-2026-11-06",
+          "reviewerId": "claude-aksa-valuation-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/quote/tyo/3402/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "Toray Industries, Inc. (TYO:3402): EV/EBITDA = 9.07 (TTM). Last updated: Nov 6, 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBase"],
+          "from": "2026-11-06",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBull",
+        "value": "17.12",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "peerHexcelEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-aksa-peer-hexcel-evebitda",
+          "sourceId": "peerHexcelEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "aksa-valuation-peers-2026-11-06",
+          "reviewerId": "claude-aksa-valuation-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/stocks/hxl/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "Hexcel Corporation (NYSE:HXL): EV/EBITDA = 17.12 (TTM). Last checked: Nov 6, 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBull"],
+          "from": "2026-11-06",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
+      },
+      {
         "id": "dividendTotal",
         "value": "0.58",
         "unit": "TRY_SHARE",
@@ -3694,6 +3859,33 @@
           "period": "2026-01-01 / 2026-06-30",
           "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
           "observedAt": "2026-11-01"
+        },
+        {
+          "id": "peerSglCarbonEvEbitda",
+          "title": "StockAnalysis.com - SGL Carbon SE (ETR:SGL) İstatistikler",
+          "url": "https://stockanalysis.com/quote/etr/SGL/statistics/",
+          "publishedAt": "2026-11-06",
+          "period": "2026-11-06",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-06"
+        },
+        {
+          "id": "peerTorayEvEbitda",
+          "title": "StockAnalysis.com - Toray Industries, Inc. (TYO:3402) İstatistikler",
+          "url": "https://stockanalysis.com/quote/tyo/3402/statistics/",
+          "publishedAt": "2026-11-06",
+          "period": "2026-11-06",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-06"
+        },
+        {
+          "id": "peerHexcelEvEbitda",
+          "title": "StockAnalysis.com - Hexcel Corporation (NYSE:HXL) İstatistikler",
+          "url": "https://stockanalysis.com/stocks/hxl/statistics/",
+          "publishedAt": "2026-11-06",
+          "period": "2026-11-06",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-06"
         }
       ],
       "narrativeStale": true
@@ -3769,7 +3961,365 @@
       }
     ],
     "previousVersion": "aksa-2026-11-02-v3",
-    "previousPreserved": true
+    "previousPreserved": true,
+    "valuationScenarios": [
+      {
+        "methodId": "EV_EBITDA",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBear"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "3885000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "5729630000",
+                  "rationale": "AKSA akrilik/karbon elyaf fiyat döngüsüne tabi; normalizasyon bazı olarak FY2025 tam yıl FAVÖK'ü (2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL, 31.12.2025 TMS29 bazı) seçildi. TTM (3Ç2025-2Ç2026) hesaplanabilir olsa da H1 2026 (4.135.978.000 TL) ile H1 2025'in (2.790.664.000 TL) farklı TMS29 satın alma gücü bazlarını (06.2026 vs 12.2025) karıştırmadan birleştirmek gerekir; bu yüzden tek, tutarlı FY2025 bazı tercih edildi. H1 2026'nın H1 2025'e göre ~%48 daha yüksek FAVÖK'ü muhtemelen fiyat/kapasite döngüsünde bir toparlanmayı yansıtıyor; FY2025 bazlı normalizasyon bu toparlanmayı henüz tam yansıtmadığından muhafazakâr kalabilir. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bear-ebitdaFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL FVAÖK. Tam yıl; 31.12.2025 bazı korunur.",
+                    "excerpt": "ebitdaFy2025: 5729630000 TRY. 2025 Not 4 FVAÖK mutabakatı, tam yıl, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025",
+                  "value": "21225728000",
+                  "rationale": "Şirketin kendi 2025 bilançosu: 26.183.316.000 TL finansal borç − 4.957.588.000 TL nakit = 21.225.728.000 TL net finansal borç, 31.12.2025; ebitdaFy2025 ile aynı sourceId ('fy') ve TMS29 satın alma gücü bazını (31.12.2025) paylaşır. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bear-netFinancialDebtFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 bilanço: 26.183.316.000 borç − 4.957.588.000 nakit",
+                    "excerpt": "netFinancialDebtFy2025: 21225728000 TRY. 2025 bilanço, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "3885000000",
+                  "rationale": "Ödenmiş sermaye 3.885.000.000 pay, 31.12.2025 (2025 FY raporu sermaye dipnotu); 07.04.2026 kâr payı dağıtımı ve 30.06.2026 H1 raporuyla aynı pay sayısı, dönem içinde sermaye artışı/pay sayısı değişikliği yok. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bear-sharesFy2025End",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 yıllık finansal tablolar, sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL, 31.12.2025.",
+                    "excerpt": "sharesFy2025End: 3885000000 SHARES. 2025 FY raporu sermaye dipnotu, 31.12.2025.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBear",
+                  "value": "5.44",
+                  "rationale": "Kötümser senaryo: küresel karbon elyaf/grafit malzeme üreticileri arasında en düşük FD/FAVÖK olan SGL Carbon SE (ETR:SGL, TTM 5,44x, 06.11.2026) baz alındı; Avrupalı, düşük marjlı ve döngüsel bir karbon elyaf/grafit üreticisini temsil eder.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bear-peerEvEbitdaBear",
+                    "sourceId": "peerSglCarbonEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "aksa-valuation-peers-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/quote/etr/SGL/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "SGL Carbon SE (ETR:SGL): EV/EBITDA = 5.44 (TTM). Last updated: Nov 5, 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBear"],
+                    "from": "2026-11-06",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBase"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "3885000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "5729630000",
+                  "rationale": "AKSA akrilik/karbon elyaf fiyat döngüsüne tabi; normalizasyon bazı olarak FY2025 tam yıl FAVÖK'ü (2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL, 31.12.2025 TMS29 bazı) seçildi. TTM (3Ç2025-2Ç2026) hesaplanabilir olsa da H1 2026 (4.135.978.000 TL) ile H1 2025'in (2.790.664.000 TL) farklı TMS29 satın alma gücü bazlarını (06.2026 vs 12.2025) karıştırmadan birleştirmek gerekir; bu yüzden tek, tutarlı FY2025 bazı tercih edildi. H1 2026'nın H1 2025'e göre ~%48 daha yüksek FAVÖK'ü muhtemelen fiyat/kapasite döngüsünde bir toparlanmayı yansıtıyor; FY2025 bazlı normalizasyon bu toparlanmayı henüz tam yansıtmadığından muhafazakâr kalabilir. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-base-ebitdaFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL FVAÖK. Tam yıl; 31.12.2025 bazı korunur.",
+                    "excerpt": "ebitdaFy2025: 5729630000 TRY. 2025 Not 4 FVAÖK mutabakatı, tam yıl, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025",
+                  "value": "21225728000",
+                  "rationale": "Şirketin kendi 2025 bilançosu: 26.183.316.000 TL finansal borç − 4.957.588.000 TL nakit = 21.225.728.000 TL net finansal borç, 31.12.2025; ebitdaFy2025 ile aynı sourceId ('fy') ve TMS29 satın alma gücü bazını (31.12.2025) paylaşır. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-base-netFinancialDebtFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 bilanço: 26.183.316.000 borç − 4.957.588.000 nakit",
+                    "excerpt": "netFinancialDebtFy2025: 21225728000 TRY. 2025 bilanço, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "3885000000",
+                  "rationale": "Ödenmiş sermaye 3.885.000.000 pay, 31.12.2025 (2025 FY raporu sermaye dipnotu); 07.04.2026 kâr payı dağıtımı ve 30.06.2026 H1 raporuyla aynı pay sayısı, dönem içinde sermaye artışı/pay sayısı değişikliği yok. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-base-sharesFy2025End",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 yıllık finansal tablolar, sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL, 31.12.2025.",
+                    "excerpt": "sharesFy2025End: 3885000000 SHARES. 2025 FY raporu sermaye dipnotu, 31.12.2025.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBase",
+                  "value": "9.07",
+                  "rationale": "Baz senaryo: AKSA'nın iş modeline (akrilik elyaf + karbon elyaf/ileri malzemeler, Not 1) en yakın küresel emsal olan Toray Industries, Inc. (TYO:3402, TTM 9,07x, 06.11.2026) baz alındı; dünyanın en büyük karbon elyaf üreticisi ve önemli bir akrilik elyaf üreticisi olarak en direkt iş modeli eşleşmesini sağlar.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-base-peerEvEbitdaBase",
+                    "sourceId": "peerTorayEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "aksa-valuation-peers-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/quote/tyo/3402/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "Toray Industries, Inc. (TYO:3402): EV/EBITDA = 9.07 (TTM). Last updated: Nov 6, 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBase"],
+                    "from": "2026-11-06",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "normalizedEbitda": "ebitdaFy2025",
+              "valuationNetDebt": "netFinancialDebtFy2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBull"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "3885000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaFy2025",
+                  "value": "5729630000",
+                  "rationale": "AKSA akrilik/karbon elyaf fiyat döngüsüne tabi; normalizasyon bazı olarak FY2025 tam yıl FAVÖK'ü (2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL, 31.12.2025 TMS29 bazı) seçildi. TTM (3Ç2025-2Ç2026) hesaplanabilir olsa da H1 2026 (4.135.978.000 TL) ile H1 2025'in (2.790.664.000 TL) farklı TMS29 satın alma gücü bazlarını (06.2026 vs 12.2025) karıştırmadan birleştirmek gerekir; bu yüzden tek, tutarlı FY2025 bazı tercih edildi. H1 2026'nın H1 2025'e göre ~%48 daha yüksek FAVÖK'ü muhtemelen fiyat/kapasite döngüsünde bir toparlanmayı yansıtıyor; FY2025 bazlı normalizasyon bu toparlanmayı henüz tam yansıtmadığından muhafazakâr kalabilir. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bull-ebitdaFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 Not 4: 6.986.847 − 1.257.217 = 5.729.630 bin TL FVAÖK. Tam yıl; 31.12.2025 bazı korunur.",
+                    "excerpt": "ebitdaFy2025: 5729630000 TRY. 2025 Not 4 FVAÖK mutabakatı, tam yıl, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaFy2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebtFy2025",
+                  "value": "21225728000",
+                  "rationale": "Şirketin kendi 2025 bilançosu: 26.183.316.000 TL finansal borç − 4.957.588.000 TL nakit = 21.225.728.000 TL net finansal borç, 31.12.2025; ebitdaFy2025 ile aynı sourceId ('fy') ve TMS29 satın alma gücü bazını (31.12.2025) paylaşır. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bull-netFinancialDebtFy2025",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 bilanço: 26.183.316.000 borç − 4.957.588.000 nakit",
+                    "excerpt": "netFinancialDebtFy2025: 21225728000 TRY. 2025 bilanço, 31.12.2025 TMS29 bazı.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebtFy2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "3885000000",
+                  "rationale": "Ödenmiş sermaye 3.885.000.000 pay, 31.12.2025 (2025 FY raporu sermaye dipnotu); 07.04.2026 kâr payı dağıtımı ve 30.06.2026 H1 raporuyla aynı pay sayısı, dönem içinde sermaye artışı/pay sayısı değişikliği yok. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bull-sharesFy2025End",
+                    "sourceId": "fy",
+                    "originId": "aksa-issuer",
+                    "collectionId": "aksa-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+                    "locator": "2025 yıllık finansal tablolar, sermaye dipnotu: ödenmiş sermaye 3.885.000 bin TL, 31.12.2025.",
+                    "excerpt": "sharesFy2025End: 3885000000 SHARES. 2025 FY raporu sermaye dipnotu, 31.12.2025.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-02-19",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBull",
+                  "value": "17.12",
+                  "rationale": "İyimser senaryo: havacılık odaklı ileri karbon elyaf kompozit üreticisi Hexcel Corporation (NYSE:HXL, TTM 17,12x, 06.11.2026) baz alındı; yüksek büyüme/marjlı niş uçlarda emsal çarpanının ulaşabileceği üst sınırı temsil eder. Hexcel'in uçak kompozit odaklı ürün karmasının AKSA'nın endüstriyel ağırlıklı akrilik/karbon elyaf karmasından daha yüksek büyüme/marj profiline sahip olduğu not edilir; bu nedenle üst sınır niteliğindedir.",
+                  "evidence": {
+                    "id": "ev-aksa-scenario-bull-peerEvEbitdaBull",
+                    "sourceId": "peerHexcelEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "aksa-valuation-peers-2026-11-06",
+                    "reviewerId": "claude-aksa-valuation-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/stocks/hxl/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "Hexcel Corporation (NYSE:HXL): EV/EBITDA = 17.12 (TTM). Last checked: Nov 6, 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBull"],
+                    "from": "2026-11-06",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     "schemaVersion": 2,

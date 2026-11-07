@@ -2972,6 +2972,171 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
         }
+      },
+      {
+        "id": "sharesFy2025End",
+        "value": "220000000",
+        "unit": "SHARES",
+        "period": "2025-12-31",
+        "sourceId": "auditDividend",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "GROUP",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": "220000000"
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "KAP Bildirim 1589325, Kar Payi Dagitim Tablosu, 01.01.2025-31.12.2025 donemi, tablo satiri \"1. Paid-In / Issued Capital: 220.000.000\"; bedelsiz sermaye artisi/pay sayisi degisikligi bildirimde belirtilmemis (ayni pay sayisi 30.06.2026 H1 raporu Dipnot 17 ile de eslesiyor; son ve tek bedelsiz sermaye artirimi 2010'da gerceklesmis, capraz dogrulama: rotaborsa.com).",
+        "metricKey": "shares",
+        "evidence": {
+          "id": "ev-doas-sharesFy2025End",
+          "sourceId": "auditDividend",
+          "originId": "kap",
+          "collectionId": "doas-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-doas-research-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://www.kap.org.tr/en/Bildirim/1589325",
+          "locator": "Kar Payi Dagitim Tablosu, 01.01.2025-31.12.2025 donemi, tablo satiri \"1. Paid-In / Issued Capital: 220.000.000\"",
+          "excerpt": "sharesFy2025End: 220000000 SHARES. KAP 1589325 kar payi dagitim tablosu (01.01.2025-31.12.2025): \"1. Paid-In / Issued Capital: 220.000.000\"; bedelsiz sermaye artisi/pay sayisi degisikligi bildirimde yok.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-04-08",
+          "publishedAtBasis": "EXACT",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["sharesFy2025End"],
+          "from": "2025-12-31",
+          "to": "2025-12-31",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBear",
+        "value": "7.2",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "retailSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "Siblis Research perakende sektoru EV/EBITDA tablosu, Avrupa bolgesel medyani (30 Eylul 2026, 71 sirket): 7.2x. DOAS bir distributor+perakende (bayi) agi isletiyor; otomotiv imalat sanayi emsallerinden (FROTO/TOASO) daha cok perakende/distributor siniflandirmasina yakin, bu yuzden Siblis'in 'Retail' tablosu 'Automobiles & Components' tablosu yerine kullanildi. En dusuk bolgesel kirilim oldugu icin kotumser senaryoda kullanilir.",
+        "evidence": {
+          "id": "ev-doas-peer-retail-evebitda-bear",
+          "sourceId": "retailSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "doas-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-doas-research-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+          "locator": "\"By region, the median was 7.3x in the United States, 7.2x in Europe, 8.1x in Japan and 9.8x in Emerging Asia.\" (30 Eylul 2026 degerleme tarihi) - Avrupa kirilimi.",
+          "excerpt": "peerEvEbitdaBear: 7.2 MULTIPLE. Siblis Research, perakende sektoru Avrupa bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBear"],
+          "from": "2026-09-30",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBase",
+        "value": "7.8",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "retailSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "Siblis Research perakende sektoru EV/EBITDA tablosu, dunya capinda medyan (30 Eylul 2026, 381 sirket): 7.8x. Baz senaryoda kullanilir; FROTO'nun guncel FD/FAVOK'u (8.45x, uretici emsali, bu raporun peerFrotoEvEbitda fact'i) bu degerin hemen ustunde kaliyor, secilen perakende carpaninin asiri iyimser olmadigina dair bir capraz kontrol.",
+        "evidence": {
+          "id": "ev-doas-peer-retail-evebitda-base",
+          "sourceId": "retailSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "doas-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-doas-research-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+          "locator": "\"Worldwide, the median listed retailer was valued at 7.8x EBITDA and 15.7x normalised earnings at 30 September 2026.\" (381 sirket ornegi) - dunya capinda medyan.",
+          "excerpt": "peerEvEbitdaBase: 7.8 MULTIPLE. Siblis Research, perakende sektoru dunya capinda medyan EV/EBITDA, 30 Eylul 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBase"],
+          "from": "2026-09-30",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBull",
+        "value": "9.8",
+        "unit": "MULTIPLE",
+        "period": "2026-11-06",
+        "sourceId": "retailSectorMultiples",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-06",
+          "end": "2026-11-06",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-06",
+        "locator": "Siblis Research perakende sektoru EV/EBITDA tablosu, Gelisen Asya bolgesel medyani (30 Eylul 2026, 104 sirket): 9.8x. Cografi olarak DOAS'a tam ortusmuyor (Turkiye degil) ama ayni kaynak tablosundaki en yuksek guvenilir bolgesel kirilim oldugu icin buyume primi tasiyan iyimser senaryoda ust sinir olarak kullanilir.",
+        "evidence": {
+          "id": "ev-doas-peer-retail-evebitda-bull",
+          "sourceId": "retailSectorMultiples",
+          "originId": "siblis-research",
+          "collectionId": "doas-valuation-scenarios-2026-11-06",
+          "reviewerId": "claude-doas-research-20261106",
+          "ancestorIds": [],
+          "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+          "locator": "\"By region, the median was ... 9.8x in Emerging Asia.\" (30 Eylul 2026 degerleme tarihi) - Gelisen Asya kirilimi.",
+          "excerpt": "peerEvEbitdaBull: 9.8 MULTIPLE. Siblis Research, perakende sektoru Gelisen Asya bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+          "checkedAt": "2026-11-06",
+          "publishedAt": "2026-11-06",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBull"],
+          "from": "2026-09-30",
+          "to": "2026-11-06",
+          "purchasingPowerDate": null
+        }
       }
     ],
     "contracts": [
@@ -3377,6 +3542,15 @@
           "publishedAt": "2026-02-27",
           "period": "FY2025",
           "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" - konsolide gelir tablolari ve finansal durum tablolari ozeti (2025/2024)"
+        },
+        {
+          "id": "retailSectorMultiples",
+          "title": "Siblis Research - Retail Valuation Multiples",
+          "url": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+          "publishedAt": null,
+          "period": "2026-09-30",
+          "locator": "Dunya capinda listelenmis perakende sirketleri icin EV/EBITDA medyani ve bolgesel kirilim (ABD, Avrupa, Japonya, Gelisen Asya), 30 Eylul 2026 degerleme tarihi",
+          "observedAt": "2026-11-06"
         }
       ],
       "facts": [
@@ -3968,6 +4142,364 @@
           "fyCapex2025"
         ],
         "calculationIds": []
+      }
+    ],
+    "valuationScenarios": [
+      {
+        "methodId": "EV_EBITDA",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "normalizedEbitda": "fyEbitda2025",
+              "valuationNetDebt": "fyNetFinancialDebt2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBear"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "220000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "fyEbitda2025",
+                  "value": "14864838000",
+                  "rationale": "DOAS'in kendi 2025 Faaliyet Raporu'nda acikladigi konsolide FAVOK (14.864.838 bin TL, FY2025, 31.12.2025 satin alma gucu bazinda); net finansal borc ve pay sayisi ile ayni donem/kapsam/TAS29 satin alma gucu bazini paylasan tek FAVOK verisi oldugu icin normalizasyon bazi olarak secildi. DONGUSELLIK NOTU: 2025 FAVOK'u 2024'e (yeniden ifade edilmis 24.146.968 bin TL) gore %38 dustu; bu dusus muhtemelen Turkiye otomotiv pazarindaki daralmayi (yuksek faiz, TL zayifligi, talep baskisi) yansitiyor ve FY2025 'normal' bir yil olmayabilir. Uc senaryoda da bu ham (normalize edilmemis) FY2025 rakami sabit tutuldu; fark yalnizca FD/FAVOK carpanindan geliyor.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyEbitda2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde)",
+                    "excerpt": "fyEbitda2025: 14864838000 TRY. EBITDA (bin TL): 2025=14.864.838 / 2024(restated)=24.146.968 (-38%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyEbitda2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "fyNetFinancialDebt2025",
+                  "value": "25184576000",
+                  "rationale": "Sirketin kendi 2025 Faaliyet Raporu'ndaki 'Net Finansal Borclar*' satiri (25.184.576 bin TL, 31.12.2025); FAVOK ile ayni kaynak/donem/TAS29 satin alma gucu bazini paylasiyor. NOT: (a) net borc tanimi dipnotla acilanmamis (brut finansal borc kirilimi ozet tabloda yok); (b) 2025 icinde net borc 2024'e gore +615% artti (TUVTURK pay satisi/yatirim donguyle iliskisi bu turda arastirilmadi); (c) guncel (30.06.2026) net borc bu rakamdan %28 daha yuksek (32.227.304.000 TL) - senaryolar guncel degil FY2025 sonu borcunu kullaniyor, bu adil degeri yukari yanli gosterebilir.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyNetFinancialDebt2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | NOT: Net tanim (dipnot *); brut finansal borc kirilimi bu ozet tabloda yok, MISSING kaliyor.",
+                    "excerpt": "fyNetFinancialDebt2025: 25184576000 TRY. Net Finansal Borc* (bin TL): 2025=25.184.576 / 2024(restated)=3.522.069 (+615%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyNetFinancialDebt2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "220000000",
+                  "rationale": "KAP 1589325 kar payi dagitim bildirimi, 01.01.2025-31.12.2025 donemi kar payi dagitim tablosu: \"Paid-In / Issued Capital: 220.000.000\" TL (nominal 1 TL/pay); bedelsiz sermaye artisi veya pay sayisi degisikligi bildirimde yok. Ayni pay sayisi 30.06.2026 H1 raporu Dipnot 17 ile de eslesiyor; son ve tek bedelsiz sermaye artirimi 2010'da gerceklesmis (rotaborsa.com capraz kontrolu) - bu nedenle 31.12.2025 itibariyla pay sayisinin da 220.000.000 oldugu guvenle kabul edilebilir.",
+                  "evidence": {
+                    "id": "ev-doas-sharesFy2025End",
+                    "sourceId": "auditDividend",
+                    "originId": "kap",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/en/Bildirim/1589325",
+                    "locator": "Kar Payi Dagitim Tablosu, 01.01.2025-31.12.2025 donemi, tablo satiri \"1. Paid-In / Issued Capital: 220.000.000\"",
+                    "excerpt": "sharesFy2025End: 220000000 SHARES. KAP 1589325 kar payi dagitim tablosu (01.01.2025-31.12.2025): \"1. Paid-In / Issued Capital: 220.000.000\"; bedelsiz sermaye artisi/pay sayisi degisikligi bildirimde yok.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-04-08",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBear",
+                  "value": "7.2",
+                  "rationale": "Kotumser senaryo: Siblis Research'un perakende sektoru FD/FAVOK tablosunda en dusuk bolgesel kirilim olan Avrupa medyani (7.2x, 30 Eylul 2026, 71 sirket) baz alindi. DOAS bir distributor+perakende (bayi) agi isletigi icin otomotiv imalat emsalleri (FROTO/TOASO) degil perakende sektoru tablosu kullanildi; Avrupa kirilimi olgun/dusuk buyumeli bir perakende profilini temsil eder.",
+                  "evidence": {
+                    "id": "ev-doas-peer-retail-evebitda-bear",
+                    "sourceId": "retailSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+                    "locator": "\"By region, the median was 7.3x in the United States, 7.2x in Europe, 8.1x in Japan and 9.8x in Emerging Asia.\" (30 Eylul 2026 degerleme tarihi) - Avrupa kirilimi.",
+                    "excerpt": "peerEvEbitdaBear: 7.2 MULTIPLE. Siblis Research, perakende sektoru Avrupa bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBear"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "normalizedEbitda": "fyEbitda2025",
+              "valuationNetDebt": "fyNetFinancialDebt2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBase"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "220000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "fyEbitda2025",
+                  "value": "14864838000",
+                  "rationale": "DOAS'in kendi 2025 Faaliyet Raporu'nda acikladigi konsolide FAVOK (14.864.838 bin TL, FY2025, 31.12.2025 satin alma gucu bazinda); net finansal borc ve pay sayisi ile ayni donem/kapsam/TAS29 satin alma gucu bazini paylasan tek FAVOK verisi oldugu icin normalizasyon bazi olarak secildi. DONGUSELLIK NOTU: 2025 FAVOK'u 2024'e (yeniden ifade edilmis 24.146.968 bin TL) gore %38 dustu; bu dusus muhtemelen Turkiye otomotiv pazarindaki daralmayi (yuksek faiz, TL zayifligi, talep baskisi) yansitiyor ve FY2025 'normal' bir yil olmayabilir. Uc senaryoda da bu ham (normalize edilmemis) FY2025 rakami sabit tutuldu; fark yalnizca FD/FAVOK carpanindan geliyor.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyEbitda2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde)",
+                    "excerpt": "fyEbitda2025: 14864838000 TRY. EBITDA (bin TL): 2025=14.864.838 / 2024(restated)=24.146.968 (-38%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyEbitda2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "fyNetFinancialDebt2025",
+                  "value": "25184576000",
+                  "rationale": "Sirketin kendi 2025 Faaliyet Raporu'ndaki 'Net Finansal Borclar*' satiri (25.184.576 bin TL, 31.12.2025); FAVOK ile ayni kaynak/donem/TAS29 satin alma gucu bazini paylasiyor. NOT: (a) net borc tanimi dipnotla acilanmamis (brut finansal borc kirilimi ozet tabloda yok); (b) 2025 icinde net borc 2024'e gore +615% artti (TUVTURK pay satisi/yatirim donguyle iliskisi bu turda arastirilmadi); (c) guncel (30.06.2026) net borc bu rakamdan %28 daha yuksek (32.227.304.000 TL) - senaryolar guncel degil FY2025 sonu borcunu kullaniyor, bu adil degeri yukari yanli gosterebilir.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyNetFinancialDebt2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | NOT: Net tanim (dipnot *); brut finansal borc kirilimi bu ozet tabloda yok, MISSING kaliyor.",
+                    "excerpt": "fyNetFinancialDebt2025: 25184576000 TRY. Net Finansal Borc* (bin TL): 2025=25.184.576 / 2024(restated)=3.522.069 (+615%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyNetFinancialDebt2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "220000000",
+                  "rationale": "KAP 1589325 kar payi dagitim bildirimi, 01.01.2025-31.12.2025 donemi kar payi dagitim tablosu: \"Paid-In / Issued Capital: 220.000.000\" TL (nominal 1 TL/pay); bedelsiz sermaye artisi veya pay sayisi degisikligi bildirimde yok. Ayni pay sayisi 30.06.2026 H1 raporu Dipnot 17 ile de eslesiyor; son ve tek bedelsiz sermaye artirimi 2010'da gerceklesmis (rotaborsa.com capraz kontrolu) - bu nedenle 31.12.2025 itibariyla pay sayisinin da 220.000.000 oldugu guvenle kabul edilebilir.",
+                  "evidence": {
+                    "id": "ev-doas-sharesFy2025End",
+                    "sourceId": "auditDividend",
+                    "originId": "kap",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/en/Bildirim/1589325",
+                    "locator": "Kar Payi Dagitim Tablosu, 01.01.2025-31.12.2025 donemi, tablo satiri \"1. Paid-In / Issued Capital: 220.000.000\"",
+                    "excerpt": "sharesFy2025End: 220000000 SHARES. KAP 1589325 kar payi dagitim tablosu (01.01.2025-31.12.2025): \"1. Paid-In / Issued Capital: 220.000.000\"; bedelsiz sermaye artisi/pay sayisi degisikligi bildirimde yok.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-04-08",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBase",
+                  "value": "7.8",
+                  "rationale": "Baz senaryo: ayni tablonun dunya capindaki medyani (7.8x, 30 Eylul 2026, 381 sirket) baz alindi. Capraz kontrol: FROTO'nun guncel FD/FAVOK'u (8.45x, bir uretici emsali, bu raporun peerFrotoEvEbitda fact'i) bu degerin hemen ustunde - secilen perakende carpaninin asiri iyimser olmadigini gosteriyor, ama is modelleri farkli oldugu icin dogrudan ikame degildir.",
+                  "evidence": {
+                    "id": "ev-doas-peer-retail-evebitda-base",
+                    "sourceId": "retailSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+                    "locator": "\"Worldwide, the median listed retailer was valued at 7.8x EBITDA and 15.7x normalised earnings at 30 September 2026.\" (381 sirket ornegi) - dunya capinda medyan.",
+                    "excerpt": "peerEvEbitdaBase: 7.8 MULTIPLE. Siblis Research, perakende sektoru dunya capinda medyan EV/EBITDA, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBase"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "normalizedEbitda": "fyEbitda2025",
+              "valuationNetDebt": "fyNetFinancialDebt2025",
+              "shares": "sharesFy2025End",
+              "peerEvEbitda": "peerEvEbitdaBull"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-06",
+              "knowledgeAt": "2026-11-06",
+              "flowStart": "2025-01-01",
+              "flowEnd": "2025-12-31",
+              "stockAt": "2025-12-31",
+              "shareBasis": "220000000",
+              "purchasingPowerDate": "2025-12-31",
+              "assumptions": [
+                {
+                  "inputId": "fyEbitda2025",
+                  "value": "14864838000",
+                  "rationale": "DOAS'in kendi 2025 Faaliyet Raporu'nda acikladigi konsolide FAVOK (14.864.838 bin TL, FY2025, 31.12.2025 satin alma gucu bazinda); net finansal borc ve pay sayisi ile ayni donem/kapsam/TAS29 satin alma gucu bazini paylasan tek FAVOK verisi oldugu icin normalizasyon bazi olarak secildi. DONGUSELLIK NOTU: 2025 FAVOK'u 2024'e (yeniden ifade edilmis 24.146.968 bin TL) gore %38 dustu; bu dusus muhtemelen Turkiye otomotiv pazarindaki daralmayi (yuksek faiz, TL zayifligi, talep baskisi) yansitiyor ve FY2025 'normal' bir yil olmayabilir. Uc senaryoda da bu ham (normalize edilmemis) FY2025 rakami sabit tutuldu; fark yalnizca FD/FAVOK carpanindan geliyor.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyEbitda2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde)",
+                    "excerpt": "fyEbitda2025: 14864838000 TRY. EBITDA (bin TL): 2025=14.864.838 / 2024(restated)=24.146.968 (-38%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyEbitda2025"],
+                    "from": "2025-01-01",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "fyNetFinancialDebt2025",
+                  "value": "25184576000",
+                  "rationale": "Sirketin kendi 2025 Faaliyet Raporu'ndaki 'Net Finansal Borclar*' satiri (25.184.576 bin TL, 31.12.2025); FAVOK ile ayni kaynak/donem/TAS29 satin alma gucu bazini paylasiyor. NOT: (a) net borc tanimi dipnotla acilanmamis (brut finansal borc kirilimi ozet tabloda yok); (b) 2025 icinde net borc 2024'e gore +615% artti (TUVTURK pay satisi/yatirim donguyle iliskisi bu turda arastirilmadi); (c) guncel (30.06.2026) net borc bu rakamdan %28 daha yuksek (32.227.304.000 TL) - senaryolar guncel degil FY2025 sonu borcunu kullaniyor, bu adil degeri yukari yanli gosterebilir.",
+                  "evidence": {
+                    "id": "audit-DOAS-fyNetFinancialDebt2025-20261103",
+                    "sourceId": "annualReport2025",
+                    "originId": "dogusotomotiv-ir-site",
+                    "collectionId": "doas-bist-audit-2026-11-03",
+                    "reviewerId": "claude-doas-research-20261103",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+                    "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | NOT: Net tanim (dipnot *); brut finansal borc kirilimi bu ozet tabloda yok, MISSING kaliyor.",
+                    "excerpt": "fyNetFinancialDebt2025: 25184576000 TRY. Net Finansal Borc* (bin TL): 2025=25.184.576 / 2024(restated)=3.522.069 (+615%).",
+                    "checkedAt": "2026-11-03",
+                    "publishedAt": "2026-02-27",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["fyNetFinancialDebt2025"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": "2025-12-31"
+                  }
+                },
+                {
+                  "inputId": "sharesFy2025End",
+                  "value": "220000000",
+                  "rationale": "KAP 1589325 kar payi dagitim bildirimi, 01.01.2025-31.12.2025 donemi kar payi dagitim tablosu: \"Paid-In / Issued Capital: 220.000.000\" TL (nominal 1 TL/pay); bedelsiz sermaye artisi veya pay sayisi degisikligi bildirimde yok. Ayni pay sayisi 30.06.2026 H1 raporu Dipnot 17 ile de eslesiyor; son ve tek bedelsiz sermaye artirimi 2010'da gerceklesmis (rotaborsa.com capraz kontrolu) - bu nedenle 31.12.2025 itibariyla pay sayisinin da 220.000.000 oldugu guvenle kabul edilebilir.",
+                  "evidence": {
+                    "id": "ev-doas-sharesFy2025End",
+                    "sourceId": "auditDividend",
+                    "originId": "kap",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.kap.org.tr/en/Bildirim/1589325",
+                    "locator": "Kar Payi Dagitim Tablosu, 01.01.2025-31.12.2025 donemi, tablo satiri \"1. Paid-In / Issued Capital: 220.000.000\"",
+                    "excerpt": "sharesFy2025End: 220000000 SHARES. KAP 1589325 kar payi dagitim tablosu (01.01.2025-31.12.2025): \"1. Paid-In / Issued Capital: 220.000.000\"; bedelsiz sermaye artisi/pay sayisi degisikligi bildirimde yok.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-04-08",
+                    "publishedAtBasis": "EXACT",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["sharesFy2025End"],
+                    "from": "2025-12-31",
+                    "to": "2025-12-31",
+                    "purchasingPowerDate": null
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBull",
+                  "value": "9.8",
+                  "rationale": "Iyimser senaryo: ayni tablonun Gelisen Asya bolgesel medyani (9.8x, 30 Eylul 2026, 104 sirket) baz alindi; cografi olarak Turkiye'yi temsil etmez ama ayni kaynaktaki en yuksek guvenilir bolgesel kirilim oldugu icin buyume primi tasiyan ust sinir olarak secildi.",
+                  "evidence": {
+                    "id": "ev-doas-peer-retail-evebitda-bull",
+                    "sourceId": "retailSectorMultiples",
+                    "originId": "siblis-research",
+                    "collectionId": "doas-valuation-scenarios-2026-11-06",
+                    "reviewerId": "claude-doas-research-20261106",
+                    "ancestorIds": [],
+                    "documentUrl": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+                    "locator": "\"By region, the median was ... 9.8x in Emerging Asia.\" (30 Eylul 2026 degerleme tarihi) - Gelisen Asya kirilimi.",
+                    "excerpt": "peerEvEbitdaBull: 9.8 MULTIPLE. Siblis Research, perakende sektoru Gelisen Asya bolgesel EV/EBITDA medyani, 30 Eylul 2026.",
+                    "checkedAt": "2026-11-06",
+                    "publishedAt": "2026-11-06",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBull"],
+                    "from": "2026-09-30",
+                    "to": "2026-11-06",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   },

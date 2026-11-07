@@ -2713,6 +2713,129 @@
           "to": "2025-12-31",
           "purchasingPowerDate": "2025-12-31"
         }
+      },
+      {
+        "id": "peerEvEbitdaBear",
+        "value": "7.79",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "peerVwEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-froto-peer-vw-evebitda",
+          "sourceId": "peerVwEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "froto-valuation-peers-2026-11-05",
+          "reviewerId": "claude-froto-research-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/quote/etr/VOW3/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "Volkswagen AG (VOW3): EV/EBITDA = 7.79 (TTM). Last updated: Nov 5, 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBear"],
+          "from": "2026-11-05",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBase",
+        "value": "9.32",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "peerRenaultEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-froto-peer-renault-evebitda",
+          "sourceId": "peerRenaultEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "froto-valuation-peers-2026-11-05",
+          "reviewerId": "claude-froto-research-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/quote/epa/RNO/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "Renault SA (RNO): EV/EBITDA = 9.32 (TTM). Last updated: Nov 5, 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBase"],
+          "from": "2026-11-05",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
+      },
+      {
+        "id": "peerEvEbitdaBull",
+        "value": "14.25",
+        "unit": "MULTIPLE",
+        "period": "2026-11-05",
+        "sourceId": "peerHyundaiEvEbitda",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "MARKET",
+          "attribution": "SHARE",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2026-11-05",
+          "end": "2026-11-05",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "verification": "VERIFIED",
+        "checkedAt": "2026-11-05",
+        "locator": "StockAnalysis.com, Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+        "evidence": {
+          "id": "ev-froto-peer-hyundai-evebitda",
+          "sourceId": "peerHyundaiEvEbitda",
+          "originId": "stockanalysis-com",
+          "collectionId": "froto-valuation-peers-2026-11-05",
+          "reviewerId": "claude-froto-research-20261105",
+          "ancestorIds": [],
+          "documentUrl": "https://stockanalysis.com/quote/krx/005380/statistics/",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "excerpt": "Hyundai Motor Co (005380.KS): EV/EBITDA = 14.25 (TTM). Last updated: Nov 5, 2026.",
+          "checkedAt": "2026-11-05",
+          "publishedAt": "2026-11-05",
+          "publishedAtBasis": "OBSERVED_BY",
+          "method": "DOCUMENT_RECONCILIATION",
+          "claims": ["peerEvEbitdaBull"],
+          "from": "2026-11-05",
+          "to": "2026-11-05",
+          "purchasingPowerDate": null
+        }
       }
     ],
     "contracts": [
@@ -3255,6 +3378,33 @@
           "period": "2019 / 2023",
           "locator": "\"Ana Göstergeler\" ve \"Nakit Durumu\" tabloları (Milyon TL). 2021 sütunu nominal (pre-TMS29) bazdadır ve 2021 yıllık raporuyla birebir örtüşür; 2022 sütunu (Net Kâr 27.730 milyon TL) TMS29 ile 31.12.2023 alım gücüne yeniden ifade edilmiş FY2023 karşılaştırma rakamıyla örtüşür, orijinal FY2022 raporunun nominal rakamıyla (18.613.943 bin TL) DEĞİL — çapraz doğrulama ve baz tespiti için kullanıldı, birincil kaynak olarak alınmadı.",
           "observedAt": "2026-11-03"
+        },
+        {
+          "id": "peerVwEvEbitda",
+          "title": "StockAnalysis.com - Volkswagen AG (VOW3) İstatistikler",
+          "url": "https://stockanalysis.com/quote/etr/VOW3/statistics/",
+          "publishedAt": "2026-11-05",
+          "period": "2026-11-05",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-05"
+        },
+        {
+          "id": "peerRenaultEvEbitda",
+          "title": "StockAnalysis.com - Renault SA (RNO) İstatistikler",
+          "url": "https://stockanalysis.com/quote/epa/RNO/statistics/",
+          "publishedAt": "2026-11-05",
+          "period": "2026-11-05",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-05"
+        },
+        {
+          "id": "peerHyundaiEvEbitda",
+          "title": "StockAnalysis.com - Hyundai Motor Co (005380.KS) İstatistikler",
+          "url": "https://stockanalysis.com/quote/krx/005380/statistics/",
+          "publishedAt": "2026-11-05",
+          "period": "2026-11-05",
+          "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+          "observedAt": "2026-11-05"
         }
       ],
       "facts": [
@@ -3563,6 +3713,352 @@
           "capexFy2025"
         ],
         "calculationIds": []
+      }
+    ],
+    "valuationScenarios": [
+      {
+        "methodId": "EV_EBITDA",
+        "cases": [
+          {
+            "case": "BEAR",
+            "idMap": {
+              "normalizedEbitda": "ebitdaTtm",
+              "valuationNetDebt": "netFinancialDebt",
+              "peerEvEbitda": "peerEvEbitdaBear"
+            },
+            "scenario": {
+              "id": "BEAR",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-07-01",
+              "flowEnd": "2026-06-30",
+              "stockAt": "2026-06-30",
+              "shareBasis": "3509100000",
+              "purchasingPowerDate": "2026-06-30",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaTtm",
+                  "value": "63557627000",
+                  "rationale": "FROTO'nun kendi 'Düzeltilmiş VAFÖK' TTM (3Ç2025-2Ç2026) satırı, 30.06.2026 sınırlı denetim raporu Not 2.3; üç senaryoda da sabit tutulur, 2025 takvim yılı VAFÖK'ü (78.387.292.000 TL) daha yüksek olsa da TTM son dört çeyreği yansıttığı için normalizasyon bazı olarak seçildi.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Düzeltilmiş VAFÖK' satırı, son dört çeyreklik dönem (TTM), 30.06.2026 itibarıyla",
+                    "excerpt": "Not 2.3 VAFÖK mutabakatı, şirketin kendi 'Düzeltilmiş VAFÖK' (TTM) satırı: 63.557.627 (bin TL), son dört çeyrek (3Ç2025-2Ç2026)",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaTtm"],
+                    "from": "2025-07-01",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebt",
+                  "value": "111981980000",
+                  "rationale": "Şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli finansal borçlanma − nakit), 30.06.2026; üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-debt",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli borçlanma − nakit), 30.06.2026",
+                    "excerpt": "Net finansal borç 30.06.2026: 111.981.980 (bin TL).",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebt"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "shares",
+                  "value": "3509100000",
+                  "rationale": "Ödenmiş sermaye / nominal pay sayısı (1 TL/pay), 30.06.2026, Not 13; doviz.com piyasa değeri/fiyat ile çapraz doğrulandı. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-shares",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 13, Ödenmiş sermaye 3.509.100 bin TL / 3.509.100.000 pay, 30.06.2026",
+                    "excerpt": "Ödenmiş sermaye 30.06.2026: 3.509.100 bin TL, nominal 1 TL/pay, 3.509.100.000 pay.",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["shares"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBear",
+                  "value": "7.79",
+                  "rationale": "Kötümser senaryo: küresel binek+hafif ticari araç OEM emsalleri arasında en düşük FD/FAVÖK olan Volkswagen AG (VOW3, TTM 7,79x) baz alındı; olgun/yüksek kaldıraçlı bir OEM çarpanını temsil eder.",
+                  "evidence": {
+                    "id": "ev-froto-peer-vw-evebitda-assumption",
+                    "sourceId": "peerVwEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "froto-valuation-peers-2026-11-05",
+                    "reviewerId": "claude-froto-research-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/quote/etr/VOW3/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "Volkswagen AG (VOW3): EV/EBITDA = 7.79 (TTM). Last updated: Nov 5, 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBear"],
+                    "from": "2026-11-05",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BASE",
+            "idMap": {
+              "normalizedEbitda": "ebitdaTtm",
+              "valuationNetDebt": "netFinancialDebt",
+              "peerEvEbitda": "peerEvEbitdaBase"
+            },
+            "scenario": {
+              "id": "BASE",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-07-01",
+              "flowEnd": "2026-06-30",
+              "stockAt": "2026-06-30",
+              "shareBasis": "3509100000",
+              "purchasingPowerDate": "2026-06-30",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaTtm",
+                  "value": "63557627000",
+                  "rationale": "FROTO'nun kendi 'Düzeltilmiş VAFÖK' TTM (3Ç2025-2Ç2026) satırı, 30.06.2026 sınırlı denetim raporu Not 2.3; üç senaryoda da sabit tutulur, 2025 takvim yılı VAFÖK'ü (78.387.292.000 TL) daha yüksek olsa da TTM son dört çeyreği yansıttığı için normalizasyon bazı olarak seçildi.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Düzeltilmiş VAFÖK' satırı, son dört çeyreklik dönem (TTM), 30.06.2026 itibarıyla",
+                    "excerpt": "Not 2.3 VAFÖK mutabakatı, şirketin kendi 'Düzeltilmiş VAFÖK' (TTM) satırı: 63.557.627 (bin TL), son dört çeyrek (3Ç2025-2Ç2026)",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaTtm"],
+                    "from": "2025-07-01",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebt",
+                  "value": "111981980000",
+                  "rationale": "Şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli finansal borçlanma − nakit), 30.06.2026; üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-debt",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli borçlanma − nakit), 30.06.2026",
+                    "excerpt": "Net finansal borç 30.06.2026: 111.981.980 (bin TL).",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebt"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "shares",
+                  "value": "3509100000",
+                  "rationale": "Ödenmiş sermaye / nominal pay sayısı (1 TL/pay), 30.06.2026, Not 13; doviz.com piyasa değeri/fiyat ile çapraz doğrulandı. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-shares",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 13, Ödenmiş sermaye 3.509.100 bin TL / 3.509.100.000 pay, 30.06.2026",
+                    "excerpt": "Ödenmiş sermaye 30.06.2026: 3.509.100 bin TL, nominal 1 TL/pay, 3.509.100.000 pay.",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["shares"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBase",
+                  "value": "9.32",
+                  "rationale": "Baz senaryo: küresel OEM emsalleri arasında ikinci en düşük FD/FAVÖK olan Renault SA (RNO, TTM 9,32x) baz alındı; emsal aralığı (VW 7,79x – Hyundai 14,25x – Stellantis 15,62x) geniş olduğundan Renault, aşırı değerlerden (Stellantis'in geçici olarak düşük VAFÖK'ten şişen 15,62x çarpanı) etkilenmeyen orta bir nokta olarak seçildi.",
+                  "evidence": {
+                    "id": "ev-froto-peer-renault-evebitda-assumption",
+                    "sourceId": "peerRenaultEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "froto-valuation-peers-2026-11-05",
+                    "reviewerId": "claude-froto-research-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/quote/epa/RNO/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "Renault SA (RNO): EV/EBITDA = 9.32 (TTM). Last updated: Nov 5, 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBase"],
+                    "from": "2026-11-05",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "case": "BULL",
+            "idMap": {
+              "normalizedEbitda": "ebitdaTtm",
+              "valuationNetDebt": "netFinancialDebt",
+              "peerEvEbitda": "peerEvEbitdaBull"
+            },
+            "scenario": {
+              "id": "BULL",
+              "valuationAt": "2026-11-05",
+              "knowledgeAt": "2026-11-05",
+              "flowStart": "2025-07-01",
+              "flowEnd": "2026-06-30",
+              "stockAt": "2026-06-30",
+              "shareBasis": "3509100000",
+              "purchasingPowerDate": "2026-06-30",
+              "assumptions": [
+                {
+                  "inputId": "ebitdaTtm",
+                  "value": "63557627000",
+                  "rationale": "FROTO'nun kendi 'Düzeltilmiş VAFÖK' TTM (3Ç2025-2Ç2026) satırı, 30.06.2026 sınırlı denetim raporu Not 2.3; üç senaryoda da sabit tutulur, 2025 takvim yılı VAFÖK'ü (78.387.292.000 TL) daha yüksek olsa da TTM son dört çeyreği yansıttığı için normalizasyon bazı olarak seçildi.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Düzeltilmiş VAFÖK' satırı, son dört çeyreklik dönem (TTM), 30.06.2026 itibarıyla",
+                    "excerpt": "Not 2.3 VAFÖK mutabakatı, şirketin kendi 'Düzeltilmiş VAFÖK' (TTM) satırı: 63.557.627 (bin TL), son dört çeyrek (3Ç2025-2Ç2026)",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["ebitdaTtm"],
+                    "from": "2025-07-01",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "netFinancialDebt",
+                  "value": "111981980000",
+                  "rationale": "Şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli finansal borçlanma − nakit), 30.06.2026; üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-debt",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 2.3, şirketin kendi 'Net finansal borçlar' satırı (uzun+kısa vadeli borçlanma − nakit), 30.06.2026",
+                    "excerpt": "Net finansal borç 30.06.2026: 111.981.980 (bin TL).",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["netFinancialDebt"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "shares",
+                  "value": "3509100000",
+                  "rationale": "Ödenmiş sermaye / nominal pay sayısı (1 TL/pay), 30.06.2026, Not 13; doviz.com piyasa değeri/fiyat ile çapraz doğrulandı. Üç senaryoda da sabit tutulur.",
+                  "evidence": {
+                    "id": "ev-froto-h1-balance-shares",
+                    "sourceId": "h1PrimaryReport",
+                    "originId": "fordotosan-ir-site",
+                    "collectionId": "froto-financials-2026",
+                    "reviewerId": "claude-froto-research-20261030",
+                    "ancestorIds": [],
+                    "documentUrl": "https://www.fordotosan.com.tr/doc/8EEb0u2ckyrJ4rYkkGkXzdmGlhzCg6LQgyPuGAwKHS1h-xXD8yeuFFQ-4RrPEF-svhkbW37yt02qkCc9PZdtc6lm7qFQr7yG1X7hAUMingaQCnwBKs0nGypxQUWrxJqnzCDp6k6BrTENeDyYHqBMHQ2",
+                    "locator": "Not 13, Ödenmiş sermaye 3.509.100 bin TL / 3.509.100.000 pay, 30.06.2026",
+                    "excerpt": "Ödenmiş sermaye 30.06.2026: 3.509.100 bin TL, nominal 1 TL/pay, 3.509.100.000 pay.",
+                    "checkedAt": "2026-10-29",
+                    "publishedAt": "2026-08-04",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["shares"],
+                    "from": "2026-06-30",
+                    "to": "2026-06-30",
+                    "purchasingPowerDate": "2026-06-30"
+                  }
+                },
+                {
+                  "inputId": "peerEvEbitdaBull",
+                  "value": "14.25",
+                  "rationale": "İyimser senaryo: tam hat (binek+ticari) üretim yapan ve güçlü marjlara sahip küresel OEM Hyundai Motor (005380.KS, TTM 14,25x) baz alındı. Stellantis'in güncel çarpanı (15,62x) geçici olarak düşük VAFÖK tabanından şiştiği için daha az güvenilir bulundu ve bull senaryosu için tercih edilmedi.",
+                  "evidence": {
+                    "id": "ev-froto-peer-hyundai-evebitda-assumption",
+                    "sourceId": "peerHyundaiEvEbitda",
+                    "originId": "stockanalysis-com",
+                    "collectionId": "froto-valuation-peers-2026-11-05",
+                    "reviewerId": "claude-froto-research-20261105",
+                    "ancestorIds": [],
+                    "documentUrl": "https://stockanalysis.com/quote/krx/005380/statistics/",
+                    "locator": "Enterprise Valuation bölümü, EV/EBITDA (TTM)",
+                    "excerpt": "Hyundai Motor Co (005380.KS): EV/EBITDA = 14.25 (TTM). Last updated: Nov 5, 2026.",
+                    "checkedAt": "2026-11-05",
+                    "publishedAt": "2026-11-05",
+                    "publishedAtBasis": "OBSERVED_BY",
+                    "method": "DOCUMENT_RECONCILIATION",
+                    "claims": ["peerEvEbitdaBull"],
+                    "from": "2026-11-05",
+                    "to": "2026-11-05",
+                    "purchasingPowerDate": null
+                  }
+                }
+              ]
+            }
+          }
+        ]
       }
     ]
   },

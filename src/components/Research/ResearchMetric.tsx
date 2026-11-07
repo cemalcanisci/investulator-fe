@@ -66,7 +66,7 @@ export function ResearchMetric({
             {result.issues.map((issue) => (
               <li key={issue}>
                 {t(`ratios.issues.${issue}`, {
-                  defaultValue: t(`analysis.issues.${issue}`, {
+                  defaultValue: t(`researchAnalysis.issues.${issue}`, {
                     defaultValue: issue,
                   }),
                 })}
@@ -97,7 +97,7 @@ export function ResearchMetric({
                 {input.period} · {input.sourceId}
               </p>
             ))}
-          <p className="mt-2">{t('analysis.unverifiedInputs')}</p>
+          <p className="mt-2">{t('researchAnalysis.unverifiedInputs')}</p>
           {!report.narrativeStale &&
             i18n.exists(`${report.contentKey}.education.${id}`) && (
               <p className="mt-2">
@@ -148,7 +148,7 @@ export function ResearchMetric({
           {result.issues.map((issue) => (
             <li key={issue}>
               {t(`ratios.issues.${issue}`, {
-                defaultValue: t(`analysis.issues.${issue}`, {
+                defaultValue: t(`researchAnalysis.issues.${issue}`, {
                   defaultValue: issue,
                 }),
               })}
@@ -172,7 +172,7 @@ export function ResearchMetric({
         </summary>
         <p className="mt-2">
           {t(
-            `analysis.earnings.${getAnalysis(report)?.contracts.find((c) => c.id === id)?.earningsBasis ?? 'REPORTED'}`,
+            `researchAnalysis.earnings.${getAnalysis(report)?.contracts.find((c) => c.id === id)?.earningsBasis ?? 'REPORTED'}`,
           )}
         </p>
         {(calculation || id === 'peTtm') && (

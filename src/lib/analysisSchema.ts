@@ -61,6 +61,47 @@ function isFact(value: unknown): value is FinancialFact {
   );
 }
 
+function isValuationScenarioSet(value: unknown): boolean {
+  if (!record(value) || typeof value.methodId !== 'string') {
+    return false;
+  }
+  return (
+    Array.isArray(value.cases) &&
+    value.cases.every((c) => {
+      if (
+        !record(c) ||
+        !oneOf(c.case, ['BEAR', 'BASE', 'BULL']) ||
+        !record(c.idMap) ||
+        !Object.values(c.idMap).every((v) => typeof v === 'string') ||
+        !record(c.scenario)
+      ) {
+        return false;
+      }
+      const s = c.scenario;
+      return (
+        oneOf(s.id, ['BEAR', 'BASE', 'BULL']) &&
+        stringFields(s, [
+          'valuationAt',
+          'knowledgeAt',
+          'flowStart',
+          'flowEnd',
+          'stockAt',
+          'shareBasis',
+        ]) &&
+        (s.purchasingPowerDate === null ||
+          typeof s.purchasingPowerDate === 'string') &&
+        Array.isArray(s.assumptions) &&
+        s.assumptions.every(
+          (a) =>
+            record(a) &&
+            stringFields(a, ['inputId', 'value', 'rationale']) &&
+            isSourceEvidence(a.evidence),
+        )
+      );
+    })
+  );
+}
+
 function isReport(value: unknown): value is AnalysisReport {
   if (
     !record(value) ||
@@ -74,6 +115,9 @@ function isReport(value: unknown): value is AnalysisReport {
   }
   const p = value.presentation;
   return (
+    (value.valuationScenarios === undefined ||
+      (Array.isArray(value.valuationScenarios) &&
+        value.valuationScenarios.every(isValuationScenarioSet))) &&
     (value.peers === undefined ||
       (Array.isArray(value.peers) &&
         value.peers.every(

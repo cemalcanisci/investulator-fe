@@ -39,8 +39,19 @@ import {
   AnalysisQuality,
   ProfileValuation,
 } from '@/components/Research/AnalysisQuality';
+import {
+  reportValuationScenarios,
+  scenarioUpsidePercent,
+  VALUATION_METHODS,
+} from '@/lib/valuation';
+import type { ValuationMethod } from '@/lib/valuation';
 
 const STRATEGIES = ['DIVIDEND', 'GROWTH', 'VALUE', 'LONG_TERM'] as const;
+const SCENARIO_CARDS = [
+  { key: 'bear', case: 'BEAR' },
+  { key: 'base', case: 'BASE' },
+  { key: 'bull', case: 'BULL' },
+] as const;
 
 function ResearchSection({
   id,
@@ -156,6 +167,20 @@ export function ResearchPage(): JSX.Element {
       strategy === 'REPORT' ? (analysis?.context.strategies ?? []) : [strategy],
   };
   const orderedSections = researchSectionOrder(presentationContext);
+  const valuationMethods = profile.methods
+    .map((id) => VALUATION_METHODS.find((m) => m.id === id))
+    .filter((m): m is ValuationMethod => m !== undefined);
+  const primaryValuationMethod =
+    valuationMethods.find(
+      (m) => analysis && reportValuationScenarios(analysis, m) !== null,
+    ) ?? valuationMethods[0];
+  const primaryScenarios =
+    analysis && primaryValuationMethod
+      ? reportValuationScenarios(analysis, primaryValuationMethod)
+      : null;
+  const currentPrice = analysis?.facts.find((f) => f.id === 'price')?.value;
+  const baseScenario = primaryScenarios?.find((s) => s.case === 'BASE')?.result;
+  const baseUpside = scenarioUpsidePercent(baseScenario?.value, currentPrice);
   function note(key: string): JSX.Element {
     return (
       <p className="text-sm leading-7 text-fg-2">
@@ -321,15 +346,30 @@ export function ResearchPage(): JSX.Element {
             {t('research.valuationResult')}
           </p>
           <h3 className="mt-2 text-2xl font-semibold">
-            {t('research.notAssessed')}
+            {baseScenario?.status === 'PASS'
+              ? baseScenario.value
+              : t('research.notAssessed')}
           </h3>
+          {baseUpside !== null && (
+            <p className="mt-1 text-sm text-primary">
+              {t('researchAnalysis.scenarioUpside', { percent: baseUpside })}
+            </p>
+          )}
           <div className="mt-3">{note('valuation')}</div>
         </div>
         {metrics(['marketCap', 'bookPerShare'])}
         <div className="grid gap-3 lg:grid-cols-3">
           {profile.methods
             .flatMap((method) =>
-              method === 'EV_EBITDA' ? ['ev'] : method === 'FCF' ? ['dcf'] : [],
+              method === 'EV_EBITDA'
+                ? ['ev']
+                : method === 'FCF'
+                  ? ['dcf']
+                  : method === 'NAV'
+                    ? ['nav']
+                    : method === 'BOOK_ROE'
+                      ? ['bookRoe']
+                      : [],
             )
             .map((method) => (
               <Card key={method} className="p-5">
@@ -347,14 +387,36 @@ export function ResearchPage(): JSX.Element {
           <h3 className="font-semibold">{t('research.scenarios')}</h3>
           {note('scenarios')}
           <div className="grid gap-3 md:grid-cols-3">
-            {['bear', 'base', 'bull'].map((scenario) => (
-              <div key={scenario} className="rounded-lg bg-surface-2 p-4">
-                <h4 className="mb-2 text-sm font-semibold">
-                  {t(`research.scenarioNames.${scenario}`)}
-                </h4>
-                {note(`scenarioNotes.${scenario}`)}
-              </div>
-            ))}
+            {SCENARIO_CARDS.map(({ key: scenario, case: caseId }) => {
+              const result = primaryScenarios?.find(
+                (s) => s.case === caseId,
+              )?.result;
+              const upside = scenarioUpsidePercent(result?.value, currentPrice);
+              return (
+                <div key={scenario} className="rounded-lg bg-surface-2 p-4">
+                  <h4 className="mb-2 text-sm font-semibold">
+                    {t(`research.scenarioNames.${scenario}`)}
+                  </h4>
+                  {result?.status === 'PASS' ? (
+                    <>
+                      <p className="text-lg font-semibold">{result.value}</p>
+                      {upside !== null && (
+                        <p className="mb-2 text-xs text-fg-2">
+                          {t('researchAnalysis.scenarioUpside', {
+                            percent: upside,
+                          })}
+                        </p>
+                      )}
+                    </>
+                  ) : (
+                    <p className="mb-2 text-sm text-warn">
+                      {t('research.notAssessed')}
+                    </p>
+                  )}
+                  {note(`scenarioNotes.${scenario}`)}
+                </div>
+              );
+            })}
           </div>
           <p className="break-words text-xs text-fg-2">
             {t('research.discountFormula')}
@@ -539,13 +601,16 @@ export function ResearchPage(): JSX.Element {
             }}
           />
           <NativeSelect
-            label={t('analysis.strategySelector')}
+            label={t('researchAnalysis.strategySelector')}
             value={strategy}
             options={[
-              { value: 'REPORT', label: t('analysis.strategyOptions.REPORT') },
+              {
+                value: 'REPORT',
+                label: t('researchAnalysis.strategyOptions.REPORT'),
+              },
               ...STRATEGIES.map((value) => ({
                 value,
-                label: t(`analysis.strategyOptions.${value}`),
+                label: t(`researchAnalysis.strategyOptions.${value}`),
               })),
             ]}
             onChange={(value) => {

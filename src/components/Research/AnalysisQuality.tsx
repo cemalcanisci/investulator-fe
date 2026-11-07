@@ -9,9 +9,16 @@ import {
   factSourceIssues,
 } from '@/lib/analysisValidation';
 import { selectAnalysisProfile } from '@/lib/analysisProfiles';
-import { evaluateValuation, VALUATION_METHODS } from '@/lib/valuation';
+import {
+  evaluateValuation,
+  reportValuationScenarios,
+  scenarioUpsidePercent,
+  VALUATION_METHODS,
+} from '@/lib/valuation';
 import { analysisQuality } from '@/lib/analysisQuality';
 import { analysisPriorities } from '@/lib/analysisPriorities';
+
+const SCENARIO_CASES = ['BEAR', 'BASE', 'BULL'] as const;
 
 export function AnalysisQuality({
   report,
@@ -33,29 +40,29 @@ export function AnalysisQuality({
   return (
     <section
       className="space-y-4 rounded-xl border border-line bg-surface p-5"
-      aria-label={t('analysis.title')}
+      aria-label={t('researchAnalysis.title')}
     >
-      <h2 className="text-lg font-semibold">{t('analysis.title')}</h2>
+      <h2 className="text-lg font-semibold">{t('researchAnalysis.title')}</h2>
       <p className="rounded-lg bg-warn-soft p-3 text-sm leading-7">
-        {t('analysis.reviewNotice')}
+        {t('researchAnalysis.reviewNotice')}
       </p>
       <p className="text-sm">
-        {t('analysis.counts', {
+        {t('researchAnalysis.counts', {
           passed: results.filter((r) => r.status === 'PASS').length,
           total: results.length,
         })}
       </p>
       <p className="text-xs text-fg-2">
-        {t('analysis.profile')}: {t(`analysis.profiles.${profile.id}`)} ·{' '}
-        {analysis.version}
+        {t('researchAnalysis.profile')}:{' '}
+        {t(`researchAnalysis.profiles.${profile.id}`)} · {analysis.version}
       </p>
       <p className="text-sm leading-7">
-        {t('analysis.qualitySeparation', {
-          sources: t(`analysis.sourceState.${quality.sources}`),
+        {t('researchAnalysis.qualitySeparation', {
+          sources: t(`researchAnalysis.sourceState.${quality.sources}`),
         })}
       </p>
       <p className="text-sm leading-7">
-        {t('analysis.inputStates', {
+        {t('researchAnalysis.inputStates', {
           technical: analysis.facts.filter(
             (f) => factTechnicalIssues(f).length === 0,
           ).length,
@@ -70,9 +77,9 @@ export function AnalysisQuality({
         })}
       </p>
       <p className="text-sm leading-7">
-        {t('analysis.priorities')}:{' '}
+        {t('researchAnalysis.priorities')}:{' '}
         {analysisPriorities(context ?? analysis.context)
-          .map((s) => t(`analysis.sections.${s}`))
+          .map((s) => t(`researchAnalysis.sections.${s}`))
           .join(' → ')}
       </p>
       <div className="grid gap-3 md:grid-cols-2">
@@ -92,7 +99,7 @@ export function AnalysisQuality({
             >
               <h3 className="font-semibold">
                 {t(`${section.contentKey}.title`)} ·{' '}
-                {t(`analysis.completion.${section.status}`)}
+                {t(`researchAnalysis.completion.${section.status}`)}
               </h3>
               <p>{t(`${section.contentKey}.text`)}</p>
               {report.sources
@@ -112,7 +119,9 @@ export function AnalysisQuality({
           ))}
       </div>
       <details className="text-sm">
-        <summary className="text-primary">{t('analysis.auditTrail')}</summary>
+        <summary className="text-primary">
+          {t('researchAnalysis.auditTrail')}
+        </summary>
         <div className="mt-3 grid gap-3 md:grid-cols-2">
           {analysis.facts.map((f) => (
             <article
@@ -123,35 +132,36 @@ export function AnalysisQuality({
                 {t(`research.metrics.${f.id}`, { defaultValue: f.id })}
               </h3>
               <p>
-                {t('analysis.factTechnical')}:{' '}
+                {t('researchAnalysis.factTechnical')}:{' '}
                 {t(
                   factTechnicalIssues(f).length
-                    ? 'analysis.blocked'
-                    : 'analysis.technicalValid',
+                    ? 'researchAnalysis.blocked'
+                    : 'researchAnalysis.technicalValid',
                 )}
               </p>
               <p>
-                {t('analysis.factPrimary')}:
+                {t('researchAnalysis.factPrimary')}:
                 {factSourceIssues(
                   f,
                   report.sources.map((s) => s.id),
                 ).length
-                  ? t('analysis.blocked')
-                  : t('analysis.verified')}
+                  ? t('researchAnalysis.blocked')
+                  : t('researchAnalysis.verified')}
               </p>
               <p>
-                {t('analysis.factIndependent')}: {t('analysis.notReviewed')}
+                {t('researchAnalysis.factIndependent')}:{' '}
+                {t('researchAnalysis.notReviewed')}
               </p>
               <p className="break-words">
-                {f.value} {f.unit} · {f.basis.currency} · {t('analysis.scale')}:{' '}
-                {f.basis.scale}
+                {f.value} {f.unit} · {f.basis.currency} ·{' '}
+                {t('researchAnalysis.scale')}: {f.basis.scale}
               </p>
               <p>
                 {f.basis.start} → {f.basis.end} · {f.basis.periodKind}
               </p>
               <p>
-                {t(`analysis.scope.${f.basis.scope}`)} ·{' '}
-                {t(`analysis.attribution.${f.basis.attribution}`)} ·{' '}
+                {t(`researchAnalysis.scope.${f.basis.scope}`)} ·{' '}
+                {t(`researchAnalysis.attribution.${f.basis.attribution}`)} ·{' '}
                 {f.basis.accounting} {f.basis.purchasingPowerDate}
               </p>
               <p className="break-words">
@@ -159,7 +169,7 @@ export function AnalysisQuality({
               </p>
               {f.evidence && (
                 <p className="break-words">
-                  {t('analysis.provenance')}: {f.evidence.originId} ·{' '}
+                  {t('researchAnalysis.provenance')}: {f.evidence.originId} ·{' '}
                   {f.evidence.collectionId} · {f.evidence.method}
                   <br />
                   {f.evidence.excerpt}
@@ -197,38 +207,95 @@ export function ProfileValuation({
     return null;
   }
   const profile = selectAnalysisProfile(analysis.context);
+  const price = analysis.facts.find((f) => f.id === 'price')?.value;
   return (
     <div className="grid gap-3 md:grid-cols-2">
       {VALUATION_METHODS.filter((m) => profile.methods.includes(m.id)).map(
         (method) => {
-          const result = evaluateValuation(analysis, method);
+          const scenarios = reportValuationScenarios(analysis, method);
+          const fallback = scenarios
+            ? null
+            : evaluateValuation(analysis, method);
           return (
             <article
               key={method.id}
               className="min-w-0 rounded-xl border border-line bg-surface p-5"
             >
               <h3 className="font-semibold">
-                {t(`analysis.methods.${method.id}`)}
+                {t(`researchAnalysis.methods.${method.id}`)}
               </h3>
-              <p className="mt-2 text-sm text-warn">
-                {result.status === 'BLOCKED'
-                  ? t('research.notAssessed')
-                  : result.value}
-              </p>
-              <p className="mt-2 break-words text-xs">{method.formula}</p>
-              <ul className="mt-3 list-inside list-disc text-sm leading-7">
-                {result.issues.map((issue) => (
-                  <li key={issue}>
-                    {issue.startsWith('MISSING:')
-                      ? t('analysis.missingInput', {
-                          input: t(`analysis.inputs.${issue.slice(8)}`),
-                        })
-                      : t(`analysis.issues.${issue}`)}
-                  </li>
-                ))}
-              </ul>
+              {scenarios ? (
+                <div className="mt-2 grid gap-2 sm:grid-cols-3">
+                  {SCENARIO_CASES.map((caseId) => {
+                    const result = scenarios.find(
+                      (s) => s.case === caseId,
+                    )?.result;
+                    const upside = scenarioUpsidePercent(result?.value, price);
+                    return (
+                      <div key={caseId} className="rounded-lg bg-surface-2 p-3">
+                        <p className="text-xs font-semibold text-fg-2">
+                          {t(`research.scenarioNames.${caseId.toLowerCase()}`)}
+                        </p>
+                        {result?.status === 'PASS' ? (
+                          <>
+                            <p className="mt-1 text-base font-semibold">
+                              {result.value}
+                            </p>
+                            {upside !== null && (
+                              <p className="text-xs text-fg-2">
+                                {t('researchAnalysis.scenarioUpside', {
+                                  percent: upside,
+                                })}
+                              </p>
+                            )}
+                          </>
+                        ) : (
+                          <p className="mt-1 text-sm text-warn">
+                            {t('research.notAssessed')}
+                          </p>
+                        )}
+                        <ul className="mt-2 list-inside list-disc text-xs leading-6">
+                          {(result?.issues ?? []).map((issue) => (
+                            <li key={issue}>
+                              {issue.startsWith('MISSING:')
+                                ? t('researchAnalysis.missingInput', {
+                                    input: t(
+                                      `researchAnalysis.inputs.${issue.slice(8)}`,
+                                    ),
+                                  })
+                                : t(`researchAnalysis.issues.${issue}`)}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              ) : (
+                <>
+                  <p className="mt-2 text-sm text-warn">
+                    {fallback?.status === 'BLOCKED'
+                      ? t('research.notAssessed')
+                      : fallback?.value}
+                  </p>
+                  <ul className="mt-3 list-inside list-disc text-sm leading-7">
+                    {fallback?.issues.map((issue) => (
+                      <li key={issue}>
+                        {issue.startsWith('MISSING:')
+                          ? t('researchAnalysis.missingInput', {
+                              input: t(
+                                `researchAnalysis.inputs.${issue.slice(8)}`,
+                              ),
+                            })
+                          : t(`researchAnalysis.issues.${issue}`)}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              <p className="mt-3 break-words text-xs">{method.formula}</p>
               <p className="mt-3 text-sm text-fg-2">
-                {t(`analysis.limits.${method.id}`)}
+                {t(`researchAnalysis.limits.${method.id}`)}
               </p>
             </article>
           );

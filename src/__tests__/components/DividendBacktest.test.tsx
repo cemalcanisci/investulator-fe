@@ -21,7 +21,7 @@ describe('DividendBacktest', () => {
         ).toBeVisible();
       }
       expect(
-        screen.getAllByText(i18n.t('analysis.historyIssues.COVERAGE')),
+        screen.getAllByText(i18n.t('researchAnalysis.historyIssues.COVERAGE')),
       ).toHaveLength(3);
       expect(screen.getByText(i18n.t('backtest.explanation'))).toBeVisible();
       expect(screen.queryByRole('textbox')).not.toBeInTheDocument();

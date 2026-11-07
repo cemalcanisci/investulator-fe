@@ -4,6 +4,7 @@ import type {
   ResearchReport,
 } from '@/domain/research';
 import type { SourceEvidence } from '@/domain/evidence';
+import type { ValuationScenario } from '@/domain/valuation';
 
 export interface FactBasis {
   readonly fiscalYearStart?: string;
@@ -64,7 +65,20 @@ export interface AnalysisProfile {
   readonly technical: readonly string[];
 }
 
+export interface ValuationScenarioCase {
+  readonly case: 'BEAR' | 'BASE' | 'BULL';
+  readonly idMap: Readonly<Record<string, string>>;
+  readonly scenario: ValuationScenario;
+}
+
+export interface ValuationScenarioSet {
+  readonly methodId: string;
+  readonly cases: readonly ValuationScenarioCase[];
+}
+
 export interface AnalysisReport {
+  /** Per-method BEAR/BASE/BULL fair-value scenarios; absent/empty methods stay BLOCKED/NOT_ASSESSED. */
+  readonly valuationScenarios?: readonly ValuationScenarioSet[];
   readonly peers?: readonly {
     readonly assetId: string;
     readonly reportVersion: string;
