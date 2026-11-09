@@ -14477,7 +14477,7 @@
           "observedAt": "2026-11-01"
         }
       ],
-      "narrativeStale": true
+      "narrativeStale": false
     },
     "revision": 4,
     "financialHistory": [

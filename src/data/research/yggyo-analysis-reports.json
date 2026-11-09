@@ -8852,7 +8852,7 @@
           "status": "COMPLETE"
         }
       ],
-      "narrativeStale": true
+      "narrativeStale": false
     },
     "revision": 4,
     "financialHistory": [

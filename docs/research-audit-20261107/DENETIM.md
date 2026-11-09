@@ -101,3 +101,45 @@ Testlerde üretim `decimal.ts` fonksiyonları beklenen değer üretmek için kul
 Doğrulama: 93 dosyada **641/641 test PASS** (`npm run test:coverage -- --maxWorkers=2`); satır %92,03, dal %86,63, ifade %92,20, fonksiyon %94,65. `%80` kapısı geçti. TypeScript + üretim build PASS; lint 0 hata, önceki transfer testlerinden 3 uyarı. Büyük paket boyutu uyarısı sürüyor. İlk test turundaki test-kodu tip/lint sorunları düzeltildi; finansal kabul kapısı gevşetilmedi.
 
 Üretim çıktısı ayrı 5251 portunda izole başsız Chrome ile doğrulandı: 10 şirket × Kolay/Detaylı × 390/640/768/1024/1440 px = **100 kontrol**, sıfır yatay taşma, sıfır ham çeviri anahtarı, sıfır sayısal güncel hedef başlığı, sıfır çalışma zamanı hatası. Koyu tema ve TRY tercihi kullanıldı. Çıktı çalışma kökünde `outputs/valuation-browser/results.json`; yalnız açılan test sunucusu/tarayıcısı kapatıldı, 5173 korunuyor. `git diff --check` temiz. Commit/push yapılmadı.
+
+## 9 Kasım 2026 — içerik kalitesi denetimi (Kolay Anlatım / Detaylı Görünüm)
+
+İnceleyen: Claude. Kapsam: yukarıdaki fiyat hedefi/BLOCKED kararları **değiştirilmeden**, 10 şirketin araştırma ekranlarındaki metin katmanı — Kolay Anlatım anlaşılırlığı, temettü değerlendirmesi, sektöre özgü derinlik, Detaylı Görünüm izlenebilirliği, TR/EN tutarlılığı. Her şirket ayrı bir ajanla, sırayla (paralel değil, queue) denetlendi; her ajan önceki ajanların bulgularını biliyordu. Aynı ajan incelemesi bağımsız denetim sayılmaz; bu bir takip turudur, yeni kaynak taraması yapılmadı.
+
+### Sistematik bulgu: 10 şirketin 10'unda da TR/EN anlatım metni bayatlamış
+
+`presentation.narrativeStale: true` bayrağı taşıyan tüm şirketlerde aynı kök sorun vardı: 07.11.2026 değerleme denetimi (yukarıdaki bölüm) rakamsal girdileri/senaryoları güncellerken, serbest metin alanlarının (`summary`, `accounting`, `cashBridge`, `cashQuality`, `dividend`, `sustainability`, `technical`, `review`, `debtMeaning`, `fxMeaning` — şirkete göre 8-11 alan) bir kısmı **hiç elden geçirilmemişti**. Sonuç: bu alanların TR sürümü konusuyla ilgisiz tek bir kalıp metni (ör. "net borç köprüsü" veya "temettü dipnotu") tekrarlıyor, EN sürümü ise TR'den tamamen farklı ve kendi başına da ilgisiz başka bir kalıp metni ("The 1 November 2026 source audit supersedes…") tekrarlıyordu. Yani TR/EN hem birbirinden hem de kendi alan konusundan kopuktu — `researchDoasAudit.test.ts` tarzı anahtar-eşleşme testleri bunu yakalayamaz çünkü iki dilde de geçerli, dolu metin vardı, sadece yanlış metindi.
+
+FROTO'da ayrıca gerçek bir **veri çelişkisi** bulundu: TR `headline` "net nakde yakın" derken aynı raporun `strengths`/`debtMeaning`/EN `headline` alanları 111,98 milyar TL net borç (1,76x Net Borç/FAVÖK) gösteriyordu; TR headline hataydı, düzeltildi.
+
+Her şirkette ilgili alanlar, **yeni kaynak taraması yapılmadan**, raporun kendi `facts`/`calculations`/`sources` alanlarından yeniden türetilerek TR/EN eşleşecek şekilde yeniden yazıldı. Codex'in fiyat hedefi/BLOCKED/NEEDS_REVIEW kararları hiçbirinde gevşetilmedi; BEAR/BULL'a sayısal değer eklenmedi (özellikle PAGYO). Eski rapor revizyonları silinmedi/değiştirilmedi.
+
+| Şirket | Düzeltilen alan sayısı | Ek bulgu | `narrativeStale` |
+| ------ | ---------------------- | -------- | ----------------- |
+| TUPRS  | 2 (dividend/sustainability) + EN'de 8 alan daha | TR zaten kısmen güncellenmişti, sadece EN geride kalmıştı | **true kaldı** — yalnız hedeflenen alanlar düzeltildi, tam alan taraması yapılmadı |
+| DOAS   | 8                      | —        | **true kaldı** |
+| FROTO  | 9 + headline           | Net borç/net nakit çelişkisi (veri hatası) | **true kaldı** |
+| TOASO  | 10                     | Sürdürülebilirlik için payout oranı hesabı eklendi (mevcut fact'lerden) | **true kaldı** |
+| AKSA   | 10                     | —        | **true kaldı** |
+| ISMEN  | 8                      | BROKER profili (BOOK_ROE, EV/FAVÖK yok) doğru seçilmiş, bozulmamış | **true kaldı** |
+| PAGYO  | 10 (bir kısmı eski doğru metinden restore edildi) | NAD/BLOCKED ayrımı zaten doğruydu | **true kaldı** |
+| TTRAK  | 11                     | —        | **false'a çekildi** |
+| AKMGY  | 11                     | —        | **false'a çekildi** |
+| YGGYO  | 11 + `education.occupancy` tarih hatası | Doluluk tarihi "31.12.2025" yazıyordu, kaynak 30.06.2026 gösteriyordu | **false'a çekildi** |
+
+**Bilinçli tutarsızlık — devam eden iş:** Desen TTRAK'ta fark edilip sonraki ajanlara "tam alan taraması yaptıysan `narrativeStale`'i `false` yap" talimatı eklendiğinden, bu bayrak yalnızca TTRAK/AKMGY/YGGYO'da `false`'a çekildi. İlk yedi şirkette (TUPRS, DOAS, FROTO, TOASO, AKSA, ISMEN, PAGYO) bayrak hâlâ `true`: bu, o yedi şirkette **hedeflenen alan listesi dışında** kalan başka bir anlatım alanının da bayatlamış olabileceği ihtimalini açık bırakır — ben (koordinatör) bu yedi dosyada bayrağı kontrol etmeden kendiliğimden `false`'a çekmedim, çünkü bu, her alanın tek tek yeniden doğrulanmasını gerektirir ve bu denetim turunun kapsamı dışında kalır. **Açık kalan iş:** bu yedi şirkette tam alan taraması (TTRAK/AKMGY/YGGYO'daki gibi) yapılıp bayrak doğru değere çekilmeli.
+
+### Diğer bulgular (şirkete özel)
+
+- **ISMEN:** Aracı kurum (BROKER) profili doğru — EV/FAVÖK zorlanmamış, ROE/P-D-D/sermaye yeterliliği kullanılıyor; Damodaran ERP sürüm doğrulaması (%9,30 vs. Şubat 2026 %8,89) hâlâ açık.
+- **TUPRS, DOAS:** Legacy `.ts` rapor dosyaları (`tuprs-2026-10-11*.ts`, `doas-2026-10-27.ts`) `services/research.ts`'teki `REPORTS` dizisine giriyor ama `analysisRepository.list()` her zaman önce geldiği için **UI'da hiç görünmüyor** — doğrulandı, ölü kod. Silme kararı kullanıcıya bırakıldı.
+- **TTRAK:** Tek hesaplanabilir gösterge PD/DD ≈1,71x; üç senaryo da dürüstçe BLOCKED, sahte kesinlik yok.
+- **PAGYO, AKMGY, YGGYO (GYO üçlüsü):** NAD'ın P&L bazlı değerlemeden farklı bir yöntem olduğu ve doğrudan sıralanamayacağı metinlerde açık; AKMGY'de toplam yükümlülüğün NAD'dan iki kez düşülmediği doğrulandı; YGGYO'da AVM+otel iki ayrı varlık sınıfı olarak ayrıştırıldığı ve otelin maliyet yöntemiyle taşındığı açık.
+
+### Karşılaştırılabilirlik
+
+On şirket artık ortak bir metin kalitesi standardına (TR/EN eşdeğerliği, konu-alan uyumu, facts/calculations izlenebilirliği) sahip. Sektörler arası ekonomik anlamı farklı oranlar (TUPRS'ın FD/FAVÖK'ü ile ISMEN'in P/D-D'si, GYO'ların NAD'ı) doğrudan sıralanmadı; TAS29/konsolidasyon/satın alma gücü farkları (FROTO/ISMEN'in TTM 01.07.2025-30.06.2026 dönemi diğerlerinin FY 31.12.2025'inden ayrı) her şirketin kendi metninde korundu.
+
+### Doğrulama
+
+`npx tsc -b` temiz; `npm run lint` 0 hata (3 önceden var olan, ilgisiz transfer-test uyarısı); `npx prettier --check` değişen tüm dosyalar için temiz; `npx vitest run` (coverage'sız, kullanıcı talimatıyla) **93 dosya / 641 test PASS**; `npm run build` PASS (büyük paket boyutu uyarısı önceden vardı, sürüyor). Değişen dosyalar: `src/i18n/locales/tr.json`, `src/i18n/locales/en.json`, `src/data/research/ttrak-analysis-reports.json`, `src/data/research/akmgy-analysis-reports.json`, `src/data/research/yggyo-analysis-reports.json`. Commit/push yapılmadı.
