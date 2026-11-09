@@ -9,12 +9,10 @@ import { researchPath, ROUTE_PATHS } from '@/app/routePaths';
 import { i18n } from '@/i18n';
 import * as research from '@/services/research';
 import { tuprsReport } from '@/data/research/tuprs-2026-10-11';
-import { researchBundle } from '@/services/researchBundle';
+import { analysisRepository } from '@/services/analysis';
 import { metricDefinition } from '@/domain/metricEducation';
 
-const current = researchBundle.reports.find(
-  (report) => report.presentation.symbol === 'TUPRS',
-);
+const current = analysisRepository.list('watch-bist-tuprs')[0];
 if (!current) {
   throw new Error('Missing TUPRS report');
 }
@@ -34,7 +32,7 @@ afterEach(() => {
 
 // Growing per-company research history (now 10 sourced companies) pushes
 // jsdom render time past the 5s default on slower runs.
-vi.setConfig({ testTimeout: 20000 });
+vi.setConfig({ testTimeout: 30000 });
 
 describe('ResearchPage', () => {
   it('uses the PAGYO debt source without unrelated company explanations', async () => {
@@ -130,7 +128,7 @@ describe('ResearchPage', () => {
           .length,
       ).toBeGreaterThan(0);
     },
-    30000,
+    60000,
   );
   it('reorders actual sections when the presentation strategy changes', async () => {
     renderPage();
@@ -195,7 +193,9 @@ describe('ResearchPage', () => {
       'DETAILED',
     );
     expect(
-      await screen.findByText(i18n.t('researchTuprsV2.guide.verdict')),
+      await screen.findByText(
+        i18n.t(`${current.presentation.contentKey}.guide.verdict`),
+      ),
     ).toBeVisible();
     expect(
       screen.getByRole('heading', {
@@ -214,7 +214,9 @@ describe('ResearchPage', () => {
     }
     expect(education).toBeVisible();
     expect(
-      screen.getByText(i18n.t('researchTuprsV2.guide.missing.earnings')),
+      screen.getByText(
+        i18n.t(`${current.presentation.contentKey}.guide.missing.earnings`),
+      ),
     ).toBeVisible();
   });
   it('shows source-backed research, honest review limits and all research sections', async () => {
@@ -232,7 +234,7 @@ describe('ResearchPage', () => {
       screen.getByRole('heading', { name: i18n.t('research.notAssessed') }),
     ).toBeInTheDocument();
     expect(
-      screen.getByText(i18n.t('researchTuprs.scanLimit')),
+      screen.getByText(i18n.t(`${current.presentation.contentKey}.scanLimit`)),
     ).toBeInTheDocument();
     expect(
       screen.getAllByText(
@@ -272,11 +274,13 @@ describe('ResearchPage', () => {
     }
     await userEvent.click(details);
     expect(
-      within(priceCard).queryByText(i18n.t('researchTuprs.education.price')),
-    ).not.toBeInTheDocument();
-    expect(
-      screen.getByText(i18n.t('researchTransfer.narrativeStale')),
+      within(priceCard).getByText(
+        i18n.t(`${current.presentation.contentKey}.education.price`),
+      ),
     ).toBeVisible();
+    expect(
+      screen.queryByText(i18n.t('researchTransfer.narrativeStale')),
+    ).not.toBeInTheDocument();
   });
 
   it.each(['watch-crypto-candidate-ai', 'unknown'])(

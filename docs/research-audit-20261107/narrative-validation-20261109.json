@@ -1,0 +1,21 @@
+{
+  "tests": {
+    "total": 672,
+    "passed": 672,
+    "failed": 0,
+    "files": 94
+  },
+  "browser": {
+    "checks": 120,
+    "failures": 0,
+    "runtimeErrors": 0
+  },
+  "typeScript": "PASS",
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 3
+  },
+  "build": "PASS",
+  "format": "PASS",
+  "coverage": "NOT_RERUN"
+}

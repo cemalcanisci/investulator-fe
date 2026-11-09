@@ -19,8 +19,10 @@ if (!latest || !navMethod) {
 
 describe('YGGYO NAV valuation stays BLOCKED (CONFLICT, no verified NAV bridge)', () => {
   it('picks the highest-revision report', () => {
-    expect(latest.revision).toBe(4);
-    expect(latest.presentation.contentKey).toBe('researchYggyoAudit20261101');
+    expect(latest.revision).toBe(5);
+    expect(latest.presentation.contentKey).toBe(
+      'researchYggyoNarrativeAudit20261109',
+    );
   });
 
   it('carries a netAssetValue fact flagged CONFLICT, not VERIFIED', () => {

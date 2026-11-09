@@ -19,9 +19,13 @@ if (!latest || !evEbitdaMethod) {
 
 describe('TTRAK EV/EBITDA valuation stays BLOCKED (no reliable normalized FAVÖK bridge)', () => {
   it('picks the highest-revision report', () => {
-    expect(latest.revision).toBe(4);
-    expect(latest.version).toBe('ttrak-2026-11-03-v4');
-    expect(latest.presentation.contentKey).toBe('researchTtrakAudit20261101');
+    expect(latest.revision).toBe(5);
+    expect(latest.version).toBe(
+      'ttrak-2026-11-09-valuation-audit-narrative-v5',
+    );
+    expect(latest.presentation.contentKey).toBe(
+      'researchTtrakNarrativeAudit20261109',
+    );
     expect(latest.context.businessModel).toBe('AUTOMOTIVE');
   });
 

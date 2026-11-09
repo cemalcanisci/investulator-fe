@@ -19,8 +19,10 @@ if (!latest || !navMethod) {
 
 describe('AKMGY NAV valuation stays BLOCKED (CONFLICT, no verified NAV bridge)', () => {
   it('picks the highest-revision report', () => {
-    expect(latest.revision).toBe(4);
-    expect(latest.presentation.contentKey).toBe('researchAkmgyAudit20261101');
+    expect(latest.revision).toBe(5);
+    expect(latest.presentation.contentKey).toBe(
+      'researchAkmgyNarrativeAudit20261109',
+    );
   });
 
   it('carries a netAssetValue fact flagged CONFLICT, not VERIFIED', () => {

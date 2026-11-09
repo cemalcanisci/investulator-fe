@@ -114,18 +114,18 @@ FROTO'da ayrıca gerçek bir **veri çelişkisi** bulundu: TR `headline` "net na
 
 Her şirkette ilgili alanlar, **yeni kaynak taraması yapılmadan**, raporun kendi `facts`/`calculations`/`sources` alanlarından yeniden türetilerek TR/EN eşleşecek şekilde yeniden yazıldı. Codex'in fiyat hedefi/BLOCKED/NEEDS_REVIEW kararları hiçbirinde gevşetilmedi; BEAR/BULL'a sayısal değer eklenmedi (özellikle PAGYO). Eski rapor revizyonları silinmedi/değiştirilmedi.
 
-| Şirket | Düzeltilen alan sayısı | Ek bulgu | `narrativeStale` |
-| ------ | ---------------------- | -------- | ----------------- |
-| TUPRS  | 2 (dividend/sustainability) + EN'de 8 alan daha | TR zaten kısmen güncellenmişti, sadece EN geride kalmıştı | **true kaldı** — yalnız hedeflenen alanlar düzeltildi, tam alan taraması yapılmadı |
-| DOAS   | 8                      | —        | **true kaldı** |
-| FROTO  | 9 + headline           | Net borç/net nakit çelişkisi (veri hatası) | **true kaldı** |
-| TOASO  | 10                     | Sürdürülebilirlik için payout oranı hesabı eklendi (mevcut fact'lerden) | **true kaldı** |
-| AKSA   | 10                     | —        | **true kaldı** |
-| ISMEN  | 8                      | BROKER profili (BOOK_ROE, EV/FAVÖK yok) doğru seçilmiş, bozulmamış | **true kaldı** |
-| PAGYO  | 10 (bir kısmı eski doğru metinden restore edildi) | NAD/BLOCKED ayrımı zaten doğruydu | **true kaldı** |
-| TTRAK  | 11                     | —        | **false'a çekildi** |
-| AKMGY  | 11                     | —        | **false'a çekildi** |
-| YGGYO  | 11 + `education.occupancy` tarih hatası | Doluluk tarihi "31.12.2025" yazıyordu, kaynak 30.06.2026 gösteriyordu | **false'a çekildi** |
+| Şirket | Düzeltilen alan sayısı                            | Ek bulgu                                                                | `narrativeStale`                                                                   |
+| ------ | ------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| TUPRS  | 2 (dividend/sustainability) + EN'de 8 alan daha   | TR zaten kısmen güncellenmişti, sadece EN geride kalmıştı               | **true kaldı** — yalnız hedeflenen alanlar düzeltildi, tam alan taraması yapılmadı |
+| DOAS   | 8                                                 | —                                                                       | **true kaldı**                                                                     |
+| FROTO  | 9 + headline                                      | Net borç/net nakit çelişkisi (veri hatası)                              | **true kaldı**                                                                     |
+| TOASO  | 10                                                | Sürdürülebilirlik için payout oranı hesabı eklendi (mevcut fact'lerden) | **true kaldı**                                                                     |
+| AKSA   | 10                                                | —                                                                       | **true kaldı**                                                                     |
+| ISMEN  | 8                                                 | BROKER profili (BOOK_ROE, EV/FAVÖK yok) doğru seçilmiş, bozulmamış      | **true kaldı**                                                                     |
+| PAGYO  | 10 (bir kısmı eski doğru metinden restore edildi) | NAD/BLOCKED ayrımı zaten doğruydu                                       | **true kaldı**                                                                     |
+| TTRAK  | 11                                                | —                                                                       | **false'a çekildi**                                                                |
+| AKMGY  | 11                                                | —                                                                       | **false'a çekildi**                                                                |
+| YGGYO  | 11 + `education.occupancy` tarih hatası           | Doluluk tarihi "31.12.2025" yazıyordu, kaynak 30.06.2026 gösteriyordu   | **false'a çekildi**                                                                |
 
 **Bilinçli tutarsızlık — devam eden iş:** Desen TTRAK'ta fark edilip sonraki ajanlara "tam alan taraması yaptıysan `narrativeStale`'i `false` yap" talimatı eklendiğinden, bu bayrak yalnızca TTRAK/AKMGY/YGGYO'da `false`'a çekildi. İlk yedi şirkette (TUPRS, DOAS, FROTO, TOASO, AKSA, ISMEN, PAGYO) bayrak hâlâ `true`: bu, o yedi şirkette **hedeflenen alan listesi dışında** kalan başka bir anlatım alanının da bayatlamış olabileceği ihtimalini açık bırakır — ben (koordinatör) bu yedi dosyada bayrağı kontrol etmeden kendiliğimden `false`'a çekmedim, çünkü bu, her alanın tek tek yeniden doğrulanmasını gerektirir ve bu denetim turunun kapsamı dışında kalır. **Açık kalan iş:** bu yedi şirkette tam alan taraması (TTRAK/AKMGY/YGGYO'daki gibi) yapılıp bayrak doğru değere çekilmeli.
 
@@ -143,3 +143,49 @@ On şirket artık ortak bir metin kalitesi standardına (TR/EN eşdeğerliği, k
 ### Doğrulama
 
 `npx tsc -b` temiz; `npm run lint` 0 hata (3 önceden var olan, ilgisiz transfer-test uyarısı); `npx prettier --check` değişen tüm dosyalar için temiz; `npx vitest run` (coverage'sız, kullanıcı talimatıyla) **93 dosya / 641 test PASS**; `npm run build` PASS (büyük paket boyutu uyarısı önceden vardı, sürüyor). Değişen dosyalar: `src/i18n/locales/tr.json`, `src/i18n/locales/en.json`, `src/data/research/ttrak-analysis-reports.json`, `src/data/research/akmgy-analysis-reports.json`, `src/data/research/yggyo-analysis-reports.json`. Commit/push yapılmadı.
+
+## 9 Kasım 2026 — Tam anlatım denetiminin tamamlanması (Codex)
+
+Önceki 9 Kasım turunun açık bıraktığı yedi şirketin yalnız özet alanları değil, tüm iç içe metinleri TR/EN olarak mevcut facts, calculations, sources ve 7 Kasım değerleme kararıyla karşılaştırıldı. İncelenen alan envanteri [narrative-audit-20261109.json](narrative-audit-20261109.json) dosyasındadır. Yedi şirkette 700 alan/dil (1.400 metin) kapsamı vardır; değiştirilmesi gerekmeyen kaynakla uyumlu açıklamalar korundu. Bu çalışma yeni finansal veri veya fiyat taraması değildir. Anlatımın güncel olması finansalların, fiyatın veya değerlemenin bugün için güncel/onaylı olması anlamına gelmez.
+
+| Şirket | Yeni revizyon | Bu tur kapsamı                                       | narrativeStale |
+| ------ | ------------- | ---------------------------------------------------- | -------------- |
+| TUPRS  | 12            | Tam: 123 alan/dil                                    | false          |
+| DOAS   | 6             | Tam: 96 alan/dil                                     | false          |
+| FROTO  | 6             | Tam: 100 alan/dil                                    | false          |
+| TOASO  | 6             | Tam: 101 alan/dil                                    | false          |
+| AKSA   | 6             | Tam: 108 alan/dil                                    | false          |
+| ISMEN  | 6             | Tam: 73 alan/dil                                     | false          |
+| PAGYO  | 7             | Tam: 99 alan/dil                                     | false          |
+| TTRAK  | 5             | Önceki tam tarama + tarih/pay birimi/TTM ek kontrolü | false          |
+| AKMGY  | 5             | Önceki tam tarama + tarihli fiyat ek kontrolü        | false          |
+| YGGYO  | 5             | Önceki tam tarama + nakit/temettü/NAD ek kontrolü    | false          |
+
+### Düzeltmeler ve veriyle bağlantıları
+
+- **TUPRS:** Birbirini tekrarlayan muhasebe/nakit/borç/kur/teknik/inceleme paragrafları ayrıştırıldı. Eksik denilen TTM köprüsü aslında 34.765.910.000 +49.847.684.000 −11.872.237.000 =72.741.357.000 TL; F/K 10,23. Nakit köprüsü 132.366.363.000 −11.858.044.000 =120.508.319.000 TL. Not 29 net nakit tanımı bilanço nakdinden, doğal korunma öncesi −95.405.870.000 TL döviz pozisyonu korunma sonrası +203.915.000 TL'den ayrıldı.
+- **DOAS:** H1 işletme nakdi −2.677.424.000, maddi+maddi olmayan capex 1.771.465.000 ve nakit farkı −4.448.889.000 TL. H1 VAFÖK CONFLICT, Mart borcu UNVERIFIED; bu girdilerden kesin oran çıkaran anlatımlar kaldırıldı. FY2025/H1 borç farkı aynı satın alma gücünde reel artış sayılmadı. 134,80 yerine kayıtlı 27.10.2026 kapanışı 134,30 TL ve brüt temettü verimi %22,34 kullanıldı.
+- **FROTO:** Net borç 168.024.403.000 −56.042.423.000 =111.981.980.000 TL; TTM düzeltilmiş VAFÖK 63.557.627.000 TL ve yaklaşık 1,76x. Özet, rehber, borç ve eğitim aynı borçlu durumu açıklıyor; eski “net nakde yakın/ucuz/makul” yorumları kaldırıldı. Ödenen brüt 3,64 TL ile önerilen net 2,6095 TL ayrıldı; kayıtlı fiyata göre brüt verim %5,26. TTM kâr 33.200.368.000 TL, F/K 7,31; yıllıklaştırma iddiası düzeltildi. Temmuz üretim duruşu H1 düşüşünün nedeni yapılmadı.
+- **TOASO:** Brüt 20/net 17 TL, brüt verim %9,47; hak 23 Mart/ödeme 25 Mart olarak kayıtla eşleşti. 500 milyon borsa payı ile 0,01 TL hukuki birim ayrıldı. Tarihçe APPROXIMATE/REVIEWED iken PRICE_ONLY denmesi düzeltildi. Nominal dağıtım ile Haziran satın alma gücündeki kâr doğrudan payout yapılmadı; satın alma/konsolidasyon büyümesi organik büyüme sayılmadı.
+- **AKSA:** Hesap girdisi brüt 0,58 TL, net 0,493 TL; kart verimi %5,81, net varsayımı %4,93 olarak ayrıldı. FY2025 borç/VAFÖK 3,70x; H1 borcu farklı dönem. Elyaf/ileri malzeme parçaları diğer segment ve düzeltmeler olmadan toplam sayılmadı. Nakit/temettü ve satın alma gücü farkları açıklandı. Genel “Amount/Reported amount” kalıpları metrik konusuna özgü eğitimle değiştirildi.
+- **ISMEN:** CONFLICT komisyon toplamı gerçek komisyon büyümesi sayılmadı; kaynaklı hizmet geliri 5.648.465.000/4.368.106.000 TL ayrıldı. TTM kâr 7.346.545.000 TL, ortalama özkaynak 34.359.982.500 TL, ROE %21,38. Reel kâr düşüşü nominal sayılmadı; temettü değişimi −%44,12. 92,77x asgari sermaye eşiği gerçek düzenleyici sermaye yeterlilik oranı değildir. Eksik aracı kurum nakit köprüsü eksik olarak açıklandı.
+- **PAGYO:** 31.12.2025 NAD 15.174.227.888/87.000.000 =174,42 TL/pay tarihli köprüdür; aynı tarihteki özkaynağa eşittir, H1 özkaynak/pay 204,36 TL ile karıştırılmaz. 174,42 güncel hedef değildir; baz NEEDS_REVIEW, diğer senaryolarda ASSUMPTIONS engeli korunur. Nakit bölümüne gerçek CFO−capex =477.655.723 TL köprüsü kondu; borç açıklaması kendi alanına taşındı. Eğitim ve DCF anlatımı kayıtlı varsayımlarla eşleştirildi; varsayımlar değiştirilmedi.
+- **Ek üç şirket:** TTRAK zarar/pay −7,89 TL (−0,0789 değil); farklı TMS29 bazlarından Q4 zararı türetilmedi. YGGYO'da işletme nakdi temettünün %66,44'ünü karşılar, tersi değil; faiz hariç nakit toplamın %52,21'idir, yarısından az değildir. YGGYO rehberindeki kesin NAD primi yorumu özkaynak vekiline göre tarihli prim olarak düzeltildi; güncel düzeltilmiş NAD engeli korundu. AKMGY dahil on şirkette fiyat açıklamaları kayıt tarihini taşır.
+
+### Tarih, değerleme ve geçmişin korunması
+
+On şirketin fiyatı tarihli kapanıştır; kaynak/erişim tarihleri bugün gibi yenilenmedi. FROTO/TOASO Q3 takvimindeki 5 Kasım planı fiilî yayın teyidi sayılmaz; bu tur yeni rapor taranmaması açıklandı. BLOCKED ve NEEDS_REVIEW bir fiyat hedefi değildir. Senaryo varsayımları ve engelleri aynen kaldı, yeni fiyat hedefi üretilmedi.
+
+Her şirkete yeni rapor revizyonu ve ayrı TR/EN namespace eklendi. Git HEAD karşılaştırması **42 tarihsel raporun ve 118 eski dil namespace'inin** içerik olarak birebir korunduğunu, yeni sürümlerin finansal girdileri/hesapları/kaynakları/değerleme varsayımlarının önceki sürümle aynı olduğunu doğruladı: [koruma sonucu](narrative-preservation-20261109.json). Yeni sürümlerde yalnız kimlik/revizyon/contentKey/narrativeStale alanları değişti.
+
+### Legacy dosyalar: önceki “ölü kod” sonucunun düzeltilmesi
+
+TUPRS'ın üç eski TS raporu ve DOAS'ın eski TS raporu hâlâ services/research.ts tarafından import edilir; REPORTS dizisiyle analysisRepository sonuçlarının arkasına eklenir ve hasResearch fallback'inde kullanılır. ResearchPage yalnız ilk raporu seçtiği ve sürüm seçicisi bulunmadığı için mevcut varlıklarda bunları göstermez; **bu durum dosyaların kullanılmadığı anlamına gelmez**. Dosyalar pakete/servis dönüşüne ve tarihsel testlere bağımlılıktır.
+
+TUPRS v3→v2→ilk sürüm bağımlılık zinciri vardır. Doğrudan test bağlantıları: services/research.test.ts, pages/ResearchPage.test.tsx, components/ResearchLongTerm.test.tsx, lib/researchCalculations.test.ts ve lib/researchValuation.test.ts. Yalnız dosyaları silmek import/TypeScript/build hatası doğurur. Tam kaldırma için servis fallback/sıralama/sayı beklentileri ve tarihsel test fixture'ları taşınmalı; geçmiş rapor erişiminin korunması ayrıca kararlaştırılmalıdır. **Hiçbir legacy dosya silinmedi; silme kullanıcı onayına bırakıldı.**
+
+### Regresyon kapsamı
+
+narrativeAudit.test.ts iki dilde gerçek borç/nakit/TTM aritmetiğini metinle karşılaştırır; yalnız boş olmama kontrolü değildir. Brüt/net temettü, tas29 dönem ayrımı, CONFLICT komisyon/VAFÖK, tarihli NAD, senaryo engeli ve eski finansal girdilerin korunması için hedefli kontroller vardır. ResearchPage testleri güncel repository sürümünü seçer; yenilenen eğitim görünür, stale uyarısı yoktur. Önceki sabit legacy namespace beklentileri yeni anlatıma bağlandı. Servis sürüm sırası yeni revizyonları içerir.
+
+**Son doğrulama:** TypeScript ve üretim build PASS; lint 0 hata, 3 önceden var olan transfer-test uyarısı. Tam paket **672/672 test PASS**; bunun 31'i yeni anlatım regresyonudur. Format kontrolü değişen dosyalarda PASS. Üretim tarayıcısında 10 şirket × 2 dil × 2 görünüm × 3 genişlik (390/768/1440) = **120 kontrol PASS**; sıfır taşma, ham çeviri anahtarı, sayısal hedef başlığı veya runtime hatası. FROTO borç bölümü tüm bu kombinasyonlarda 111.981.980.000 TL ile eşleşti. Ayrı 5252 test sunucusu ve geçici başsız tarayıcı kapatıldı; 5173'e dokunulmadı. İlk tarayıcı turunda bulunan DOAS/TTRAK eksik peTtm açıklamaları giderildi. Build'in büyük paket ve Babel süre uyarıları sürüyor; jsdom pseudo-element getComputedStyle uyarıları test başarısını etkilemedi. Coverage bu tur yeniden ölçülmedi. Commit/push yapılmadı.
