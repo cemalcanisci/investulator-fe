@@ -19,7 +19,7 @@ export function ValuationGroupTable({
   return (
     <div className="min-w-0 rounded-xl border border-line bg-surface p-4">
       <h4 className="font-semibold">
-        {t(`researchAnalysis.profiles.${group.businessModel}`)} ·{' '}
+        {t(`researchAnalysis.peerGroups.${group.peerGroup}`)} ·{' '}
         {t(`research.metrics.${group.ratioId}`)}
       </h4>
       {group.entries.length < 2 && (
@@ -55,9 +55,25 @@ export function ValuationGroupTable({
                   </Link>
                 </th>
                 <td className="p-2">
-                  {result.value !== undefined
-                    ? `${formatQuantity(result.value, i18n.language)} ${t(`research.units.${result.unit ?? 'MULTIPLE'}`)} · ${t(`ratios.status.${result.status}`)}`
-                    : t('ratios.status.MISSING_DATA')}
+                  {result.value !== undefined ? (
+                    `${formatQuantity(result.value, i18n.language)} ${t(`research.units.${result.unit ?? 'MULTIPLE'}`)} · ${t(`ratios.status.${result.status}`)}`
+                  ) : (
+                    <>
+                      {t('ratios.status.MISSING_DATA')}
+                      {result.issues.map((issue) => (
+                        <span key={issue} className="block text-xs text-fg-2">
+                          {t(`ratios.issues.${issue}`, {
+                            defaultValue: t(
+                              `researchAnalysis.issues.${issue}`,
+                              {
+                                defaultValue: issue,
+                              },
+                            ),
+                          })}
+                        </span>
+                      ))}
+                    </>
+                  )}
                 </td>
                 <td className="p-2 text-xs text-fg-2">
                   {result.periodBasis
@@ -99,9 +115,22 @@ export function ValuationGroupTable({
                 </Link>
               </dt>
               <dd className="mt-1">
-                {result.value !== undefined
-                  ? `${formatQuantity(result.value, i18n.language)} ${t(`research.units.${result.unit ?? 'MULTIPLE'}`)} · ${t(`ratios.status.${result.status}`)}`
-                  : t('ratios.status.MISSING_DATA')}
+                {result.value !== undefined ? (
+                  `${formatQuantity(result.value, i18n.language)} ${t(`research.units.${result.unit ?? 'MULTIPLE'}`)} · ${t(`ratios.status.${result.status}`)}`
+                ) : (
+                  <>
+                    {t('ratios.status.MISSING_DATA')}
+                    {result.issues.map((issue) => (
+                      <span key={issue} className="block text-xs text-fg-2">
+                        {t(`ratios.issues.${issue}`, {
+                          defaultValue: t(`researchAnalysis.issues.${issue}`, {
+                            defaultValue: issue,
+                          }),
+                        })}
+                      </span>
+                    ))}
+                  </>
+                )}
                 {source && (
                   <>
                     {' · '}

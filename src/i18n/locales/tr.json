@@ -4271,6 +4271,18 @@
       "FUND": "Fon",
       "UNSUPPORTED": "Profil tanımlanmamış"
     },
+    "peerGroups": {
+      "REFINING": "Rafineri",
+      "AUTOMOTIVE": "Otomotiv",
+      "AUTOMOTIVE_OEM": "Otomotiv üreticileri (OEM)",
+      "AUTOMOTIVE_DISTRIBUTION": "Otomotiv distribütörlüğü",
+      "AUTOMOTIVE_MACHINERY": "Tarım/iş makineleri üretimi",
+      "INDUSTRIAL": "Sanayi",
+      "BANK": "Banka",
+      "REIT": "GYO",
+      "BROKER": "Aracı kurum",
+      "TECHNOLOGY": "Teknoloji"
+    },
     "scope": {
       "CONSOLIDATED": "Konsolide",
       "SOLO": "Solo",
@@ -6543,7 +6555,7 @@
     "title": "10 BIST Şirketi Karşılaştırması",
     "description": "Takip listesindeki BIST şirketlerini finansal sağlamlık, temettü, büyüme, değerleme, risk ve veri güvenilirliği açısından yan yana görün.",
     "intro": {
-      "sectorCaution": "Farklı iş modellerindeki şirketlerin değerleme çarpanları (örn. bir rafinerinin FD/FAVÖK’ü ile bir aracı kurumun F/DD’si) ekonomik olarak eşdeğer değildir; yalnızca aynı grup içindeki şirketler karşılaştırılır.",
+      "sectorCaution": "Farklı iş modellerindeki şirketlerin değerleme çarpanları (örn. bir rafinerinin FD/FAVÖK’ü ile bir aracı kurumun F/DD’si) ekonomik olarak eşdeğer değildir; yalnızca aynı grup içindeki şirketler karşılaştırılır. Aynı sektör etiketi (ör. “Otomotiv”) tek başına ekonomik emsal uygunluğu anlamına gelmez: bir distribütör, bir araç üreticisi ve bir tarım makineleri üreticisi sektör etiketini paylaşsa da farklı iş modelleridir; aşağıdaki grup içi tablo bunları ayrı emsal gruplarında tutar.",
       "noSingleScore": "Tek bir toplam puan veya kesin yatırım sıralaması üretilmez; her boyut kendi verisiyle ayrı gösterilir.",
       "valuationCaution": "Hiçbir şirketin adil değer senaryosu güvenilirlik denetiminden geçmedi; aşağıdaki oranlar güncel piyasa çarpanlarıdır, fiyat hedefi değildir.",
       "sourceNote": "Bu güvenilirlik durumlarının dayandığı bağımsız denetim kaydı, projenin araştırma denetim belgelerinde (DENETIM.md) tutulur."

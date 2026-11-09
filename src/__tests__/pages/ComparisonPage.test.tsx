@@ -46,27 +46,56 @@ describe('ComparisonPage', () => {
     ).toBeInTheDocument();
   });
 
-  it('groups the automotive peers for valuation but keeps the refiner alone', () => {
+  it('splits the automotive sector into its OEM/distributor/machinery peer groups and keeps the refiner alone', () => {
     renderWithProviders(<ComparisonPage />);
 
-    const automotiveHeading = screen.getByRole('heading', {
-      name: `${i18n.t('researchAnalysis.profiles.AUTOMOTIVE')} · ${i18n.t('research.metrics.evEbitda')}`,
+    const oemHeading = screen.getByRole('heading', {
+      name: `${i18n.t('researchAnalysis.peerGroups.AUTOMOTIVE_OEM')} · ${i18n.t('research.metrics.evEbitda')}`,
     });
-    const automotiveGroup = automotiveHeading.closest('div');
-    if (!automotiveGroup) {
+    const oemGroup = oemHeading.closest('div');
+    if (!oemGroup) {
       throw new Error('fixture');
     }
-    for (const symbol of ['DOAS', 'FROTO', 'TOASO', 'TTRAK']) {
+    for (const symbol of ['FROTO', 'TOASO']) {
       expect(
-        within(automotiveGroup).getAllByRole('link', { name: symbol }),
+        within(oemGroup).getAllByRole('link', { name: symbol }),
       ).not.toHaveLength(0);
     }
+    for (const symbol of ['DOAS', 'TTRAK', 'TUPRS']) {
+      expect(
+        within(oemGroup).queryAllByRole('link', { name: symbol }),
+      ).toHaveLength(0);
+    }
+
+    // DOAS (distributor) and TTRAK (farm machinery) each stand alone, not lumped with the OEMs.
+    const distributionHeading = screen.getByRole('heading', {
+      name: `${i18n.t('researchAnalysis.peerGroups.AUTOMOTIVE_DISTRIBUTION')} · ${i18n.t('research.metrics.evEbitda')}`,
+    });
+    const distributionGroup = distributionHeading.closest('div');
+    if (!distributionGroup) {
+      throw new Error('fixture');
+    }
     expect(
-      within(automotiveGroup).queryAllByRole('link', { name: 'TUPRS' }),
-    ).toHaveLength(0);
+      within(distributionGroup).getByText(
+        i18n.t('companyComparison.valuationGroups.single'),
+      ),
+    ).toBeInTheDocument();
+
+    const machineryHeading = screen.getByRole('heading', {
+      name: `${i18n.t('researchAnalysis.peerGroups.AUTOMOTIVE_MACHINERY')} · ${i18n.t('research.metrics.evEbitda')}`,
+    });
+    const machineryGroup = machineryHeading.closest('div');
+    if (!machineryGroup) {
+      throw new Error('fixture');
+    }
+    expect(
+      within(machineryGroup).getByText(
+        i18n.t('companyComparison.valuationGroups.single'),
+      ),
+    ).toBeInTheDocument();
 
     const refiningHeading = screen.getByRole('heading', {
-      name: `${i18n.t('researchAnalysis.profiles.REFINING')} · ${i18n.t('research.metrics.evEbitda')}`,
+      name: `${i18n.t('researchAnalysis.peerGroups.REFINING')} · ${i18n.t('research.metrics.evEbitda')}`,
     });
     const refiningGroup = refiningHeading.closest('div');
     if (!refiningGroup) {
@@ -115,9 +144,7 @@ describe('ComparisonPage', () => {
     });
     expect(toggle).toHaveValue('EASY');
     const panels = screen.getAllByText(i18n.t('researchUx.moreMetrics'));
-    expect(
-      panels[0]?.closest('details')?.hasAttribute('open'),
-    ).toBe(false);
+    expect(panels[0]?.closest('details')?.hasAttribute('open')).toBe(false);
 
     await userEvent.selectOptions(toggle, 'DETAILED');
 

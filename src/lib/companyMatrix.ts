@@ -156,14 +156,28 @@ export function riskFlags(entry: CompanyMatrixEntry): readonly RiskFlag[] {
 
 export interface ValuationComparisonGroup {
   readonly businessModel: string;
+  /**
+   * The group's economic peer set id. Equals `businessModel` when the sector itself is already
+   * the narrowest known peer set; otherwise a sub-group (e.g. AUTOMOTIVE's 'AUTOMOTIVE_OEM').
+   * This, not `businessModel`, is what the table heading/grouping key uses — sharing a sector
+   * never implies sharing a peer set (a distributor and an OEM assembler both tag AUTOMOTIVE).
+   */
+  readonly peerGroup: string;
   readonly ratioId: string;
   readonly entries: readonly CompanyMatrixEntry[];
 }
 
+/** Falls back to the business model itself when no narrower peer set is recorded. */
+function peerGroupId(entry: CompanyMatrixEntry): string {
+  return entry.report.context.peerGroup ?? entry.profile.id;
+}
+
 /**
- * Groups entries that share both a business model and its sector multiple (e.g. AUTOMOTIVE's
- * evEbitda). Never mixes business models even when they happen to share a ratio id (e.g. REFINING
- * and AUTOMOTIVE both use evEbitda but are not the same economic peer set).
+ * Groups entries that share both a recorded economic peer set and its sector multiple (e.g.
+ * AUTOMOTIVE's OEM assemblers sharing evEbitda). Never mixes business models even when they
+ * happen to share a ratio id (e.g. REFINING and AUTOMOTIVE both use evEbitda but are not the
+ * same economic peer set), and never mixes peer sets within one business model (e.g. a
+ * distributor and an OEM assembler both tag AUTOMOTIVE but are not directly comparable).
  */
 export function valuationComparisonGroups(
   entries: readonly CompanyMatrixEntry[],
@@ -173,15 +187,17 @@ export function valuationComparisonGroups(
     if (!entry.valuationRatioId) {
       continue;
     }
-    const key = `${entry.profile.id}::${entry.valuationRatioId}`;
+    const peerGroup = peerGroupId(entry);
+    const key = `${peerGroup}::${entry.valuationRatioId}`;
     const existing = groups.get(key);
     groups.set(key, {
       businessModel: entry.profile.id,
+      peerGroup,
       ratioId: entry.valuationRatioId,
       entries: [...(existing?.entries ?? []), entry],
     });
   }
   return [...groups.values()].sort((a, b) =>
-    a.businessModel.localeCompare(b.businessModel),
+    a.peerGroup.localeCompare(b.peerGroup),
   );
 }

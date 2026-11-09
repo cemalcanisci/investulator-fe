@@ -68,7 +68,7 @@ export function ComparisonPage(): JSX.Element {
           <div className="grid min-w-0 gap-4 lg:grid-cols-2">
             {groups.map((group) => (
               <ValuationGroupTable
-                key={`${group.businessModel}:${group.ratioId}`}
+                key={`${group.peerGroup}:${group.ratioId}`}
                 group={group}
               />
             ))}

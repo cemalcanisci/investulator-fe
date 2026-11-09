@@ -109,24 +109,41 @@ describe('riskFlags', () => {
 });
 
 describe('valuationComparisonGroups', () => {
-  it('groups same-sector peers under one ratio and keeps different sectors apart', () => {
+  it('splits the AUTOMOTIVE business model into its recorded economic peer sets, never treating a distributor, an OEM assembler and a farm-machinery maker as directly comparable', () => {
     const groups = valuationComparisonGroups(matrix);
-    const automotive = groups.find((g) => g.businessModel === 'AUTOMOTIVE');
-    expect(automotive?.ratioId).toBe('evEbitda');
-    expect(automotive?.entries.map((e) => e.symbol).sort()).toEqual([
-      'DOAS',
+    const oem = groups.find((g) => g.peerGroup === 'AUTOMOTIVE_OEM');
+    expect(oem?.businessModel).toBe('AUTOMOTIVE');
+    expect(oem?.ratioId).toBe('evEbitda');
+    expect(oem?.entries.map((e) => e.symbol).sort()).toEqual([
       'FROTO',
       'TOASO',
-      'TTRAK',
     ]);
-    const reit = groups.find((g) => g.businessModel === 'REIT');
+    const distribution = groups.find(
+      (g) => g.peerGroup === 'AUTOMOTIVE_DISTRIBUTION',
+    );
+    expect(distribution?.entries.map((e) => e.symbol)).toEqual(['DOAS']);
+    const machinery = groups.find(
+      (g) => g.peerGroup === 'AUTOMOTIVE_MACHINERY',
+    );
+    expect(machinery?.entries.map((e) => e.symbol)).toEqual(['TTRAK']);
+    // No group ever mixes two of DOAS/FROTO/TOASO/TTRAK's distinct peer sets.
+    for (const group of [oem, distribution, machinery]) {
+      expect(new Set(group?.entries.map((e) => e.symbol)).size).toBe(
+        group?.entries.length,
+      );
+    }
+  });
+
+  it('groups same-sector peers under one ratio and keeps different sectors apart', () => {
+    const groups = valuationComparisonGroups(matrix);
+    const reit = groups.find((g) => g.peerGroup === 'REIT');
     expect(reit?.entries.map((e) => e.symbol).sort()).toEqual([
       'AKMGY',
       'PAGYO',
       'YGGYO',
     ]);
-    // REFINING (TUPRS alone) and AUTOMOTIVE share the evEbitda ratio id but must never merge.
-    const refining = groups.find((g) => g.businessModel === 'REFINING');
+    // REFINING (TUPRS alone) and AUTOMOTIVE's groups share the evEbitda ratio id but must never merge.
+    const refining = groups.find((g) => g.peerGroup === 'REFINING');
     expect(refining?.entries.map((e) => e.symbol)).toEqual(['TUPRS']);
   });
 

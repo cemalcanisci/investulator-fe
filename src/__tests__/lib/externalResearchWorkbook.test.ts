@@ -2,10 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { describe, expect, it } from 'vitest';
 import ExcelJS from 'exceljs';
 import JSZip from 'jszip';
-import {
-  readResearchWorkbook,
-  exportResearchWorkbook,
-} from '@/lib/researchWorkbookFile';
+import { readResearchWorkbook } from '@/lib/researchWorkbookFile';
 import { canonical, previewWorkbook } from '@/lib/researchWorkbook';
 import { researchBundle } from '@/services/researchBundle';
 import { ratioPresentation } from '@/lib/ratioPresentation';
@@ -39,7 +36,7 @@ describe('external research XLSX integration', () => {
     expect(rows.length).toBeGreaterThan(0);
     expect(previewWorkbook(rows, researchBundle).issues).toEqual([]);
   });
-  it('imports a genuinely external workbook, exposes financial inputs and round-trips without loss', async () => {
+  it('imports a genuinely external workbook and exposes its financial inputs', async () => {
     const rows = await readResearchWorkbook(await bytes());
     const result = previewWorkbook(rows, researchBundle);
     expect(result.issues).toEqual([]);
@@ -85,15 +82,7 @@ describe('external research XLSX integration', () => {
         researchBundle.reports.filter((r) => r.presentation.symbol === 'TUPRS'),
       ),
     );
-    const exported = await exportResearchWorkbook(result.bundle);
-    const again = previewWorkbook(
-      await readResearchWorkbook(await exported.arrayBuffer()),
-      result.bundle,
-    );
-    expect(again.issues).toEqual([]);
-    expect(again.added + again.updated).toBe(0);
-    expect(canonical(again.bundle)).toBe(canonical(result.bundle));
-  }, 60000);
+  });
   it('separates valid XLSX, wrong version, corrupt XML and unsupported archives', async () => {
     const ordinary = new ExcelJS.Workbook();
     ordinary.addWorksheet('Sheet1').addRow(['Valid spreadsheet']);

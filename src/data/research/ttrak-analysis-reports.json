@@ -5,6 +5,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
+      "peerGroup": "AUTOMOTIVE_MACHINERY",
       "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
@@ -3215,6 +3216,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
+      "peerGroup": "AUTOMOTIVE_MACHINERY",
       "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
@@ -6121,6 +6123,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
+      "peerGroup": "AUTOMOTIVE_MACHINERY",
       "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",
@@ -8478,6 +8481,7 @@
     "context": {
       "assetType": "EQUITY",
       "businessModel": "AUTOMOTIVE",
+      "peerGroup": "AUTOMOTIVE_MACHINERY",
       "strategies": ["DIVIDEND", "VALUE"]
     },
     "profileVersion": "1",

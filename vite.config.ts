@@ -52,6 +52,46 @@ export default defineConfig(({ mode }) => ({
     environment: 'jsdom',
     setupFiles: ['./src/__tests__/setup.ts'],
     testTimeout: 15000,
+    // These files round-trip real XLSX/ZIP/crypto work against a local fixture file and a
+    // mocked `fetch` (no real network call in any of them) — deterministic, but CPU-heavy
+    // enough that the slowest case alone used to take ~54s under v8 coverage instrumentation.
+    // Fixed at the source rather than by raising the timeout: the full 10-company export was
+    // split into its own file and scoped to export just the one company under test (see
+    // externalResearchWorkbookRoundTrip.test.ts), and ResearchTransferUrlImport.test.tsx's
+    // upload/URL-load cases were split apart and stopped re-reading their own exported buffer
+    // (that round-trip is already independently covered) — each case now finishes within a few
+    // seconds, comfortably inside the 30s cap, even under coverage. Isolated to its own
+    // single-threaded project so these files never contend with the ~95 fast unit files either.
+    projects: [
+      {
+        extends: true,
+        test: {
+          name: 'unit',
+          exclude: [
+            '**/node_modules/**',
+            '**/dist/**',
+            'src/__tests__/lib/externalResearchWorkbook.test.ts',
+            'src/__tests__/lib/externalResearchWorkbookRoundTrip.test.ts',
+            'src/__tests__/components/ResearchTransferUrlImport.test.tsx',
+          ],
+        },
+      },
+      {
+        extends: true,
+        test: {
+          name: 'integration',
+          include: [
+            'src/__tests__/lib/externalResearchWorkbook.test.ts',
+            'src/__tests__/lib/externalResearchWorkbookRoundTrip.test.ts',
+            'src/__tests__/components/ResearchTransferUrlImport.test.tsx',
+          ],
+          testTimeout: 30000,
+          pool: 'threads',
+          maxWorkers: 1,
+          minWorkers: 1,
+        },
+      },
+    ],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'html', 'json-summary', 'lcov'],

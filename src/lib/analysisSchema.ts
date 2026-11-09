@@ -158,6 +158,8 @@ function isReport(value: unknown): value is AnalysisReport {
         ))) &&
     oneOf(value.context.assetType, ['EQUITY', 'CRYPTO', 'FUND']) &&
     typeof value.context.businessModel === 'string' &&
+    (value.context.peerGroup === undefined ||
+      typeof value.context.peerGroup === 'string') &&
     strings(value.context.strategies) &&
     value.context.strategies.every((s) =>
       ['DIVIDEND', 'GROWTH', 'VALUE', 'LONG_TERM'].includes(s),

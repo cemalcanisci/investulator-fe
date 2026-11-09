@@ -50,6 +50,14 @@ export interface CalculationResult {
 export interface AnalysisContext {
   readonly assetType: 'EQUITY' | 'CRYPTO' | 'FUND';
   readonly businessModel: string;
+  /**
+   * Narrower, economically-comparable peer set within the sector/business model (e.g.
+   * AUTOMOTIVE's OEM assemblers vs. its distributor vs. its farm-machinery maker). Optional:
+   * absent means the business model itself is already the narrowest known peer set (it falls
+   * back to `businessModel` in grouping code). Never used to pick methods/metrics — only to
+   * decide which companies may be shown side by side as a comparable multiple.
+   */
+  readonly peerGroup?: string;
   readonly strategies: readonly (
     'DIVIDEND' | 'GROWTH' | 'VALUE' | 'LONG_TERM'
   )[];

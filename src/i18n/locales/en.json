@@ -4271,6 +4271,18 @@
       "FUND": "Fund",
       "UNSUPPORTED": "Unsupported profile"
     },
+    "peerGroups": {
+      "REFINING": "Refining",
+      "AUTOMOTIVE": "Automotive",
+      "AUTOMOTIVE_OEM": "Automotive manufacturers (OEM)",
+      "AUTOMOTIVE_DISTRIBUTION": "Automotive distribution",
+      "AUTOMOTIVE_MACHINERY": "Agricultural/industrial machinery manufacturing",
+      "INDUSTRIAL": "Industrial",
+      "BANK": "Bank",
+      "REIT": "REIT",
+      "BROKER": "Broker",
+      "TECHNOLOGY": "Technology"
+    },
     "scope": {
       "CONSOLIDATED": "Consolidated",
       "SOLO": "Standalone",
@@ -6543,7 +6555,7 @@
     "title": "Comparing 10 BIST Companies",
     "description": "See the watchlist's BIST companies side by side on financial soundness, dividends, growth, valuation, risk and data reliability.",
     "intro": {
-      "sectorCaution": "Valuation multiples from different business models (e.g. a refiner's EV/EBITDA vs. a broker's P/B) are not economically equivalent; only companies in the same group are compared.",
+      "sectorCaution": "Valuation multiples from different business models (e.g. a refiner's EV/EBITDA vs. a broker's P/B) are not economically equivalent; only companies in the same group are compared. Sharing a sector label (e.g. \"Automotive\") alone does not mean economic peer fit: a distributor, a vehicle manufacturer and a farm-machinery maker can share that label while being different business models; the group tables below keep them in separate peer groups.",
       "noSingleScore": "No single composite score or definitive investment ranking is produced; each dimension is shown on its own evidence.",
       "valuationCaution": "No company's fair-value scenario has passed the reliability review; the ratios below are current market multiples, not price targets.",
       "sourceNote": "The independent audit trail behind these reliability statuses is kept in the project's research-audit documents (DENETIM.md)."

@@ -131,41 +131,58 @@ async function loadFromUrl(dialog: HTMLElement, path: string): Promise<void> {
   );
 }
 
+interface EditedWorkbook {
+  readonly buffer: ArrayBuffer;
+  readonly expectedText: string;
+}
+
+/**
+ * Builds the same edited-and-exported workbook both the upload and the URL-load test start
+ * from. Split out so each test does only one UI interaction instead of two in sequence — the
+ * combined version occasionally pushed past 30s under coverage instrumentation.
+ *
+ * Does not independently re-read/re-preview the exported buffer to compute the expected counts:
+ * that export → read → preview round-trip is already covered byte-for-byte by
+ * externalResearchWorkbookRoundTrip.test.ts, so redoing it here only to label the expected text
+ * paid for a second full XLSX parse per test without adding assertion coverage. The counts a
+ * lossless round-trip must show are exactly `editedResult`'s own counts (preview against the
+ * same unedited `researchBundle` the UI will diff the uploaded/fetched file against).
+ */
+async function buildEditedWorkbook(): Promise<EditedWorkbook> {
+  const rows = bundleRows(researchBundle, [assetId]);
+  const report = researchBundle.reports[0];
+  const index = report.facts.findIndex((fact) => fact.id === 'profit2025');
+  const edited = rows.map((row) =>
+    row.recordId === report.version && row.field === `/facts/${index}/value`
+      ? { ...row, value: '14761591500' }
+      : row,
+  );
+  const editedResult = previewWorkbook(edited, researchBundle, assetId);
+  expect(editedResult.issues).toEqual([]);
+  expect(editedResult.updated).toBeGreaterThan(0);
+  const blob = await exportResearchWorkbook(editedResult.bundle, [assetId]);
+  const buffer = await blob.arrayBuffer();
+  const expectedText = i18n.t('researchTransfer.counts', {
+    added: editedResult.added,
+    updated: editedResult.updated,
+    unchanged: editedResult.unchanged,
+  });
+  return { buffer, expectedText };
+}
+
 describe('research transfer URL import', () => {
   afterEach(() => {
     vi.unstubAllGlobals();
     vi.restoreAllMocks();
   });
 
-  it('produces the same preview whether the workbook is uploaded as a file or loaded from an allowed URL', async () => {
-    const rows = bundleRows(researchBundle, [assetId]);
-    const report = researchBundle.reports[0];
-    const index = report.facts.findIndex((fact) => fact.id === 'profit2025');
-    const edited = rows.map((row) =>
-      row.recordId === report.version && row.field === `/facts/${index}/value`
-        ? { ...row, value: '14761591500' }
-        : row,
-    );
-    const editedResult = previewWorkbook(edited, researchBundle, assetId);
-    expect(editedResult.issues).toEqual([]);
-    expect(editedResult.updated).toBeGreaterThan(0);
-    const blob = await exportResearchWorkbook(editedResult.bundle, [assetId]);
-    const buffer = await blob.arrayBuffer();
-    const expectedRows = await readResearchWorkbook(buffer.slice(0));
-    const expected = previewWorkbook(expectedRows, researchBundle, assetId);
-    expect(expected.issues).toEqual([]);
-    const expectedText = i18n.t('researchTransfer.counts', {
-      added: expected.added,
-      updated: expected.updated,
-      unchanged: expected.unchanged,
-    });
+  it('produces the expected preview when the edited workbook is uploaded as a file', async () => {
+    const { buffer, expectedText } = await buildEditedWorkbook();
     const file = new File([buffer], 'edited.xlsx', {
       type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
     });
 
-    installFetchMock({
-      '/research/edited.xlsx': () => fileResponse(buffer.slice(0)),
-    });
+    installFetchMock({});
     renderWithProviders(<ResearchTransfer assetId={assetId} />);
     const dialog = await openCardImport();
     await userEvent.upload(
@@ -173,14 +190,23 @@ describe('research transfer URL import', () => {
       file,
     );
     expect(
-      await within(dialog).findByText(expectedText, {}, { timeout: 30000 }),
+      await within(dialog).findByText(expectedText, {}, { timeout: 15000 }),
     ).toBeVisible();
+  });
 
+  it('produces the same preview when the edited workbook is loaded from an allowed URL', async () => {
+    const { buffer, expectedText } = await buildEditedWorkbook();
+
+    installFetchMock({
+      '/research/edited.xlsx': () => fileResponse(buffer.slice(0)),
+    });
+    renderWithProviders(<ResearchTransfer assetId={assetId} />);
+    const dialog = await openCardImport();
     await loadFromUrl(dialog, '/research/edited.xlsx');
     expect(
-      await within(dialog).findByText(expectedText, {}, { timeout: 30000 }),
+      await within(dialog).findByText(expectedText, {}, { timeout: 15000 }),
     ).toBeVisible();
-  }, 60000);
+  });
 
   it('adds a new company via URL import, matching the field-level add/update engine', async () => {
     const company = {
@@ -224,7 +250,7 @@ describe('research transfer URL import', () => {
     expect(
       within(dialog).getAllByText(new RegExp(company.id)).length,
     ).toBeGreaterThan(0);
-  }, 60000);
+  });
 
   it('rejects a forbidden URL without any network call or preview', async () => {
     const fetcher = installFetchMock({});
