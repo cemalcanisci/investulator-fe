@@ -91,6 +91,11 @@ const POLICIES: Readonly<Record<string, AssessmentPolicy>> = {
   },
 };
 
+/** The single sector-appropriate multiple two companies must share before their value is compared; `undefined` means the sector has no shared valuation ratio (e.g. TECHNOLOGY's FCF method has none). */
+export function valuationGroupRatio(profileId: string): string | undefined {
+  return POLICIES[profileId]?.ratio;
+}
+
 export function overviewRatioIds(
   report: AnalysisReport | undefined,
 ): readonly string[] {

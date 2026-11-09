@@ -5,6 +5,7 @@ import {
   RiLineChartLine,
   RiWalletLine,
   RiStackLine,
+  RiScales3Line,
 } from '@remixicon/react';
 import type { ComponentType } from 'react';
 import { ROUTE_PATHS } from '@/app/routePaths';
@@ -22,6 +23,11 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { key: 'transactions', path: ROUTE_PATHS.transactions, icon: RiExchangeLine },
   { key: 'analysis', path: ROUTE_PATHS.analysis, icon: RiLineChartLine },
   { key: 'strategies', path: ROUTE_PATHS.strategies, icon: RiStackLine },
+  {
+    key: 'comparison',
+    path: ROUTE_PATHS.comparison,
+    icon: RiScales3Line,
+  },
   {
     key: 'importExport',
     path: ROUTE_PATHS.importExport,

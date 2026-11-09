@@ -27,7 +27,8 @@
     "transactions": "İşlemler",
     "analysis": "Analiz",
     "importExport": "İçe/Dışa aktar",
-    "strategies": "Stratejiler"
+    "strategies": "Stratejiler",
+    "comparison": "Karşılaştır"
   },
   "currency": {
     "label": "Para birimi",
@@ -6536,6 +6537,59 @@
       "political": "Bu oturumda YGGYO'ya özgü, doğrulanmış bir siyasi bağlantı olgusu aranmadı ve bulunmadı. Bulgu yokluğu \"bağlantı yoktur\" kanıtı sayılmaz; bu yalnızca bu taramanın kapsamı dışında kaldığı anlamına gelir.",
       "exposure": "Analist yorumu: GYO sektörü kira gelirine, inşaat/değerleme mevzuatına ve genel gayrimenkul piyasası koşullarına bağlıdır. Otel binasının geçici kapanmasına yol açan düzenleme (işyeri açma/çalışma ruhsatı yönetmeliği) buna bir örnektir. Bu etkiler olay bazında KAP ve resmi kararlarla yeniden değerlendirilmelidir.",
       "limit": "Bu bölüm kapsamlı bir siyasi bağlantı soruşturması değildir. Doğrulanmış bulgu sunulmuyor; risk kanalları senaryo olarak açıklanıyor. Belirli bir olayın fiyat etkisine yüzde veya hedef fiyat atanmadı."
+    }
+  },
+  "companyComparison": {
+    "title": "10 BIST Şirketi Karşılaştırması",
+    "description": "Takip listesindeki BIST şirketlerini finansal sağlamlık, temettü, büyüme, değerleme, risk ve veri güvenilirliği açısından yan yana görün.",
+    "intro": {
+      "sectorCaution": "Farklı iş modellerindeki şirketlerin değerleme çarpanları (örn. bir rafinerinin FD/FAVÖK’ü ile bir aracı kurumun F/DD’si) ekonomik olarak eşdeğer değildir; yalnızca aynı grup içindeki şirketler karşılaştırılır.",
+      "noSingleScore": "Tek bir toplam puan veya kesin yatırım sıralaması üretilmez; her boyut kendi verisiyle ayrı gösterilir.",
+      "valuationCaution": "Hiçbir şirketin adil değer senaryosu güvenilirlik denetiminden geçmedi; aşağıdaki oranlar güncel piyasa çarpanlarıdır, fiyat hedefi değildir.",
+      "sourceNote": "Bu güvenilirlik durumlarının dayandığı bağımsız denetim kaydı, projenin araştırma denetim belgelerinde (DENETIM.md) tutulur."
+    },
+    "dimensions": {
+      "soundness": "Finansal sağlamlık",
+      "dividend": "Temettü kalitesi",
+      "growth": "Büyüme",
+      "valuation": "Değerleme",
+      "risk": "Risk",
+      "reliability": "Veri güvenilirliği"
+    },
+    "company": "Şirket",
+    "period": "Dönem",
+    "sector": "İş modeli",
+    "card": {
+      "reviewIndependent": "Bağımsız inceleme",
+      "reviewInternal": "İç inceleme (bağımsız değil)",
+      "conflicts": "{{count}} çözülmemiş kaynak çelişkisi",
+      "noConflicts": "Bilinen kaynak çelişkisi yok",
+      "valuationAvailability": {
+        "NONE": "Sayısal adil değer senaryosu yok",
+        "BLOCKED": "Adil değer senaryosu var ama güvenilirlik denetiminden geçmedi",
+        "AVAILABLE": "Adil değer senaryosu güvenilirlik denetiminden geçti"
+      },
+      "detailLink": "Şirket araştırmasının tamamını aç",
+      "insufficientDividend": "Doğrulanmış temettü verimi veya kapsama verisi yok.",
+      "insufficientGrowth": "Bu şirkette karşılaştırılabilir bir büyüme göstergesi modellenmedi."
+    },
+    "risk": {
+      "CYCLICAL": "Döngüsellik: kazançlar çevrim, stok etkisi veya talep dalgalanmalarına duyarlı.",
+      "REGULATORY_CAPITAL": "Düzenleyici sermaye yeterliliği şartına bağlı.",
+      "COMMISSION_DEPENDENT": "Gelir işlem hacmine ve komisyona bağlı.",
+      "VALUATION_JUDGMENT": "Değer ekspertiz/NAD yargısına bağlıdır; bir kâr-zarar çarpanıyla doğrudan kıyaslanamaz.",
+      "FX_DEBT": "Kayıtlı borç kalemlerinde yabancı para birimi var."
+    },
+    "valuationGroups": {
+      "heading": "Grup içi değerleme karşılaştırması",
+      "intro": "Her grup yalnız bir iş modelinin kendi çarpanıyla sınırlıdır (örn. otomotivin FD/FAVÖK’ü); gruplar birbirine karşı sıralanmaz.",
+      "single": "Bu grupta şu an tek şirket var; eşleşen bir emsal olmadan karşılaştırma yapılamıyor."
+    },
+    "closing": {
+      "title": "Hangi karşılaştırmalar güvenilir, hangileri koşullu?",
+      "blockedHeading": "Sayısal adil değer senaryosu hiç üretilemeyen şirketler",
+      "needsReviewHeading": "Ham oranı hesaplanabilen ama adil değer senaryosu NEEDS_REVIEW olan şirketler",
+      "missingHeading": "Nihai değerlendirmeyi engelleyen gerçek veri eksikleri"
     }
   }
 }

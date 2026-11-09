@@ -8,6 +8,7 @@ export const ROUTE_PATHS = {
   analysis: '/analiz',
   strategies: '/stratejiler',
   research: '/takip/:assetId',
+  comparison: '/karsilastir',
   importExport: '/aktar',
   foundations: '/temel',
 } as const;

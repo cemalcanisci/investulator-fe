@@ -27,7 +27,8 @@
     "transactions": "Transactions",
     "analysis": "Analysis",
     "importExport": "Import/Export",
-    "strategies": "Strategies"
+    "strategies": "Strategies",
+    "comparison": "Compare"
   },
   "currency": {
     "label": "Currency",
@@ -6536,6 +6537,59 @@
       "political": "No verified, YGGYO-specific political-connection fact was sought or found in this session. The absence of a finding is not proof of \"no connection\" - it only means this is outside this scan's scope.",
       "exposure": "Analyst note: the REIT sector depends on rental income, construction/appraisal regulation, and general real-estate market conditions. The regulation that forced the hotel building's temporary closure is one example. These effects should be reassessed event by event via KAP and official decisions.",
       "limit": "This section is not a comprehensive political-connection investigation. No verified finding is presented; risk channels are described as scenarios. No percentage or target-price impact has been assigned to any specific event."
+    }
+  },
+  "companyComparison": {
+    "title": "Comparing 10 BIST Companies",
+    "description": "See the watchlist's BIST companies side by side on financial soundness, dividends, growth, valuation, risk and data reliability.",
+    "intro": {
+      "sectorCaution": "Valuation multiples from different business models (e.g. a refiner's EV/EBITDA vs. a broker's P/B) are not economically equivalent; only companies in the same group are compared.",
+      "noSingleScore": "No single composite score or definitive investment ranking is produced; each dimension is shown on its own evidence.",
+      "valuationCaution": "No company's fair-value scenario has passed the reliability review; the ratios below are current market multiples, not price targets.",
+      "sourceNote": "The independent audit trail behind these reliability statuses is kept in the project's research-audit documents (DENETIM.md)."
+    },
+    "dimensions": {
+      "soundness": "Financial soundness",
+      "dividend": "Dividend quality",
+      "growth": "Growth",
+      "valuation": "Valuation",
+      "risk": "Risk",
+      "reliability": "Data reliability"
+    },
+    "company": "Company",
+    "period": "Period",
+    "sector": "Business model",
+    "card": {
+      "reviewIndependent": "Independent review",
+      "reviewInternal": "Internal review (not independent)",
+      "conflicts": "{{count}} unresolved source conflict(s)",
+      "noConflicts": "No known source conflict",
+      "valuationAvailability": {
+        "NONE": "No numeric fair-value scenario",
+        "AVAILABLE": "Fair-value scenario passed the reliability review",
+        "BLOCKED": "Fair-value scenario exists but failed the reliability review"
+      },
+      "detailLink": "Open full company research",
+      "insufficientDividend": "No verified dividend yield or coverage data.",
+      "insufficientGrowth": "No comparable growth metric is modeled for this company."
+    },
+    "risk": {
+      "CYCLICAL": "Cyclicality: earnings are sensitive to the cycle, inventory effects or demand swings.",
+      "REGULATORY_CAPITAL": "Depends on meeting a regulatory capital adequacy requirement.",
+      "COMMISSION_DEPENDENT": "Revenue depends on trading volume and commission income.",
+      "VALUATION_JUDGMENT": "Value depends on appraisal/NAV judgment, not directly comparable to a P&L multiple.",
+      "FX_DEBT": "Recorded debt lines include foreign-currency amounts."
+    },
+    "valuationGroups": {
+      "heading": "Within-group valuation comparison",
+      "intro": "Each group is limited to one business model's own multiple (e.g. automotive EV/EBITDA); groups are never ranked against each other.",
+      "single": "Only one company is in this group right now; there is no peer to compare it with."
+    },
+    "closing": {
+      "title": "Which comparisons are reliable, and which are conditional?",
+      "blockedHeading": "Companies with no numeric fair-value scenario at all",
+      "needsReviewHeading": "Companies whose raw ratio is computable but whose fair-value scenario is NEEDS_REVIEW",
+      "missingHeading": "Real data gaps still blocking a final assessment"
     }
   }
 }
