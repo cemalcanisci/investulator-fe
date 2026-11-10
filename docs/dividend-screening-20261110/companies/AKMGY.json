@@ -1,0 +1,119 @@
+{
+  "symbol": "AKMGY",
+  "companyName": "Akmerkez Gayrimenkul Yatırım Ortaklığı A.Ş.",
+  "category": "B",
+  "rationale": "10 yıllık (2016-2025) kesintisiz yıllık en az bir temettü ödemesi, yüksek doluluk oranlı (~%97,67) premium/tekrarlanamaz tek kompleks ve deneyimli uluslararası ortak (Klepierre S.A. %44,85) ile güçlü temel nitelikler taşıyor; ancak 3 Aralık 2025 Beşiktaş Belediyesi Encümen Kararı ile kesilen 75,8 milyon TL peşin + 3,4 milyar TL'ye kadar şarta bağlı idari para cezası ve ardından gelen yıkım kararı, ilk derece mahkemesinde (İstanbul 3. İdare Mahkemesi, 16.10.2026) reddedilmiş olup istinafta ve 2026-11-10 kesim tarihi itibarıyla sonucu belirsizdir; ayrıca Investulator referans dosyasındaki netAssetValue CONFLICT'i bu çalışmada da çözülemedi ve net kâr/CFO/payout-to-CFO rakamları birincil kaynaktan doğrulanamadı. Bu üç somut eksiklik/risk A kategorisini engelliyor ama henüz kesinleşmiş bir olumsuz sonuç olmadığı ve iş modeli temelleri sağlam göründüğü için otomatik C'ye düşürülmedi.",
+  "supportingEvidence": [
+    {
+      "point": "2016-2025 arası her takvim yılında en az bir temettü ödemesi yapıldı (2020 pandemi yılı dahil); tek yıllık kesinti yok.",
+      "source": "getmidas.com/canli-borsa/akmgy-hisse/temettu/ ve investing.com/equities/akmerkez-gmyo-dividends çapraz kontrolü (ikincil kaynak, bağımsız doğrulama sayılmaz)"
+    },
+    {
+      "point": "AVM doluluk oranı Eylül 2025 itibarıyla yaklaşık %97,67.",
+      "source": "WebSearch sentezi (sektör/aracı kurum kaynağı); birincil faaliyet raporu teyidi tamamlanmadı"
+    },
+    {
+      "point": "En büyük ortak, deneyimli uluslararası bir AVM operatörü olan Klepierre S.A. (%44,85); Akkök Holding %11,73, Tekfen Holding %10,47, halka açıklık %57,88.",
+      "source": "Şirket genel kurul bilgilendirme dokümanı sentezi (WebSearch); birincil belge satır satır teyit edilmedi"
+    },
+    {
+      "point": "Ödenmiş sermaye 2011'den beri sabit (37.264.000 TL); bu tarihten sonra bedelsiz/bölünme kaydı bulunamadı, bu da 2016-2025 pay başına temettü karşılaştırmasını anlamlı kılıyor.",
+      "source": "WebSearch sentezi; akmgyo.com sermaye sayfasıyla tam doğrulanmadı"
+    },
+    {
+      "point": "Görünürde düşük kaldıraç / net nakde yakın pozisyon (örn. 1Ç2025 ~819,7 milyon TL net nakit).",
+      "source": "analizyatirim.com ve isyatirim.com.tr ikincil sentezleri; tarih etiketleri ve ölçek bazı kaynaklarda tutarsız"
+    }
+  ],
+  "counterEvidence": [
+    {
+      "point": "3 Aralık 2025 Beşiktaş Belediyesi Encümen Kararı: AVM'deki bazı bağımsız bölümlerin 1994/2015 onaylı mimari projelere aykırı birleştirildiği tespit edildi; 75,8 milyon TL peşin + 3,4 milyar TL'ye kadar şarta bağlı idari para cezası kesildi (İmar Kanunu m.42/2-a, 42/2-c, 42/3); 31 Aralık 2025'te yıkım kararı alındı (Boğaz Kanunu m.13 proje uyum gerekçesiyle).",
+      "source": "gazeteoksijen.com/turkiye/akmerkeze-76-milyon-tl-ceza-258948; yatirimx.com.tr yıkım kararı haberi; KAP özel durum açıklamalarının ikincil aktarımları (TradingView/Foreks/Borsagundem/Mynet/Borsatek)"
+    },
+    {
+      "point": "Akmerkez'in açtığı iptal/yürütmeyi durdurma davaları (2025/2596, 2025/2597 - İst. 3. İdare Mahkemesi; 2025/2503 - İst. 6. İdare Mahkemesi) 16 Ekim 2026'da ilk derecede reddedildi; şirket istinaf başvurusunda bulundu (tarih kaynaklar arasında 26 Ekim - 5 Kasım 2026 arasında tutarsız bildirildi). Kesim tarihinde sonuç belirsiz.",
+      "source": "borsatek.com/akmgy-iptal-davasi-mahkeme-karari/, borsatek.com/akmgy-istinaf-basvurusu/; Investulator referans dosyasındaki KAP ID 1683350, 1685087, 1687648 kayıtlarıyla uyumlu"
+    },
+    {
+      "point": "netAssetValue (NAD) için Investulator referans dosyasında kayıtlı CONFLICT bu çalışmada da çözülemedi: bilanço vekili NAD ile bağımsız ekspertiz bazlı düzeltilmiş NAD arasında köprü (kira nakdi/değerleme kazancı ayrımı) eksik.",
+      "source": "investulator-fe/src/data/research/akmgy-analysis-reports.json (dahili referans, bağımsız doğrulama değil; 2026-11-01 inceleme notu)"
+    },
+    {
+      "point": "2021-2025 net dönem kârı, CFO, CAPEX ve FCF rakamları ikincil kaynaklar arasında birbiriyle çelişti (örn. 2025/2026 9 aylık net kâr için bir kaynak 483,2 milyon TL, başka bir kaynak 309,2 milyon TL bildirdi) ve birincil kaynaktan bu çalışmada doğrulanamadı; 2023 için bildirilen %99,53 net kâr marjı büyük olasılıkla gerçekleşmemiş değerleme kazancı içeriyor ama bu ayrıştırılamadı.",
+      "source": "WebSearch sentezleri (isyatirim.com.tr, borsatek.com dahil); birincil gelir tablosu/nakit akış tablosu bu çalışmada okunamadı"
+    },
+    {
+      "point": "Tek kompleks/tek konum yoğunlaşması: gelir tek bir fiziksel varlığa bağlı, coğrafi/varlık çeşitlendirmesi yok.",
+      "source": "Şirket portföy açıklamaları (WebSearch sentezi)"
+    }
+  ],
+  "dividendHistory": [
+    {"paymentYear": 2016, "profitYear": null, "paid": true, "grossPerShareTRY": "1.79", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2016-05-25", "paymentDate": "2016-05-31", "installments": null, "notes": "Nihai ödeme; gross/net ayrımı kaynakta yok, brüt=net varsayıldı (doğrulanmadı). Kaynak: WebSearch sentezi, düşük güven."},
+    {"paymentYear": 2016, "profitYear": null, "paid": true, "grossPerShareTRY": "0.27", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2016-08-24", "paymentDate": "2016-08-26", "installments": null, "notes": "Kâr payı avansı (tahmin, tip teyit edilmedi). Kaynak: WebSearch sentezi, düşük güven."},
+    {"paymentYear": 2017, "profitYear": 2016, "paid": true, "grossPerShareTRY": "0.90", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2017-05-29", "paymentDate": "2017-05-31", "installments": null, "notes": "Nihai (12M) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2018, "profitYear": 2017, "paid": true, "grossPerShareTRY": "1.00", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2017-12-28", "paymentDate": "2018-01-02", "installments": null, "notes": "Nihai (12M) etiketli, ex-date 2017 sonu/ödeme 2018 başı. Kaynak: investing.com."},
+    {"paymentYear": 2018, "profitYear": null, "paid": true, "grossPerShareTRY": "0.68", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2018-05-28", "paymentDate": "2018-05-30", "installments": null, "notes": "Avans (I) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2018, "profitYear": null, "paid": true, "grossPerShareTRY": "1.00", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2018-10-19", "paymentDate": "2018-10-23", "installments": null, "notes": "Avans (F) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2019, "profitYear": null, "paid": true, "grossPerShareTRY": "1.08", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2019-04-24", "paymentDate": "2019-04-26", "installments": null, "notes": "Avans (I) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2019, "profitYear": null, "paid": true, "grossPerShareTRY": "0.85", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2019-09-24", "paymentDate": "2019-09-26", "installments": null, "notes": "Avans (I) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2019, "profitYear": null, "paid": true, "grossPerShareTRY": "0.50", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2019-10-23", "paymentDate": "2019-10-25", "installments": null, "notes": "Avans (F) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2020, "profitYear": null, "paid": true, "grossPerShareTRY": "1.30", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2020-04-15", "paymentDate": "2020-04-17", "installments": null, "notes": "2020'de tespit edilen tek ödeme; pandemi döneminde taksit sayısı azaldı ama kesilmedi. Kaynak: investing.com."},
+    {"paymentYear": 2021, "profitYear": null, "paid": true, "grossPerShareTRY": "0.47", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2021-01-06", "paymentDate": "2021-01-08", "installments": null, "notes": "Nihai (F) etiketli; muhtemelen önceki kâr yılı dağıtımının son taksidi, doğrulanmadı. Kaynak: investing.com."},
+    {"paymentYear": 2021, "profitYear": null, "paid": true, "grossPerShareTRY": "1.39", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2021-04-26", "paymentDate": "2021-04-28", "installments": null, "notes": "Avans (I) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2021, "profitYear": null, "paid": true, "grossPerShareTRY": "0.40", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2021-08-24", "paymentDate": "2021-08-26", "installments": null, "notes": "Avans (I) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2021, "profitYear": null, "paid": true, "grossPerShareTRY": "0.41", "netPerShareTRY": null, "totalCashTRY": null, "exDate": "2021-11-17", "paymentDate": "2021-11-19", "installments": null, "notes": "Avans (F) etiketli. Kaynak: investing.com."},
+    {"paymentYear": 2022, "profitYear": 2021, "paid": true, "grossPerShareTRY": "2.28", "netPerShareTRY": "2.05", "totalCashTRY": null, "exDate": "2022-04-04", "paymentDate": "2022-04-06", "installments": null, "notes": "Nihai dağıtım. Kaynak: Midas."},
+    {"paymentYear": 2022, "profitYear": null, "paid": true, "grossPerShareTRY": "0.65", "netPerShareTRY": "0.58", "totalCashTRY": null, "exDate": "2022-08-10", "paymentDate": "2022-08-12", "installments": null, "notes": "Kâr payı avansı. Kaynak: Midas."},
+    {"paymentYear": 2023, "profitYear": 2022, "paid": true, "grossPerShareTRY": "4.16", "netPerShareTRY": "3.74", "totalCashTRY": null, "exDate": "2023-04-19", "paymentDate": "2023-04-25", "installments": null, "notes": "Nihai (12M) dağıtım. Kaynak: Midas/investing.com."},
+    {"paymentYear": 2024, "profitYear": 2023, "paid": true, "grossPerShareTRY": "7.77", "netPerShareTRY": "6.99", "totalCashTRY": null, "exDate": "2024-04-17", "paymentDate": "2024-04-19", "installments": null, "notes": "Nihai (12M) dağıtım. Kaynak: Midas/investing.com."},
+    {"paymentYear": 2025, "profitYear": 2024, "paid": true, "grossPerShareTRY": "12.65", "netPerShareTRY": "10.75", "totalCashTRY": null, "exDate": "2025-04-09", "paymentDate": "2025-04-11", "installments": null, "notes": "Nihai (12M) dağıtım; investing.com '12,64' ile yaklaşık uyumlu, Rotaborsa'daki 12,64/471.016.960 TL rakamı 2025 kâr yılı (2026'da ödenen) dağıtımına ait olabilir, kaynaklar arasında yıl eşlemesi tam netleştirilemedi. Kaynak: Midas."},
+    {"paymentYear": 2025, "profitYear": null, "paid": true, "grossPerShareTRY": "2.40", "netPerShareTRY": "2.04", "totalCashTRY": null, "exDate": "2025-08-18", "paymentDate": "2025-08-20", "installments": null, "notes": "Kâr payı avansı. Kaynak: Midas/investing.com."}
+  ],
+  "sustainability": {
+    "period": "2021-2025",
+    "payoutRatioRange": null,
+    "cfoVsDividend": null,
+    "notes": "İkincil kaynaklardan toplanan net dönem kârı rakamları (2021: ~649M TL, 2022: ~1.247M TL, 2023: ~717M TL [%99,53 net kâr marjı bildirilmiş, muhtemelen büyük oranda gerçekleşmemiş değerleme kazancı içeriyor], 2024: ~524M TL, 2025/2026 9 aylık için 309,2M-483,2M TL aralığında çelişkili rakamlar) birbiriyle ve kapsam tanımıyla (konsolide/ana ortaklık, TTM/dönemsel) çelişti; birincil gelir tablosu, nakit akış tablosu (CFO) ve CAPEX bu çalışmada doğrulanamadı. Payout oranı yalnızca kâr payına göre kabaca %70-90 bandında görünüyor (471.016.960 TL toplam nakit temettü / ~524-664M TL net kâr), ama bu nakit akışına göre payout değildir ve gerçekleşmemiş kazanç ayrıştırması yapılmadığı için sürdürülebilirlik kanıtı sayılamaz. Bu bölüm düşük güvenle sunulmuştur; birincil finansal tabloların okunması açık bir takip işidir."
+  },
+  "financialResilience": {
+    "netDebtOrNetCash": null,
+    "notes": "İkincil kaynaklar genel olarak net nakde yakın/düşük kaldıraçlı bir profil işaret ediyor (4Ç2024: ~2.549M TL net borç; 1Ç2025: ~819,7M TL net nakit; güncel isyatirim kart verisinde net borç -703,7M TL [net nakit], tarih belirsiz; bir kaynakta bildirilen borç/özkaynak %22,78), ama bir kaynaktaki 3Ç2025 '24.915 milyar TL net borç' rakamı muhtemelen birim/ölçek hatası içeriyor ve bu çalışmada düzeltilemedi. Döviz borç/vade yapısı ve finansal tablolarda hukuki risk için ayrılan karşılık bulunamadı. 3 Aralık 2025 Beşiktaş Belediyesi Encümen Kararı ile kesilen 75,8 milyon TL peşin + 3,4 milyar TL'ye kadar şarta bağlı idari para cezası (yaklaşık özkaynağın %29'u) ve ardından gelen yıkım kararı, ilk derece mahkemesinde reddedilmiş olup istinafta; kesim tarihinde sonuç belirsiz ve bu çalışmanın en büyük finansal dayanıklılık belirsizliğidir."
+  },
+  "growthOutlook": {
+    "summary": "Akmerkez'in rekabet avantajı tekrarlanamaz bir premium konuma (Etiler/Beşiktaş) ve yüksek doluluk oranına (~%97,67, ikincil kaynak) dayanıyor; bu hem giriş engeli (olumlu) hem de çeşitlendirme eksikliği (olumsuz, bkz. structuralRisks) anlamına geliyor. Somut bir yeni varlık edinimi/geliştirme planı bu çalışmada bulunamadı; kira artış/endeksleme mekanizması da bulunamadı.",
+    "structuralOpportunities": [
+      "Premium/tekrarlanamaz konum nedeniyle yüksek giriş engeli ve marka talebi",
+      "Deneyimli uluslararası ortak (Klepierre S.A.) aracılığıyla potansiyel yönetim/portföy bilgisi transferi (doğrulanmadı)"
+    ]
+  },
+  "structuralRisks": [
+    "Tek kompleks/tek konum yoğunlaşması: gelir tek bir fiziksel varlığa bağlı, coğrafi veya varlık türü çeşitlendirmesi yok",
+    "2026-11-10 itibarıyla sonuçlanmamış, 3,4 milyar TL'ye kadar şarta bağlı idari para cezası ve yıkım kararına ilişkin hukuki/idari süreç (istinafta); nihai sonuç kiralanabilir alanı, asıl varlığın değerini ve nakit akışını doğrudan etkileyebilir",
+    "SPK'nın GYO'lara yönelik eski asgari kâr dağıtım zorunluluğunun kaldırılmış olması nedeniyle düzenli temettü ödemelerinin yasal zorunluluktan değil ortaklar/yönetim iradesinden kaynaklanması",
+    "Premium bölgede olası yeni rakip AVM/ofis arzı (doğrulanmadı, genel sektör riski olarak not edildi)",
+    "Kira artış/endeksleme mekanizması ve kiracı yoğunlaşması bilinmediği için reel gelir büyümesinin sürdürülebilirliği netleşmiyor"
+  ],
+  "missingData": [
+    {"item": "netAssetValue (NAD) CONFLICT: bilanço vekili NAD ile bağımsız ekspertiz bazlı düzeltilmiş NAD arasında köprü eksik", "blocksDecision": "A kategorisi; NAV bazlı değerleme güvenilir hesaplanamıyor", "possibleSource": "Güncel bağımsız ekspertiz raporu + şirketin NAD mutabakat notu (akmgyo.com değerleme raporları)"},
+    {"item": "2021-2025 birincil gelir tablosu (kira geliri, FAVÖK, gerçeğe uygun değer değişim kazancı/zararı ayrı satırda), nakit akış tablosu (CFO), CAPEX", "blocksDecision": "Payout-to-CFO oranı ve gerçek nakit kâr sürdürülebilirliği hesaplanamıyor", "possibleSource": "KAP'tan indirilen bağımsız denetimden geçmiş finansal tablolar (bilanço/gelir tablosu/nakit akış tablosu + dipnotlar)"},
+    {"item": "Hukuki riskin (3 Aralık 2025 ceza + yıkım kararı) finansal tablolarda karşılık/şarta bağlı yükümlülük notu olarak yansıtılıp yansıtılmadığı", "blocksDecision": "Riskin muhasebeleştirilmiş/muhasebeleştirilmemiş kısmı bilinmiyor; B kategorisinin ana koşulu", "possibleSource": "2025 faaliyet raporu ve 2026 ara dönem finansal tabloları dipnotları (şarta bağlı varlık ve yükümlülükler notu)"},
+    {"item": "İstinaf başvuru tarihi ve istinaf mahkemesinin olası karar takvimi", "blocksDecision": "Zaman çizelgesi kesinliğini etkiliyor, kategori kararını doğrudan değiştirmiyor", "possibleSource": "KAP özel durum açıklamaları, kap.org.tr"},
+    {"item": "Kira artış/endeksleme mekanizması, en büyük kiracıların kira payı, döviz borç/vade yapısı", "blocksDecision": "10-15 yıllık büyüme/dayanıklılık değerlendirmesi eksik kalıyor", "possibleSource": "Faaliyet raporu kiracı/portföy notları, bağımsız denetim raporu borç dipnotu"},
+    {"item": "Reel TL ve USD bazlı temettü büyüme serisi (TÜFE endeksi ve ödeme-günü kuru eşleştirmesi yapılmadı)", "blocksDecision": "Nominal büyüme sayıları büyüme kanıtı olarak tek başına kullanılamaz", "possibleSource": "TÜİK TÜFE serisi + TCMB günlük kur arşivi ile ayrı hesaplama"}
+  ],
+  "sources": [
+    {"name": "Midas - AKMGY temettü sayfası", "url": "https://www.getmidas.com/canli-borsa/akmgy-hisse/temettu/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "İkincil aracı kurum kaynağı; gross/net temettü tablosu 2021-2026"},
+    {"name": "Investing.com - AKMGY Dividends", "url": "https://www.investing.com/equities/akmerkez-gmyo-dividends", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "İkincil finans portalı; 2017-2026 temettü tarihleri, Midas ile bazı tutarlarda ufak uyumsuzluk"},
+    {"name": "OYAK Yatırım - AKMGY hisse detay", "url": "https://www.oyakyatirim.com.tr/hisse-detay/AKMGY", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "2006-2016 sermaye/temettü tablosu; birim/format belirsizliği nedeniyle 2016 öncesi veriler bu raporda kullanılmadı"},
+    {"name": "Rotaborsa - AKMGY 2025 yılı temettü kararı", "url": "https://rotaborsa.com/akmerkez-gyo-akmgy-2025-yili-temettu-kararini-acikladi/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "2025 kâr yılı dağıtım kararı: toplam 471.016.960 TL, hisse başına 12,64 TL"},
+    {"name": "gazeteoksijen.com - Akmerkez'e 76 milyon TL ceza", "url": "https://gazeteoksijen.com/turkiye/akmerkeze-76-milyon-tl-ceza-258948", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ceza tutarı (75,8M peşin + 3,4 milyar TL şarta bağlı) ve Encümen Kararı tarihi detayı"},
+    {"name": "Yatirimx.com.tr - Beşiktaş Belediyesi'nden Akmerkez için yıkım kararı", "url": "https://www.yatirimx.com.tr/sirket-haberleri/besiktas-belediyesinden-akmerkez-icin-yikim-karari-akmgy-iptal-davasi-aciyor/16595", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Yıkım kararı zaman çizelgesi, Boğaz Kanunu m.13 gerekçesi"},
+    {"name": "Borsatek.com - AKMGY iptal davası mahkeme kararı / istinaf başvurusu haberleri", "url": "https://www.borsatek.com/akmgy-iptal-davasi-mahkeme-karari/ ; https://www.borsatek.com/akmgy-istinaf-basvurusu/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "KAP özel durum açıklamalarının ikincil aktarımı; dava numaraları ve istinaf süreci"},
+    {"name": "Şirket genel kurul/ortaklık yapısı sentezi (WebSearch, çeşitli kaynaklar)", "url": null, "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "Ortaklık yapısı (Klepierre %44,85 vd.), sermaye yapısı; birincil belge satır satır teyit edilmedi"},
+    {"name": "akmgyo.com - dava açıklaması PDF'leri (655, 657 numaralı)", "url": "https://www.akmgyo.com/media/2569/655-davaya-iliskin-aciklama.pdf ; https://www.akmgyo.com/media/2576/657-davaya-iliskin-aciklama.pdf", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Birincil KAP/şirket kaynağı ama bu oturumda PDF metin katmanı okunamadı (görüntü/kodlu içerik); içerik yalnızca ikincil kaynaklar üzerinden dolaylı elde edildi"},
+    {"name": "isyatirim.com.tr company card", "url": "https://www.isyatirim.com.tr/en-us/analysis/stocks/Pages/company-card.aspx?hisse=AKMGY", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "Sınırlı güncel bilanço verisi; 5 yıllık seri giriş gerektirdiği için erişilemedi"},
+    {"name": "investulator-fe/src/data/research/akmgy-analysis-reports.json", "url": null, "publishedDate": "2026-11-01", "accessedDate": "2026-11-10", "independent": false, "note": "Investulator iç referans dosyası; netAssetValue CONFLICT ve KAP dava disclosure ID'leri (1683350, 1685087, 1687648) bu dosyadan doğrulandı/çapraz kontrol edildi, bağımsız doğrulama olarak sayılmadı"}
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "PARTIAL - birincil KAP/şirket PDF'lerine metin-katmanlı erişim bu oturumda başarısız oldu; dava/ceza/yıkım süreci ve temettü tarihleri çoklu ikincil kaynakla çapraz kontrol edildi ama bağımsız doğrulama olarak sayılmamalı. Net kâr/CFO/payout ve NAD köprüsü doğrulanamadı (D-tipi veri eksikliği, kategori kararına B koşulu olarak yansıtıldı)."
+}

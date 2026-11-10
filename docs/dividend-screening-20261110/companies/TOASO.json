@@ -1,0 +1,300 @@
+{
+  "symbol": "TOASO",
+  "companyName": "Tofaş Türk Otomobil Fabrikası A.Ş.",
+  "category": "B",
+  "rationale": "12+ yıl kesintisiz, kriz-dayanıklı (2018 kur şoku, 2020 pandemi, 2021 Stellantis birleşmesi geçişi dahil kesilmeyen, hep artan) nakit temettü geçmişi güçlü bir temel sunuyor, ama son 2-3 yılda net nakit pozisyonundan ~3,37x net borç/FAVÖK'e (FY2025) geçen ve 9 aylık 2026 verilerinde mutlak TL bazında büyümeye devam eden kaldıraç; H1 ve 9A 2026'da 3 çeyrektir düzelmeyen, derinleşen stok/işletme sermayesi kaynaklı nakit akışı sorunu; Nisan 2025'te 400 milyon Avro karşılığında gerçekleşen ve iş modelini kalıcı biçimde değiştiren (7'den 9 markaya çıkan, cironun ~2,65 kat büyüyüp FAVÖK'ün yalnızca ~%7,7 büyüdüğü) Stellantis Otomotiv Pazarlama devralımının henüz ~1,5 yıllık test süresi; ve kapasite kullanımının %58'den (2022) %33'e (2025) gerilemesi birlikte değerlendirildiğinde net bir 'çekirdek' kararı için fazla açık soru bırakıyor. Şirket kârlı kalmaya devam ediyor, temettü hiç kesilmedi, ihracat sözleşmeleri kur/maliyet riskini azaltıyor, borcun ~%96'sı TL cinsinden ve somut/sözleşmeli yeni model yatırımları (K0/Scudo, yeni hafif araç) var; bu nedenle 'uygun değil' kararı da desteklenmiyor. Sonuç: koşullu aday (B), 2026-2027 sonuçlarıyla (stok/nakit akışı normalleşmesi, Stellantis Otomotiv entegrasyonunun kârlılığı, kapasite toparlanması) yeniden değerlendirilmeli.",
+  "supportingEvidence": [
+    {
+      "point": "En az 2014'ten (muhtemelen daha öncesinden) 2026'ya kadar kesintisiz yıllık nakit temettü; 2018 TL kur şoku yılında ödenen temettü 0,70'den 1,60 TL/pay'a (+%129), 2020 pandemi yılı kârından ödenen temettü 2,40'tan 3,00 TL/pay'a (+%25) yükselmiş, hiçbir yıl kesinti yok.",
+      "source": "Tofaş 2018 ve 2020 Faaliyet Raporları (birincil, bu oturumda pdftotext ile tam metin okundu); Tofaş resmi 'Temettü Ödemeleri ve Sermaye Artırımları' tablosu"
+    },
+    {
+      "point": "İhracat gelirleri 'maliyet artı' yöntemiyle sözleşmeye bağlanmış; bu, Tofaş'ı maliyet/kârlılık/döviz kuru/yurt dışı pazar risklerinden önemli ölçüde koruyor.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, Temel Risklerin Değerlendirilmesi bölümü (birincil)"
+    },
+    {
+      "point": "31.12.2025 itibarıyla konsolide finansal borcun yaklaşık %96'sı TL cinsinden (yarısı sabit faizli TL kredi, ~%46'sı TL tahvil), yalnızca ~%3'ü Avro kredi (değişken faizli) — ihracatçı bir üretici için beklenenin aksine düşük döviz borç riski.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, finansal borçlar dipnotu (birincil)"
+    },
+    {
+      "point": "Koç Holding + Koç ailesi (~%37,85) ile Stellantis Europe (~%37,86) arasındaki ortaklık yapısı istikrarlı; karşılıklı hakimiyet ilişkisi getiren çapraz iştirak yok.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, kurumsal yönetim ilkeleri uyum raporu (birincil); KAP Kar Payı Dağıtım Bildirimi 1573202 (pay grubu tabloları)"
+    },
+    {
+      "point": "Somut, sözleşmeli yeni model/kapasite yatırımları (K0/Scudo hafif ticari araç, Kasım 2024'te üretime başladı, 125.000 adet/yıl hedef; ek yeni hafif araç 2026-2027'de devreye giriyor) kapasite toparlanma potansiyeli sunuyor.",
+      "source": "Çoklu haber kaynağı (bloomberght, cnbce, turkiyedeisdunyasi) + Tofaş 2025 Entegre Faaliyet Raporu üretim/kapasite tablosu"
+    }
+  ],
+  "counterEvidence": [
+    {
+      "point": "Net borç/FAVÖK net nakit pozisyonundan (ikincil kaynaklara göre ~2022-2023) +3,37x'e (FY2025 sonu, birincil) yükselmiş; 9 aylık 2026 verilerinde net borç mutlak TL bazında 51,4 milyar TL'ye çıkmaya devam ediyor.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu (birincil, FY2025 net borç/FAVÖK hesabı); ikincil analist raporları (2022-2023 net nakit pozisyonu, çapraz kontrollü); 9A2026 haber kaynakları (borsagundem, ekoturk vb.)"
+    },
+    {
+      "point": "H1 2026'da işletme faaliyetlerinden nakit akışı -7,2 milyar TL'ye düşmüş (stok +23,5 milyar TL); 9A 2026'da CFO 27,21 milyar TL'den (9A2025) 4,61 milyar TL'ye gerilemiş (-%83), stok+yoldaki mallar birlikte ~66,7 milyar TL'ye ulaşmış — 3 çeyrektir düzelmeyen, derinleşen bir kâr kalitesi sorunu.",
+      "source": "Önceki Investulator oturumunda birincil kaynaktan okunan H1 2026 ara dönem finansal tablolar; 9A2026 için ikincil haber kaynakları (borsagundem, ekoturk, cnbce), henüz birincil KAP/finansal tablo belgesiyle tek tek doğrulanmadı"
+    },
+    {
+      "point": "30 Nisan 2025'te 400 milyon Avro karşılığında tamamlanan Stellantis Otomotiv Pazarlama A.Ş. devralımı net satışları FY2024→FY2025'te ~2,65 kat büyütmüş (120,3→319,4 milyar TL) ama FAVÖK yalnızca ~%7,7 büyümüş (9,28→10,0 milyar TL) — ciddi marj seyrelmesi; yeni iş modelinin uzun vadeli nakit üretim kapasitesi henüz test edilmemiş.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, performans göstergeleri tablosu ve Stellantis Otomotiv Pazarlama devralım dipnotu (birincil)"
+    },
+    {
+      "point": "Kapasite kullanım oranı %58'den (2022) %33'e (2025) gerilemiş; üretim adedi 250.630'dan (2020) 131.645'e (2025) düşmüş (-%47,5) — Egea model döngüsünün sonuna yaklaşılması nedeniyle.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, 2020-2025 operasyonel performans göstergeleri tablosu (birincil)"
+    },
+    {
+      "point": "Tofaş kendi ürün/kapasite tahsisini bağımsız belirleyemiyor; 10-15 yıllık hacim/ihracat görünürlüğü büyük ölçüde Stellantis'in global platform kararlarına bağlı, 2030 sonrası için somut taahhüt bulunamadı.",
+      "source": "Tofaş 2025 Entegre Faaliyet Raporu, temel risklerin değerlendirilmesi bölümü (birincil); haber kaynakları (çapraz kontrol)"
+    }
+  ],
+  "dividendHistory": [
+    {
+      "paymentYear": 2016,
+      "profitYear": 2015,
+      "paid": true,
+      "grossPerShareTRY": "0.73",
+      "netPerShareTRY": "0.6205",
+      "totalCashTRY": "365000000",
+      "exDate": null,
+      "paymentDate": "2016-04-07",
+      "installments": null,
+      "notes": "Tofaş 2018 Faaliyet Raporu'ndaki 'son yıllarda dağıtılan temettüler' metninden (birincil kaynak, bu oturumda tam metin okundu)."
+    },
+    {
+      "paymentYear": 2017,
+      "profitYear": 2016,
+      "paid": true,
+      "grossPerShareTRY": "0.70",
+      "netPerShareTRY": "0.595",
+      "totalCashTRY": "350000000",
+      "exDate": null,
+      "paymentDate": "2017-04-03",
+      "installments": null,
+      "notes": "Aynı birincil kaynak."
+    },
+    {
+      "paymentYear": 2018,
+      "profitYear": 2017,
+      "paid": true,
+      "grossPerShareTRY": "1.60",
+      "netPerShareTRY": "1.36",
+      "totalCashTRY": "800000000",
+      "exDate": null,
+      "paymentDate": "2018-03-21",
+      "installments": null,
+      "notes": "Tofaş 2018 ve 2020 Faaliyet Raporları arasında çapraz doğrulandı (ikisi de birincil)."
+    },
+    {
+      "paymentYear": 2019,
+      "profitYear": 2018,
+      "paid": true,
+      "grossPerShareTRY": "1.76",
+      "netPerShareTRY": "1.496",
+      "totalCashTRY": "880000000",
+      "exDate": null,
+      "paymentDate": "2019-03-19",
+      "installments": null,
+      "notes": "Tofaş 2020 Faaliyet Raporu'ndan (birincil)."
+    },
+    {
+      "paymentYear": 2020,
+      "profitYear": 2019,
+      "paid": true,
+      "grossPerShareTRY": "2.40",
+      "netPerShareTRY": "2.04",
+      "totalCashTRY": "1200000000",
+      "exDate": null,
+      "paymentDate": "2020-03-25",
+      "installments": null,
+      "notes": "Resmi IR tablosu 25 Mart 2020 diyor, 2020 Faaliyet Raporu metni 20.03.2020 diyor (~5 gün fark, muhtemelen karar/duyuru tarihi ile fiili ödeme tarihi karışıklığı, bu oturumda çözülemedi). Tutar her iki kaynakta aynı."
+    },
+    {
+      "paymentYear": 2021,
+      "profitYear": 2020,
+      "paid": true,
+      "grossPerShareTRY": "3.00",
+      "netPerShareTRY": "2.55",
+      "totalCashTRY": "1500000000",
+      "exDate": null,
+      "paymentDate": "2021-03-23",
+      "installments": null,
+      "notes": "COVID-19 (2020) kâr yılından; dağıtım kesilmemiş, önceki yıla göre artmıştır. Tofaş 2020 Faaliyet Raporu kâr dağıtım önerisi + resmi IR tablosu (ikisi de birincil)."
+    },
+    {
+      "paymentYear": 2022,
+      "profitYear": 2021,
+      "paid": true,
+      "grossPerShareTRY": "6.40",
+      "netPerShareTRY": "5.76",
+      "totalCashTRY": "3200000000",
+      "exDate": null,
+      "paymentDate": "2022-03-22",
+      "installments": null,
+      "notes": "Resmi IR tablosu 22 Mart 2022 diyor, 2025 Faaliyet Raporu metni 24.03.2022 diyor (küçük tarih farkı)."
+    },
+    {
+      "paymentYear": 2023,
+      "profitYear": 2022,
+      "paid": true,
+      "grossPerShareTRY": "6.00",
+      "netPerShareTRY": "5.40",
+      "totalCashTRY": "3000000000",
+      "exDate": null,
+      "paymentDate": "2023-03-21",
+      "installments": null,
+      "notes": "Resmi IR tablosu 21 Mart 2023 diyor, 2025 Faaliyet Raporu metni 23.03.2023 diyor (küçük tarih farkı)."
+    },
+    {
+      "paymentYear": 2024,
+      "profitYear": 2023,
+      "paid": true,
+      "grossPerShareTRY": "20.00",
+      "netPerShareTRY": "18.00",
+      "totalCashTRY": "10000000000",
+      "exDate": null,
+      "paymentDate": "2024-04-08",
+      "installments": null,
+      "notes": "Resmi IR tablosu ve 2025 Faaliyet Raporu birebir tutarlı (ikisi de birincil)."
+    },
+    {
+      "paymentYear": 2025,
+      "profitYear": 2024,
+      "paid": true,
+      "grossPerShareTRY": "12.00",
+      "netPerShareTRY": "10.20",
+      "totalCashTRY": "6000000000",
+      "exDate": null,
+      "paymentDate": "2025-04-07",
+      "installments": null,
+      "notes": "Resmi IR tablosu ve 2025 Faaliyet Raporu birebir tutarlı (ikisi de birincil)."
+    },
+    {
+      "paymentYear": 2026,
+      "profitYear": 2025,
+      "paid": true,
+      "grossPerShareTRY": "20.00",
+      "netPerShareTRY": "17.00",
+      "totalCashTRY": "10000000000",
+      "exDate": "2026-03-23",
+      "paymentDate": "2026-03-25",
+      "installments": null,
+      "notes": "Kayıt tarihi 2026-03-24. Tam mükellef tüzel kişi ortaklar için net=brüt (20,00 TL, stopaj muafiyeti); retail/halka açık pay sahipleri için net 17,00 TL (%15 stopaj). KAYNAK: 16.03.2026 tarihli resmi KAP 'Kar Payı Dağıtım İşlemlerine İlişkin Bildirimi' (Bildirim No 1573202, birincil, bu oturumda tam metin okundu). DÜZELTME: mevcut Investulator uygulama içi dosyaları ve 2026-10-31 tarihli önceki rapor ödeme tarihini hatalı biçimde '2026-02-28' olarak gösteriyordu; bu rapor KAP bildirimiyle 2026-03-25 olarak düzeltmiştir. Bu satır, görevin nominal '2016-2025' aralığının bir ödeme yılı dışında olsa da, kesim tarihinden (2026-11-10) önce gerçekleşmiş en güncel ödeme olduğu için eklenmiştir."
+    }
+  ],
+  "sustainability": {
+    "period": "2021-2025",
+    "payoutRatioRange": "~%36 (2015 referans) ila ~%84 (2020) arası yükselen tarihsel trend (2015-2020, birincil kaynak); 2025 kâr yılı için SPK bazlı net dağıtılabilir dönem kârının %119,7'si dağıtılmış (geçmiş yıl kârından takviyeli, birincil kaynak). 2021-2023 payout oranı bu oturumda birincil kaynaktan tam hesaplanamadı (veri eksikliği).",
+    "cfoVsDividend": "2021-2023 CFO serisi bu oturumda birincil kaynaktan kurulamadı (yalnızca net kâr/FAVÖK ikincil kaynaklardan bulundu). H1 2026'da CFO -7,2 milyar TL (stok +23,5 milyar TL birikimi nedeniyle); 9A 2026'da CFO 27,21 milyar TL'den (9A2025) 4,61 milyar TL'ye gerilemiş (-%83). Bu, 2024-2025'te ödenen yüksek nakit temettülerin (6 ve 10 milyar TL) ve Nisan 2025'teki 400 milyon Avro'luk Stellantis Otomotiv Pazarlama devralımının, güncel dönemde zayıflayan işletme nakit üretimiyle aynı döneme denk geldiğini gösteriyor; bu üçlü örtüşme kâr kalitesi ve sürdürülebilirlik açısından en önemli izlenecek husus.",
+    "notes": "2021 FCA-PSA/Stellantis birleşmesi öncesi (2020 ve öncesi) ile sonrası (2021+) dönemler ayrıştırıldı; ayrıca Nisan 2025'teki Stellantis Otomotiv Pazarlama devralımı FY2024 ile FY2025'i karşılaştırılamaz kılan ikinci, daha büyük bir ölçek kırılması yaratmıştır (net satışlar +%165,6 ama FAVÖK yalnızca +%7,7). TMS 29 enflasyon muhasebesi bazları 2021-2023 ikincil kaynaklı rakamlar ile 2024-2025 birincil kaynaklı (31.12.2025 satın alma gücü bazında, birbiriyle tutarlı) rakamlar arasında KARIŞTIRILMAMIŞTIR; 2021-2023 rakamları yalnızca yön/büyüklük mertebesi için kullanılmalıdır."
+  },
+  "financialResilience": {
+    "netDebtToEbitda": "FY2025 sonu (31.12.2025, birincil kaynak): ~3,37x (net borç ~33,70 milyar TL / FAVÖK ~9,998 milyar TL). İkincil kaynaklara göre FY2023 sonunda net NAKİT pozisyonu (~-0,66x) idi. 9A2026 (30.09.2026) net borç mutlak olarak 51,4 milyar TL'ye yükselmiş (ikincil kaynak); bu tarihe ait FAVÖK bazlı oran bu oturumda güvenilir şekilde hesaplanamadı (veri eksikliği).",
+    "fxDebtShare": "31.12.2025 itibarıyla konsolide finansal borcun yaklaşık ~%3'ü Avro (değişken faizli) kredi; ~%50'si TL kredi (sabit faizli), ~%46'sı TL tahvil (Aralık 2025 ihraçlarında nominal faiz %41,19-%41,21). USD veya başka döviz cinsinden borç bu oturumda görülmedi (yok mu yoksa görülmedi mi net değil).",
+    "notes": "Tofaş'ın %100 bağlı ortaklığı olan Koç Stellantis Finansman A.Ş. (eski adıyla Koç Fiat Kredi Finansman A.Ş.) tam konsolide edilmektedir; bu şirketin müşteri/bayi kredisi fonlama borcunun konsolide finansal borç içindeki payı ayrıştırılamadı (veri eksikliği). İhracat gelirleri EUR bazlı olup doğal kur koruması sağlıyor; ithalat/ihracat teşvik belgeleri kapsamında ABD Doları cinsinden taahhütler de dipnotlarda görülüyor ama bunlar borçlanma değil dış ticaret taahhüdü niteliğinde."
+  },
+  "growthOutlook": {
+    "summary": "Mevcut Egea model döngüsünün sona yaklaşmasıyla kapasite kullanımı %58'den (2022) %33'e (2025) gerilemiş; K0/Scudo hafif ticari araç (Kasım 2024'te üretime başladı, 125.000 adet/yıl) ve 2026-2027'de devreye girmesi planlanan ek bir yeni hafif araç modeliyle (toplam hedef kapasite kaynaklara göre 150.000-275.000 adet/yıl aralığında) toparlanma bekleniyor. Ayrıca Nisan 2025'te tamamlanan Stellantis Otomotiv Pazarlama devralımı (400 milyon Avro) ile marka portföyü 7'den 9'a çıkmış, yurt içi pazar payı %26,3'e ulaşmış; ancak bu büyüme düşük marjlı distribütörlük cirosu ağırlıklı olup FAVÖK'e orantısız yansımamıştır (ciro +%165,6 iken FAVÖK +%7,7).",
+    "structuralOpportunities": [
+      "K0/Scudo ve planlanan yeni hafif ticari araç modelleriyle kapasite kullanımının toparlanma potansiyeli (2026-2027 ufku)",
+      "Stellantis'in önemli Ar-Ge merkezlerinden biri olarak konumlanma; sıfırdan komple araç geliştirme yetkinliği",
+      "Sözleşmeyle (maliyet-artı yöntemiyle) korunan ihracat gelirleri sayesinde kur/maliyet riskinin azaltılmış olması",
+      "Genişleyen marka portföyü (9 marka, Fer-Mas üzerinden Ferrari/Maserati dahil) ile yurt içi pazarda ölçek/çeşitlendirme avantajı"
+    ]
+  },
+  "structuralRisks": [
+    "Stellantis'in global platform/model tahsis kararlarına yapısal bağımlılık; 2030 sonrası için somut görünürlük yok",
+    "Elektrikli araç (BEV) geçişinin hızlanması ve Tofaş'ın kendi BEV ürün/üretim planının bu oturumda net olarak bulunamaması",
+    "Nisan 2025 Stellantis Otomotiv Pazarlama devralımının henüz ~1,5 yıllık test süresiyle uzun vadeli kârlılık/nakit üretim etkisinin belirsizliği",
+    "Son 2-3 yılda net nakitten +3,37x net borç/FAVÖK'e geçen ve 9A2026'da mutlak TL bazında büyümeye devam eden kaldıraç yörüngesi",
+    "H1 ve 9A 2026'da 3 çeyrektir düzelmeyen, derinleşen stok/işletme sermayesi kaynaklı nakit akışı zayıflığı",
+    "ÖTV ve diğer düzenleyici değişikliklere yüksek duyarlılık (Türkiye otomotiv talebinin yapısal özelliği)",
+    "Kapasite kullanım oranının %58'den (2022) %33'e (2025) gerilemesi"
+  ],
+  "missingData": [
+    {
+      "item": "2021-2023 dönemi işletme faaliyetlerinden nakit akışı (CFO) ve CAPEX serisi, birincil kaynaktan (faaliyet raporu nakit akış tablosu) tek tek doğrulanmadı",
+      "blocksDecision": "Payout/FCF karşılama oranının 2021-2025 için kesin ve tutarlı (aynı TMS 29 bazında) hesaplanmasını engelliyor; yalnızca yön/büyüklük mertebesi değerlendirmesi yapılabildi",
+      "possibleSource": "Tofaş'ın ilgili yıllara ait faaliyet raporlarının nakit akış tablosu dipnotları, doğrudan tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari"
+    },
+    {
+      "item": "Koç Stellantis Finansman A.Ş.'nin (tam konsolide, %100 bağlı ortaklık) müşteri kredisi fonlama borcunun, konsolide toplam finansal borç içindeki TL bazında payı",
+      "blocksDecision": "İmalat/işletme sermayesi borcu ile finansman iştiraki borcunun ayrı risk profillerinin net borç/FAVÖK gibi oranlara etkisini ayrıştırmayı engelliyor",
+      "possibleSource": "Tofaş konsolide finansal tabloları dipnotlarının segment/bağlı ortaklık bazlı kırılımı, veya Koç Stellantis Finansman A.Ş.'nin kendi faaliyet raporu"
+    },
+    {
+      "item": "9A2026 (30.09.2026) net borç/FAVÖK oranı ve bu dönemin CAPEX rakamı",
+      "blocksDecision": "Kaldıraç yörüngesinin en güncel (kesim tarihine en yakın) halkasını kesin bir oranla ifade etmeyi engelliyor; yalnızca mutlak TL net borç tutarı (51,4 milyar TL) ikincil kaynaktan bulunabildi",
+      "possibleSource": "TOASO 30.09.2026 ara dönem özet konsolide finansal tabloları (KAP/tofas.com.tr), bu oturumda tek tek açılıp okunmadı"
+    },
+    {
+      "item": "2021 Faaliyet Raporu'nun FCA-PSA/Stellantis birleşiminin Tofaş'a doğrudan yansımasını anlatan kendi metni",
+      "blocksDecision": "Birleşmenin Tofaş sermaye yapısına etkisinin olmadığı iddiası yalnızca ikincil haber kaynaklarıyla teyit edildi, birincil kaynaktan doğrudan okunmadı",
+      "possibleSource": "tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf"
+    },
+    {
+      "item": "2016 öncesi (2014'ten daha eski) temettü geçmişi ve ilk halka arz/BIST kotasyonu sonrası (1991+) tam kesintisizlik iddiasının doğrulanması",
+      "blocksDecision": "12 yıllık doğrulanmış süreklilik ötesinde daha uzun bir 'hiç kesinti olmadı' iddiası bu oturumda kurulamadı",
+      "possibleSource": "Tofaş'ın 2000'li yılların başına ait faaliyet raporları veya MKK temettü arşivi"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Tofaş resmi Temettü Ödemeleri ve Sermaye Artırımları tablosu",
+      "url": "https://www.tofas.com.tr/YatirimciIliskileri/GenelBakis/Documents/TemettuOdemeleriVeSermayeArtirimlari.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak (şirketin kendi IR sayfası); yayım/güncelleme tarihi belgede belirtilmemiş."
+    },
+    {
+      "name": "Tofaş 2025 Entegre Faaliyet Raporu",
+      "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS Faaliyet Raporu 2025.pdf",
+      "publishedDate": "2026-02-17",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak; kâr dağıtım tablosu, temettü ödeme performansı, iştirakler/bağlı ortaklıklar dipnotu, performans göstergeleri tablosu, borç/döviz kompozisyonu dipnotu, Stellantis Otomotiv Pazarlama devralım dipnotu tam metin okundu."
+    },
+    {
+      "name": "Tofaş 2020 Faaliyet Raporu",
+      "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2020FaaliyetRaporu.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak; pdftotext ile tam metin çıkarıldı, 2015-2020 temettü/net kâr tablosu ve 2020 kâr dağıtım önerisi okundu."
+    },
+    {
+      "name": "Tofaş 2018 Faaliyet Raporu",
+      "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/Tofas_Faaliyet_Raporu_2018.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak; pdftotext ile tam metin çıkarıldı, 2014-2018 temettü/net kâr tablosu ve 2018 kâr dağıtım tablosu okundu."
+    },
+    {
+      "name": "KAP - Kar Payı Dağıtım İşlemlerine İlişkin Bildirim (No 1573202)",
+      "url": "https://kap.org.tr/tr/api/BildirimPdf/1573202",
+      "publishedDate": "2026-03-16",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak (resmi KAP bildirimi); 2025 kâr yılı temettüsünün kesin tutar/tarih bilgisini içerir, önceki Investulator verisindeki hatalı ödeme tarihini düzeltmek için kullanıldı."
+    },
+    {
+      "name": "Çoklu ikincil haber/veri kaynağı (borsagundem, r10.net, ekoturk, cnbce, rotaborsa, digrin, companiesmarketcap, tradingview, gcmyatirim, ziraatyatirim, anadoluyatirim, isyatirim, bloomberght, t24, gazeteoksijen)",
+      "url": null,
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Çapraz kontrol amaçlı kullanıldı; 2021-2023 CFO/CAPEX/net borç rakamları ve 9A2026 ara dönem verileri için, tamamı KAP'a dayanan ama birbirinden bağımsız biçimde raporlayan kaynaklar. Tek başına birincil belge doğrulaması yerine geçmez."
+    },
+    {
+      "name": "Investulator uygulama içi önceki araştırma (toaso-analysis-reports.json, toaso-approximate-history.json, TOASO_ARASTIRMA_RAPORU.md)",
+      "url": null,
+      "publishedDate": "2026-10-31",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Yalnızca başlangıç/karşılaştırma referansı; bağımsız doğrulama SAYILMADI. Bu oturumda en az bir maddi hata (2026 ödeme tarihi) tespit edilip düzeltildi."
+    }
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "NEEDS_REVIEW"
+}

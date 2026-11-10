@@ -1,0 +1,399 @@
+{
+  "symbol": "AKSA",
+  "companyName": "Aksa Akrilik Kimya Sanayii A.Ş.",
+  "category": "B",
+  "rationale": "11 yıl (2015-2025 kâr yılları) kesintisiz nakit temettü dahil güçlü süreklilik ve havacılık/karbon elyaf odaklı stratejik yeniden konumlanmanın (H1 2026'da %30,2 segment FAVÖK marjı) olumlu sinyaline karşın; satın alma kaynaklı borcun bir yılda ~3 katına çıkması ve Aksa Carbon kredilerinde doğan covenant ihlali riski, çekirdek akrilik elyaf işindeki yapısal talep/arz-fazlası baskısı, reel/USD bazda on yıllık net temettü büyümesi bulunmaması ve son 5 yılda son derece oynak (bir yıl %164'e çıkan) payout oranı nedeniyle çekirdek (A) değil koşullu (B) aday; kararın A'ya yükselmesi borç/covenant riskinin ve yeni segment marjının sonraki 2-3 dönemde doğrulanmasına bağlıdır.",
+  "supportingEvidence": [
+    {
+      "point": "2015-2025 kâr yıllarının tamamında (11 yıl) kesintisiz nakit temettü ödendi; 2020 pandemi yılı kârından yapılan dağıtım önceki yıla göre düşmedi, arttı (0,74→0,87 TL/pay brüt).",
+      "source": "Aksa Akrilik Sermaye Temettü Bilgileri sayfası (aksa.com); KAP 1581038"
+    },
+    {
+      "point": "İleri Malzemeler (karbon elyaf/kompozit) segmenti H1 2026'da %30,2 düzeltilmiş FAVÖK marjıyla çekirdek Elyaflar segmentinin (%19,8) üzerine çıktı; grup CAPEX'inin %29,6'sı bu segmente ayrıldı (gelirin yalnızca %7,5'i).",
+      "source": "30.06.2026 ara dönem konsolide finansal tablolar, Not 3 (bölümlere göre raporlama); 31.12.2025 konsolide finansal tablolar, Not 4"
+    },
+    {
+      "point": "İhracat payı ~%64, 2026 kapasite kullanım hedefi %85 (±5 puan); kredi derecelendirmesi (JCR Avrasya AA+(tr) ulusal, Durağan) satın alma sonrası dönemde korunuyor.",
+      "source": "Aksa Akrilik 2026 Haziran yatırımcı sunumu"
+    },
+    {
+      "point": "Havacılık sektörüne yönelik kompozit üretimi için Tunus'ta (%54 iştirak Aksa Kompozit üzerinden) yeni yatırım başlatıldı; karbon elyafın döngüsel emtia sınıfından daha korunaklı, yüksek katma değerli pazarlara erken konumlanma.",
+      "source": "KAP 1667893, 24.09.2026"
+    },
+    {
+      "point": "Akkök Holding, 18.09.2026'da payını %40,337'ye yükseltti; içerden ek alım.",
+      "source": "Rota Borsa haberi, Aksa Akrilik pay dağılımı açıklamaları"
+    }
+  ],
+  "counterEvidence": [
+    {
+      "point": "Grup finansal borcu 2025 takvim yılında ~9,92 milyar TL'den ~30,83 milyar TL'ye (~3,1 katına) çıktı; artış doğrudan Aksa Carbon'un (DowAksa, 125 milyon USD) tam satın alınıp konsolide edilmesine bağlı. Aksa Carbon kredilerinde Borç Servisi Karşılama/Kaldıraç Oranı covenant ihlali riski doğdu, 30.12.2025 tarihli feragatnameyle aşıldı.",
+      "source": "30.06.2026 ara dönem konsolide finansal tablolar, Not 5 (finansal borçlanmalar, rollforward ve vade tablosu)"
+    },
+    {
+      "point": "Toplam nakit temettü, TÜİK TÜFE ile 2025 TL'sine deflate edildiğinde ve ödeme günü USD/TRY kuruyla dolarize edildiğinde son 10 yılda net bir büyüme trendi göstermiyor; 2025 reel/USD değeri 2021 ve 2023 zirvelerinin altında, 2015-2017 seviyesine yakın.",
+      "source": "Aksa Akrilik temettü arşivi + TÜİK TÜFE yıllık oranları (alomaliye.com derlemesi) + Yahoo Finance USD/TRY (fx.json) — bu oturumda hesaplandı"
+    },
+    {
+      "point": "Payout oranı (dağıtım ÷ o yılın kendi raporundaki net kâr) 2021-2025 arasında %22,8 ile %164,1 arasında oynadı; 2024 kâr yılında dağıtım, o yılın muhasebe kârını aştı.",
+      "source": "Aksa Akrilik 2021-2025 konsolide finansal tabloları (gelir tablosu) ve temettü arşivi — bu oturumda hesaplandı"
+    },
+    {
+      "point": "Çekirdek akrilik elyaf (gelirin ~%82'si) küresel olarak polyestere pay kaybediyor ve Çin kaynaklı arz fazlasıyla fiyat baskısı altında; karbon elyafta da benzer şekilde Çin kapasitesi 2020-2025 arasında ~3 katına çıkarak endüstriyel sınıf fiyatları ~%64 düşürdü (T300-12K, 2022→2024 sonu).",
+      "source": "Üçüncü taraf pazar araştırması özetleri (S&P Global, Mordor Intelligence ve China Carbon Fiber 2026 raporu özetleri, WebSearch) — ikincil, gösterge niteliğinde"
+    },
+    {
+      "point": "H1 2026'da ödenen temettü (2026 kâr payı, 2.253,3 milyon TL brüt), aynı dönemin finansman net faizi sonrası serbest nakit akışını (~1.311 milyon TL tahmini) aşıyor; kaba FCF karşılama oranı ~%83,4, faiz-sonrası ~%54,4.",
+      "source": "31 Ekim 2026 Investulator araştırmasının H1 2026 nakit köprüsü hesabı (aynı birincil belgeden), bu oturumda tutarlılığı kontrol edildi"
+    }
+  ],
+  "dividendHistory": [
+    {
+      "paymentYear": 2016,
+      "profitYear": 2015,
+      "paid": true,
+      "grossPerShareTRY": "0.85",
+      "netPerShareTRY": "0.7225",
+      "totalCashTRY": "157250000",
+      "exDate": "2016-04-06",
+      "paymentDate": "2016-04-08",
+      "installments": null,
+      "notes": "Stopaj %15 (22.12.2021 öncesi dönem geçerli oran). Nominal sermaye 185.000.000 TL bazında."
+    },
+    {
+      "paymentYear": 2017,
+      "profitYear": 2016,
+      "paid": true,
+      "grossPerShareTRY": "1.00",
+      "netPerShareTRY": "0.85",
+      "totalCashTRY": "185000000",
+      "exDate": "2017-04-05",
+      "paymentDate": "2017-04-07",
+      "installments": null,
+      "notes": "Stopaj %15."
+    },
+    {
+      "paymentYear": 2018,
+      "profitYear": 2017,
+      "paid": true,
+      "grossPerShareTRY": "1.12",
+      "netPerShareTRY": "0.952",
+      "totalCashTRY": "207200000",
+      "exDate": "2018-04-04",
+      "paymentDate": "2018-04-06",
+      "installments": null,
+      "notes": "Stopaj %15."
+    },
+    {
+      "paymentYear": 2019,
+      "profitYear": 2018,
+      "paid": true,
+      "grossPerShareTRY": "1.1065",
+      "netPerShareTRY": "0.940525",
+      "totalCashTRY": "204702500",
+      "exDate": "2019-04-09",
+      "paymentDate": "2019-04-11",
+      "installments": null,
+      "notes": "Stopaj %15."
+    },
+    {
+      "paymentYear": 2020,
+      "profitYear": 2019,
+      "paid": true,
+      "grossPerShareTRY": "0.74",
+      "netPerShareTRY": "0.629",
+      "totalCashTRY": "239575000",
+      "exDate": "2020-04-07",
+      "paymentDate": "2020-04-09",
+      "installments": null,
+      "notes": "Stopaj %15."
+    },
+    {
+      "paymentYear": 2021,
+      "profitYear": 2020,
+      "paid": true,
+      "grossPerShareTRY": "0.87",
+      "netPerShareTRY": "0.7395",
+      "totalCashTRY": "281662500",
+      "exDate": "2021-04-13",
+      "paymentDate": "2021-04-15",
+      "installments": null,
+      "notes": "Stopaj %15 (22.12.2021 öncesi). 2020-02-12 bedelsiz sermaye artışı (×1,75) sonrası sermaye 323.750.000 TL bazında."
+    },
+    {
+      "paymentYear": 2022,
+      "profitYear": 2021,
+      "paid": true,
+      "grossPerShareTRY": "1.85",
+      "netPerShareTRY": "1.665",
+      "totalCashTRY": "598937500",
+      "exDate": "2022-04-21",
+      "paymentDate": "2022-04-25",
+      "installments": null,
+      "notes": "Stopaj %10 (22.12.2021'den itibaren geçerli oran; önceki Investulator araştırmasının %15 varsayımı bu oturumda düzeltildi)."
+    },
+    {
+      "paymentYear": 2023,
+      "profitYear": 2022,
+      "paid": true,
+      "grossPerShareTRY": "2.41",
+      "netPerShareTRY": "2.169",
+      "totalCashTRY": "780237500",
+      "exDate": "2023-04-11",
+      "paymentDate": "2023-04-13",
+      "installments": null,
+      "notes": "Stopaj %10. 2023'te Mısır bağlı ortaklığının satışı (16.03.2023) konsolidasyon kapsamını değiştirdi, bu kâr yılının temettüsünü değil."
+    },
+    {
+      "paymentYear": 2024,
+      "profitYear": 2023,
+      "paid": true,
+      "grossPerShareTRY": "5.00",
+      "netPerShareTRY": "4.50",
+      "totalCashTRY": "1618750000",
+      "exDate": "2024-04-03",
+      "paymentDate": "2024-04-05",
+      "installments": null,
+      "notes": "Stopaj %10. Dağıtım, o yılın kendi raporundaki net kârın (TMS29@2023 bazında) ~%98'ine denk gelir."
+    },
+    {
+      "paymentYear": 2025,
+      "profitYear": 2024,
+      "paid": true,
+      "grossPerShareTRY": "0.48",
+      "netPerShareTRY": "0.432",
+      "totalCashTRY": "1864800000",
+      "exDate": "2025-05-21",
+      "paymentDate": "2025-05-23",
+      "installments": null,
+      "notes": "Stopaj %10. Olağan Nisan takviminden sapıp Mayıs'ta ödendi. Dağıtım, o yılın kendi raporundaki net kârı (TMS29@2024 bazında) aşıyor (~%164) — 2024 bedelsiz sermaye artışı (×12) sonrası sermaye 3.885.000.000 TL bazında."
+    },
+    {
+      "paymentYear": 2026,
+      "profitYear": 2025,
+      "paid": true,
+      "grossPerShareTRY": "0.58",
+      "netPerShareTRY": "0.493",
+      "totalCashTRY": "2253300000",
+      "exDate": "2026-04-03",
+      "paymentDate": "2026-04-07",
+      "installments": null,
+      "notes": "Stopaj %15 (22.12.2024'ten itibaren tekrar yükseldi). KAP 1581038 ile kesinleşti; net/pay değeri (0,493) önceki Investulator araştırmasıyla tam uyumlu."
+    }
+  ],
+  "sustainability": {
+    "period": "2021-2025",
+    "payoutRatioRange": "Dağıtım-yılı ÷ aynı yılın kendi raporundaki net kâr bazında: ~%22,8 (2022) ile ~%164,1 (2024) arasında; 2025 ~%56,1, 2023 ~%98,0, 2021 ~%51,3. Son 5 yılda istikrarsız, disiplinli bir politika kanıtı yok.",
+    "cfoVsDividend": "FY2025 (kendi raporu, TMS29@2025): CFO 5.064.708 bin TL − CAPEX 3.114.154 bin TL = FCF vekili ~1.950.554 bin TL; 2025 takvim yılında nakden ödenen temettü (2024 kârından) 1.864.800 bin TL → karşılama ~%104,6. H1 2026 (önceki araştırmadan, bu oturumda tutarlılığı kontrol edildi): faiz-sonrası FCF vekili ~1.311 milyon TL; Nisan 2026'da ödenen temettü 2.411 milyon TL (30.06.2026 bazında) → karşılama ~%54,4 (faiz sonrası nakit, dönem temettüsünden düşük).",
+    "notes": "FY2022'nin kendi raporundaki pozitif CFO'su (1.346.171 bin TL, nominal), FY2023 raporunun TMS29 karşılaştırmalı sütununda −3.021.587 bin TL'ye (negatife) dönüyor; bu, TMS 29 bazının nakit akışı yönünü bile değiştirebildiğini gösteriyor ve çapraz yıl/baz karşılaştırmalarını güvenilmez kılıyor. FY2016-2020 için net kâr/CFO bu oturumda birincil kaynaktan doğrulanamadı (veri eksiği)."
+  },
+  "financialResilience": {
+    "netDebtToEbitda": "Şirketin kendi ifadesi (2026 Haziran sunumu): ~2,8x (tanım/tarih açıklanmamış). Bağımsız hesap (FY2025, net borç ~21,23 milyar TL ÷ FAVÖK 5,73 milyar TL): ~3,70x. İki rakam mutabık kılınamadı.",
+    "fxDebtShare": "H1 2026 itibarıyla toplam finansal borcun (28,44 milyar TL) büyük kısmı USD (~15,3 milyar TL karşılığı) ve EUR (~6,25 milyar TL karşılığı) ağırlıklı; TL kredi brüt ~7,40 milyar TL. Doğal korunma (ihracata dönüştürülebilir stok) sonrası net döviz açığı ~7,78-7,79 milyar TL.",
+    "notes": "Finansal borç 01.01.2025'te 9.924.327 bin TL idi, 31.12.2025'te 30.833.074 bin TL'ye (~3,1 kat) çıktı, 30.06.2026'da 28.438.396 bin TL'ye hafifçe geriledi (7.870.952 bin TL anapara ödemesiyle). Artış doğrudan Aksa Carbon'un (DowAksa, 125 milyon USD) tam satın alınıp konsolide edilmesine bağlı. Aksa Carbon kredilerinde Borç Servisi Karşılama Oranı/Kaldıraç Oranı covenant ihlali riski 31.12.2025 itibarıyla doğdu, 30.12.2025 feragatnamesiyle aşıldı; 30.06.2026'da ihlal bildirilmedi. Cari oran 30.06.2026: 0,91. Kredi derecelendirmesi JCR Avrasya AA+(tr) ulusal / BB uluslararası, Durağan görünüm, satın alma sonrası korunuyor."
+  },
+  "growthOutlook": {
+    "summary": "Çekirdek akrilik elyaf işi (gelirin ~%82'si, FY2025 FAVÖK marjı ~%22,8) olgun ve yapısal talep/arz-fazlası baskısı altında. Şirket sermayeyi (CAPEX'in %29,6'sı) daha yüksek potansiyelli İleri Malzemeler (karbon elyaf + havacılık kompoziti) segmentine yönlendiriyor; bu segmentin düzeltilmiş FAVÖK marjı FY2025'teki kısmi dönemde %14,4'ten H1 2026'daki ilk tam dönemde %30,2'ye yükseldi, ancak bu tek bir temiz veri noktası olup kalıcılığı kanıtlanmamıştır. 2026 yönetim beklentisi ~1 milyar USD ciro, %15-18 FAVÖK marjı, ~65 milyon USD (±10 milyon) yatırım (gerçekleşmemiş öngörü).",
+    "structuralOpportunities": [
+      "Havacılık/savunma sınıfı karbon elyaf ve kompozit parçalar (Aksa Carbon + Aksa Kompozit + Tunus yatırımı), endüstriyel sınıf karbon elyafı vuran Çin kaynaklı fiyat rekabetinden nispeten korunaklı olabilecek yüksek katma değerli bir niş.",
+      "Yüksek ihracat payı (~%64) TL devalüasyonuna karşı kısmi doğal gelir koruması sağlıyor.",
+      "Enerji segmentinin (kojenerasyon) FY2025 FAVÖK marjı (%17,5) çekirdek işe kıyasla istikrarlı bir tamamlayıcı gelir kalemi sunuyor."
+    ]
+  },
+  "structuralRisks": [
+    "Küresel akrilik elyafın tekstilde polyestere pay kaybetmesi ve Çin kaynaklı arz fazlasının fiyat/marj baskısı yaratması (gelirin ~%82'si bu segmentten).",
+    "Karbon elyafta Çin kapasitesinin 2020-2025 arasında ~3 katına çıkması ve endüstriyel sınıf fiyatların ~%64 düşmesi; Aksa'nın 125 milyon USD'lik büyüme bahsinin bu rekabetten ne ölçüde korunaklı olduğu doğrulanamadı.",
+    "Satın alma kaynaklı kaldıraç artışı ve Aksa Carbon kredilerindeki covenant riski.",
+    "Döviz borcu ağırlıklı yapı ve doğal korunma sonrası dahi ~7,8 milyar TL net döviz açığı.",
+    "Girdi/enerji maliyeti (ACN, petrokimya) ve jeopolitik talep dalgalanması (Orta Doğu).",
+    "Aile holdingi (Akkök/Dinçkök) kontrolü ~%66, halka açıklık ~%34 — azınlık pay sahibi etkisi sınırlı.",
+    "TMS 29 enflasyon muhasebesinin raporlanan kâr/nakit akışını dönemden döneme işaret değiştirecek kadar oynak hale getirmesi.",
+    "Tunus yatırımının (2028 hedefli, ~5 milyon USD) erken aşama yürütme riski."
+  ],
+  "missingData": [
+    {
+      "item": "2016-2020 net kâr ve işletme nakdi (birincil finansal tablo kaynağından)",
+      "blocksDecision": "2016-2020 payout oranı ve sürdürülebilirlik trendinin tam hesaplanmasını engelliyor; genel A/B/C/D kararını bloke etmiyor (2021-2025 ve temettü sürekliliği verisi karar için yeterli)",
+      "possibleSource": "KAP'ın eski dönem finansal rapor arşivi veya şirketin 2016-2020 faaliyet raporu PDF'leri (asset.aksa.com arşivi)"
+    },
+    {
+      "item": "İleri Malzemeler (karbon elyaf) segmentinin birden fazla tam döneme yayılan, tam konsolide marj verisi",
+      "blocksDecision": "Yeni segmentin kalıcı marj profilinin (H1 2026'daki %30,2 mi, yoksa FY2025'teki %14,4'e mi yakınsayacağı) güvenilir şekilde öngörülmesini engelliyor; bu nedenle kategori A'ya değil B'de kalıyor",
+      "possibleSource": "2026 tam yıl ve 2027 çeyreklik finansal tabloları, Not 3/4 segment raporlaması"
+    },
+    {
+      "item": "Şirketin ~2,8x net borç/FAVÖK ifadesinin kesin tanımı (net borç tarihi, FAVÖK dönemi, NCI dahil/hariç)",
+      "blocksDecision": "Bağımsız 3,70x hesabıyla mutabakat sağlanamadığından kaldıraç seviyesinin kesin büyüklüğü hakkında belirsizlik kalıyor; genel kararı bloke etmiyor ama Bölüm 11'deki izleme listesine giriyor",
+      "possibleSource": "Yatırımcı ilişkileri ile doğrudan iletişim veya daha ayrıntılı sunum/dipnot"
+    },
+    {
+      "item": "9 aylık 2026 finansal tabloları (birincil kaynak)",
+      "blocksDecision": "En güncel çeyreklik performansın (özellikle borç/covenant durumunun H1 2026'dan sonraki seyrinin) teyidini engelliyor; genel kararı bloke etmiyor çünkü H1 2026 ve FY2025 verisi zaten değerlendirmeye dahil",
+      "possibleSource": "KAP'ın 01.10-09.11.2026 penceresindeki 9 aylık finansal rapor bildirimi"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Aksa Akrilik Sermaye Temettü Bilgileri (şirket IR sayfası)",
+      "url": "https://www.aksa.com/yatirimci-iliskileri/hisse-verileri/sermaye-temettu-bilgileri",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak; ham HTML tablo bu oturumda doğrudan çekilip 2008-2025 kâr yılı satırları tek tek doğrulandı."
+    },
+    {
+      "name": "Aksa Akrilik 31.12.2025 konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2026/02/20/aksa-akrilik-1225-spk-gdc0wqxw.pdf",
+      "publishedDate": "2026-02-19",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Gelir tablosu, Not 4 (segment), nakit akış tablosu bu oturumda yeniden okundu (outputs/research-aksa-20261031/fy.txt)."
+    },
+    {
+      "name": "Aksa Akrilik 31.12.2024 konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2025/06/30/aksa-akrilik-1224-spk-0xw3sato.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Gelir tablosu ve segment notu bu oturumda yeniden okundu (fy2024.txt)."
+    },
+    {
+      "name": "Aksa Akrilik 31.12.2023 konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2025/07/22/aksa-akrilik-1223-spk2222-zs3w42ly.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Gelir tablosu ve Mısır iştiraki satışı dipnotu bu oturumda okundu (fy2023.txt)."
+    },
+    {
+      "name": "Aksa Akrilik 31.12.2022 konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2025/07/22/aksa-akrilik-31-12-2022-nruz01gc.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Gelir tablosu bu oturumda okundu (fy2022.txt)."
+    },
+    {
+      "name": "Aksa Akrilik 31.12.2021 konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2025/07/22/mali-tablolar-31-12-2021-5zqbfub3.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Gelir tablosu ve nakit akış tablosu bu oturumda okundu (fy2021.txt)."
+    },
+    {
+      "name": "Aksa Akrilik 30.06.2026 ara dönem özet konsolide finansal tablolar",
+      "url": "https://asset.aksa.com/media-data/docs/2026/08/13/aksa-akrilik-0626-spk-whmgbqeq.pdf",
+      "publishedDate": "2026-08-13",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Not 3 (segment) ve Not 5 (finansal borçlanmalar, vade/covenant) bu oturumda yeniden okundu (h1.txt)."
+    },
+    {
+      "name": "KAP 1581038 — 2026 kâr payı dağıtımına ilişkin kesinleşen bildirim",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1581038",
+      "publishedDate": "2026-03-31",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Şirketin kendi KAP bildirimi."
+    },
+    {
+      "name": "KAP 1667893 — Tunus üretim tesisi yatırımı özel durum açıklaması",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1667893",
+      "publishedDate": "2026-09-24",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Bu oturumda doğrudan okundu (tunisia.txt)."
+    },
+    {
+      "name": "KAP şirket profili 840 — Aksa Akrilik Kimya Sanayii A.Ş.",
+      "url": "https://www.kap.org.tr/tr/sirket-bilgileri/ozet/840-aksa-akrilik-kimya-sanayii-a-s",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Kimlik, sektör, bağımsız denetçi bilgisi."
+    },
+    {
+      "name": "Aksa Akrilik 2026 Haziran yatırımcı sunumu",
+      "url": "https://asset.aksa.com/media-data/docs/2026/09/17/finansal-sonuclar-sunumu-2026-haziran-mlp4xj3y.pdf",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Kapasite/ihracat/2026 beklentisi, JCR notu, net borç/FAVÖK ifadesi (presentation.txt)."
+    },
+    {
+      "name": "PwC Türkiye — Kâr Payı Stopaj Oranını %15'e Çıkartan Cumhurbaşkanı Kararı",
+      "url": "https://www.pwc.com.tr/tr/hizmetlerimiz/vergi/bultenler/2024/kar-payi-stopaj-oranini-15e-cikartan-cumhurbaskani-karari.html",
+      "publishedDate": "2024-12-22",
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Stopaj oranı tarihçesi için bağımsız vergi danışmanlığı kaynağı; şirketten bağımsız."
+    },
+    {
+      "name": "Andersen Türkiye — 2021-87 Kar Dağıtım Stopajları Düşürüldü",
+      "url": "https://tr.andersen.com/tr/mevzuat-sirkulerleri/detay/2021-87-Kar-Dagitim-Stopajlari-Dusuruldu/12/326/0",
+      "publishedDate": "2021-12-22",
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "22.12.2021'den itibaren %10 stopaj oranı için bağımsız vergi danışmanlığı kaynağı."
+    },
+    {
+      "name": "Addleshaw Goddard — AG advises Aksa Akrilik on $125 million acquisition of Dow's stake in DowAksa joint venture",
+      "url": "https://www.addleshawgoddard.com/en/news/2025/ag-advises-aksa-akrilik-$125-million-acquisition-dows-stake-dowaksa-joint-venture/",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "İşlemde şirkete danışmanlık yapan hukuk firmasının kendi duyurusu; şirketten bağımsız ama işlemin tarafı sayılabilecek bir danışman."
+    },
+    {
+      "name": "Türkiye Today — Turkish Aksa Akrilik takes full control of carbon fiber venture in $125M deal with Dow",
+      "url": "https://www.turkiyetoday.com/business/turkish-aksa-akrilik-takes-full-control-of-carbon-fiber-venture-in-125m-deal-with-dow-3202323",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Bağımsız haber kaynağı, işlem detayı ve değerleme teyidi."
+    },
+    {
+      "name": "JEC Composites — DowAksa will continue its operations under the name Aksa Carbon",
+      "url": "https://www.jeccomposites.com/news/spotted-by-jec/dowaksa-will-continue-its-operations-under-the-name-aksa-carbon/",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Sektör yayını, isim değişikliği ve yönetim ataması teyidi."
+    },
+    {
+      "name": "Rota Borsa — Akkök Holding'den Aksa Akrilik'te (AKSA) hisse alış açıklaması",
+      "url": "https://rotaborsa.com/akkok-holdingden-aksa-akrilikte-aksa-hisse-alis-aciklamasi-13/",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Ortaklık payı güncellemesi için bağımsız finans haber kaynağı."
+    },
+    {
+      "name": "TÜİK TÜFE yıllık enflasyon oranları (2015-2025) — alomaliye.com derlemesi",
+      "url": "https://www.alomaliye.com/2025/07/04/yillara-gore-enflasyon-oranlari/",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Resmi TÜİK portalından birincil doğrulama bu oturumda yapılmadı; reel temettü hesaplamasında kullanılan ikincil derleme."
+    },
+    {
+      "name": "Yahoo Finance USD/TRY (TRY=X) günlük kapanış serisi",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TRY=X",
+      "publishedDate": null,
+      "accessedDate": "2026-10-31",
+      "independent": true,
+      "note": "USD bazlı temettü hesaplamasında kullanıldı (fx.json, önceki oturumda indirilmiş); TCMB resmi kuruyla bu oturumda çapraz kontrol edilmedi."
+    },
+    {
+      "name": "Üçüncü taraf akrilik/karbon elyaf pazar araştırması özetleri (S&P Global, Mordor Intelligence, China Carbon Fiber 2026 vb., WebSearch özetleri)",
+      "url": "https://www.carbonfibermaterial.com/top-10-global-carbon-fiber-manufacturers-2025-industry-analysis/",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Birincil pazar raporları satın alınıp okunmadı; WebSearch'ün özetlediği ikincil veriler, gösterge niteliğinde kabul edilmelidir."
+    }
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "PARTIAL / NEEDS_REVIEW — Birincil kaynaklardan (şirketin kendi finansal tabloları, KAP, IR sayfası) geniş çapta doğrulanmış veri içerir ve önceki araştırmanın stopaj oranı hatasını düzeltmiştir; ancak 2016-2020 net kâr/nakit akışı birincil kaynaktan doğrulanamadı, İleri Malzemeler segmentinin tam konsolide marj geçmişi bir yarı yıldan ibarettir, şirketin kendi net borç/FAVÖK ifadesiyle bağımsız hesap mutabık kılınamadı ve bu inceleme aynı ajan tarafından yapılmış olup bağımsız bir ikinci incelemeden geçmemiştir."
+}

@@ -1,0 +1,173 @@
+{
+  "symbol": "FROTO",
+  "companyName": "Ford Otomotiv Sanayi A.Ş. (Ford Otosan)",
+  "category": "B",
+  "rationale": "Yaklasik 20 yillik kesintisiz nakit temettu gecmisi (2020 pandemi yilinda bile tam kesinti yok), KAP'a bildirilmis asgari %50 dagitim politikasi (12.03.2026 guncellemesi), ihracat agirlikli/Euro bazli dogal hedge potansiyeli ve Ford'un Avrupa ticari arac stratejisinde somut/buyuyen bir uretim rolu gibi gercek olumlu kanitlar mevcut; ancak iki yil art arda net kar gerilemesi (2023 zirvesi 49,1 milyar TL -> 2025 ~34,0 milyar TL), net borcun 2020-2024 arasinda hizli artisi (yaklasik sifirdan ~101,4 milyar TL'ye, 2025'te kismi gerileme ile ~99,2 milyar TL), 2025 kar yili icin kaba hesapla %90-100 araligina isaret eden ama KAP birincil tablosuyla teyit edilemeyen payout orani ve 2021 CAPEX/CFO serisinin eksikligi nedeniyle FCF bazli surdurulebilirlik bu oturumda hesaplanamadi. Yuksek gecmis verim veya tek yillik kar/borc kotulesmesi tek basina kategori belirlemiyor; eksik veri de otomatik olumsuz degil. Net sonuc: cekirdek (A) icin gerekli FCF/payout teyidi eksik, uygun olmayan (C) icin gerekli yapisal bozulma kaniti yok -> kosullu aday (B), Bolum 9'daki eksiklerin birincil kaynaklarla kapatilmasi onerilir.",
+  "supportingEvidence": [
+    {
+      "point": "Yaklasik 20 yildir kesintisiz nakit temettu, 2020 pandemi yilinda bile taksit sayisi azalsa da tam kesinti yasanmamis.",
+      "source": "borsacoo.com/firma/FROTO/temettuler ve getmidas.com temettu tablosu (ikincil, capraz kontrol edilmis); X/finanscibaba paylasimi (2026'da '2018'den bu yana yilda 2 kez, sadece 2020'de 1 kez' notu)"
+    },
+    {
+      "point": "Guncellenen resmi temettu politikasi: dagitilabilir net donem karinin en az %50'si dagitilacak (nakit veya bedelsiz), buyuk yatirim/ciddi ekonomik durgunlukta istisna uygulanabilir.",
+      "source": "tr.investing.com - 'Ford Otosan temettu dagitim politikasini guncelledi' haberi, KAP duyurusuna (12.03.2026) dayanarak"
+    },
+    {
+      "point": "Gelirin 2023-2025 arasinda %70-86 araliginda ihracata (agirlikli Avrupa) bagli olmasi; Ford'un Avrupa ticari arac satislarinin buyuk kismini, binek arac satislarinin ~%47'sini Ford Otosan uretiyor.",
+      "source": "fintables.com uzerinden barindirilan Ford Otosan 2026/3 analist toplantisi notlari; Ford Otosan 2025 Faaliyet Raporu ozeti (foreks PDF)"
+    },
+    {
+      "point": "Sirketin net doviz pozisyonu/ozkaynak oranini dar bir bantta (~%10) tuttugu ve ozel anlasmalar nedeniyle doviz kuru riskinin sinirli oldugu yonunde aracı kurum yorumlari; ihracat gelirinin Euro bazli olmasi dogal hedge potansiyeli yaratiyor.",
+      "source": "vkyanaliz.com / ahlatciyatirim.com.tr sirket raporlari (ikincil, aracı kurum analizi)"
+    },
+    {
+      "point": "2018-2019 kur soku ve 2020 pandemi doneminde sirketin bilanco disiplinini buyuk olcude koruyarak gectigi (net borc 2020 yil sonunda hala yaklasik sifir/net nakit), temettu odemesinin tamamen kesilmedigi.",
+      "source": "Cesitli aracı kurum ceyreklik raporlari (vkyanaliz.com, tuncaytursucu.com) + borsacoo/getmidas temettu tablosu capraz okuma"
+    },
+    {
+      "point": "Elektrikli araca gecis icin somut adim: Golcuk'te E-Transit uretimi 2022'de basladi, 2025'te uretim miksinde EV payi ~%9,8'e yukseldi (yillik ~%11 artis).",
+      "source": "fintables.com uzerinden Ford Otosan analist toplantisi notlari ve ilgili haber ozetleri"
+    }
+  ],
+  "counterEvidence": [
+    {
+      "point": "Net kar iki yil art arda gerilemis: 2023 ~49.056 mn TL -> 2024 ~38.800-38.860 mn TL (-%45 bir kaynakta) -> 2025 ~33.980-33.990 mn TL (-%33 yoy); dongusel mi yapisal mi oldugu bu oturumda ayristirilmadi.",
+      "source": "Ford Otosan IR 'Ozet Tablolar' (2023 icin birincil) + cesitli aracı kurum/haber kaynagi (2024-2025 icin ikincil, birbirini teyit eden)"
+    },
+    {
+      "point": "Net borc 2020 yil sonunda ~sifirdan 2024 yil sonunda ~101,4 milyar TL'ye hizla yukselmis; 2025'te ~99,2 milyar TL'ye kismi gerileme var ama coklu yillik dusus trendi henuz kanitlanmadi.",
+      "source": "Cesitli aracı kurum ceyreklik bilanco analizleri (vkyanaliz.com, paraborsa.net) - ikincil, KAP finansal sonuc bultenine dayali"
+    },
+    {
+      "point": "2025 kar yili icin kaba toplama (Aralik 2025 ara taksit + Mart 2026 final taksit) toplam nakit temettuyu net kara (~34,0 milyar TL) cok yakin, yani payout orani %90-100 araligina isaret ediyor; bu, hangi taksitin hangi kar yilina resmi olarak atandigi KAP birincil tablosuyla teyit edilmeden guvenilir degil ve politikanin kendi asgari %50 taahhudunun belirgin uzerinde.",
+      "source": "tr.investing.com temettu haberi + borsacoo/getmidas temettu tablosu - kendi hesaplama, birincil KAP kar payi dagitim tablosuyla teyit edilmedi"
+    },
+    {
+      "point": "2025 net borc/FAVOK orani icin kaynaklar arasinda celiski (1,49x vs 1,85x bildirilmis); kendi hesabim (~99.194/~52.180) ~1,90x'e daha yakin cikiyor.",
+      "source": "Iki farkli arama sonucu/aracı kurum ozeti (birbiriyle celisen rakamlar); kesin KAP/sirket FY2025 finansal sonuc bulteni bu oturumda dogrudan acilip okunmadi"
+    },
+    {
+      "point": "Sirketin kendi Ar-Ge/marka gucu sinirli; urun/teknoloji gelistirme buyuk olcude Ford'un global platformlarina bagli - bagimsiz bir rekabet avantaji degil, sozlesmesel/ortaklik temelli.",
+      "source": "Genel sektor bilgisi + Ford Otosan/Ford Motor Company ortaklik yapisi (Wikipedia, sirketin kendi 'Hakkimizda' sayfasi) - dogrudan ifade eden tek bir kaynak bulunmadi, cikarim"
+    },
+    {
+      "point": "2026'da tamamlanan Koc Finansman (BDDK lisansli finansman sirketi) devralmasi, konsolide bilancoya yeni kaldiracli bir finansal hizmetler segmenti ekliyor; bu segmentin gelecekteki net borc/FAVOK okumasina etkisi bu rapor kesim tarihinde henuz test edilmemis.",
+      "source": "bloomberght.com, motor1.com, steelradar.com, ekonomigazetesi.com, borsagundem.com.tr - birden fazla bagimsiz haber kaynagi, tutarli"
+    }
+  ],
+  "dividendHistory": [
+    {"paymentYear": 2016, "profitYear": 2015, "paid": true, "grossPerShareTRY": "1.00", "netPerShareTRY": "0.85", "totalCashTRY": "350910000", "exDate": null, "paymentDate": "2016-04-04", "installments": "1/2", "notes": "Eski pay nominal bazinda (2025 oncesi, 10x bedelsiz artisi oncesi). Birincil KAP bildirimiyle bu oturumda tek tek teyit edilmedi, ikincil toplayici kaynaklarca raporlandi."},
+    {"paymentYear": 2016, "profitYear": 2015, "paid": true, "grossPerShareTRY": "0.89", "netPerShareTRY": "0.7565", "totalCashTRY": "312309900", "exDate": null, "paymentDate": "2016-11-22", "installments": "2/2", "notes": "Ayni kaynak/guvenilirlik notu."},
+    {"paymentYear": 2017, "profitYear": 2016, "paid": true, "grossPerShareTRY": "1.14", "netPerShareTRY": "0.969", "totalCashTRY": "400037400", "exDate": null, "paymentDate": "2017-04-03", "installments": "1/2", "notes": "Ikincil toplayici kaynak, birincil KAP teyidi bu oturumda yapilmadi."},
+    {"paymentYear": 2017, "profitYear": 2016, "paid": true, "grossPerShareTRY": "1.11", "netPerShareTRY": "0.9435", "totalCashTRY": "389510100", "exDate": null, "paymentDate": "2017-10-31", "installments": "2/2", "notes": "Ayni kaynak/guvenilirlik notu."},
+    {"paymentYear": 2018, "profitYear": 2017, "paid": true, "grossPerShareTRY": "2.28", "netPerShareTRY": "1.938", "totalCashTRY": "800074800", "exDate": null, "paymentDate": "2018-04-02", "installments": "1/2", "notes": "Ikincil toplayici kaynak, birincil KAP teyidi bu oturumda yapilmadi."},
+    {"paymentYear": 2018, "profitYear": 2017, "paid": true, "grossPerShareTRY": "1.15", "netPerShareTRY": "0.9775", "totalCashTRY": "403546500", "exDate": null, "paymentDate": "2018-11-20", "installments": "2/2", "notes": "Ayni kaynak/guvenilirlik notu."},
+    {"paymentYear": 2019, "profitYear": 2018, "paid": true, "grossPerShareTRY": "2.43", "netPerShareTRY": "2.0655", "totalCashTRY": "852711300", "exDate": null, "paymentDate": "2019-04-01", "installments": "1/2", "notes": "Ikincil toplayici kaynak, birincil KAP teyidi bu oturumda yapilmadi."},
+    {"paymentYear": 2019, "profitYear": 2018, "paid": true, "grossPerShareTRY": "1.23", "netPerShareTRY": "1.0455", "totalCashTRY": "431619300", "exDate": null, "paymentDate": "2019-11-19", "installments": "2/2", "notes": "Ayni kaynak/guvenilirlik notu."},
+    {"paymentYear": 2020, "profitYear": 2019, "paid": true, "grossPerShareTRY": "3.12", "netPerShareTRY": "2.652", "totalCashTRY": "1094839200", "exDate": null, "paymentDate": "2020-03-23", "installments": "1/1 (planli 2. taksit COVID-19 sonrasi bu donemde dagitilmadi)", "notes": "2019 kar yilindan tek taksit; pandemi nedeniyle ihtiyatlilik olarak yorumlandi, resmi KAP gerekce metni bu oturumda görülmedi."},
+    {"paymentYear": 2021, "profitYear": 2020, "paid": true, "grossPerShareTRY": null, "netPerShareTRY": null, "totalCashTRY": null, "exDate": null, "paymentDate": "2021-03-24", "installments": null, "notes": "2020 (pandemi yili) karindan, azalmis/tek taksit oldugu belirtiliyor ama kesin brut/net/toplam tutar bu oturumda tek bir guvenilir kaynakla teyit edilemedi (MISSING_DATA)."},
+    {"paymentYear": 2021, "profitYear": 2021, "paid": true, "grossPerShareTRY": "3.77", "netPerShareTRY": "3.39", "totalCashTRY": null, "exDate": null, "paymentDate": "2021-11-19", "installments": null, "notes": "getmidas.com temettu tablosu."},
+    {"paymentYear": 2022, "profitYear": 2021, "paid": true, "grossPerShareTRY": "12.99", "netPerShareTRY": "11.69", "totalCashTRY": null, "exDate": null, "paymentDate": "2022-03-24", "installments": null, "notes": "getmidas.com temettu tablosu."},
+    {"paymentYear": 2022, "profitYear": 2022, "paid": true, "grossPerShareTRY": "5.71", "netPerShareTRY": "5.14", "totalCashTRY": "2000187000", "exDate": "2022-12-02", "paymentDate": "2022-11-30", "installments": "ara", "notes": "Brüt oran %570 (eski pay nominal bazinda)."},
+    {"paymentYear": 2023, "profitYear": 2022, "paid": true, "grossPerShareTRY": "14.25", "netPerShareTRY": "12.825", "totalCashTRY": "5000467500", "exDate": "2023-03-15", "paymentDate": "2023-03-13", "installments": "final", "notes": "2022 net donem kari 18.613.943.141 TL uzerinden, yasal yedek 498.292.200 TL ayrildiktan sonra; gross oran %1425."},
+    {"paymentYear": 2023, "profitYear": 2023, "paid": true, "grossPerShareTRY": "29.80", "netPerShareTRY": "26.82", "totalCashTRY": null, "exDate": null, "paymentDate": "2023-10-30", "installments": "ara", "notes": "borsacoo.com/getmidas.com capraz kontrol."},
+    {"paymentYear": 2024, "profitYear": 2023, "paid": true, "grossPerShareTRY": "43.30", "netPerShareTRY": "38.97", "totalCashTRY": null, "exDate": "2024-04-08", "paymentDate": "2024-04-16", "installments": "final", "notes": "Investulator ic referans dosyasinda KAP bildirim 1256107 ile dogrulanmis olarak isaretli (bu oturumda yeniden acilip teyit edilmedi)."},
+    {"paymentYear": 2024, "profitYear": 2024, "paid": true, "grossPerShareTRY": "14.25", "netPerShareTRY": "12.825", "totalCashTRY": null, "exDate": null, "paymentDate": "2024-11-26", "installments": "ara", "notes": "borsacoo.com/getmidas.com capraz kontrol."},
+    {"paymentYear": 2025, "profitYear": 2024, "paid": true, "grossPerShareTRY": "17.10", "netPerShareTRY": "14.535", "totalCashTRY": null, "exDate": "2025-04-03", "paymentDate": "2025-04-07", "installments": "final", "notes": "Investulator ic referans dosyasinda KAP bildirim 1411957 ile dogrulanmis olarak isaretli (bu oturumda yeniden acilip teyit edilmedi)."},
+    {"paymentYear": 2025, "profitYear": 2025, "paid": true, "grossPerShareTRY": "6.05", "netPerShareTRY": "5.1425", "totalCashTRY": null, "exDate": "2025-12-03", "paymentDate": "2025-12-05", "installments": "ara", "notes": "Yeni (10x bedelsiz sonrasi, Mayis 2025) pay bazinda."},
+    {"paymentYear": 2026, "profitYear": 2025, "paid": true, "grossPerShareTRY": "3.64", "netPerShareTRY": "3.094", "totalCashTRY": "12770000000", "exDate": "2026-03-16", "paymentDate": "2026-03-18", "installments": "final", "notes": "Investulator ic referans dosyasinda KAP bildirim 1571600 ile dogrulanmis olarak isaretli; 2025 net donem kari ~33.98-33.99 milyar TL uzerinden; toplam tutar GK onayina sunulan brut rakam, yaklasik."},
+    {"paymentYear": 2026, "profitYear": 2026, "paid": false, "grossPerShareTRY": "3.07", "netPerShareTRY": "2.6095", "totalCashTRY": null, "exDate": "2026-11-26", "paymentDate": "2026-11-30", "installments": "ara (planli)", "notes": "Kesim tarihinde (2026-11-10) henuz odenmemis; gecmis performansa/backtest'e dahil edilmemelidir."}
+  ],
+  "sustainability": {
+    "period": "2021-2025",
+    "payoutRatioRange": "Guvenilir sekilde hesaplanamadi; 2022 kar yili icin kaba hesap ~%38, 2025 kar yili icin kaba hesap ~%90-100 araligi (politika asgari %50'nin belirgin uzerinde) - ikisi de KAP birincil kar payi dagitim tablosuyla teyit edilmedi, NEEDS_REVIEW",
+    "cfoVsDividend": "CFO (faaliyetlerden nakit akisi) serisi 2021-2025 icin tam bulunamadi; sadece FAVOK ve net kar bulundu, bu nedenle temettu/FCF karsilama orani hesaplanamadi (MISSING_DATA)",
+    "notes": "Net kar 2021: 8.801 mn TL, 2022: 27.730 mn TL, 2023: 49.056 mn TL, 2024: ~38.800-38.860 mn TL, 2025: ~33.980-33.990 mn TL. FAVOK 2021: ~10.492 mn TL (bir kaynakta 9.464 mn TL), 2022: 34.630 mn TL, 2023: 50.730 mn TL, 2024: ~39.870 mn TL, 2025: ~52.180 mn TL. 2021 gerceklesen CAPEX bulunamadi, sadece 450-500 milyon Euro'luk onceden acıklanmis beklenti rakami bulundu (MISSING_DATA, Investulator'in onceki arastirmasiyla ayni sonuc)."
+  },
+  "financialResilience": {
+    "netDebtToEbitda": "2021: ~0.47x (4.882/10.492), 2022: ~1.32x (45.813/34.630), 2023: ~1.62x (82.237/50.730), 2024: ~2.38-2.54x (kaynaga gore), 2025: ~1.85-1.90x (bir kaynak 1.49x bildiriyor, celiski var) - kendi hesabim 99.194/52.180 ~1.90x",
+    "fxDebtShare": "Kesin yuzde bulunamadi (MISSING_DATA); aracı kurum yorumlarinda sirketin net doviz pozisyonu/ozkaynak oranini ~%10 bandinda tuttugu ve ihracat gelirinin Euro bazli olmasi nedeniyle dogal hedge'e sahip oldugu belirtiliyor",
+    "notes": "Net borc 2020 yil sonunda ~sifir/hafif net nakit (-43 mn TL) iken 2021-2024 arasinda hizla artmis (4.882 -> 45.813 -> 82.237 -> ~101.400 mn TL), 2025'te ~99.194 mn TL'ye kismi gerilemis. 2026'da tamamlanan Koc Finansman (BDDK lisansli finansman sirketi) devralmasina kadar ayri bir finansman/bayi kredisi istiraki yoktu; bu nedenle 2021-2025 net borc rakamlari saf sanayi/isletme borcudur. 2026 sonrasi bu ayrimin konsolide tabloya etkisi bu rapor kesim tarihinde test edilmemistir."
+  },
+  "growthOutlook": {
+    "summary": "Ford Otosan, Ford Motor Company'nin Avrupa ticari arac uretim/ihracat stratejisinde merkezi ve buyuyen bir role sahip (Ford'un Avrupa ticari arac satislarinin buyuk kismi, binek arac satislarinin ~%47'si Ford Otosan uretimi). 2021-2025 arasinda ~3 milyar Euro (2,5 milyar Turkiye + 0,5 milyar Romanya) yatirim yapildigi acıklanmis, Golcuk'te E-Transit (elektrikli) uretimi 2022'de baslamis, 2025'te uretim miksinde EV payi ~%9,8'e yukselmis. Yurt ici pazarda ticari arac segmentinde pazar lideri (~%28,7 pay).",
+    "structuralOpportunities": [
+      "Ford'un global EV/bagli arac platformlarina Turkiye'den erisim ve ihracat mandati",
+      "Ticari arac segmentinde yurt ici pazar liderligi",
+      "Ihracat agirlikli/Euro bazli gelir yapisinin TL zayiflamasina karsi dogal hedge potansiyeli",
+      "Koc Finansman devralmasiyla (2026) bayi/musteri finansmaninda yeni bir entegre gelir/hizmet katmani"
+    ]
+  },
+  "structuralRisks": [
+    "Elektrikli araca gecis hizinin (AB duzenlemeleri, talep belirsizligi) planlanandan yavas veya hizli gitmesi riski",
+    "Gelirin %70-86 araliginda ihracata (agirlikli Avrupa) bagli olmasi nedeniyle Avrupa otomotiv talebi dongusellugune yuksek maruziyet",
+    "Ford Motor Company'nin global strateji degisikligi (Avrupa'dan cekilme, uretim ussunu degistirme, lisans/know-how sozlesmesini yeniden muzakere etme) riski",
+    "Sirketin bagimsiz Ar-Ge/marka gucunun sinirli olmasi, Ford'a sozlesmesel/ortaklik temelli bagimliligin surmesi",
+    "Koc Finansman entegrasyon riski ve yeni finansman segmentinin gelecekteki konsolide net borc/FAVOK okumasina etkisinin henuz belirsiz olmasi",
+    "TL'nin uzun donemli deger kaybi ve TMS 29 enflasyon muhasebesinin nominal TL bazli kar/temettu buyumesinin reel anlamini karmasiklastirmasi",
+    "Dagitim politikasinin 'buyuk yatirim/ciddi ekonomik durgunlukta istisna' maddesi nedeniyle kriz doneminde temettunun yeniden azalma/kesinti riski (2020'de gorulen)"
+  ],
+  "missingData": [
+    {
+      "item": "2021 gerceklesen (denetlenmis) CAPEX rakami",
+      "blocksDecision": "2021-2025 FCF ve temettu/FCF karsilama hesaplamasini tamamen engelliyor",
+      "possibleSource": "Ford Otosan 2021 Faaliyet Raporu nakit akis tablosu / KAP finansal tablo dipnotu"
+    },
+    {
+      "item": "2021-2025 CFO (faaliyetlerden nakit akisi) tam serisi",
+      "blocksDecision": "FCF ve temettu karsilama oraninin dogrudan hesaplanmasini engelliyor",
+      "possibleSource": "KAP XBRL finansal tablolar / sirketin kendi faaliyet raporlari"
+    },
+    {
+      "item": "2025 kar yili icin KAP birincil kar payi dagitim tablosu (net donem kari / yasal yedek / net dagitilabilir kar / I. ve II. temettu ayrimi)",
+      "blocksDecision": "Payout oraninin kesin hesaplanmasini engelliyor; mevcut kaba hesap supheli derecede yuksek (%90-100) cikiyor",
+      "possibleSource": "kap.org.tr - Ford Otomotiv Sanayi A.Ş. kar payi dagitim bildirimi (2026 Mart)"
+    },
+    {
+      "item": "2016-2022 donemi temettu taksitlerinin KAP birincil bildirimiyle tek tek teyidi (hak kullanim/odeme tarihi ayrimi, kesin brut-net)",
+      "blocksDecision": "Erken donem temettu serisinin guvenilirlik derecesini orta seviyede tutuyor",
+      "possibleSource": "kap.org.tr arsivi, Ford Otomotiv Sanayi A.Ş. bildirim gecmisi"
+    },
+    {
+      "item": "2025 net borc/FAVOK oraninin kesin degeri (kaynaklar arasi 1.49x vs 1.85x celiskisi)",
+      "blocksDecision": "Kaldirac trendinin kesinligini zayiflatiyor",
+      "possibleSource": "Ford Otosan FY2025 finansal sonuc bulteni (birincil)"
+    },
+    {
+      "item": "Doviz borcu dagiliminin kesin yuzdesi",
+      "blocksDecision": "Finansal dayaniklilik degerlendirmesini tam sayisal temele oturtmayi engelliyor",
+      "possibleSource": "KAP finansal tablo doviz pozisyonu dipnotu"
+    },
+    {
+      "item": "Craiova (Romanya) tesisinin Ford Otosan'a mi yoksa dogrudan Ford Motor Company'ye mi ait oldugu",
+      "blocksDecision": "Cografi kapasite/risk haritasini tam netlestirmiyor",
+      "possibleSource": "Ford Otosan faaliyet raporu bagli ortaklik/istirak listesi"
+    },
+    {
+      "item": "Kullanicinin gorev taniminda belirtilen eski temettu uyumsuzlugunun cozulup cozulmedigi",
+      "blocksDecision": "Investulator ic referans dosyasindaki onceki celiski kaydiyla bu raporun bulgularinin birebir eslestirilmesini engelliyor",
+      "possibleSource": "Investulator onceki oturum notlari + KAP birincil bildirimler"
+    }
+  ],
+  "sources": [
+    {"name": "Ford Otosan Yatirimci Iliskileri - Ozet Tablolar", "url": "https://www.fordotosan.com.tr/tr/yatirimcilar/finansal-raporlar/ozet-tablolar", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Birincil, sirketin kendi yayini; 2021-2023 gelir/net kar/FAVOK/nakit verisi"},
+    {"name": "Ford Otosan Yatirimci Iliskileri - Kar Payi Dagitimi", "url": "https://www.fordotosan.com.tr/tr/yatirimcilar/hisse-bilgileri/kar-payi-dagitimi", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Birincil, sirketin kendi yayini; dagitim politikasi metni ve 1997-2023 toplu tablo"},
+    {"name": "fintables.com - FROTO sermaye artirimlari ve temettuler", "url": "https://fintables.com/sirketler/FROTO/sermaye-artirimlari-temettuler", "publishedDate": null, "accessedDate": "2026-11-10", "independent": false, "note": "Ikincil veri toplayici; dogrudan erisim 403 ile engellendi, arama ozetinden alintilandi"},
+    {"name": "borsacoo.com - FROTO temettuler", "url": "https://borsacoo.com/firma/FROTO/temettuler", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil veri toplayici; 2021-2026 temettu tablosu"},
+    {"name": "getmidas.com - FROTO temettu", "url": "https://www.getmidas.com/canli-borsa/froto-hisse/temettu/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil aracı kurum veri toplayicisi; 2021-2026 temettu tablosu, borsacoo ile capraz kontrol"},
+    {"name": "tr.investing.com - Ford Otosan temettu dagitim politikasini guncelledi", "url": "https://tr.investing.com/news/global-filings/ford-otosan-temettu-dagtm-politikasn-guncelledi-93CH-3806373", "publishedDate": "2026-03-12", "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil haber, KAP duyurusuna dayaniyor; guncellenen dagitim politikasi metni"},
+    {"name": "tr.investing.com - Ford Otosan 2021 yatirim beklentisi haberi", "url": "https://tr.investing.com/news/markets/ford-otosan-2021-yl-yatrmlarnn-450--500-milyon-euro-olmasn-bekliyor-2130810", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil haber; 2021 CAPEX icin sadece BEKLENTI rakami, gerceklesen degil"},
+    {"name": "Wikipedia - Ford Otosan", "url": "https://en.wikipedia.org/wiki/Ford_Otosan", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil genel referans; ortaklik yapisi (%41 Ford / %41 Koc / %18 halka acik) teyidi"},
+    {"name": "bloomberght.com - Koc Finansman Ford Otosan'a satiliyor", "url": "https://www.bloomberght.com/koc-finansman-ford-otosan-a-satiliyor-3771801", "publishedDate": "2026-03-13", "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil haber; Koc Finansman devralma anlasmasi"},
+    {"name": "motor1.com - Ford Otosan Koc Finans'i bunyesine katti", "url": "https://tr.motor1.com/news/800393/ford-otosan-koc-finansi-satin-aldi/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil haber; devralma detaylari, marka stratejisi (Ford Finans)"},
+    {"name": "steelradar.com - Ford Otosan Koc Finansman devralma anlasmasi", "url": "https://www.steelradar.com/en/ford-otosan-koc-finansmanin-tum-hisselerini-devralmak-icin-anlasma-imzaladi/", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil haber; devralma oncesi ortaklik yapisi (Koc Holding %50, Arcelik %47, diger %3)"},
+    {"name": "fintables.com (foreks PDF barindirma) - Ford Otosan 2026/3 analist toplantisi notlari", "url": "https://storage.fintables.com/media/uploads/froto-analist-toplantisi-notlari-2026-3.pdf", "publishedDate": "2026-03", "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil (sirket sunumunun aracı kurum tarafindan barindirilmasi); pazar payi, ihracat, kapasite verileri"},
+    {"name": "news-content.foreks.com - Ford Otosan 2025 Faaliyet Raporu (KAP ek dosyasi)", "url": "https://news-content.foreks.com/attachments/kap/4028328d9c4c12ca019c72686eb971f9.pdf", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "KAP ekinde barindirilan sirket faaliyet raporu; dogrudan tam metin bu oturumda acilip okunmadi, arama ozetinden alintilandi"},
+    {"name": "Cesitli aracı kurum ceyreklik bilanco analizleri (vkyanaliz, paraborsa, isyatirim, qnbinvest, ahlatciyatirim)", "url": "https://www.vkyanaliz.com/rap/FROTO_2026-10-02_127243.pdf", "publishedDate": null, "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil aracı kurum raporlari; net borc, FAVOK, kapasite, pazar payi rakamlari icin coklu kaynak capraz kontrolu"},
+    {"name": "X (Finansci Baba) - FROTO 2026 temettu karari paylasimi", "url": "https://x.com/finanscibaba/status/2023453103891083269", "publishedDate": "2026", "accessedDate": "2026-11-10", "independent": true, "note": "Ikincil sosyal medya kaynagi; '2018'den bu yana yilda 2 kez, sadece 2020'de 1 kez' temettu sikligi notu icin destekleyici"},
+    {"name": "Investulator ic referans - froto-analysis-reports.json", "url": "investulator-fe/src/data/research/froto-analysis-reports.json", "publishedDate": "2026-11-07", "accessedDate": "2026-11-10", "independent": false, "note": "BAGIMSIZ DOGRULAMA SAYILMAZ; yalnizca baslangic/karsilastirma referansi, bu oturumda yeniden acılip teyit edilmedi"},
+    {"name": "Investulator ic referans - froto-approximate-history.json", "url": "investulator-fe/src/data/research/froto-approximate-history.json", "publishedDate": "2026-11-02", "accessedDate": "2026-11-10", "independent": false, "note": "BAGIMSIZ DOGRULAMA SAYILMAZ; KAP bildirim ID'leri (1256107, 1411957, 1571600) bu oturumda yeniden acılip teyit edilmedi, sadece var olan teyit iddiasi not edildi"}
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "NEEDS_REVIEW - temettu surekliligi ve genel buyukluk mertebeleri (gelir, kar, net borc) orta-yuksek guvenle cok kaynakli capraz dogrulandi; CAPEX/CFO/FCF, kesin payout orani ve 2025 net borc/FAVOK'un tam degeri dogrulanamadi. Bagimsiz ikinci inceleme (farkli oturum/ajan, mumkunse dogrudan KAP XBRL erisimiyle) onerilir; ayni ajanin kendi incelemesi bagimsiz denetim sayilmaz."
+}

@@ -1,0 +1,195 @@
+{
+  "auditAsOf": "2026-11-10",
+  "scope": ["TUPRS", "DOAS", "FROTO", "TOASO", "TTRAK", "ISMEN", "YGGYO", "AKSA", "AKMGY", "PAGYO"],
+  "auditedResearch": "docs/dividend-screening-20261110/",
+  "auditMethod": "5 parallel independent agent sessions, 2 companies each, separate from the agents that wrote the original reports; mined already-downloaded primary source files first, then web (KAP/MKK/IR/secondary) verification",
+  "constraints": [
+    "docs/dividend-screening-20261110/ files not modified",
+    "no price targets or buy/sell recommendations produced",
+    "existing app BLOCKED/NEEDS_REVIEW decisions not changed",
+    "this audit itself is a single additional round, not independently re-reviewed by a third session"
+  ],
+  "overallResult": {
+    "strategicFitChanges": "none — all 10 companies remain Kosullu Aday (B); none elevated to Cekirdek Aday (A), none downgraded to Uygun Degil (C), none D",
+    "evidenceReliabilityUpgraded": ["TOASO", "TTRAK", "AKSA", "ISMEN", "AKMGY"],
+    "evidenceReliabilityUnchangedOrNuanced": ["TUPRS", "FROTO", "DOAS", "YGGYO", "PAGYO"],
+    "dataAlreadyDownloadedButUnusedHypothesis": {
+      "stronglyConfirmed": ["TOASO", "TTRAK", "AKMGY"],
+      "confirmedWithCorrection": ["DOAS", "TUPRS"],
+      "partiallyConfirmed": ["AKSA"],
+      "notApplicable_noPrimarySourceEverDownloaded": ["FROTO"]
+    }
+  },
+  "companies": {
+    "TUPRS": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "evidenceReliability": "bölüm bazlı: CFO=Yüksek, CAPEX=Düşük, temettü olgusu=Yüksek, temettü tam rakamları=Düşük-Orta; genel=Orta",
+      "evidenceReliabilityPrevious": "PARTIAL (blanket)",
+      "keyFindings": [
+        "CFO 2021-2025 series fully verified from primary source (y2021-y2025.txt), matches original report exactly",
+        "CAPEX 2021-2024 still unreliable — files were downloaded but PDF text extraction has column/row shift; not an access problem, a parsing problem",
+        "cyclicality numerically confirmed: CFO fell ~58-71% from 2023 to 2024 depending on calculation method"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": ["normalized CFO (excluding 2022 super-cycle) ≈28bn TL/year, much lower than 2022-2023 peak capacity"],
+      "unresolved": ["CAPEX 2021-2024 primary figures", "official dividend history PDF line-by-line verification", "debt FX/maturity composition", "real/USD growth series"]
+    },
+    "FROTO": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "evidenceReliability": "Düşük-Orta",
+      "evidenceReliabilityPrevious": "PARTIAL/NEEDS_REVIEW",
+      "keyFindings": [
+        "No primary financial statement PDFs were ever downloaded for FROTO in prior sessions (only price data) — the 'data not found' hypothesis for FROTO was NOT confirmed as 'already downloaded but unused'",
+        "Ford Otosan's own financial result PDFs are encrypted/compressed text streams, unreadable in this environment"
+      ],
+      "correctedErrors": [
+        "24.03.2021 dividend was reported as '~13 TL, unverified'; actual verified figure from company IR page is 6.42 TL/share, total 2,252,842,200 TL (~2x smaller than prior estimate)"
+      ],
+      "newRisksFound": ["third-party CFO/CAPEX series (investing.com) internally contradicts itself by ~24% (2024 CFO) and ~85% (2024 CAPEX) against other secondary sources"],
+      "unresolved": ["all CFO/CAPEX from primary source", "2021 actual CAPEX", "payout ratio vs KAP profit distribution table"]
+    },
+    "TOASO": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "should move from 'stronger B' toward 'mid/weak B' in COMPARISON.md's internal ranking based on new evidence",
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "Düşük-Orta",
+      "keyFindings": [
+        "FY2024-2025 cash flow statement was already in previously-downloaded out2025.txt and unread; FY2021-2022 found via newly downloaded Tofas 2022 Annual Report",
+        "leverage/cash-flow deterioration began in FY2024 (CFO -9.63bn, FCF -18.6bn TL), not in H1/9A2026 as original framing implied"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": [
+        "contingent consideration liability of 5.88bn TL tied to Stellantis Otomotiv Pazarlama acquisition, payable over 8 fiscal years at 77.5% share of excess free cash flow — not in original report"
+      ],
+      "unresolved": ["FY2023 CFO/CAPEX", "Koc Stellantis Finansman debt separation from manufacturing debt", "9A2026 CAPEX"]
+    },
+    "DOAS": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "remains weakest B, with strengthened negative rationale",
+      "evidenceReliability": "Düşük-Orta",
+      "evidenceReliabilityPrevious": "NEEDS_REVIEW",
+      "keyFindings": [
+        "original report confused CFO subtotal with final CFO total, systematically overstating FCF/dividend coverage",
+        "corrected data: 2022 FCF negative (TMS29-consistent basis), 2023 FCF covers only ~11% of dividend — not '1.5x-3x disciplined period'",
+        "doas-fr2024-eng.pdf discovered to be a Cloudflare bot-protection HTML page, not a real PDF — previously unreadable, never flagged as such"
+      ],
+      "correctedErrors": [
+        "2021-2023 CFO coverage ratios corrected downward significantly",
+        "2022 dividend amount discrepancy found (2.15bn claimed vs 1.935bn in primary cash flow statement, ~10% gap, unresolved)"
+      ],
+      "newRisksFound": ["deterioration pattern now dated to at least 2022, not just FY2025"],
+      "unresolved": ["FY2024 CFO from primary source", "FY2024 net profit/EBITDA conflict (7.5bn/16.74bn vs 9.94bn/24.15bn)", "FY2025 full-year CAPEX", "TUVTURK sale proceeds"]
+    },
+    "TTRAK": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "remains weak B, with strengthened negative rationale",
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "Düşük-Orta/PARTIAL",
+      "keyFindings": [
+        "primary CFO/CAPEX found in ttrak-2021-2024-core.cjs (company's own Annual Reports); secondary (TradingView/Investing.com) CFO figures were inflated by ~1.16x-2.4x",
+        "corrected data shows dividend exceeded FCF in 3 of 4 years (2021, 2023, 2024 — up to 314% in 2024)",
+        "08.11.2024 second dividend payment confirmed by KAP filing title to belong to FY2023 (previously an inference)"
+      ],
+      "correctedErrors": [
+        "2022 dividend/CFO ratio corrected from 30.8% to 72.8%",
+        "2023 dividend/CFO ratio corrected from 63.0% to 91.0%"
+      ],
+      "newRisksFound": [
+        "FY2025 zero dividend partly caused by 2021-2024's own aggressive distribution depleting the cash buffer, not purely an external shock",
+        "CNH Industrial's electrification roadmap (New Holland T4 Electric Power) confirmed as real and documented; TTRAK's own Turkey-specific response remains completely undocumented"
+      ],
+      "unresolved": ["FY2025 full-year CFO/CAPEX from primary source", "FY2023 EBITDA conflict (13.193bn vs 18.89bn)", "FY2024 net debt magnitude (3 sources disagree)", "related-party CNH royalty amounts"]
+    },
+    "ISMEN": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "PARTIAL",
+      "keyFindings": [
+        "ROE 21.38% TTM and TTM parent profit independently confirmed from company's own H1 2026 presentation",
+        "commission income partially disaggregated: Brokerage (57%) + Portfolio Management (41%) + Corporate Finance (2%), separate from interest/trading income",
+        "2025 154% payout partly explained: 5.1% of distributable base came from prior-year profit pool"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": ["H1 2026 nominal profit +1% YoY but inflation-adjusted (TAS29) real profit -35% YoY — concrete evidence of nominal/real divergence risk"],
+      "unresolved": ["true regulatory capital adequacy ratio (likely never public)", "~2.67bn TL gap between 8.5bn distributed and 5.825bn distributable base"]
+    },
+    "YGGYO": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "PARTIAL",
+      "keyFindings": [
+        "H1 2026 CFO's 47.8% (832.4M TL) is bank deposit interest income, not core rental cash flow — confirmed from primary cash flow statement",
+        "hotel operated at 50% capacity through 2025 (not fully closed); full closure only from Jan 2026 due to a regulatory mandate, not company choice",
+        "PROEN's main solar facilities already in production since Feb 2025, not 'under construction' as previously stated"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": [
+        "FY2024 net loss has THREE different figures across sources: -364M TL (own report's narrative text), -249.45M TL (same report's own P&L table), -523M TL (external secondary source) — a deeper internal inconsistency than previously known",
+        "PROEN's claimed 750M TL capital figure likely confused with YGGYO's own registered capital ceiling, unverified"
+      ],
+      "unresolved": ["FY2024 net loss true magnitude", "distributable profit base mechanism for FY2024", "FY2017 dividend amount", "09.07.2024 extraordinary payment nature", "NAD conflict"]
+    },
+    "AKSA": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "among the stronger B companies by evidence quality",
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "PARTIAL/NEEDS_REVIEW",
+      "keyFindings": [
+        "dividend table cross-checked line-by-line against Yahoo Finance with near-zero error — highest-confidence dividend data among the 10 companies",
+        "net debt/EBITDA 'irreconcilable' discrepancy (~2.8x company statement vs ~3.70x independent calc) resolved as a timing difference: 9A2026 figure is 2.84x",
+        "real/USD dividend growth absence independently confirmed via a second, CPI-independent method (direct USD comparison: $54.9M 2015 vs $50.5M 2025)"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": ["parent-company net profit fell -24.5% YoY in 9A2026 even as EBITDA grew +43.6% and leverage improved — financing cost/FX effect still eroding profitability"],
+      "unresolved": ["2016-2019 net profit/CFO/CAPEX", "2021-2022 CAPEX (OCR issues)", "9A2026 segment-level Advanced Materials margin durability"]
+    },
+    "AKMGY": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "among the stronger B companies by cash-flow evidence quality, but with newly broader legal risk",
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "PARTIAL",
+      "keyFindings": [
+        "the claim '2021-2025 CFO/CAPEX none verifiable from primary source' was REFUTED — a full 6-period primary CFO/CAPEX/FCF/payout series was produced from already-downloaded FY reports",
+        "payout-to-CFO ratio now calculable: FY2025 dividend paid exceeds CFO by 118.7%; FY2021 also exceeded CFO (122.1%)"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": [
+        "legal risk is broader than originally reported: at least 4 administrative lawsuits (2025/2596, 2025/2597, 2026/334, 2026/335) rejected at first instance, all on appeal — a second pair (2026/334-335) was not mentioned in the original report",
+        "share count (3,726,400,000) likely erroneous by ~100x based on strong indirect market-cap arithmetic; true figure likely ~37-55 million shares — unresolved, needs MKK confirmation",
+        "a 2026 gross dividend figure (14.21 TL) does not match the primary KAP filing (12.36 TL gross=net) — origin of the discrepancy unknown"
+      ],
+      "unresolved": ["share count/nominal value", "NAD conflict", "income statement rental/valuation gain breakdown", "relationship between the 4th lawsuit and the 2025/2503 case"]
+    },
+    "PAGYO": {
+      "strategicFit": "B",
+      "strategicFitChanged": false,
+      "relativeRankingNote": "among the stronger B companies on dividend continuity, but occupancy data quality downgraded",
+      "evidenceReliability": "Orta",
+      "evidenceReliabilityPrevious": "PARTIAL",
+      "keyFindings": [
+        "uninterrupted dividend history extended back to at least 2014 (12+ years, vs previously documented 10 years from 2016)",
+        "FY2021-2025 revenue/profit/CFO/CAPEX/FCF table spot-checked, no contradicting figures found"
+      ],
+      "correctedErrors": [],
+      "newRisksFound": [
+        "occupancy rate inconsistency confirmed AND deepened: appraisal report says 91% ('current'), FY2025's own Note 6 sensitivity table says 97-98% (for both 2025 and 2024), FY2024's own Note 6 says 95-96% for 2024 — three documents disagree on the same year",
+        "small unresolved share count discrepancy: 87.0M declared vs ~89.4M implied by total cash dividend / per-share amount (~2.7% gap)"
+      ],
+      "unresolved": ["occupancy rate true figure(s)", "share count discrepancy", "9A2026 net profit conflict (675.7M vs 681.9M TL)", "ownership structure percentages", "real/USD dividend growth series"]
+    }
+  },
+  "crossCuttingPatterns": [
+    "TOASO, DOAS, TTRAK: independently discovered that dividends exceeded free cash flow in multiple past years, weakening the original 'disciplined history, recent/limited risk' framing in all three",
+    "YGGYO, PAGYO: both net-cash GYOs with legal minimum 50% distribution mandate, but both have deepened document-internal or cross-document numerical inconsistencies (YGGYO: FY2024 loss magnitude; PAGYO: occupancy rate) found this round",
+    "technical limitation across the board: no poppler/pdftoppm or equivalent PDF-to-image tool in this environment blocked visual verification of suspected PDF-text-extraction column/row shifts (TUPRS CAPEX, PAGYO Note 6 table)"
+  ]
+}
