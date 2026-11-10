@@ -1,0 +1,138 @@
+{
+  "symbol": "AKSA",
+  "companyName": "Aksa Akrilik Kimya Sanayii A.Ş.",
+  "roundScope": "Bu tur (dividend-growth-screening-20261110) A/B/C/D sınıflandırması YAPMAZ; görev tanımı yalnızca nominal/reel/USD temettü büyüme serisinin merkezi referans verisiyle (_reference/MACRO_REFERENCE.md, TÜİK aylık TÜFE + Yahoo Finance USD/TRY) sıfırdan, adım adım yeniden üretilmesi ve önceki turun (dividend-screening-20261110) anlatı-düzeyi sonucuyla karşılaştırılmasıdır. category/rationale/supportingEvidence/counterEvidence/financialResilience/growthOutlook/structuralRisks alanları önceki üç turdan (dividend-screening-20261110, dividend-screening-independent-audit-20261110, dividend-portfolio-decision-20261110) DEĞİŞTİRİLMEDEN taşınmış ve yalnızca bu turda doğrulanan yeni sayısal bulgularla (9A2026 net borç/FAVÖK 2,84x, ana ortaklık net kârı −%24,5) güncellenmiştir; nihai A/B/C/D kararı merkezi sentezde verilecektir, burada değildir.",
+  "category": "B",
+  "categoryNote": "Önceki turlardan değişmeden taşındı (bu turda yeniden değerlendirilmedi). İlk tur (dividend-screening-20261110) ve ikinci tur (independent-audit-20261110) ikisi de B — Koşullu Aday sonucuna ulaştı; portföy kararı turu (dividend-portfolio-decision-20261110) aynı sonucu korudu.",
+  "rationale": "11 yıl (2015-2025 kâr yılları) kesintisiz nakit temettü dahil güçlü süreklilik ve havacılık/karbon elyaf odaklı stratejik yeniden konumlanmanın (H1 2026'da %30,2 segment FAVÖK marjı) olumlu sinyaline karşın; satın alma kaynaklı borcun bir yılda ~3 katına çıkması, çekirdek akrilik elyaf işindeki yapısal talep/arz-fazlası baskısı, reel/USD bazda on yıllık net temettü büyümesi bulunmaması (bu turda iki bağımsız yöntemle -- TÜİK aylık TÜFE deflasyonu ve doğrudan USD karşılaştırması -- yeniden teyit edildi) ve son 5 yılda son derece oynak payout oranı nedeniyle çekirdek (A) değil koşullu (B) aday. Net borç/FAVÖK 'çelişkisi' (şirket ~2,8x vs bağımsız ~3,70x) bu turda ÇÖZÜLDÜ: 9A2026 verisi oranın 2,84x'e düştüğünü gösteriyor, iki rakam farklı tarihlere ait ve ikisi de doğru -- ama kaldıraç iyileşirken ana ortaklığa ait net kârın 9A2026'da YoY %24,5 düşmesi yeni bir gerilim olarak not edildi.",
+  "dividendGrowthCalculation": {
+    "task": "AKSA'nın 11 satırlık (2015-2025 kâr yılı) dividendHistory serisi, bu turun merkezi _reference/{tufe_linked_index.json, usdtry_daily.json, lookup.cjs} verisiyle nominal/reel/USD toplam nakit temettü ve bölünme-düzeltilmiş (split-adjusted) pay başına seriye dönüştürüldü. Önceki turda (dividend-screening-20261110/companies/AKSA.md, Bölüm 2) bu hesap yalnızca anlatı/sonuç cümlesi olarak vardı, adım adım tablo saklı değildi; bu dosya o boşluğu dolduruyor.",
+    "methodology": {
+      "realTlFormula": "realTRY(baz=2026-10) = nominalTRY(ödeme_tarihindeki_kâr_yılı) × tufeIndex[2026-10] / tufeIndex[ödeme_ayı]; baz endeks 4481.031697745759 (2026-10)",
+      "usdFormula": "usdTotal = nominalTRY / usdTry(ödeme_tarihi veya bulunamazsa önceki en yakın iş günü, en fazla 10 gün geri, fxLookbackDays ile kayıtlı)",
+      "splitAdjustedPerShareFormula": "splitAdjustedPerShareTRY = nominalPerShareTRY × (impliedShareCount_o_satır / 3.885.000.000_güncel_pay_sayısı); impliedShareCount = totalCashTRY / nominalPerShareTRY olarak satırın kendi notlarından çapraz doğrulandı (185.000.000 → 2015-2018; 323.750.000 → 2019-2023, 2020-02-12 ×1,75 bedelsiz sonrası; 3.885.000.000 → 2024-2025, 2024-07-24 ×12 bedelsiz sonrası). Doğrulama: her satırda totalCashTRY/3.885.000.000 = splitAdjustedPerShareTRY, sıfır sapmayla eşleşti (iki bağımsız yoldan aynı sonuç) — bu nedenle split-adjusted pay başına büyüme ORANI, toplam nakit büyüme oranıyla matematiksel olarak birebir aynıdır (sabit paydaya bölmek büyüme oranını değiştirmez).",
+      "cpiSource": "TÜİK TÜFE, aylık, hakedis.org üzerinden ikincil derleme (bkz. _reference/MACRO_REFERENCE.md) — ÖNCEKİ TURDAN FARKLI kaynak/granülerlik: önceki tur alomaliye.com'un YILLIK TÜFE oranlarını kullanmıştı, bu tur TÜİK'in ödeme AYINA özel endeks değerini kullanıyor.",
+      "fxSource": "Yahoo Finance USD/TRY (TRY=X) günlük kapanış, aynı oturumda merkezi _reference/usdtry_daily.json üzerinden — önceki turda da aynı kaynak (Yahoo Finance) kullanılmıştı, bu alanda kaynak farkı YOK.",
+      "baseMonth": "2026-10 (TÜFE serisinin en güncel yayımlanmış ayı); önceki tur baz yılı 2025 (yıl-sonu) kullanmıştı — bu, mutlak reel TL seviyelerinin iki tur arasında neden tutarlı bir ölçekle değil değişken bir oranla farklı çıktığını açıklar (bkz. reconciliationWithPriorRound)."
+    },
+    "yearlyTable": [
+      {"profitYear": 2015, "paymentYear": 2016, "paymentDate": "2016-04-08", "fxDateUsed": "2016-04-07", "fxLookbackDays": 1, "usdTry": "2.8638", "tufeMonth": "2016-04", "tufeIndex": "276.42", "realDeflationFactor_toBase202610": "16.210953", "nominalTotalTRY": "157250000.00", "realTotalTRY_base202610": "2549172398.78", "usdTotal": "54909559.79", "impliedShareCount": 185000000, "nominalPerShareTRY": "0.8500", "splitAdjustedPerShareTRY": "0.040476"},
+      {"profitYear": 2016, "paymentYear": 2017, "paymentDate": "2017-04-07", "fxDateUsed": "2017-04-06", "fxLookbackDays": 1, "usdTry": "3.7052", "tufeMonth": "2017-04", "tufeIndex": "309.23", "realDeflationFactor_toBase202610": "14.490935", "nominalTotalTRY": "185000000.00", "realTotalTRY_base202610": "2680822895.85", "usdTotal": "49929289.18", "impliedShareCount": 185000000, "nominalPerShareTRY": "1.0000", "splitAdjustedPerShareTRY": "0.047619"},
+      {"profitYear": 2017, "paymentYear": 2018, "paymentDate": "2018-04-06", "fxDateUsed": "2018-04-05", "fxLookbackDays": 1, "usdTry": "4.0394", "tufeMonth": "2018-04", "tufeIndex": "342.78", "realDeflationFactor_toBase202610": "13.072617", "nominalTotalTRY": "207200000.00", "realTotalTRY_base202610": "2708646268.08", "usdTotal": "51294618.31", "impliedShareCount": 185000000, "nominalPerShareTRY": "1.1200", "splitAdjustedPerShareTRY": "0.053333"},
+      {"profitYear": 2018, "paymentYear": 2019, "paymentDate": "2019-04-11", "fxDateUsed": "2019-04-11", "fxLookbackDays": 0, "usdTry": "5.7321", "tufeMonth": "2019-04", "tufeIndex": "409.63", "realDeflationFactor_toBase202610": "10.939218", "nominalTotalTRY": "204702500.00", "realTotalTRY_base202610": "2239285186.90", "usdTotal": "35711668.89", "impliedShareCount": 185000000, "nominalPerShareTRY": "1.1065", "splitAdjustedPerShareTRY": "0.052690"},
+      {"profitYear": 2019, "paymentYear": 2020, "paymentDate": "2020-04-09", "fxDateUsed": "2020-04-09", "fxLookbackDays": 0, "usdTry": "6.6861", "tufeMonth": "2020-04", "tufeIndex": "454.43", "realDeflationFactor_toBase202610": "9.860774", "nominalTotalTRY": "239575000.00", "realTotalTRY_base202610": "2362395020.11", "usdTotal": "35831800.27", "impliedShareCount": 323750000, "nominalPerShareTRY": "0.7400", "splitAdjustedPerShareTRY": "0.061667", "noteShareBase": "2020-02-12 ×1,75 bedelsiz sonrası (323.750.000)"},
+      {"profitYear": 2020, "paymentYear": 2021, "paymentDate": "2021-04-15", "fxDateUsed": "2021-04-15", "fxLookbackDays": 0, "usdTry": "8.0288", "tufeMonth": "2021-04", "tufeIndex": "532.32", "realDeflationFactor_toBase202610": "8.417928", "nominalTotalTRY": "281662500.00", "realTotalTRY_base202610": "2371014785.40", "usdTotal": "35081518.98", "impliedShareCount": 323750000, "nominalPerShareTRY": "0.8700", "splitAdjustedPerShareTRY": "0.072500"},
+      {"profitYear": 2021, "paymentYear": 2022, "paymentDate": "2022-04-25", "fxDateUsed": "2022-04-25", "fxLookbackDays": 0, "usdTry": "14.7719", "tufeMonth": "2022-04", "tufeIndex": "904.79", "realDeflationFactor_toBase202610": "4.952565", "nominalTotalTRY": "598937500.00", "realTotalTRY_base202610": "2966277172.02", "usdTotal": "40545731.61", "impliedShareCount": 323750000, "nominalPerShareTRY": "1.8500", "splitAdjustedPerShareTRY": "0.154167"},
+      {"profitYear": 2022, "paymentYear": 2023, "paymentDate": "2023-04-13", "fxDateUsed": "2023-04-13", "fxLookbackDays": 0, "usdTry": "19.3351", "tufeMonth": "2023-04", "tufeIndex": "1300.04", "realDeflationFactor_toBase202610": "3.446841", "nominalTotalTRY": "780237500.00", "realTotalTRY_base202610": "2689354919.29", "usdTotal": "40353424.24", "impliedShareCount": 323750000, "nominalPerShareTRY": "2.4100", "splitAdjustedPerShareTRY": "0.200833"},
+      {"profitYear": 2023, "paymentYear": 2024, "paymentDate": "2024-04-05", "fxDateUsed": "2024-04-04", "fxLookbackDays": 1, "usdTry": "31.9450", "tufeMonth": "2024-04", "tufeIndex": "2207.50", "realDeflationFactor_toBase202610": "2.029912", "nominalTotalTRY": "1618750000.00", "realTotalTRY_base202610": "3285920752.31", "usdTotal": "50673047.39", "impliedShareCount": 323750000, "nominalPerShareTRY": "5.0000", "splitAdjustedPerShareTRY": "0.416667", "noteShareBase": "Hâlâ 323.750.000 bazında (2024-07-24 ×12 bedelsizi henüz gerçekleşmemişti, ödeme 2024-04-05)"},
+      {"profitYear": 2024, "paymentYear": 2025, "paymentDate": "2025-05-23", "fxDateUsed": "2025-05-22", "fxLookbackDays": 1, "usdTry": "39.0333", "tufeMonth": "2025-05", "tufeIndex": "3089.74", "realDeflationFactor_toBase202610": "1.450294", "nominalTotalTRY": "1864800000.00", "realTotalTRY_base202610": "2704508440.83", "usdTotal": "47774555.73", "impliedShareCount": 3885000000, "nominalPerShareTRY": "0.4800", "splitAdjustedPerShareTRY": "0.480000", "noteShareBase": "2024-07-24 ×12 bedelsiz sonrası (3.885.000.000); artık ek düzeltme gerekmiyor"},
+      {"profitYear": 2025, "paymentYear": 2026, "paymentDate": "2026-04-07", "fxDateUsed": "2026-04-07", "fxLookbackDays": 0, "usdTry": "44.5679", "tufeMonth": "2026-04", "tufeIndex": "4028.376510", "realDeflationFactor_toBase202610": "1.112367", "nominalTotalTRY": "2253300000.00", "realTotalTRY_base202610": "2506495780.32", "usdTotal": "50558808.44", "impliedShareCount": 3885000000, "nominalPerShareTRY": "0.5800", "splitAdjustedPerShareTRY": "0.580000"}
+    ],
+    "cagr10y_2015to2025": {
+      "nominalTotalTRY": "+30.50% / yıl (kümülatif +1.333%, önceki turun '+%1.333' bulgusuyla tam örtüşüyor)",
+      "realTotalTRY_base202610": "-0.17% / yıl (fiilen düz/hafif negatif — net reel büyüme yok)",
+      "usdTotal": "-0.82% / yıl (fiilen düz/hafif negatif — net USD büyüme yok)",
+      "splitAdjustedPerShareTRY_nominal": "+30.50% / yıl (toplam nakitle matematiksel olarak birebir aynı oran, bkz. methodology)"
+    },
+    "cagr5y_2020to2025": {
+      "nominalTotalTRY": "+51.57% / yıl",
+      "realTotalTRY_base202610": "+1.12% / yıl (2020 pandemi çukuruna karşı ölçüldüğünde hafif pozitif; 2015 veya 2021/2023 baz alınınca bu pozitiflik kaybolur, bkz. peakAnalysis)",
+      "usdTotal": "+7.58% / yıl (2020 çukuruna karşı; 10 yıllık pencerede bu pozitiflik yok)"
+    },
+    "peakAnalysis": {
+      "realTotalTRY_rankingDesc": "2023 (3.285,9M) > 2021 (2.966,3M) > 2017 (2.708,6M) > 2024 (2.704,5M) > 2022 (2.689,4M) > 2016 (2.680,8M) > 2015 (2.549,2M) > 2025 (2.506,5M) > 2020 (2.371,0M) > 2019 (2.362,4M) > 2018 (2.239,3M)",
+      "usdTotal_rankingDesc": "2015 ($54,91M) > 2017 ($51,29M) > 2023 ($50,67M) > 2025 ($50,56M) > 2016 ($49,93M) > 2024 ($47,77M) > 2021 ($40,55M) > 2022 ($40,35M) > 2019 ($35,83M) > 2018 ($35,71M) > 2020 ($35,08M)",
+      "2025_vs_2021_real_pct": "84.5%",
+      "2025_vs_2023_real_pct": "76.3%",
+      "2025_vs_2016_real_pct": "93.5%",
+      "2025_vs_2017_real_pct": "92.5%",
+      "2025_vs_2015_usd_pct": "92.1%",
+      "2025_vs_2017_usd_pct": "98.6%",
+      "2025_vs_2023_usd_pct": "99.8%",
+      "2025_vs_2021_usd_pct": "124.7%",
+      "nuance": "2025 reel TL hem 2021 hem 2023 zirvesinin altında VE 2016-2017 seviyesine yakın (hafif altında, %92,5-93,5) — önceki turun anlatısıyla tam örtüşüyor. Ama USD serisinde 2021 ve 2022 gerçekte ZİRVE değil, serinin EN DÜŞÜK noktalarıdır (2018-2020 ile birlikte); USD'deki gerçek zirveler 2015 ve 2017'dir. 2025 USD değeri 2023'ün (gerçek USD neredeyse-zirvesi) %99,8'i, 2021'in ise %124,7'si — yani '2025 USD değeri 2021 zirvesinin altında' ifadesi USD serisi için literal olarak yanlıştır (2021 bir zirve değil bir çukurdur); doğru olan '2025 USD değeri 2015/2017 seviyesinin hafif altında, 2023 ile aynı seviyede, 2021-2022 çukurunun ise belirgin şekilde üstünde' ifadesidir. Sonuç yönü (net 10 yıllık USD büyümesi yok) değişmiyor, ama 'hangi yıl zirve' çerçevesi USD için reel TL'den farklıdır."
+    },
+    "bonusEventsNote": "2020-02-12 (×1,75) ve 2024-07-24 (×12) bedelsiz sermaye artışları totalCashTRY (toplam nakit temettü) serisini ETKİLEMEZ (bedelsiz, nakit girişi yok) — bu yüzden CAGR ve zirve analizleri toplam nakit bazında güvenilir kalır. Ama nominalPerShareTRY serisi bu iki bölünmeyle kırılır (ör. 2024 kâr yılının 0,48 TL/pay değeri, 2023 kâr yılının 5,00 TL/pay değerinden DÜŞÜK görünür, oysa toplam nakit %15 artmıştır — yalnızca pay sayısı 12 kat artmıştır). splitAdjustedPerShareTRY sütunu bu kırılmayı düzeltir ve (yukarıda kanıtlandığı gibi) toplam nakitle birebir aynı büyüme oranını verir."
+  },
+  "reconciliationWithPriorRound": {
+    "priorClaim": "dividend-screening-20261110/companies/AKSA.json counterEvidence + AKSA.md Bölüm 2: 'Toplam nakit temettü, TÜİK TÜFE ile 2025 TL'sine deflate edildiğinde ve ödeme günü USD/TRY kuruyla dolarize edildiğinde son 10 yılda net bir büyüme trendi göstermiyor; 2025 reel/USD değeri 2021 ve 2023 zirvelerinin altında, 2015-2017 seviyesine yakın.' Reel TL seri (2025 bazlı): 2015≈2.052M, 2016≈2.225M, 2017≈2.226M, 2018≈1.826M, 2019≈1.911M, 2020≈1.961M, 2021≈3.065M, 2022≈2.430M, 2023≈3.058M, 2024≈2.441M, 2025≈2.253M (milyon TL). USD seri: 2015→$54,9M, 2016→$49,9M, 2017→$51,3M, 2018→$36,0M, 2019→$35,4M, 2020→$34,9M, 2021→$40,6M, 2022→$40,4M, 2023→$50,7M, 2024→$47,8M, 2025→$50,5M.",
+    "newResult": "YÖN OLARAK DOĞRULANDI. Nominal toplam nakit +%1.333 (10y CAGR +30,50%/yıl) — önceki turun '+%1.333' rakamıyla TAM örtüşüyor. Reel TL (2026-10 bazı): 10y CAGR -0,17%/yıl (fiilen düz), 2025 değeri (2.506,5M) 2021 zirvesinin (2.966,3M) %84,5'i ve 2023 zirvesinin (3.285,9M) %76,3'ü — her iki zirvenin de ALTINDA, önceki turla aynı sonuç. 2025 vs 2016/2017 seviyesi %92,5-93,5 (yakın, hafif altında) — 'yakın' ifadesiyle uyumlu. USD seri NEREDEYSE BİREBİR AYNI ÇIKTI (2015: $54,91M vs $54,9M; 2025: $50,56M vs $50,5M; 10y CAGR -0,82%/yıl) çünkü her iki tur da aynı kaynağı (Yahoo Finance TRY=X günlük kapanış) kullandı — bu, USD hesabının her iki turda da BAĞIMSIZ yöntem hatası taşımadığının en güçlü kanıtı. Tek nüans: USD serisinde '2021 ve 2023 zirveleri' çerçevesi tam doğru değil — 2021/2022 gerçekte USD serisinin EN DÜŞÜK noktaları (2018-2020 ile birlikte), gerçek USD zirveleri 2015/2017'dir; 2025 USD değeri 2023'e (gerçek yakın-zirve) %99,8 ile neredeyse eşit, 2021'in ise %124,7 ÜSTÜNDEDİR. Bu nüans sonucu değiştirmiyor (net 10 yıllık USD büyümesi yine de yok, -%0,82/yıl) ama 'hangi yılın zirve olduğu' iddiasını USD için düzeltiyor.",
+    "agree": true,
+    "explanationOfAnyDifference": "(1) Reel TL MUTLAK seviyeleri iki tur arasında farklı (ör. 2025: bu turda 2.506,5M vs önceki turda 2.253M) çünkü BAZ AYI/YILI farklı: önceki tur 2025 yıl-sonunu baz aldı, bu tur 2026-10'u (en güncel TÜFE ayı) baz aldı — yalnızca ölçek farkı, oranlar değil. (2) KAYNAK/GRANÜLERLİK farklı: önceki tur alomaliye.com'un YILLIK TÜFE oranlarını (yıl bazında bileşik), bu tur TÜİK'in resmi AYLIK endeksini (hakedis.org ikincil derlemesi, ödeme ayına özel değer) kullandı — bu, yıl-yıl ölçeklendirme oranının sabit olmamasına (0,97-1,24 arası dalgalı) neden oluyor: aylık TÜFE, yılın hangi ayında ödeme yapıldığına (çoğunlukla Nisan, 2025 istisnası Mayıs) duyarlıdır, yıllık oran bu ay-içi farkı yutar. (3) USD serisi İKİ TURDA DA AYNI KAYNAK (Yahoo Finance) ve neredeyse aynı yöntemle hesaplandığı için pratikte YOK denecek kadar az farklı (kuruş mertebesinde) — bu, iki bağımsız hesaplamanın birbirini doğruladığı en güçlü nokta. (4) Nitel sonuç (nominal büyüme bir yanılsama, reel/USD net büyüme yok, 2025 geçmiş zirvelerin altında) HER İKİ YÖNTEMLE DE DOĞRULANIYOR; tek düzeltme USD serisinde '2021/2023 zirve' çerçevesinin 2023/2015-2017'ye daraltılması gerektiğidir. Bu bulgu ayrıca independent-audit-20261110/CASHFLOW.md ve RISK_REVIEW.md'de bağımsız bir ajan tarafından 'iki bağımsız yöntemle teyitli' olarak zaten not edilmişti ($54,9M→$50,5M doğrudan USD karşılaştırması) — bu turun USD sonucu ($54,91M→$50,56M) o bulguyla da örtüşüyor."
+  },
+  "sustainabilitySynthesis": "Net borç/FAVÖK 'çelişkisi' (şirketin ~2,8x ifadesi vs bağımsız ~3,70x FY2025 hesabı) independent-audit-20261110 turunda ÇÖZÜLDÜ: 9A2026 verisi oranın 2,84x'e düştüğünü gösteriyor (RISK_REVIEW.md, 'Zamanlama farkı olarak çözüldü' — iki rakam farklı tarihlere ait, ikisi de doğru, hata değil). Kaldıraç GERÇEKTEN azalıyor (FY2025 FAVÖK +%43,6 YoY büyüyerek 6.049,4M TL'ye çıktı 9A2026'da) AMA aynı dönemde ana ortaklığa ait net kâr YoY %24,5 düşerek 2.531,9M TL'ye indi (AUDIT.md/CASHFLOW.md) — finansman maliyeti/kur etkisi kârlılığı eritiyor, 'borç azalıyor, her şey düzeliyor' basitleştirmesi yanlış olur. Payout oranı (dağıtım ÷ o yılın kendi raporundaki net kâr) 2021-2025 arasında %22,8 (2022) ile %164,1 (2024, dağıtım muhasebe kârını aştı) arasında salındı; 2023 %98,0, 2025 %56,1, 2021 %51,3 — disiplinli bir politikanın kanıtı yok, büyük ölçüde TMS 29 enflasyon muhasebesinin kâr rakamını nakit ekonomisinden kopardığı dönemlere denk geliyor. İleri Malzemeler (karbon elyaf/kompozit) segmentinin FAVÖK marjı FY2025'teki kısmi dönemde %14,4'ten H1 2026'daki ilk TAM dönemde %30,2'ye sıçradı — cesaret verici ama TEK bir temiz altı aylık veri noktası; bu turda 9A2026 segment bazlı kırılımı da bulunamadı (DATA_GAPS.md), kalıcılık sorusu açık kalıyor.",
+  "evidenceConfidence": {
+    "dividendHistoryConfidence": "Yüksek — AUDIT.md Bölüm 2: AKSA'nın 11 yıllık temettü tablosu Yahoo Finance ile satır satır neredeyse sıfır hatayla örtüşüyor; 'grup içinde en güvenilir temettü verisi' olarak not edildi (10 şirket arasında en yüksek güven). Bu turun FX/TÜFE hesabı da aynı birincil totalCashTRY/grossPerShareTRY çiftlerinden impliedShareCount'u (185M/323,75M/3.885M) çapraz doğruladı, sıfır sapma.",
+    "cashFlowConfidence": "Orta (ikinci turda Düşük/PARTIAL'dan yükseldi) — CASHFLOW.md: FY2021-2023 CFO zaten birincil kaynaktan doğru kullanılmıştı; CAPEX için engel OCR bozukluğuydu (erişim sorunu değil). FY2025 serisi annual-cash-replay.json ile tam teyitli. 2016-2019 net kâr/CFO/CAPEX hâlâ tamamen kapalı (DATA_GAPS.md) — bu, 10 yıllık payout/FCF trendinin baştan sona birincil kaynaklı olmadığı anlamına geliyor.",
+    "riskAssessmentConfidence": "Orta — RISK_REVIEW.md: Aksa Carbon kredilerindeki covenant ihlali riski 30.12.2025 feragatnamesiyle aşıldı ve 30.06.2026/9A2026'da yeni ihlal bildirilmedi, ama bu bir YÖNETİM BEKLENTİSİ/feragat sonucu, kalıcı bir çözüm kanıtı değil — izlenmesi gereken açık bir madde olarak kalıyor (31.12.2026 test tarihi). Net borç/FAVÖK çelişkisi çözüldü ama net kâr düşüşü yeni bir risk sinyali ekledi; bu karışık resim 'Orta' güveni haklı çıkarıyor (ne tam rahatlatıcı ne tam alarm verici)."
+  },
+  "missingData": [
+    {
+      "item": "2016-2020 net kâr ve işletme nakdi (birincil finansal tablo kaynağından)",
+      "blocksDecision": "Payout oranı ve FCF/temettü karşılama trendinin 2016-2020 için tam hesaplanmasını engelliyor; bu turun nominal/reel/USD büyüme hesabını ETKİLEMEZ (o hesap yalnızca totalCashTRY'ye dayanır, hepsi mevcut)",
+      "possibleSource": "KAP'ın eski dönem finansal rapor arşivi veya 2016-2020 faaliyet raporu PDF'leri"
+    },
+    {
+      "item": "9A2026 segment bazlı FAVÖK/marj kırılımı (İleri Malzemeler'in H1 2026 sonrası devamlılığı)",
+      "blocksDecision": "İleri Malzemeler marjının H1 2026 seviyesinde (%30,2) kalıcılaştığının teyidini engelliyor; genel 10 yıllık temettü büyüme sonucunu etkilemiyor",
+      "possibleSource": "2026 tam yıl finansal tabloları, Not 3/4 segment raporlaması"
+    },
+    {
+      "item": "2026-11 ve sonrası TÜİK TÜFE ayları",
+      "blocksDecision": "Bu turun merkezi referans serisi 2026-10'da kesiliyor (_reference/MACRO_REFERENCE.md); 2026-11 ve sonrasında ödeme olsaydı reel TL hesaplanamazdı. AKSA'nın tüm ödeme tarihleri 2026-10'dan önce olduğu için bu AKSA için fiilen bir engel değil, ama ileride (2027 ödemesi) tekrar gündeme gelecek",
+      "possibleSource": "TÜİK'in aylık TÜFE yayını, sonraki ay"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Aksa Akrilik Sermaye Temettü Bilgileri (şirket IR sayfası)",
+      "url": "https://www.aksa.com/yatirimci-iliskileri/hisse-verileri/sermaye-temettu-bilgileri",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "Birincil kaynak; 11 satırlık dividendHistory bu kaynaktan taşındı (dividend-screening-20261110'dan değişmeden), bu turda yeniden çekilmedi."
+    },
+    {
+      "name": "_reference/tufe_linked_index.json (TÜİK TÜFE, aylık, linklenmiş seri)",
+      "url": "hakedis.org (ikincil derleme, bkz. MACRO_REFERENCE.md)",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Bu turun merkezi, 10 şirket ortak TÜFE kaynağı. Önceki turun alomaliye.com YILLIK oran derlemesinden FARKLI kaynak/granülerlik (bkz. reconciliationWithPriorRound). Birincil TÜİK portalından bu oturumda da doğrulanmadı (MACRO_REFERENCE.md Bölüm 4, bilinen sınırlama)."
+    },
+    {
+      "name": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış)",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TRY=X",
+      "publishedDate": null,
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "Önceki turda da aynı kaynak (Yahoo Finance) kullanılmıştı; bu alanda kaynak farkı yok. TCMB resmi kuruyla çapraz doğrulanmadı (açık karar, kök CLAUDE.md)."
+    },
+    {
+      "name": "dividend-screening-20261110/companies/AKSA.json ve AKSA.md (1. tur)",
+      "url": null,
+      "publishedDate": "2026-11-10",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "dividendHistory (11 satır), supportingEvidence, counterEvidence, structuralRisks, growthOutlook birebir bu dosyadan taşındı; yalnızca sustainability/financialResilience bu turun audit bulgularıyla güncellendi."
+    },
+    {
+      "name": "dividend-screening-independent-audit-20261110/AUDIT.md, CASHFLOW.md, RISK_REVIEW.md, DATA_GAPS.md, FINAL_SHORTLIST.md",
+      "url": null,
+      "publishedDate": "2026-11-10",
+      "accessedDate": "2026-11-10",
+      "independent": true,
+      "note": "İkinci tur (farklı ajan oturumu); net borç/FAVÖK çelişkisinin zamanlama farkına indirgenmesi, 9A2026 net kâr düşüşü, kanıt güvenilirliği yükseltmeleri (dividendHistory→Yüksek, cashFlow→Orta) buradan alındı."
+    },
+    {
+      "name": "dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md, UNRESOLVED_ISSUES.md",
+      "url": null,
+      "publishedDate": "2026-11-10",
+      "accessedDate": "2026-11-10",
+      "independent": false,
+      "note": "AKSA bölümü; B kategorisinin korunduğu, açık soruların (covenant 31.12.2026 test tarihi, segment marjı kalıcılığı) listesi buradan alındı."
+    }
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "PARTIAL / NEEDS_REVIEW — Bu turun nominal/reel/USD temettü büyüme hesabı tamamen bu oturumda, merkezi referans verisiyle (lookup.cjs) adım adım yeniden üretildi ve önceki turun anlatı-düzeyi sonucuyla YÖN OLARAK uyumlu bulundu (bkz. reconciliationWithPriorRound); USD serisi iki tur arasında kuruş mertebesinde örtüşüyor. category/rationale/dividendHistory/supportingEvidence/counterEvidence/structuralRisks alanları önceki üç turdan değiştirilmeden taşındı — bu tur bunları yeniden araştırmadı, yalnızca sustainability/financialResilience/evidenceConfidence alanlarını audit bulgularıyla güncelledi. 2016-2020 net kâr/CFO hâlâ birincil kaynaktan doğrulanamadı; TÜFE kaynağı (hakedis.org ikincil derleme) ve USD/TRY kaynağı (Yahoo Finance) ikisi de TÜİK/TCMB birincil portallarıyla bu oturumda çapraz doğrulanmadı (MACRO_REFERENCE.md'nin bilinen sınırlaması). Bu inceleme aynı ajan tarafından yapılmış olup bağımsız bir ikinci incelemeden geçmemiştir."
+}

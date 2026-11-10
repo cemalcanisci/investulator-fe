@@ -1,0 +1,322 @@
+{
+  "symbol": "TOASO",
+  "companyName": "Tofaş Türk Otomobil Fabrikası A.Ş.",
+  "taskScope": "Bu dosya SINIFLANDIRMA (A/B/C/D) kararı İÇERMEZ — görev kapsamı yalnızca temettü büyümesi veri derlemesi ve nominal/reel/USD hesaplamasıdır. Final kategori kararı dividend-screening-20261110 (ilk tur, kategori B) ve dividend-screening-independent-audit-20261110 (ikinci tur, B içinde 'orta/zayıf B'ye kaydırma gerekçesi) turlarında verilmiştir; bu tur onu değiştirmez.",
+  "sharesOutstandingConstant": "500000000",
+  "capitalActionsLast10Years": "Yok (son bedelsiz sermaye artırımı 17.08.2005, kapsam dışı). Pay sayısı 11 ödeme yılı boyunca sabit, pay başına ve toplam nakit rakamları doğrudan karşılaştırılabilir.",
+  "realBaseMonth": "2026-10",
+  "fxTufeSource": "dividend-growth-screening-20261110/_reference/lookup.cjs (MACRO_REFERENCE.md: TÜFE linklenmiş TÜİK 2003=100/2025=100 serisi, USD/TRY Yahoo Finance TRY=X günlük kapanış). Her 11 ödeme tarihi için fxLookbackDays=0 (tam gün eşleşmesi, hafta sonu/tatil düzeltmesi gerekmedi).",
+  "dividendSeries": [
+    {
+      "paymentYear": 2016,
+      "profitYear": 2015,
+      "paymentDate": "2016-04-07",
+      "grossPerShareTRY": "0.73",
+      "netPerShareTRY": "0.6205",
+      "totalCashTRY": "365000000",
+      "usdTryRateUsed": "2.863800",
+      "tufeMonth": "2016-04",
+      "tufeIndex": "276.42",
+      "realDeflationFactorToBaseMonth": "16.210953",
+      "usdPerShare": "0.254906",
+      "totalCashUSD": "127453032",
+      "realPerShareTRY_base202610": "11.8340",
+      "totalCashRealTRY_base202610": "5916997937"
+    },
+    {
+      "paymentYear": 2017,
+      "profitYear": 2016,
+      "paymentDate": "2017-04-03",
+      "grossPerShareTRY": "0.70",
+      "netPerShareTRY": "0.595",
+      "totalCashTRY": "350000000",
+      "usdTryRateUsed": "3.644200",
+      "tufeMonth": "2017-04",
+      "tufeIndex": "309.23",
+      "realDeflationFactorToBaseMonth": "14.490935",
+      "usdPerShare": "0.192086",
+      "totalCashUSD": "96043025",
+      "realPerShareTRY_base202610": "10.1437",
+      "totalCashRealTRY_base202610": "5071827100"
+    },
+    {
+      "paymentYear": 2018,
+      "profitYear": 2017,
+      "paymentDate": "2018-03-21",
+      "grossPerShareTRY": "1.60",
+      "netPerShareTRY": "1.36",
+      "totalCashTRY": "800000000",
+      "usdTryRateUsed": "3.932150",
+      "tufeMonth": "2018-03",
+      "tufeIndex": "336.48",
+      "realDeflationFactorToBaseMonth": "13.317379",
+      "usdPerShare": "0.406902",
+      "totalCashUSD": "203451044",
+      "realPerShareTRY_base202610": "21.3078",
+      "totalCashRealTRY_base202610": "10653903228"
+    },
+    {
+      "paymentYear": 2019,
+      "profitYear": 2018,
+      "paymentDate": "2019-03-19",
+      "grossPerShareTRY": "1.76",
+      "netPerShareTRY": "1.496",
+      "totalCashTRY": "880000000",
+      "usdTryRateUsed": "5.468100",
+      "tufeMonth": "2019-03",
+      "tufeIndex": "402.81",
+      "realDeflationFactorToBaseMonth": "11.124430",
+      "usdPerShare": "0.321867",
+      "totalCashUSD": "160933412",
+      "realPerShareTRY_base202610": "19.5790",
+      "totalCashRealTRY_base202610": "9789498508"
+    },
+    {
+      "paymentYear": 2020,
+      "profitYear": 2019,
+      "paymentDate": "2020-03-25",
+      "grossPerShareTRY": "2.40",
+      "netPerShareTRY": "2.04",
+      "totalCashTRY": "1200000000",
+      "usdTryRateUsed": "6.436300",
+      "tufeMonth": "2020-03",
+      "tufeIndex": "450.58",
+      "realDeflationFactorToBaseMonth": "9.945030",
+      "usdPerShare": "0.372885",
+      "totalCashUSD": "186442527",
+      "realPerShareTRY_base202610": "23.8681",
+      "totalCashRealTRY_base202610": "11934036214"
+    },
+    {
+      "paymentYear": 2021,
+      "profitYear": 2020,
+      "paymentDate": "2021-03-23",
+      "grossPerShareTRY": "3.00",
+      "netPerShareTRY": "2.55",
+      "totalCashTRY": "1500000000",
+      "usdTryRateUsed": "7.825400",
+      "tufeMonth": "2021-03",
+      "tufeIndex": "523.53",
+      "realDeflationFactorToBaseMonth": "8.559264",
+      "usdPerShare": "0.383367",
+      "totalCashUSD": "191683495",
+      "realPerShareTRY_base202610": "25.6778",
+      "totalCashRealTRY_base202610": "12838896618",
+      "notes": "COVID-19 kâr yılı (2020); dağıtım kesilmemiş, önceki yıla göre nominal/USD/reel üçünde de artmıştır."
+    },
+    {
+      "paymentYear": 2022,
+      "profitYear": 2021,
+      "paymentDate": "2022-03-22",
+      "grossPerShareTRY": "6.40",
+      "netPerShareTRY": "5.76",
+      "totalCashTRY": "3200000000",
+      "usdTryRateUsed": "14.821740",
+      "tufeMonth": "2022-03",
+      "tufeIndex": "843.64",
+      "realDeflationFactorToBaseMonth": "5.311545",
+      "usdPerShare": "0.431798",
+      "totalCashUSD": "215899076",
+      "realPerShareTRY_base202610": "33.9939",
+      "totalCashRealTRY_base202610": "16996943522"
+    },
+    {
+      "paymentYear": 2023,
+      "profitYear": 2022,
+      "paymentDate": "2023-03-21",
+      "grossPerShareTRY": "6.00",
+      "netPerShareTRY": "5.40",
+      "totalCashTRY": "3000000000",
+      "usdTryRateUsed": "19.008810",
+      "tufeMonth": "2023-03",
+      "tufeIndex": "1269.75",
+      "realDeflationFactorToBaseMonth": "3.529066",
+      "usdPerShare": "0.315643",
+      "totalCashUSD": "157821557",
+      "realPerShareTRY_base202610": "21.1744",
+      "totalCashRealTRY_base202610": "10587198341",
+      "notes": "Pay başına nominal TL temettü önceki yıla göre gerilemiştir (6,40→6,00; -%6,25), USD ve reel TL'de daha da büyük düşüş (-%26,90 / -%37,71)."
+    },
+    {
+      "paymentYear": 2024,
+      "profitYear": 2023,
+      "paymentDate": "2024-04-08",
+      "grossPerShareTRY": "20.00",
+      "netPerShareTRY": "18.00",
+      "totalCashTRY": "10000000000",
+      "usdTryRateUsed": "32.156502",
+      "tufeMonth": "2024-04",
+      "tufeIndex": "2207.5",
+      "realDeflationFactorToBaseMonth": "2.029912",
+      "usdPerShare": "0.621958",
+      "totalCashUSD": "310979101",
+      "realPerShareTRY_base202610": "40.5982",
+      "totalCashRealTRY_base202610": "20299124339"
+    },
+    {
+      "paymentYear": 2025,
+      "profitYear": 2024,
+      "paymentDate": "2025-04-07",
+      "grossPerShareTRY": "12.00",
+      "netPerShareTRY": "10.20",
+      "totalCashTRY": "6000000000",
+      "usdTryRateUsed": "38.004799",
+      "tufeMonth": "2025-04",
+      "tufeIndex": "3043.23",
+      "realDeflationFactorToBaseMonth": "1.472459",
+      "usdPerShare": "0.315750",
+      "totalCashUSD": "157874799",
+      "realPerShareTRY_base202610": "17.6695",
+      "totalCashRealTRY_base202610": "8834754582",
+      "notes": "ÖNEMLİ: pay başına nominal TL temettü önceki yıla göre -%40 gerilemiştir (20,00→12,00 TL); bu, ilk turun 'hiçbir yıl kesinti yok, hep artan' çerçevesinin pay-başına nominal düzeyde de istisnası olduğu, önceki raporlarda açıkça vurgulanmamış bir bulgudur (bkz. continuityVsGrowth). USD ve reel TL'de düşüş daha da derin (-%49,23 / -%56,48). Bu yılın FY2024 kâr yılına denk gelmesi, aynı dönemde CASHFLOW.md'nin bulduğu FY2024 CFO -9,63 mr TL / FCF -18,6 mr TL negatifliğiyle zamansal olarak örtüşüyor (temettü ortalama maliyet/nakit rezervinden karşılanmış görünüyor)."
+    },
+    {
+      "paymentYear": 2026,
+      "profitYear": 2025,
+      "paymentDate": "2026-03-25",
+      "grossPerShareTRY": "20.00",
+      "netPerShareTRY": "17.00",
+      "totalCashTRY": "10000000000",
+      "usdTryRateUsed": "44.339298",
+      "tufeMonth": "2026-03",
+      "tufeIndex": "3866.668469",
+      "realDeflationFactorToBaseMonth": "1.158887",
+      "usdPerShare": "0.451067",
+      "totalCashUSD": "225533565",
+      "realPerShareTRY_base202610": "23.1777",
+      "totalCashRealTRY_base202610": "11588869680",
+      "notes": "10 yıllık (2016-2025) ve 5 yıllık (2021-2025) CAGR pencerelerinin DIŞINDA — görev talimatınca bu pencerelere dahil edilmemiştir. Kesim tarihinden (2026-11-10) önce gerçekleşmiş en güncel ödeme olduğu için seriye eklenmiş, süreklilik/oynaklık tartışmasında kullanılmıştır. Net paydaki (17,00) yerine brüt (20,00) kullanıldı; tam mükellef tüzel kişi ortaklar için net=brüt."
+    }
+  ],
+  "growthMetrics": {
+    "window10yr": {
+      "label": "paymentYear 2016 → paymentYear 2025 (profitYear 2015 → profitYear 2024), 9 yıllık CAGR",
+      "startPerShareTRY": "0.73",
+      "endPerShareTRY": "12.00",
+      "nominalCAGRPct": "36.49",
+      "usdCAGRPct": "2.41",
+      "realCAGRPct_base202610": "4.55",
+      "note": "Nominal ve reel/USD CAGR arasındaki fark çarpıcı: nominal yılda ortalama +%36,5 büyürken, reel (TÜFE-deflasyonlu) büyüme yalnızca +%4,55/yıl, USD büyüme yalnızca +%2,41/yıl. Dönem başı (2015 kâr yılı) ile dönem sonu (2024 kâr yılı) arasında gerçek satın alma gücü/dolar bazında temettü büyümüş AMA bu büyüme nominal rakamın ima ettiğinden çok daha mütevazı."
+    },
+    "window5yr": {
+      "label": "paymentYear 2021 → paymentYear 2025 (profitYear 2020 → profitYear 2024), 4 yıllık CAGR",
+      "startPerShareTRY": "3.00",
+      "endPerShareTRY": "12.00",
+      "nominalCAGRPct": "41.42",
+      "usdCAGRPct": "-4.74",
+      "realCAGRPct_base202610": "-8.92",
+      "note": "Son 5 yılda nominal CAGR (+%41,4) ile reel/USD CAGR arasındaki ayrışma 10 yıllık pencereden daha vahim: reel ve USD CAGR'ın İKİSİ DE NEGATİF. Yatırımcı bu dönemde nominal TL temettüsü 4 katına çıkarken, gerçek satın alma gücü ve dolar karşılığı bazında temettüsü KÜÇÜLMÜŞTÜR (yılda ortalama -%8,92 reel, -%4,74 USD)."
+    },
+    "mostRecentPaymentOutsideWindows": {
+      "paymentYear": 2026,
+      "profitYear": 2025,
+      "note": "Bkz. dividendSeries son satırı. CAGR hesaplarına dahil edilmedi (görev talimatı 2016-2025 ve 2021-2025 pencerelerini belirtiyor); yalnızca süreklilik/oynaklık ve en güncel gözlem olarak raporlanmıştır."
+    },
+    "yearOverYearChanges": [
+      {"fromPaymentYear": 2016, "toPaymentYear": 2017, "nominalChangePct": "-4.11", "usdChangePct": "-24.64", "realChangePct": "-14.28", "direction": "KAYIP (reel ve USD)"},
+      {"fromPaymentYear": 2017, "toPaymentYear": 2018, "nominalChangePct": "128.57", "usdChangePct": "111.83", "realChangePct": "110.06", "direction": "KAZANÇ (2018 kur şoku yılı; nominal artış TL zayıflamasını fazlasıyla telafi etti)"},
+      {"fromPaymentYear": 2018, "toPaymentYear": 2019, "nominalChangePct": "10.00", "usdChangePct": "-20.90", "realChangePct": "-8.11", "direction": "KAYIP (reel ve USD) — nominal artışa RAĞMEN"},
+      {"fromPaymentYear": 2019, "toPaymentYear": 2020, "nominalChangePct": "36.36", "usdChangePct": "15.85", "realChangePct": "21.91", "direction": "KAZANÇ"},
+      {"fromPaymentYear": 2020, "toPaymentYear": 2021, "nominalChangePct": "25.00", "usdChangePct": "2.81", "realChangePct": "7.58", "direction": "KAZANÇ (COVID-19 kâr yılı ödemesi)"},
+      {"fromPaymentYear": 2021, "toPaymentYear": 2022, "nominalChangePct": "113.33", "usdChangePct": "12.63", "realChangePct": "32.39", "direction": "KAZANÇ"},
+      {"fromPaymentYear": 2022, "toPaymentYear": 2023, "nominalChangePct": "-6.25", "usdChangePct": "-26.90", "realChangePct": "-37.71", "direction": "KAYIP (nominal, reel ve USD üçünde de — pay başına nominal TL de gerilemiş)"},
+      {"fromPaymentYear": 2023, "toPaymentYear": 2024, "nominalChangePct": "233.33", "usdChangePct": "97.04", "realChangePct": "91.73", "direction": "KAZANÇ (büyük sıçrama)"},
+      {"fromPaymentYear": 2024, "toPaymentYear": 2025, "nominalChangePct": "-40.00", "usdChangePct": "-49.23", "realChangePct": "-56.48", "direction": "KAYIP (nominal, reel ve USD üçünde de — serinin en büyük düşüşü, FY2024 CFO/FCF negatifliğiyle aynı döneme denk geliyor)"},
+      {"fromPaymentYear": 2025, "toPaymentYear": 2026, "nominalChangePct": "66.67", "usdChangePct": "42.86", "realChangePct": "31.17", "direction": "KAZANÇ"}
+    ],
+    "purchasingPowerLossYears": [
+      "paymentYear 2017 (reel -%14,28, USD -%24,64)",
+      "paymentYear 2019 (reel -%8,11, USD -%20,90; nominal ARTMIŞ olmasına rağmen)",
+      "paymentYear 2023 (reel -%37,71, USD -%26,90; nominal da gerilemiş)",
+      "paymentYear 2025 (reel -%56,48, USD -%49,23; nominal da -%40 gerilemiş, serinin en derin düşüşü)"
+    ],
+    "nominalPerShareDeclineYears": [
+      "paymentYear 2017 (0,73→0,70 TL/pay, -%4,11)",
+      "paymentYear 2023 (6,40→6,00 TL/pay, -%6,25)",
+      "paymentYear 2025 (20,00→12,00 TL/pay, -%40,00)"
+    ]
+  },
+  "continuityVsGrowth": {
+    "continuitySummary": "Süreklilik ekseni GÜÇLÜ ve bu turda doğrulanan bilgiyle değişmedi: en az 2014'ten (muhtemelen daha öncesinden) 2026'ya kadar 12+ yıl, HER YIL sıfırdan farklı bir nakit temettü ödenmiş; 2018 kur şoku, 2020 pandemi ve 2021 Stellantis birleşim geçişinin hiçbirinde ödeme SIFIRLANMAMIŞ veya İPTAL EDİLMEMİŞTİR. Bu, 'hiç kesinti yok' anlamında (ödemenin tamamen durması) doğrudur.",
+    "growthSummary": "Büyüme ekseni süreklilikten tamamen ayrı ve çok daha karışık bir tablo gösteriyor: (1) Pay başına NOMİNAL TL temettü de her yıl artmamıştır — en az 3 yılda (paymentYear 2017, 2023, 2025) önceki yıla göre GERİLEMİŞTİR, en çarpıcısı paymentYear2025'te -%40 (20,00→12,00 TL/pay). İlk turun 'hiçbir yıl kesinti yok, aksine hep artmış' çerçevesi bu üç düşüşü yeterince vurgulamamıştır. (2) Reel (TÜFE-deflasyonlu) ve USD bazda büyüme daha da zayıf ve oynak: 10 yıllık pencerede (2016-2025) reel CAGR yalnızca +%4,55, USD CAGR +%2,41 — nominal +%36,49'un çok altında. Son 5 yılda (2021-2025) reel ve USD CAGR'ın İKİSİ DE NEGATİF (-%8,92 reel, -%4,74 USD) — yani son 5 yılda nominal temettü 4 kat artarken, gerçek satın alma gücü/dolar karşılığı KÜÇÜLMÜŞTÜR.",
+    "divergenceNote": "Bu, CLAUDE.md'nin 'Oranlar ... TAS29 satın alma gücü bazı sessizce eşitlenmez' ve genel 'reel/USD büyüme pozitif mi, hangi yıllarda satın alma gücü kaybedildi, süreklilik anlatısından ayrı raporla' talimatının somut örneği: TOASO'nun 'kriz dönemlerinde dahi temettüyü artırarak öder' anlatısı DOĞRU ama bu, TARİHSEL OLARAK SEÇİLMİŞ (2018 kur şoku, 2020 pandemi) iki örnek yıla dayanıyor; aynı 10 yılın İÇİNDE en az 4 farklı yılda (2017, 2019, 2023, 2025 ödemeleri) reel/USD temettü GERİLEMİŞ, bunlardan ikisinde (2023, 2025) nominal TL tutarı da gerilemiştir. Süreklilik (ödeme hiç durmadı) ile büyüme (her yıl artan bir temettü) FARKLI iddialardır; TOASO birincisini güçlü biçimde, ikincisini ancak zayıf/oynak biçimde karşılıyor."
+  },
+  "sustainabilitySynthesis": {
+    "summary": "Bu turun görevi yeniden doğrulama değil, önceki üç turun bulgularını aktarmaktır. Bağımsız denetim turu (dividend-screening-independent-audit-20261110), ilk turun 'bozulma son 2-3 çeyrekte başladı' çerçevesini YANILTICI bulmuş ve bunu düzeltmiştir: FY2024'ün kendisi zaten CFO -9.629.971 bin TL (negatif), FCF (CFO-CAPEX) -18.603.321 bin TL (negatif) ile derin negatifti (CASHFLOW.md). FY2025'te CFO pozitife dönmüş (2.655.374 bin TL) ama CAPEX (8.723.589 bin TL) düşülünce FCF yine negatif (-6.068.215 bin TL). H1 2026 (-7.202.222 bin TL CFO, -11.629.737 bin TL FCF) ve 9A2026 (CFO 27,21 mr'den 4,61 mr TL'ye -%83 gerileme, stok+yoldaki mallar ~66,7 mr TL) bu bozulmanın devam ettiğini, DERİNLEŞTİĞİNİ gösteriyor. Sonuç: bu en az FY2024'ten (muhtemelen 3 tam yıl + 2026 ara dönemleri) beri süren bir FCF-negatif dönem, 'son 2-3 çeyrek' değil.",
+    "leverageTrajectory": "Net borç/FAVÖK, ikincil kaynaklara göre FY2022-2023'te NET NAKİT pozisyonundan (≈-0,66x), birincil kaynakla doğrulanmış FY2025 sonunda +3,37x'e yükselmiş (net borç ~33,70 mr TL / FAVÖK ~9,998 mr TL). 9A2026'da net borç mutlak TL bazında 51,4 mr TL'ye çıkmaya devam ediyor (ikincil kaynak, FAVÖK bazlı oran bu turda da hesaplanamadı).",
+    "stellantisAcquisitionContingentLiability": "Bağımsız denetim turunda YENİ bulunan ve önceki (dividend-screening) turda HİÇ yer almayan bir bulgu: 30 Nisan 2025'te 400 milyon Avro nakit karşılığında tamamlanan Stellantis Otomotiv Pazarlama A.Ş. devralımının toplam bedeli aslında 26,06 mr TL (20,18 mr nakit + 5,88 mr TL şarta bağlı); net nakit çıkışı 13,14 mr TL olup FY2025 nakit akış tablosuyla birebir eşleşiyor (RISK_REVIEW.md, ECB kuru ve TMS29 restatement faktörüyle bağımsız doğrulandı). Şarta bağlı 5,88 mr TL'lik kısım, devralmayı takip eden İLK 8 MALİ YILIN HER BİRİNDE (2033'e kadar), Stellantis Türkiye faaliyetlerinin serbest nakit akışı bir referans değeri aşarsa aşan kısmın %77,5'i oranında EK ÖDEME yükümlülüğü getiriyor — bu, 2033'e kadar uzanan, nicel etkisi henüz modellenmemiş bir potansiyel ek nakit çıkışıdır.",
+    "stellantisAcquisitionScaleBreak": "Nisan 2025'te kapanan bu devralma net satışları FY2024→FY2025'te ~2,65 kat büyütmüş (120,27→319,41 mr TL) ama FAVÖK yalnızca ~%7,7 büyümüş (9,28→10,0 mr TL) — ciddi marj seyrelmesi. Bu, 2025 rakamlarını 2016-2024 ile doğrudan trend karşılaştırmasına uygunsuz kılan bir ölçek kırılması yaratıyor; yeni iş modelinin uzun vadeli nakit üretim kapasitesi henüz ~1,5 yıllık veriyle test edilmemiştir.",
+    "capacityUtilization": "Kapasite kullanım oranı %58'den (2022) %33'e (2025) gerilemiş; üretim adedi 250.630 (2020) → 131.645 (2025), -%47,5. Egea model döngüsünün sona yaklaşmasına bağlı; K0/Scudo ve planlanan ek hafif araç modeliyle 2026-2027'de toparlanma bekleniyor ama henüz gerçekleşmedi.",
+    "temporalCoincidence": "Dört olay zamansal olarak örtüşüyor: (1) FY2024-2025'te yüksek nakit temettü (10 mr ve 6 mr TL, bazı yıllarda net kârın %100'ünden fazlası — 2025 kârı için payout %119,7), (2) Nisan 2025'te 400 milyon Avro'luk Stellantis Otomotiv Pazarlama devralımı, (3) H1/9A2026'da büyük stok/işletme sermayesi birikimi, (4) net borç/FAVÖK'ün net nakitten +3,37x'e geçişi. Bu makalede YENİ eklenen gözlem: aynı dönemde (paymentYear2025) pay başına NOMİNAL temettü de -%40 gerilemiş (20,00→12,00 TL) — yani şirket aynı anda hem temettüyü (nominal olarak) azaltmış hem de kaldıraç/nakit akışı bozulmuş; bu, salt 'borçla finanse edilen sabit/artan temettü' senaryosundan farklı, daha nüanslı bir resim."
+  },
+  "evidenceReliability": {
+    "dividendHistoryConfidence": "Yüksek. 11 ardışık ödeme yılı, her biri totalCashTRY + grossPerShareTRY + netPerShareTRY + tam ödeme tarihiyle; resmi Tofaş IR tablosu + 3 faaliyet raporu (2018, 2020, 2025) + 1 resmi KAP bildirimi (No 1573202) ile birincil kaynaktan çapraz doğrulanmış (bkz. TOASO.md, dividend-screening-20261110). Pay sayısının (500.000.000) son 10 yılda sabit kalması (bedelli/bedelsiz yok) karşılaştırmayı basitleştiriyor. Tek küçük eksik: 2-5 günlük bazı ödeme-tarihi farkları (GK kararı/duyuru vs fiili ödeme karışıklığı ihtimali), tutarları etkilemiyor.",
+    "cashFlowConfidence": "Orta (bu turda Düşük/PARTIAL'dan yükseldi — dividend-screening-independent-audit-20261110/CASHFLOW.md ve DATA_GAPS.md). FY2021-2022 ve FY2024-2025 artık birincil kaynaktan (Tofaş faaliyet raporları) doğrulanmış CFO/CAPEX/FCF rakamlarına sahip; yalnızca FY2023 hâlâ eksik (MISSING_DATA). ÖNEMLİ AYRIM (karıştırılmaması gereken iki şey): kanıt KALİTESİNİN artması (Düşük→Orta) ile hesaplanan SONUCUN olumlu/olumsuz olması TAMAMEN AYRI eksenlerdir — bu turda kanıt kalitesi arttı AMA ortaya çıkan sonuç (FY2024 CFO/FCF derin negatif, en az 3 yıldır süren bozulma) önceki turdan DAHA OLUMSUZ. Daha iyi veri, daha kötü haber getirmiştir.",
+    "riskAssessmentConfidence": "Orta-Yüksek. FY2025 net borç/FAVÖK (3,37x) birincil kaynaktan (2025 Entegre Faaliyet Raporu) hesaplanmış; Stellantis Otomotiv Pazarlama devralımının toplam bedeli ve 5,88 mr TL şarta bağlı yükümlülüğü bağımsız denetim turunda birincil kaynak + ECB kuru + TMS29 çapraz kontrolüyle doğrulanmış (RISK_REVIEW.md). Zayıf noktalar: 9A2026 net borç/FAVÖK oranı hesaplanamadı (yalnızca mutlak TL net borç 51,4 mr TL, ikincil kaynak); Koç Stellantis Finansman A.Ş.'nin (tam konsolide, %100 bağlı ortaklık) borcunun imalat borcundan ayrıştırılmış payı hiçbir turda bulunamadı; şarta bağlı 5,88 mr TL yükümlülüğün YILLIK ödeme takviminin/olasılığının nicel modeli yapılmadı."
+  },
+  "structuralRisksCarriedForward": [
+    "Stellantis'in global platform/model tahsis kararlarına yapısal bağımlılık; 2030 sonrası için somut görünürlük yok (dividend-screening-20261110)",
+    "Elektrikli araç (BEV) geçişinin hızlanması ve Tofaş'ın kendi BEV ürün/üretim planının bulunamaması (dividend-screening-20261110)",
+    "Nisan 2025 Stellantis Otomotiv Pazarlama devralımının henüz ~1,5 yıllık test süresiyle uzun vadeli kârlılık/nakit üretim etkisinin belirsizliği (dividend-screening-20261110)",
+    "YENİ (bağımsız denetim turu): Stellantis Otomotiv Pazarlama devralmasına bağlı 5,88 mr TL'lik, devralmayı takip eden 8 mali yılın her birinde (2033'e kadar) tetiklenebilecek, %77,5 paylaşım oranlı şarta bağlı bedel yükümlülüğü — önceki (ilk) turda hiç yer almıyordu",
+    "Net borç/FAVÖK'ün net nakitten (FY2022-23) +3,37x'e (FY2025) yükselmesi ve 9A2026'da mutlak TL bazında artmaya devam etmesi (51,4 mr TL net borç)",
+    "FY2024'ten beri (en az 3 yıl: 2024, 2025, 9A2026) süren, 3 çeyrekte düzelmeyen/derinleşen negatif FCF ve stok/işletme sermayesi birikimi — 'son 2-3 çeyrek' değil, daha uzun soluklu bir sorun (bağımsız denetim turunun ana düzeltmesi)",
+    "Kapasite kullanım oranının %58'den (2022) %33'e (2025) gerilemesi",
+    "Koç Stellantis Finansman A.Ş. (tam konsolide, %100 bağlı ortaklık) borcunun imalat borcundan ayrıştırılmış payının hâlâ bulunamaması — risk profili farklı iki borç türünün karıştığı belirsiz",
+    "ÖTV ve diğer düzenleyici değişikliklere yüksek duyarlılık (Türkiye otomotiv talebinin yapısal özelliği)"
+  ],
+  "missingData": [
+    {
+      "item": "FY2023 CFO/CAPEX/nakit akış tablosu",
+      "status": "Hâlâ eksik — iki tur da bulamadı",
+      "blocksCalculation": "2021-2025 arası tam ve kesintisiz bir FCF/payout-karşılama serisi kurulamıyor; 2021-2022 (pozitif) ile 2024-2025 (negatif) arasındaki geçiş yılının (2023) gerçekte hangi yönde olduğu bilinmiyor",
+      "possibleSource": "tofas.com.tr IR arşivinden 2023 faaliyet raporunun elle indirilmesi"
+    },
+    {
+      "item": "9A2026 (30.09.2026) net borç/FAVÖK oranı ve bu dönemin FAVÖK/CAPEX rakamı",
+      "status": "Eksik, yalnızca mutlak TL net borç (51,4 mr TL, ikincil kaynak) var",
+      "blocksCalculation": "Kaldıraç yörüngesinin kesim tarihine en yakın halkası kesin bir oranla ifade edilemiyor",
+      "possibleSource": "TOASO 30.09.2026 ara dönem özet konsolide finansal tabloları (KAP/tofas.com.tr)"
+    },
+    {
+      "item": "Koç Stellantis Finansman A.Ş.'nin (tam konsolide, %100 bağlı ortaklık) müşteri kredisi fonlama borcunun konsolide toplam finansal borç içindeki payı",
+      "status": "Hiçbir turda bulunamadı",
+      "blocksCalculation": "İmalat/işletme sermayesi borcu ile finansman iştiraki (teminatlı alacak karşılığı) borcunun ayrı risk profillerinin net borç/FAVÖK gibi oranlara etkisi ayrıştırılamıyor",
+      "possibleSource": "Konsolide finansal tabloların segment/bağlı ortaklık bazlı dipnot kırılımı"
+    },
+    {
+      "item": "Stellantis Otomotiv Pazarlama şarta bağlı bedelin (5,88 mr TL) yıllık ödeme olasılığı/tutarının nicel modeli",
+      "status": "Yükümlülüğün varlığı ve koşulları (8 yıl, %77,5 paylaşım) doğrulandı ama yıl-yıl nakit akışı etkisi modellenmedi",
+      "blocksCalculation": "2026-2033 arası olası ek nakit çıkışlarının büyüklüğü/zamanlaması bu turlarda tahmin edilemiyor",
+      "possibleSource": "Devralma sözleşmesinin (Pay Devir Sözleşmesi, 28.07.2023) tam metni, referans FCF tanımı ve hesap yöntemi"
+    },
+    {
+      "item": "TÜFE kaynağının (hakedis.org ikincil derleme) TÜİK'in resmi data.tuik.gov.tr portalından birincil doğrulaması",
+      "status": "Yapılmadı (MACRO_REFERENCE.md'nin bilinen sınırlaması, tüm 10 şirket için ortak)",
+      "blocksCalculation": "Reel TL hesaplarının güven derecesini hafifçe düşürüyor; linkleme tutarlılığı (sıfır sapma) ve resmi YoY ile birebir eşleşme güven artırıcı ama birincil doğrulama değil",
+      "possibleSource": "data.tuik.gov.tr'nin etkileşimli form arayüzünden elle sorgu"
+    },
+    {
+      "item": "USD/TRY kaynağının (Yahoo Finance TRY=X) TCMB resmi alış/satış/efektif kuruyla çapraz kontrolü",
+      "status": "Yapılmadı (MACRO_REFERENCE.md'nin bilinen sınırlaması, tüm 10 şirket için ortak)",
+      "blocksCalculation": "Günlük kapanış kuru, gün içi farklı saatte gerçekleşen ödemelerle küçük bir zamanlama farkı taşıyabilir; CLAUDE.md'nin 'Açık kararlar' bölümünde TCMB alış/satış/efektif seçimi hâlâ karara bağlanmamış",
+      "possibleSource": "TCMB EVDS günlük kur arşivi"
+    }
+  ],
+  "agentNotes": "Bu dördüncü tur SINIFLANDIRMA yapmamıştır; TOASO ilk turda B (Koşullu Aday), ikinci (bağımsız denetim) turda B içinde 'orta/zayıf B'ye kaydırılmış, üçüncü (portföy sentezi) turda 'portföye almadan önce ek doğrulama şart olan üç şirket'ten biri olarak işaretlenmiştir — bu kararlar burada DEĞİŞTİRİLMEMİŞTİR, yalnızca aktarılmıştır. Bu turun kendi katkısı: (1) 11 ödeme yılının tamamı için merkezi lookup.cjs ile tek, tutarlı FX/TÜFE tabanından nominal/reel/USD pay-başına ve toplam nakit rakamları üretildi (tüm fxLookbackDays=0, hiçbir tahmini/uydurma değer kullanılmadı); (2) nominal ve reel/USD CAGR arasındaki büyük ayrışma (10 yıl: nominal +%36,5/yıl vs reel +%4,55/USD +%2,41; 5 yıl: nominal +%41,4/yıl vs reel -%8,9/USD -%4,7, İKİSİ DE NEGATİF) ilk kez sistematik olarak sayısallaştırıldı; (3) 'hiçbir yıl kesinti yok, hep artan' anlatısının pay-başına NOMİNAL düzeyde de üç istisnası (paymentYear 2017, 2023, 2025) olduğu, özellikle paymentYear2025'teki -%40 nominal düşüşün önceki raporlarda yeterince vurgulanmadığı not edildi. Reel hesap TÜİK'in ULUSAL TÜFE sepeti bazındadır (yatırımcının kişisel tüketim sepeti farklı olabilir, MACRO_REFERENCE.md'nin metodolojik basitleştirmesi); 2026-11 ve sonrası için TÜFE verisi henüz yayımlanmadığından bu aydan sonraki hiçbir ödeme için reel hesap üretilemez (bu şirkette etkilenen satır yok, en güncel ödeme 2026-03 TÜFE ayını kullanıyor). Sürdürülebilirlik/risk bölümündeki hiçbir rakam bu oturumda yeniden hesaplanmamış veya doğrulanmamıştır; tamamı önceki üç turdan kaynak gösterilerek aktarılmıştır.",
+  "sourceDocuments": [
+    "dividend-screening-20261110/companies/TOASO.json",
+    "dividend-screening-20261110/companies/TOASO.md",
+    "dividend-screening-independent-audit-20261110/AUDIT.md",
+    "dividend-screening-independent-audit-20261110/CASHFLOW.md",
+    "dividend-screening-independent-audit-20261110/RISK_REVIEW.md",
+    "dividend-screening-independent-audit-20261110/DATA_GAPS.md",
+    "dividend-screening-independent-audit-20261110/FINAL_SHORTLIST.md",
+    "dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md",
+    "dividend-portfolio-decision-20261110/UNRESOLVED_ISSUES.md",
+    "dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md",
+    "dividend-growth-screening-20261110/_reference/lookup.cjs"
+  ],
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "NEEDS_REVIEW"
+}

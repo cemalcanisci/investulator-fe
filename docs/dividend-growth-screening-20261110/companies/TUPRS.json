@@ -1,0 +1,228 @@
+{
+  "symbol": "TUPRS",
+  "companyName": "Türkiye Petrol Rafinerileri A.Ş. (Tüpraş)",
+  "dividendSeries": {
+    "basis": "profitYear",
+    "baseMonthForReal": "2026-10",
+    "entries": [
+      {
+        "year": 2015,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2016-04-06", "grossPerShareTRY": "6.50", "totalCashTRY": null, "usdTryRateUsed": 2.839060068130493, "fxDateUsed": "2016-04-06", "tufeIndexUsed": 276.42, "realDeflationFactor": 16.210953251377465}
+        ],
+        "grossPerShareTRY_annualSum": "0.928571",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Ham değer split-öncesi pay biriminde 6,50 TL/eski-pay (brüt ikincil kaynaktan çapraz kontrollü, net %552,50 şirket resmi arşivinden). Nisan 2023 %600 bedelsiz (1 eski paya 7 yeni pay, MKK #1132302) sonrası pay birimine çevrilmiş (÷7) değer 0,928571 TL/yeni-pay-eşdeğeri olarak grossPerShareTRY_annualSum'a yazıldı — tüm yıllar karşılaştırılabilir tek birimde tutulsun diye. Reel (2026-10 bazlı) = 15,053028; USD = 0,327070 (yeni-pay-eşdeğeri başına)."
+      },
+      {
+        "year": 2016,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2017-04-04", "grossPerShareTRY": "6.22", "totalCashTRY": null, "usdTryRateUsed": 3.6775999069213867, "fxDateUsed": "2017-04-04", "tufeIndexUsed": 309.23, "realDeflationFactor": 14.4909345721494}
+        ],
+        "grossPerShareTRY_annualSum": "0.888571",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Ham değer split-öncesi 6,22 TL/eski-pay (brüt ikincil kaynaktan çapraz kontrollü, net %528,53 şirket arşivi). Split-ayarlı (÷7) = 0,888571 TL/yeni-pay-eşdeğeri. Reel = 12,876230; USD = 0,241617."
+      },
+      {
+        "year": 2017,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2018-03-29", "grossPerShareTRY": "13.60", "totalCashTRY": null, "usdTryRateUsed": 3.9449000358581543, "fxDateUsed": "2018-03-29", "tufeIndexUsed": 336.48, "realDeflationFactor": 13.317379035145501}
+        ],
+        "grossPerShareTRY_annualSum": "1.942857",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Ham değer split-öncesi 13,60 TL/eski-pay (brüt ikincil kaynaktan çapraz kontrollü, net %1.156,26 şirket arşivi). Split-ayarlı (÷7) = 1,942857 TL/yeni-pay-eşdeğeri. Reel = 25,873765; USD = 0,492498."
+      },
+      {
+        "year": 2018,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2019-03-28", "grossPerShareTRY": "15.15", "totalCashTRY": null, "usdTryRateUsed": 5.394700050354004, "fxDateUsed": "2019-03-28", "tufeIndexUsed": 402.81, "realDeflationFactor": 11.124430122752063}
+        ],
+        "grossPerShareTRY_annualSum": "2.164286",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Ham değer split-öncesi 15,15 TL/eski-pay (brüt ikincil kaynaktan çapraz kontrollü, net %1.287,75 şirket arşivi). Split-ayarlı (÷7) = 2,164286 TL/yeni-pay-eşdeğeri. Reel = 24,076445; USD = 0,401187."
+      },
+      {
+        "year": 2019,
+        "paid": false,
+        "installments": [],
+        "grossPerShareTRY_annualSum": "0",
+        "totalCashTRY_annualSum": "0",
+        "totalCashTRY_real_baseOct2026": "0",
+        "totalCashUSD": "0",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Şirketin resmi Temettü Ödeme Tarihçesi arşivi: net %0,00. Gerçekten ödenmedi (kesinti), veri eksikliği değil — CLAUDE.md ayrımına göre bu sıfır gerçek bir sıfırdır, 'bulunamadı' değildir. Zayıf rafineri marjı dönemi."
+      },
+      {
+        "year": 2020,
+        "paid": false,
+        "installments": [],
+        "grossPerShareTRY_annualSum": "0",
+        "totalCashTRY_annualSum": "0",
+        "totalCashTRY_real_baseOct2026": "0",
+        "totalCashUSD": "0",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Şirketin resmi arşivi: net %0,00. COVID-19 talep şoku dönemi; gerçek sıfır ödeme (veri eksikliği değil)."
+      },
+      {
+        "year": 2021,
+        "paid": false,
+        "installments": [],
+        "grossPerShareTRY_annualSum": "0",
+        "totalCashTRY_annualSum": "0",
+        "totalCashTRY_real_baseOct2026": "0",
+        "totalCashUSD": "0",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Şirketin resmi arşivi: net %0,00. Aynı yıl CFO negatifti (-1,429088 milyar TL, birincil kaynaktan doğrulandı, bkz. CASHFLOW.md) iken net kâr pozitifti (3,494837 milyar TL) — işletme sermayesi/stok etkisi muhtemel. Gerçek sıfır ödeme."
+      },
+      {
+        "year": 2022,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2023-03-10", "grossPerShareTRY": "45.41", "totalCashTRY": null, "usdTryRateUsed": 18.951900482177734, "fxDateUsed": "2023-03-10", "tufeIndexUsed": 1269.75, "realDeflationFactor": 3.5290661136017003},
+          {"paymentDate": "2023-09-29", "grossPerShareTRY": "7.5254479", "totalCashTRY": null, "usdTryRateUsed": 27.458900451660156, "fxDateUsed": "2023-09-28", "tufeIndexUsed": 1691.04, "realDeflationFactor": 2.6498673583982395}
+        ],
+        "grossPerShareTRY_annualSum": "14.012591",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": "Nisan 2023: %600 bedelsiz sermaye artırımı (1 eski paya 7 yeni pay), MKK #1132302. 1. taksit (2023-03-10) ESKİ pay biriminde, 2. taksit (2023-09-29) YENİ (split-sonrası) pay biriminde ödendi — aynı kâr yılı içinde iki farklı pay birimi.",
+        "dataQuality": "DERIVED",
+        "notes": "1. taksit brüt 45,41 TL/eski-pay KESİN DEĞİL — net %4.087,10 (şirket resmi arşivi, primary) üzerinden %10 stopaj VARSAYIMIYLA geri türetilmiş bir TAHMİNDİR (orijinal kaynakta 'tahmini' olarak işaretli), birincil belgeyle doğrulanmamıştır. 2. taksit brüt 7,5254479 TL/yeni-pay KAP kaynaklı (annual2024), güvenilir. Toplamda karşılaştırılabilir olsun diye 1. taksit ÷7 = 6,487143 TL/yeni-pay-eşdeğerine çevrildi; grossPerShareTRY_annualSum = 6,487143 + 7,5254479 = 14,012591 (split-ayarlı, PARÇA TAHMİNİ içerir). Reel toplam = 42,834995; USD toplam = 0,616357 (ikisi de 1. taksitin tahmini doğasını miras alır)."
+      },
+      {
+        "year": 2023,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2024-04-03", "grossPerShareTRY": "10.379928", "totalCashTRY": null, "usdTryRateUsed": 31.94529914855957, "fxDateUsed": "2024-04-03", "tufeIndexUsed": 2207.5, "realDeflationFactor": 2.0299124338599133},
+          {"paymentDate": "2024-09-27", "grossPerShareTRY": "11.9369175", "totalCashTRY": null, "usdTryRateUsed": 34.17539978027344, "fxDateUsed": "2024-09-26", "tufeIndexUsed": 2526.16, "realDeflationFactor": 1.7738511011756022}
+        ],
+        "grossPerShareTRY_annualSum": "22.316846",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Her iki taksit split-sonrası (yeni) pay biriminde, şirket resmi net-% arşivi + KAP brüt rakamı tutarlı (~%90 net/brüt). Toplam = 10,379928 + 11,9369175 = 22,316846. Reel toplam = 42,244659; USD toplam = 0,674212."
+      },
+      {
+        "year": 2024,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2025-03-28", "grossPerShareTRY": "7.7849461", "totalCashTRY": null, "usdTryRateUsed": 38.003299713134766, "fxDateUsed": "2025-03-28", "tufeIndexUsed": 2954.69, "realDeflationFactor": 1.516582686422521},
+          {"paymentDate": "2025-09-30", "grossPerShareTRY": "7.4216486", "totalCashTRY": null, "usdTryRateUsed": 41.582698822021484, "fxDateUsed": "2025-09-30", "tufeIndexUsed": 3367.22, "realDeflationFactor": 1.3307807917943464}
+        ],
+        "grossPerShareTRY_annualSum": "15.206595",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Her iki taksit yeni pay biriminde, şirket net-% arşivi + KAP brüt tutarlı; net/brüt oranı ~%85 (önceki yıldan farklı, olası stopaj değişikliği, mevzuat kaynağıyla doğrulanmadı). Toplam = 7,7849461 + 7,4216486 = 15,206595. Reel toplam = 21,683102; USD toplam = 0,383328 — 2023'e göre REEL ve USD bazda düşüş (bkz. growthMetrics)."
+      },
+      {
+        "year": 2025,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2026-03-16", "grossPerShareTRY": "10.3799282", "totalCashTRY": "15000000000", "usdTryRateUsed": 44.17097091674805, "fxDateUsed": "2026-03-16", "tufeIndexUsed": 3866.668468602524, "realDeflationFactor": 1.1588869679756317},
+          {"paymentDate": "2026-10-02", "grossPerShareTRY": "6.7469533", "totalCashTRY": "14300000000", "usdTryRateUsed": 49.11859893798828, "fxDateUsed": "2026-10-01", "tufeIndexUsed": 4481.031697745759, "realDeflationFactor": 1}
+        ],
+        "grossPerShareTRY_annualSum": "17.126882",
+        "totalCashTRY_annualSum": "~29300000000 (İKİNCİL KAYNAKLI, DOĞRULANMAMIŞ)",
+        "totalCashTRY_real_baseOct2026": "~31683304520 (İKİNCİL KAYNAKLI tutarın türevi, DOĞRULANMAMIŞ)",
+        "totalCashUSD": "~630721629 (İKİNCİL KAYNAKLI tutarın türevi, DOĞRULANMAMIŞ)",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "2. taksit MKK #1671443 ile gerçekleşen ödeme olarak BİRİNCİL teyitli (6,7469533 TL/pay). 1. taksit KAP kaynaklı (10,3799282 TL/pay), MKK execution-teyidi yok ama KAP birincil sayılır. Pay başına toplam = 17,126882 (split birimi değişmedi, çevrim gerekmedi). Toplam nakit temettü (~29,3 mr TL = 1. taksit ~15,0 mr + 2. taksit ~14,3 mr) Forbes/Investing.com Türkiye haberlerinden (ikisi aynı KAP/GK açıklamasının kopyası, bağımsız sayılmaz), KAP'ın birincil genel kurul kâr dağıtım tutanağıyla bire bir doğrulanmadı — bu yüzden totalCashTRY_real_baseOct2026 ve totalCashUSD alanları da bu ikincil-kaynaklı tutarın DÜZ TÜREVİDİR, ayrıca bir belirsizlik katmanı taşır. Pay başına reel toplam = 18,776117; USD toplam = 0,372355 (bunlar güvenilir, çünkü doğrudan KAP/MKK brüt pay başına rakamlarından türetildi, toplam nakit rakamından değil)."
+      }
+    ]
+  },
+  "growthMetrics": {
+    "methodologyNote": "Tüm pay başına (perShare) seriler, Nisan 2023 %600 bedelsiz sermaye artırımı (1 eski paya 7 yeni pay, MKK #1132302) nedeniyle split-sonrası (yeni) pay birimine normalize edilmiştir: 2023 öncesi ham değerler ÷7 ile çevrilmiştir (bkz. her girişin 'notes' alanı). Reel TL, baz ay 2026-10 TÜFE'sine göre (TÜİK, hakedis.org ikincil derlemesi — bkz. MACRO_REFERENCE.md sınırlaması); USD, Yahoo Finance TRY=X günlük kapanışına göre (TCMB ile bu turda çapraz doğrulanmadı). Tüm FX/TÜFE girdileri `_reference/lookup.cjs` çıktısıdır, başka hiçbir kur/TÜFE verisi aranmadı/uydurulmadı. Başlangıç veya bitiş yılı sıfır olduğunda (2019-2021 kâr yılları) standart CAGR üretilmedi; en yakın pozitif-pozitif karşılaştırılabilir çiftler kullanıldı ve ayrıca not edildi. ÖNEMLİ BULGU: Nominal 10 yıllık CAGR (~%33,8/yıl) büyük ölçüde bir enflasyon/kur yanılsamasıdır — aynı 10 yılın reel (~%2,2/yıl) ve USD (~%1,3/yıl) CAGR'ı pozitif ama çok mütevazıdır; ayrıca 2022 süper-döngü zirvesinden sonra (2023→2024→2025) reel ve USD bazda pay başına temettü ÜST ÜSTE İKİ YIL GERİLEMİŞTİR.",
+    "nominalTRY_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl, split-ayarlı yeni-pay-eşdeğeri birimde, ikisi de pozitif): %33,84/yıl (0,928571 → 17,126882 TL/pay)",
+      "cagr5y": "Standart 2021→2025 üretilemez (2021 kâr yılı sıfır). En yakın pozitif-pozitif karşılaştırılabilir çiftler: 2022→2025 (3 yıl, iyileşme-sonrası dönem) = %6,92/yıl; alternatif gap-aşan çift 2018→2025 (7 yıl) = %34,38/yıl.",
+      "cutYears": [2019, 2020, 2021],
+      "increaseYears": [2017, 2018, 2022, 2023, 2025]
+    },
+    "realTRY_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl): %2,23/yıl (15,053028 → 18,776117 TL, 2026-10 satın alma gücü bazında) — nominal CAGR'ın (%33,8) büyük kısmı enflasyon yanılsaması, gerçek reel büyüme çok küçük.",
+      "cagr5y": "Standart 2021→2025 üretilemez. 2022→2025 (3 yıl) = %-24,04/yıl (NEGATİF — süper-döngü zirvesinden geriliyor); gap-aşan 2018→2025 (7 yıl) = %-3,49/yıl (NEGATİF).",
+      "purchasingPowerPreservedYears": [2017, 2022],
+      "purchasingPowerLostYears": [2016, 2018, 2023, 2024, 2025]
+    },
+    "usd_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl): %1,31/yıl (0,327070 → 0,372355 USD/pay) — pozitif ama çok mütevazı.",
+      "cagr5y": "Standart 2021→2025 üretilemez. 2022→2025 (3 yıl) = %-15,46/yıl (NEGATİF); gap-aşan 2018→2025 (7 yıl) = %-1,06/yıl (NEGATİF).",
+      "declineYears": [2016, 2018, 2024, 2025]
+    },
+    "totalCashTRY_nominal": {
+      "cagr10y": null,
+      "cagr5y": null,
+      "note": "Toplam nakit temettü (TL) serisi 11 kâr yılının yalnızca 1'inde (2025, kendisi de ikincil kaynaklı/doğrulanmamış) mevcut; tek veri noktasından CAGR hesaplanamaz. Diğer tüm yıllar null (pay sayısı/sermaye yapısı KAP/MKK ile teyit edilemediği için pay başı rakamdan güvenilir türetilemedi, bkz. missingData)."
+    }
+  },
+  "continuityVsGrowth": {
+    "continuityYearsCount": 8,
+    "missedYears": [2019, 2020, 2021],
+    "recoveryEvidence": "3 art arda ödemesiz kâr yılı (2019-2021) sonrası, 2022 kâr yılından itibaren ödeme tam ve hızlı biçimde geri döndü: split-ayarlı nominal pay başı temettü son ödenen yıl olan 2018'deki 2,164286 TL'den 2022'de 14,012591 TL'ye sıçradı (~6,5 kat) ve 2023'e kadar büyümeyi sürdürdü (22,316846 TL). Aynı zamanda ödeme yapısı tek taksitten iki taksite geçti (2023'ten itibaren).",
+    "growthAssessment_separateFromContinuity": "Süreklilik (kesintiden güçlü dönüş) ile ödenen yıllardaki büyüme AYRI sorulardır ve farklı cevaplar veriyor: (1) Süreklilik sorusu — kesinti 3 yıl sürdü ama tam ve büyük bir dönüşle kapandı, bu olumlu bir sinyaldir. (2) Büyüme sorusu — ödenen yıllar arasında nominal büyüme çarpıcı (%33,8/yıl, 10 yıl) ama bunun büyük kısmı TL enflasyonu/değer kaybı yanılsamasıdır; reel ve USD bazda 10 yıllık büyüme pozitif ama çok küçüktür (%1-2/yıl) VE son iki ödeme yılında (2023→2024, 2024→2025) reel/USD bazda PAY BAŞI temettü üst üste GERİLEMİŞTİR — yani 'kesintiden güçlü dönüş' olgusu, 'dönüş sonrası sürekli büyüme' anlamına gelmiyor. Bu iki bulgu aynı cümlede birleştirilip tek bir sonuca indirilmemiştir."
+  },
+  "sustainabilitySynthesis": {
+    "summary": "Üç önceki turun bulguları (yeniden araştırma yapılmadan, kaynak göstererek): CFO serisi 2021-2025 artık tam ve birincil kaynaktan doğrulanmıştır (-1,429088 / 43,913911 / 85,276324 / 35,271031 / 49,464734 milyar TL) — döngüsellik artık sayısal olarak kanıtlıdır (2023→2024 arası CFO hesap yöntemine göre %58,6-71,4 düşmüştür). CAPEX 2021-2024 hâlâ çıkarılamamıştır — bu bir araştırma ihmali değil, bu ortamda poppler/pdftoppm olmaması nedeniyle PDF satır kayması görsel doğrulanamadığı için teknik bir erişim engelidir (CFO için aynı iddia ÇÜRÜTÜLMÜŞTÜR, CFO zaten doğru kullanılıyordu). FCF/payout karşılama oranı yalnızca 2025 için hesaplanabilmiştir: CFO karşılama 1,42x, CAPEX-sonrası serbest nakit karşılama 0,87x (yani 2025'te temettü, CAPEX sonrası serbest nakit akışını aşmıştır). 2022 süper-döngüsü hariç tutulduğunda CFO ortalaması ~28 milyar TL/yıl olup, temettü kapasitesinin 2022-2023 zirvesine göre çok daha mütevazı olduğu not edilmiştir. H1 2026 itibarıyla güçlü net nakit pozisyonu (-102,232249 milyar TL net borç, yani net nakit) KAP ile çift mutabakatlıdır; Fitch (BB-/Pozitif) ve Moody's (Ba2/Durağan) bu yönü (ikincil haber kaynaklarından, orijinal rapor bu turlarda indirilmemiş) USD bazında farklı tarihte destekler. Borcun döviz/vade kompozisyonu üç turda da doğrulanamamıştır.",
+    "citedFrom": [
+      "docs/dividend-screening-20261110/companies/TUPRS.md (bölüm 4, 5)",
+      "docs/dividend-screening-20261110/companies/TUPRS.json (sustainability, financialResilience)",
+      "docs/dividend-screening-independent-audit-20261110/CASHFLOW.md (TUPRS bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/RISK_REVIEW.md (TUPRS bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/DATA_GAPS.md (TUPRS satırları)",
+      "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md (TUPRS bölümü)"
+    ]
+  },
+  "evidenceReliability": {
+    "dividendHistoryConfidence": "Yüksek (ödeme/ödememe olgusu, 2015-2025, şirketin resmi arşivi + KAP/MKK çift mutabakatlı) ama Orta-Düşük (tam taksit/toplam tutarları): 2022 kâr yılının ilk taksit brüt tutarı reverse-derive edilmiş bir TAHMİNDİR (birincil doğrulanmamış); toplam nakit TL tutarları 11 yılın 10'unda null, 1 yılda (2025) ikincil kaynaklı/doğrulanmamıştır; pay sayısı/sermaye yapısı KAP/MKK ile teyit edilmemiştir.",
+    "cashFlowConfidence": "Bölünmüş: CFO = Yüksek (2021-2025 tam, birincil kaynaktan, 3 araştırma turunda da teyitli). CAPEX = Düşük (2021-2024 tamamen çıkarılamadı — teknik erişim engeli, araştırma ihmali değil; 2025 ≈19,12 mr TL düşük-orta güvenle, H1 2026 11,858 mr TL KAP XBRL ile yüksek güvenle). Bu ayrım blanket bir etiketle kaybolmasın diye METHODOLOGY_REVIEW.md'nin önerisine göre ayrı tutulmuştur.",
+    "riskAssessmentConfidence": "Orta: Döngüsellik riski artık nicel/sayısal kanıtla (CFO volatilitesi) güçlü; kredi notu bulguları (Fitch, Moody's) ikincil haber kopyalarından (orijinal rapor hiçbir turda indirilmedi), yön olarak güvenilir ama sayısal mutabakat iddia edilmiyor; borç döviz/vade kompozisyonu hiçbir turda doğrulanamadı (Düşük); enerji dönüşümü/SAF/yeşil hidrojen riskleri şirketin kendi ileriye dönük hedefleri olup gerçekleşmiş sonuç değildir (Düşük-Orta, nitel).",
+    "overallNote": "Kanıt güvenilirliğinin bölümlere göre Orta/Düşük olması TUPRS'ın finansal kalitesinin düşük olduğu anlamına GELMEZ — bu iki eksen ayrıdır. Örneğin CAPEX verisinin düşük güvenilirlikle 'eksik' olması, şirketin CAPEX disiplininin zayıf olduğunu göstermez; sadece bu veri setinin bu oturumda teknik nedenlerle tam çıkarılamadığını gösterir. Tersine, CFO serisinin yüksek güvenilirlikle doğrulanmış olması, temettü kapasitesinin döngüsel olduğu gerçeğini (ki bu olumsuz bir finansal nitelik gözlemidir) değiştirmez."
+  },
+  "structuralRisksCarriedForward": [
+    "Rafineri marjı (crack spread) döngüselliği — artık CFO volatilitesiyle sayısal olarak kanıtlı (2023→2024 arası CFO %58,6-71,4 düşüş); 10-15 yıllık ufukta benzer düşüşler beklenmeli (TUPRS.md böl. 7, RISK_REVIEW.md)",
+    "Enerji dönüşümü / karbon regülasyonu (CBAM benzeri mekanizmalar); SAF (~800M USD) ve yeşil hidrojen (~2,8 mr USD) yatırımları henüz gerçekleşmiş FAVÖK üretmedi, yalnızca şirketin kendi ileriye dönük hedefi (TUPRS.md böl. 6-7)",
+    "Ham petrol tedarik riski — Türkiye'nin ithalatçı konumu, tedarikçi/ülke yoğunlaşması doğrulanmadı (TUPRS.md böl. 7)",
+    "Döviz/borç yapısı riski — gelir dolarize ama borcun döviz/vade kompozisyonu hiçbir turda (3 tur) doğrulanamadı; H1 2026 net nakit (TL) ile kredi kuruluşlarının USD bazlı düşük kaldıraç yorumu yön olarak tutarlı ama farklı tarihli, doğrudan mutabakat değil (CASHFLOW.md, COMPANY_DECISIONS.md)",
+    "Temettü stopaj oranının yıllar arası değişken görünmesi (~%10'dan ~%15'e, 2025 ödemelerinde), mevzuat kaynağıyla doğrulanmadı (TUPRS.md böl. 2, 7)",
+    "CAPEX çok yıllı serisinin teknik erişim engeli nedeniyle hâlâ eksik olması, çok yıllı FCF/payout karşılama oranının (yalnızca 2025: 0,87x) genelleştirilmesini önlüyor (DATA_GAPS.md, UNRESOLVED_ISSUES.md #11)"
+  ],
+  "missingData": [
+    {"item": "2021-2024 CAPEX tam serisi", "reason": "Teknik erişim engeli: bu ortamda poppler/pdftoppm yok, PDF metin çıkarımındaki satır kayması görsel doğrulanamadı — araştırma ihmali değil (METHODOLOGY_REVIEW.md madde 4 ayrımına göre 'erişilebilir değil/okunamıyor' kategorisi)", "blocksCalculation": "Çok yıllı (5 yıllık) FCF/payout karşılama oranı hesaplanamıyor, yalnızca 2025 için tek yıllık oran (0,87x) var"},
+    {"item": "Her yıl için KAP genel kurul kâr dağıtım tutanağıyla teyitli toplam nakit temettü (TL) tutarı", "reason": "11 kâr yılının 10'unda hiç bulunamadı (null); 2025 için bulunan ~29,3 mr TL rakamı ikincil haber kaynaklı (Forbes/Investing.com Türkiye, aynı KAP/GK açıklamasının kopyaları, bağımsız sayılmaz), birincil KAP tutanağıyla bire bir doğrulanmadı", "blocksCalculation": "totalCashTRY_nominal CAGR serisi hesaplanamıyor (tek veri noktası); payout oranının (temettü/net kâr) TL cinsinden kesin büyüklüğü bilinmiyor"},
+    {"item": "2022 kâr yılının ilk taksit (2023-03-10) brüt tutarı", "reason": "Net %4.087,10 (primary) üzerinden %10 stopaj VARSAYIMIYLA geri türetilmiş bir TAHMİNDİR, birincil belgeyle doğrulanmamıştır (orijinal kaynakta 'KESİN DEĞİL' olarak işaretli)", "blocksCalculation": "profitYear 2022'nin nominal/reel/USD annual sum değerleri ve buna bağlı 2018→2022 veya 2022→2025 CAGR hesapları kısmen tahmine dayanır"},
+    {"item": "Borcun döviz/vade kompozisyonu, net borç/FAVÖK, faiz karşılama oranı (dipnot bazında)", "reason": "Üç araştırma turunda da birincil dipnot kaynağından doğrulanamadı", "blocksCalculation": "Finansal dayanıklılığın büyüklüğü (yönü değil) nicelleştirilemiyor"},
+    {"item": "Güncel/tarihsel kesin pay sayısı ve sermaye yapısı (KAP/MKK teyitli)", "reason": "tupras.com.tr/tr/sermaye-yapisi sayfası ve ilgili KAP sermaye artırım bildirimleri hiçbir turda doğrudan okunmadı", "blocksCalculation": "Toplam nakit temettü tutarlarının pay başına rakamlardan güvenilir türetilmesini engelliyor, bu yüzden totalCashTRY_annualSum çoğu yıl null bırakıldı"},
+    {"item": "2016-2020 hasılat/kâr rakamlarının birincil CMB/KAP kaynağıyla çift mutabakatı", "reason": "Yalnızca 2021-2025 birincil mutabakatlıdır (önceki Investulator çalışmasından devralındı); 2016-2020 ikincil kaynaklıdır", "blocksCalculation": "Bu dönem için yalnızca temettü ödeme/ödememe olgusu (şirketin resmi arşivinden) yüksek güvenle biliniyor, TL büyüklükler düşük güvenle kullanıldı"},
+    {"item": "TÜFE kaynağının (hakedis.org ikincil derleme) ve USD/TRY kaynağının (Yahoo Finance) birincil kaynaklarla (TÜİK portalı, TCMB) çapraz doğrulanması", "reason": "MACRO_REFERENCE.md'de belirtilen, bu çalışmanın miras aldığı, TUPRS'a özel olmayan ortak bir sınırlama", "blocksCalculation": "Bu raporun tüm reel/USD hesapları bu ikincil kaynaklara bağlıdır; yön/büyüklük mertebesi güvenilir ama son kuruşa kadar kesinleştirilmedi"}
+  ],
+  "agentNotes": "Sınıflandırma (A/B/C/D) bu ajan tarafından yapılmadı; merkezi sentezde uygulanacak. Gözlem: Bu turun asıl katkısı, önceki 3 turda hiç üretilmemiş olan ('bu raporda hesaplanmadı' notu TUPRS.md böl. 2'de açıkça yazılıydı) reel TL ve USD bazlı pay başı temettü büyüme serisidir. Bulgu, mevcut B kararını DEĞİŞTİRMİYOR ama onu sayısal olarak GÜÇLENDİRİYOR/derinleştiriyor: (1) Nominal 10 yıllık büyüme (%33,8/yıl) büyük ölçüde bir enflasyon yanılsamasıdır — reel (%2,2/yıl) ve USD (%1,3/yıl) büyüme pozitif ama çok küçüktür, AKSA'nın 'nominal büyüme bir yanılsama' bulgusuna benzer (ama AKSA'da yön negatifti, TUPRS'ta hafif pozitif). (2) 2022 süper-döngü zirvesinden sonra (2023→2024→2025), reel ve USD bazda pay başı temettü ÜST ÜSTE İKİ ÖDEME YILI GERİLEMİŞTİR — bu, METHODOLOGY_REVIEW.md'nin 'kâr/temettü büyümesi büyük ölçüde 2022 süper-döngüsünden besleniyor' qualitatif gözlemine somut sayısal kanıt sağlar ve COMPARISON.md/COMPANY_DECISIONS.md'nin TUPRS'ı 'göreli B' sıralamasında nötr/hafif zayıflatıcı yönde değerlendirmesini destekleyebilir. (3) Süreklilik (3 yıllık kesintiden güçlü dönüş) ile büyüme (ödenen yıllar arasında tutarlı mı) ayrı sorulduğunda, dönüş güçlü ama sonrasındaki büyüme tutarlı değil — bu ayrım merkezi sentezde 'her yıl kesintisiz büyüyen çekirdek temettü hissesi' (A) standardına TUPRS'ın neden uymadığını sayısal olarak daha da netleştirir, C'ye düşürecek bir bulgu değildir (dönüş olgusu hâlâ geçerli ve güçlü)."
+}

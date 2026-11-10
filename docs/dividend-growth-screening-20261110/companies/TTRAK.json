@@ -1,0 +1,502 @@
+{
+  "symbol": "TTRAK",
+  "companyName": "Türk Traktör ve Ziraat Makineleri A.Ş.",
+  "researchAsOf": "2026-11-10",
+  "roundInfo": "dividend-growth-screening-20261110 — DÖRDÜNCÜ tur. Bu rapor A/B/C/D sınıflandırması YAPMAZ; yalnızca temettü büyümesi veri derlemesi ve nominal/reel/USD hesaplamasıdır. Final karar merkezi sentezde (dividend-portfolio-decision ve bu turun kendi COMPANY_COMPARISON.md/FINAL_SHORTLIST.md, bu oturumda yazılmadı) verilecektir.",
+  "inputDocumentsRead": [
+    "dividend-screening-20261110/companies/TTRAK.json",
+    "dividend-screening-20261110/companies/TTRAK.md",
+    "dividend-screening-independent-audit-20261110/AUDIT.md (TTRAK bölümü)",
+    "dividend-screening-independent-audit-20261110/CASHFLOW.md (TTRAK bölümü)",
+    "dividend-screening-independent-audit-20261110/RISK_REVIEW.md (TTRAK bölümü)",
+    "dividend-screening-independent-audit-20261110/DATA_GAPS.md (TTRAK satırları)",
+    "dividend-screening-independent-audit-20261110/FINAL_SHORTLIST.md (TTRAK bölümü)",
+    "dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md (TTRAK bölümü)",
+    "dividend-portfolio-decision-20261110/UNRESOLVED_ISSUES.md (TTRAK satırları)",
+    "dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md",
+    "dividend-growth-screening-20261110/METHODOLOGY_V2.md"
+  ],
+
+  "dividendSeries": [
+    {
+      "profitYear": 2015,
+      "paymentDate": "2016-04-01",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "300000000",
+      "grossPerShareTRY_asReported": "5.62",
+      "netPerShareTRY_asReported": "4.78",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "2.998",
+      "fx": {
+        "usdTryRateUsed": "2.8169000148773193",
+        "fxDateUsed": "2016-03-31",
+        "fxLookbackDays": 1,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "106500053",
+      "tufe": {
+        "month": "2016-04",
+        "index_2003base_equivalent": "276.42",
+        "realDeflationFactorToBaseMonth_202610": "16.210953251377465",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "4863285975",
+      "notes": null
+    },
+    {
+      "profitYear": 2016,
+      "paymentDate": "2017-04-03",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "250000000",
+      "grossPerShareTRY_asReported": "4.68",
+      "netPerShareTRY_asReported": "3.98",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "2.4983",
+      "fx": {
+        "usdTryRateUsed": "3.644200086593628",
+        "fxDateUsed": "2017-04-03",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "68602161",
+      "tufe": {
+        "month": "2017-04",
+        "index_2003base_equivalent": "309.23",
+        "realDeflationFactorToBaseMonth_202610": "14.4909345721494",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "3622733643",
+      "notes": "Net pay başına tutar için ikincil bir kaynak 4,22 TL veriyor (CONFLICT, bu turda da çözülmedi); dividend-screening turunda 3,98 TL örtük stopaj oranı (%85) tutarlılığıyla tercih edilmişti, bu tur aynı tercihi yeniden doğrulamadan devam ettiriyor."
+    },
+    {
+      "profitYear": 2017,
+      "paymentDate": "2018-03-21",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "300000011",
+      "grossPerShareTRY_asReported": "5.62",
+      "netPerShareTRY_asReported": "4.78",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "2.998",
+      "fx": {
+        "usdTryRateUsed": "3.932149887084961",
+        "fxDateUsed": "2018-03-21",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "76294144",
+      "tufe": {
+        "month": "2018-03",
+        "index_2003base_equivalent": "336.48",
+        "realDeflationFactorToBaseMonth_202610": "13.317379035145501",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "3995213857",
+      "notes": null
+    },
+    {
+      "profitYear": 2018,
+      "paymentDate": null,
+      "installment": null,
+      "paid": false,
+      "totalCashTRY_nominal": "0",
+      "grossPerShareTRY_asReported": null,
+      "netPerShareTRY_asReported": null,
+      "shareCountBasis": null,
+      "cashPerShareCurrentBasisTRY": "0",
+      "fx": null,
+      "usdAmount_nominal": null,
+      "tufe": null,
+      "realTRY_baseMonth202610": null,
+      "notes": "Ödeme yapılmadı (paymentYear 2019). 2018 TL kur krizi sonrası kârlılık/nakit temkinliliğiyle bağlamsal olarak ilişkilendiriliyor; doğrudan şirket gerekçesi hiçbir turda bulunamadı (çıkarım, doğrulanmış açıklama değil)."
+    },
+    {
+      "profitYear": 2019,
+      "paymentDate": "2020-03-20",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "100000000",
+      "grossPerShareTRY_asReported": "1.87",
+      "netPerShareTRY_asReported": "1.59",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "0.9993",
+      "fx": {
+        "usdTryRateUsed": "6.541319847106934",
+        "fxDateUsed": "2020-03-20",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "15287435",
+      "tufe": {
+        "month": "2020-03",
+        "index_2003base_equivalent": "450.58",
+        "realDeflationFactorToBaseMonth_202610": "9.945030178316301",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "994503018",
+      "notes": "Seri içindeki en düşük nominal ödeme (taban/dip nokta) — Mayıs 2019 Ziraat Bankası traktör kredisi taban faizi artışıyla (%12→%18) ilişkilendiriliyor. Büyüme metriklerinde taban olarak kullanılırsa CAGR yapay şekilde şişer, bkz. growthMetrics.fiveYear.caveat."
+    },
+    {
+      "profitYear": 2020,
+      "paymentDate": "2021-03-25",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "850000000",
+      "grossPerShareTRY_asReported": "15.93",
+      "netPerShareTRY_asReported": "14.34",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "8.4943",
+      "fx": {
+        "usdTryRateUsed": "7.911399841308594",
+        "fxDateUsed": "2021-03-25",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "107439899",
+      "tufe": {
+        "month": "2021-03",
+        "index_2003base_equivalent": "523.53",
+        "realDeflationFactorToBaseMonth_202610": "8.559264412250986",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "7275374750",
+      "notes": null
+    },
+    {
+      "profitYear": 2021,
+      "paymentDate": "2022-03-28",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "1200000000",
+      "grossPerShareTRY_asReported": "22.49",
+      "netPerShareTRY_asReported": "20.24",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "11.992",
+      "fx": {
+        "usdTryRateUsed": "14.821399688720703",
+        "fxDateUsed": "2022-03-28",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "80964013",
+      "tufe": {
+        "month": "2022-03",
+        "index_2003base_equivalent": "843.64",
+        "realDeflationFactorToBaseMonth_202610": "5.3115448505829015",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "6373853821",
+      "notes": "Bağımsız denetim turunun birincil kaynaktan düzelttiği CFO/CAPEX ile: bu yılın temettüsü (1,2 mr TL) o kâr yılının kendi FCF'sini (563,2M TL) %213,1 ile AŞTI (bkz. sustainabilitySynthesis)."
+    },
+    {
+      "profitYear": 2022,
+      "paymentDate": "2023-03-10",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "2100000000",
+      "grossPerShareTRY_asReported": "39.36",
+      "netPerShareTRY_asReported": "35.42",
+      "shareCountBasis": "eski (bedelsiz-artırım-öncesi) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "20.986",
+      "fx": {
+        "usdTryRateUsed": "18.951900482177734",
+        "fxDateUsed": "2023-03-10",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "110806829",
+      "tufe": {
+        "month": "2023-03",
+        "index_2003base_equivalent": "1269.75",
+        "realDeflationFactorToBaseMonth_202610": "3.5290661136017003",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "7411038839",
+      "notes": "Bu yılın temettüsü (2,1 mr TL) kendi kâr yılının FCF'sini (2.203,4M TL) AŞMADI (%95,3) — 2021/2023/2024 örüntüsünden istisna."
+    },
+    {
+      "profitYear": 2023,
+      "paymentDate": "2024-04-01",
+      "installment": "1/2",
+      "paid": true,
+      "totalCashTRY_nominal": "6300000000",
+      "grossPerShareTRY_asReported": "62.94",
+      "netPerShareTRY_asReported": "56.64",
+      "shareCountBasis": "yeni (06.06.2023 bedelsiz-artırım-sonrası) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "62.9579",
+      "fx": {
+        "usdTryRateUsed": "32.26240158081055",
+        "fxDateUsed": "2024-04-01",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "195273746",
+      "tufe": {
+        "month": "2024-04",
+        "index_2003base_equivalent": "2207.5",
+        "realDeflationFactorToBaseMonth_202610": "2.0299124338599133",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "12788448333",
+      "notes": null
+    },
+    {
+      "profitYear": 2023,
+      "paymentDate": "2024-11-12",
+      "installment": "2/2",
+      "paid": true,
+      "totalCashTRY_nominal": "2700000000",
+      "grossPerShareTRY_asReported": "26.98",
+      "netPerShareTRY_asReported": "24.28",
+      "shareCountBasis": "yeni (06.06.2023 bedelsiz-artırım-sonrası) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "26.982",
+      "fx": {
+        "usdTryRateUsed": "34.32659912109375",
+        "fxDateUsed": "2024-11-12",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "78656204",
+      "tufe": {
+        "month": "2024-11",
+        "index_2003base_equivalent": "2657.23",
+        "realDeflationFactorToBaseMonth_202610": "1.6863544735479272",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "4553157079",
+      "notes": "KÂR YILI ATFI: dividend-screening turunda (2026-11-10) bu taksitin FY2023'e ait olduğu yalnızca matematiksel çıkarımla (iki taksit toplamı 9,0 mr TL / FY2023 kârı 9,342 mr TL = %96,3) destekleniyordu; KAP/Genel Kurul metniyle DOĞRULANMAMIŞTI. dividend-screening-independent-audit-20261110/AUDIT.md (2. tur, ayrı oturum) bu konuyu KAP bildirim BAŞLIĞIYLA kesin teyitli hale getirdiğini raporluyor (\"TTRAK'ın 08.11.2024 ikinci temettü ödemesinin FY2023'e ait olduğu — önceden çıkarım iken, KAP bildirim başlığıyla kesin teyitli hâle geldi\"). Bu rapor (4. tur) bu KAP belgesini KENDİSİ yeniden açıp okumadı; audit bulgusunu aktarmaktadır — kendi başına ek bir doğrulama YAPILMAMIŞTIR."
+    },
+    {
+      "profitYear": 2024,
+      "paymentDate": "2025-04-02",
+      "installment": null,
+      "paid": true,
+      "totalCashTRY_nominal": "4850000000",
+      "grossPerShareTRY_asReported": "48.47",
+      "netPerShareTRY_asReported": "41.20",
+      "shareCountBasis": "yeni (06.06.2023 bedelsiz-artırım-sonrası) sermaye/pay sayısı",
+      "cashPerShareCurrentBasisTRY": "48.4676",
+      "fx": {
+        "usdTryRateUsed": "37.944618225097656",
+        "fxDateUsed": "2025-04-02",
+        "fxLookbackDays": 0,
+        "source": "_reference/usdtry_daily.json (Yahoo Finance TRY=X günlük kapanış), lookup.cjs ile sorgulandı"
+      },
+      "usdAmount_nominal": "127817863",
+      "tufe": {
+        "month": "2025-04",
+        "index_2003base_equivalent": "3043.23",
+        "realDeflationFactorToBaseMonth_202610": "1.4724590969942326",
+        "source": "_reference/tufe_linked_index.json, baz ay 2026-10"
+      },
+      "realTRY_baseMonth202610": "7141426620",
+      "notes": "Stopaj %10→%15 (9286 sayılı CB Kararı, 21-22.12.2024, ülke çapında/TTRAK'a özgü değil). Bağımsız denetim turunun düzelttiği birincil CFO/CAPEX ile: bu yılın temettüsü (4,85 mr TL) kendi kâr yılının FCF'sini (1.543,0M TL) %314,3 ile AŞTI — seri içindeki en şiddetli aşım (bkz. sustainabilitySynthesis)."
+    },
+    {
+      "profitYear": 2025,
+      "paymentDate": null,
+      "installment": null,
+      "paid": false,
+      "totalCashTRY_nominal": "0",
+      "grossPerShareTRY_asReported": null,
+      "netPerShareTRY_asReported": null,
+      "shareCountBasis": null,
+      "cashPerShareCurrentBasisTRY": "0",
+      "fx": null,
+      "usdAmount_nominal": null,
+      "tufe": null,
+      "realTRY_baseMonth202610": null,
+      "notes": "Ödeme yapılmadı (paymentYear 2026, 2026 Genel Kurulu'nda doğrulanmış karar). Dağıtılabilir kârın (454.804.633 TL, statüsel) tamamı olağanüstü yedeklere aktarıldı. Bu tur bunu salt dışsal pazar şoku olarak OKUMUYOR — 2021-2024'teki agresif (FCF'yi aşan) dağıtım politikasının net nakit tamponunu zaten eritmiş olmasının bir sonucu olarak da okunuyor (bkz. sustainabilitySynthesis, independent-audit RISK_REVIEW.md)."
+    }
+  ],
+
+  "dividendSeriesAggregatedByProfitYear": [
+    { "profitYear": 2015, "totalCashTRY_nominal": "300000000", "usdAmount_nominal": "106500053", "realTRY_baseMonth202610": "4863285975" },
+    { "profitYear": 2016, "totalCashTRY_nominal": "250000000", "usdAmount_nominal": "68602161", "realTRY_baseMonth202610": "3622733643" },
+    { "profitYear": 2017, "totalCashTRY_nominal": "300000011", "usdAmount_nominal": "76294144", "realTRY_baseMonth202610": "3995213857" },
+    { "profitYear": 2018, "totalCashTRY_nominal": "0", "usdAmount_nominal": "0", "realTRY_baseMonth202610": "0" },
+    { "profitYear": 2019, "totalCashTRY_nominal": "100000000", "usdAmount_nominal": "15287435", "realTRY_baseMonth202610": "994503018" },
+    { "profitYear": 2020, "totalCashTRY_nominal": "850000000", "usdAmount_nominal": "107439899", "realTRY_baseMonth202610": "7275374750" },
+    { "profitYear": 2021, "totalCashTRY_nominal": "1200000000", "usdAmount_nominal": "80964013", "realTRY_baseMonth202610": "6373853821" },
+    { "profitYear": 2022, "totalCashTRY_nominal": "2100000000", "usdAmount_nominal": "110806829", "realTRY_baseMonth202610": "7411038839" },
+    { "profitYear": 2023, "totalCashTRY_nominal": "9000000000", "usdAmount_nominal": "273929950", "realTRY_baseMonth202610": "17341605412", "notes": "06.06.2023 bedelsiz artırımdan sonraki (yeni) pay sayısı bazında, iki taksit toplamı (2024-04-01 + 2024-11-12)." },
+    { "profitYear": 2024, "totalCashTRY_nominal": "4850000000", "usdAmount_nominal": "127817863", "realTRY_baseMonth202610": "7141426620" },
+    { "profitYear": 2025, "totalCashTRY_nominal": "0", "usdAmount_nominal": "0", "realTRY_baseMonth202610": "0" }
+  ],
+
+  "growthMetrics": {
+    "axisReference": "Eksen B (Temettü Büyümesi) — METHODOLOGY_V2.md bölüm 1. Nominal TL TEK BAŞINA anlamlı değildir; asıl ölçü reel TL ve USD CAGR.",
+    "basisNote": "totalCashTRY (toplam nakit) ana karşılaştırma metriğidir çünkü 06.06.2023 bedelsiz sermaye artırımından (eski 53.369.000 → yeni 100.066.875 TL nominal sermaye, ~1,874x) ETKİLENMEZ. Buna karşılık grossPerShareTRY_asReported/netPerShareTRY_asReported serisi 2022→2023 sınırını aşan dönemlerde FARKLI pay sayısı bazındadır ve doğrudan büyüme yüzdesi olarak karşılaştırılamaz (kök CLAUDE.md: oranlar sessizce eşitlenmez). Bonus-güvenli pay-başına karşılaştırma için cashPerShareCurrentBasisTRY (totalCashTRY ÷ güncel 100.066.875 pay) kullanılmıştır; bu, gerçek beyan edilmiş bir temettü rakamı değil türetilmiş bir normalize metriktir.",
+    "tenYear": {
+      "intendedWindow": "profitYear 2015 → 2025 (10 yıl)",
+      "actualWindowUsed": "profitYear 2015 → 2024 (9 yıl) — profitYear 2025 sıfır olduğu için (temettü dağıtılmadı) en yakın pozitif-pozitif karşılaştırılabilir uç noktalar kullanıldı; görev talimatı bu sapmayı açıkça öngörmüştür.",
+      "nominalTotalCashCAGR": "+%36,2/yıl (300.000.000 TL → 4.850.000.000 TL, 9 yıl)",
+      "realTRYCAGR_baseMonth202610": "+%4,4/yıl (9 yıl, 2026-10 satın alma gücü bazında)",
+      "usdCAGR": "+%2,0/yıl (9 yıl)",
+      "interpretation": "Nominal büyüme (~%36/yıl) Türkiye'nin yüksek enflasyon ortamında neredeyse otomatiktir ve tek başına yanıltıcıdır. Reel TL büyüme mütevazı (~%4/yıl) ve USD büyüme neredeyse düz (~%2/yıl) — gerçek (satın alma gücü ve dolar bazlı) temettü büyümesi nominal rakamların çok küçük bir kesridir. METHODOLOGY_V2.md Eksen B eşiğiyle (reel VE USD CAGR pozitif) karşılaştırıldığında ikisi de pozitif ama zayıf/mütevazı düzeyde."
+    },
+    "fiveYear": {
+      "intendedWindow": "profitYear 2020 → 2025 (5 yıl)",
+      "actualWindowUsed": "profitYear 2019 → 2024 (5 yıl) — profitYear 2025 sıfır olduğu için pencere bir yıl geriye kaydırıldı.",
+      "caveat": "KRİTİK UYARI: profitYear 2019 serinin DİP NOKTASIDIR (2018-2019 TL kur krizi sonrası en düşük ödeme, 100.000.000 TL nominal). Bu tabanı kullanan CAGR yapay şekilde şişer ve tek başına YANILTICIDIR; aşağıdaki tamamlayıcı pencerelere MUTLAKA birlikte bakılmalıdır.",
+      "nominalTotalCashCAGR": "+%117,3/yıl (DİP TABANLI — tek başına yanıltıcı)",
+      "realTRYCAGR_baseMonth202610": "+%48,3/yıl (DİP TABANLI — tek başına yanıltıcı)",
+      "usdCAGR": "+%52,9/yıl (DİP TABANLI — tek başına yanıltıcı)",
+      "supplementaryWindows": [
+        {
+          "window": "profitYear 2021 → 2024 (3 yıl, kriz-sonrası toparlanmış/normalize taban)",
+          "nominalTotalCashCAGR": "+%59,3/yıl",
+          "realTRYCAGR_baseMonth202610": "+%3,9/yıl",
+          "usdCAGR": "+%16,4/yıl"
+        },
+        {
+          "window": "profitYear 2020 → 2024 (4 yıl)",
+          "nominalTotalCashCAGR": "+%54,6/yıl",
+          "realTRYCAGR_baseMonth202610": "-%0,5/yıl",
+          "usdCAGR": "+%4,4/yıl"
+        }
+      ],
+      "interpretation": "Dip-tabanlı (2019→2024) 5 yıllık CAGR tek başına kullanılırsa reel/USD büyüme yanlış biçimde çok güçlü görünür. Kriz-sonrası normalize bir taban kullanıldığında (2021→2024) reel büyüme yalnızca ~%4/yıl'a düşer; 2020→2024 penceresinde ise reel büyüme hafif NEGATİFE döner (-%0,5/yıl). Bu, 2021-2024 nominal patlamanın büyük ölçüde enflasyon ve agresif (FCF'yi aşan, bkz. sustainabilitySynthesis) bir dağıtım politikasının yansıması olduğunu, kalıcı/sürdürülebilir bir reel büyüme trendi olduğuna dair güçlü bir kanıt OLMADIĞINI gösterir."
+    }
+  },
+
+  "continuityVsGrowth": {
+    "axisReference": "Eksen A (Temettü Sürekliliği) — METHODOLOGY_V2.md bölüm 1. Bu alan büyüme/kalite ile KARIŞTIRILMAMALIDIR (aşağıdaki cautionImportant).",
+    "paymentYearsCovered": "2016-2026 (11 ödeme yılı / paymentYear; profitYear 2015-2025)",
+    "interruptionCount": 2,
+    "interruptions": [
+      {
+        "paymentYear": 2019,
+        "profitYear": 2018,
+        "reason": "2018 TL kur krizi sonrası kârlılık/nakit temkinliliğiyle bağlamsal olarak ilişkilendiriliyor; doğrudan şirket gerekçesi hiçbir turda (dividend-screening, independent-audit, bu tur) bulunamadı — çıkarım, doğrulanmış açıklama değil."
+      },
+      {
+        "paymentYear": 2026,
+        "profitYear": 2025,
+        "reason": "Net kâr FY2024→FY2025 arasında %94 düştü; dağıtılabilir kârın (454.804.633 TL, statüsel) tamamının olağanüstü yedeklere aktarılması 2026 Genel Kurulu'nda açıkça kararlaştırıldı — tahmin değil, doğrulanmış şirket kararı."
+      }
+    ],
+    "recoveryFromFirstInterruption": "1 yıl içinde (profitYear 2019, 100.000.000 TL) kısmi/düşük, 2 yıl içinde (profitYear 2020, 850.000.000 TL) güçlü, 3 yıl içinde (profitYear 2021, 1.200.000.000 TL) tam toparlanma — somut ve hızlı bir geçmiş emsal.",
+    "secondInterruptionRecoveryStatus": "HENÜZ BİLİNMİYOR — 9A2026 ara dönem net zararla (789,3M TL, önceki Investulator oturumunun birincil mali tablo okuması) devam ediyor; FY2026 tam yıl sonucu bu raporun kesim tarihinde (2026-11-10) mevcut değil.",
+    "rawDataForCentralSynthesis": "Bu rapor METHODOLOGY_V2.md Eksen A eşiğine (Güçlü ≤1 kesinti veya kanıtlı hızlı dönüş; Orta 2 kesinti kısmi/yakın-zamanlı dönüş kanıtı; Zayıf ≥2 kesinti veya dönüş kanıtı yok) göre bir etiket ATAMAZ (görev kapsamı dışı) — yalnızca ham veriyi sunar: 2 kesinti, ilki için hızlı/büyük dönüş kanıtı VAR, ikincisi için dönüş kanıtı HENÜZ YOK.",
+    "cautionImportant": "Süreklilik (ödendi/ödenmedi olgusu, bu alan) ile büyüme (growthMetrics) ve sürdürülebilirlik kalitesi (sustainabilitySynthesis) AYRI eksenlerdir, KARIŞTIRILMAMALIDIR (METHODOLOGY_V2.md bölüm 1 'Önemli kural'). TTRAK'ta ikisi de olumsuza yakın çıkabilir ama nedenleri tamamen farklıdır: süreklilik bir ÖDEME OLGUSUDUR (ödendi mi/ödenmedi mi), sürdürülebilirlik kalitesi ise bir YÖNETİM POLİTİKASI bulgusudur (2021-2024'te temettü tekrarlayan biçimde FCF'yi aştı mı)."
+  },
+
+  "sustainabilitySynthesis": {
+    "axisReference": "Eksen C (Finansal Sürdürülebilirlik ve Kalite) — METHODOLOGY_V2.md bölüm 1, 'Döngüsel kesinti/şok testi'.",
+    "cfoCapexFcfTable_primarySource_outputsBistAudit20261101": [
+      { "profitYear": 2021, "netKarM_TRY": "1322.2", "cfoM_TRY": "886.0", "capexM_TRY": "322.9", "fcfM_TRY": "563.2", "dividendPaidNextYearM_TRY": "1200.0", "dividendToFcfPct": "213.1", "exceedsFcf": true },
+      { "profitYear": 2022, "netKarM_TRY": "2971.0", "cfoM_TRY": "2884.2", "capexM_TRY": "680.8", "fcfM_TRY": "2203.4", "dividendPaidNextYearM_TRY": "2100.0", "dividendToFcfPct": "95.3", "exceedsFcf": false },
+      { "profitYear": 2023, "netKarM_TRY": "9342.0", "cfoM_TRY": "9885.6", "capexM_TRY": "1736.0", "fcfM_TRY": "8149.6", "dividendPaidNextYearM_TRY": "9000.0", "dividendToFcfPct": "110.4", "exceedsFcf": true },
+      { "profitYear": 2024, "netKarM_TRY": "5740.5", "cfoM_TRY": "5370.9", "capexM_TRY": "3827.9", "fcfM_TRY": "1543.0", "dividendPaidNextYearM_TRY": "4850.0", "dividendToFcfPct": "314.3", "exceedsFcf": true },
+      { "profitYear": 2025, "netKarM_TRY": "455.0", "cfoM_TRY": "~6900 (ikincil, doğrulanmamış)", "capexM_TRY": "~3800 (ikincil, doğrulanmamış)", "fcfM_TRY": "~3100 (ikincil, doğrulanmamış)", "dividendPaidNextYearM_TRY": "0", "dividendToFcfPct": "N/A", "exceedsFcf": null }
+    ],
+    "cfoTable_source": "dividend-screening-independent-audit-20261110/CASHFLOW.md (TTRAK bölümü), birincil kaynak: outputs/bist-audit-20261101/ttrak-2021-2024-core.cjs (şirketin kendi Annual Report'larından). FY2025 satırı hâlâ ikincil/doğrulanmamış.",
+    "correctionNote": "ÖNEMLİ DÜZELTME (bağımsız denetim turunda bulundu, bu rapor tarafından aktarılıyor, yeniden doğrulanmadı): dividend-screening turu (1. tur) 2022 ve 2023 için ikincil (TradingView/Investing.com) CFO rakamları kullanmıştı ve bunlar 1,16x-2,4x ŞİŞİRİLMİŞTİ. Düzeltilmiş birincil veriyle Temettü/CFO oranı 2022'de %30,8'den %72,8'e, 2023'te %63,0'dan %91,0'a YÜKSELDİ. Kanıt güvenilirliğinin yükselmesi (ikincilden birincile) sonucu İYİLEŞTİRMEDİ, TERSİNE KÖTÜLEŞTİRDİ — bu METHODOLOGY_V2.md bölüm 2'nin 'kanıt güvenilirliği ile stratejik uygunluk iki ayrı eksendir' ilkesinin TTRAK'ta somut bir örneğidir.",
+    "cyclicalShockDisciplineTest": "METHODOLOGY_V2.md'nin 'döngüsel kesinti/şok testi'ne göre: FY2025-2026 daralmasından ÖNCEKİ 4 yılın (2021-2024) 3'ünde (2021, 2023, 2024) temettü zaten o yılın FCF'sini AŞIYORDU (en kötüsü 2024'te %314,3). Bu, FY2025 sıfır temettü kararının SALT dışarıdan gelen bir pazar şokuna verilen disiplinli bir tepki olmadığını, AYNI ZAMANDA önceki 4 yılın 3'ünde zaten sürdürülemez (FCF'yi aşan) bir dağıtım politikasının biriken net nakit tamponunu önce eritmiş olmasının bir sonucu olduğunu gösterir — iki etken (dışsal şok + içkin disiplinsizlik) BİRLEŞMİŞTİR. Bu, dividend-screening turunun (1. tur) 'nakit akışına duyarlı, disiplinli yönetim kararı' yorumunu ÖNEMLİ ÖLÇÜDE ZAYIFLATIR (bağımsız denetim turunun RISK_REVIEW.md'de açıkça belirttiği sonuç; bu rapor kendi başına yeniden doğrulamadı, aktarmaktadır).",
+    "balanceSheetTrajectory": "Net nakit (FY2021 sonu: -0,43 mr TL; FY2023 sonu zirve: -8,17 mr TL) → net borç (FY2024 sonu: +0,91 mr TL; FY2025 sonu: +8,7 mr TL; 9A2026: ~+7,98 mr TL) — özellikle FY2024→FY2025 arasında TEK YILDA ~9,6 mr TL kötüleşen bir yörünge. 9A2026'daki küçük iyileşme (FY2025 sonundan) büyük ölçüde stok eritmesinden (tek seferlik, sürdürülemez) geliyor, operasyonel iyileşmeden değil (önceki Investulator oturumunun 9A2026 nakit akış tablosu okuması; bu rapor bu birincil okumayı yeniden yapmadı).",
+    "marketLeadershipContext": "19 yıl üst üste Türkiye traktör pazarı lideri, pazar payı %38-46 aralığında (2024: %46,2; 2025: %38,4). Bu, sürdürülebilirlik sorusuna doğrudan cevap vermez (pazar liderliği temettü kapasitesini GARANTİ ETMEZ) ama sektörel/rekabetçi bağlam olarak taşınır.",
+    "electrificationRisk": {
+      "status": "CNH tarafı BELGELİ, TTRAK tarafı BELGESİZ — en kritik 10-15 yıllık yapısal bilinmeyen.",
+      "cnhSideEvidence": "CNH Industrial'ın somut bir elektrikleşme yol haritası (New Holland T4 Electric Power, 95 kWh batarya, Case IH'a genişleme planı) bağımsız denetim turunda DOĞRULANDI (RISK_REVIEW.md). Bu rapor bu doğrulamayı kendi başına yeniden yapmadı, aktarmaktadır.",
+      "ttrakSideEvidence": "TTRAK'ın kendisinin Türkiye'de bu stratejiden ne ölçüde/ne zaman pay alacağına dair HİÇBİR kamuya açık bilgi iki ayrı araştırma turunda da (dividend-screening + independent-audit) bulunamadı. Bu, 10-15 yıllık bir temettü-büyümesi tezinin KRİTİK bir karanlık noktasıdır — sektörün kendisinin (CNH globalde) elektrikleşmeye geçtiği, TTRAK'ın Türkiye'de bu geçişten pay alıp almayacağının, alacaksa ne zaman/ne ölçüde olduğunun bilinmemesi."
+    }
+  },
+
+  "evidenceReliability": {
+    "dividendHistoryConfidence": {
+      "level": "Orta-Yüksek",
+      "note": "Ödeme tarihleri/tutarları çoklu bağımsız ikincil kaynakla (Midas + çoklu haber grubu) iyi çaprazlandı. 08.11.2024 ikinci taksitin FY2023'e ait olduğu bu turda (bağımsız denetim turunun AUDIT.md bulgusu, bu rapor tarafından aktarılıyor — KENDİ BAŞINA YENİDEN DOĞRULANMADI) KAP bildirim BAŞLIĞIYLA kesin teyitli hale geldi; önceki tur bunu yalnızca matematiksel çıkarımla (iki taksit toplamının FY2023 kârının %96,3'ü olması) destekliyordu. Kalan çözülmemiş küçük çelişkiler: 2017 net pay başı tutarı (3,98 vs ikincil kaynaklı 4,22 TL), FY2025 IFRS net kârı (statüsel 454.804.633 TL vs önceki oturumun özkaynak-tablosu çıkarımı ~565,4M TL) — ikisi de düşük önemde, ödeme/kesinti olgusunu etkilemiyor."
+    },
+    "cashFlowConfidence": {
+      "level": "Orta (BU TURDA YÜKSELTİLDİ — Düşük/ikincilden)",
+      "note": "2021-2024 CFO/CAPEX/FCF artık şirketin kendi yıllık faaliyet raporlarından okunmuş BİRİNCİL kaynağa (outputs/bist-audit-20261101/ttrak-2021-2024-core.cjs) dayanıyor; bu rapor bu dosyayı kendi başına yeniden açıp okumadı, bağımsız denetim turunun CASHFLOW.md'deki aktarımını kullandı. ÖNEMLİ: güven seviyesinin yükselmesi SONUCU İYİLEŞTİRMEDİ, TERSİNE DAHA OLUMSUZ bir tablo ortaya çıkardı (bkz. sustainabilitySynthesis.correctionNote) — bu, METHODOLOGY_V2.md'nin 'kanıt güvenilirliği ile stratejik uygunluk ayrı eksenlerdir, biri diğerini otomatik belirlemez' ilkesinin doğrudan bir örneğidir. FY2025 tam yıl CFO/CAPEX hâlâ ikincil/doğrulanmamış (TurkTraktorFR25.pdf OCR/binary engeline çarptı) — bu yıl için güven hâlâ Düşük."
+    },
+    "riskAssessmentConfidence": {
+      "level": "Düşük",
+      "note": "En kritik 10-15 yıllık yapısal risk (elektrikli/otonom tarım makinelerine geçiş) için CNH Industrial tarafı artık belgeli ve somut (bağımsız denetim turunda doğrulandı) ama TTRAK'ın KENDİSİNİN pozisyonu HİÇBİR kaynakta bulunamadı — iki ayrı araştırma turu da sonuçsuz kaldı. Diğer riskler de kısmen doğrulanmamış: CNH lisans bağımlılığı (27+ yıllık ilişki, risk teorik — gerçekleşmiş bir olay yok, ama gelecekteki olasılığı değerlendirilemiyor), ilişkili taraf (Not 23: CNH royalti, Koç grubu içi işlemler) tutarları hiç okunmadı, FY2022-2024 FAVÖK ikincil kaynak çelişkisi (13,193 vs 18,89 mr TL, FY2023) çözülemedi."
+    }
+  },
+
+  "structuralRisksCarriedForward": [
+    {
+      "risk": "Tarımsal sübvansiyon/kredi politikası ve faiz oranı duyarlılığı",
+      "status": "İki kez gerçekleşmiş (2019: Ziraat Bankası kredi faizi %12→%18; 2025-2026: pazar -%36 ardından -%44), tekrarlayıcı yapısal/döngüsel bir risk — tek seferlik değil."
+    },
+    {
+      "risk": "CNH Industrial'a münhasır lisans bağımlılığı",
+      "status": "27+ yıllık ilişki (1998'den beri), risk şu ana kadar hiç gerçekleşmedi; teorik bir bağımlılık olarak taşınır."
+    },
+    {
+      "risk": "Elektrikli/otonom tarım makinelerine geçiş riski",
+      "status": "EN KRİTİK, asimetrik belgelenmiş: CNH tarafı (New Holland T4 Electric Power) belgeli ve doğrulanmış, TTRAK/Türkiye tarafı iki turda da TAMAMEN belgesiz. 10-15 yıllık ufkun en önemli bilinmeyeni."
+    },
+    {
+      "risk": "Kısa vadeli TL borcun yüksek faiz maliyeti (~%33,79, 30.09.2026)",
+      "status": "Türkiye politika faizi ortamına doğrudan maruziyet; döviz kuru riski görece sınırlı (küçük EUR kredi dışında TL ağırlıklı)."
+    },
+    {
+      "risk": "İlişkili taraf (CNH royalti/lisans bedeli, Koç grubu içi işlemler, Not 23) işlemlerinin kantitatif büyüklüğü",
+      "status": "Dipnot varlığı önceki oturumda doğrulandı ama içeriği hiçbir turda detaylı okunmadı/çıkarılmadı — doğrulanmamış bir izleme riski."
+    },
+    {
+      "risk": "2021-2024 agresif (FCF'yi aşan) dağıtım politikasının net nakit tamponunu önceden eritmiş olması",
+      "status": "YENİ (bu turda eklendi, bağımsız denetim turunun birincil CFO/CAPEX düzeltmesiyle ortaya çıktı): 4 yılın 3'ünde temettü FCF'yi aştı. FY2025-2026 krizi salt dışsal pazar şoku değil, bu içkin disiplinsizliğin de bir sonucu — Eksen C (sürdürülebilirlik kalitesi) değerlendirmesini doğrudan ilgilendirir."
+    },
+    {
+      "risk": "FY2022-2024 FAVÖK rakamlarında çözülmeyen ikincil kaynak çelişkisi (FY2023: 13,193 vs 18,89 mr TL)",
+      "status": "Normalize FAVÖK ve net borç/FAVÖK oranının kesinliğini düşürüyor; iki turda da çözülemedi (zayıf dolaylı sinyal 13,193'ü hafif destekliyor)."
+    }
+  ],
+
+  "missingData": [
+    {
+      "item": "FY2025 tam yıl CFO/CAPEX'in birincil kaynaktan teyidi",
+      "type": "Erişim engeli (tür 2 — veri muhtemelen var ama bu araçlarla çıkarılamadı, şirket aleyhine delil SAYILMAZ)",
+      "detail": "TurkTraktorFR25.pdf OCR/binary engeline çarptı (bağımsız denetim turu, bu tur yeniden denemedi).",
+      "blocksDecision": "Sürdürülebilirlik tablosunun FY2025 satırı tamamen ikincil/doğrulanmamış kalıyor."
+    },
+    {
+      "item": "FY2022-2024 FAVÖK ikincil kaynak çelişkisi (FY2023: 13,193 vs 18,89 mr TL)",
+      "type": "Araştırma eksikliği (tür 1 — veri muhtemelen mevcut, derinlemesine okunmadı)",
+      "detail": "İki ayrı araştırma turunda da çözülemedi.",
+      "blocksDecision": "Net borç/FAVÖK oranının çok yıllı, tutarlı bir serisi üretilemiyor."
+    },
+    {
+      "item": "TTRAK'ın kendi elektrikleşme stratejisi/pozisyonu",
+      "type": "Belirsiz tür (gerçek veri boşluğu OLABİLİR — tür 3 — veya araştırma eksikliği — tür 1 — ayrıştırılamadı)",
+      "detail": "İki araştırma turunda da hiçbir kaynakta bulunamadı.",
+      "blocksDecision": "10-15 yıllık yapısal risk değerlendirmesinde EN KRİTİK bilinmeyen."
+    },
+    {
+      "item": "CNH royalti/lisans bedeli ve diğer ilişkili taraf (Not 23) tutarları",
+      "type": "Araştırma eksikliği (tür 1)",
+      "detail": "Dipnotun varlığı doğrulandı, içeriği hiç okunmadı.",
+      "blocksDecision": "Marj üzerindeki ilişkili taraf etkisi ve lisans bağımlılığının finansal büyüklüğü ölçülemiyor."
+    },
+    {
+      "item": "TÜFE kaynağı ikincil bir derleme sitesinden (hakedis.org) okundu",
+      "type": "Erişim engeli / ortak sınırlama (tüm 10 şirket için geçerli)",
+      "detail": "TÜİK resmi data.tuik.gov.tr portalından birincil doğrulama bu turda yapılamadı (bkz. MACRO_REFERENCE.md bölüm 4); linkleme tutarlılığı (sıfır sapma) ve YoY çapraz doğrulaması güven artırıcı ama birincil kaynak doğrulaması değil.",
+      "blocksDecision": "Tüm reel TL hesaplarını (bu rapor dahil 10 şirketin tamamı) etkileyen ortak bir sınırlama; TTRAK'a özgü değil."
+    },
+    {
+      "item": "USD/TRY kaynağı (Yahoo Finance) TCMB resmi kuruyla çapraz kontrol edilmedi",
+      "type": "Erişim engeli / ortak sınırlama (tüm 10 şirket için geçerli)",
+      "detail": "Günlük kapanış kuru kullanıldı; gün içi farklı saatlerde gerçekleşen ödemelerle küçük bir zamanlama farkı taşıyabilir.",
+      "blocksDecision": "Tüm USD hesaplarını (bu rapor dahil 10 şirketin tamamı) etkileyen ortak bir sınırlama; TTRAK'a özgü değil."
+    }
+  ],
+
+  "agentNotes": [
+    "Bu rapor dividend-growth-screening-20261110 turunun (DÖRDÜNCÜ tur) parçasıdır. GÖREV KAPSAMI A/B/C/D sınıflandırması YAPMAMAKTIR — bu veri, merkezi sentez (bu oturumda henüz yazılmayan COMPANY_COMPARISON.md/FINAL_SHORTLIST.md) için hazırlanmıştır.",
+    "Hiçbir rakam bu oturumda uydurulmadı. Tüm FX/TÜFE girdileri YALNIZCA _reference/lookup.cjs aracılığıyla _reference/usdtry_daily.json ve _reference/tufe_linked_index.json'dan alındı (ayrıca bağımsız bir kur/TÜFE kaynağı aranmadı).",
+    "Bu oturum önceki turların (dividend-screening, independent-audit, portfolio-decision) ham bulgularını YENİDEN DOĞRULAMADI — bağımsız denetim turunun CFO/CAPEX düzeltmesi ve KAP-teyitli kâr yılı atfı OLDUĞU GİBİ aktarıldı (kök CLAUDE.md: \"aynı ajan incelemesi bağımsız denetim sayılmaz\" kuralı burada da geçerli — bu rapor kendi başına bağımsız bir denetim değildir, mevcut turların sentezidir).",
+    "06.06.2023 bedelsiz sermaye artırımı (eski 53.369.000 → yeni 100.066.875 TL nominal sermaye, ~1,874x) nedeniyle grossPerShareTRY_asReported/netPerShareTRY_asReported serisi 2022→2023 sınırını aşan dönemlerde FARKLI pay sayısı bazındadır ve DOĞRUDAN karşılaştırılamaz. totalCashTRY ve bundan türetilen usd/real değerler bu sorundan ETKİLENMEZ ve bu rapordaki ana karşılaştırma metriği olarak kullanıldı. Bonus-güvenli pay-başı karşılaştırma için cashPerShareCurrentBasisTRY (totalCashTRY ÷ güncel 100.066.875 pay) türetildi — bu gerçek beyan edilmiş bir temettü rakamı DEĞİL, normalize edilmiş bir hesap metriğidir, böyle etiketlenmiştir.",
+    "5 yıllık CAGR penceresinin doğal tabanı (profitYear 2019) serinin DİP noktasıdır (2018-2019 krizi sonrası en düşük ödeme). Bu rapor bunu açıkça işaretledi (growthMetrics.fiveYear.caveat) ve iki ek karşılaştırma penceresi (profitYear 2020→2024, profitYear 2021→2024) sağladı. Merkezi sentezin hangi pencereyi 'asıl' 5-yıl CAGR'ı olarak kullanacağına bu rapor karar VERMEDİ — bütün pencereler şeffaf şekilde sunuldu.",
+    "Elektrikleşme riski: bu oturum CNH tarafının belgelenmişliğini (independent-audit RISK_REVIEW.md bulgusu) olduğu gibi aktardı, kendi başına yeniden aramadı. TTRAK'ın kendi pozisyonu hâlâ tamamen karanlık — bu, 10-15 yıllık ufuk için EN ÖNEMLİ açık soru olarak taşındı.",
+    "İkinci taksitin (2024-11-12) kâr yılı atfı konusunda: görev talimatı bu belirsizliği KORUMAMI istedi ve KENDİ BAŞIMA bir teyit UYDURMAMAMI istedi. Bu talimatı, bağımsız denetim turunun (ayrı bir oturum, AUDIT.md) zaten rapor ettiği KAP-bildirim-başlığı teyidini KENDİ BULGUM GİBİ sunmadan, kaynağını açıkça belirterek aktararak uyguladım — dividendSeries içindeki ilgili satırın notes alanında hem orijinal belirsizlik hem de audit bulgusu birlikte korunmuştur."
+  ]
+}

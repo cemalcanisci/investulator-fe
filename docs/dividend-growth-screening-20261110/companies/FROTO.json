@@ -1,0 +1,267 @@
+{
+  "symbol": "FROTO",
+  "companyName": "Ford Otomotiv Sanayi A.Ş. (Ford Otosan)",
+  "researchAsOf": "2026-11-10",
+  "roundInfo": "4. tur — dividend-growth-screening-20261110. Görev: sınıflandırma DEĞİL, yalnızca temettü büyüme serisi derleme ve hesaplama. Final A/B/C/D kararı merkezi sentezde verilecek.",
+  "inputsUsed": [
+    "docs/dividend-screening-20261110/companies/FROTO.json (dividendHistory, 21 satır, 1. tur)",
+    "docs/dividend-screening-20261110/companies/FROTO.md (1. tur anlatı, pay sayısı/bedelsiz artış notu)",
+    "docs/dividend-screening-independent-audit-20261110/AUDIT.md, CASHFLOW.md, RISK_REVIEW.md, DATA_GAPS.md, FINAL_SHORTLIST.md (2. tur denetim, FROTO bölümleri)",
+    "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md, UNRESOLVED_ISSUES.md (3. tur, FROTO bölümleri)",
+    "docs/dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md + lookup.cjs (ortak TÜFE/USD-TRY referansı)"
+  ],
+  "methodologyNote": "FROTO dividendHistory'deki 21 satırdan 20'si paid:true (2015-2025 kâr yılları), 1'i (2026 kâr yılı, 2026-11-30 ödeme) paid:false — bu satır GERÇEKLEŞMEMİŞ olarak büyüme hesabının tamamen DIŞINDA tutuldu, ayrı not olarak aşağıda gösterildi. Gruplama kâr yılına (profitYear) göre yapıldı, ödeme yılına (paymentYear) göre DEĞİL: örn. 2021 kâr yılına ait iki taksit (19.11.2021'de kendi kârından ara/avans temettü + 24.03.2022'de final) tek 'profitYear 2021' altında toplandı; 2020 kâr yılına (24.03.2021 ödemeli, pandemi nedeniyle tek/azalmış taksit) ait satır KENDİ başına 'profitYear 2020' kaldı, 2021'in taksitleriyle birleştirilmedi. Bu, görev talimatındaki '2021 2020' / '2021 2021' ayrımının genelleştirilmiş uygulamasıdır. 11 profitYear (2015-2025) için hesap yapılabildi; 2026 (planlı, ödenmemiş) hesap dışı. PAY SAYISI/BÖLÜNME DÜZELTMESİ (kritik): FROTO.md'nin kendi notuna göre Mayıs 2025'te 1:10 bedelsiz sermaye artırımı oldu (nominal sermaye 350.910.000 TL → 3.509.100.000 TL). BIST'te standart 1 TL nominal/pay varsayımıyla bu, ESKİ pay sayısının 350.910.000, YENİ pay sayısının 3.509.100.000 olduğu anlamına gelir (10x). Bu varsayım dört ayrı satırda (profitYear 2018 gross 3.12→totalCash 1.094.839.200; profitYear 2020 gross 6.42→totalCash 2.252.842.200 audit-corrected; profitYear 2022 final gross 14.25→totalCash 5.000.467.500; profitYear 2025 final gross 3.64→totalCash ~12.770.000.000) VERİLEN totalCashTRY değerleriyle tam/yakın örtüşerek DOĞRULANDI (ör. 350.910.000 × 3,12 = 1.094.839.200 TAM eşleşme). Bu doğrulanmış çarpanla, totalCashTRY'si null olan satırlarda (profitYear 2021 her iki taksit, 2023 her iki taksit, 2024 her iki taksit, 2025 ara taksit) totalCashTRY = grossPerShareTRY × dönemin pay sayısı formülüyle TÜRETİLDİ (görev talimatının 'bulamazsan null bırak, uydurma' kuralı yerine, burada pay sayısı zaten FROTO.md'de kaynaklı olduğu için türetme meşru; uydurma değil). 2025 öncesi pay başı tutarlar ESKİ pay bazında, 2025 ara taksit ve sonrası YENİ pay bazında kaydedilmiştir (FROTO.md'nin kendi notuyla tutarlı); büyüme serisinde karşılaştırılabilirlik için tüm ESKİ-baz pay başı tutarlar YENİ-pay-eşdeğerine (÷10) çevrildi ('grossPerShareTRY_newShareBasis' alanı). Pay başı seri ANA metrik olarak kullanıldı (toplam nakit serisi null'ların derive edilmesine bağımlı olduğu için ikincil/teyit amaçlı tutuldu); toplam nakit (USD/reel) seri payout-oranı ve ölçek analizi için ayrıca hesaplandı. 24.03.2021 ödemesi için 1. turun '~13 TL, teyit edilemedi' tahmini, 2. tur bağımsız denetimde Ford Otosan IR sayfasından DOĞRULANAN 6,42 TL/pay (toplam 2.252.842.200 TL) ile DÜZELTİLDİ ve bu dördüncü turda kullanıldı (AUDIT.md satır 43, COMPANY_DECISIONS.md satır 49, FINAL_SHORTLIST.md satır 16); bu düzeltmenin kendisi bu oturumda yeniden doğrulanmadı, önceki bağımsız denetimin bulgusu olduğu gibi aktarıldı. CFO/CAPEX/FCF rakamları — talimat gereği — bu turda YENİDEN DOĞRULANMAYA ÇALIŞILMADI; iki önceki turda da hiçbir CFO/CAPEX rakamı birincil kaynaktan teyit edilememişti (bkz. CASHFLOW.md, DATA_GAPS.md), bu durum olduğu gibi aktarılmıştır."
+  ,
+  "dividendSeries": [
+    {
+      "profitYear": 2015,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "1.89",
+      "grossPerShareTRY_newShareBasis": "0.189",
+      "netPerShareTRY_newShareBasis": "0.16065",
+      "totalCashTRY": "663219900",
+      "totalCashTRY_source": "provided (her iki taksit de JSON'da verilmiş)",
+      "totalCashUSD": "217860245",
+      "totalCashRealTRY_base202610": "10551066275",
+      "installments": [
+        { "paymentDate": "2016-04-04", "grossPerShareTRY": "1.00", "cashTRY": "350910000", "usdTryUsed": "2.81124", "fxLookbackDays": 0, "tufeMonth": "2016-04" },
+        { "paymentDate": "2016-11-22", "grossPerShareTRY": "0.89", "cashTRY": "312309900", "usdTryUsed": "3.35686", "fxLookbackDays": 0, "tufeMonth": "2016-11" }
+      ]
+    },
+    {
+      "profitYear": 2016,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "2.25",
+      "grossPerShareTRY_newShareBasis": "0.225",
+      "netPerShareTRY_newShareBasis": "0.19125",
+      "totalCashTRY": "789547500",
+      "totalCashTRY_source": "provided",
+      "totalCashUSD": "212893740",
+      "totalCashRealTRY_base202610": "11244503507",
+      "installments": [
+        { "paymentDate": "2017-04-03", "grossPerShareTRY": "1.14", "cashTRY": "400037400", "usdTryUsed": "3.64420", "fxLookbackDays": 0, "tufeMonth": "2017-04" },
+        { "paymentDate": "2017-10-31", "grossPerShareTRY": "1.11", "cashTRY": "389510100", "usdTryUsed": "3.77725", "fxLookbackDays": 0, "tufeMonth": "2017-10" }
+      ]
+    },
+    {
+      "profitYear": 2017,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "3.43",
+      "grossPerShareTRY_newShareBasis": "0.343",
+      "netPerShareTRY_newShareBasis": "0.29155",
+      "totalCashTRY": "1203621300",
+      "totalCashTRY_source": "provided",
+      "totalCashUSD": "277139253",
+      "totalCashRealTRY_base202610": "15031501636",
+      "installments": [
+        { "paymentDate": "2018-04-02", "grossPerShareTRY": "2.28", "cashTRY": "800074800", "usdTryUsed": "3.97710", "fxLookbackDays": 0, "tufeMonth": "2018-04" },
+        { "paymentDate": "2018-11-20", "grossPerShareTRY": "1.15", "cashTRY": "403546500", "usdTryUsed": "5.31200", "fxLookbackDays": 0, "tufeMonth": "2018-11" }
+      ]
+    },
+    {
+      "profitYear": 2018,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "3.66",
+      "grossPerShareTRY_newShareBasis": "0.366",
+      "netPerShareTRY_newShareBasis": "0.3111",
+      "totalCashTRY": "1284330600",
+      "totalCashTRY_source": "provided",
+      "totalCashUSD": "229986612",
+      "totalCashRealTRY_base202610": "13751321522",
+      "installments": [
+        { "paymentDate": "2019-04-01", "grossPerShareTRY": "2.43", "cashTRY": "852711300", "usdTryUsed": "5.51540", "fxLookbackDays": 0, "tufeMonth": "2019-04" },
+        { "paymentDate": "2019-11-19", "grossPerShareTRY": "1.23", "cashTRY": "431619300", "usdTryUsed": "5.72583", "fxLookbackDays": 0, "tufeMonth": "2019-11" }
+      ]
+    },
+    {
+      "profitYear": 2019,
+      "installmentCount": 1,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "3.12",
+      "grossPerShareTRY_newShareBasis": "0.312",
+      "netPerShareTRY_newShareBasis": "0.2652",
+      "totalCashTRY": "1094839200",
+      "totalCashTRY_source": "provided; 350.910.000 x 3.12 = 1.094.839.200 TAM eşleşme — pay sayısı varsayımını doğrular",
+      "totalCashUSD": "166967232",
+      "totalCashRealTRY_base202610": "10888208884",
+      "note": "Planlı 2. taksit COVID-19 nedeniyle bu kâr yılı içinde dağıtılmadı; tek taksit.",
+      "installments": [
+        { "paymentDate": "2020-03-23", "grossPerShareTRY": "3.12", "cashTRY": "1094839200", "usdTryUsed": "6.55721", "fxLookbackDays": 0, "tufeMonth": "2020-03" }
+      ]
+    },
+    {
+      "profitYear": 2020,
+      "installmentCount": 1,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "6.42",
+      "grossPerShareTRY_newShareBasis": "0.642",
+      "netPerShareTRY_newShareBasis": null,
+      "totalCashTRY": "2252842200",
+      "totalCashTRY_source": "AUDIT-DÜZELTİLDİ (2. tur, Ford Otosan IR sayfası; 1. turun '~13 TL, teyit edilemedi' tahmininin ~2 kat üzerindeydi). 350.910.000 x 6.42 = 2.252.842.200 TAM eşleşme.",
+      "totalCashUSD": "283747569",
+      "totalCashRealTRY_base202610": "19282672069",
+      "note": "Pandemi (2020) kârından, azalmış/tek taksit. Net pay başı tutar hiçbir turda teyit edilemedi (MISSING_DATA) — gross için audit düzeltmesi var, net için yok.",
+      "installments": [
+        { "paymentDate": "2021-03-24", "grossPerShareTRY": "6.42", "cashTRY": "2252842200", "usdTryUsed": "7.93960", "fxLookbackDays": 0, "tufeMonth": "2021-03" }
+      ]
+    },
+    {
+      "profitYear": 2021,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "16.76",
+      "grossPerShareTRY_newShareBasis": "1.676",
+      "netPerShareTRY_newShareBasis": "1.508",
+      "totalCashTRY": "5881251600",
+      "totalCashTRY_source": "TÜRETİLDİ (gross x 350.910.000 pay); her iki satırda da JSON'da totalCashTRY null",
+      "totalCashUSD": "427301962",
+      "totalCashRealTRY_base202610": "34012821070",
+      "note": "19.11.2021 ödemesi 2021'in KENDİ kârından ara/avans temettü (aynı kâr yılı içinde ödendi); 24.03.2022 ödemesi final taksit. İkisi de profitYear 2021'e ait, tek başına 'ödeme yılı 2021 toplamı' diye birleştirilmedi.",
+      "installments": [
+        { "paymentDate": "2021-11-19", "grossPerShareTRY": "3.77", "cashTRY": "1322930700", "cashTRY_source": "derived", "usdTryUsed": "11.03712", "fxLookbackDays": 0, "tufeMonth": "2021-11" },
+        { "paymentDate": "2022-03-24", "grossPerShareTRY": "12.99", "cashTRY": "4558320900", "cashTRY_source": "derived", "usdTryUsed": "14.82670", "fxLookbackDays": 0, "tufeMonth": "2022-03" }
+      ]
+    },
+    {
+      "profitYear": 2022,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "19.96",
+      "grossPerShareTRY_newShareBasis": "1.996",
+      "netPerShareTRY_newShareBasis": "1.7965",
+      "totalCashTRY": "7000654500",
+      "totalCashTRY_source": "provided (her iki taksit de JSON'da verilmiş); final taksit 350.910.000 x 14.25 = 5.000.467.500 TAM eşleşme — pay sayısı varsayımını ikinci kez doğrular",
+      "totalCashUSD": "371025154",
+      "totalCashRealTRY_base202610": "25683582946",
+      "installments": [
+        { "paymentDate": "2022-11-30", "grossPerShareTRY": "5.71", "cashTRY": "2000187000", "usdTryUsed": "18.63990", "fxLookbackDays": 0, "tufeMonth": "2022-11" },
+        { "paymentDate": "2023-03-13", "grossPerShareTRY": "14.25", "cashTRY": "5000467500", "usdTryUsed": "18.96139", "fxLookbackDays": 0, "tufeMonth": "2023-03" }
+      ]
+    },
+    {
+      "profitYear": 2023,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "73.10",
+      "grossPerShareTRY_newShareBasis": "7.31",
+      "netPerShareTRY_newShareBasis": "6.579",
+      "totalCashTRY": "25651521000",
+      "totalCashTRY_source": "TÜRETİLDİ (gross x 350.910.000 pay); her iki satırda da JSON'da totalCashTRY null",
+      "totalCashUSD": "838138768",
+      "totalCashRealTRY_base202610": "57633319195",
+      "note": "USD bazında 2015-2025 penceresinin ZİRVESİ (profitYear 2023); sonraki iki yılda belirgin düşüş var.",
+      "installments": [
+        { "paymentDate": "2023-10-30", "grossPerShareTRY": "29.80", "cashTRY": "10457118000", "cashTRY_source": "derived", "usdTryUsed": "28.20283", "fxLookbackDays": 0, "tufeMonth": "2023-10" },
+        { "paymentDate": "2024-04-16", "grossPerShareTRY": "43.30", "cashTRY": "15194403000", "cashTRY_source": "derived", "usdTryUsed": "32.51140", "fxLookbackDays": 0, "tufeMonth": "2024-04" }
+      ]
+    },
+    {
+      "profitYear": 2024,
+      "installmentCount": 2,
+      "shareBasis": "old (350.910.000 pay)",
+      "grossPerShareTRY_nativeBasis": "31.35",
+      "grossPerShareTRY_newShareBasis": "3.135",
+      "netPerShareTRY_newShareBasis": "2.736",
+      "totalCashTRY": "11001028500",
+      "totalCashTRY_source": "TÜRETİLDİ (gross x 350.910.000 pay); her iki satırda da JSON'da totalCashTRY null. Ara taksit (14.25) için derive edilen 5.000.467.500, profitYear 2022 final taksidinin (aynı gross değer, aynı pay sayısı) VERİLEN totalCashTRY'siyle TAM örtüşüyor — türetme yöntemini üçüncü kez doğrular.",
+      "totalCashUSD": "302422059",
+      "totalCashRealTRY_base202610": "17268141370",
+      "note": "2023 zirvesine göre USD bazında -%64 düşüş (838M$ -> 302M$); net kârın 2023'ten 2024'e ~%21 gerilemesiyle (FROTO.md Bölüm 4) yön olarak tutarlı.",
+      "installments": [
+        { "paymentDate": "2024-11-26", "grossPerShareTRY": "14.25", "cashTRY": "5000467500", "cashTRY_source": "derived", "usdTryUsed": "34.59753", "fxLookbackDays": 0, "tufeMonth": "2024-11" },
+        { "paymentDate": "2025-04-07", "grossPerShareTRY": "17.10", "cashTRY": "6000561000", "cashTRY_source": "derived", "usdTryUsed": "38.00480", "fxLookbackDays": 0, "tufeMonth": "2025-04" }
+      ]
+    },
+    {
+      "profitYear": 2025,
+      "installmentCount": 2,
+      "shareBasis": "new (3.509.100.000 pay, Mayıs 2025 1:10 bedelsiz sonrası)",
+      "grossPerShareTRY_nativeBasis": "9.69",
+      "grossPerShareTRY_newShareBasis": "9.69",
+      "netPerShareTRY_newShareBasis": "8.2365",
+      "totalCashTRY": "34000055000",
+      "totalCashTRY_source": "ara taksit TÜRETİLDİ (6.05 x 3.509.100.000 pay); final taksit JSON'da verilmiş (~12.770.000.000, GK onayına sunulan yaklaşık brüt rakam)",
+      "totalCashUSD": "788342935",
+      "totalCashRealTRY_base202610": "41872426805",
+      "note": "PAYOUT UYARISI: hesaplanan toplam nakit (34,00 mr TL) 2025 net dönem kârına (~33,98-33,99 mr TL, FROTO.md) çok yakın -> payout ~%100,0. Bu, counterEvidence'ta işaretlenen '%90-100 aralığı, KAP birincil tablosuyla teyit edilemedi' şüphesini teyit eder BÜYÜKLÜK olarak, ama KAP kâr dağıtım tablosu bu turda da açılmadı; hesap türetilmiş (derived) totalCashTRY'ye dayanıyor, NEEDS_REVIEW kalıyor.",
+      "installments": [
+        { "paymentDate": "2025-12-05", "grossPerShareTRY": "6.05", "cashTRY": "21230055000", "cashTRY_source": "derived", "usdTryUsed": "42.50010", "fxLookbackDays": 0, "tufeMonth": "2025-12" },
+        { "paymentDate": "2026-03-18", "grossPerShareTRY": "3.64", "cashTRY": "12770000000", "cashTRY_source": "provided (approx)", "usdTryUsed": "44.21540", "fxLookbackDays": 0, "tufeMonth": "2026-03" }
+      ]
+    }
+  ],
+  "excludedUnrealized": {
+    "profitYear": 2026,
+    "paid": false,
+    "paymentDate": "2026-11-30 (planlı)",
+    "exDate": "2026-11-26",
+    "grossPerShareTRY": "3.07",
+    "netPerShareTRY": "2.6095",
+    "shareBasis": "new (3.509.100.000 pay)",
+    "note": "Kesim tarihinde (2026-11-10) henüz GERÇEKLEŞMEMİŞ. Büyüme/CAGR hesaplarının tamamen DIŞINDA tutuldu; backtest/geçmiş performansa dahil edilmemelidir (görev talimatı)."
+  },
+  "growthMetrics": {
+    "primaryMetric": "grossPerShareTRY_newShareBasis (pay başı seri daha tam durumda; toplam nakit serisi 7/11 yılda türetilmiş null-doldurma gerektirdiği için ikincil/teyit metriği)",
+    "nominalPerShareTRY_newShareBasis": {
+      "cagr10y_2015to2025_pct": "48.25",
+      "cagr5y_2020to2025_pct": "72.09",
+      "note": "Nominal TL büyüme bu dönemde TL'nin USD karşısında ~%93 değer kaybetmesiyle (2016'da ~2,81, 2026'da ~44,22 USD/TRY) ve TMS 29 enflasyon muhasebesiyle birlikte okunmalı; satın alma gücü artışı GÖSTERMEZ."
+    },
+    "usdTotalCash": {
+      "cagr10y_2015to2025_pct": "13.72",
+      "cagr5y_2020to2025_pct": "22.68",
+      "cagr9y_2015to2024_excl2025PayoutSpike_pct": "3.71",
+      "cagr4y_2020to2024_excl2025PayoutSpike_pct": "1.61",
+      "note": "2025'i (payout ~%100 anomalisi, teyitsiz) dışarıda tutarsak USD büyüme 10 yılda ~%3,7/yıl, son 4 yılda ~%1,6/yıl'a düşüyor — yani headline CAGR'ların büyük kısmı TEK bir anormal yıla bağlı, istikrarlı bir trend değil."
+    },
+    "realTRY_cpiDeflated_base202610": {
+      "cagr10y_2015to2025_pct": "14.78",
+      "cagr5y_2020to2025_pct": "16.78",
+      "cagr9y_2015to2024_excl2025PayoutSpike_pct": "5.63",
+      "cagr4y_2020to2024_excl2025PayoutSpike_pct": "-2.72",
+      "note": "2025 hariç tutulduğunda 2020-2024 reel TL büyüme NEGATİF (-%2,72/yıl) — yani son 4 yılın 2025 hariç resmi görünümü satın alma gücü bazında KÜÇÜLME, büyüme değil. 2025'in payout spike'ı olmasa 10-15 yıllık bir 'temettü büyümesi' tezi bu veriyle desteklenmez."
+    },
+    "yearOverYearCashUSD_volatility_pct": {
+      "2015_2016": "-2.3", "2016_2017": "30.2", "2017_2018": "-17.0", "2018_2019": "-27.4",
+      "2019_2020": "69.9", "2020_2021": "50.6", "2021_2022": "-13.2", "2022_2023": "125.9",
+      "2023_2024": "-63.9", "2024_2025": "160.7",
+      "note": "Yıldan yıla -%64 ile +%161 arasında sıçramalar — düz/istikrarlı bir büyüme eğrisi YOK, otomotiv kâr döngüselliği ve (2025'te) payout oranı değişimiyle uyumlu yüksek oynaklık."
+    },
+    "payout2025Check": {
+      "totalCashTRY": "34000055000",
+      "netIncome2025TRY_approx": "33980000000-33990000000",
+      "impliedPayoutPct_approx": "~100.0",
+      "caveat": "totalCashTRY kısmen türetilmiş (ara taksit); KAP birincil kâr dağıtım tablosu üç turda da açılmadı; kesinlik NEEDS_REVIEW."
+    }
+  },
+  "continuityVsGrowth": "FROTO'nun 2015-2025 arası 11 kâr yılının TAMAMINDA (paid:true) nakit temettü ödediği doğrulandı — süreklilik güçlü (2020 pandemi yılında dahi taksit sayısı 1'e düşmüş ama sıfıra inmemiş). AMA süreklilik büyüme ANLAMINA GELMİYOR: (1) nominal TL büyüme (%48,2/10y) büyük ölçüde TL'nin değer kaybından kaynaklanıyor; (2) reel TL ve USD büyüme serisi DÜZ DEĞİL, son 10 yılın başlıca '10 yıllık CAGR' rakamları (USD %13,7/yıl, reel TL %14,8/yıl) neredeyse TAMAMEN TEK bir anormal yıla (profitYear 2025, payout ~%100, teyitsiz) dayanıyor — 2025'i çıkarınca 2015-2024 USD büyümesi ~%3,7/yıl'a, 2020-2024 reel TL büyümesi NEGATİF (-%2,7/yıl)'e düşüyor; (3) yıldan yıla oynaklık çok yüksek (-%64 ile +%161 arası), otomotiv kâr döngüselliğini yansıtıyor. Sonuç: FROTO 'kesintisiz ödeyen ama düzenli BÜYÜYEN değil, döngüsel ve son yılı istisnai' bir temettü profiline sahip; 'süreklilik = büyüme' varsayımı bu veriyle DOĞRULANMADI.",
+  "sustainabilitySynthesis": "Üç önceki tur ve bu turun hesaplamasının birlikte gösterdiği tablo: (a) KAP'a bildirilmiş (12.03.2026), net dağıtılabilir kârın en az %50'si şeklinde AÇIK bir dağıtım politikası var, ama 'büyük yatırım/ciddi durgunlukta istisna' kaydı kriz döneminde tekrar kesinti riskini açıkça saklı tutuyor (COMPANY_DECISIONS.md). (b) Net kâr 2023 zirvesinden (49,1 mr TL) 2025'e (~34,0 mr TL) İKİ YIL ART ARDA gerilemiş; bu düşüş döngüsel mi yapısal mı ayrıştırılamadı (dividend-screening-20261110/FROTO.json). (c) Net borç 2020'de ~sıfırdan 2024'te ~101,4 mr TL'ye hızla artmış, 2025'te ~99,2 mr TL'ye kısmi gerilemiş — kaldıraç henüz çok-yıllı bir düşüş trendi kanıtlamıyor. (d) Bu turun kendi hesabı, profitYear 2025 için payout oranının ~%100'e (politikanın belirgin üzerinde) işaret ettiğini SAYISAL olarak doğruladı — ama bu hesap türetilmiş (derived) totalCashTRY'ye dayanıyor ve KAP'ın birincil kâr dağıtım tablosu üç turda da açılıp teyit edilmedi (UNRESOLVED_ISSUES.md #4). (e) En kritik nokta: 2021-2025 CFO/CAPEX/FCF serisinin TAMAMI iki önceki bağımsız turda da (ilk tur + 2. tur denetim) birincil kaynaktan DOĞRULANAMADI — Ford Otosan'ın finansal sonuç duyuru PDF'leri şifreli/sıkıştırılmış akış içeriyor, bu ortamda hiçbir araçla okunamadı (CASHFLOW.md: '10 şirketten FROTO, hiçbir yılı doğrulanamayan tek şirket'). Bu dördüncü turda bu doğrulama TALİMAT GEREĞİ yeniden denenmedi. Sonuç: temettü/FCF karşılama oranı hâlâ hesaplanamıyor; sürdürülebilirlik sentezi 'olgu bazında süreklilik güçlü, nakit akışı kapsamı bilinmiyor, payout oranı muhtemelen yüksek ve teyitsiz' şeklinde kalıyor — bu, UNRESOLVED_ISSUES.md'nin FROTO'yu 'Koşullu (B) ile Karar Ertelendi (D) arasındaki en ince çizgide' tuttuğu tespitini sayısal olarak destekliyor.",
+  "evidenceReliability": {
+    "dividendHistoryConfidence": "Orta — temettü ödeme OLGUSU (2015-2025 her yıl ödendi) ve büyüklük mertebeleri çok kaynaklı çapraz doğrulandı, 24.03.2021 tutarı 2. turda birincil kaynaktan düzeltildi; ama 2016-2022 arası taksitlerin KAP birincil bildirimiyle tek tek teyidi hiçbir turda yapılmadı, totalCashTRY'nin 7/11 kâr yılında TÜRETİLMİŞ (pay sayısı varsayımına dayalı, 4 noktada çapraz doğrulanmış ama KAP tablosu değil) olması ve net pay başı tutarın profitYear 2020 için hiç bulunamaması güveni 'Yüksek' seviyesine çıkarmıyor.",
+    "cashFlowConfidence": "Düşük — 2021-2025 CFO/CAPEX/FCF serisinin TAMAMI iki önceki bağımsız turda da birincil kaynaktan doğrulanamadı (CASHFLOW.md: FROTO 10 şirket arasında kanıt tabanı en zayıf olanı); bu turda talimat gereği yeniden denenmedi. Payout oranı tahmini (profitYear 2025 için ~%100) KAP birincil kâr dağıtım tablosuyla hâlâ teyitsiz.",
+    "riskAssessmentConfidence": "Orta — nitel yapısal riskler (Ford'a bağımlılık, AB EV düzenleme takvimi, ihracat/Avrupa döngüselliği, Koç Finansman entegrasyonu) birden fazla bağımsız haber kaynağıyla tutarlı şekilde doğrulandı; ama nicel kaldıraç göstergeleri (2025 net borç/FAVÖK için kaynaklar arası 1,49x vs 1,85x çelişkisi, bu turda da çözülmedi) ve döviz borcu dağılımının kesin yüzdesi hâlâ net değil, bu yüzden 'Yüksek' değil 'Orta'."
+  },
+  "structuralRisksCarriedForward": [
+    "Elektrikli araca geçiş hızının (AB düzenlemeleri, talep belirsizliği) planlanandan yavaş/hızlı gitmesi riski; 2025'te EV payı hâlâ ~%9,8.",
+    "Gelirin %70-86 aralığında ihracata (ağırlıklı Avrupa) bağlı olması nedeniyle Avrupa otomotiv talebi döngüselliğine yüksek maruziyet.",
+    "Ford Motor Company'nin global strateji değişikliği (Avrupa'dan çekilme, üretim üssünü değiştirme, lisans/know-how sözleşmesini yeniden müzakere etme) riski.",
+    "Şirketin bağımsız Ar-Ge/marka gücünün sınırlı olması, Ford'a sözleşmesel/ortaklık temelli bağımlılığın sürmesi.",
+    "Koç Finansman (Ford Finans, 2026) entegrasyon riski ve yeni finansman segmentinin gelecekteki konsolide net borç/FAVÖK okumasına etkisinin henüz belirsiz olması.",
+    "TL'nin uzun dönemli değer kaybı ve TMS 29 enflasyon muhasebesinin nominal TL bazlı kâr/temettü büyümesinin reel anlamını karmaşıklaştırması — bu turun hesabı bu riski SAYISAL olarak gösterdi (nominal %48,2/10y vs reel %14,8/10y, 2025 hariç ise reel 4y CAGR negatif).",
+    "Dağıtım politikasının 'büyük yatırım/ciddi ekonomik durgunlukta istisna' maddesi nedeniyle kriz döneminde temettünün yeniden azalma/kesinti riski (2020'de görülen)."
+  ],
+  "missingData": [
+    { "item": "2021-2025 CFO (faaliyetlerden nakit akışı) tam serisi, birincil kaynaktan", "blocksDecision": "Temettü/FCF karşılama oranı hesaplanamıyor; bu şirketin kanıt tabanı 10 şirket içinde en zayıfı (CASHFLOW.md)", "possibleSource": "KAP XBRL finansal tablolar / Ford Otosan faaliyet raporu nakit akış tablosu; şifreli/sıkıştırılmış PDF nedeniyle farklı bir PDF aracı/OCR gerekiyor", "confirmedAcrossRounds": 3 },
+    { "item": "2021 gerçekleşen (denetlenmiş) CAPEX", "blocksDecision": "FCF hesaplaması tamamen engelleniyor", "possibleSource": "Ford Otosan 2021 Faaliyet Raporu nakit akış tablosu" },
+    { "item": "profitYear 2025 için KAP birincil kâr payı dağıtım tablosu (net dönem kârı/yasal yedek/net dağıtılabilir kâr/I.-II. temettü ayrımı)", "blocksDecision": "Bu turun hesapladığı ~%100 payout tahmini (büyüklük olarak counterEvidence ile örtüşüyor) KAP tablosuyla kesinleştirilemiyor", "possibleSource": "kap.org.tr - Ford Otomotiv Sanayi A.Ş. 2026 Mart GK kâr payı dağıtım bildirimi" },
+    { "item": "profitYear 2020 (24.03.2021 ödemeli) net pay başı tutar", "blocksDecision": "Net temettü serisinde tek boşluk; gross için audit düzeltmesi var (6,42 TL/pay) ama net için hiçbir turda bulunamadı", "possibleSource": "Ford Otosan IR kâr payı dağıtımı sayfası / KAP bildirimi" },
+    { "item": "2016-2022 dönemi taksitlerin KAP birincil bildirimiyle tek tek teyidi", "blocksDecision": "Erken dönem serinin güvenilirlik derecesi 'Orta'da kalıyor, 'Yüksek'e çıkamıyor", "possibleSource": "kap.org.tr arşivi" },
+    { "item": "totalCashTRY'nin 7/11 kâr yılında türetilmiş (derived) olması — KAP'ın kendi beyan ettiği toplam nakit tutarı değil", "blocksDecision": "Payout ve ölçek hesapları 4 noktada çapraz doğrulanan ama resmi olmayan bir varsayıma (pay sayısı x gross) dayanıyor", "possibleSource": "KAP kâr payı dağıtım tabloları (her yıl için)" },
+    { "item": "2025 sonrası Koç Finansman (Ford Finans) segmentinin konsolide net borç/FAVÖK okumasına etkisi", "blocksDecision": "Gelecek dönem kaldıraç trendinin bu turun verisiyle karşılaştırılabilirliği belirsiz", "possibleSource": "Ford Otosan FY2026 finansal sonuç bülteni" }
+  ],
+  "agentNotes": "Bu, dividend-growth-screening-20261110 çalışmasının FROTO için DÖRDÜNCÜ turu; önceki üç tur (1. tur eleme, 2. tur bağımsız denetim, 3. tur portföy kararı) okunup bulguları (özellikle 24.03.2021 tutarının 6,42 TL/pay olarak düzeltilmesi ve CFO/CAPEX'in hiçbir turda doğrulanamaması) bu hesaplamaya aktarıldı; CFO/CAPEX yeniden doğrulanmaya ÇALIŞILMADI (talimat gereği). Görev kapsamı sınıflandırma (A/B/C/D) DEĞİL, yalnızca veri derleme ve nominal/reel/USD büyüme hesaplama; final karar merkezi sentezde verilecek. Ortak MACRO_REFERENCE.md/lookup.cjs dışında hiçbir kur/TÜFE verisi aranmadı veya uydurulmadı; her installment için lookup.cjs'in döndürdüğü usdTry ve tufeIndex/defl değerleri birebir kullanıldı (fxLookbackDays tüm tarihlerde 0 çıktı — hiçbiri hafta sonu/tatil değildi). Pay sayısı (350.910.000 eski / 3.509.100.000 yeni) FROTO.md'nin kendi 1:10 bedelsiz artış notundan alındı, uydurulmadı; bu varsayımın doğruluğu 4 farklı satırda VERİLEN totalCashTRY değerleriyle TAM/yakın örtüşerek bağımsız şekilde doğrulandı (bkz. methodologyNote). En önemli bulgu: FROTO'nun '10 yıllık güçlü büyüme' görünümü büyük ölçüde TEK bir uç yıla (profitYear 2025, payout'u teyitsiz şekilde ~%100'e sıçrayan) bağımlı; bu yıl hariç tutulduğunda son 4 yılın reel TL büyümesi NEGATİF çıkıyor. Bu, merkezi sentez için kritik bir girdi olmalı: FROTO'nun süreklilik kanıtı çok güçlü ama büyüme kanıtı zayıf/teyitsiz ve tek-yıl-bağımlı."
+}

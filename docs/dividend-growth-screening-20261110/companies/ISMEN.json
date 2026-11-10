@@ -1,0 +1,315 @@
+{
+  "symbol": "ISMEN",
+  "companyName": "İş Yatırım Menkul Değerler A.Ş.",
+  "sectorMethodologyNote": "ISMEN bir aracı kurumdur; klasik CFO/CAPEX/FCF modeli bu iş koluna UYGUN DEĞİLDİR (METHODOLOGY.md kararı, 3 önceki turda korunmuş, bu turda yeniden sorgulanmadı) — faaliyetlerden nakit akışı müşteri varlıkları ve kendi menkul kıymet pozisyonundaki dönemsel değişimlerden masif etkilenir, temettü kapasitesini sanayi şirketindeki gibi yansıtmaz. Bunun yerine payout oranı + özkaynak/asgari sermaye eşiği tamponu + ROE kullanılır. Bu dosya bu kararı YENİDEN DOĞRULAMAZ, önceki 3 turdan kaynak göstererek aktarır.",
+  "dividendSeries": {
+    "basis": "profitYear",
+    "baseMonthForReal": "2026-10",
+    "shareBasisNote": "ISMEN 2015-06-08'den 2023-07-19'a kadar 355.000.000 TL sabit sermaye (355M pay) ile işlem gördü. 2023-07-19'da %322,54 bedelsiz sermaye artırımıyla sermaye 1.500.000.000 TL'ye (1,5B pay) çıkarıldı (SPK onayı 2023-07-13). Bu artırım, 2023 kâr yılının ödemesinden (2023-05-26, 355M pay bazında) SONRA gerçekleşti. Bu yüzden profitYear 2015-2022 ödemeleri (355M pay bazında) ve profitYear 2023-2025 ödemeleri (1,5B pay bazında) FARKLI pay birimindedir. Karşılaştırılabilirlik için 2015-2022 ham tutarları ÷(1.500.000.000/355.000.000 = 4,225352...) ile 1,5B-pay-eşdeğerine çevrilmiştir (aşağıdaki 'grossPerShareTRY_annualSum'/'netPerShareTRY_annualSum' bu çevrilmiş değerlerdir); 2023-2025 zaten bu bazdadır, çevrim gerekmez.",
+    "paymentDateMethodologyNote": "Görev talimatı, gerçek ödeme tarihi bulunamazsa 'genel BIST GK takviminin olağan ayını (Mart sonu-Nisan) kullanarak o yılın 1 Nisan'ını yaklaşık tarih kabul et' demektedir. BU DOSYADA BİLİNÇLİ BİR SAPMA YAPILMIŞTIR: ISMEN.md (1. tur) her yıl için zaten belgelenmiş bir KAP ex-date (hak kullanım tarihi) içeriyor ve bu tarihler Mart sonu ile Mayıs sonu arasında değişiyor (örn. 2022 ex-date 2022-05-24, 2024 ex-date 2024-05-29 — ikisi de Nisan'dan çok sonra). Genel '1 Nisan' varsayılanını bu yıllara zorlamak, zaten elde olan daha spesifik bilgiyi göz ardı edip FX/TÜFE sorgusunda haftalar/aylar mertebesinde ek hata üretirdi (özellikle 2022-2023 gibi yüksek TL volatilitesi dönemlerinde). Bunun yerine, ISMEN.md'de belgelenmiş gerçek ex-date her yıl için FX/TÜFE sorgusunun ANKORU olarak kullanılmış, dataQuality='ESTIMATED_DATE' ile açıkça işaretlenmiştir (gerçek NAKİT ödeme tarihi, ex-date'ten muhtemelen 1-3 iş günü sonradır ve hâlâ teyitsizdir — bkz. missingData #1). Yalnızca profitYear 2025 (payment 2026-04-03) için gerçek ödeme tarihi KAP'tan teyitlidir, dataQuality='CONFIRMED'.",
+    "entries": [
+      {
+        "year": 2015,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2016-03-28", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2016-03-28", "grossPerShareTRY_original355Mbasis": "0.1014", "netPerShareTRY_original355Mbasis": "0.0862", "usdTryRateUsed": 2.868340015411377, "fxDateUsed": "2016-03-28", "fxLookbackDays": 0, "tufeIndexUsed": 274.27, "realDeflationFactor": 16.33803076437729}
+        ],
+        "grossPerShareTRY_annualSum": "0.023998",
+        "netPerShareTRY_annualSum": "0.020401",
+        "grossPerShareTRY_real_baseOct2026": "0.392096",
+        "grossPerShareTRY_usd": "0.008367",
+        "netPerShareTRY_real_baseOct2026": "0.333256",
+        "netPerShareTRY_usd": "0.007114",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "profitYearProfitTRY": null,
+        "payoutRatioPercent": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "355M pay bazında ham brüt 0,1014 / net 0,0862 TL (ISMEN.json 1. tur). 1,5B-pay-eşdeğerine çevrim (÷4,225352) = 0,023998 brüt / 0,020401 net. Toplam nakit tutarı ve FY2015 net kârı bulunamadı (null) — payout hesaplanamıyor. Gerçek ödeme tarihi bilinmiyor; ex-date (2016-03-28) yaklaşık ödeme tarihi olarak kullanıldı."
+      },
+      {
+        "year": 2016,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2017-03-28", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2017-03-28", "grossPerShareTRY_original355Mbasis": "0.1268", "netPerShareTRY_original355Mbasis": "0.1077", "usdTryRateUsed": 3.6565499305725098, "fxDateUsed": "2017-03-28", "fxLookbackDays": 0, "tufeIndexUsed": 305.24, "realDeflationFactor": 14.680355450615117}
+        ],
+        "grossPerShareTRY_annualSum": "0.030009",
+        "netPerShareTRY_annualSum": "0.025489",
+        "grossPerShareTRY_real_baseOct2026": "0.440556",
+        "grossPerShareTRY_usd": "0.008210",
+        "netPerShareTRY_real_baseOct2026": "0.374096",
+        "netPerShareTRY_usd": "0.006974",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "profitYearProfitTRY": null,
+        "payoutRatioPercent": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "355M pay bazında ham brüt 0,1268 / net 0,1077 TL. 1,5B-eşdeğeri = 0,030009 brüt / 0,025489 net. Toplam nakit ve FY2016 net kârı bulunamadı; FY2017'nin (+%41 YoY) dolaylı ima ettiği FY2016 kârı (~157M TL) bu dosyada AYRICA bir sayı olarak kullanılmadı (ikinci derece türetim, kesin değil)."
+      },
+      {
+        "year": 2017,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2018-03-28", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2018-03-28", "grossPerShareTRY_original355Mbasis": "0.3099", "netPerShareTRY_original355Mbasis": "0.2634", "usdTryRateUsed": 4.013299942016602, "fxDateUsed": "2018-03-28", "fxLookbackDays": 0, "tufeIndexUsed": 336.48, "realDeflationFactor": 13.317379035145501}
+        ],
+        "grossPerShareTRY_annualSum": "0.073333",
+        "netPerShareTRY_annualSum": "0.062338",
+        "grossPerShareTRY_real_baseOct2026": "0.976543",
+        "grossPerShareTRY_usd": "0.018272",
+        "netPerShareTRY_real_baseOct2026": "0.830221",
+        "netPerShareTRY_usd": "0.015531",
+        "totalCashTRY_annualSum": null,
+        "totalCashTRY_real_baseOct2026": null,
+        "totalCashUSD": null,
+        "profitYearProfitTRY": 221700000,
+        "payoutRatioPercent": null,
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "355M pay bazında ham brüt 0,3099 / net 0,2634 TL. 1,5B-eşdeğeri = 0,073333 brüt / 0,062338 net. FY2017 net kârı ~221,7 milyon TL (BorsaGündem, dönemin nominal bazı, +%41 YoY) biliniyor ama toplam nakit temettü bulunamadığı için payout oranı hesaplanamıyor."
+      },
+      {
+        "year": 2018,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2019-03-27", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2019-03-27", "grossPerShareTRY_original355Mbasis": "0.2535", "netPerShareTRY_original355Mbasis": "0.2155", "usdTryRateUsed": 5.3653998374938965, "fxDateUsed": "2019-03-27", "fxLookbackDays": 0, "tufeIndexUsed": 402.81, "realDeflationFactor": 11.124430122752063}
+        ],
+        "grossPerShareTRY_annualSum": "0.059995",
+        "netPerShareTRY_annualSum": "0.051002",
+        "grossPerShareTRY_real_baseOct2026": "0.667411",
+        "grossPerShareTRY_usd": "0.011183",
+        "netPerShareTRY_real_baseOct2026": "0.567377",
+        "netPerShareTRY_usd": "0.009505",
+        "totalCashTRY_annualSum": 90000000,
+        "totalCashTRY_real_baseOct2026": 1001198700,
+        "totalCashUSD": 16777479,
+        "profitYearProfitTRY": null,
+        "payoutRatioPercent": "42.70",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Toplam nakit 90.000.000 TL, dağıtılabilir net dönem kârının %42,7'si olarak ikincil kaynakta doğrulandı (ISMEN.json 1. tur) — bu, FY2018'in TAM net kârına karşı değil 'dağıtılabilir kâr' tabanına karşı bir orandır, bu yüzden tam net kâr rakamı (profitYearProfitTRY) null bırakıldı, payout oranı kaynağın kendi beyanından alındı. 355M pay bazında brüt 0,2535 / net 0,2155; 1,5B-eşdeğeri = 0,059995 / 0,051002."
+      },
+      {
+        "year": 2019,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2020-03-24", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2020-03-24", "grossPerShareTRY_original355Mbasis": "0.3944", "netPerShareTRY_original355Mbasis": "0.3352", "usdTryRateUsed": 6.5467000007629395, "fxDateUsed": "2020-03-24", "fxLookbackDays": 0, "tufeIndexUsed": 450.58, "realDeflationFactor": 9.945030178316301}
+        ],
+        "grossPerShareTRY_annualSum": "0.093341",
+        "netPerShareTRY_annualSum": "0.079331",
+        "grossPerShareTRY_real_baseOct2026": "0.928364",
+        "grossPerShareTRY_usd": "0.014260",
+        "netPerShareTRY_real_baseOct2026": "0.789044",
+        "netPerShareTRY_usd": "0.012118",
+        "totalCashTRY_annualSum": 140000000,
+        "totalCashTRY_real_baseOct2026": 1392304200,
+        "totalCashUSD": 21375814,
+        "profitYearProfitTRY": null,
+        "payoutRatioPercent": "38.50",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Toplam nakit 140.000.000 TL, dağıtılabilir net dönem kârının %38,5'i olarak ikincil kaynakta doğrulandı — yine 'dağıtılabilir kâr' tabanına karşı oran, tam net kâr rakamı null. 355M pay bazında brüt 0,3944 / net 0,3352; 1,5B-eşdeğeri = 0,093341 / 0,079331."
+      },
+      {
+        "year": 2020,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2021-03-31", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2021-03-31", "grossPerShareTRY_original355Mbasis": "1.00", "netPerShareTRY_original355Mbasis": "0.90", "usdTryRateUsed": 8.241889953613281, "fxDateUsed": "2021-03-31", "fxLookbackDays": 0, "tufeIndexUsed": 523.53, "realDeflationFactor": 8.559264412250986}
+        ],
+        "grossPerShareTRY_annualSum": "0.236667",
+        "netPerShareTRY_annualSum": "0.213000",
+        "grossPerShareTRY_real_baseOct2026": "2.025521",
+        "grossPerShareTRY_usd": "0.028719",
+        "netPerShareTRY_real_baseOct2026": "1.823123",
+        "netPerShareTRY_usd": "0.025846",
+        "totalCashTRY_annualSum": 355000000,
+        "totalCashTRY_real_baseOct2026": 3038538720,
+        "totalCashUSD": 43074614,
+        "profitYearProfitTRY": 942000000,
+        "payoutRatioPercent": "37.69",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Toplam nakit (355.000.000 = 355M pay × 1,00 TL) TÜRETİLMİŞTİR, birincil kâr dağıtım tablosuyla ayrıca teyit edilmedi. FY2020 konsolide net kâr ~942 milyon TL (BorsaGündem, +%146 YoY, pandemi döneminde günlük işlem hacmi ~23x) — bu rakam da kendisi yaklaşık ('~'), bu yüzden payout oranı (%37,69) DÜŞÜK GÜVENLE hesaplanmıştır (hem pay hem payda yaklaşık). Bazı kaynaklarda ex-date 2021-03-29 olarak da geçiyor, kesinleştirilemedi — 2021-03-31 kullanıldı (ISMEN.json'daki birincil alan)."
+      },
+      {
+        "year": 2021,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2022-05-24", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2022-05-24", "grossPerShareTRY_original355Mbasis": "1.13", "netPerShareTRY_original355Mbasis": "1.01", "usdTryRateUsed": 16.09749984741211, "fxDateUsed": "2022-05-24", "fxLookbackDays": 0, "tufeIndexUsed": 931.76, "realDeflationFactor": 4.809212348400617}
+        ],
+        "grossPerShareTRY_annualSum": "0.267433",
+        "netPerShareTRY_annualSum": "0.239033",
+        "grossPerShareTRY_real_baseOct2026": "1.286285",
+        "grossPerShareTRY_usd": "0.016613",
+        "netPerShareTRY_real_baseOct2026": "1.149000",
+        "netPerShareTRY_usd": "0.014849",
+        "totalCashTRY_annualSum": 401150000,
+        "totalCashTRY_real_baseOct2026": 1929215394,
+        "totalCashUSD": 24920002,
+        "profitYearProfitTRY": 1170903975,
+        "payoutRatioPercent": "34.26",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Toplam nakit (401.150.000) TÜRETİLMİŞTİR (355M pay × 1,13 TL). FY2021 ana ortaklık net kârı 1.170.903.975 TL (kendi nominal bazı) kesin biliniyor; payout = 401.150.000/1.170.903.975 = %34,26 — kaynağın kendi beyanıyla (~%34,3) uyumlu. ÖNEMLİ NOT (ex-date Mayıs'ta): bu yıl ex-date 2022-05-24'tür, Mart/Nisan değil — talimatın genel '1 Nisan' varsayılanı burada ~2 aylık ek hata üretirdi, bu yüzden gerçek ex-date kullanıldı (bkz. paymentDateMethodologyNote)."
+      },
+      {
+        "year": 2022,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2023-05-26", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2023-05-26", "grossPerShareTRY_original355Mbasis": "2.13", "netPerShareTRY_original355Mbasis": "1.91", "usdTryRateUsed": 19.97439956665039, "fxDateUsed": "2023-05-25", "fxLookbackDays": 1, "tufeIndexUsed": 1300.6, "realDeflationFactor": 3.445357294899092}
+        ],
+        "grossPerShareTRY_annualSum": "0.504100",
+        "netPerShareTRY_annualSum": "0.452033",
+        "grossPerShareTRY_real_baseOct2026": "1.736997",
+        "grossPerShareTRY_usd": "0.025243",
+        "netPerShareTRY_real_baseOct2026": "1.557630",
+        "netPerShareTRY_usd": "0.022638",
+        "totalCashTRY_annualSum": 756150000,
+        "totalCashTRY_real_baseOct2026": 2605206696,
+        "totalCashUSD": 37867671,
+        "profitYearProfitTRY": 4331632301,
+        "payoutRatioPercent": "17.45",
+        "capitalActionNote": "Bu ödeme (2023-05-26) HALA 355M pay bazındadır. %322,54 bedelsiz sermaye artırımı bu ödemeden ~2 ay SONRA, 2023-07-19'da gerçekleşti (SPK onayı 2023-07-13) — sermaye tabanı kırılması bu ödemeyi etkilemez.",
+        "dataQuality": "DERIVED",
+        "notes": "Toplam nakit (756.150.000) TÜRETİLMİŞTİR (355M pay × 2,13 TL). FY2022 ana ortaklık net kârı 4.331.632.301 TL kesin biliniyor; payout = 756.150.000/4.331.632.301 = %17,45 (kaynağın ~%17,5 beyanıyla uyumlu) — bu turun en düşük payout yılı, büyüyen temettü ile değişken payout'un birbirinden ayrı olduğuna açık bir örnek (kâr 4,3 kat büyürken payout oranı düşmüş)."
+      },
+      {
+        "year": 2023,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2024-05-29", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2024-05-29", "grossPerShareTRY_newBasis": "1.07", "netPerShareTRY_newBasis": "0.96", "usdTryRateUsed": 32.260101318359375, "fxDateUsed": "2024-05-29", "fxLookbackDays": 0, "tufeIndexUsed": 2281.85, "realDeflationFactor": 1.9637713687340355}
+        ],
+        "grossPerShareTRY_annualSum": "1.070000",
+        "netPerShareTRY_annualSum": "0.960000",
+        "grossPerShareTRY_real_baseOct2026": "2.101235",
+        "grossPerShareTRY_usd": "0.033167",
+        "netPerShareTRY_real_baseOct2026": "1.885220",
+        "netPerShareTRY_usd": "0.029751",
+        "totalCashTRY_annualSum": 1605000000,
+        "totalCashTRY_real_baseOct2026": 3151852455,
+        "totalCashUSD": 49752854,
+        "profitYearProfitTRY": 5539762000,
+        "payoutRatioPercent": "28.97",
+        "capitalActionNote": "%322,54 bedelsiz sermaye artırımı (2023-07-19) SONRASI ilk ödeme — bu ödeme 1,5B pay bazındadır, çevrim gerekmez. Eski (355M) tabana eşdeğeri ~4,52 TL/pay (1,07×4,225352).",
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "FY2023 ana ortaklık net kârı 5.539.762.000 TL (kendi TAS29 bazı); payout = 1.605.000.000/5.539.762.000 = %28,97 (kaynağın ~%29,0 beyanıyla uyumlu)."
+      },
+      {
+        "year": 2024,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2025-03-28", "paymentDateQuality": "ESTIMATED_DATE", "exDateUsedAsProxy": "2025-03-28", "grossPerShareTRY_newBasis": "5.6666667", "netPerShareTRY_newBasis": "4.8166667", "usdTryRateUsed": 38.003299713134766, "fxDateUsed": "2025-03-28", "fxLookbackDays": 0, "tufeIndexUsed": 2954.69, "realDeflationFactor": 1.516582686422521}
+        ],
+        "grossPerShareTRY_annualSum": "5.666667",
+        "netPerShareTRY_annualSum": "4.816667",
+        "grossPerShareTRY_real_baseOct2026": "8.593971",
+        "grossPerShareTRY_usd": "0.149136",
+        "netPerShareTRY_real_baseOct2026": "7.303310",
+        "netPerShareTRY_usd": "0.126748",
+        "totalCashTRY_annualSum": 8500000000,
+        "totalCashTRY_real_baseOct2026": 12890955500,
+        "totalCashUSD": 223665631,
+        "profitYearProfitTRY": 5506137000,
+        "payoutRatioPercent": "154.37",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "ANOMALİ (3 turda da işlenmiş): Toplam nakit (8.500.000.000 TL) iki bağımsız kökenden (İş Yatırım mali tablosu + getmidas.com) birebir doğrulandı — tutarın KENDİSİ güvenilir. Ama FY2024 ana ortaklık net kârına (5.506.137.000 TL) karşı payout %154,37 — görünürde dağıtılabilir kârı aşıyor. 2. turun bağımsız denetimi bunu KISMEN çözdü: ~298,2 milyon TL'si (toplamın %5,1'i) geçmiş yıl kârları havuzundan karşılandığı TEYİTLİ, ama 8,5 mr TL ile 5,825 mr TL'lik (muhtemel solo/dağıtılabilir kaynak) arasındaki ~2,67 milyar TL hâlâ AÇIKLANAMIYOR (bkz. missingData #5, RISK_REVIEW.md/DATA_GAPS.md ISMEN bölümü). Bu yüzden bu yılın büyüme rakamları (gerçek/USD'de en büyük sıçrama) BÜYÜME olarak doğru hesaplanmıştır (kaynaklı tutar üzerinden) ama SÜRDÜRÜLEBİLİRLİĞİ sorgulanmalıdır — tek yıllık bir zirve, kalıcı bir payout kuralı değil."
+      },
+      {
+        "year": 2025,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2026-04-03", "paymentDateQuality": "CONFIRMED", "exDate": "2026-04-01", "grossPerShareTRY_newBasis": "3.1666667", "netPerShareTRY_newBasis": "2.69", "usdTryRateUsed": 44.55580139160156, "fxDateUsed": "2026-04-02", "fxLookbackDays": 1, "tufeIndexUsed": 4028.376510263023, "realDeflationFactor": 1.1123666534966417}
+        ],
+        "grossPerShareTRY_annualSum": "3.166667",
+        "netPerShareTRY_annualSum": "2.690000",
+        "grossPerShareTRY_real_baseOct2026": "3.522163",
+        "grossPerShareTRY_usd": "0.071081",
+        "netPerShareTRY_real_baseOct2026": "2.992267",
+        "netPerShareTRY_usd": "0.060380",
+        "totalCashTRY_annualSum": 4750000000,
+        "totalCashTRY_real_baseOct2026": 5283743250,
+        "totalCashUSD": 106615069,
+        "profitYearProfitTRY": 8767593000,
+        "payoutRatioPercent": "54.18",
+        "capitalActionNote": null,
+        "dataQuality": "VERIFIED_PRIMARY",
+        "notes": "Tek yıl (11 yıl arasında) gerçek, teyitli ödeme tarihi — hem ex-date (2026-04-01) hem ödeme tarihi (2026-04-03) KAP kaynaklı, iki bağımsız kökenden (İş Yatırım mali tablosu + getmidas.com) birebir doğrulandı. FY2025 ana ortaklık net kârı 8.767.593.000 TL (30.06.2026 satın alma gücü bazı); payout = %54,18 — 2025 ödemesinin (%154,37) anomalisinden belirgin biçimde geri döndü, daha 'normal' bir orana yakınsadı (talimatın madde 11'inde beklenen 'payout aralığının daralması' sorusu için ilk gözlem noktası)."
+      }
+    ]
+  },
+  "growthMetrics": {
+    "methodologyNote": "Tüm pay başına seriler 1,5 milyar pay (2023 bedelsiz artırımı sonrası, güncel) bazına normalize edilmiştir: 2015-2022 kâr yıllarının ham (355M pay bazındaki) tutarları ÷4,225352 (=1.500.000.000/355.000.000) ile çevrilmiştir. Reel TL, baz ay 2026-10 TÜFE'sine göre (TÜİK, hakedis.org ikincil derleme — MACRO_REFERENCE.md sınırlaması); USD, Yahoo Finance TRY=X günlük kapanışına göre (TCMB ile çapraz doğrulanmadı). Tüm FX/TÜFE girdileri `_reference/lookup.cjs` çıktısıdır. KRİTİK UYARI (görev talimatının özellikle vurguladığı): ISMEN'de payout oranı %17,5 ile ~%154 arasında salınmıştır (bkz. dividendSeries.entries) — bu BÜYÜYEN TEMETTÜ ile DEĞİŞKEN PAYOUT'un aynı şey OLMADIĞININ somut bir örneğidir. Bu seride ikisi ayrı ayrı ölçülmüştür: temettü (gerçek/USD) güçlü büyümüştür AMA bu büyüme sabit/öngörülebilir bir payout kuralından değil, hem kârın kendisinin büyümesinden (FY2017→FY2025 arası defalarca kat büyüme) hem de yılı yıla değişen, görünüşte yönetim kurulu/genel kurul kararına bağlı bir payout seçiminden kaynaklanmıştır.",
+    "nominalTRY_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl, 1,5B-pay-eşdeğeri bazında): %62,94/yıl (0,023998 → 3,166667 TL/pay) — düşük başlangıç bazı (2015'te 0,024 TL) etkisiyle ŞİŞİRİLMİŞ bir oran, dikkatle okunmalı.",
+      "cagr8y_exAnomalyReversion": "profitYear 2015→2023 (8 yıl, 2024/2025'teki anomali+düzeltme sıçramalarını dışarıda tutan daha 'düz' pencere): %60,73/yıl.",
+      "cutYears": [],
+      "increaseYears": [2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024],
+      "decreaseYears": [2018, 2025]
+    },
+    "realTRY_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl): %24,54/yıl (0,392096 → 3,522163 TL, 2026-10 satın alma gücü bazında) — nominal CAGR'ın (%62,9) önemli bir kısmı enflasyon yanılsamasıdır ama REEL büyüme de güçlü ve pozitiftir (TUPRS/AKSA'daki 'reel büyüme yok/ihmal edilebilir' bulgusundan FARKLI bir sonuç).",
+      "cagr8y_exAnomalyReversion": "profitYear 2015→2023 (8 yıl, anomali/düzeltme dışı): %23,34/yıl — 10 yıllık orana çok yakın, bu yüzden reel büyüme bulgusu 2025'in tek yıllık anomalisine BAĞIMLI DEĞİLDİR, altta yatan bir eğilimdir.",
+      "medianYoyRealPercent": "28.01 (10 yıllık YoY değişimlerin medyanı; aralık -%59,0 (2026) ile +%309,0 (2025 anomalisi) arasında — ÇOK YÜKSEK volatilite, medyan CAGR'dan daha az uç-değere duyarlı bir 'tipik yıl' göstergesidir)",
+      "purchasingPowerLostYears": [2018, 2025],
+      "purchasingPowerGainedYears": [2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024]
+    },
+    "usd_perShare": {
+      "cagr10y": "profitYear 2015→2025 (10 yıl): %23,85/yıl (0,008367 → 0,071081 USD/pay) — reel TL CAGR'ına (%24,54) yakın, iki yöntemin birbirini doğrulaması (iç tutarlılık kontrolü).",
+      "cagr8y_exAnomalyReversion": "profitYear 2015→2023 (8 yıl): %18,79/yıl.",
+      "medianYoyUsdPercent": "29.45 (10 yıllık YoY, aralık -%52,3 ile +%349,7 arasında)",
+      "declineYears": [2016, 2018, 2025]
+    },
+    "totalCashTRY_nominal": {
+      "cagr7y_2018to2025": "%76,19/yıl (90.000.000 → 4.750.000.000 TL) — yalnızca totalCash bilinen 8 yıldan (2018, 2019-2025) ilk ve son nokta; 2015-2017 null olduğu için 10 yıllık seri üretilemez.",
+      "cagrReal7y_2018to2025": "%26,82/yıl (1.001.198.700 → 5.283.743.250 TL, 2026-10 bazında) — pay başı reel CAGR'a (%24,54, 2015-2025) yakın büyüklükte, iç tutarlılık işareti.",
+      "cagrUsd7y_2018to2025": "%30,23/yıl (16.777.479 → 106.615.069 USD)",
+      "note": "2015-2017 kâr yıllarında totalCashTRY bulunamadı (null, talimata uygun — uydurulmadı); bu yüzden toplam nakit büyüme serisi 2018'den başlar (8 veri noktası, 7 CAGR periyodu), pay başına seri (11 veri noktası, tam) ile aynı uzunlukta DEĞİLDİR."
+    }
+  },
+  "continuityVsGrowth": {
+    "continuityYearsCount": 11,
+    "missedYears": [],
+    "continuityAssessment": "ISMEN, 2015-2025 kâr yıllarının TAMAMINDA (11/11) kesintisiz nakit temettü ödemiştir — 2018 (kur şoku) ve 2020 (pandemi) gibi piyasa stres dönemleri DAHİL, bu dönemlerde kâr azalmamış, tam tersine ARTMIŞTIR (volatilite-pozitif aracı kurum iş modeli, bkz. sustainabilitySynthesis). Bu süreklilik mükemmeldir ve talimatın belirttiği gibi AYRI bir eksendir.",
+    "growthAssessment_separateFromContinuity": "Süreklilik (11/11 yıl ödendi) ile büyüme (ödenen yıllar arasında ne kadar ve nasıl büyüdü) AYRI sorulardır: (1) Süreklilik sorusu — kusursuz, kriz yıllarını da kapsıyor, olumlu bir sinyal. (2) Büyüme sorusu — reel/USD bazda GERÇEK ve GÜÇLÜ büyüme var (yaklaşık %23-29/yıl aralığında, pencereye göre), ama bu büyüme SON DERECE OYNAK bir yoldan geçmiştir (yıllık reel değişim -%59 ile +%309 arasında) ve payout oranının kendisi (%17,5-%154) hiçbir sabit kurala uymamaktadır. (3) BÜYÜYEN TEMETTÜ ≠ İSTİKRARLI PAYOUT: profit büyüdüğü için temettü de büyümüştür (her iki büyüme birbirine yakın büyüklükte), ama hangi yılda kârın ne kadarının dağıtılacağı öngörülebilir bir formülle açıklanamamaktadır — bu, 10-15 yıllık bir öngörülebilirlik modeli arayan bir yatırımcı için süreklilik kadar güven verici değildir.",
+    "warningOnLowBaseEffect": "2015-2017 arası pay başı temettü çok düşük bir bazdan (0,024-0,073 TL, 1,5B-eşdeğeri) başlamaktadır; bu düşük baz, yüzdesel büyüme oranlarını (özellikle nominal %62,9/yıl CAGR) MATEMATİKSEL olarak şişirir. Bu etkiyi azaltmak için 8 yıllık (2015-2023) ve 10 yıllık (2015-2025) pencereler birlikte raporlanmış, ikisinin birbirine yakın çıkması (reel %23,3 vs %24,5) düşük-baz etkisinin ana bulguyu tek başına açıklamadığını gösterir — ama okuyucu yine de bu düşük başlangıç noktasının farkında olmalıdır."
+  },
+  "sustainabilitySynthesis": {
+    "summary": "Üç önceki turun bulguları (yeniden araştırma yapılmadan, kaynak göstererek aktarılmıştır): Aracı kurum iş modeli klasik CFO/CAPEX/FCF analizine uygun değildir (3 turda da teyitli karar) — faaliyetlerden nakit akışı müşteri varlıkları/kendi menkul kıymet pozisyonundaki dönemsel değişimden masif etkilenir. Bunun yerine payout oranı (%17,5-%154 aralığında salınan) ve özkaynak/asgari sermaye eşiği tamponu + ROE önceliklendirilmiştir. ROE %20,69 (kötümser, FY2024 dönem-sonu özkaynak bazlı) ile %34,68 (iyimser, FY2023 dönem-sonu özkaynak bazlı) arasında, baz/TTM senaryosu %21,38 — 2. turda bağımsızca DOĞRULANMIŞTIR (şirketin kendi H1 2026 sunumuyla birebir). Özkaynak (35.252.706.000 TL, 2026/6), 'Geniş Yetkili' aracı kurum asgari özsermaye eşiğinin (380.000.000 TL, 2026/6) ~93 katıdır — bu DOLAYLI ve TÜRETİLMİŞ bir tampon oranıdır, düzenleyici sermaye yeterliliği oranının (SPK Seri V No:34) KENDİSİ DEĞİLDİR; bu oran 2 bağımsız turda da (1. tur ve 2. turun bağımsız denetimi) ARANMIŞ ve BULUNAMAMIŞTIR. 2018 kur şokunda net kâr +%41 (~221,7 milyon TL), 2020 pandemide +%146 (~942 milyon TL) ve günlük işlem hacmi ~23x artış — ikisi de kriz döneminde kâr ARTIŞI gösteren, sektöre özgü volatilite-pozitif bir iş modelinin kanıtıdır (bankacılık net faiz marjı/kredi riski mantığının TERSİ). 2. turun bağımsız denetimi ayrıca komisyon gelirinin kısmi ayrıştırmasını ekledi (Aracılık %57 + Portföy Yönetimi %41 + Kurumsal Finansman %2 = 5.648.465 bin TL, 'Faiz/Alım-Satım/Finansal Yatırım' kaleminden (11.658.915 bin TL) ayrı, H1 2026) ve H1 2026'da nominal net kâr +%1 iken TAS29-düzeltmeli gerçek kârın −%35 düştüğünü bulup nominal≠reel büyüme uyarısına somut, güncel bir kanıt sağladı.",
+    "citedFrom": [
+      "docs/dividend-screening-20261110/companies/ISMEN.md (bölüm 1, 4, 5)",
+      "docs/dividend-screening-20261110/companies/ISMEN.json (sustainability, financialResilience)",
+      "docs/dividend-screening-independent-audit-20261110/CASHFLOW.md (ISMEN bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/RISK_REVIEW.md (ISMEN bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/DATA_GAPS.md (ISMEN satırları)",
+      "docs/dividend-screening-independent-audit-20261110/FINAL_SHORTLIST.md (ISMEN satırı)",
+      "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md (ISMEN bölümü)",
+      "docs/dividend-portfolio-decision-20261110/UNRESOLVED_ISSUES.md (ISMEN satırları)"
+    ]
+  },
+  "evidenceReliability": {
+    "dividendHistoryConfidence": "Orta/Düşük (bölünmüş): Ödeme olgusu (11/11 yıl ödendi, kesinti yok) için YÜKSEK — 3 turda da teyitli. Gerçek ödeme TARİHLERİ için DÜŞÜK: 10/11 yılda (2015-2024) ex-date yaklaşık ödeme tarihi olarak kullanıldı (dataQuality=ESTIMATED_DATE), yalnızca 2025 (ödeme 2026-04-03) teyitli (CONFIRMED). Tutarlar için ORTA: 2015-2017'de totalCashTRY tamamen yok (null); 2018/2019/2024/2025 iki bağımsız kaynaktan teyitli; 2020-2023 pay-başı×pay-sayısı ile türetilmiş, birincil kâr dağıtım tablosuyla ayrıca doğrulanmamış.",
+    "cashFlowConfidence": "Bu şirkette klasik 'nakit akışı güvenilirliği' çerçevesi UYGULANAMAZ (CFO modeli sektöre uygun değil, 3 turda teyitli karar) — bunun yerine ROE/özkaynak tamponu çerçevesi kullanılır: ROE kanıtı YÜKSEK (TTM %21,38, 2. turda bağımsızca doğrulandı, şirketin kendi H1 2026 sunumuyla birebir). Özkaynak tamponu (asgari eşiğin ~93 katı) kanıtı ORTA — rakamın kendisi (özkaynak 35,25 mr TL, asgari eşik 380M TL) birincil mali tablodan güvenilir, ama bu bir TÜRETİLMİŞ tampon oranıdır, gerçek düzenleyici sermaye yeterliliği oranının YERİNE KULLANILMAMALIDIR (bkz. riskAssessmentConfidence).",
+    "riskAssessmentConfidence": "DÜŞÜK, özellikle sermaye yeterliliği boyutunda — ve bu DÜŞÜK güven GEÇİCİ bir veri eksikliği DEĞİLDİR: Gerçek düzenleyici sermaye yeterliliği oranı (SPK Seri V No:34 kapsamında), 2 TAMAMEN BAĞIMSIZ turda (1. tur birincil araştırma + 2. turun bağımsız denetimi) da aranmış ve hiçbir kaynaktan bulunamamıştır — bu, 'henüz toplanamadı' değil 'muhtemelen SPK'ya özel raporlanıyor ve kamuya HİÇ açıklanmıyor' türünden KALICI bir şeffaflık riskidir (FINAL_SHORTLIST.md'nin kendi ifadesiyle: 'sermaye yeterliliği oranı hiçbir zaman görülemeyebilir'). Diğer risk kalemleri (rekabet/sıfır komisyon baskısı, pazar payı) için güven ORTA — şirketin kendi yatırımcı sunumlarına dayanıyor, bağımsız TSPB/BIST verisiyle hiçbir turda çapraz doğrulanmadı."
+  },
+  "structuralRisksCarriedForward": [
+    "Gerçek düzenleyici sermaye yeterliliği oranının kamuya açık olmaması — KALICI şeffaflık riski (2 bağımsız turda da bulunamadı), geçici veri eksikliğinden AYRI bir kategori (FINAL_SHORTLIST.md, UNRESOLVED_ISSUES.md #7)",
+    "Payout oranının düzensizliği (%17,5-%154) — 10-15 yıllık öngörülebilir bir temettü büyüme modeli kurmayı güçleştiriyor; bu dosyanın kendi bulgusu bunu netleştiriyor: temettü BÜYÜMESİ gerçek ve güçlü (reel ~%23-29/yıl) ama payout KURALI yok, büyüme kârın kendi büyümesinden geliyor (ISMEN.md böl. 7, bu dosyanın continuityVsGrowth bölümü)",
+    "2025 ödemesinin (%154 payout) ~2,67 milyar TL'lik hâlâ açıklanamayan kısmı (2. turda kısmen çözüldü, %5,1'i geçmiş yıl kârından; kalan açık, DATA_GAPS.md/UNRESOLVED_ISSUES.md #7)",
+    "Komisyon oranlarının düzenleyici/rekabetçi baskıyla (sıfır komisyon sunan Midas, Enpara Yatırım) aşınması — yapısal, 10-15 yıl ufkunda kümülatif (ISMEN.md böl. 7)",
+    "Pazar payı rakamları ve komisyon ayrıştırması tek kaynaklı (şirketin kendi sunumu/mali tablosu); bağımsız TSPB/BIST verisiyle hiçbir turda çapraz doğrulanmadı (ISMEN.md böl. 9, UNRESOLVED_ISSUES.md #20)",
+    "İşbank'ın %65,74 kontrol oranı nedeniyle ana ortak önceliklerinin azınlık pay sahibi temettü beklentisinden farklılaşabilmesi — yapısal olasılık, somut olumsuz olay bulunmadı (ISMEN.md böl. 1, 7)"
+  ],
+  "missingData": [
+    {"item": "Gerçek nakit ödeme tarihleri (ex-date'ten ayrı)", "reason": "10/11 yılda (2015-2024) hiçbir turda KAP'ın birincil ödeme bildirimiyle teyit edilemedi; bu dosya ex-date'i yaklaşık ödeme tarihi olarak kullandı (ESTIMATED_DATE), talimatın genel '1 Nisan' varsayılanından DAHA SPESİFİK ama hâlâ kesin değil", "blocksCalculation": "FX/TÜFE sorgusunun tarihi birkaç iş günü hatalı olabilir; büyüme CAGR'larının büyüklüğü (yön değil) hafifçe etkilenebilir, özellikle yüksek-volatilite dönemlerinde (2022-2023)"},
+    {"item": "2015-2017 kâr yıllarının toplam nakit temettü tutarı (totalCashTRY)", "reason": "Hiçbir turda birincil kâr dağıtım tablosundan bulunamadı, null bırakıldı (uydurulmadı)", "blocksCalculation": "Toplam nakit büyüme serisi 11 değil 8 veri noktasıyla (2018-2025) sınırlı; 10 yıllık tam seri hesaplanamıyor"},
+    {"item": "FY2015-2019 (ve kısmen FY2020) ana ortaklık net kâr serisinin tam ve birincil kaynaktan netleşmiş hali", "reason": "Yalnızca FY2017 (~221,7M, ikincil haber) ve FY2020 (~942M, ikincil haber, her ikisi de '~' yaklaşık) biliniyor; FY2015,2016,2018,2019 hiç bulunamadı", "blocksCalculation": "Bu yıllar için payout oranı hesaplanamıyor (null); 2016-2020 payout eğiliminin tam resmi eksik"},
+    {"item": "Gerçek düzenleyici sermaye yeterliliği oranı (SPK Seri V No:34)", "reason": "2 bağımsız turda da (1. tur + 2. turun bağımsız denetimi) aranıp bulunamadı — muhtemelen SPK'ya özel raporlanıyor, kamuya hiç açıklanmıyor", "blocksCalculation": "Temettü kapasitesinin düzenleyici sınır tarafından ne kadar sıkıştırıldığı değerlendirilemiyor; bu KALICI bir eksiktir, araştırmayla kapanması beklenmemelidir"},
+    {"item": "2025 ödemesinin (%154 payout) 8,5 mr TL'si ile 5,825 mr TL dağıtılabilir kaynak arasındaki ~2,67 milyar TL'lik fark", "reason": "2. turun bağımsız denetimi bunun yalnızca %5,1'ini (geçmiş yıl kârı) açıklayabildi; kalan kısım için tam KAP genel kurul kâr dağıtım tutanağı gerekiyor, bu turda da bulunamadı", "blocksCalculation": "2024 kâr yılının payout oranı (%154,37) görünürde doğru hesaplanmış OLSA DA, bu oranın GERÇEK dağıtılabilir kâr tabanına göre ne anlama geldiği hâlâ tam açık değil"},
+    {"item": "TÜFE (hakedis.org ikincil derleme) ve USD/TRY (Yahoo Finance) kaynaklarının birincil kaynaklarla (TÜİK portalı, TCMB) çapraz doğrulanması", "reason": "Tüm 10 şirket için ortak, ISMEN'e özel olmayan bir sınırlama (MACRO_REFERENCE.md)", "blocksCalculation": "Bu dosyanın tüm reel/USD hesapları bu ikincil kaynaklara bağlıdır; yön/büyüklük mertebesi güvenilir ama son kuruşa kadar kesinleştirilmedi"}
+  ],
+  "agentNotes": "Sınıflandırma (A/B/C/D) bu ajan tarafından YAPILMADI; merkezi sentezde uygulanacak. Bu DÖRDÜNCÜ turun asıl katkısı, önceki 3 turda hiç üretilmemiş (missingData'da 'reel/USD büyüme serisi' olarak 3 kez işaretlenmiş) nominal/reel/USD temettü büyüme serisidir. Üç temel bulgu: (1) ISMEN'de 11/11 yıl kesintisiz ödeme (mükemmel süreklilik) İLE reel/USD bazda GERÇEK ve GÜÇLÜ büyüme (yaklaşık %23-29/yıl, pencereye göre, düşük-baz etkisi kontrol edildi) BİRLİKTE görülmüştür — bu, AKSA'nın (süreklilik var, reel/USD büyüme YOK) veya TUPRS'ın (süreklilik kesintili, reel/USD büyüme pozitif ama çok küçük ve son 2 yıl negatif) bulgularından FARKLI, daha olumlu bir profildir sayısal olarak. (2) AMA bu büyüme SON DERECE OYNAK bir yoldan geçmiştir (yıllık reel değişim -%59 ile +%309 arasında) ve payout oranı (%17,5-%154) hiçbir sabit kurala uymuyor — talimatın özellikle vurguladığı 'büyüyen TEMETTÜ ile değişken PAYOUT aynı şey değil' uyarısı burada somut sayısal kanıtla doğrulanmıştır: temettü büyümüş çünkü KÂR büyümüş, payout POLİTİKASI öngörülebilir değil. (3) Gerçek sermaye yeterliliği oranının KALICI olarak görülememesi (2 bağımsız turda da bulunamadı), bu büyüme bulgusunun GÜVENİLİRLİĞİNİ değil ama SÜRDÜRÜLEBİLİRLİK DEĞERLENDİRMESİNİN tamlığını sınırlıyor — geçmiş büyüme güçlü olsa da, düzenleyici bir sıkışmanın önceden görülemeyeceği bir kör nokta kalıcı olarak var. Bu üç bulgu, merkezi sentezin ISMEN'i (hâlâ B — Koşullu Aday) değerlendirirken 'göreli güçlü büyüme kanıtı' ile 'kalıcı şeffaflık riski'ni AYRI eksenlerde tutmasını gerektirir; bu dosya ikisini birbirine karıştırıp tek bir sonuca indirmemiştir."
+}

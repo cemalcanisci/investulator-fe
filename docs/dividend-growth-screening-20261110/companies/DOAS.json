@@ -1,0 +1,253 @@
+{
+  "symbol": "DOAS",
+  "companyName": "Doğuş Otomotiv Servis ve Ticaret A.Ş.",
+  "dividendSeries": {
+    "basis": "paymentYear (profitYear kaynak satırından aktarıldı; bazı paymentYear satırlarında tek ödeme yılı içinde birden fazla profitYear karışık/belirsiz — DOAS.md'deki orijinal NEEDS_REVIEW notu korunarak işaretlendi, kendi profitYear atamamız YAPILMADI). 2019 ödemesinin profitYear'ı kaynakta null; bu çalışma da null bıraktı.",
+    "baseMonthForReal": "2026-10",
+    "entries": [
+      {
+        "year": 2016,
+        "profitYear": 2015,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2016-04-11", "grossPerShareTRY": "1.3636", "totalCashTRY": "300000008", "usdTryRateUsed": 2.82778000831604, "fxDateUsed": "2016-04-11", "tufeIndexUsed": 276.42, "realDeflationFactor": 16.210953251377465}
+        ],
+        "grossPerShareTRY_annualSum": "1.3636",
+        "totalCashTRY_annualSum": "300000008",
+        "totalCashTRY_real_baseOct2026": "4863286105",
+        "totalCashUSD": "106090200",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Tek taksit. İkincil kaynaklardan (investing.com/rotaborsa) derlendi, dağıtım oranı ~%99 (ikincil kaynak); birincil KAP doğrulaması bu turda da yapılamadı (403 engeli, screening turundaki NEEDS_REVIEW korunuyor). Pay başı×220.000.000 pay = 300.000.008 TL ile iç tutarlı. Real/USD toplamlar bu çalışmada hesaplanmıştır (lookup.cjs çıktısıyla), kaynakta yoktu."
+      },
+      {
+        "year": 2017,
+        "profitYear": 2016,
+        "paid": false,
+        "installments": [],
+        "grossPerShareTRY_annualSum": "0",
+        "totalCashTRY_annualSum": "0",
+        "totalCashTRY_real_baseOct2026": "0",
+        "totalCashUSD": "0",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Gerçek kesinti (veri eksikliği değil). Birden çok bağımsız ikincil kaynak (rotaborsa + bağımsız denetim turunun RISK_REVIEW.md'si) 2017'de temettü ödenmediğini doğruluyor. Birincil KAP 'dağıtılmayacak' kararı 403 engeliyle hiçbir turda bulunamadı."
+      },
+      {
+        "year": 2018,
+        "profitYear": 2017,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2018-05-29", "grossPerShareTRY": "0.65", "totalCashTRY": "143000000", "usdTryRateUsed": 4.5601701736450195, "fxDateUsed": "2018-05-29", "tufeIndexUsed": 348.34, "realDeflationFactor": 12.86395963066475}
+        ],
+        "grossPerShareTRY_annualSum": "0.65",
+        "totalCashTRY_annualSum": "143000000",
+        "totalCashTRY_real_baseOct2026": "1839546227",
+        "totalCashUSD": "31359600",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Tek taksit. Dağıtım oranı ~%78 (ikincil kaynak, NEEDS_REVIEW). 2017 kesintisinin ardından önceki (2016) seviyenin yaklaşık yarısında, kısmi/yavaş bir toparlanma — tam toparlanma 2021-2022'ye kadar sürmedi."
+      },
+      {
+        "year": 2019,
+        "profitYear": null,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2019-12-04", "grossPerShareTRY": "0.6136", "totalCashTRY": "134999964", "usdTryRateUsed": 5.742499828338623, "fxDateUsed": "2019-12-04", "tufeIndexUsed": 440.5, "realDeflationFactor": 10.172603173089122}
+        ],
+        "grossPerShareTRY_annualSum": "0.6136",
+        "totalCashTRY_annualSum": "134999964",
+        "totalCashTRY_real_baseOct2026": "1373301062",
+        "totalCashUSD": "23506200",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "profitYear kasıtlı olarak null bırakıldı — kendi tahmin ATANMADI. DOAS.md Bölüm 2/9: Aralık ödemesi olağan GK takviminin dışında; FY2018 nihai dağıtımı mı yoksa (hiç tamamlanmamış) FY2019 dağıtımının bir avansı mı olduğu birincil KAP 'kar payı dağıtım tablosu' ile doğrulanamadı (403 engeli, hiçbir turda çözülmedi). 'year' alanı bu satırda paymentYear fallback'tir (basis notuna bkz.)."
+      },
+      {
+        "year": 2020,
+        "profitYear": 2019,
+        "paid": false,
+        "installments": [],
+        "grossPerShareTRY_annualSum": "0",
+        "totalCashTRY_annualSum": "0",
+        "totalCashTRY_real_baseOct2026": "0",
+        "totalCashUSD": "0",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "Gerçek kesinti (veri eksikliği değil), pandemi yılı. FY2019 kârının normal GK takvimindeki nihai dağıtımı yapılmadı; birden çok bağımsız kaynakta doğrulandı. Not: 2019-12-04 ödemesi (yukarıdaki satır) bu kesintiyle ÇELİŞMİYOR çünkü o ödemenin profitYear'ı belirsiz/muhtemelen FY2018'e ait — iki satır kaynakta ayrı tutuldu, burada da ayrı bırakıldı."
+      },
+      {
+        "year": 2021,
+        "profitYear": 2020,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2021-04-29", "grossPerShareTRY": "1.3636", "totalCashTRY": "300000000", "usdTryRateUsed": 8.184880256652832, "fxDateUsed": "2021-04-29", "tufeIndexUsed": 532.32, "realDeflationFactor": 8.417928497418393},
+          {"paymentDate": "2021-07-14", "grossPerShareTRY": "1.3636", "totalCashTRY": "300000000", "usdTryRateUsed": 8.584050178527832, "fxDateUsed": "2021-07-14", "tufeIndexUsed": 557.36, "realDeflationFactor": 8.03974396753581}
+        ],
+        "grossPerShareTRY_annualSum": "2.7272",
+        "totalCashTRY_annualSum": "600000000",
+        "totalCashTRY_real_baseOct2026": "4937301739",
+        "totalCashUSD": "71603700",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "2 taksit, her biri 1,3636 TL brüt — 2020 kesintisinin ardından hızlı ve tam toparlanma (2016 seviyesinin ~2 katı tek yılda). Bağımsız denetim turu bu yılın CFO'sunun (3.268.796 bin TL, final/doğru rakam) temettüyü 4,78x karşıladığını doğruladı — dönemin en disiplinli yılı."
+      },
+      {
+        "year": 2022,
+        "profitYear": 2021,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2022-04-12", "grossPerShareTRY": "5.6818", "totalCashTRY": "1250000000", "usdTryRateUsed": 14.581500053405762, "fxDateUsed": "2022-04-12", "tufeIndexUsed": 904.79, "realDeflationFactor": 4.952565454686456},
+          {"paymentDate": "2022-11-16", "grossPerShareTRY": "4.0909", "totalCashTRY": "899999980", "usdTryRateUsed": 18.60770034790039, "fxDateUsed": "2022-11-16", "tufeIndexUsed": 1115.26, "realDeflationFactor": 4.017925593803919}
+        ],
+        "grossPerShareTRY_annualSum": "9.7727",
+        "totalCashTRY_annualSum": "2149999980",
+        "totalCashTRY_real_baseOct2026": "9806839772",
+        "totalCashUSD": "134104100",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "2. taksit kısmen FY2022 avansı olabilir (DOAS.md, kaynakla kesinleştirilemedi) — profitYear 2021 bu nedenle yaklaşık/karışık. ÇÖZÜLMEMİŞ ÇELİŞKİ (bağımsız denetim, CASHFLOW.md/DATA_GAPS.md/UNRESOLVED_ISSUES.md #): birincil nakit akış tablosunda bu yılda fiilen ödenen nakit temettü 1.935.000 bin TL (1.935.000.000 TL) olarak görünüyor; bu, pay-başı-tutar × 220.000.000 pay aritmetiğinden türetilen bu satırdaki 2.149.999.980 TL ile ÇELİŞİYOR. Bu çalışma her iki rakamı da ÇÖZMEDEN aktarır: totalCashTRY_annualSum burada kaynaktaki (per-share×shares) rakamdır; CASHFLOW.md'nin alternatif 1.935 mlyr TL rakamı sustainabilitySynthesis'te ayrıca not edilmiştir. Ayrıca bağımsız denetim, bu yılın FCF'sinin (TMS29-tutarlı bazda) NEGATİF olduğunu buldu — '2021-2023 disiplinli dönem' anlatımı bu yüzden düzeltilmelidir (bkz. sustainabilitySynthesis)."
+      },
+      {
+        "year": 2023,
+        "profitYear": 2022,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2023-04-10", "grossPerShareTRY": "9.0909", "totalCashTRY": "1999999980", "usdTryRateUsed": 19.265300750732422, "fxDateUsed": "2023-04-10", "tufeIndexUsed": 1300.04, "realDeflationFactor": 3.4468414031458714},
+          {"paymentDate": "2023-08-28", "grossPerShareTRY": "11.3636", "totalCashTRY": "2499999986", "usdTryRateUsed": 26.309499740600586, "fxDateUsed": "2023-08-28", "tufeIndexUsed": 1614.31, "realDeflationFactor": 2.775818583633725},
+          {"paymentDate": "2023-11-28", "grossPerShareTRY": "5.6818", "totalCashTRY": "1249999996", "usdTryRateUsed": 28.909400939941406, "fxDateUsed": "2023-11-28", "tufeIndexUsed": 1806.5, "realDeflationFactor": 2.4805046763054297}
+        ],
+        "grossPerShareTRY_annualSum": "26.1363",
+        "totalCashTRY_annualSum": "5749999962",
+        "totalCashTRY_real_baseOct2026": "16933859993",
+        "totalCashUSD": "242093200",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "3 taksitli yıl; DOAS.md'ye göre FY2022 final + FY2023 avansları olabilir, birincil kaynakla tam ayrıştırma yapılamadı (profitYear 2022 bu nedenle karışık/yaklaşık). Bağımsız denetim turu: bu yılın (TMS29-tutarlı bazda) FCF'si fiilen ödenen temettünün yalnızca ~%11'ini karşılıyor — 'disiplinli dönem' anlatımının çözüldüğü nokta. FY2023 CFO/CAPEX birincil kaynaktan hâlâ tam doğrulanamadı (DATA_GAPS.md)."
+      },
+      {
+        "year": 2024,
+        "profitYear": "2023 (final, 1. taksit) + 2024 (avans, 2. taksit) — KARIŞIK, aşağıya bkz.",
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2024-04-24", "grossPerShareTRY": "40.9091", "totalCashTRY": "9000000000", "usdTryRateUsed": 32.56671905517578, "fxDateUsed": "2024-04-24", "tufeIndexUsed": 2207.5, "realDeflationFactor": 2.0299124338599133},
+          {"paymentDate": "2024-09-04", "grossPerShareTRY": "10.00", "totalCashTRY": "2200000000", "usdTryRateUsed": 34.03670120239258, "fxDateUsed": "2024-09-04", "tufeIndexUsed": 2526.16, "realDeflationFactor": 1.7738511011756022}
+        ],
+        "grossPerShareTRY_annualSum": "50.9091",
+        "totalCashTRY_annualSum": "11200000000",
+        "totalCashTRY_real_baseOct2026": "22171684327",
+        "totalCashUSD": "341086600",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "İki taksit İKİ FARKLI kâr yılına ait: 1. taksit (40,9091 TL, FY2023 final dağıtımı), 2. taksit (10,00 TL, FY2024 kâr payı avansı, yıl kapanmadan ödendi). Bu nedenle 'year: 2024' yalnızca ÖDEME YILIdır, profitYear tek bir değer değildir — CAGR/büyüme yorumunda paymentYear bazlı okunmalı. Taksit nakit tutarları (~9 mlyr + ~2,2 mlyr) DOAS.md'de yaklaşık (~) olarak verilmiş, kesin TL kuruşuna kadar doğrulanmadı. FY2024 CFO birincil kaynaktan bu turda da erişilemedi (doas-fr2024-eng.pdf gerçek bir PDF değil, Cloudflare bot-koruma HTML sayfası — bağımsız denetimin 'çürütülen' bulgusu); FY2024 net kâr/FAVÖK iki kaynak arasında ÇÖZÜLMEMİŞ çelişki taşıyor (9,94 vs 7,5 mlyr TL; 16,7 vs 24,15 mlyr TL FAVÖK)."
+      },
+      {
+        "year": 2025,
+        "profitYear": 2024,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2025-05-22", "grossPerShareTRY": "27.2727", "totalCashTRY": "6000000000", "usdTryRateUsed": 39.033329010009766, "fxDateUsed": "2025-05-22", "tufeIndexUsed": 3089.74, "realDeflationFactor": 1.4502941016867954}
+        ],
+        "grossPerShareTRY_annualSum": "27.2727",
+        "totalCashTRY_annualSum": "6000000000",
+        "totalCashTRY_real_baseOct2026": "8701764610",
+        "totalCashUSD": "153714000",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "27 Mart 2025 GK: FY2024 için toplam dağıtım kararı 8,2 milyar TL (gerçek FY2024 kâr payı toplamı); bunun 2,2 milyar TL'si 2024 içinde (2024-09-04, yukarıdaki satırın 2. taksiti) avans olarak zaten ödenmişti, mahsup edilip net 6,0 milyar TL burada nakden ödendi. FY2024'ün GERÇEK toplam brüt pay başı tutarı bu nedenle 10,00+27,2727=37,2727 TL (8,2 mlyr TL/220M pay) olup, bu satırdaki 27,2727 TEK BAŞINA FY2024'ün tam karşılığı DEĞİLDİR — çift sayımdan kaçınmak için growthMetrics'te paymentYear bazlı seri kullanıldı, profitYear bazlı toplamlaştırma yapılmadı."
+      },
+      {
+        "year": 2026,
+        "profitYear": 2025,
+        "paid": true,
+        "installments": [
+          {"paymentDate": "2026-04-15", "grossPerShareTRY": "15.00", "totalCashTRY": "3300000000", "usdTryRateUsed": 44.72779846191406, "fxDateUsed": "2026-04-15", "tufeIndexUsed": 4028.376510263023, "realDeflationFactor": 1.1123666534966417},
+          {"paymentDate": "2026-08-17", "grossPerShareTRY": "15.00", "totalCashTRY": "3300000000", "usdTryRateUsed": 47.90330123901367, "fxDateUsed": "2026-08-17", "tufeIndexUsed": 4289.401301919735, "realDeflationFactor": 1.0446753246753246}
+        ],
+        "grossPerShareTRY_annualSum": "30.00",
+        "totalCashTRY_annualSum": "6600000000",
+        "totalCashTRY_real_baseOct2026": "7118238628",
+        "totalCashUSD": "142672200",
+        "capitalActionNote": null,
+        "dataQuality": "DERIVED",
+        "notes": "26 Mart 2026 GK: toplam 6,6 milyar TL; yönetim açıkça 'dönem karının yanı sıra geçmiş yıllar karlarından da ilave' yaptığını duyurdu — FY2025 net kârının (3,14 milyar TL) ~2,1 katı (payout ~%210). Bağımsız denetim turu bu olguyu teyit etti ve ÇÖZMEDİ (yeniden hesaplama yapılmadı, bu çalışma da yapmadı) — DOAS 'en zayıf B' sınıflandırmasının ana gerekçesi (FINAL_SHORTLIST.md). NOMİNAL artış var (27,2727→30,00, +%10) ama aşağıdaki growthMetrics'e göre REEL ve USD bazda bu yıl da (2025'in ardından ikinci kez) GERİLEME gösteriyor — nominal artış enflasyon/kur yanılsamasıdır."
+      }
+    ]
+  },
+  "growthMetrics": {
+    "methodologyNote": "Tüm FX/TÜFE girdileri `_reference/lookup.cjs` çıktısıdır (MACRO_REFERENCE.md), başka hiçbir kur/TÜFE verisi aranmadı/uydurulmadı. Pay sayısı 2016-2026 boyunca sabit (220.000.000 adet, 2010'dan beri bölünme/bedelsiz yok) — split/bedelsiz normalizasyonu gerekmedi, DOAS.md Bölüm 2'de doğrulandı. Seri 'paymentYear' (ödeme yılı) bazında tutulur çünkü bazı ödeme yılları iki farklı kâr yılına ait taksit içeriyor (2024: FY2023 final + FY2024 avans) ve profitYear bazında toplamlaştırma çift sayıma yol açar (bkz. 2024/2025 satırlarının notes'u). 2017 ve 2020 ödeme yılları sıfır (gerçek kesinti) olduğu için standart 10 yıl/5 yıl CAGR'ının başlangıç/bitiş noktası olarak KULLANILMADI; bunun yerine en yakın pozitif-pozitif karşılaştırılabilir çiftler (2016→2025 ve 2021→2025) esas alındı, ayrıca kesinti noktalarını köprüleyen (bridging) kısa-pencere CAGR'lar da ayrıca not edildi. ÖNEMLİ BULGU (AKSA ve TUPRS turlarıyla aynı örüntü): Nominal 10 yıllık CAGR (~%39,5/yıl) büyük ölçüde bir enflasyon/kur yanılsamasıdır — aynı 10 yılın reel (~%6,7/yıl) ve USD (~%4,2/yıl) CAGR'ı pozitif ama çok daha mütevazıdır. Ayrıca son İKİ ödeme yılında (2025 ve 2026) nominal tutar artmaya devam etse de (27,2727→30,00 TL), REEL ve USD bazda PAY BAŞI temettü ÜST ÜSTE İKİ YIL GERİLEMİŞTİR — 2026'daki nominal 'artış' tamamen bir yanılsamadır.",
+    "nominalTRY_perShare": {
+      "cagr10y": "paymentYear 2016→2025 (9 yıl, ikisi de pozitif): %39,51/yıl (1,3636 → 27,2727 TL/pay)",
+      "cagr5y": "paymentYear 2021→2025 (4 yıl, ikisi de pozitif): %77,83/yıl (2,7272 → 27,2727 TL/pay) — büyük ölçüde 2022-2023 döngüsel kârlılık boom'unu yansıtıyor, bkz. continuityVsGrowth",
+      "bridgingAcross2017Cut": "2016→2018 (2017 sıfırını köprüleyen en yakın pozitif-pozitif çift, 2 yıl): %-30,97/yıl (1,3636 → 0,65 TL) — kesinti sonrası ilk toparlanma seviyenin yarısında kaldı",
+      "bridgingAcross2020Cut": "2019→2021 (2020 sıfırını köprüleyen en yakın pozitif-pozitif çift, 2 yıl): %+110,82/yıl (0,6136 → 2,7272 TL) — kesinti sonrası hızlı ve güçlü toparlanma",
+      "cutYears": [2017, 2020],
+      "declineYears": [2018, 2019, 2025],
+      "increaseYears": [2021, 2022, 2023, 2024, 2026]
+    },
+    "realTRY_perShare": {
+      "cagr10y": "paymentYear 2016→2025 (9 yıl, 2026-10 satın alma gücü bazında): %6,68/yıl (22,1053 → 39,5535 TL) — nominal CAGR'ın (%39,51) altıda birinden azı; TL enflasyonu nominal büyümenin büyük kısmını açıklıyor.",
+      "cagr5y": "paymentYear 2021→2025 (4 yıl): %15,22/yıl (22,4418 → 39,5535 TL) — pozitif ama nominal %77,83'ün çok altında.",
+      "purchasingPowerLostYears_vsPriorPaymentYear": [2018, 2019, 2025, 2026],
+      "note": "2025 VE 2026 ödeme yıllarının HER İKİSİ de reel bazda önceki ödeme yılına göre GERİLEME gösteriyor (2024: 100,78 → 2025: 39,55 → 2026: 32,36 TL, 2026-10 bazında) — nominal 2026 artışı (27,2727→30,00) bu gerilemeyi MASKELİYOR."
+    },
+    "usd_perShare": {
+      "cagr10y": "paymentYear 2016→2025 (9 yıl): %4,21/yıl (0,482119 → 0,698472 USD/pay) — pozitif ama mütevazı.",
+      "cagr5y": "paymentYear 2021→2025 (4 yıl): %21,04/yıl (0,325451 → 0,698472 USD/pay) — 2022-2023 boom döneminin USD bazında da gerçek olduğunu destekliyor (DOAS.md Bölüm 2'nin niteliksel gözlemiyle tutarlı).",
+      "declineYears_vsPriorPaymentYear": [2018, 2019, 2025, 2026],
+      "note": "USD bazında da 2025 ve 2026 üst üste GERİLEME gösteriyor (2024: 1,549939 → 2025: 0,698472 → 2026: 0,648506 USD/pay) — reel TL bulgusuyla aynı yönde, iki bağımsız yöntem (TÜFE-deflasyon ve USD dönüşümü) birbirini doğruluyor."
+    },
+    "totalCashTRY_nominal": {
+      "cagr10y": "paymentYear 2016→2025 (9 yıl): %39,50/yıl (300.000.008 → 6.000.000.000 TL) — pay sayısı sabit olduğu için perShare CAGR'ıyla pratik olarak aynı.",
+      "cagr5y": "paymentYear 2021→2025 (4 yıl): %77,83/yıl (600.000.000 → 6.000.000.000 TL).",
+      "note": "DOAS'ta (TUPRS'ın aksine) toplam nakit temettü serisi 9 ödeme yılının tamamında mevcut; ancak 2022 yılı için bağımsız denetimin birincil nakit akış tablosundan bulduğu alternatif rakam (1.935.000.000 TL) bu seride kullanılan (per-share×pay sayısı türevi) 2.149.999.980 TL ile ÇELİŞİYOR ve ÇÖZÜLMEDİ (bkz. 2022 satırının notes'u) — CAGR hesabı bu çelişkiden etkilenmez (2022 bir ara nokta, CAGR uç noktaları değil) ama payout/FCF oranları için önemlidir."
+    }
+  },
+  "continuityVsGrowth": {
+    "continuityYearsCount": 9,
+    "missedYears": [2017, 2020],
+    "recoveryEvidence": "2020 kesintisinin ardından 2021'de iki taksitli, tam ve hızlı bir dönüş yapıldı (2020 öncesi son ödenen yıl olan 2019'un ~4,4 katı nominal tutarla) — bu dönüş güçlü bir sinyal. 2017 kesintisinin ardından ise 2018'deki dönüş yalnızca tek taksitli ve önceki (2016) seviyenin YARISINDA kaldı (0,65 vs 1,3636 TL) — tam toparlanma ancak 2021-2022'de gerçekleşti. Yani iki kesintiye verilen tepki simetrik değil: pandemi-sonrası dönüş hızlı/güçlü, 2016-2017 kur şoku dönemi sonrası dönüş kademeli/yavaştı.",
+    "growthAssessment_separateFromContinuity": "Süreklilik (10 ödeme yılının 9'unda ödeme yapıldı, 2 tam kesinti) ile ödenen yıllar arasındaki büyümenin KALİTESİ ayrı sorulardır ve farklı cevaplar veriyor: (1) Süreklilik sorusu — orta düzeyde: 2 kesinti var ama ikisi de tek yıllık kaldı, otomatik devam etmeyen ama kalıcı da olmayan bir desen. (2) Büyüme kalitesi sorusu — zayıf: nominal büyüme çarpıcı görünüyor (10 yılda ~20 kat, yıllık ~%39,5) ama büyük kısmı TL enflasyonu/devalüasyon yanılsaması (reel ~%6,7/yıl, USD ~%4,2/yıl); daha da önemlisi, bağımsız denetim turu güncel dönemde (2024-2026) ÖDENEN temettünün CFO/kârı aşan bir seviyeye ulaştığını (FY2025 CFO negatif iken ödeme yapıldı, 2026 ödemesi FY2025 kârının ~2,1 katı) bulmuş ve bunun en az FY2022'den (TMS29-tutarlı bazda) beri tekrarlayan bir desen olduğunu göstermiştir — yani 'süreklilik var' bulgusu ile 'büyüme sürdürülebilir/kaliteli' bulgusu AYNI ŞEY DEĞİLDİR ve bu rapor bunları tek bir cümlede birleştirmemiştir. Ayrıca son iki ödeme yılında (2025, 2026) reel/USD bazda PAY BAŞI temettü gerilerken nominal tutarın artması, 'süreklilik+nominal artış' görüntüsünün büyüme kalitesi sorununu gizleyebileceğini gösteren ayrı bir bulgudur."
+  },
+  "sustainabilitySynthesis": {
+    "summary": "Üç önceki turun bulguları (yeniden araştırma yapılmadan, kaynak göstererek): (1) Bağımsız denetim turu, dividend-screening turunun DOAS için 'ara toplam ile final CFO toplamını karıştırdığı' sistematik bir hesaplama hatası bulmuştur (CASHFLOW.md) — düzeltilmiş (final) CFO rakamlarıyla 2021 gerçekten güçlü (CFO 3.268.796 bin TL, temettüyü 4,78x karşılıyor) ama 2022 (TMS29-tutarlı bazda, final CFO 1.995.524 bin TL) FCF NEGATİF, 2023 (final CFO 2.610.116 bin TL) fiilen ödenen temettünün yalnızca ~%10,9'unu karşılıyor — önceki 'screening' turunun '2021-2023 CFO 1,5x-3x karşılıyor, disiplinli dönem' iddiası YANLIŞ/ABARTILIYDI, gerçek bozulma 2022'den itibaren başlamış. (2) FY2025'te işletme faaliyetlerinden nakit akışı NEGATİF (-12.810.000 bin TL, ikincil kaynaklı) iken 6,0 milyar TL nakit temettü ödenmiş; 2026'da ödenen toplam temettü (6,6 milyar TL) FY2025 net kârının (3,14 milyar TL) ~2,1 katına (payout ~%210) ulaşmış, yönetim bunu 'geçmiş yıllar karlarından ilave' olarak açıkça duyurmuştur. (3) JCR Avrasya ulusal kredi notunu Mayıs 2026'da A+(tr)'den A(tr)'ye indirmiştir (görünüm Stabil), zamanlama kârlılık/nakit akışı bozulmasıyla örtüşüyor — bağımsız bir doğrulama sinyali. (4) TÜVTÜRK Kuzey/Güney'deki %33,333 payının (tarihsel kâr katkısının ~%16'sı) satışı için Ekim 2026'da niyet mektubu imzalanmış, bedel henüz netleşmemiş — kalıcı bir kâr/nakit akışı kaynağının elden çıkarılması riski. (5) ÇÖZÜLMEMİŞ: 2022 fiilen ödenen temettü tutarında (2,15 mlyr TL per-share türevi vs 1,935 mlyr TL birincil nakit akış tablosu rakamı) bir çelişki, FY2024 net kâr/FAVÖK'te iki kaynak arası çelişki (9,94 vs 7,5 mlyr TL; 16,7 vs 24,15 mlyr TL), ve FY2024/FY2025 tam yıl CAPEX'i hiçbir turda birincil kaynaktan doğrulanamamıştır (dogusotomotiv.com.tr 403/Cloudflare bot-koruması nedeniyle).",
+    "citedFrom": [
+      "docs/dividend-screening-20261110/companies/DOAS.md (Bölüm 2, 3, 4, 9, 10)",
+      "docs/dividend-screening-20261110/companies/DOAS.json (dividendHistory, sustainability, missingData)",
+      "docs/dividend-screening-independent-audit-20261110/CASHFLOW.md (DOAS bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/RISK_REVIEW.md (DOAS bölümü)",
+      "docs/dividend-screening-independent-audit-20261110/DATA_GAPS.md (DOAS satırları)",
+      "docs/dividend-screening-independent-audit-20261110/FINAL_SHORTLIST.md (DOAS 'en zayıf B' bölümü)",
+      "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md (DOAS bölümü)",
+      "docs/dividend-portfolio-decision-20261110/UNRESOLVED_ISSUES.md (DOAS satırları)"
+    ]
+  },
+  "evidenceReliability": {
+    "dividendHistoryConfidence": "Orta: 2021-2026 taksit tarihleri/tutarları birden fazla bağımsız ikincil yayıncı + iç aritmetik tutarlılıkla (pay başı tutar × 220.000.000 pay ≈ bildirilen toplam) teyitli; ama (a) 2016-2020 kâr yılı atamaları tamamen ikincil kaynaklı ve birincil KAP ile hiç doğrulanamadı, (b) 2019 ödemesinin kâr yılı belirsiz (null bırakıldı), (c) 2022'nin fiilen ödenen toplam tutarında bağımsız denetimin bulduğu ÇÖZÜLMEMİŞ bir çelişki var (2,15 vs 1,935 mlyr TL), (d) birincil KAP/şirket kaynağına (dogusotomotiv.com.tr) hiçbir turda doğrudan erişilemedi (403/Cloudflare bot-koruması).",
+    "cashFlowConfidence": "Düşük: İlk tur (dividend-screening) sistematik bir hata yapmıştı (ara toplam/final CFO karıştırma). Bağımsız denetim bunu düzeltti ve 2021-2023 final CFO rakamlarını üretti, ama FY2023 CFO/CAPEX hâlâ tam birincil kaynaktan doğrulanamadı, FY2024 CFO tamamen erişilemedi (doas-fr2024-eng.pdf gerçek PDF değil), FY2024 net kâr/FAVÖK iki kaynak arasında çözülmemiş çelişki taşıyor, FY2025 tam yıl CAPEX bulunamadı. Bu, DOAS'ı bağımsız denetimin 10 şirket arasında 'en zayıf B' olarak nitelendirmesinin doğrudan nedeni.",
+    "riskAssessmentConfidence": "Orta: Kredi notu indirimi (JCR Avrasya) ve net borç yörüngesi (2021 net nakit → 2026 ~31 mlyr TL net borç) birden fazla bağımsız haber kaynağıyla teyitli; ama döviz borç payı/vade kompozisyonu ve TÜVTÜRK satış bedeli gibi kalemler tamamen MISSING_DATA, pazar payı verileri de yalnızca ikincil haber özetlerinden.",
+    "overallNote": "Kanıt güvenilirliği ile şirket kalitesi AYRI eksenlerdir — DOAS'ta ikisi de olumsuz ama NEDENLERİ farklıdır. Güvenilirlik sorunu büyük ölçüde bir ERİŞİM sorunudur: dogusotomotiv.com.tr'nin finansal rapor PDF'lerine hiçbir turda (3 ayrı AI aracı turunda da) doğrudan erişilememesi (403/Cloudflare bot-koruması), birincil KAP kaynağının asla okunamamasına yol açmıştır. Şirket kalitesi sorunu ise ERİŞİLEBİLEN ikincil/kesitsel verilerin KENDİSİNİN olumsuz olmasından kaynaklanır: negatif CFO (FY2025), payout'un kârı 2,1 katı aşması (2026 ödemesi), kredi notu indirimi, net borç pozisyonuna geçiş — bunlar veri erişim sorunu değil, doğrulanmış gerçek bulgulardır. İkisini karıştırmamak önemli: birincil kaynağa erişilse DOAS'ın görünümü muhtemelen DAHA İYİ değil, DAHA NET (ve belki daha olumsuz, çünkü düzeltmeler hep olumsuz yönde çıktı) olurdu."
+  },
+  "structuralRisksCarriedForward": [
+    "VW Group (VW, Audi, SEAT/CUPRA, Škoda, Bentley, Lamborghini, Bugatti) ve Scania distribütörlük sözleşmelerine yoğun bağımlılık; sözleşme yenilenmeme veya üreticinin doğrudan satış modeline geçme riski (DOAS.json structuralRisks)",
+    "Otomotiv talebinin yüksek döngüselliği (kur, kredi faizi, ÖTV politikası); 2022-2023 boom'un ardından 2024-2026 sert düzeltme bunun güncel kanıtı",
+    "Kârın görece büyük bir kısmının (FY2023 itibarıyla ~%20) kontrolü sınırlı özkaynak yöntemi iştiraklerden (TÜVTÜRK ~%16, Yüce Auto ~%40) gelmesi; TÜVTÜRK satışı kalıcı bir kâr kaynağını ortadan kaldırabilir",
+    "Kısa vadeli, TL bankacılık ağırlıklı borçlanma yapısı; stok finansmanı ile temettü finansmanının iç içe geçmesi (2026-03 stok artışının bir nedeni olarak 7,9 mlyr TL temettü ödemesi açıkça gösteriliyor)",
+    "Çoğunluk hissedar (Doğuş Holding, %60,5) kontrolü ve ilişkili taraf işlemleri potansiyeli (VDF ortaklıkları)",
+    "Kriz döneminde temettüyü hızlı ve belirgin şekilde kesme/durdurma pratiğinin tarihsel olarak kanıtlanmış olması (2017, 2020) — bağımsız denetim bu riski güncel dönemdeki (2022'den itibaren) FCF/kâr kapsamama örüntüsüyle daha da güçlendirdi",
+    "Birincil finansal kaynağa (dogusotomotiv.com.tr) yapısal erişim engeli (403/Cloudflare) — bu bir şirket riski değil ama DOAS'a özgü KALICI bir araştırma/izleme kısıtı, gelecek turlarda da tekrar edebilir"
+  ],
+  "missingData": [
+    {"item": "FY2024 net kâr rakamı: bir kaynak 9,94 milyar TL, başka bir kaynak 7,5 milyar TL (CONFLICT, muhtemelen TMS 29 yeniden ifade farkı)", "reason": "Birincil KAP/Doğuş Otomotiv finansal tablo PDF'i 3 turda da erişilemedi (403/Cloudflare)", "blocksCalculation": "FY2024 payout/kâr oranı kesinleştirilemiyor; sınıflandırmayı değiştirmiyor ama hassasiyeti sınırlıyor"},
+    {"item": "FY2024 FAVÖK rakamı: 16,7 mlyr TL (orijinal) vs 24,15 mlyr TL (yeniden ifade edilmiş) CONFLICT", "reason": "Aynı yukarıdaki erişim engeli; TMS29 yeniden ifade bazı netleştirilemedi", "blocksCalculation": "Net Borç/FAVÖK TTM oranı güvenilir hesaplanamıyor"},
+    {"item": "2022'de fiilen ödenen nakit temettü tutarı: 2.149.999.980 TL (per-share×pay sayısı türevi, bu dosyada kullanıldı) vs 1.935.000.000 TL (bağımsız denetimin birincil nakit akış tablosunda bulduğu rakam)", "reason": "Bağımsız denetim turunda YENİ bulunan, ÇÖZÜLMEMİŞ bir çelişki (CASHFLOW.md/DATA_GAPS.md/UNRESOLVED_ISSUES.md)", "blocksCalculation": "2022 payout/FCF karşılama oranının kesin büyüklüğü belirsiz (yön değişmez: her iki rakamda da sorun var)"},
+    {"item": "FY2023 CFO/CAPEX birincil kaynaktan tam seri", "reason": "Bağımsız denetim turunda da eksik kaldı (DATA_GAPS.md)", "blocksCalculation": "2023 payout/FCF karşılama oranı (bu dosyada kullanılan ~%10,9 rakamı TMS29@Dec2023 bazındaki tahmini final CFO'ya dayanır, tam birincil doğrulama yok)"},
+    {"item": "FY2024 ve FY2025 tam yıl CAPEX", "reason": "Yalnızca H1 2026 için 1,1755 mlyr TL biliniyor; önceki dönemler tahmini (~1,1-1,3 mlyr TL)", "blocksCalculation": "Çok yıllı FCF serisi (CFO−CAPEX) güvenilir şekilde uzatılamıyor"},
+    {"item": "2021 ve 2022 net kâr/FAVÖK rakamları", "reason": "Büyük ölçüde ikincil/aggregator kaynaklardan derlendi, birincil KAP/şirket PDF'i ile çapraz doğrulanamadı", "blocksCalculation": "Bu yılların payout-to-net-income oranı NEEDS_REVIEW seviyesinde güvenle kullanılmalı"},
+    {"item": "2016-2020 dönemi için kâr yılı (profit year) ataması ve dağıtım oranları", "reason": "İkincil kaynaklardan (investing.com, rotaborsa) türetildi; resmi KAP 'kar payı dağıtım tablosu' PDF'leri bu dönem için hiçbir turda doğrudan okunamadı", "blocksCalculation": "2019 ödemesinin profitYear'ı bu çalışmada null bırakıldı; 2016-2020 arası profitYear-bazlı karşılaştırmalar yerine bu çalışma paymentYear bazlı seriye geçti"},
+    {"item": "TÜVTÜRK Kuzey/Güney pay satış bedeli ve hisse başı fiyatı", "reason": "Niyet mektubu aşamasında (Ekim 2026), henüz kamuya açıklanmadı", "blocksCalculation": "Satışın FY2026/FY2027 kâr ve nakit akışına etkisi ölçülemiyor"},
+    {"item": "Döviz borç payı ve borç vade yapısının tam ayrıştırması", "reason": "Birincil finansal tablo dipnotları hiçbir turda okunmadı", "blocksCalculation": "Faiz/kur riskine duyarlılık büyüklüğü (yönü değil) nicelleştirilemiyor"},
+    {"item": "TÜFE kaynağının (hakedis.org ikincil derleme) ve USD/TRY kaynağının (Yahoo Finance) birincil kaynaklarla (TÜİK portalı, TCMB) çapraz doğrulanması", "reason": "MACRO_REFERENCE.md'de belirtilen, bu çalışmanın miras aldığı, DOAS'a özgü olmayan ortak bir sınırlama", "blocksCalculation": "Bu raporun tüm reel/USD hesapları bu ikincil kaynaklara bağlıdır; yön/büyüklük mertebesi güvenilir ama son kuruşa kadar kesinleştirilmedi"}
+  ],
+  "agentNotes": "Sınıflandırma (A/B/C/D) bu ajan tarafından YAPILMADI; merkezi sentezde uygulanacak. Gözlem: (1) Bu turda ilk kez üretilen reel TL ve USD bazlı pay başı temettü büyüme serisi, nominal büyümenin (10 yılda ~20 kat, yıllık ~%39,5) büyük ölçüde bir enflasyon/kur yanılsaması olduğunu doğruluyor — reel (~%6,7/yıl) ve USD (~%4,2/yıl) büyüme pozitif ama çok daha mütevazı; bu AKSA ve TUPRS turlarında bulunan örüntüyle aynı yönde. (2) Daha çarpıcı olan: son İKİ ödeme yılında (2025 ve 2026) nominal tutar artmaya devam etse de (27,2727→30,00 TL, +%10), REEL ve USD bazda pay başı temettü ÜST ÜSTE İKİ YIL GERİLEMİŞTİR (reel: 100,78→39,55→32,36; USD: 1,5499→0,6985→0,6485) — yani DOAS'ın güncel 'temettü büyüyor' görüntüsü tamamen nominal/yanılsamaya dayalı, gerçek (reel/USD) temettü şu an geriliyor. (3) Süreklilik (10 yılın 9'unda ödeme) ile büyüme kalitesi (kârı/FCF'yi aşan dağıtım, bağımsız denetimin sistematik CFO hatası düzeltmesiyle 2022'den itibaren tekrarlayan bir desen olduğu ortaya çıktı) AYRI bulgulardır ve bu çalışma bunları tek bir cümlede birleştirmemiştir. En kritik eksik: dogusotomotiv.com.tr'ye yapısal erişim engeli (403/Cloudflare) nedeniyle FY2023-2025 CFO/CAPEX/net kâr/FAVÖK'ün hiçbiri tam birincil kaynaktan doğrulanamadı ve 2022'nin fiilen ödenen temettü tutarında (2,15 vs 1,935 mlyr TL) çözülmemiş bir çelişki var — bu, DOAS'ı bağımsız denetimin 10 şirket arasında 'en zayıf B' (kanıt tabanı açısından) olarak nitelendirmesinin doğrudan nedenidir."
+}

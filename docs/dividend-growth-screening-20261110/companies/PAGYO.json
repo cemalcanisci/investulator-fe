@@ -1,0 +1,197 @@
+{
+  "symbol": "PAGYO",
+  "companyName": "Panora Gayrimenkul Yatırım Ortaklığı A.Ş.",
+  "taskScope": "Bu dosya SINIFLANDIRMA (A/B/C/D) yapmaz. Yalnızca 2016-2026 temettü verisini derler, eksik ödeme tarihi/toplam nakit alanlarını PAGYO.md'den bulunabilen gerçek veriyle veya pay-sayısı türetmesiyle tamamlar, ve nominal/reel/USD büyüme serisini hesaplar. Nihai A/B/C/D kararı merkezi sentez belgesine bırakılmıştır (bkz. önceki turlarda B — Koşullu Aday).",
+  "inputDocuments": [
+    "docs/dividend-screening-20261110/companies/PAGYO.json ve PAGYO.md (1. tur temettü eleme araştırması)",
+    "docs/dividend-screening-independent-audit-20261110/AUDIT.md, CASHFLOW.md, RISK_REVIEW.md, DATA_GAPS.md, FINAL_SHORTLIST.md (2. tur bağımsız denetim, PAGYO bölümleri)",
+    "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md, UNRESOLVED_ISSUES.md (3. tur portföy kararı, PAGYO bölümleri)",
+    "docs/dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md + lookup.cjs (ortak TÜFE/USD-TRY referansı, bu turda yeniden aranmadı)"
+  ],
+  "continuity": {
+    "periodWithQuantifiedData": "2016-2026 ödeme yılları (profitYear 2015-2025), 11 ödeme yılı",
+    "uninterrupted": true,
+    "note": "11 ödeme yılının her birinde en az bir nakit temettü ödemesi yapılmış, pandemi (2020/2021 ödeme yılları) dahil kesinti yok. 3. tur (COMPANY_DECISIONS.md) süreklilik kanıtının 2014'e kadar genişletildiğini belirtiyor, ancak bu daha eski yıllar için TL/pay veya toplam tutar rakamı bulunamadı; bu dosyadaki büyüme serisi bu nedenle 2016-2026 ile sınırlıdır. Süreklilik (ödeme olup olmadığı) ile büyüme (ne kadar) ayrı değerlendirilmiştir: süreklilik mükemmel, ancak reel/USD büyüme serisi aşağıda görüleceği gibi düz/negatif bir 10 yıllık CAGR ile kesintisizliğin tersine dalgalı bir seyir izlemiştir."
+  },
+  "shareCountCaveat": "2. tur bağımsız denetim (CASHFLOW.md) PAGYO için ÇÖZÜLMEMİŞ bir pay sayısı tutarsızlığı buldu: KAP 1597263'te beyan edilen 87.000.000 pay (31.12.2025-30.06.2026 arası sabit, teyitli) ile bağımsız denetimin başka bir hesaplamadan çıkardığı ~89.400.000 pay arasında ~%2,7 fark var; bu fark bu oturumda yeniden araştırılmamış, olduğu gibi aktarılmıştır. Aşağıdaki totalCashTRY türetmeleri (2016-2024) 87.000.000 pay sayısını kullanır; bu sayı yalnızca 2025-2026 için KAP'tan birincil kaynaklı teyitlidir, 2016-2024 için 'bu dönemde bedelsiz/sermaye artırımı/bölünme kaydı bulunamadı' gözlemine dayanan bir VARSAYIMdır, bağımsız teyit değildir. Dolayısıyla 2016-2024 totalCashTRY rakamları hem bu varsayımdan hem de ~%2,7 çözülmemiş tutarsızlıktan kaynaklanan ek bir belirsizlik taşır.",
+  "fxCpiMethodologyNote": "Ödeme tarihleri çoğu yıl birden fazla taksitten oluşur (1-6 taksit, bkz. installments). FX/TÜFE eşleştirmesi için her yılın İLK taksit tarihi 'birincil ödeme tarihi' olarak kullanılmıştır (bu tarihler PAGYO.md Bölüm 2'deki tablodan alınmıştır; borsacoo.com/getmidas.com ile çapraz kontrol edilmiş ikincil kaynaklıdır, 2026 hariç). Bu bir yaklaşıklıktır: taksitleri aya kadar yayılan yıllarda (örn. 2019: Mart-Haziran, 2021: Ocak-Ekim) gerçek ağırlıklı ortalama ödeme tarihi farklı olabilir ve kullanılan tek-tarih yöntemi gerçek USD/reel karşılığını hafifçe kaydırabilir. Hiçbir tarih veya kur UYDURULMADI; `lookup.cjs` çıktısı dışında hiçbir FX/TÜFE değeri kullanılmadı. Sadece 2026 ödemesi KAP 1597263 ile birincil kaynaktan teyitli tek taksittir (`paymentDate: 2026-05-13`, zaten PAGYO.json'da mevcuttu).",
+  "dividendGrowthSeries": [
+    {
+      "paymentYear": 2016, "profitYear": 2015,
+      "grossPerShareTRY": "0.4478", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "38,958,600", "dataQuality": "DERIVED", "note": "0.4478 × 87.000.000 (bkz. shareCountCaveat); 1. turda null idi." },
+      "paymentDateUsed": "2016-03-22", "paymentDateQuality": "SECONDARY_AGGREGATOR (tek taksit; PAGYO.md Bölüm 2)",
+      "installments": 1,
+      "fx": { "fxDateUsed": "2016-03-22", "fxLookbackDays": 0, "usdTry": 2.86308 },
+      "tufe": { "tufeMonth": "2016-03", "tufeIndex": 274.27, "realDeflationFactorToBase202610": 16.33803 },
+      "realPerShareTRY_base202610": "7.3162", "realTotalTRY_base202610": { "value": "636,509,400", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.15640", "usdTotal": { "value": "13,606,800", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2017, "profitYear": 2016,
+      "grossPerShareTRY": "0.4388", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "38,175,600", "dataQuality": "DERIVED", "note": "0.4388 × 87.000.000." },
+      "paymentDateUsed": "2017-03-09", "paymentDateQuality": "SECONDARY_AGGREGATOR (tek taksit)",
+      "installments": 1,
+      "fx": { "fxDateUsed": "2017-03-09", "fxLookbackDays": 0, "usdTry": 3.74407 },
+      "tufe": { "tufeMonth": "2017-03", "tufeIndex": 305.24, "realDeflationFactorToBase202610": 14.68036 },
+      "realPerShareTRY_base202610": "6.4417", "realTotalTRY_base202610": { "value": "560,427,900", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.11720", "usdTotal": { "value": "10,196,400", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2018, "profitYear": 2017,
+      "grossPerShareTRY": "0.4871", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "42,377,700", "dataQuality": "DERIVED", "note": "0.4871 × 87.000.000." },
+      "paymentDateUsed": "2018-03-27", "paymentDateQuality": "SECONDARY_AGGREGATOR (2 taksitin ilki: 27 Mar + 4 Haz 2018)",
+      "installments": 2,
+      "fx": { "fxDateUsed": "2018-03-27", "fxLookbackDays": 0, "usdTry": 3.97918 },
+      "tufe": { "tufeMonth": "2018-03", "tufeIndex": 336.48, "realDeflationFactorToBase202610": 13.31738 },
+      "realPerShareTRY_base202610": "6.4869", "realTotalTRY_base202610": { "value": "564,360,300", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.12241", "usdTotal": { "value": "10,649,670", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2019, "profitYear": 2018,
+      "grossPerShareTRY": "0.5727", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "49,824,900", "dataQuality": "DERIVED", "note": "0.5727 × 87.000.000." },
+      "paymentDateUsed": "2019-03-19", "paymentDateQuality": "SECONDARY_AGGREGATOR (4 taksitin ilki: 19 Mar + 18 Nis + 29 May + 13 Haz 2019)",
+      "installments": 4,
+      "fx": { "fxDateUsed": "2019-03-19", "fxLookbackDays": 0, "usdTry": 5.46810 },
+      "tufe": { "tufeMonth": "2019-03", "tufeIndex": 402.81, "realDeflationFactorToBase202610": 11.12443 },
+      "realPerShareTRY_base202610": "6.3710", "realTotalTRY_base202610": { "value": "554,277,000", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.10473", "usdTotal": { "value": "9,111,510", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2020, "profitYear": 2019,
+      "grossPerShareTRY": "0.4430", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "38,541,000", "dataQuality": "DERIVED", "note": "0.4430 × 87.000.000." },
+      "paymentDateUsed": "2020-03-24", "paymentDateQuality": "SECONDARY_AGGREGATOR (2 taksitin ilki: 24 Mar + 13 Nis 2020; pandemi başlangıcına rastladı)",
+      "installments": 2,
+      "fx": { "fxDateUsed": "2020-03-24", "fxLookbackDays": 0, "usdTry": 6.54670 },
+      "tufe": { "tufeMonth": "2020-03", "tufeIndex": 450.58, "realDeflationFactorToBase202610": 9.94503 },
+      "realPerShareTRY_base202610": "4.4056", "realTotalTRY_base202610": { "value": "383,287,200", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.06767", "usdTotal": { "value": "5,887,290", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2021, "profitYear": 2020,
+      "grossPerShareTRY": "0.4580", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "39,846,000", "dataQuality": "DERIVED", "note": "0.4580 × 87.000.000." },
+      "paymentDateUsed": "2021-01-06", "paymentDateQuality": "SECONDARY_AGGREGATOR (6 taksitin ilki: 6 Oca + 16 Mar + 1 Tem + 12 Ağu + 13 Eyl + 6 Eki 2021; pandemi yılı kârından uzun vadeye yayılmış ödeme — bu yılın tek-tarih yaklaşıklığı en kaba olan yıldır)",
+      "installments": 6,
+      "fx": { "fxDateUsed": "2021-01-06", "fxLookbackDays": 0, "usdTry": 7.38379 },
+      "tufe": { "tufeMonth": "2021-01", "tufeIndex": 513.30, "realDeflationFactorToBase202610": 8.72985 },
+      "realPerShareTRY_base202610": "3.9983", "realTotalTRY_base202610": { "value": "347,852,100", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.06203", "usdTotal": { "value": "5,396,610", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2022, "profitYear": 2021,
+      "grossPerShareTRY": "0.4100", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "35,670,000", "dataQuality": "DERIVED", "note": "0.4100 × 87.000.000." },
+      "paymentDateUsed": "2022-04-08", "paymentDateQuality": "SECONDARY_AGGREGATOR (tek taksit)",
+      "installments": 1,
+      "fx": { "fxDateUsed": "2022-04-07", "fxLookbackDays": 1, "usdTry": 14.75370 },
+      "tufe": { "tufeMonth": "2022-04", "tufeIndex": 904.79, "realDeflationFactorToBase202610": 4.95257 },
+      "realPerShareTRY_base202610": "2.0306", "realTotalTRY_base202610": { "value": "176,662,200", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.02779", "usdTotal": { "value": "2,417,730", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2023, "profitYear": 2022,
+      "grossPerShareTRY": "1.0548", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "91,767,600", "dataQuality": "DERIVED", "note": "1.0548 × 87.000.000." },
+      "paymentDateUsed": "2023-04-17", "paymentDateQuality": "SECONDARY_AGGREGATOR (3 taksitin ilki: 17 Nis + 21 Eyl + 21 Ara 2023, her biri 0,3516)",
+      "installments": 3,
+      "fx": { "fxDateUsed": "2023-04-17", "fxLookbackDays": 0, "usdTry": 19.38530 },
+      "tufe": { "tufeMonth": "2023-04", "tufeIndex": 1300.04, "realDeflationFactorToBase202610": 3.44684 },
+      "realPerShareTRY_base202610": "3.6357", "realTotalTRY_base202610": { "value": "316,305,900", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.05441", "usdTotal": { "value": "4,733,670", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2024, "profitYear": 2023,
+      "grossPerShareTRY": "2.8639", "netPerShareTRY": null,
+      "totalCashTRY": { "value": "249,159,300", "dataQuality": "DERIVED", "note": "2.8639 × 87.000.000." },
+      "paymentDateUsed": "2024-07-10", "paymentDateQuality": "SECONDARY_AGGREGATOR (2 taksitin ilki: 10 Tem + 24 Ara 2024)",
+      "installments": 2,
+      "fx": { "fxDateUsed": "2024-07-10", "fxLookbackDays": 0, "usdTry": 32.87980 },
+      "tufe": { "tufeMonth": "2024-07", "tufeIndex": 2394.10, "realDeflationFactorToBase202610": 1.87170 },
+      "realPerShareTRY_base202610": "5.3604", "realTotalTRY_base202610": { "value": "466,354,800", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" },
+      "usdPerShare": "0.08710", "usdTotal": { "value": "7,577,700", "dataQuality": "DERIVED_FROM_DERIVED_TOTAL" }
+    },
+    {
+      "paymentYear": 2025, "profitYear": 2024,
+      "grossPerShareTRY": "5.0622", "netPerShareTRY": "4.2862",
+      "totalCashTRY": { "value": "440,411,400 (yaklaşık; 87.000.000 pay sabit kabul edilerek hesaplandı, doğrulanmadı)", "dataQuality": "APPROXIMATE_CARRIED_FROM_ROUND3", "note": "1. tur raporundan değiştirilmeden alındı; bu turda yeniden hesaplanmadı." },
+      "paymentDateUsed": "2025-04-30", "paymentDateQuality": "SECONDARY_AGGREGATOR (4 taksitin ilki: 30 Nis + 28 May + 25 Haz + 23 Tem 2025)",
+      "installments": 4,
+      "fx": { "fxDateUsed": "2025-04-30", "fxLookbackDays": 0, "usdTry": 38.50172 },
+      "tufe": { "tufeMonth": "2025-04", "tufeIndex": 3043.23, "realDeflationFactorToBase202610": 1.47246 },
+      "realPerShareTRY_base202610": "7.4539",
+      "realTotalTRY_base202610": { "value": "648,487,772", "dataQuality": "DERIVED_FROM_APPROXIMATE_TOTAL", "note": "440,411,400 (yaklaşık toplam) × 1.47246 reel çevrim faktörü." },
+      "usdPerShare": "0.13148",
+      "usdTotal": { "value": "11,438,746", "dataQuality": "DERIVED_FROM_APPROXIMATE_TOTAL", "note": "440,411,400 (yaklaşık toplam) / 38.50172 USD/TRY." }
+    },
+    {
+      "paymentYear": 2026, "profitYear": 2025,
+      "grossPerShareTRY": "5.7545", "netPerShareTRY": "5.7545",
+      "totalCashTRY": {
+        "approximateValue": "500,641,500 (yaklaşık; 5,7545 × 87.000.000 pay — gross-per-share × PAGYO.md'de teyitli pay sayısı)",
+        "actualPaidValue": "514,250,404 (fiilen ödenen; H1-2026 nakit akış tablosu, KAP ve ihraççı rapor doğrulamalı — birincil kaynak)",
+        "dataQuality": "TWO_FIGURES_KEPT_SEPARATE",
+        "note": "1. tur raporundan değiştirilmeden alındı; iki rakam arasındaki ~2,7M TL (~%2,7) fark muhtemelen zamanlama/yuvarlama ya da pay sayısı tutarsızlığıyla (bkz. shareCountCaveat) ilişkili olabilir — hangisinin doğru olduğuna bu oturumda karar verilmedi, ikisi de korunmuştur."
+      },
+      "paymentDateUsed": "2026-05-13", "paymentDateQuality": "PRIMARY_KAP_1597263 (tek ödeme, avans değil, brüt=net, stopaj %0)",
+      "installments": 1,
+      "fx": { "fxDateUsed": "2026-05-13", "fxLookbackDays": 0, "usdTry": 45.43050 },
+      "tufe": { "tufeMonth": "2026-05", "tufeIndex": 4097.452583, "realDeflationFactorToBase202610": 1.09361 },
+      "realPerShareTRY_base202610": "6.2932",
+      "realTotalTRY_base202610": { "approximateValue": "547,508,576", "actualPaidValue": "562,391,465", "dataQuality": "DERIVED_FROM_BOTH_TOTALS" },
+      "usdPerShare": "0.12667",
+      "usdTotal": { "approximateValue": "11,019,943", "actualPaidValue": "11,319,497", "dataQuality": "DERIVED_FROM_BOTH_TOTALS" }
+    }
+  ],
+  "growthAnalysis": {
+    "baseMonth": "2026-10 (TÜFE, 2003=100 eşdeğer endeks 4481.03)",
+    "cagr10y_paymentYear2016to2026_profitYear2015to2025": {
+      "nominalPerShareTRY": "+29.09%/yıl (0,4478 → 5,7545 TL/pay, 12,86 katı)",
+      "realPerShareTRY_base202610": "-1.49%/yıl (7,3162 → 6,2932 TL reel/pay, yani 10 yılda reel olarak HAFİF KÜÇÜLDÜ, büyümedi)",
+      "usdPerShare": "-2.09%/yıl ($0,1564 → $0,1267/pay, yani 10 yılda USD bazında da HAFİF KÜÇÜLDÜ)"
+    },
+    "cagr5y_paymentYear2021to2026_profitYear2020to2025": {
+      "nominalPerShareTRY": "+65.89%/yıl (0,4580 → 5,7545 TL/pay)",
+      "realPerShareTRY_base202610": "+9.50%/yıl (3,9983 → 6,2932 TL reel/pay — son 5 yılda GERÇEK reel büyüme var)",
+      "usdPerShare": "+15.35%/yıl ($0,0620 → $0,1267/pay — son 5 yılda GERÇEK USD büyümesi var)"
+    },
+    "shapeNote": "10 yıllık CAGR'ın düz/negatif çıkması, serinin düz değil V-şekilli olmasını gizliyor: reel TL/pay 2016'da 7,32'den 2022'de 2,03'e kadar sürekli ERİDİ (6 yıl boyunca reel kayıp), sonra 2023-2025 arasında 2,03'ten 7,45'e kadar HIZLA TOPARLANDI (2025 reel zirve, 2016 seviyesinin bile üzerinde), 2026'da 6,29'a hafif geriledi. USD/pay da aynı örüntüyü izliyor ($0,1564 → $0,0278 taban (2022) → $0,1315 zirve (2025) → $0,1267 (2026)). Yani '10 yılda temettü X kat büyüdü' iddiası sadece nominal TL'de doğru; reel/USD bazda hikaye 'önce 6 yıl erime, sonra 3 yıl keskin toparlanma' şeklindedir.",
+    "jumpAnalysis": [
+      {
+        "transition": "2022→2023 (profitYear 2021→2022 ödemesi, 0,4100 → 1,0548 TL/pay)",
+        "nominalMultiple": "2.573x",
+        "realMultiple_base202610": "1.790x",
+        "usdMultiple": "1.958x",
+        "interpretation": "Bu sıçrama SADECE enflasyon/kur telafisi DEĞİL: reel TL bazda da %79, USD bazda da %96 büyüme var — nominal artışın büyük kısmı (2,573x'in ~1,79x'i) gerçek bir reel/USD artışa karşılık geliyor, geri kalanı (yaklaşık 1,44x'lik fark) enflasyon/kur etkisi. Ancak PAGYO.md Bölüm 4'e göre bu dönemin (2022-2023 kâr yılları) net kârının büyük kısmı NAKİT OLMAYAN yeniden değerleme kazancıydı (2023'te 2,64 milyar TL net kârın yalnızca ~268M TL'si değerleme-dışı) — yani reel/USD temettü artışı gerçek ama bunu finanse eden kârın kalitesi düşük (nakit kâr değil); şirketin bunu artan nakit akışından mı yoksa nakit rezervinden mi ödediği ayrıca CASHFLOW bölümüne bakılmalı."
+      },
+      {
+        "transition": "2024→2025 (profitYear 2023→2024 ödemesi, 2,8639 → 5,0622 TL/pay)",
+        "nominalMultiple": "1.768x",
+        "realMultiple_base202610": "1.391x",
+        "usdMultiple": "1.510x",
+        "interpretation": "Bu sıçrama da kısmen gerçek büyüme: reel bazda %39, USD bazda %51 artış var — nominal artışın (1,768x) önemli bir kısmı enflasyon/kur telafisinin ÜZERİNDE. Bu dönem 7524 sayılı Kanun'un (2025'ten itibaren yasal asgari %50 nakit dağıtım zorunluluğu) öncesine denk geliyor (2024 kâr yılı için henüz zorunlu değildi ama şirket büyük ihtimalle önceden hazırlanıyordu); 1. tur raporuna göre bu ödeme döneminin FCF'si (628,5M TL, 2025 kâr yılı) temettüyü (~500,6M TL) rahatça karşılıyor — bu sıçrama öncekinden daha güçlü bir nakit temelde."
+      }
+    ]
+  },
+  "sustainabilitySynthesis": "Net nakit pozisyonu güçlü ve istikrarlı: H1 2026'da net finansal borç -278.274.394 TL (net nakit; 190.812 TL banka kredisine karşı 278.465.206 TL nakit), FY2021-2025 boyunca bankadan finansal borç pratikte ihmal edilebilir (0-7,6M TL). 2025'ten itibaren 7524 sayılı Kanun ile GYO'ların taşınmaz kazançlarının en az %50'sini nakit kâr payı olarak dağıtma yasal zorunluluğu var (SPK/7524 sayılı Kanun); bu, ileriye dönük süreklilik için ek bir yapısal güvence ama aynı zamanda büyük gerçeğe uygun değer kazancı olan yıllarda ek nakit vergi maliyeti (YİAKV) riski taşıyor. Kârın büyük kısmı özellikle 2022-2023'te NAKİT OLMAYAN yeniden değerleme kazancından geliyor (2023'te 2,64 milyar TL IFRS net kârın yalnızca ~268M TL'si değerleme-dışı/nakit kâr); bu nedenle IFRS net kâr bazlı payout oranı anlamsızdır ve bu analiz CFO/FCF bazlı payout'u esas almıştır (GYO'ya özgü yaklaşım: gerçekleşmemiş değerleme kazançları nakit kârdan ayrılmıştır). Doluluk oranı artık ÜÇ belgeli bir tutarsızlık: Panora AVM ekspertiz raporunun (Reel Gayrimenkul Değerleme A.Ş., PAGYO-2510089) kendi DCF tablosu 2025 için %91 derken, FY2025 konsolide finansal tabloların Not 6 duyarlılık açıklaması aynı dönem için %97-98 diyor; 2. tur bağımsız denetim ayrıca FY2024'ün KENDİ Not 6'sının 2024 yılı için %95-96 dediğini, FY2025'in Not 6'sının ise AYNI 2024 yılı için %97-98 dediğini buldu — yani üç belge birbirini tutmuyor. Ayrıca 2026 9 aylık (30.09.2026) ara dönem sonuçlarında ikincil kaynakta (borsatek.com) iki farklı net kâr rakamı var (675,7M vs 681,9M TL), birincil KAP kaynağından bu oturumda da teyit edilmedi. Bu veri kalitesi sorunları (doluluk + 9A2026 net kâr çelişkisi) tek başına C kararı gerektirmez (CLAUDE.md'nin 'eksik veri otomatik olumsuz değil' kuralı) ama portföy değerinin/NAD güvenilirliğinin girdi kalitesine dair ciddi bir ihtiyat notu oluşturur ve bu çalışmanın yukarıdaki reel/USD büyüme hesaplarının (özellikle 2022-2025 toparlanma döneminin) ne kadar sağlam bir kâr tabanına dayandığını sorgulatır.",
+  "confidence": {
+    "dividendHistoryConfidence": "Düşük-Orta: 2016-2024 ödeme tarihleri ve tutarlar iki bağımsız ikincil agregatörle (borsacoo.com, getmidas.com) çapraz kontrol edilmiş ama tekil KAP bildirim kimlikleriyle doğrulanmamış; aynı dönemin toplam nakit tutarları bu oturumda pay-sayısı × birim fiyat ile TÜRETİLMİŞ olup, pay sayısının (87.000.000) o yıllar için sabit kaldığı bağımsız teyit edilmemiştir (2. tur denetiminde ~%2,7'lik çözülmemiş bir pay sayısı tutarsızlığı var). Tek-tarih yaklaşıklığı (çok taksitli yıllarda ilk taksit kullanıldı) ayrı bir hassasiyet kaybı kaynağıdır. Sadece 2026 ödemesi (KAP 1597263) tam birincil kaynaklı.",
+    "cashFlowConfidence": "Orta-Yüksek: Net nakit pozisyonu (2021-2026 H1) ve bankadan finansal borcun ihmal edilebilir düzeyde olduğu birincil kaynaktan (panoragyo.com konsolide raporları) tam teyitlidir; 2. tur bağımsız denetim FY2021-2025 Hasılat/net kâr/CFO/CAPEX/FCF serisini spot-check etti ve çelişen rakam bulmadı.",
+    "riskAssessmentConfidence": "Orta: Tek-varlık/tek-şehir yoğunlaşması ve 7524 sayılı Kanun riski sağlam kaynaklı; doluluk oranı çelişkisi 2. turda ÜÇ belgeye çözülmeden büyüdü (tek belge-içi değil, belgeler-arası da tutarsız), bu riski azaltan değil derinleştiren bir bulgudur ve değerleme/NAD güvenilirliğine dair notu güçlendirir."
+  },
+  "missingData": [
+    { "item": "Reel TL/USD büyüme serisi", "status": "BU OTURUMDA TAMAMLANDI (yukarıda), ancak tek-tarih yaklaşıklığı ve türetilmiş toplam nakit nedeniyle hassasiyet sınırlı." },
+    { "item": "2026 9 aylık (30.09.2026) net kâr çelişkisi (675,7M vs 681,9M TL)", "status": "Hâlâ çözülmedi; bu dosyada yeniden doğrulanmadı, 3. tur notuyla aynen aktarıldı." },
+    { "item": "Doluluk oranı üç-belge çelişkisi (ekspertiz DCF %91, FY2025 Not 6 %97-98, FY2024 Not 6 %95-96)", "status": "Hâlâ çözülmedi; 2. turda büyüdü, bu oturumda yeniden araştırılmadı." },
+    { "item": "Pay sayısı tutarsızlığı (87,0M beyan vs ~89,4M çıkarım, ~%2,7)", "status": "Hâlâ çözülmedi; bu dosyadaki tüm türetilmiş toplam nakit rakamları (2016-2024) bu belirsizliği taşır." },
+    { "item": "Ortaklık yapısı yüzdeleri", "status": "Hâlâ KAP'tan teyit edilemedi." },
+    { "item": "2016-2024 taksitlerin tekil KAP bildirim kimlikleri", "status": "Hâlâ doğrulanmadı, yalnızca iki ikincil agregatör çapraz kontrolü var." }
+  ],
+  "macroReferenceSource": "docs/dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md ve lookup.cjs — TÜİK TÜFE (hakedis.org üzerinden, ikincil derleme) + Yahoo Finance TRY=X günlük kapanış. Bu oturumda ayrıca bir kur/TÜFE kaynağı aranmadı.",
+  "researchAsOf": "2026-11-10",
+  "verificationStatus": "PARTIAL — büyüme serisi hesabı bu oturumda doğrudan türetildi (lookup.cjs çıktısı + mevcut birincil/ikincil kaynaklı temettü verisi); hiçbir sınıflandırma kararı verilmedi. 2016-2024 toplam nakit ve tüm reel/USD türetmeleri DERIVED/APPROXIMATE olarak işaretlenmiştir; yalnızca 2026 ödeme tarihi ve nominal brüt/net TL/pay rakamları birincil kaynaklı kabul edilebilir."
+}

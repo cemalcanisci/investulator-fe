@@ -1,0 +1,353 @@
+{
+  "researchAsOf": "2026-11-10",
+  "scope": [
+    "TUPRS",
+    "DOAS",
+    "FROTO",
+    "TOASO",
+    "TTRAK",
+    "ISMEN",
+    "AKMGY",
+    "PAGYO",
+    "YGGYO",
+    "AKSA"
+  ],
+  "methodologyVersion": "V2",
+  "methodologyFile": "METHODOLOGY_V2.md",
+  "macroReferenceFile": "_reference/MACRO_REFERENCE.md",
+  "priorRounds": [
+    "../dividend-screening-20261110/",
+    "../dividend-screening-independent-audit-20261110/",
+    "../dividend-portfolio-decision-20261110/"
+  ],
+  "isNotABuySellOrPriceTargetStudy": true,
+  "categoryChangesFromPriorRound": [
+    {
+      "symbol": "FROTO",
+      "from": "B",
+      "to": "D",
+      "reason": "Büyüme ekseni artık güvenilmez (tek teyitsiz yıla bağımlı) + finansal kalite kanıtı hiç yok"
+    }
+  ],
+  "companies": [
+    {
+      "symbol": "TUPRS",
+      "companyName": "Türkiye Petrol Rafinerileri A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; gerekçe sertleşti (döngüsellik sayısal kanıtlı)",
+      "continuity": {
+        "axis": "Orta-Güçlü",
+        "cuts": 3,
+        "cutYears": [
+          2019,
+          2020,
+          2021
+        ],
+        "recoveryEvidence": "Güçlü — 2022'den itibaren kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.3384,
+        "realCagr10y": 0.0223,
+        "usdCagr10y": 0.0131,
+        "recentTrend": "Negatif — 2022 süper-döngü zirvesinden sonra 2 yıl üst üste reel/USD gerileme (2022→2025 reel -24.04%/yıl)"
+      },
+      "sustainability": {
+        "axis": "Orta",
+        "note": "FCF karşılama yalnızca 2025 için hesaplanabildi (0.87x, 1x altı); 2021-2024 CAPEX hiçbir turda bulunamadı"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Yüksek",
+        "cashFlowConfidence": "Düşük-Orta",
+        "riskAssessmentConfidence": "Orta"
+      },
+      "conditionForReclass": "2021-2024 CAPEX'in birincil kaynaktan bulunması; FY2026 taksidinin takibi"
+    },
+    {
+      "symbol": "DOAS",
+      "companyName": "Doğuş Otomotiv Servis ve Ticaret A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; ama C eşiğine en yakın şirket olarak öne çıktı",
+      "continuity": {
+        "axis": "Orta",
+        "cuts": 2,
+        "cutYears": [
+          2017,
+          2020
+        ],
+        "recoveryEvidence": "Asimetrik — 2020 kesintisinden hızlı/tam, 2017'den yavaş/yarım"
+      },
+      "growth": {
+        "nominalCagr10y": 0.3951,
+        "realCagr10y": 0.0668,
+        "usdCagr10y": 0.0421,
+        "recentTrend": "Negatif — son 2 ödeme yılında (2025,2026) reel/USD üst üste gerileme, nominal artış yanılsama"
+      },
+      "sustainability": {
+        "axis": "Zayıf",
+        "note": "2022'den beri (≥4 yıl) zayıf/negatif FCF; FY2025 CFO negatifken ödeme; 2026 ödemesi geçmiş kârın ~2.1x'i; kredi notu A+(tr)→A(tr); disiplin kanıtı yok"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Düşük-Orta",
+        "cashFlowConfidence": "Düşük-Orta",
+        "riskAssessmentConfidence": "Düşük-Orta"
+      },
+      "conditionForReclass": "2027 GK'de temettü/kâr oranı 2026 desenini (≥2x) tekrarlarsa KATEGORİ C'YE GEÇER"
+    },
+    {
+      "symbol": "FROTO",
+      "companyName": "Ford Otomotiv Sanayi A.Ş.",
+      "category": "D",
+      "categoryNote": "DEĞİŞTİ (B → D) — hem finansal kalite hem artık büyüme kanıtı güvenilmez",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — ~20 yıl kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.482,
+        "realCagr10y": 0.148,
+        "usdCagr10y": 0.137,
+        "recentTrend": "GÜVENİLMEZ — headline tek teyitsiz yıla (2025, ~%100 payout) bağımlı; 2025 hariç: USD 2015-2024 +3.7%/yıl, reel 2020-2024 NEGATİF -2.7%/yıl"
+      },
+      "sustainability": {
+        "axis": "Değerlendirilemez",
+        "note": "Hiçbir CFO/CAPEX/FCF rakamı 3 turda da hiçbir kaynaktan doğrulanamadı"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta",
+        "cashFlowConfidence": "Düşük",
+        "riskAssessmentConfidence": "Düşük"
+      },
+      "conditionForReclass": "2025 kâr yılının KAP birincil kâr payı dağıtım tablosunun açılması — D'den çıkışın tek yolu"
+    },
+    {
+      "symbol": "TOASO",
+      "companyName": "Tofaş Türk Otomobil Fabrikası A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; iç konum 'göreli daha güçlü'den 'zayıf'a kaydı",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — 12+ yıl kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.3649,
+        "realCagr10y": 0.0455,
+        "usdCagr10y": 0.0241,
+        "recentTrend": "Negatif — son 5y(4y) reel -8.92%/yıl, USD -4.74%/yıl; 2025'te nominal pay başı da -%40"
+      },
+      "sustainability": {
+        "axis": "Zayıf",
+        "note": "FY2024'ten beri ≥3 yıl FCF negatif (FY2024 CFO -9.63mr, FCF -18.6mr TL); net borç/FAVÖK +3.37x; 5.88mr TL 2033'e uzanan şarta bağlı yükümlülük"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Yüksek",
+        "cashFlowConfidence": "Orta",
+        "riskAssessmentConfidence": "Orta-Yüksek"
+      },
+      "conditionForReclass": "FY2026 tam yıl CFO/stok/net borç verisi"
+    },
+    {
+      "symbol": "TTRAK",
+      "companyName": "Türk Traktör ve Ziraat Makineleri A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; gerekçe netleşti (disiplin kanıtlı, DOAS'tan ayrışıyor)",
+      "continuity": {
+        "axis": "Orta",
+        "cuts": 2,
+        "cutYears": [
+          2018,
+          2025
+        ],
+        "recoveryEvidence": "Asimetrik — 2018'den hızlı/büyük; 2025 (en güncel) kesintisinden dönüş kanıtı HENÜZ YOK"
+      },
+      "growth": {
+        "nominalCagr10y": 0.362,
+        "realCagr10y": 0.044,
+        "usdCagr10y": 0.02,
+        "recentTrend": "Karışık/marjinal — 2021→2024 reel +3.9%, 2020→2024 reel -0.5% (hafif negatif)"
+      },
+      "sustainability": {
+        "axis": "Zayıf ama disiplin kanıtlı",
+        "note": "2021-2024'ün 4 yılının 3'ünde (2021 %213.1; 2023 %110.4; 2024 %314.3) temettü FCF'yi aştı; FY2025 sıfırlaması buna disiplinli bir tepki"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta-Yüksek",
+        "cashFlowConfidence": "Orta",
+        "riskAssessmentConfidence": "Düşük"
+      },
+      "conditionForReclass": "FY2026 tam yıl toparlanma kanıtı + CNH elektrikleşme planının TTRAK'a yansıması"
+    },
+    {
+      "symbol": "ISMEN",
+      "companyName": "İş Yatırım Menkul Değerler A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; A'ya en yakın, en güçlü B olarak netleşti",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — 11/11 yıl kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.629,
+        "realCagr10y": 0.245,
+        "usdCagr10y": 0.239,
+        "recentTrend": "Güçlü ve tutarlı — 8 yıllık pencerede de benzer (+23.3%/+18.8%), kâr büyümesiyle (~7.5x) destekli"
+      },
+      "sustainability": {
+        "axis": "Orta",
+        "note": "CFO modeli uygulanmaz; ROE %20.7-34.7, özkaynak tamponu güçlü (~93x asgari eşik, dolaylı); gerçek sermaye yeterliliği oranı kalıcı olarak bilinmiyor"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta-Düşük",
+        "cashFlowConfidence": "Orta (farklı çerçeve)",
+        "riskAssessmentConfidence": "Düşük"
+      },
+      "conditionForReclass": "SPK'dan sermaye yeterliliği oranına dair herhangi bir açıklama sinyali — bu A'ya terfiyi mümkün kılabilir"
+    },
+    {
+      "symbol": "AKMGY",
+      "companyName": "Akmerkez Gayrimenkul Yatırım Ortaklığı A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; riskli B",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — her takvim yılında en az 1 ödeme"
+      },
+      "growth": {
+        "nominalCagr10y": 0.2473,
+        "realCagr10y": -0.0449,
+        "usdCagr10y": -0.0625,
+        "recentTrend": "Karışık — alternatif 2021-bazlı 4y pencerede ~düz (reel ~0%, USD +5.25%)"
+      },
+      "sustainability": {
+        "axis": "Zayıf/Orta",
+        "note": "FY2021/FY2025'te temettü CFO'yu aştı (%122.1/%118.7); sonuçlanmamış hukuki risk (özkaynağın ~%29'u, istinafta); bu turda bulunan pay sayısı (37.264.000) sorunu 2023-2025 kayıtlarının %15-32 eksik olabileceğini gösterdi"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta/Düşük (profitYear atamaları teyitsiz)",
+        "cashFlowConfidence": "Yüksek",
+        "riskAssessmentConfidence": "Orta"
+      },
+      "conditionForReclass": "İstinaf/temyiz sonucu — kategoriyi A'ya veya C'ye kaydırabilecek tek karar; sonuçlanana kadar pozisyon büyüklüğü kararı ertelenmeli"
+    },
+    {
+      "symbol": "PAGYO",
+      "companyName": "Panora Gayrimenkul Yatırım Ortaklığı A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; göreli güçlü/toparlanan olarak netleşti",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — 11/11 yıl kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.2909,
+        "realCagr10y": -0.0149,
+        "usdCagr10y": -0.0209,
+        "recentTrend": "GÜÇLÜ POZİTİF — son 5y reel +9.50%/yıl, USD +15.35%/yıl; 10y düz görünüm bir V-şekli gizliyor (2016-2022 erime, 2023-2025 keskin toparlanma)"
+      },
+      "sustainability": {
+        "axis": "Güçlü (nakit pozisyonu)",
+        "note": "Net nakit, pratikte sıfır banka borcu; SPK 2025+ asgari %50 dağıtım kuralı; ama doluluk oranı 3 belgede 3 rakam, pay sayısı ~%2.7 tutarsız"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta/Düşük (tarihler yaklaşık)",
+        "cashFlowConfidence": "Orta-Yüksek",
+        "riskAssessmentConfidence": "Orta"
+      },
+      "conditionForReclass": "Doluluk oranı çelişkisinin hangi belgeyle çözüldüğü"
+    },
+    {
+      "symbol": "YGGYO",
+      "companyName": "Yeşil Gayrimenkul Yatırım Ortaklığı A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; göreli güçlü/toparlanan olarak netleşti",
+      "continuity": {
+        "axis": "Güçlü/Orta",
+        "cuts": 1,
+        "cutYears": [
+          2023
+        ],
+        "recoveryEvidence": "Teknik kesinti — aynı takvim yılında (2024) ayrı bir olağanüstü nakit ödeme oldu"
+      },
+      "growth": {
+        "nominalCagr10y": 0.2884,
+        "realCagr10y": -0.0144,
+        "usdCagr10y": -0.0226,
+        "recentTrend": "POZİTİF — son 5y (2020-2025) reel +5.89%/yıl, USD +13.82%/yıl; 10y USD değeri 2015'in hâlâ altında"
+      },
+      "sustainability": {
+        "axis": "Orta",
+        "note": "Net nakit (+2.48mr TL); %0 stopaj; SPK 2025+ asgari %50 kuralı; ama FY2024 zarar/nakit temettü mekanizması opak, CFO'nun %47.8'i faiz geliri"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Orta",
+        "cashFlowConfidence": "Orta-Düşük",
+        "riskAssessmentConfidence": "Orta"
+      },
+      "conditionForReclass": "FY2024 zarar rakamının (3 kaynakta 3 farklı rakam) hangisinin doğru olduğunun netleşmesi"
+    },
+    {
+      "symbol": "AKSA",
+      "companyName": "Aksa Akrilik Kimya Sanayii A.Ş.",
+      "category": "B",
+      "categoryNote": "Değişmedi; önceki turun anlatısı sıfırdan yeniden üretilip doğrulandı",
+      "continuity": {
+        "axis": "Güçlü",
+        "cuts": 0,
+        "cutYears": [],
+        "recoveryEvidence": "Gerekmez — 11/11 yıl kesintisiz"
+      },
+      "growth": {
+        "nominalCagr10y": 0.305,
+        "realCagr10y": -0.0017,
+        "usdCagr10y": -0.0082,
+        "recentTrend": "Zayıf/durağan — 2025 değeri 2021 zirvesinin %84.5'i, 2023 zirvesinin %76.3'ü; net büyüme kanıtı yok"
+      },
+      "sustainability": {
+        "axis": "Orta/Zayıf",
+        "note": "Satın alma kaynaklı kaldıraç ~3 katına çıktı, covenant riski feragatle aşıldı, kaldıraç şimdi azalıyor AMA net kâr da düşüyor"
+      },
+      "evidenceReliability": {
+        "dividendHistoryConfidence": "Yüksek",
+        "cashFlowConfidence": "Orta",
+        "riskAssessmentConfidence": "Orta"
+      },
+      "conditionForReclass": "Aksa Carbon covenant testinin (31.12.2026) sonucu + İleri Malzemeler marjının 2026 tam yıl teyidi"
+    }
+  ],
+  "finalAnswer": {
+    "question": "Bu 10 şirket arasından, 10-15 yıllık bir temettü portföyü oluşturmak isteyen ve temettülerini yeniden hisse alımında kullanacak bir yatırımcı için hangi şirketler daha güçlü çekirdek adaylardır, hangileri koşullu adaydır, hangileri stratejiye uygun değildir ve hangilerinde karar için kritik kanıt eksiktir?",
+    "noCoreCandidates": true,
+    "strongestNearA": [
+      "ISMEN"
+    ],
+    "relativelyStrongRecovering": [
+      "PAGYO",
+      "YGGYO"
+    ],
+    "moderateAcceptableWithMonitoring": [
+      "TUPRS",
+      "TTRAK",
+      "AKSA"
+    ],
+    "weakUnresolvedRisk": [
+      "AKMGY",
+      "TOASO"
+    ],
+    "closestToC": [
+      "DOAS"
+    ],
+    "decisionDeferred": [
+      "FROTO"
+    ],
+    "noConfirmedC": true
+  }
+}

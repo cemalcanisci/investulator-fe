@@ -1,0 +1,227 @@
+{
+  "symbol": "YGGYO",
+  "companyName": "Yeni Gimat Gayrimenkul Yatırım Ortaklığı A.Ş.",
+  "scope": "Bu dosya SINIFLANDIRMA (A/B/C/D) üretmez — yalnızca önceki 3 turda derlenmiş dividendHistory'nin nominal/reel/USD büyüme hesabını ve sürdürülebilirlik sentezini içerir. A/B/C/D kararı merkezi sentezde (dividend-screening-20261110 ve dividend-screening-independent-audit-20261110, FINAL_SHORTLIST.md: B — Koşullu Aday, değişmedi) verilmiştir ve bu dosyada tekrar üretilmemiştir.",
+  "fxCpiMethodology": {
+    "source": "../_reference/MACRO_REFERENCE.md + lookup.cjs (tüm 10 şirket için ortak, merkezi TÜFE/USD-TRY kaynağı)",
+    "tufeBaseMonth": "2026-10",
+    "tufeIndexSource": "TÜİK TÜFE, hakedis.org üzerinden derlenmiş iki baz serinin (2003=100, 2025=100) linklenmesi; birincil TÜİK portalından bu oturumda doğrudan doğrulanmadı (MACRO_REFERENCE.md §4 sınırlaması)",
+    "fxSource": "Yahoo Finance TRY=X günlük kapanış; TCMB resmi kuruyla bu oturumda çapraz doğrulanmadı",
+    "note": "Hiçbir kur/TÜFE rakamı bu şirket oturumunda ayrıca aranmadı; tamamı lookup.cjs çıktısından alındı."
+  },
+  "dividendGrowthSeries": [
+    {
+      "profitYear": 2015,
+      "paymentDate": "2016-04-01",
+      "paymentDateQuality": "APPROXIMATE — birincil/ikincil kaynaklarda tam tarih bulunamadı, YGGYO.md 'yaklaşık 2016 baharı' diyor; bu tarih yalnızca FX/TÜFE ayı seçimi için yaklaşık olarak kullanıldı",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "0.837054",
+      "realPerShareTRY_base202610": "13.569",
+      "usdPerShare": "0.29715",
+      "totalCashTRY": "90000000",
+      "totalCashRealTRY_base202610": "1459000000",
+      "totalCashUSD": "31950016",
+      "fx": {"usdTry": 2.8169000148773193, "tufeMonth": "2016-04", "tufeIndex": 276.42, "realDeflationFactor": 16.210953251377465, "fxLookbackDays": 1},
+      "dataQuality": "Birincil (TL/pay ve toplam nakit), ödeme tarihi yaklaşık"
+    },
+    {
+      "profitYear": 2016,
+      "paymentDate": "2017-04-11",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "0.91",
+      "realPerShareTRY_base202610": "13.187",
+      "usdPerShare": "0.24629",
+      "totalCashTRY": "97843200",
+      "totalCashRealTRY_base202610": "1417832000",
+      "totalCashUSD": "26480608",
+      "fx": {"usdTry": 3.6949000358581543, "tufeMonth": "2017-04", "tufeIndex": 309.23, "realDeflationFactor": 14.4909345721494, "fxLookbackDays": 0},
+      "dataQuality": "Birincil"
+    },
+    {
+      "profitYear": 2017,
+      "paymentDate": "2018-04-12",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "1.07",
+      "realPerShareTRY_base202610": "13.988",
+      "usdPerShare": "0.26009",
+      "totalCashTRY": null,
+      "totalCashRealTRY_base202610": null,
+      "totalCashUSD": null,
+      "fx": {"usdTry": 4.114019870758057, "tufeMonth": "2018-04", "tufeIndex": 342.78, "realDeflationFactor": 13.072617123944685, "fxLookbackDays": 0},
+      "dataQuality": "DOĞRULANAMADI — yalnızca ikincil kaynak (Midas 1,07 TL); şirketin kendi 2017 PDF'i taranmış görüntü, metne çevrilemedi (3 turda da aynı durum). Bu satırın büyüme hesabına katılımı düşük güvenle işaretlenmelidir."
+    },
+    {
+      "profitYear": 2018,
+      "paymentDate": "2019-04-19",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "0.931",
+      "realPerShareTRY_base202610": "10.184",
+      "usdPerShare": "0.15997",
+      "totalCashTRY": "150151680",
+      "totalCashRealTRY_base202610": "1642500000",
+      "totalCashUSD": "25799701",
+      "fx": {"usdTry": 5.819900035858154, "tufeMonth": "2019-04", "tufeIndex": 409.63, "realDeflationFactor": 10.939217581099427, "fxLookbackDays": 1},
+      "dataQuality": "Birincil"
+    },
+    {
+      "profitYear": 2019,
+      "paymentDate": "2020-04-07",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "1.030",
+      "realPerShareTRY_base202610": "10.157",
+      "usdPerShare": "0.15242",
+      "totalCashTRY": "166118400",
+      "totalCashRealTRY_base202610": "1638100000",
+      "totalCashUSD": "24582128",
+      "fx": {"usdTry": 6.757689952850342, "tufeMonth": "2020-04", "tufeIndex": 454.43, "realDeflationFactor": 9.86077437173109, "fxLookbackDays": 0},
+      "dataQuality": "Birincil"
+    },
+    {
+      "profitYear": 2020,
+      "paymentDate": "2021-03-30",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "1.030",
+      "realPerShareTRY_base202610": "8.816",
+      "usdPerShare": "0.12373",
+      "totalCashTRY": "166118400",
+      "totalCashRealTRY_base202610": "1421900000",
+      "totalCashUSD": "19954880",
+      "fx": {"usdTry": 8.324700355529785, "tufeMonth": "2021-03", "tufeIndex": 523.53, "realDeflationFactor": 8.559264412250986, "fxLookbackDays": 0},
+      "dataQuality": "Birincil — FY2019 ile aynı TL/pay tutarı, veri hatası değil (şirketin kendi tablosuyla iki yıl ayrı ayrı doğrulandı)"
+    },
+    {
+      "profitYear": 2021,
+      "paymentDate": "2022-04-11",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "1.500",
+      "realPerShareTRY_base202610": "7.429",
+      "usdPerShare": "0.10229",
+      "totalCashTRY": "241920000",
+      "totalCashRealTRY_base202610": "1198100000",
+      "totalCashUSD": "16496870",
+      "fx": {"usdTry": 14.664600372314453, "tufeMonth": "2022-04", "tufeIndex": 904.79, "realDeflationFactor": 4.952565454686456, "fxLookbackDays": 0},
+      "dataQuality": "Birincil"
+    },
+    {
+      "profitYear": 2022,
+      "paymentDate": "2023-04-11",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "1.750",
+      "realPerShareTRY_base202610": "6.032",
+      "usdPerShare": "0.09072",
+      "totalCashTRY": "423360000",
+      "totalCashRealTRY_base202610": "1459300000",
+      "totalCashUSD": "21945939",
+      "fx": {"usdTry": 19.291040420532227, "tufeMonth": "2023-04", "tufeIndex": 1300.04, "realDeflationFactor": 3.4468414031458714, "fxLookbackDays": 0},
+      "dataQuality": "Birincil"
+    },
+    {
+      "profitYear": 2023,
+      "paymentDate": null,
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "0",
+      "realPerShareTRY_base202610": "0",
+      "usdPerShare": "0",
+      "totalCashTRY": "0",
+      "totalCashRealTRY_base202610": "0",
+      "totalCashUSD": "0",
+      "fx": null,
+      "dataQuality": "Birincil (12.05.2024 KAP bildirimi, haber derlemesi üzerinden): FY2023 kâr yılı için yıllık kâr payı dağıtımı yapılmamasına karar verildi. SIFIR DEĞER GERÇEK BİR KESİNTİDİR, veri eksiği değildir. Bu satır büyüme serisinde bir KIRILMA noktasıdır — standart CAGR bu noktadan geçirilmemiştir (bkz. cagr.bridgeOverZeroGap ve continuity)."
+    },
+    {
+      "profitYear": null,
+      "paymentDate": "2024-07-09",
+      "type": "EXTRAORDINARY",
+      "nominalPerShareTRY": "3.11",
+      "realPerShareTRY_base202610": "5.821",
+      "usdPerShare": "0.09452",
+      "totalCashTRY": null,
+      "totalCashRealTRY_base202610": null,
+      "totalCashUSD": null,
+      "fx": {"usdTry": 32.90380096435547, "tufeMonth": "2024-07", "tufeIndex": 2394.1, "realDeflationFactor": 1.8716977978136915, "fxLookbackDays": 0},
+      "dataQuality": "KARIŞIK — ödeme tarihi/tutarı çok kaynaklı tutarlı, ama hangi yıl kârına veya hangi yedek hesabına ait olduğu 3 turda da birincil KAP metniyle doğrulanamadı. GÖREV TALİMATI UYARINCA BU SATIR normal profitYear-bazlı yıllık seriye DAHİL EDİLMEMİŞTİR — ayrı, niteliği netleşmemiş bir olağanüstü ödeme kalemi olarak tutulmuştur. FY2023'ün (yukarıdaki satır) yıllık dağıtımından AYRI bir mekanizmadır."
+    },
+    {
+      "profitYear": 2024,
+      "paymentDate": "2025-04-15",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "7.00",
+      "realPerShareTRY_base202610": "10.307",
+      "usdPerShare": "0.18339",
+      "totalCashTRY": "1693440000",
+      "totalCashRealTRY_base202610": "2493500000",
+      "totalCashUSD": "44365034",
+      "fx": {"usdTry": 38.17060089111328, "tufeMonth": "2025-04", "tufeIndex": 3043.23, "realDeflationFactor": 1.4724590969942326, "fxLookbackDays": 0},
+      "dataQuality": "İkincil çok kaynaklı tutarlı. DİKKAT: Bu profitYear (FY2024/2024-12) için IFRS net kâr 3 kaynakta 3 farklı rakam veriyor (−364M metin / −249,45M tablo — şirketin KENDİ FY2025 faaliyet raporunun kendi içinde çelişkili / −523M dış ikincil kaynak), yine de nakit temettü ödendi — bkz. sustainabilitySynthesis."
+    },
+    {
+      "profitYear": 2025,
+      "paymentDate": "2026-04-09",
+      "type": "ANNUAL",
+      "nominalPerShareTRY": "10.55",
+      "realPerShareTRY_base202610": "11.735",
+      "usdPerShare": "0.23635",
+      "totalCashTRY": "2552256000",
+      "totalCashRealTRY_base202610": "2839000000",
+      "totalCashUSD": "57176628",
+      "fx": {"usdTry": 44.638099670410156, "tufeMonth": "2026-04", "tufeIndex": 4028.376510263023, "fxLookbackDays": 0},
+      "dataQuality": "İkincil, KAP bildirim diline sadık. Payout oranı %75,01 (dağıtılabilir kârın) — yeni yasal asgari %50 kuralının belirgin üzerinde."
+    }
+  ],
+  "cagr": {
+    "note": "Tüm CAGR'lar yalnızca profitYear bazlı ANNUAL satırlar üzerinden hesaplanmıştır; EXTRAORDINARY (2024-07-09, 3,11 TL) satırı hiçbir CAGR hesabına dahil edilmemiştir. profitYear 2017 satırı DOĞRULANAMADI etiketli olduğu için 2015->2017 veya 2017->2018 gibi onu uç nokta yapan ayrı bir CAGR üretilmemiştir; 10 yıllık ve 5 yıllık hesaplar bu satırı atlayarak doğrulanmış uç noktalar (2015, 2020, 2025) kullanır.",
+    "perShare": {
+      "nominalTRY": {
+        "tenYear_2015to2025": "28.84%",
+        "fiveYear_2020to2025": "59.25%",
+        "bridgeOverZeroGap_2022to2024_2yr": "100.00%"
+      },
+      "realTRY_base202610": {
+        "tenYear_2015to2025": "-1.44%",
+        "fiveYear_2020to2025": "5.89%",
+        "bridgeOverZeroGap_2022to2024_2yr": "30.72%",
+        "interpretation": "10 yıllık ufukta pay başına temettü REEL olarak büyümedi (hafif reel erime, -%1,44/yıl); büyüme tamamen 2024-2025'teki keskin nominal sıçramadan (7,00 → 10,55 TL) ve son 5 yılın (2020-2025) reel toparlanmasından (+%5,89/yıl) geliyor. 2015-2020 arası reel olarak zaten düşüş eğilimindeydi (13,569 → 8,816 reel TL)."
+      },
+      "usd": {
+        "tenYear_2015to2025": "-2.26%",
+        "fiveYear_2020to2025": "13.82%",
+        "bridgeOverZeroGap_2022to2024_2yr": "42.18%",
+        "interpretation": "USD bazında pay başına temettü 10 yılda hafif NEGATİF (-%2,26/yıl) — 2015'te 0,297 USD/pay iken 2025'te 0,236 USD/pay, yani dolar yatırımcısı için 10 yıl önceki seviyeye hâlâ ulaşılmadı. Son 5 yılda (2020-2025) güçlü USD toparlanması var (+%13,82/yıl) ama bu, 2020'nin aşırı düşük bazından (0,124 USD) başlıyor."
+      }
+    },
+    "totalCash": {
+      "caveat": "Toplam nakit büyümesi pay başına büyümeden FARKLIDIR çünkü dönem içinde bedelsiz sermaye artırımlarıyla (3:2, 2019 öncesi ve 2022 içinde) pay sayısı arttı; toplam nakit CAGR'ı hem temettü büyümesini hem pay sayısı artışını birlikte yansıtır, tek başına 'yatırımcı başına getiri büyümesi' göstergesi değildir.",
+      "nominalTRY": {"tenYear_2015to2025": "39.72%", "fiveYear_2020to2025": "72.70%"},
+      "realTRY_base202610": {"tenYear_2015to2025": "6.88%", "fiveYear_2020to2025": "14.83%"},
+      "usd": {"tenYear_2015to2025": "5.99%", "fiveYear_2020to2025": "23.43%"}
+    }
+  },
+  "continuity": {
+    "profitYearsConsidered": "2015-2025 (11 kâr yılı)",
+    "paidYears": 10,
+    "unpaidYears": 1,
+    "unpaidYear": 2023,
+    "note": "Süreklilik ve büyüme AYRI değerlendirilmiştir (görev talimatı). Süreklilik: 11 kâr yılından 10'unda yıllık nakit temettü ödendi, 1'inde (FY2023) resmen ÖDENMEDİ — bu 'her yıl kesintisiz' tezini bozan tek ama somut bir olaydır. Aynı takvim yılında (2024) ayrı bir olağanüstü ödeme (3,11 TL) yapılmış olması, FY2023'ün resmi sıfırını DEĞİŞTİRMEZ; iki ödeme farklı nitelikte ve farklı mekanizmalardır (bkz. dividendGrowthSeries, EXTRAORDINARY satırı notu). Büyüme: kesintiden önceki dönem (2015-2022) nominal olarak sürekli artan ama reel/USD bazda zaman zaman gerileyen bir temettü sergiledi; kesintiden sonraki dönem (2024-2025) güçlü nominal VE reel VE USD büyüme gösterdi, ama bu ikisi dağıtılabilir kâr tabanının IFRS net kârdan bağımsız davrandığı (bkz. sustainabilitySynthesis) bir dönemde gerçekleşti."
+  },
+  "sustainabilitySynthesis": "YGGYO'da FY2024 (2024/12 kâr yılı) için IFRS/TMS net kâr ZARAR olarak raporlanmasına rağmen Nisan 2025'te 7,00 TL/pay (1,69 milyar TL) nakit temettü ödendi. Bu mekanizma — GYO'larda dağıtılabilir kârın SPK/yasal kayıt bazında belirlenip IFRS net kârdan (TMS 29 net parasal kazanç/kayıp dahil) farklı olması — genel SPK/GYO pratiği olarak makuldür, ama YGGYO'ya özel sayısal kanıt (şirketin kendi dağıtılabilir kâr hesap tablosu) 3 araştırma turunda da birincil kaynaktan doğrulanamadı. Üstelik zararın BÜYÜKLÜĞÜNÜN KENDİSİ 3 kaynakta 3 farklı rakam veriyor: −364 milyon TL (şirketin kendi FY2025 faaliyet raporu metin kısmı), −249,45 milyon TL (aynı FY2025 faaliyet raporunun tablo kısmı — şirketin KENDİ belgesi kendi içinde çelişkili), −523 milyon TL (dış ikincil kaynak, KAP Bildirimi #1693463 referanslı). Bu üç-kaynaklı çelişki 2. turda (bağımsız denetim) bulunmuş, 3. turda da çözülememiştir; bu dosya yeniden doğrulama yapmamış, olduğu gibi aktarmıştır. Ayrıca H1 2026 CFO'nun (1.741.774.649 TL) %47,8'inin (832.423.344 TL) banka mevduat faiz geliri olduğu birincil tablodan doğrulanmıştır — yani güçlü nakit üretiminin önemli bir kısmı çekirdek kira işinden değil, şirketin elindeki net nakit pozisyonunun getirdiği faiz gelirinden kaynaklanıyor; bu, 'CFO net kârın 3,8 katı' bulgusunun kalite/süreklilik açısından ilk turda ima edildiğinden daha karma olduğunu gösterir (faiz geliri net nakit pozisyonu küçülürse veya faiz oranları düşerse azalabilecek bir kalemdir). Buna karşılık şirketin GYO statüsü %0 stopaj sağlıyor (gerçek kişi yatırımcı için net getiri avantajı, 2009/14594 BKK ile teyitli), ANKAmall %99,9 doluluk ile talep gören bir varlık, şirket net nakit pozisyonunda (H1 2026: +2.475.041.830 TL, 31.12.2025: +3.195.851.929 TL) ve pratikte borçsuz (SPK borçlanma sınırı oranı %0,11). 2025'ten itibaren yürürlükte olan yasal asgari %50 GYO kâr dağıtım zorunluluğu (23 Seri No'lu KV Genel Tebliği, RG 28.09.2024) temettü sürekliliğini kısmen mevzuata bağlıyor; FY2025 payout oranı (%75,01) bu asgarinin belirgin üzerinde. Şirket aynı zamanda %100 bağlı ortaklığı PROEN Yenilenebilir Enerji A.Ş. üzerinden büyük ölçekli sermaye tahsisi yapıyor (Ağrı/Eleşkirt'te güneş santralleri); 2. turda PROEN'in solar tesislerinin (Ayaş, Ağrı/Eleşkirt) inşa halinde değil Şubat 2025'ten itibaren ÜRETİMDE olduğu teyit edilmiştir — ama PROEN'in iddia edilen 750 milyon TL sermaye büyüklüğü muhtemelen YGGYO'nun kendi tavan sermayesiyle karıştırılmıştır ve doğrulanamamıştır; bu sapmanın GYO'nun çekirdek 'pasif kira geliri' profilinden bir sermaye tahsisi kayması olduğu değerlendirmesi geçerliliğini koruyor. GYO'ya özgü yaklaşım uygulanmıştır: payout oranı IFRS net kâr üzerinden değil, mümkün olduğunca şirketin yasal/SPK bazlı dağıtılabilir kâr rakamı üzerinden okunmalıdır (bu dosyada yalnızca FY2025 için bu oran mevcuttur); TMS 29 net parasal kazanç/kayıp kalemi nominal TL karşılaştırmalarını farklı yıllarda farklı satın alma gücü bazlarına taşıyabileceği için çok yıllı nominal özkaynak/kâr serisi doğrudan karşılaştırılmamıştır (bkz. önceki turların Bölüm 9/CASHFLOW.md notları).",
+  "confidence": {
+    "dividendHistoryConfidence": "Orta — 2015-2022 ve 2024-2025 profitYear'ları için ödeme tarihi/tutarı birincil veya çok-kaynaklı ikincil kaynaklarla sağlam; ancak 09.07.2024 olağanüstü 3,11 TL ödemesinin tam niteliği (hangi yıl kârı/hangi yedek hesabı) 3 turda da birincil KAP metniyle doğrulanamadı ve FY2017 tutarı (1,07 TL iddiası) yalnızca ikincil kaynaklı, teyitsiz kaldı.",
+    "cashFlowConfidence": "Orta/Düşük — H1 2026 CFO'nun %47,8'i banka faiz geliri (çekirdek iş dışı) olduğu doğrulandı; FY2024 net zarar büyüklüğü 3 kaynakta 3 farklı rakam (−364M/−249,45M/−523M) ve ikisi şirketin KENDİ raporunun kendi içinde çelişkili; bu, dağıtılabilir kâr mekanizmasının sayısal temelini belirsiz bırakıyor.",
+    "riskAssessmentConfidence": "Orta — tek varlık/tek şehir (Ankara, ANKAmall+otel) yoğunlaşması değişmedi; otel kapanışının niteliği 2. turda netleşti (2025 boyunca %50 kapasite, tam kapanma yalnızca Ocak 2026'dan itibaren ve mevzuat zorunluluğu nedeniyle, şirket tercihi değil) ama kesin yeniden açılış tarihi hâlâ yok; PROEN'in üretimde olduğu teyitli ama sermaye büyüklüğü (750M TL) doğrulanamadı; NAD/net aktif değer çelişkisi 3 turda da çözülmedi."
+  },
+  "criticalOpenItems": [
+    "FY2024 IFRS net zarar büyüklüğü — 3 kaynakta 3 farklı rakam (−364M / −249,45M / −523M TL), ikisi şirketin kendi FY2025 faaliyet raporunun kendi içinde çelişkili; dağıtılabilir kâr mekanizmasının gerçek sayısal temeli hâlâ doğrulanamadı",
+    "09.07.2024 olağanüstü 3,11 TL/pay ödemesinin tam niteliği/kaynağı — birincil KAP metni 3 turda da açılamadı",
+    "FY2017 temettü tutarı (1,07 TL iddiası) — OCR gerektiren PDF, hâlâ teyitsiz",
+    "PROEN'in gerçek sermaye büyüklüğü (750M TL iddiası muhtemelen YGGYO'nun kendi tavan sermayesiyle karışmış)",
+    "NAD/net aktif değer kaynak çelişkisi — Investulator'dan devralınan CONFLICT, 3 turda da çözülmedi"
+  ],
+  "sourcesCarriedForward": [
+    "docs/dividend-screening-20261110/companies/YGGYO.json ve YGGYO.md (1. tur — dividendHistory'nin birincil derlemesi)",
+    "docs/dividend-screening-independent-audit-20261110/AUDIT.md, CASHFLOW.md, RISK_REVIEW.md, DATA_GAPS.md, FINAL_SHORTLIST.md (2. tur — bağımsız denetim, FY2024 zarar çelişkisinin derinleşmesi ve CFO/faiz geliri bulgusu)",
+    "docs/dividend-portfolio-decision-20261110/COMPANY_DECISIONS.md, UNRESOLVED_ISSUES.md (3. tur — portföy kararı sentezi)",
+    "docs/dividend-growth-screening-20261110/_reference/MACRO_REFERENCE.md + lookup.cjs (bu tur — ortak TÜFE/USD-TRY referansı)"
+  ],
+  "verificationStatus": "PARTIAL — bu dosya yeni birincil kaynak araştırması yapmamıştır; önceki 3 turun bulgularını olduğu gibi aktarıp yalnızca FX/TÜFE dönüştürmesi ve CAGR hesaplamasını eklemiştir. Sınıflandırma (A/B/C/D) bu dosyanın kapsamı DIŞINDADIR.",
+  "researchAsOf": "2026-11-10"
+}
