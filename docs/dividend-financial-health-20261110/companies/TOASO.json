@@ -1,0 +1,2842 @@
+{
+  "symbol": "TOASO",
+  "asOf": "2026-11-10",
+  "accessedAt": "2026-11-11",
+  "methodology": "../METHODOLOGY_V3.md",
+  "category": "B",
+  "confidence": "Orta",
+  "qualityAssessment": "Koşullu; iş modeli güçlü fakat yatırım ve dağıtım nakit üretimini aşıyor.",
+  "priceAssessment": "TTM geçmiş verimi tek başına alım cazibesi değildir; normalize sürdürülebilir DPS doğrulanmadı.",
+  "rationale": "2024-25 ve 9A26 brüt CAPEX sonrası FCF negatif. Konsolide borcun finansman iştirakine ait bölümü sanayi borcu gibi değerlendirilemez. Sanayi net borcu 12,522 milyar TL; yıllık karşılaştırmadaki net nakitten borca geçiş izlenmeli.",
+  "upgradeConditions": "Yeni ürün yatırımlarının nakit üretimine dönüşmesi; finans dışı FCF ve temettü karşılamasının düzelmesi; koşullu satın alma bedellerinin izlenmesi.",
+  "financials": [
+    {
+      "year": 2021,
+      "revenue": {
+        "value": "29684305000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "3281316000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "2679899000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "1122191000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "7759058000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "4214726000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2021AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "11.054043542538725",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "1557708000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2021-01-01",
+          "end": "2021-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "revenue": {
+        "value": "65545354000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "8562191000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "12151544000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "962470000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "6959755000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "12019197000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2022AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "13.063002146574721",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "11189074000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "NOMINAL",
+          "purchasingPowerDate": null,
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "revenue": {
+        "value": "127601000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "15083439000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "7753455000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "2259772000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "11830789000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "24815473000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "11.820784319872102",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "5493683000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "revenue": {
+        "value": "157419715000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "6834463000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "-9629971000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "8973350000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "36520213000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "25806496000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "4.3415546775700875",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "-18603321000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "revenue": {
+        "value": "319413508000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "9837424000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2026-06-30",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "auditH1",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "2655374000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "8723589000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "53669002000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "19967321000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2025AnnualReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "3.0798396916889312",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "-6068215000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "inherited_parentEquityFy2025End",
+      "value": "70691649000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2026-06-30",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_parentEquityFy2024End",
+      "value": "72600973000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2026-06-30",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_parentEquityH12025End",
+      "value": "63728041000",
+      "unit": "TRY",
+      "period": "2025-06-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2026-06-30",
+        "start": "2025-06-30",
+        "end": "2025-06-30",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityH12025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2025",
+      "value": "9837424000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2026-06-30",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+        "locator": "KAP 1639026 finansal tablo eki: bilanço s.1–2, gelir s.3, özkaynak değişimi s.5, nakit akışı s.6; bin TL × 1.000. Önceki bağlantı faaliyet raporuna gidiyordu; finansal tablo ekiyle mutabık.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyProfit2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_ebitdaFy2025",
+      "value": "10000000000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, Finansal Performans Gostergeleri ozet tablosu, sirketin kendi 'FAVOK' satiri, 2025 takvim yili (yonetim kurulu raporu, 1 ondalik hassasiyetle 10,0 milyar TL olarak acikladi - kesin degil, +-50 milyon TL yuvarlama)",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "ebitdaFy2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_netFinancialDebtFy2025End",
+      "value": "33701681000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "Konsolide finansal durum tablosu 31.12.2025 (FY2025 kendi raporu, orijinal 2025-12-31 satin alma gucu): (UV borclanmanin KV kismi 16.253.582 + UV borclanmalar 37.415.420) - Nakit 19.967.321 = 33.701.681 (bin TL). Capraz dogrulama: ikincil kaynaklar Net Borc/FAVOK oranini 3,4x olarak bildirdi; 33.701.681/10.000.000 = 3,37x - tutarli.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "netFinancialDebtFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2025",
+      "value": "319413508000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyRevenue2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2024",
+      "value": "157419715000",
+      "unit": "TRY",
+      "period": "2024-01-01 / 2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyRevenue2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2024",
+      "value": "6834463000",
+      "unit": "TRY",
+      "period": "2024-01-01 / 2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyProfit2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_cashFy2025End",
+      "value": "19967321000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "cashFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_cashFy2024End",
+      "value": "25806496000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "cashFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtShortFy2025End",
+      "value": "16253582000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtShortFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtLongFy2025End",
+      "value": "37415420000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtLongFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtShortFy2024End",
+      "value": "14315835000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtShortFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtLongFy2024End",
+      "value": "22204378000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtLongFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_financialDebtFy2025End",
+      "value": "53669002000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "financialDebtFy2025End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_financialDebtFy2024End",
+      "value": "36520213000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "financialDebtFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_netFinancialDebtFy2024End",
+      "value": "10713717000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide finansal durum tablosu ve gelir tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirmali sutun ayni raporun ic tutarliligiyla restate edilmis): Hasilat 319.413.508(2025)/157.419.715(2024); Net donem kari ana ortaklik payi (azinlik payi yok) 8.353.933(2025)/6.834.463(2024); UV borclanmanin KV kismi 16.253.582(2025)/14.315.835(2024); UV borclanmalar 37.415.420(2025)/22.204.378(2024); Nakit ve nakit benzerleri 19.967.321(2025)/25.806.496(2024); bin TL x 1.000. NOT: raporun Performans Gostergeleri ekindeki 2024 Net Satislar (120.266.571 bin TL) ve Vergi Sonrasi Kar (5.221.439 bin TL) satirlari BU tablodan farkli (muhtemelen 2024 nominal/orijinal satin alma gucunde, restate edilmemis) - iki ayri TMS29 bazi sessizce esitlenmedi, bu fact finansal durum/gelir tablosunun restate edilmis sutununu kullanir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "netFinancialDebtFy2024End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2021",
+      "value": "29684305000",
+      "unit": "TRY",
+      "period": "2021-01-01 / 2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-01-01",
+        "end": "2021-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyRevenue2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2021",
+      "value": "3281316000",
+      "unit": "TRY",
+      "period": "2021-01-01 / 2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-01-01",
+        "end": "2021-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyProfit2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_parentEquityFy2021End",
+      "value": "5743391000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityFy2021End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_cashFy2021End",
+      "value": "4214726000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "cashFy2021End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtShortFy2021End",
+      "value": "4138262000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtShortFy2021End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtLongFy2021End",
+      "value": "3620796000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtLongFy2021End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_financialDebtFy2021End",
+      "value": "7759058000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "financialDebtFy2021End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2021",
+      "value": "2679899000",
+      "unit": "TRY",
+      "period": "2021-01-01 / 2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-01-01",
+        "end": "2021-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyOperatingCash2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2021",
+      "value": "1122191000",
+      "unit": "TRY",
+      "period": "2021-01-01 / 2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2021-01-01",
+        "end": "2021-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+        "locator": "Tofas 2021 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2021, TMS29 oncesi NOMINAL TL; 3 Subat 2022 tarihli Yonetim Kurulu onayli): Hasilat 29.684.305; Ana ortaklik net donem kari (azinlik payi yok) 3.281.316; Toplam ozkaynaklar 5.743.391; Nakit ve nakit benzerleri 4.214.726; Kisa vadeli borclanmalar 150.000 + UV borclanmalarin KV kismi 3.988.262 = 4.138.262; UV borclanmalar 3.620.796; Isletme faaliyetlerinden nakit akislari 2.679.899; Maddi (379.788) + maddi olmayan (742.403) duran varlik alimi = 1.122.191; bin TL x 1.000. Degerler, ayni rakamlarin Tofas 2022 Faaliyet Raporu karsilastirma sutununda da (NOMINAL, baz degismeden) tekrarlandigi gorulerek capraz dogrulandi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyCapex2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2022",
+      "value": "65545354000",
+      "unit": "TRY",
+      "period": "2022-01-01 / 2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyRevenue2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2022",
+      "value": "8562191000",
+      "unit": "TRY",
+      "period": "2022-01-01 / 2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyProfit2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_parentEquityFy2022End",
+      "value": "11313640000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityFy2022End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_cashFy2022End",
+      "value": "12019197000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "cashFy2022End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtShortFy2022End",
+      "value": "5070816000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtShortFy2022End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtLongFy2022End",
+      "value": "1888939000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtLongFy2022End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_financialDebtFy2022End",
+      "value": "6959755000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "financialDebtFy2022End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2022",
+      "value": "12151544000",
+      "unit": "TRY",
+      "period": "2022-01-01 / 2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyOperatingCash2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2022",
+      "value": "962470000",
+      "unit": "TRY",
+      "period": "2022-01-01 / 2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "NOMINAL",
+        "purchasingPowerDate": null,
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+        "locator": "Tofas 2022 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (31.12.2022; rapor acikca \"31 Aralik 2022 tarihli finansal tablolarda TMS 29 kapsaminda bir duzeltme yapilmamistir\" der, NOMINAL TL; 2 Subat 2023 tarihli Yonetim Kurulu onayli): Hasilat 65.545.354; Ana ortaklik net donem kari (azinlik payi yok) 8.562.191; Toplam ozkaynaklar 11.313.640; Nakit ve nakit benzerleri (bilanco) 12.019.197; Kisa vadeli borclanmalar 585.000 + UV borclanmalarin KV kismi 4.485.816 = 5.070.816; UV borclanmalar 1.888.939; Isletme faaliyetlerinden nakit akislari 12.151.544; Maddi (421.802) + maddi olmayan (540.668) duran varlik alimi = 962.470; bin TL x 1.000.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyCapex2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2023",
+      "value": "127601000000",
+      "unit": "TRY",
+      "period": "2023-01-01 / 2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyRevenue2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2023",
+      "value": "15083439000",
+      "unit": "TRY",
+      "period": "2023-01-01 / 2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyProfit2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_parentEquityFy2023End",
+      "value": "36879584000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "parentEquityFy2023End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_cashFy2023End",
+      "value": "24815473000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "cashFy2023End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtShortFy2023End",
+      "value": "6738258000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtShortFy2023End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_debtLongFy2023End",
+      "value": "5092531000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "debtLongFy2023End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_financialDebtFy2023End",
+      "value": "11830789000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "financialDebtFy2023End"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2023",
+      "value": "7753455000",
+      "unit": "TRY",
+      "period": "2023-01-01 / 2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyOperatingCash2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2023",
+      "value": "2259772000",
+      "unit": "TRY",
+      "period": "2023-01-01 / 2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+        "locator": "Tofas 2023 Faaliyet Raporu, konsolide finansal durum tablosu, kar/zarar tablosu ve nakit akis tablosu (TMS 29 Yuksek Enflasyonlu Ekonomilerde Finansal Raporlama Standardi ilk kez bu raporla uygulanmistir; tutarlar 31.12.2023 satin alma gucu esasina gore bin TL): Hasilat 127.601.000; Ana ortaklik net donem kari (azinlik payi yok) 15.083.439; Toplam ozkaynaklar 36.879.584; Nakit ve nakit benzerleri (bilanco) 24.815.473; Kisa vadeli borclanmalar 700.000 + UV borclanmalarin KV kismi 6.038.258 = 6.738.258; UV borclanmalar 5.092.531; Isletme faaliyetlerinden nakit akislari 7.753.455; Maddi (1.578.568) + maddi olmayan (681.204) duran varlik alimi = 2.259.772; bin TL x 1.000. NOT: bu raporun 2022 karsilastirma sutunu TMS29 ile 31.12.2023 satin alma gucune yeniden ifade edilmistir (ornek: hasilat 124.019.056), bu nedenle 2022 yili icin BU sutun KULLANILMADI; 2022 verisi yerine Tofas 2022 Faaliyet Raporu kendi NOMINAL (TMS29 oncesi) tablosundan alindi - iki ayri satin alma gucu bazi sessizce esitlenmedi.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyCapex2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2024",
+      "value": "-9629971000",
+      "unit": "TRY",
+      "period": "2024-01-01 / 2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide nakit akis tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirma sutunu ayni raporun ic tutarliligiyla restate edilmis): Isletme faaliyetlerinden nakit akislari 2.655.374(2025)/(9.629.971)(2024); Maddi ve maddi olmayan duran varlik alimindan kaynaklanan nakit cikislari (8.723.589)(2025)/(8.973.350)(2024); bin TL x 1.000. 2024 isletme nakit akisi NEGATIFTIR (isletme sermayesindeki buyuk degisim ve finans sektoru faaliyetlerinden alacaklardaki artis kaynakli); bu ayni raporun kendi tablosundan okunmustur, yorum/tahmin degildir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyOperatingCash2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2025",
+      "value": "2655374000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide nakit akis tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirma sutunu ayni raporun ic tutarliligiyla restate edilmis): Isletme faaliyetlerinden nakit akislari 2.655.374(2025)/(9.629.971)(2024); Maddi ve maddi olmayan duran varlik alimindan kaynaklanan nakit cikislari (8.723.589)(2025)/(8.973.350)(2024); bin TL x 1.000. 2024 isletme nakit akisi NEGATIFTIR (isletme sermayesindeki buyuk degisim ve finans sektoru faaliyetlerinden alacaklardaki artis kaynakli); bu ayni raporun kendi tablosundan okunmustur, yorum/tahmin degildir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyOperatingCash2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2024",
+      "value": "8973350000",
+      "unit": "TRY",
+      "period": "2024-01-01 / 2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide nakit akis tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirma sutunu ayni raporun ic tutarliligiyla restate edilmis): Isletme faaliyetlerinden nakit akislari 2.655.374(2025)/(9.629.971)(2024); Maddi ve maddi olmayan duran varlik alimindan kaynaklanan nakit cikislari (8.723.589)(2025)/(8.973.350)(2024); bin TL x 1.000. 2024 isletme nakit akisi NEGATIFTIR (isletme sermayesindeki buyuk degisim ve finans sektoru faaliyetlerinden alacaklardaki artis kaynakli); bu ayni raporun kendi tablosundan okunmustur, yorum/tahmin degildir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyCapex2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2025",
+      "value": "8723589000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+        "locator": "2025 Entegre Faaliyet Raporu, konsolide nakit akis tablosu (31.12.2025 satin alma gucunde, 31.12.2024 karsilastirma sutunu ayni raporun ic tutarliligiyla restate edilmis): Isletme faaliyetlerinden nakit akislari 2.655.374(2025)/(9.629.971)(2024); Maddi ve maddi olmayan duran varlik alimindan kaynaklanan nakit cikislari (8.723.589)(2025)/(8.973.350)(2024); bin TL x 1.000. 2024 isletme nakit akisi NEGATIFTIR (isletme sermayesindeki buyuk degisim ve finans sektoru faaliyetlerinden alacaklardaki artis kaynakli); bu ayni raporun kendi tablosundan okunmustur, yorum/tahmin degildir.",
+        "localFile": "src/data/research/toaso-analysis-reports.json",
+        "originalId": "fyCapex2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "revenue",
+      "value": "293540755000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "grossProfit",
+      "value": "22807158000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "operatingProfit",
+      "value": "5552458000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "profit",
+      "value": "10972737000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "totalProfit",
+      "value": "10972737000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "cfo",
+      "value": "4616277000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "capex",
+      "value": "8886636000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "depreciation",
+      "value": "4016212000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "cash",
+      "value": "18048736000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "debtShort",
+      "value": "32438271000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "debtLong",
+      "value": "37203308000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "equity",
+      "value": "72780928000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "assets",
+      "value": "212199178000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "currentAssets",
+      "value": "139491392000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "currentLiabilities",
+      "value": "95328441000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "interestExpense",
+      "value": "613988000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "dividendCash",
+      "value": "11296953000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "borrowingInflows",
+      "value": "14292445000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "borrowingRepayments",
+      "value": "1797726000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "industrialDebt",
+      "value": "26590990000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "industrialCash",
+      "value": "14068911000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "financeDebt",
+      "value": "43050589000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "financeReceivables",
+      "value": "43251158000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "contingentConsideration",
+      "value": "6431314000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "referencePrice",
+      "value": "245.6",
+      "unit": "TRY/share",
+      "period": "2026-11-09",
+      "basis": {
+        "accounting": "MARKET",
+        "currency": "TRY"
+      },
+      "source": {
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+        "locator": "9 Kasım 2026 günlük close; 10 Kasım kapanışı sağlayıcıda yok"
+      },
+      "verification": "SECONDARY_OBSERVED"
+    },
+    {
+      "id": "ttmGrossDps",
+      "value": "20",
+      "unit": "TRY/share",
+      "period": "2025-11-10/2026-11-09",
+      "basis": {
+        "accounting": "NOMINAL",
+        "shareBasis": "CURRENT"
+      },
+      "source": {
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+        "locator": "2026 brüt ödeme; TTRAK 2026 dağıtım yok; geçmiş büyüme araştırması taksit mutabakatı"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "fcf",
+      "formula": "cfo - capex",
+      "inputs": [
+        "cfo",
+        "capex"
+      ],
+      "value": "-4270359000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Brüt maddi/maddi olmayan nakit alımları; faiz sınıflandırması ayrıca düzeltilir."
+    },
+    {
+      "id": "netDebt",
+      "formula": "debtShort + debtLong - cash",
+      "inputs": [
+        "debtShort",
+        "debtLong",
+        "cash"
+      ],
+      "value": "51592843000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "currentRatio",
+      "formula": "currentAssets / currentLiabilities",
+      "inputs": [
+        "currentAssets",
+        "currentLiabilities"
+      ],
+      "value": "1.46327151",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "shortDebtShare",
+      "formula": "debtShort / (debtShort+debtLong) * 100",
+      "inputs": [
+        "debtShort",
+        "debtLong"
+      ],
+      "value": "46.57888501",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "operatingMargin",
+      "formula": "operatingProfit / revenue * 100",
+      "inputs": [
+        "operatingProfit",
+        "revenue"
+      ],
+      "value": "1.89154586",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "netMargin",
+      "formula": "profit / revenue * 100",
+      "inputs": [
+        "profit",
+        "revenue"
+      ],
+      "value": "3.73806254",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Payda ticari hasılat; finans sektörü hasılatı hariç olduğundan saf sanayi emsalleriyle doğrudan kıyaslanmaz."
+    },
+    {
+      "id": "cashConversion",
+      "formula": "cfo / totalProfit",
+      "inputs": [
+        "cfo",
+        "totalProfit"
+      ],
+      "value": "0.42070424",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Zarar döneminde oran yerine nakit köprüsü incelenir."
+    },
+    {
+      "id": "interestCoverage",
+      "formula": "operatingProfit / interestExpense",
+      "inputs": [
+        "operatingProfit",
+        "interestExpense"
+      ],
+      "value": "9.04326795",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Konsolide 9A kâr / finansman gideri notundaki faiz; KSF fonlama maliyeti satış maliyetinde yer aldığından grup borç kapasitesi olarak puanlanmaz."
+    },
+    {
+      "id": "fcfCoverage",
+      "formula": "(cfo-capex) / dividendCash",
+      "inputs": [
+        "cfo",
+        "capex",
+        "dividendCash"
+      ],
+      "value": "-0.3780098",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Pay/payda aynı 30.09.2026 satın alma gücü; sıfır dağıtımda N/A."
+    },
+    {
+      "id": "industrialNetDebt",
+      "formula": "industrialDebt-industrialCash",
+      "inputs": [
+        "industrialDebt",
+        "industrialCash"
+      ],
+      "value": "12522079000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "ttmGrossYield",
+      "formula": "ttmGrossDps/referencePrice*100",
+      "inputs": [
+        "ttmGrossDps",
+        "referencePrice"
+      ],
+      "value": "8.14332248",
+      "unit": "percent",
+      "period": "2026-11-09",
+      "verification": "RECALCULATED",
+      "note": "Fiyat tarihi 09.11.2026; gelecekte beklenen verim değildir."
+    }
+  ],
+  "stress": [
+    {
+      "scenario": "normal",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "1",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "-4270359000",
+      "coverage": "-0.3780098049447493",
+      "afterNetInterestTRY": null,
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    },
+    {
+      "scenario": "adverse",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "0.7",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1.2",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "-5655242100",
+      "coverage": "-0.5005988871512522",
+      "afterNetInterestTRY": null,
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    },
+    {
+      "scenario": "strong",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "1.3",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "-2885475900",
+      "coverage": "-0.25542072273824634",
+      "afterNetInterestTRY": null,
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    }
+  ],
+  "gaps": [
+    "2021-2025 tüm brüt/esas faaliyet kârı, karşılaştırılabilir FAVÖK ve faiz serisi tamamlanmadı.",
+    "ROE/ROA için aynı satın alma gücündeki başlangıç/son özkaynak ve aktifler her yıl eksiksiz değil; kapanış özkaynağıyla ROE uydurulmadı.",
+    "Covenant eşikleri, hesap tanımı ve dönem sonu headroom tam teyit edilmedi; ihlal yok sonucu çıkarılmaz.",
+    "9 Kasım fiyatı güncel 10 Kasım kapanışı değildir. Tarihsel yıllık verimler merkezi piyasa ekiyle birleştirilecektir.",
+    "Normalize ileri DPS kapasitesi hesaplanamadığından fiyat açısından kesin cazip/pahalı kararı yok.",
+    "Güncel kredi notlarının resmi raporu ve covenant eşikleri hedefli kaynak taramasında tam doğrulanmadı."
+  ],
+  "sources": [
+    {
+      "id": "priceSource",
+      "title": "Doviz.com - TOASO",
+      "url": "https://borsa.doviz.com/hisseler/toaso-tofas-oto-fab",
+      "period": "2026-10-30",
+      "locator": "Anlik fiyat, piyasa degeri/defter degeri capraz dogrulamasi",
+      "observedAt": "2026-10-30",
+      "publishedAt": null
+    },
+    {
+      "id": "kapCompanyProfile",
+      "title": "KAP - Tofas Turk Otomobil Fabrikasi A.S. sirket profili",
+      "url": "https://kap.org.tr/tr/sirket-bilgileri/ozet/1096-tofas-turk-otomobil-fabrikasi-a-s",
+      "period": "2026-10-31",
+      "locator": "Pay sayisi/odenmis sermaye dogrulamasi",
+      "observedAt": "2026-10-31",
+      "publishedAt": null
+    },
+    {
+      "id": "h1PrimaryReport",
+      "title": "Tofas 1 Ocak - 30 Haziran 2026 Ara Donem Ozet Konsolide Finansal Tablolar",
+      "url": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddc019fb388b8e65d30",
+      "period": "2026-06-30",
+      "locator": "Ozet konsolide finansal tablolar, dipnotlar ve ozkaynak degisim/nakit akis tablolari",
+      "observedAt": "2026-10-31",
+      "publishedAt": "2026-07-29"
+    },
+    {
+      "id": "fy2025AnnualReport",
+      "title": "Tofas 2025 Entegre Faaliyet Raporu",
+      "url": "https://storage.fintables.com/media/uploads/kap-attachments/TOFAS%20Faaliyet%20Raporu%202025.pdf",
+      "period": "2025-12-31",
+      "locator": "Konsolide finansal tablolar, kar payi dagitim tablosu, finansal performans gostergeleri ozet tablosu",
+      "observedAt": "2026-10-31",
+      "publishedAt": "2026-02-17"
+    },
+    {
+      "id": "dividendPage",
+      "title": "Yahoo Finance TOASO.IS temettu olay verisi + KAP kar payi dagitim tablosu",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+      "period": "2026-02-28",
+      "locator": "Temettu olay verisi (brut/net TL/pay)",
+      "observedAt": "2026-10-31",
+      "publishedAt": null
+    },
+    {
+      "id": "disclosureList",
+      "title": "Borsacoo - TOASO KAP bildirimleri",
+      "url": "https://borsacoo.com/firma/TOASO/bildirimler",
+      "period": "2026-10-31",
+      "locator": "Son 3 aylik KAP bildirim taramasi",
+      "observedAt": "2026-10-31",
+      "publishedAt": null
+    },
+    {
+      "id": "yahooFinance",
+      "title": "Yahoo Finance TOASO.IS aylik fiyat/temettu/bedelsiz gecmisi",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS",
+      "period": "2000-05 / 2026-10",
+      "locator": "Aylik kapanis fiyatlari, temettu ve bedelsiz sermaye artisi olaylari (max range)",
+      "observedAt": "2026-10-31",
+      "publishedAt": null
+    },
+    {
+      "id": "week52Search",
+      "title": "Doviz.com - TOASO tarihsel veri",
+      "url": "https://borsa.doviz.com/hisseler/toaso-tofas-oto-fab/tarihsel-veri",
+      "period": "2025-10 / 2026-10",
+      "locator": "52 hafta araligi",
+      "observedAt": "2026-10-31",
+      "publishedAt": null
+    },
+    {
+      "id": "auditMarket",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "publishedAt": "2026-10-30",
+      "title": "Yahoo Finance günlük kapanış ve fiyat aralığı",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "auditDividend2025",
+      "url": "https://kap.org.tr/tr/api/file/download/4028328c9c4c12c1019c6cb04a3b4453",
+      "publishedAt": null,
+      "title": "Tofaş 2025 faaliyet raporu",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "auditH1",
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328c9f52dc3f019faec44ff608f0",
+      "publishedAt": "2026-07-29",
+      "title": "Tofaş 30.06.2026 konsolide finansal tablolar (KAP 1639026)",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "fy2021AnnualReport",
+      "title": "Tofas 2021 Faaliyet Raporu",
+      "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2021FaaliyetRaporu.pdf",
+      "period": "2021-12-31",
+      "locator": "Konsolide finansal tablolar (NOMINAL, TMS29 oncesi)",
+      "observedAt": "2026-11-03",
+      "publishedAt": "2022-02-03"
+    },
+    {
+      "id": "fy2022AnnualReport",
+      "title": "Tofas 2022 Faaliyet Raporu",
+      "url": "https://www.tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/TOFAS%202022.pdf",
+      "period": "2022-12-31",
+      "locator": "Konsolide finansal tablolar (NOMINAL; rapor TMS29 duzeltmesi yapilmadigini acikca belirtir)",
+      "observedAt": "2026-11-03",
+      "publishedAt": "2023-02-02"
+    },
+    {
+      "id": "fy2023AnnualReport",
+      "title": "Tofas 2023 Faaliyet Raporu",
+      "url": "https://tofas.com.tr/YatirimciIliskileri/FaaliyetRaporlari/Documents/2023FaaliyetRaporu.pdf",
+      "period": "2023-12-31",
+      "locator": "Konsolide finansal tablolar (TMS29 ilk uygulama yili, 31.12.2023 satin alma gucu)",
+      "observedAt": "2026-11-03",
+      "publishedAt": "2024-02-13"
+    },
+    {
+      "id": "profitDistribution2025",
+      "title": "KAP - Tofas Kar Payi Dagitim Islemlerine Iliskin Bildirim (1573202)",
+      "url": "https://www.kap.org.tr/tr/Bildirim/1573202",
+      "period": "2025-12-31",
+      "locator": "Kar payi dagitim tablosu, 01.01.2025-31.12.2025 donemi: odenmis/cikarilmis sermaye ve bedelsiz pay dagitimi satiri",
+      "observedAt": "2026-11-05",
+      "publishedAt": "2026-03-16"
+    },
+    {
+      "id": "automotiveSectorMultiples",
+      "title": "Siblis Research - Autos & Components Valuation Multiples",
+      "url": "https://siblisresearch.com/valuation-multiples-by-industry/automobiles-components/",
+      "period": "2026-09-30",
+      "locator": "Dunya capinda listelenmis otomotiv sirketleri icin EV/EBITDA medyani ve bolgesel kirilim (ABD, Avrupa, Japonya, Gelisen Asya), 30 Eylul 2026 degerleme tarihi",
+      "observedAt": "2026-11-05",
+      "publishedAt": null
+    }
+  ],
+  "primaryRecheckedSources": [
+    {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+      "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+    },
+    {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+      "locator": "9A2026 nakit akışı ve borç dipnotları"
+    }
+  ],
+  "review": {
+    "status": "NEEDS_REVIEW",
+    "independent": false,
+    "checks": [
+      "CFO nihai A toplamı; ara toplam kullanılmadı",
+      "brüt CAPEX kullanıldı; varlık satışları düşülmedi",
+      "TMS29 nakit temettü ve CFO aynı baz",
+      "finans dışı TOASO borcu ayrıştırıldı",
+      "eksik veri null"
+    ],
+    "legacyChanges": false
+  },
+  "corrections": [
+    "Bağımsız denetim CASHFLOW.md içindeki 2022 CFO 3.789.856 bin TL DOAS satırıyla aynı ve yanlıştır; önceki birincil TOASO fact 12.151.544 bin TL. FY2023 CFO/CAPEX de uygulama veri dosyasında mevcut; eski eksikliği otomatik korumadık.",
+    "9A26 CAPEX 8.886.636 bin TL brüttür; satış nakdi 379.757 bin TL düşülerek 8.506.879 bin TL kullanılması ayrı net yatırım tanımıdır.",
+    "Konsolide borç 69,642 milyar TL; finans dışı 26,591 milyar TL; finans dışı nakit 14,069 milyar TL."
+  ],
+  "netDividend": {
+    "grossDps": "20",
+    "netDps": "17",
+    "withholdingAssumption": "0.15",
+    "period": "2025-11-10/2026-11-09",
+    "verification": "CALCULATED_STANDARD_WITHHOLDING_NOT_PERSONAL_TAX",
+    "formula": "grossDps * 0.85"
+  },
+  "profitYears": {
+    "positiveObserved": 5,
+    "totalWindow": 5,
+    "missingYears": [],
+    "note": "Nominal ve TMS29 bazları büyüme için karıştırılmadı; pozitif/negatif işaret sayımıdır."
+  },
+  "debtDetails": {
+    "source": {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328ca17e4f5e01a1aca00f412ea7",
+      "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 13"
+    },
+    "scope": "2026-09-30",
+    "bankDebtEUR_thousand": "471635",
+    "currencyNote": "Finans dışı banka borçları ağırlıkla EUR; EUR değişken faiz %2,96. Finansman şirketi TL kredileri %38,82-%63,01 sabit faiz; sanayi faiziyle karıştırılmadı.",
+    "maturityTRY": {
+      "oneToTwoYears": "18241783000",
+      "twoToThreeYears": "3527452000",
+      "threeToFourYears": "3644038000",
+      "fourToFiveYears": "3644038000",
+      "overFiveYears": "8145997000"
+    },
+    "maturitySumTRY": "37203308000",
+    "covenant": null,
+    "creditRating": null,
+    "note": "Bilanço borçları kiralamaları içerir. Finans iştiraki 43,051 milyar TL borç karşısında 43,251 milyar TL finansal kredi alacağı taşır; alacak nakit değildir. Şarta bağlı satın alma bedeli 6,431 milyar TL finansal borç toplamından ayrı yükümlülüktür."
+  }
+}

@@ -1,0 +1,2334 @@
+{
+  "asOf": "2026-11-10",
+  "checkedAt": "2026-11-11",
+  "priceStatus": "LATEST_AVAILABLE_PROVIDER_CLOSE_NOT_LIVE",
+  "historyStatus": "INDICATIVE_PROVIDER_SERIES",
+  "method": "calendar ex-date gross dividends / same-year final split-adjusted close; no total-return adjclose",
+  "limits": [
+    "Yahoo olay serisi tüm yıllar için KAP ile tek tek doğrulanmadı; olay bulunmayan yıl geçici sıfırdır, bağımsız ödeme-yok kanıtı değildir.",
+    "Sağlayıcı geçmiş kapanışları bölünme bazına uyarlanmış kabul edilir; uygulanan split kayıtları saklanır. Şirket tarihindeki bütün kurumsal işlemlerin tam uzlaşması açık veri işidir.",
+    "Geçmiş ortalama/medyan ileriye dönük verim beklentisi değildir.",
+    "Son mevcut fiyat 9 Kasım 2026; 10 Kasım kapanışı olduğu iddia edilmez."
+  ],
+  "companies": [
+    {
+      "symbol": "TUPRS",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TUPRS.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "332.25",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "17.126881",
+        "grossYieldPercent": "5.154817",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-03-16",
+            "grossDps": "10.379928",
+            "status": "SECONDARY_PROVIDER"
+          },
+          {
+            "date": "2026-09-30",
+            "grossDps": "6.746953",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [
+        {
+          "date": "2023-04-04",
+          "ratio": "700:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "10.10714245",
+          "grossDps": "0.928571",
+          "grossYieldPercent": "9.187275",
+          "events": [
+            {
+              "date": "2016-04-06",
+              "grossDps": "0.928571",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "17.35714149",
+          "grossDps": "0.888286",
+          "grossYieldPercent": "5.117698",
+          "events": [
+            {
+              "date": "2017-04-04",
+              "grossDps": "0.888286",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "16.64285660",
+          "grossDps": "1.943286",
+          "grossYieldPercent": "11.676397",
+          "events": [
+            {
+              "date": "2018-03-29",
+              "grossDps": "1.943286",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "18.08571434",
+          "grossDps": "2.164286",
+          "grossYieldPercent": "11.966826",
+          "events": [
+            {
+              "date": "2019-03-28",
+              "grossDps": "2.164286",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "15.52857113",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "22.05714226",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "75.69999695",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "143.00000000",
+          "grossDps": "21.538351",
+          "grossYieldPercent": "15.061784",
+          "events": [
+            {
+              "date": "2023-03-10",
+              "grossDps": "6.487455",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-09-29",
+              "grossDps": "15.050896",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "141.89999390",
+          "grossDps": "22.316845",
+          "grossYieldPercent": "15.727164",
+          "events": [
+            {
+              "date": "2024-04-03",
+              "grossDps": "10.379928",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2024-09-27",
+              "grossDps": "11.936917",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "184.39999390",
+          "grossDps": "15.206595",
+          "grossYieldPercent": "8.246527",
+          "events": [
+            {
+              "date": "2025-03-28",
+              "grossDps": "7.784946",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-09-30",
+              "grossDps": "7.421649",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "7.807095",
+          "median": "8.246527",
+          "min": "0.000000",
+          "max": "15.727164",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "7.698367",
+          "median": "8.716901",
+          "min": "0.000000",
+          "max": "15.727164",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "DOAS",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "138.30",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "30.0",
+        "grossYieldPercent": "21.691974",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-04-13",
+            "grossDps": "15",
+            "status": "SECONDARY_PROVIDER"
+          },
+          {
+            "date": "2026-08-13",
+            "grossDps": "15",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "8.77999973",
+          "grossDps": "1.363636",
+          "grossYieldPercent": "15.531162",
+          "events": [
+            {
+              "date": "2016-04-07",
+              "grossDps": "1.363636",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "8.23999977",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "4.34000015",
+          "grossDps": "0.65",
+          "grossYieldPercent": "14.976958",
+          "events": [
+            {
+              "date": "2018-05-25",
+              "grossDps": "0.65",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "9.52000046",
+          "grossDps": "0.613636",
+          "grossYieldPercent": "6.445756",
+          "events": [
+            {
+              "date": "2019-12-02",
+              "grossDps": "0.613636",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "28.76000023",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "43.79999924",
+          "grossDps": "2.727272",
+          "grossYieldPercent": "6.226649",
+          "events": [
+            {
+              "date": "2021-04-27",
+              "grossDps": "1.363636",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-07-12",
+              "grossDps": "1.363636",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "196.00000000",
+          "grossDps": "9.772727",
+          "grossYieldPercent": "4.986085",
+          "events": [
+            {
+              "date": "2022-04-08",
+              "grossDps": "5.681818",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2022-11-14",
+              "grossDps": "4.090909",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "257.00000000",
+          "grossDps": "26.136363",
+          "grossYieldPercent": "10.169791",
+          "events": [
+            {
+              "date": "2023-04-06",
+              "grossDps": "9.090909",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-08-24",
+              "grossDps": "11.363636",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-11-24",
+              "grossDps": "5.681818",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "193.80000305",
+          "grossDps": "50.909092",
+          "grossYieldPercent": "26.268881",
+          "events": [
+            {
+              "date": "2024-04-19",
+              "grossDps": "40.909092",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2024-09-02",
+              "grossDps": "10",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "188.10000610",
+          "grossDps": "27.272726",
+          "grossYieldPercent": "14.499056",
+          "events": [
+            {
+              "date": "2025-05-20",
+              "grossDps": "27.272726",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "12.430092",
+          "median": "10.169791",
+          "min": "4.986085",
+          "max": "26.268881",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "9.910434",
+          "median": "8.307774",
+          "min": "0.000000",
+          "max": "26.268881",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "FROTO",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/FROTO.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "74.45",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "9.69",
+        "grossYieldPercent": "13.015447",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2025-12-03",
+            "grossDps": "6.05",
+            "status": "SECONDARY_PROVIDER"
+          },
+          {
+            "date": "2026-03-16",
+            "grossDps": "3.64",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [
+        {
+          "date": "2025-05-07",
+          "ratio": "1000:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "3.05800009",
+          "grossDps": "0.189",
+          "grossYieldPercent": "6.180510",
+          "events": [
+            {
+              "date": "2016-04-04",
+              "grossDps": "0.1",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2016-11-22",
+              "grossDps": "0.089",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "6.02500010",
+          "grossDps": "0.225",
+          "grossYieldPercent": "3.734440",
+          "events": [
+            {
+              "date": "2017-04-03",
+              "grossDps": "0.114",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2017-10-31",
+              "grossDps": "0.111",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "5.15000010",
+          "grossDps": "0.458",
+          "grossYieldPercent": "8.893204",
+          "events": [
+            {
+              "date": "2018-04-02",
+              "grossDps": "0.228",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2018-11-20",
+              "grossDps": "0.23",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "7.11999989",
+          "grossDps": "0.34755",
+          "grossYieldPercent": "4.881320",
+          "events": [
+            {
+              "date": "2019-04-01",
+              "grossDps": "0.243",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-11-19",
+              "grossDps": "0.10455",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "12.50000000",
+          "grossDps": "0.312",
+          "grossYieldPercent": "2.496000",
+          "events": [
+            {
+              "date": "2020-03-23",
+              "grossDps": "0.312",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "23.80999947",
+          "grossDps": "1.014",
+          "grossYieldPercent": "4.258715",
+          "events": [
+            {
+              "date": "2021-03-24",
+              "grossDps": "0.642",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-11-19",
+              "grossDps": "0.372",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "52.45000076",
+          "grossDps": "1.87",
+          "grossYieldPercent": "3.565300",
+          "events": [
+            {
+              "date": "2022-03-24",
+              "grossDps": "1.3",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2022-11-30",
+              "grossDps": "0.57",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "73.94999695",
+          "grossDps": "4.401",
+          "grossYieldPercent": "5.951319",
+          "events": [
+            {
+              "date": "2023-03-13",
+              "grossDps": "1.425",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-10-30",
+              "grossDps": "2.976",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "93.69999695",
+          "grossDps": "5.755",
+          "grossYieldPercent": "6.141943",
+          "events": [
+            {
+              "date": "2024-04-08",
+              "grossDps": "4.33",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2024-11-22",
+              "grossDps": "1.425",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "92.65000153",
+          "grossDps": "7.76",
+          "grossYieldPercent": "8.375607",
+          "events": [
+            {
+              "date": "2025-04-03",
+              "grossDps": "1.71",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-12-03",
+              "grossDps": "6.05",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "5.658577",
+          "median": "5.951319",
+          "min": "3.565300",
+          "max": "8.375607",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "5.447836",
+          "median": "5.416320",
+          "min": "2.496000",
+          "max": "8.893204",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "TOASO",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TOASO.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "245.60",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "20.0",
+        "grossYieldPercent": "8.143322",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-03-23",
+            "grossDps": "20",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "24.63999939",
+          "grossDps": "0.73",
+          "grossYieldPercent": "2.962662",
+          "events": [
+            {
+              "date": "2016-04-07",
+              "grossDps": "0.73",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "33.02000046",
+          "grossDps": "0.7",
+          "grossYieldPercent": "2.119927",
+          "events": [
+            {
+              "date": "2017-04-03",
+              "grossDps": "0.7",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "16.88999939",
+          "grossDps": "1.6",
+          "grossYieldPercent": "9.473061",
+          "events": [
+            {
+              "date": "2018-03-21",
+              "grossDps": "1.6",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "27.02000046",
+          "grossDps": "1.76",
+          "grossYieldPercent": "6.513693",
+          "events": [
+            {
+              "date": "2019-03-19",
+              "grossDps": "1.76",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "33.68000031",
+          "grossDps": "2.4",
+          "grossYieldPercent": "7.125891",
+          "events": [
+            {
+              "date": "2020-03-25",
+              "grossDps": "2.4",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "75.69999695",
+          "grossDps": "3.0",
+          "grossYieldPercent": "3.963012",
+          "events": [
+            {
+              "date": "2021-03-23",
+              "grossDps": "3",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "165.69999695",
+          "grossDps": "6.4",
+          "grossYieldPercent": "3.862402",
+          "events": [
+            {
+              "date": "2022-03-22",
+              "grossDps": "6.4",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "210.00000000",
+          "grossDps": "6.0",
+          "grossYieldPercent": "2.857143",
+          "events": [
+            {
+              "date": "2023-03-21",
+              "grossDps": "6",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "205.10000610",
+          "grossDps": "20.0",
+          "grossYieldPercent": "9.751341",
+          "events": [
+            {
+              "date": "2024-04-04",
+              "grossDps": "20",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "247.00000000",
+          "grossDps": "12.0",
+          "grossYieldPercent": "4.858300",
+          "events": [
+            {
+              "date": "2025-04-03",
+              "grossDps": "12",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "5.058440",
+          "median": "3.963012",
+          "min": "2.857143",
+          "max": "9.751341",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "5.348743",
+          "median": "4.410656",
+          "min": "2.119927",
+          "max": "9.751341",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "TTRAK",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/TTRAK.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "374.50",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "0.0",
+        "grossYieldPercent": "0.000000",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [
+        {
+          "date": "2023-06-06",
+          "ratio": "187.5:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "40.00000000",
+          "grossDps": "2.997995",
+          "grossYieldPercent": "7.494988",
+          "events": [
+            {
+              "date": "2016-04-01",
+              "grossDps": "2.997995",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "40.53333282",
+          "grossDps": "2.498329",
+          "grossYieldPercent": "6.163641",
+          "events": [
+            {
+              "date": "2017-04-03",
+              "grossDps": "2.498329",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "18.50666618",
+          "grossDps": "2.997995",
+          "grossYieldPercent": "16.199541",
+          "events": [
+            {
+              "date": "2018-03-21",
+              "grossDps": "2.997995",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "29.38666534",
+          "grossDps": "0.0",
+          "grossYieldPercent": "0.000000",
+          "events": [],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": "Sağlayıcıda olay yok; şirket bazlı ödeme geçmişiyle birlikte okunmalı."
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "94.61333466",
+          "grossDps": "0.999331",
+          "grossYieldPercent": "1.056226",
+          "events": [
+            {
+              "date": "2020-03-20",
+              "grossDps": "0.999331",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "119.46666718",
+          "grossDps": "8.49432",
+          "grossYieldPercent": "7.110201",
+          "events": [
+            {
+              "date": "2021-03-25",
+              "grossDps": "8.49432",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "352.00000000",
+          "grossDps": "11.991979",
+          "grossYieldPercent": "3.406812",
+          "events": [
+            {
+              "date": "2022-03-28",
+              "grossDps": "11.991979",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "712.00000000",
+          "grossDps": "20.985966",
+          "grossYieldPercent": "2.947467",
+          "events": [
+            {
+              "date": "2023-03-10",
+              "grossDps": "20.985966",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "750.00000000",
+          "grossDps": "89.939853",
+          "grossYieldPercent": "11.991980",
+          "events": [
+            {
+              "date": "2024-04-01",
+              "grossDps": "62.957897",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2024-11-08",
+              "grossDps": "26.981956",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "519.50000000",
+          "grossDps": "48.467587",
+          "grossYieldPercent": "9.329661",
+          "events": [
+            {
+              "date": "2025-04-02",
+              "grossDps": "48.467587",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "6.957224",
+          "median": "7.110201",
+          "min": "2.947467",
+          "max": "11.991980",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "6.570052",
+          "median": "6.636921",
+          "min": "0.000000",
+          "max": "16.199541",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "ISMEN",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/ISMEN.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "27.74",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "3.166666666667",
+        "grossYieldPercent": "11.415525",
+        "netDps": "2.691666666667",
+        "netYieldPercent": "9.703196",
+        "events": [
+          {
+            "date": "2026-04-01",
+            "grossDps": "3.166666666667",
+            "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+          }
+        ],
+        "netStatus": "PRIMARY_ANNOUNCED_PROFILE"
+      },
+      "corporateActions": [
+        {
+          "date": "2023-07-19",
+          "ratio": "422.53522:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "0.30056599",
+          "grossDps": "0.024000000000",
+          "grossYieldPercent": "7.984935",
+          "events": [
+            {
+              "date": "2016-03-28",
+              "grossDps": "0.024000000000",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "0.57983297",
+          "grossDps": "0.030000000000",
+          "grossYieldPercent": "5.173904",
+          "events": [
+            {
+              "date": "2017-03-28",
+              "grossDps": "0.030000000000",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "0.48753300",
+          "grossDps": "0.073333333333",
+          "grossYieldPercent": "15.041717",
+          "events": [
+            {
+              "date": "2018-03-28",
+              "grossDps": "0.073333333333",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "1.06500006",
+          "grossDps": "0.060000000000",
+          "grossYieldPercent": "5.633802",
+          "events": [
+            {
+              "date": "2019-03-27",
+              "grossDps": "0.060000000000",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "4.14876604",
+          "grossDps": "0.093333333333",
+          "grossYieldPercent": "2.249665",
+          "events": [
+            {
+              "date": "2020-03-24",
+              "grossDps": "0.093333333333",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "5.52379990",
+          "grossDps": "0.236666666667",
+          "grossYieldPercent": "4.284490",
+          "events": [
+            {
+              "date": "2021-03-31",
+              "grossDps": "0.236666666667",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "15.38333321",
+          "grossDps": "0.266666666667",
+          "grossYieldPercent": "1.733478",
+          "events": [
+            {
+              "date": "2022-05-24",
+              "grossDps": "0.266666666667",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "32.00000000",
+          "grossDps": "0.503333333333",
+          "grossYieldPercent": "1.572917",
+          "events": [
+            {
+              "date": "2023-05-26",
+              "grossDps": "0.503333333333",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "49.00000000",
+          "grossDps": "1.066666666667",
+          "grossYieldPercent": "2.176871",
+          "events": [
+            {
+              "date": "2024-05-29",
+              "grossDps": "1.066666666667",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "39.61999893",
+          "grossDps": "5.666666666667",
+          "grossYieldPercent": "14.302541",
+          "events": [
+            {
+              "date": "2025-03-28",
+              "grossDps": "5.666666666667",
+              "status": "PRIMARY_TOTAL_DIVIDED_BY_CURRENT_SHARES"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "4.814059",
+          "median": "2.176871",
+          "min": "1.572917",
+          "max": "14.302541",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "6.015432",
+          "median": "4.729197",
+          "min": "1.572917",
+          "max": "15.041717",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "AKSA",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AKSA.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "10.44",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "0.58",
+        "grossYieldPercent": "5.555556",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-04-03",
+            "grossDps": "0.58",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [
+        {
+          "date": "2020-02-12",
+          "ratio": "175:100",
+          "verification": "SECONDARY_PROVIDER"
+        },
+        {
+          "date": "2024-07-24",
+          "ratio": "1200:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "0.43714201",
+          "grossDps": "0.040476",
+          "grossYieldPercent": "9.259234",
+          "events": [
+            {
+              "date": "2016-04-06",
+              "grossDps": "0.040476",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "0.61190403",
+          "grossDps": "0.047619",
+          "grossYieldPercent": "7.782103",
+          "events": [
+            {
+              "date": "2017-04-05",
+              "grossDps": "0.047619",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "0.35619000",
+          "grossDps": "0.053333",
+          "grossYieldPercent": "14.973188",
+          "events": [
+            {
+              "date": "2018-04-04",
+              "grossDps": "0.053333",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "0.65380901",
+          "grossDps": "0.05269",
+          "grossYieldPercent": "8.058928",
+          "events": [
+            {
+              "date": "2019-04-09",
+              "grossDps": "0.05269",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "1.18083298",
+          "grossDps": "0.061667",
+          "grossYieldPercent": "5.222330",
+          "events": [
+            {
+              "date": "2020-04-07",
+              "grossDps": "0.061667",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "2.85666609",
+          "grossDps": "0.0725",
+          "grossYieldPercent": "2.537923",
+          "events": [
+            {
+              "date": "2021-04-13",
+              "grossDps": "0.0725",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "7.66249990",
+          "grossDps": "0.154167",
+          "grossYieldPercent": "2.011967",
+          "events": [
+            {
+              "date": "2022-04-21",
+              "grossDps": "0.154167",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "8.58333302",
+          "grossDps": "0.200833",
+          "grossYieldPercent": "2.339802",
+          "events": [
+            {
+              "date": "2023-04-11",
+              "grossDps": "0.200833",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "12.93999958",
+          "grossDps": "0.416667",
+          "grossYieldPercent": "3.219992",
+          "events": [
+            {
+              "date": "2024-04-03",
+              "grossDps": "0.416667",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "9.81999969",
+          "grossDps": "0.48",
+          "grossYieldPercent": "4.887984",
+          "events": [
+            {
+              "date": "2025-05-21",
+              "grossDps": "0.48",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "2.999534",
+          "median": "2.537923",
+          "min": "2.011967",
+          "max": "4.887984",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "6.029345",
+          "median": "5.055157",
+          "min": "2.011967",
+          "max": "14.973188",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "AKMGY",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/AKMGY.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "197.40",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "16.06",
+        "grossYieldPercent": "8.135765",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-04-15",
+            "grossDps": "12.36",
+            "status": "SECONDARY_PROVIDER"
+          },
+          {
+            "date": "2026-08-11",
+            "grossDps": "3.7",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "20.60000038",
+          "grossDps": "2.06",
+          "grossYieldPercent": "10.000000",
+          "events": [
+            {
+              "date": "2016-05-25",
+              "grossDps": "1.79",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2016-08-24",
+              "grossDps": "0.27",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "20.45999908",
+          "grossDps": "1.9",
+          "grossYieldPercent": "9.286413",
+          "events": [
+            {
+              "date": "2017-05-29",
+              "grossDps": "0.9",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2017-12-28",
+              "grossDps": "1",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "16.37000084",
+          "grossDps": "2.68",
+          "grossYieldPercent": "16.371410",
+          "events": [
+            {
+              "date": "2018-05-28",
+              "grossDps": "0.68",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2018-10-19",
+              "grossDps": "1",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2018-12-24",
+              "grossDps": "1",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "23.68000031",
+          "grossDps": "2.43",
+          "grossYieldPercent": "10.261824",
+          "events": [
+            {
+              "date": "2019-04-24",
+              "grossDps": "1.08",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-09-24",
+              "grossDps": "0.85",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-10-23",
+              "grossDps": "0.5",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "65.19999695",
+          "grossDps": "1.3",
+          "grossYieldPercent": "1.993865",
+          "events": [
+            {
+              "date": "2020-04-15",
+              "grossDps": "1.3",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "43.27999878",
+          "grossDps": "2.67",
+          "grossYieldPercent": "6.169131",
+          "events": [
+            {
+              "date": "2021-01-06",
+              "grossDps": "0.47",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-04-26",
+              "grossDps": "1.39",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-08-24",
+              "grossDps": "0.4",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-11-17",
+              "grossDps": "0.41",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "81.69999695",
+          "grossDps": "2.93",
+          "grossYieldPercent": "3.586291",
+          "events": [
+            {
+              "date": "2022-04-04",
+              "grossDps": "2.28",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2022-08-10",
+              "grossDps": "0.65",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "128.89999390",
+          "grossDps": "4.16",
+          "grossYieldPercent": "3.227308",
+          "events": [
+            {
+              "date": "2023-04-19",
+              "grossDps": "4.16",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "224.60000610",
+          "grossDps": "7.77",
+          "grossYieldPercent": "3.459483",
+          "events": [
+            {
+              "date": "2024-04-17",
+              "grossDps": "7.77",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "197.89999390",
+          "grossDps": "15.04",
+          "grossYieldPercent": "7.599798",
+          "events": [
+            {
+              "date": "2025-04-09",
+              "grossDps": "12.64",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-08-18",
+              "grossDps": "2.4",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "4.808402",
+          "median": "3.586291",
+          "min": "3.227308",
+          "max": "7.599798",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "7.195552",
+          "median": "6.884465",
+          "min": "1.993865",
+          "max": "16.371410",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "PAGYO",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/PAGYO.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "108.50",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "5.7545",
+        "grossYieldPercent": "5.303687",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-05-11",
+            "grossDps": "5.7545",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "4.42000008",
+          "grossDps": "0.4478",
+          "grossYieldPercent": "10.131222",
+          "events": [
+            {
+              "date": "2016-03-22",
+              "grossDps": "0.4478",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "4.88999987",
+          "grossDps": "0.4388",
+          "grossYieldPercent": "8.973415",
+          "events": [
+            {
+              "date": "2017-03-09",
+              "grossDps": "0.4388",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "4.19000006",
+          "grossDps": "0.4871",
+          "grossYieldPercent": "11.625298",
+          "events": [
+            {
+              "date": "2018-03-27",
+              "grossDps": "0.3945",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2018-06-04",
+              "grossDps": "0.0926",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "6.19999981",
+          "grossDps": "0.5727",
+          "grossYieldPercent": "9.237097",
+          "events": [
+            {
+              "date": "2019-03-19",
+              "grossDps": "0.46",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-04-18",
+              "grossDps": "0.046",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-05-29",
+              "grossDps": "0.046",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2019-06-13",
+              "grossDps": "0.0207",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "6.30000019",
+          "grossDps": "0.646",
+          "grossYieldPercent": "10.253968",
+          "events": [
+            {
+              "date": "2020-03-24",
+              "grossDps": "0.42",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2020-04-13",
+              "grossDps": "0.226",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "9.19999981",
+          "grossDps": "0.458",
+          "grossYieldPercent": "4.978261",
+          "events": [
+            {
+              "date": "2021-01-06",
+              "grossDps": "0.11",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-03-16",
+              "grossDps": "0.093",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-07-01",
+              "grossDps": "0.09",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-08-12",
+              "grossDps": "0.06",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-09-13",
+              "grossDps": "0.08",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2021-10-06",
+              "grossDps": "0.025",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "30.18000031",
+          "grossDps": "0.41",
+          "grossYieldPercent": "1.358516",
+          "events": [
+            {
+              "date": "2022-04-08",
+              "grossDps": "0.41",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "35.50000000",
+          "grossDps": "1.0548",
+          "grossYieldPercent": "2.971268",
+          "events": [
+            {
+              "date": "2023-04-17",
+              "grossDps": "0.3516",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-09-21",
+              "grossDps": "0.3516",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2023-12-21",
+              "grossDps": "0.3516",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "63.75000000",
+          "grossDps": "2.8639",
+          "grossYieldPercent": "4.492392",
+          "events": [
+            {
+              "date": "2024-07-10",
+              "grossDps": "2.3",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2024-12-24",
+              "grossDps": "0.5639",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "82.34999847",
+          "grossDps": "5.062245",
+          "grossYieldPercent": "6.147231",
+          "events": [
+            {
+              "date": "2025-04-30",
+              "grossDps": "2.8",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-05-28",
+              "grossDps": "0.8",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-06-25",
+              "grossDps": "0.8",
+              "status": "SECONDARY_PROVIDER"
+            },
+            {
+              "date": "2025-07-23",
+              "grossDps": "0.662245",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "3.989534",
+          "median": "4.492392",
+          "min": "1.358516",
+          "max": "6.147231",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "7.016867",
+          "median": "7.560323",
+          "min": "1.358516",
+          "max": "11.625298",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    },
+    {
+      "symbol": "YGGYO",
+      "source": "https://query1.finance.yahoo.com/v8/finance/chart/YGGYO.IS?period1=1451606400&period2=1794355200&interval=1d&events=div%2Csplits",
+      "price": {
+        "date": "2026-11-09",
+        "value": "178.10",
+        "currency": "TRY",
+        "verification": "SECONDARY_PROVIDER"
+      },
+      "ttm": {
+        "startExclusive": "2025-11-09",
+        "endInclusive": "2026-11-09",
+        "grossDps": "10.55",
+        "grossYieldPercent": "5.923638",
+        "netDps": null,
+        "netYieldPercent": null,
+        "events": [
+          {
+            "date": "2026-04-07",
+            "grossDps": "10.55",
+            "status": "SECONDARY_PROVIDER"
+          }
+        ],
+        "netStatus": "PENDING_COMPANY_RECONCILIATION"
+      },
+      "corporateActions": [
+        {
+          "date": "2018-06-11",
+          "ratio": "150:100",
+          "verification": "SECONDARY_PROVIDER"
+        },
+        {
+          "date": "2022-06-14",
+          "ratio": "150:100",
+          "verification": "SECONDARY_PROVIDER"
+        }
+      ],
+      "history": [
+        {
+          "year": 2016,
+          "priceDate": "2016-12-30",
+          "splitAdjustedCloseTRY": "6.13333321",
+          "grossDps": "0.372024",
+          "grossYieldPercent": "6.065609",
+          "events": [
+            {
+              "date": "2016-05-20",
+              "grossDps": "0.372024",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2017,
+          "priceDate": "2017-12-29",
+          "splitAdjustedCloseTRY": "6.03555489",
+          "grossDps": "0.404444",
+          "grossYieldPercent": "6.701024",
+          "events": [
+            {
+              "date": "2017-04-11",
+              "grossDps": "0.404444",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2018,
+          "priceDate": "2018-12-31",
+          "splitAdjustedCloseTRY": "5.32000017",
+          "grossDps": "0.475556",
+          "grossYieldPercent": "8.939022",
+          "events": [
+            {
+              "date": "2018-04-12",
+              "grossDps": "0.475556",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2019,
+          "priceDate": "2019-12-31",
+          "splitAdjustedCloseTRY": "8.67333317",
+          "grossDps": "0.620667",
+          "grossYieldPercent": "7.156038",
+          "events": [
+            {
+              "date": "2019-04-19",
+              "grossDps": "0.620667",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2020,
+          "priceDate": "2020-12-31",
+          "splitAdjustedCloseTRY": "8.28666592",
+          "grossDps": "0.686667",
+          "grossYieldPercent": "8.286409",
+          "events": [
+            {
+              "date": "2020-04-07",
+              "grossDps": "0.686667",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2021,
+          "priceDate": "2021-12-31",
+          "splitAdjustedCloseTRY": "14.00000000",
+          "grossDps": "0.686667",
+          "grossYieldPercent": "4.904764",
+          "events": [
+            {
+              "date": "2021-03-30",
+              "grossDps": "0.686667",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2022,
+          "priceDate": "2022-12-30",
+          "splitAdjustedCloseTRY": "33.59999847",
+          "grossDps": "1.0",
+          "grossYieldPercent": "2.976191",
+          "events": [
+            {
+              "date": "2022-04-11",
+              "grossDps": "1",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2023,
+          "priceDate": "2023-12-29",
+          "splitAdjustedCloseTRY": "37.04000092",
+          "grossDps": "1.75",
+          "grossYieldPercent": "4.724622",
+          "events": [
+            {
+              "date": "2023-04-11",
+              "grossDps": "1.75",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2024,
+          "priceDate": "2024-12-31",
+          "splitAdjustedCloseTRY": "62.29999924",
+          "grossDps": "3.11",
+          "grossYieldPercent": "4.991974",
+          "events": [
+            {
+              "date": "2024-07-09",
+              "grossDps": "3.11",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        },
+        {
+          "year": 2025,
+          "priceDate": "2025-12-31",
+          "splitAdjustedCloseTRY": "128.30000305",
+          "grossDps": "7.0",
+          "grossYieldPercent": "5.455962",
+          "events": [
+            {
+              "date": "2025-04-15",
+              "grossDps": "7",
+              "status": "SECONDARY_PROVIDER"
+            }
+          ],
+          "verification": "INDICATIVE_SECONDARY",
+          "noEventCaveat": null
+        }
+      ],
+      "statistics": {
+        "fiveYears": {
+          "mean": "4.610703",
+          "median": "4.904764",
+          "min": "2.976191",
+          "max": "5.455962",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 5
+        },
+        "tenYears": {
+          "mean": "6.020162",
+          "median": "5.760786",
+          "min": "2.976191",
+          "max": "8.939022",
+          "verification": "INDICATIVE_SECONDARY",
+          "sampleSize": 10
+        }
+      }
+    }
+  ]
+}

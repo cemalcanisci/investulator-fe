@@ -1,0 +1,1580 @@
+{
+  "symbol": "ISMEN",
+  "asOf": "2026-11-10",
+  "checkedAt": "2026-11-11",
+  "sector": "BROKER",
+  "sources": [
+    {
+      "id": "annual2024",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/faaliyet-raporlari/IS_YATIRIM%202024%20EFR.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "annual2022",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/faaliyet-raporlari/IS_YATIRIM_TR22_1203.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "q3",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/finansal-raporlar/2026/Finansal%20Tablolar_30%20Eyl%C3%BCl%202026.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "presentation",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/yatirimci-sunumlari/2026/ISMEN%20Performans_Finansal%20Sonuclar%202026%2009.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "rating",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/derecelendirme-raporlari/2026/ISMEN%20260911-C-TR.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "annual",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Yatirimci_Iliskileri_Belgeler/faaliyet-raporlari/%C4%B0%C5%9F%20Yat%C4%B1r%C4%B1m%202025%20Entegre%20Faaliyet%20Rapor%20Final.pdf",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "dividends",
+      "url": "https://www.isyatirim.com.tr/tr-tr/bizi-taniyin/yatirimci-iliskileri/Sayfalar/ismen.aspx",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    },
+    {
+      "id": "kap",
+      "url": "https://www.kap.org.tr/tr/sirket-finansal-bilgileri/4028e4a140f275530140f277aa100008",
+      "checkedAt": "2026-11-11",
+      "type": "PRIMARY"
+    }
+  ],
+  "financialQuality": {
+    "category": "B",
+    "confidence": "Orta",
+    "reason": "Beş yıl kâr ve çeşitlenen hizmet gelirleri; 9A26 reel kâr düşüşü, kısa vadeli fonlama ve doğrulanmamış düzenleyici tampon A sınıfını engelliyor.",
+    "numericScore": null
+  },
+  "priceAttractiveness": {
+    "status": "INDICATIVE_ONLY",
+    "reason": "2025 rezerv dağıtımı normal verim kabul edilemez; fiyat ve yıllık verimler merkezi market-data.json dosyasında."
+  },
+  "annualFinancials": [
+    {
+      "period": "2021",
+      "basis": "nominal TRY",
+      "scope": "consolidated",
+      "source": "annual2022",
+      "securitiesGrossSales": {
+        "id": "2021.securitiesGrossSales",
+        "value": "140817934711",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "grossProfit": {
+        "id": "2021.grossProfit",
+        "value": "2385575900",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2021.operatingProfit",
+        "value": "1594639917",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2021.parentNetProfit",
+        "value": "1170903975",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2021.totalNetProfit",
+        "value": "1233476504",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2021.assets",
+        "value": "14213244000",
+        "unit": "TRY",
+        "period": "2021",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    },
+    {
+      "period": "2022",
+      "basis": "nominal TRY",
+      "scope": "consolidated",
+      "source": "annual2022",
+      "securitiesGrossSales": {
+        "id": "2022.securitiesGrossSales",
+        "value": "218163536122",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "grossProfit": {
+        "id": "2022.grossProfit",
+        "value": "7566496701",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2022.operatingProfit",
+        "value": "5258851509",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2022.parentNetProfit",
+        "value": "4331632301",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2022.totalNetProfit",
+        "value": "4529606786",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2022.assets",
+        "value": "35809603000",
+        "unit": "TRY",
+        "period": "2022",
+        "basis": "nominal TRY",
+        "source": "annual2022",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    },
+    {
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "scope": "consolidated",
+      "source": "annual2024",
+      "securitiesGrossSales": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Menkul kıymet brüt işlem cirosu bu tur çıkarılmadı; sanayi net satış karşılaştırmasında kullanılmaz."
+      },
+      "grossProfit": {
+        "id": "2023.grossProfit",
+        "value": "23702456000",
+        "unit": "TRY",
+        "period": "2023",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2023.operatingProfit",
+        "value": "19896302000",
+        "unit": "TRY",
+        "period": "2023",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2023.parentNetProfit",
+        "value": "7998253000",
+        "unit": "TRY",
+        "period": "2023",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2023.totalNetProfit",
+        "value": "8346965000",
+        "unit": "TRY",
+        "period": "2023",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2023.assets",
+        "value": "60630154000",
+        "unit": "TRY",
+        "period": "2023",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    },
+    {
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "scope": "consolidated",
+      "source": "annual2024",
+      "securitiesGrossSales": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Menkul kıymet brüt işlem cirosu bu tur çıkarılmadı; sanayi net satış karşılaştırmasında kullanılmaz."
+      },
+      "grossProfit": {
+        "id": "2024.grossProfit",
+        "value": "23256487000",
+        "unit": "TRY",
+        "period": "2024",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2024.operatingProfit",
+        "value": "18549967000",
+        "unit": "TRY",
+        "period": "2024",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2024.parentNetProfit",
+        "value": "5506137000",
+        "unit": "TRY",
+        "period": "2024",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2024.totalNetProfit",
+        "value": "5657570000",
+        "unit": "TRY",
+        "period": "2024",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2024.assets",
+        "value": "70658793000",
+        "unit": "TRY",
+        "period": "2024",
+        "basis": "2024-12 purchasing power TRY",
+        "source": "annual2024",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    },
+    {
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "scope": "consolidated",
+      "source": "annual",
+      "securitiesGrossSales": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Menkul kıymet brüt işlem cirosu bu tur çıkarılmadı; sanayi net satış karşılaştırmasında kullanılmaz."
+      },
+      "grossProfit": {
+        "id": "2025.grossProfit",
+        "value": "31264962000",
+        "unit": "TRY",
+        "period": "2025",
+        "basis": "2025-12 purchasing power TRY",
+        "source": "annual",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2025.operatingProfit",
+        "value": "21274450000",
+        "unit": "TRY",
+        "period": "2025",
+        "basis": "2025-12 purchasing power TRY",
+        "source": "annual",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2025.parentNetProfit",
+        "value": "7445433000",
+        "unit": "TRY",
+        "period": "2025",
+        "basis": "2025-12 purchasing power TRY",
+        "source": "annual",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2025.totalNetProfit",
+        "value": "8990217000",
+        "unit": "TRY",
+        "period": "2025",
+        "basis": "2025-12 purchasing power TRY",
+        "source": "annual",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2025.assets",
+        "value": "117716750000",
+        "unit": "TRY",
+        "period": "2025",
+        "basis": "2025-12 purchasing power TRY",
+        "source": "annual",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    },
+    {
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "scope": "consolidated",
+      "source": "presentation",
+      "securitiesGrossSales": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Menkul kıymet brüt işlem cirosu bu tur çıkarılmadı; sanayi net satış karşılaştırmasında kullanılmaz."
+      },
+      "grossProfit": {
+        "id": "2026-9M.grossProfit",
+        "value": "28317038000",
+        "unit": "TRY",
+        "period": "2026-9M",
+        "basis": "2026-09 purchasing power TRY",
+        "source": "presentation",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "operatingProfit": {
+        "id": "2026-9M.operatingProfit",
+        "value": "17502307000",
+        "unit": "TRY",
+        "period": "2026-9M",
+        "basis": "2026-09 purchasing power TRY",
+        "source": "presentation",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "parentNetProfit": {
+        "id": "2026-9M.parentNetProfit",
+        "value": "4812016000",
+        "unit": "TRY",
+        "period": "2026-9M",
+        "basis": "2026-09 purchasing power TRY",
+        "source": "presentation",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "totalNetProfit": {
+        "id": "2026-9M.totalNetProfit",
+        "value": "5693885000",
+        "unit": "TRY",
+        "period": "2026-9M",
+        "basis": "2026-09 purchasing power TRY",
+        "source": "presentation",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "assets": {
+        "id": "2026-9M.assets",
+        "value": "176035302000",
+        "unit": "TRY",
+        "period": "2026-9M",
+        "basis": "2026-09 purchasing power TRY",
+        "source": "presentation",
+        "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+        "verification": "PRIMARY_CHECKED"
+      },
+      "cfo": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "cashCapex": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roe": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "roa": {
+        "value": null,
+        "verification": "MISSING",
+        "reason": "Karşılaştırılabilir tam dönem serisi çıkarılmadı; 9A26 ROE/ROA aşağıda ayrıca hesaplandı."
+      },
+      "industrialFcf": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialEbitda": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      },
+      "industrialNetMargin": {
+        "value": null,
+        "verification": "NOT_APPLICABLE",
+        "reason": "Aracı kurum için sanayi tanımı kullanılmadı."
+      }
+    }
+  ],
+  "facts": [
+    {
+      "id": "2021.securitiesGrossSales",
+      "value": "140817934711",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2021.grossProfit",
+      "value": "2385575900",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2021.operatingProfit",
+      "value": "1594639917",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2021.parentNetProfit",
+      "value": "1170903975",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2021.totalNetProfit",
+      "value": "1233476504",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2021.assets",
+      "value": "14213244000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.securitiesGrossSales",
+      "value": "218163536122",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.grossProfit",
+      "value": "7566496701",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.operatingProfit",
+      "value": "5258851509",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.parentNetProfit",
+      "value": "4331632301",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.totalNetProfit",
+      "value": "4529606786",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2022.assets",
+      "value": "35809603000",
+      "unit": "TRY",
+      "period": "2022",
+      "basis": "nominal TRY",
+      "source": "annual2022",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.grossProfit",
+      "value": "23702456000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.operatingProfit",
+      "value": "19896302000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.parentNetProfit",
+      "value": "7998253000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.totalNetProfit",
+      "value": "8346965000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.assets",
+      "value": "60630154000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.grossProfit",
+      "value": "23256487000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.operatingProfit",
+      "value": "18549967000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.parentNetProfit",
+      "value": "5506137000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.totalNetProfit",
+      "value": "5657570000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.assets",
+      "value": "70658793000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.grossProfit",
+      "value": "31264962000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.operatingProfit",
+      "value": "21274450000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.parentNetProfit",
+      "value": "7445433000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.totalNetProfit",
+      "value": "8990217000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.assets",
+      "value": "117716750000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026-9M.grossProfit",
+      "value": "28317038000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026-9M.operatingProfit",
+      "value": "17502307000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026-9M.parentNetProfit",
+      "value": "4812016000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026-9M.totalNetProfit",
+      "value": "5693885000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026-9M.assets",
+      "value": "176035302000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Finansal özet ve konsolide gelir/bilanço tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "financialDebt",
+      "value": "44000431000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "cash",
+      "value": "42886550000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "currentAssets",
+      "value": "160126260000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "currentLiabilities",
+      "value": "120117991000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "shortFinancialDebt",
+      "value": "41753059000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "currentLongFinancialDebt",
+      "value": "102869000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "longFinancialDebt",
+      "value": "2144503000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "parentEquityEnd",
+      "value": "39165275000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "parentEquityBegin",
+      "value": "40257440000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "assetsBegin",
+      "value": "146341932000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "comparativeParentProfit",
+      "value": "6226971000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "feeIncome",
+      "value": "8675333000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "comparativeFeeIncome",
+      "value": "7219726000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "minimumLicenseEquity",
+      "value": "380000000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "nominal TRY",
+      "source": "presentation",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "bills",
+      "value": "36395723000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "nominalGrossDividend",
+      "value": "4750000000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "nominal TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "indexedCashDividend",
+      "value": "5336265000",
+      "unit": "TRY",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY",
+      "source": "q3",
+      "location": "Not 8, 19, 22; bilanço ve yatırımcı sunumu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.financialDebt",
+      "value": "11522146000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Not 8; likidite tablosu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.cash",
+      "value": "3603393000",
+      "unit": "TRY",
+      "period": "2025",
+      "basis": "2025-12 purchasing power TRY",
+      "source": "annual",
+      "location": "Nakit ve nakit benzerleri",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2024.financialDebt",
+      "value": "1479245000",
+      "unit": "TRY",
+      "period": "2024",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Borçlanmalar notu",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2023.financialDebt",
+      "value": "8713466000",
+      "unit": "TRY",
+      "period": "2023",
+      "basis": "2024-12 purchasing power TRY",
+      "source": "annual2024",
+      "location": "Borçlanmalar notu karşılaştırmalı sütun",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.dividendOtherReserves",
+      "value": "5825597218.65",
+      "unit": "TRY",
+      "period": "2025-payment",
+      "basis": "nominal TRY",
+      "source": "annual2024",
+      "location": "2024 kâr dağıtım tablosu, basılı s.80",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2025.dividendCurrentProfit",
+      "value": "2674402781.35",
+      "unit": "TRY",
+      "period": "2025-payment",
+      "basis": "nominal TRY",
+      "source": "annual2024",
+      "location": "2024 kâr dağıtım tablosu, basılı s.80",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026.dividendCurrentProfit",
+      "value": "4393331796",
+      "unit": "TRY",
+      "period": "2026-payment",
+      "basis": "nominal TRY",
+      "source": "annual",
+      "location": "2025 kâr dağıtım tablosu, basılı s.76",
+      "verification": "PRIMARY_CHECKED"
+    },
+    {
+      "id": "2026.dividendPastProfit",
+      "value": "356668204",
+      "unit": "TRY",
+      "period": "2026-payment",
+      "basis": "nominal TRY",
+      "source": "annual",
+      "location": "2025 kâr dağıtım tablosu, basılı s.76",
+      "verification": "PRIMARY_CHECKED"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "2026GrossPayoutPercent",
+      "value": "63.79750196535841",
+      "unit": "percent",
+      "formula": "gross dividend / FY2025 parent net profit * 100",
+      "inputs": [
+        "4750000000",
+        "7445432585.40"
+      ],
+      "verification": "CALCULATED",
+      "note": "Genel kurul nominal dağıtım / 2025 sonu TMS29 kârı; ekonomik reel nakit karşılama değildir.",
+      "period": "2026-payment / FY2025 profit",
+      "basis": "General assembly nominal allocation / stated fiscal profit; see note"
+    },
+    {
+      "id": "2025GrossPayoutPercent",
+      "value": "154.37320747528986",
+      "unit": "percent",
+      "formula": "gross dividend / FY2024 parent net profit * 100",
+      "inputs": [
+        "8500000000",
+        "5506136808.98"
+      ],
+      "verification": "CALCULATED",
+      "note": "Rezerv dağıtımı nedeniyle %100 üzeri; normal kapasite değildir.",
+      "period": "2025-payment",
+      "basis": "General assembly nominal allocation / stated fiscal profit; see note"
+    },
+    {
+      "id": "2025ReserveSharePercent",
+      "value": "68.53643786647058",
+      "unit": "percent",
+      "formula": "other reserves / gross distribution * 100",
+      "inputs": [
+        "5825597218.65",
+        "8500000000"
+      ],
+      "verification": "CALCULATED",
+      "note": "Kaynağın %68,54’ü geçmiş kâr/olağanüstü yedekler.",
+      "period": "2025-payment",
+      "basis": "General assembly nominal allocation / stated fiscal profit; see note"
+    },
+    {
+      "id": "2026ParentProfitChangePercent",
+      "value": "-22.723006097185937",
+      "unit": "percent",
+      "formula": "(current / comparable - 1) * 100",
+      "inputs": [
+        "4812016",
+        "6226971"
+      ],
+      "verification": "CALCULATED",
+      "note": "Her iki 9 aylık tutar Eylül 2026 satın alma gücünde.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "2026RoeYtdPercent",
+      "value": "12.11748049660604",
+      "unit": "percent",
+      "formula": "parent profit / mean(begin,end parent equity) * 100",
+      "inputs": [
+        "4812016",
+        "40257440",
+        "39165275"
+      ],
+      "verification": "CALCULATED",
+      "note": "Yıllıklandırılmamış 9 ay.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "2026RoaYtdPercent",
+      "value": "3.5324361645214686",
+      "unit": "percent",
+      "formula": "total profit / mean(begin,end assets) * 100",
+      "inputs": [
+        "5693885",
+        "146341932",
+        "176035302"
+      ],
+      "verification": "CALCULATED",
+      "note": "Yıllıklandırılmamış 9 ay.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "currentRatio",
+      "value": "1.3330747431498418",
+      "unit": "times",
+      "formula": "current assets / current liabilities",
+      "inputs": [
+        "160126260",
+        "120117991"
+      ],
+      "verification": "CALCULATED",
+      "note": "Müşteri işlemleri nedeniyle tek başına serbest likidite ölçüsü değildir.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "shortDebtSharePercent",
+      "value": "95.1261772867634",
+      "unit": "percent",
+      "formula": "(short debt + current long debt) / total financial debt * 100",
+      "inputs": [
+        "41753059",
+        "102869",
+        "44000431"
+      ],
+      "verification": "CALCULATED",
+      "note": "Finansal borcun kısa vade yoğunlaşması.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "arithmeticDebtLessCash",
+      "value": "1113881000",
+      "unit": "TRY",
+      "formula": "reported financial debt - reported cash",
+      "inputs": [
+        "44000431000",
+        "42886550000"
+      ],
+      "verification": "CALCULATED",
+      "note": "Serbest nakit ayrıştırılmadığından ekonomik net borç diye sınıflanmaz.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    },
+    {
+      "id": "feeSharePercent",
+      "value": "30.636442271963617",
+      "unit": "percent",
+      "formula": "fee income / operating revenue * 100",
+      "inputs": [
+        "8675333",
+        "28317038"
+      ],
+      "verification": "CALCULATED",
+      "note": "Brüt menkul kıymet işlem hacmi paydada değildir.",
+      "period": "2026-9M",
+      "basis": "2026-09 purchasing power TRY"
+    }
+  ],
+  "dividends": [
+    {
+      "year": 2016,
+      "grossTotalTRY": "36000000",
+      "currentShareAdjustedGrossDps": "0.024",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2017,
+      "grossTotalTRY": "45000000",
+      "currentShareAdjustedGrossDps": "0.03",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2018,
+      "grossTotalTRY": "110000000",
+      "currentShareAdjustedGrossDps": "0.07333333333333333",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2019,
+      "grossTotalTRY": "90000000",
+      "currentShareAdjustedGrossDps": "0.06",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2020,
+      "grossTotalTRY": "140000000",
+      "currentShareAdjustedGrossDps": "0.09333333333333334",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2021,
+      "grossTotalTRY": "355000000",
+      "currentShareAdjustedGrossDps": "0.23666666666666666",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2022,
+      "grossTotalTRY": "400000000",
+      "currentShareAdjustedGrossDps": "0.26666666666666666",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2023,
+      "grossTotalTRY": "755000000",
+      "currentShareAdjustedGrossDps": "0.5033333333333333",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2024,
+      "grossTotalTRY": "1600000000",
+      "currentShareAdjustedGrossDps": "1.0666666666666667",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2025,
+      "grossTotalTRY": "8500000000",
+      "currentShareAdjustedGrossDps": "5.666666666666667",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    },
+    {
+      "year": 2026,
+      "grossTotalTRY": "4750000000",
+      "currentShareAdjustedGrossDps": "3.1666666666666665",
+      "shareDenominator": "1500000000",
+      "source": "dividends",
+      "verification": "PRIMARY_CHECKED",
+      "note": "2023 bedelsiz sonrası ortak pay bazında; eski yuvarlatılmış DPS yerine resmî toplam ödeme kullanıldı."
+    }
+  ],
+  "stressScenarios": [
+    {
+      "name": "adverse",
+      "basis": "2025-12 purchasing power TRY",
+      "referenceParentProfit": "7445432585.40",
+      "profitMultiplier": "0.65",
+      "assumedPayout": "0.5",
+      "illustrativeDividendCapacityTRY": "2419765590.255",
+      "fixedDistributionBenchmarkTRY": "4750000000",
+      "profitCoverageOfFixedDistribution": "1.0188486695810526",
+      "formula": "reference profit * multiplier * payout; profit coverage = reference profit * multiplier / fixed distribution",
+      "debtServiceResult": null,
+      "limits": "Nominal 2026 dağıtımı 2025 satın alma gücünde sabit varsayımsal bütçe kabul edildi; gerçekleşmiş nakit karşılama hesabı değildir. Kredi yenileme faizi +10 puan stresi, serbest fonlama bakiyesi bilinmediğinden sayısallaştırılmadı."
+    },
+    {
+      "name": "normal",
+      "basis": "2025-12 purchasing power TRY",
+      "referenceParentProfit": "7445432585.40",
+      "profitMultiplier": "1",
+      "assumedPayout": "0.638",
+      "illustrativeDividendCapacityTRY": "4750185989.4852",
+      "fixedDistributionBenchmarkTRY": "4750000000",
+      "profitCoverageOfFixedDistribution": "1.567459491663158",
+      "formula": "reference profit * multiplier * payout; profit coverage = reference profit * multiplier / fixed distribution",
+      "debtServiceResult": null,
+      "limits": "Nominal 2026 dağıtımı 2025 satın alma gücünde sabit varsayımsal bütçe kabul edildi; gerçekleşmiş nakit karşılama hesabı değildir. Kredi yenileme faizi +10 puan stresi, serbest fonlama bakiyesi bilinmediğinden sayısallaştırılmadı."
+    },
+    {
+      "name": "strong",
+      "basis": "2025-12 purchasing power TRY",
+      "referenceParentProfit": "7445432585.40",
+      "profitMultiplier": "1.25",
+      "assumedPayout": "0.65",
+      "illustrativeDividendCapacityTRY": "6049413975.6375",
+      "fixedDistributionBenchmarkTRY": "4750000000",
+      "profitCoverageOfFixedDistribution": "1.9593243645789473",
+      "formula": "reference profit * multiplier * payout; profit coverage = reference profit * multiplier / fixed distribution",
+      "debtServiceResult": null,
+      "limits": "Nominal 2026 dağıtımı 2025 satın alma gücünde sabit varsayımsal bütçe kabul edildi; gerçekleşmiş nakit karşılama hesabı değildir. Kredi yenileme faizi +10 puan stresi, serbest fonlama bakiyesi bilinmediğinden sayısallaştırılmadı."
+    }
+  ],
+  "dataGaps": [
+    {
+      "id": "regulatoryBuffer",
+      "critical": false,
+      "impact": "A sınıfına yükselmeyi engeller; B koşulu",
+      "description": "Solo risk sermayesi yükümlülüğü ve likidite limitine karşı gerçek tampon yok. Konsolide özkaynak/asgari lisans sermayesi tampon değildir."
+    },
+    {
+      "id": "cashSegregation",
+      "critical": false,
+      "impact": "Likidite ve borç stresini sınırlar",
+      "description": "Müşteri, Takasbank ve serbest şirket nakdinin tam vade eşleştirmesi yok."
+    },
+    {
+      "id": "covenants",
+      "critical": false,
+      "description": "Kredi sözleşmesi düzeyinde bütün covenant eşikleri/uyum sertifikaları doğrulanmadı; yok anlamına gelmez."
+    },
+    {
+      "id": "fiveYearDebtAndCashFlow",
+      "critical": false,
+      "description": "2021–2022 toplam finansal borç; 5 yıllık nihai CFO/nakit CAPEX ve uyumlu ROE/ROA serisi eksik. Sanayi FCF puanlaması zaten uygulanamaz."
+    },
+    {
+      "id": "normalizedDividend",
+      "critical": false,
+      "description": "Üç senaryo kâr/dağıtım duyarlılığıdır; tahmin veya kesin sürdürülebilir pay başı ödeme değildir."
+    }
+  ],
+  "rating": {
+    "agency": "SAHA",
+    "date": "2026-09-11",
+    "longTerm": "(TR)AAA",
+    "shortTerm": "(TR)A1+",
+    "outlook": "Durağan",
+    "previousDate": "2025-09-11",
+    "change": "Değişmedi",
+    "source": "rating",
+    "note": "Ulusal ölçek; uluslararası not gibi karşılaştırılmaz."
+  },
+  "debtMaturities": {
+    "bills": {
+      "valueTRY": "36395723000",
+      "rateRangePercent": [
+        "35.50",
+        "53.11"
+      ],
+      "maturity": [
+        "2026-10-01",
+        "2026-11-27"
+      ]
+    },
+    "bankCurrencyTLValues": {
+      "TRY": "4774059000",
+      "USD": "1007888000",
+      "EUR": "1296642000"
+    },
+    "longestEuroMaturity": "2033-07-08",
+    "source": "q3",
+    "location": "Not 8",
+    "note": "Bilanço sonrası vade tarihleri bilgi kesiminde ödenmiş olduğu varsayılmaz; yenileme izlenir."
+  },
+  "corrections": [
+    "2026 brüt payout %54,2 değil %63,80; net payout ve Haziran satın alma gücü karıştırılmamalı.",
+    "2025 8,5 milyar TL dağıtımın 5,826 milyarı geçmiş kâr/yedeklerden; açıklanamayan fonlama değildir.",
+    "2022/2023/2024 resmî toplam dağıtım 400/755/1600 milyon TL; yuvarlatılmış eski DPS çarpımından gelen 401,15/756,15/1605 milyon kullanılmaz."
+  ]
+}

@@ -1,0 +1,2384 @@
+{
+  "symbol": "DOAS",
+  "asOf": "2026-11-10",
+  "accessedAt": "2026-11-11",
+  "methodology": "../METHODOLOGY_V3.md",
+  "category": "C",
+  "confidence": "Orta",
+  "qualityAssessment": "Tekrarlayan zayıf nakit karşılaması ve faiz baskısı; mevcut temettü stratejisine uygun değil.",
+  "priceAssessment": "TTM geçmiş verimi tek başına alım cazibesi değildir; normalize sürdürülebilir DPS doğrulanmadı.",
+  "rationale": "2022-23 nakit karşılaması zayıf, 2025 CFO negatif; 9A26 iyileşmesine rağmen faiz sonrası serbest nakit negatif. Yüksek geçmiş verim çekirdek aday yapmaz.",
+  "upgradeConditions": "Faiz sonrası serbest nakdin kalıcı pozitif olması, temettünün bu nakde indirilmesi, kısa vadeli finansman yükünün azalması.",
+  "financials": [
+    {
+      "year": 2021,
+      "revenue": {
+        "value": "24306203000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "profit": {
+        "value": "2331581000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "cfo": {
+        "value": "3268796000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "capex": {
+        "value": "403754000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "debt": {
+        "value": "13325832000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "9262471000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2021-12-31",
+          "end": "2021-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": {
+        "value": "3521497000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "operatingProfit": {
+        "value": "3092743000",
+        "basis": {
+          "accounting": "NOMINAL",
+          "currency": "TRY",
+          "purchasingPowerDate": null
+        },
+        "source": {
+          "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+          "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+          "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+        },
+        "verification": "PRIMARY_LOCAL_RECHECKED"
+      },
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "9.592534876796677",
+        "formula": "profit/revenue*100"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "2865042000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED"
+      }
+    },
+    {
+      "year": 2022,
+      "revenue": {
+        "value": "88487132000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "15612776000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "1995524000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "2422343000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "7177723000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "5574548000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-12-31",
+          "end": "2022-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "17.64412027728506",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "-426819000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2022-01-01",
+          "end": "2022-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "revenue": {
+        "value": "149244881000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "19622080000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": {
+        "value": "2610116000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "capex": {
+        "value": "1888678000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": {
+        "value": "10780452000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cash": {
+        "value": "7643608000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-12-31",
+          "end": "2023-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "fy2023PrimaryReport",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "13.147573215593237",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": {
+        "value": "721438000",
+        "formula": "cfo-capex",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2023-12-31",
+          "start": "2023-01-01",
+          "end": "2023-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "revenue": {
+        "value": "188375000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2024",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "7643000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2024",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": null,
+      "capex": {
+        "value": "3797000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-01-01",
+          "end": "2024-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2024",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": null,
+      "cash": {
+        "value": "9414000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2024-12-31",
+          "start": "2024-12-31",
+          "end": "2024-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2024",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "4.057332448573325",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": null
+    },
+    {
+      "year": 2025,
+      "revenue": {
+        "value": "255800000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annual2025",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "profit": {
+        "value": "3140000000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "PARENT",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annual2025",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "cfo": null,
+      "capex": {
+        "value": "3723770000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-01-01",
+          "end": "2025-12-31",
+          "periodKind": "YEAR",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2025",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "debt": null,
+      "cash": {
+        "value": "5555752000",
+        "basis": {
+          "currency": "TRY",
+          "scale": "1",
+          "scope": "CONSOLIDATED",
+          "attribution": "GROUP",
+          "accounting": "TAS29",
+          "purchasingPowerDate": "2025-12-31",
+          "start": "2025-12-31",
+          "end": "2025-12-31",
+          "periodKind": "INSTANT",
+          "shareBasis": null
+        },
+        "sourceId": "annualReport2025",
+        "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+      },
+      "roe": null,
+      "roa": null,
+      "ebitda": null,
+      "grossProfit": null,
+      "operatingProfit": null,
+      "operatingMargin": null,
+      "netMargin": {
+        "value": "1.2275215011727914",
+        "formula": "profit/revenue*100",
+        "verification": "RECALCULATED_FROM_PRIOR_PRIMARY_FACTS"
+      },
+      "interestCoverage": null,
+      "currentRatio": null,
+      "shortDebtShare": null,
+      "debtCurrency": null,
+      "debtMaturity": null,
+      "creditRating": null,
+      "covenant": null,
+      "fcf": null
+    }
+  ],
+  "facts": [
+    {
+      "id": "inherited_fyRevenue2025",
+      "value": "255800000000",
+      "unit": "TRY",
+      "period": "FY2025",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://cdn.gedik.com/media/media/4a0bk0ju/4c25_finansal-degerlendirme_doas_20260302.pdf",
+        "locator": "4Ç25 finansal değerlendirme - tam yıl hasılat",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyRevenue2025"
+      },
+      "verification": "NEEDS_REVIEW"
+    },
+    {
+      "id": "inherited_fyEbitda2025",
+      "value": "14864838000",
+      "unit": "TRY",
+      "period": "FY2025",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+        "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | 2026-11-03: Sirketin kendi 2025 Faaliyet Raporu EBITDA'si (14.864.838 bin TL) EBIT (11.506.149) + amortisman/itfa koprusuyle (3.358.689 bin TL fark) tutarli gorunuyor; onceki UNVERIFIED/CONFLICT deger (14.717.000.000, Gedik Yatirim ikincil kaynagi) birincil rapor rakamiyla degistirildi. H1 2026 ebitdaH1 CONFLICT'i AYRI bir donem/kaynak sorunu oldugu icin bu guncellemeyle cozulmedi, CONFLICT olarak kaliyor.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyEbitda2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2025",
+      "value": "3140000000",
+      "unit": "TRY",
+      "period": "FY2025",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://cdn.gedik.com/media/media/4a0bk0ju/4c25_finansal-degerlendirme_doas_20260302.pdf",
+        "locator": "4Ç25 finansal değerlendirme - tam yıl net kâr",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyProfit2025"
+      },
+      "verification": "NEEDS_REVIEW"
+    },
+    {
+      "id": "inherited_fyProfit2025Restated",
+      "value": "3698933000",
+      "unit": "TRY",
+      "period": "2025-01-01 / 2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2026-06-30",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+        "locator": "Özkaynak değişim tablosu s.5: 01.01.2026 ana ortaklık dönem kârı 3.698.933 bin TL; 30.06.2026 satın alma gücü.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyProfit2025Restated"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2023",
+      "value": "149244881000",
+      "unit": "TRY",
+      "period": "FY2023",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyRevenue2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2023",
+      "value": "19622080000",
+      "unit": "TRY",
+      "period": "FY2023",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyProfit2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyParentEquity2023",
+      "value": "41339017000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyParentEquity2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCash2023",
+      "value": "7643608000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCash2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyFinancialDebt2023",
+      "value": "10780452000",
+      "unit": "TRY",
+      "period": "2023-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-12-31",
+        "end": "2023-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyFinancialDebt2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2023",
+      "value": "2610116000",
+      "unit": "TRY",
+      "period": "FY2023",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyOperatingCash2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2023",
+      "value": "1888678000",
+      "unit": "TRY",
+      "period": "FY2023",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2023-01-01",
+        "end": "2023-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCapex2023"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2022",
+      "value": "88487132000",
+      "unit": "TRY",
+      "period": "FY2022",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyRevenue2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2022",
+      "value": "15612776000",
+      "unit": "TRY",
+      "period": "FY2022",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.3 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Kar veya Zarar Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyProfit2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyParentEquity2022",
+      "value": "31254523000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyParentEquity2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCash2022",
+      "value": "5574548000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCash2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyFinancialDebt2022",
+      "value": "7177723000",
+      "unit": "TRY",
+      "period": "2022-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-12-31",
+        "end": "2022-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyFinancialDebt2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyOperatingCash2022",
+      "value": "1995524000",
+      "unit": "TRY",
+      "period": "FY2022",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyOperatingCash2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2022",
+      "value": "2422343000",
+      "unit": "TRY",
+      "period": "FY2022",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2022-01-01",
+        "end": "2022-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.6 - \"31 Aralık Tarihlerinde Sona Eren Yıllara Ait Konsolide Nakit Akış Tablosu\" (2023/2022 iki sütunlu) | NOT: bu rakam 2023 raporunun karşılaştırma sütunudur, Doğuş GYO alımı (ortak kontrol altındaki işletme birleşmeleri yöntemiyle) YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir. Şirketin ORİJİNAL 2022 yıl sonu raporundaki (31.12.2022 satın alma gücünde, GYO birleşmesi öncesi) rakamlar farklıdır (ör. o raporda Hasılat 46.781.376 bin TL, Net dönem kârı 7.824.186 bin TL) — karıştırılmamalı, iki kapsam/baz farklı.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCapex2022"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyParentEquity2021",
+      "value": "18139701000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: bu rakam 2023 raporunun 3. karşılaştırma sütunudur (Doğuş GYO alımı nedeniyle ortak kontrol altındaki işletme birleşmeleri yöntemiyle YENİDEN DÜZENLENMİŞ ve 31.12.2023 satın alma gücünde ifade edilmiştir; orijinal 2021 yıl sonu raporundaki nominal/kendi dönem bazındaki rakamla AYNI DEĞİLDİR, karıştırılmamalı).",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyParentEquity2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCash2021",
+      "value": "9262471000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: yeniden düzenlenmiş (bkz. fyParentEquity2021 notu).",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCash2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyFinancialDebt2021",
+      "value": "13325832000",
+      "unit": "TRY",
+      "period": "2021-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "PARENT",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2023-12-31",
+        "start": "2021-12-31",
+        "end": "2021-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+        "locator": "s.1-2 - \"31 Aralık Tarihleri İtibarıyla Konsolide Finansal Durum Tablosu\" (2023/2022/2021 üç sütunlu, 31.12.2023 satın alma gücünde yeniden ifade edilmiş) | NOT: yeniden düzenlenmiş (bkz. fyParentEquity2021 notu).",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyFinancialDebt2021"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyRevenue2024",
+      "value": "188375000000",
+      "unit": "TRY",
+      "period": "FY2024",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyRevenue2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyProfit2024",
+      "value": "7643000000",
+      "unit": "TRY",
+      "period": "FY2024",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla) | NOT: \"Net Profit for the Period\" toplam konsolide kardir (azinlik paylari dahil); ana ortaklik payina ayristirilmamistir, bu yuzden diger yillarin ana-ortaklik-payi bazli profit factleriyle (or. fyProfit2023) dogrudan karsilastirilamaz.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyProfit2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyEquity2024",
+      "value": "55739000000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla) | NOT: \"Total Equity\" azinlik paylarini iceren toplam ozkaynaktir; ana ortakliga ait ozkaynak ayri satirda verilmemistir, bu yuzden diger yillarin ana-ortaklik-payi bazli equity factleriyle (or. fyParentEquity2023) dogrudan karsilastirilamaz.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyEquity2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCash2024",
+      "value": "9414000000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCash2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyNetFinancialDebt2024",
+      "value": "2691000000",
+      "unit": "TRY",
+      "period": "2024-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-12-31",
+        "end": "2024-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla) | NOT: Raporun kendi \"Net Financial Debt*\" tanimi (dipnot * ile); brut finansal borc kisa/uzun vade kirilimi bu tabloda verilmez, bu yuzden diger yillarin brut fyFinancialDebtYYYY factleriyle (kisa+uzun borclanma toplami) dogrudan karsilastirilamaz. Brut borc kirilimi hala MISSING.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyNetFinancialDebt2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2024",
+      "value": "3797000000",
+      "unit": "TRY",
+      "period": "FY2024",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2024-12-31",
+        "start": "2024-01-01",
+        "end": "2024-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+        "locator": "s.28 \"Summary Financial Indicators\" (Consolidated Income Statements / Consolidated Statements of Financial Position, 2024 vs 2023, mio TRY; Konsolide Finansal Tablolar ile birlikte okunmalidir notuyla)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCapex2024"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyEquity2025",
+      "value": "68109657000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+        "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | NOT: \"Toplam Ozkaynaklar\" azinlik paylarini icerir; ana ortakliga ait ozkaynak bu ozet tabloda ayri satirda verilmiyor, fyParentEquity* factleriyle dogrudan karsilastirilamaz.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyEquity2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCash2025",
+      "value": "5555752000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+        "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCash2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyNetFinancialDebt2025",
+      "value": "25184576000",
+      "unit": "TRY",
+      "period": "2025-12-31",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-12-31",
+        "end": "2025-12-31",
+        "periodKind": "INSTANT",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+        "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde) | NOT: Net tanim (dipnot *); brut finansal borc kirilimi bu ozet tabloda yok, MISSING kaliyor.",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyNetFinancialDebt2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "inherited_fyCapex2025",
+      "value": "3723770000",
+      "unit": "TRY",
+      "period": "FY2025",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "scope": "CONSOLIDATED",
+        "attribution": "GROUP",
+        "accounting": "TAS29",
+        "purchasingPowerDate": "2025-12-31",
+        "start": "2025-01-01",
+        "end": "2025-12-31",
+        "periodKind": "YEAR",
+        "shareBasis": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+        "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" (Konsolide Gelir Tablolari / Konsolide Finansal Durum Tablolari, 2025 vs 2024, bin TL; 2025 sutunu 31.12.2025 satin alma gucunde)",
+        "localFile": "src/data/research/doas-analysis-reports.json",
+        "originalId": "fyCapex2025"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "revenue",
+      "value": "168708906000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "grossProfit",
+      "value": "19525826000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "operatingProfit",
+      "value": "4573675000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "profit",
+      "value": "2053494000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "totalProfit",
+      "value": "2013760000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "cfo",
+      "value": "4395408000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "capex",
+      "value": "2615150000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "propertyCapex",
+      "value": "108059000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "depreciation",
+      "value": "3155582000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "cash",
+      "value": "2952736000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "debtShort",
+      "value": "29467912000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "debtLong",
+      "value": "4370241000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "equity",
+      "value": "78006705000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "assets",
+      "value": "153415210000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "currentAssets",
+      "value": "73774815000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "currentLiabilities",
+      "value": "62318541000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "INSTANT",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "interestExpense",
+      "value": "6599607000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "interestPaid",
+      "value": "6013511000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "interestReceived",
+      "value": "4126259000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "dividendCash",
+      "value": "7456310000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "borrowingInflows",
+      "value": "13430929000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "borrowingRepayments",
+      "value": "12237297000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "basis": {
+        "currency": "TRY",
+        "scale": "1",
+        "accounting": "TMS29",
+        "purchasingPowerDate": "2026-09-30",
+        "periodKind": "9M",
+        "scope": "CONSOLIDATED"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+        "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+      },
+      "verification": "PRIMARY_RECHECKED"
+    },
+    {
+      "id": "referencePrice",
+      "value": "138.3",
+      "unit": "TRY/share",
+      "period": "2026-11-09",
+      "basis": {
+        "accounting": "MARKET",
+        "currency": "TRY"
+      },
+      "source": {
+        "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS",
+        "locator": "9 Kasım 2026 günlük close; 10 Kasım kapanışı sağlayıcıda yok"
+      },
+      "verification": "SECONDARY_OBSERVED"
+    },
+    {
+      "id": "ttmGrossDps",
+      "value": "30",
+      "unit": "TRY/share",
+      "period": "2025-11-10/2026-11-09",
+      "basis": {
+        "accounting": "NOMINAL",
+        "shareBasis": "CURRENT"
+      },
+      "source": {
+        "url": "https://www.kap.org.tr/en/Bildirim/1589325",
+        "locator": "2026 brüt ödeme; TTRAK 2026 dağıtım yok; geçmiş büyüme araştırması taksit mutabakatı"
+      },
+      "verification": "PRIOR_PRIMARY_VERIFIED_NOT_RECHECKED"
+    },
+    {
+      "id": "fy2021_revenue",
+      "value": "24306203000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    },
+    {
+      "id": "fy2021_profit",
+      "value": "2331581000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    },
+    {
+      "id": "fy2021_grossProfit",
+      "value": "3521497000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    },
+    {
+      "id": "fy2021_operatingProfit",
+      "value": "3092743000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    },
+    {
+      "id": "fy2021_cfo",
+      "value": "3268796000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    },
+    {
+      "id": "fy2021_capex",
+      "value": "403754000",
+      "unit": "TRY",
+      "period": "2021",
+      "basis": {
+        "accounting": "NOMINAL",
+        "currency": "TRY",
+        "purchasingPowerDate": null
+      },
+      "source": {
+        "url": "https://www.dogusotomotiv.com.tr/tr/yatirimci-iliskileri",
+        "localFile": "outputs/bist-audit-20261101/doas-fy2022-raw.txt",
+        "locator": "FY2022 resmi finansal rapor, karşılaştırmalı FY2021 sütunu; s.3 ve s.6; satır325-352,495,545-548"
+      },
+      "verification": "PRIMARY_LOCAL_RECHECKED"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "fcf",
+      "formula": "cfo - capex",
+      "inputs": [
+        "cfo",
+        "capex"
+      ],
+      "value": "1780258000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Brüt maddi/maddi olmayan nakit alımları; faiz sınıflandırması ayrıca düzeltilir."
+    },
+    {
+      "id": "netDebt",
+      "formula": "debtShort + debtLong - cash",
+      "inputs": [
+        "debtShort",
+        "debtLong",
+        "cash"
+      ],
+      "value": "30885417000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "currentRatio",
+      "formula": "currentAssets / currentLiabilities",
+      "inputs": [
+        "currentAssets",
+        "currentLiabilities"
+      ],
+      "value": "1.18383412",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "shortDebtShare",
+      "formula": "debtShort / (debtShort+debtLong) * 100",
+      "inputs": [
+        "debtShort",
+        "debtLong"
+      ],
+      "value": "87.08487133",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "operatingMargin",
+      "formula": "operatingProfit / revenue * 100",
+      "inputs": [
+        "operatingProfit",
+        "revenue"
+      ],
+      "value": "2.71098611",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": ""
+    },
+    {
+      "id": "netMargin",
+      "formula": "profit / revenue * 100",
+      "inputs": [
+        "profit",
+        "revenue"
+      ],
+      "value": "1.21718174",
+      "unit": "percent",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Ana ortaklık kârı"
+    },
+    {
+      "id": "cashConversion",
+      "formula": "cfo / totalProfit",
+      "inputs": [
+        "cfo",
+        "totalProfit"
+      ],
+      "value": "2.18268711",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Zarar döneminde oran yerine nakit köprüsü incelenir."
+    },
+    {
+      "id": "interestCoverage",
+      "formula": "operatingProfit / interestExpense",
+      "inputs": [
+        "operatingProfit",
+        "interestExpense"
+      ],
+      "value": "0.69302233",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "9A dönem içi faaliyet kârı; yıllıklaştırılmadı."
+    },
+    {
+      "id": "fcfCoverage",
+      "formula": "(cfo-capex) / dividendCash",
+      "inputs": [
+        "cfo",
+        "capex",
+        "dividendCash"
+      ],
+      "value": "0.23875858",
+      "unit": "ratio",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Pay/payda aynı 30.09.2026 satın alma gücü; sıfır dağıtımda N/A."
+    },
+    {
+      "id": "fcfAfterNetCashInterest",
+      "formula": "cfo-capex-interestPaid+interestReceived",
+      "inputs": [
+        "cfo",
+        "capex",
+        "interestPaid",
+        "interestReceived"
+      ],
+      "value": "-106994000",
+      "unit": "TRY",
+      "period": "2026-09-30",
+      "verification": "RECALCULATED",
+      "note": "Faiz finansman nakit akışında bulunduğu için karşılaştırılabilir ek gösterge; kira anaparası ve gayrimenkul alımları ayrıca düşülmedi."
+    },
+    {
+      "id": "ttmGrossYield",
+      "formula": "ttmGrossDps/referencePrice*100",
+      "inputs": [
+        "ttmGrossDps",
+        "referencePrice"
+      ],
+      "value": "21.69197397",
+      "unit": "percent",
+      "period": "2026-11-09",
+      "verification": "RECALCULATED",
+      "note": "Fiyat tarihi 09.11.2026; gelecekte beklenen verim değildir."
+    }
+  ],
+  "stress": [
+    {
+      "scenario": "normal",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "1",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "1780258000",
+      "coverage": "0.2387585816576832",
+      "afterNetInterestTRY": "-106994000",
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    },
+    {
+      "scenario": "adverse",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "0.7",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1.2",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "461635600",
+      "coverage": "0.06191207178886071",
+      "afterNetInterestTRY": "-2628318600",
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    },
+    {
+      "scenario": "strong",
+      "kind": "SENSITIVITY_NOT_FORECAST",
+      "period": "9M equivalent",
+      "assumptions": {
+        "cfoMultiplier": "1.3",
+        "capex": "fixed",
+        "interestPaidMultiplier": "1",
+        "dividend": "same-period fixed",
+        "principalRepayments": null
+      },
+      "fcfTRY": "3098880400",
+      "coverage": "0.41560509152650577",
+      "afterNetInterestTRY": "1211628400",
+      "debtServiceCapacity": "Tam DSCR için vadesi gelen anapara ve kullanılabilir nakit ayrıca gerekli.",
+      "dividendCutNeed": "Nakit açığı; kesinti/erteleme veya dış kaynak ihtiyacı"
+    }
+  ],
+  "gaps": [
+    "2021-2025 tüm brüt/esas faaliyet kârı, karşılaştırılabilir FAVÖK ve faiz serisi tamamlanmadı.",
+    "ROE/ROA için aynı satın alma gücündeki başlangıç/son özkaynak ve aktifler her yıl eksiksiz değil; kapanış özkaynağıyla ROE uydurulmadı.",
+    "Covenant eşikleri, hesap tanımı ve dönem sonu headroom tam teyit edilmedi; ihlal yok sonucu çıkarılmaz.",
+    "9 Kasım fiyatı güncel 10 Kasım kapanışı değildir. Tarihsel yıllık verimler merkezi piyasa ekiyle birleştirilecektir.",
+    "Normalize ileri DPS kapasitesi hesaplanamadığından fiyat açısından kesin cazip/pahalı kararı yok.",
+    "Güncel kredi notlarının resmi raporu ve covenant eşikleri hedefli kaynak taramasında tam doğrulanmadı."
+  ],
+  "sources": [
+    {
+      "id": "price",
+      "title": "Doviz.com · DOAS",
+      "url": "https://borsa.doviz.com/hisseler/doas-dogus-otomotiv",
+      "publishedAt": "2026-10-27T15:16:00+03:00",
+      "period": "2026-10-27",
+      "locator": "Anlık fiyat, 52 hafta aralığı, F/K, PD/DD"
+    },
+    {
+      "id": "capital",
+      "title": "KAP · Doğuş Otomotiv şirket bilgileri",
+      "url": "https://kap.org.tr/tr/sirket-bilgileri/genel/1391-dogus-otomotiv-servis-ve-ticaret-a-s",
+      "publishedAt": null,
+      "period": "2026-10-27 erişimi",
+      "locator": "Ödenmiş sermaye, pay sayısı, ortaklık yapısı"
+    },
+    {
+      "id": "q1Report",
+      "title": "Infoyatirim · DOAS 1Ç26 bilanço analizi",
+      "url": "https://infoyatirim.com/blog/bilanco-analizleri/dogus-otomotiv-2026-yili-ilk-ceyrek-bilancosunu-acikladi",
+      "publishedAt": "2026-05-01",
+      "period": "2026 Q1 / 2025 Q1",
+      "locator": "Hasılat, net kâr, özkaynak, satış adedi/pazar payı"
+    },
+    {
+      "id": "q2Report",
+      "title": "İş Yatırım · DOAS 2Ç26 şirket raporu",
+      "url": "https://arastirma.isyatirim.com.tr/2026/08/20/sirket-raporu-dogus-otomotiv-doas-is-2c26-sonuclari/",
+      "publishedAt": "2026-08-20",
+      "period": "2026 Q2 / 2025 Q2",
+      "locator": "FAVÖK marjı, net borç, net borç/FAVÖK, toptan satış adedi"
+    },
+    {
+      "id": "h1News",
+      "title": "Borsa Gündem · DOAS 6A26 net kâr haberi",
+      "url": "https://www.borsagundem.com.tr/dogus-otomotivin-net-kari-ilk-yarida-yuzde-35-geriledi",
+      "publishedAt": "2026-08-19",
+      "period": "2026 H1 / 2025 H1",
+      "locator": "Hasılat, net kâr, FAVÖK (6 aylık, YoY)"
+    },
+    {
+      "id": "annual2025",
+      "title": "Gedik Yatırım · DOAS 4Ç25 finansal değerlendirme",
+      "url": "https://cdn.gedik.com/media/media/4a0bk0ju/4c25_finansal-degerlendirme_doas_20260302.pdf",
+      "publishedAt": "2026-03-02",
+      "period": "FY2025 / FY2024",
+      "locator": "Tam yıl hasılat, FAVÖK, FAVÖK marjı, net kâr"
+    },
+    {
+      "id": "dividendCalendar",
+      "title": "Investing.com · DOAS temettü takvimi",
+      "url": "https://tr.investing.com/equities/dogus-otomotiv-dividends",
+      "publishedAt": null,
+      "period": "2008-2026",
+      "locator": "Hak kullanım / ödeme tarihli brüt temettü geçmişi"
+    },
+    {
+      "id": "tuvturk",
+      "title": "Foreks · DOAS TÜVTÜRK pay satışı haberi",
+      "url": "https://www.foreks.com/haber/detay/6ad63dc5422c786f3f7a59ae/PICNEWS/tr/dogus-otomotiv-tuvturk-kuzey-ve-guney-deki-paylarinin-tamamini-satmak-icin-niyet-mektubu-imzaladi-19-10-26/",
+      "publishedAt": "2026-10-19",
+      "period": "2026-10-13 / 2026-10-19",
+      "locator": "TÜVTÜRK Kuzey/Güney pay satışı niyet mektubu açıklaması"
+    },
+    {
+      "id": "business",
+      "title": "Doğuş Otomotiv · Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Do%C4%9Fu%C5%9F_Otomotiv",
+      "publishedAt": null,
+      "period": "2026-10-27 erişimi",
+      "locator": "Marka portföyü, kuruluş/halka arz tarihi, faaliyet alanları"
+    },
+    {
+      "id": "peers",
+      "title": "Foreks · FROTO fiyat ve çarpanlar",
+      "url": "https://www.foreks.com/sembol-detay/H2024/froto/ford-otosan/",
+      "publishedAt": "2026-10-26",
+      "period": "2026-10-26",
+      "locator": "F/K, FD/FAVÖK karşılaştırma"
+    },
+    {
+      "id": "sales",
+      "title": "İş Yatırım / Infoyatirim · DOAS satış adedi ve pazar payı",
+      "url": "https://arastirma.isyatirim.com.tr/2026/08/20/sirket-raporu-dogus-otomotiv-doas-is-2c26-sonuclari/",
+      "publishedAt": "2026-08-20",
+      "period": "2026 H1",
+      "locator": "Toptan satış adedi, pazar payı, segment kırılımı"
+    },
+    {
+      "id": "q1PrimaryReport",
+      "title": "Doğuş Otomotiv · 31.03.2026 Özet Konsolide Finansal Tablolar",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202651118522748_DOAS_31032026_Finansal_Rapor.pdf",
+      "publishedAt": "2026-05-11",
+      "period": "2026 Q1 / 2025 Q1",
+      "locator": "Birincil KAP finansal rapor PDF (şirket yatırımcı ilişkileri sitesi üzerinden); s.5-7 bilanço ve kâr/zarar tablosu"
+    },
+    {
+      "id": "h1PrimaryReport",
+      "title": "Doğuş Otomotiv · 30.06.2026 Özet Konsolide Finansal Tablolar",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "publishedAt": "2026-08-19",
+      "period": "2026 H1 / 2025 H1",
+      "locator": "Birincil KAP finansal rapor PDF (şirket yatırımcı ilişkileri sitesi üzerinden); s.5-7 bilanço ve kâr/zarar tablosu"
+    },
+    {
+      "id": "auditMarket",
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOAS.IS?period1=1104537600&period2=1793577600&interval=1d&events=div%2Csplits",
+      "publishedAt": "2026-10-27",
+      "title": "Yahoo Finance günlük kapanış ve fiyat aralığı",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "Günlük quote.close; temettü düzeltilmiş adjclose kullanılmaz. Tek sağlayıcı, bağımsız doğrulama değildir.",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "auditH1",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/202681919358813_DOAS_30062026_Finansal_Rapor.pdf",
+      "publishedAt": "2026-08-19",
+      "title": "Doğuş Otomotiv 30.06.2026 konsolide finansal raporu",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "auditDividend",
+      "url": "https://www.kap.org.tr/en/Bildirim/1589325",
+      "publishedAt": "2026-04-08",
+      "title": "DOAS 2026 kâr payı bildirimi",
+      "period": "2026-01-01 / 2026-06-30",
+      "locator": "",
+      "observedAt": "2026-11-01"
+    },
+    {
+      "id": "fy2023PrimaryReport",
+      "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/202431523534685_DOAS%2031%2012%202023%20Finansal%20Rapor.pdf",
+      "publishedAt": "2024-03-15",
+      "title": "Doğuş Otomotiv 31.12.2023 konsolide finansal rapor (2022/2021 ile karşılaştırmalı, 31.12.2023 satın alma gücünde yeniden ifade edilmiş)",
+      "period": "FY2023",
+      "locator": "",
+      "observedAt": "2026-11-02"
+    },
+    {
+      "id": "annualReport2024",
+      "title": "Dogus Otomotiv - 2024 Annual Report (Faaliyet Raporu, Ingilizce)",
+      "url": "https://fs.dogusotomotiv.com.tr/newdogusotomotiv_files/2025228201348802_DOAS_FR_2024_ENG.pdf",
+      "publishedAt": "2025-02-28",
+      "period": "FY2024",
+      "locator": "s.28 \"Summary Financial Indicators\" - konsolide gelir tablosu ve finansal durum tablosu ozeti (2024/2023)"
+    },
+    {
+      "id": "annualReport2025",
+      "title": "Dogus Otomotiv - 2025 Faaliyet Raporu (Turkce)",
+      "url": "https://www.dogusotomotiv.com.tr/newdogusotomotiv_files/2026227203658243_DOAS_FR_2025_TR.pdf",
+      "publishedAt": "2026-02-27",
+      "period": "FY2025",
+      "locator": "s.28 \"OZET FINANSAL GOSTERGELER\" - konsolide gelir tablolari ve finansal durum tablolari ozeti (2025/2024)"
+    },
+    {
+      "id": "retailSectorMultiples",
+      "title": "Siblis Research - Retail Valuation Multiples",
+      "url": "https://siblisresearch.com/valuation-multiples-by-industry/retail/",
+      "publishedAt": null,
+      "period": "2026-09-30",
+      "locator": "Dunya capinda listelenmis perakende sirketleri icin EV/EBITDA medyani ve bolgesel kirilim (ABD, Avrupa, Japonya, Gelisen Asya), 30 Eylul 2026 degerleme tarihi",
+      "observedAt": "2026-11-06"
+    }
+  ],
+  "primaryRecheckedSources": [
+    {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+      "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+    },
+    {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+      "locator": "9A2026 nakit akışı ve borç dipnotları"
+    }
+  ],
+  "review": {
+    "status": "NEEDS_REVIEW",
+    "independent": false,
+    "checks": [
+      "CFO nihai A toplamı; ara toplam kullanılmadı",
+      "brüt CAPEX kullanıldı; varlık satışları düşülmedi",
+      "TMS29 nakit temettü ve CFO aynı baz",
+      "finans dışı TOASO borcu ayrıştırıldı",
+      "eksik veri null"
+    ],
+    "legacyChanges": false
+  },
+  "corrections": [
+    "9A26 CFO 4.395.408 bin TL, ara toplam 9.934.744 bin TL değildir.",
+    "Faiz nakit akışı finansmanda: CFO-CAPEX 1,780 milyar TL iken net ödenen faiz sonrası -0,107 milyar TL; ayrıca 0,108 milyar TL gayrimenkul yatırımı var.",
+    "9A26 nominal 6,6 milyar TL dağıtım ile TMS29 CFO bölünmedi; aynı baz nakit tablosu temettüsü 7,456 milyar TL kullanıldı."
+  ],
+  "netDividend": {
+    "grossDps": "30",
+    "netDps": "25.5",
+    "withholdingAssumption": "0.15",
+    "period": "2025-11-10/2026-11-09",
+    "verification": "CALCULATED_STANDARD_WITHHOLDING_NOT_PERSONAL_TAX",
+    "formula": "grossDps * 0.85"
+  },
+  "profitYears": {
+    "positiveObserved": 5,
+    "totalWindow": 5,
+    "missingYears": [],
+    "note": "Nominal ve TMS29 bazları büyüme için karıştırılmadı; pozitif/negatif işaret sayımıdır."
+  },
+  "debtDetails": {
+    "source": {
+      "url": "https://www.kap.org.tr/tr/api/file/download/4028328da17e515f01a1c0474f4c3857",
+      "locator": "9A2026 bilanço s.1-2, gelir tablosu s.3, nakit akışı s.6; borç dipnotu 7"
+    },
+    "scope": "2026-09-30",
+    "shortTLLoanTRY": "17505599000",
+    "shortTLInterestPercent": "51.82",
+    "currentEURLoanTRY": "11371434000",
+    "currentEURInterestPercent": "7.24",
+    "cashRestrictedTRY": "0",
+    "maturity": null,
+    "covenant": null,
+    "creditRating": {
+      "value": "A(tr), Stabil",
+      "status": "PRIOR_SECONDARY_REVIEW_REQUIRED",
+      "note": "Önceki raporda Mayıs 2026 A+(tr)→A(tr) düşüşü; bu tur resmi not raporu yeniden açılmadı."
+    },
+    "note": "Net borç hesabında 3,989 milyar TL finansal yatırım nakit sayılmadı; çoğu borsaya kote olmayan holding hissesi. Kredi girişleri13,431mr ve ödemeleri12,237mr aynı dönemde; hangi liranın temettüye gittiği nedensel olarak izlenemez, toplam finansman açığı gözlenir."
+  }
+}
